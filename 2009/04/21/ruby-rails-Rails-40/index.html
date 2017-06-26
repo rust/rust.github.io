@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails勉強会＠東京第40回 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails勉強会＠東京第40回</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>今日も何故か快晴．誰だ晴れ男は！天気がいいのに室内に籠もってる30名．いろいろ素晴らしいですね！</p>
+
+<p>##まとめと感想</p>
+
+<ul>
+<li>GAE/Jはかなり熱い模様．ここは Merb/JRuby 勉強するチャンスか！？
+
+<ul>
+<li>むしろ Python の方がいいのか迷うところ．</li>
+</ul></li>
+<li>Rails 2.3 には色々罠が多い．
+
+<ul>
+<li>結構大規模な変更だし，仕方ないですね．</li>
+</ul></li>
+<li>懇親会行けなかった．
+
+<ul>
+<li>マイレージのご利用は計画的に！！</li>
+</ul></li>
+</ul>
+
+<p>##はじめに</p>
+
+<ul>
+<li>今日は懇親会が準備されているようです．
+
+<ul>
+<li>昨日のあれが無ければ・・・・</li>
+</ul></li>
+</ul>
+
+<p>###セッションネタ</p>
+
+<ul>
+<li>JRuby on GAE/J(takiuchiさん)</li>
+<li>Sinatra/Merb などの話</li>
+<li>RSpec/Test の話</li>
+<li>Werner さんを囲む会(English)</li>
+<li>Git 初心者向けセッション</li>
+<li>About AR2.3(a_matsuda)</li>
+</ul>
+
+<p>###セッション</p>
+
+<ul>
+<li>前半
+
+<ul>
+<li>Google AppEngine の話(基調講演)</li>
+<li>雑談部屋</li>
+</ul></li>
+<li>後半
+
+<ul>
+<li>About AR2.3</li>
+<li>Git 初心者セッション</li>
+<li>RSpec/Test の話</li>
+</ul></li>
+</ul>
+
+<p>##JRuby on Google AppEngine</p>
+
+<ul>
+<li>Google AppEngine で Java が動くようになったので，JRuby 経由で Rails/Merb などを動かすことができる．</li>
+<li>gem などをアプリケーションに組み込んだ状態でデプロイする必要がある．
+
+<ul>
+<li>Merb では thor コマンドで，Rails では rake で．</li>
+</ul></li>
+<li>Java のバージョンは MacBook は preinstalled で，Windows/Linux などでは Java 1.6 で．</li>
+<li>JRuby は <a href="http://github.com/jruby/jruby/tree/master">http://github.com/jruby/jruby/tree/master</a> から clone して build する．
+
+<ul>
+<li>JRuby の環境一緒にアップしなくてはいけない．</li>
+<li>ファイルサイズの制約(10MB)があるので，それに収まるように必要なライブラリだけをアップするように．</li>
+<li>ファイル数1000の制限もある</li>
+</ul></li>
+<li>java -jar $JAVA_HOME/java/java-complete.jar -S irb などで</li>
+<li>Ruby と JRuby が同じ環境にあると混乱する可能性がある
+
+<ul>
+<li>JRuby の jgem で入れた gem が入る場所など</li>
+<li>同じ名前のコマンドがあるので，通常の Ruby が PATH で先に来るようにしないと普段使いに問題がある．</li>
+<li>JRuby で gem をインストールするときには <a href="http://wiki.jruby.org/wiki/Main_Page">http://wiki.jruby.org/wiki/Main_Page</a> が参考になるらしい</li>
+</ul></li>
+<li>config/warble.rb
+
+<ul>
+<li>config.gems = [&hellip;] に必要な gem を列挙しておけばいいみたい．</li>
+</ul></li>
+<li>GAEではスレッド使えない．</li>
+<li>.jar ファイルにパックして lib に配置することで，ファイル数の制限を回避
+
+<ul>
+<li>jar cf test.jar /path/to/gems</li>
+</ul></li>
+<li>gem は &ndash;no-rdoc &ndash;no-ri をデフォルトの方がいいらしい</li>
+<li>ファイルの書き込み権限がないので，ログはログファイルではなく標準出力に出すように変更する必要がある．</li>
+<li>jar ファイルの中のファイルを load/require するときに，相対パスだと失敗するので，絶対パスに書き換えるパッチが必要．</li>
+</ul>
+
+<pre><code class="language-bash">% ant jar-complete
+% java -jar $JRUBY_HOME/lib/jruby-complete.jar -S irb
+irb(main):001:0&gt;
+</code></pre>
+
+<pre><code class="language-bash">% merb-gen app hello
+% warble config
+# vender tmp などを消す
+# 既存の lib からコピーする
+</code></pre>
+
+<p>###まとめ
+早すぎてわかってる人しかわからないセッションになった模様．一度やってみようと言うことですね．</p>
+
+<p>##About ActiveRecord 2.3</p>
+
+<pre><code class="language-bash">% rails nested-model
+% cd nested-model
+% script/generate scaffold blog title:string url:string
+% script/generate scaffold post blog:references title:string body:text
+</code></pre>
+
+<ul>
+<li>nested_models のキモは :autosave オプション
+
+<ul>
+<li>関連する子クラスの save を親の save 時に自動的に実行してくれる</li>
+</ul></li>
+<li>i18n で子クラスの attribute が日本語化されない？
+
+<ul>
+<li>errors の属性名が posts_body とかになってしまう．</li>
+<li>translation_ja.yml などを細工する必要がある</li>
+</ul></li>
+<li>attr_accessible
+
+<ul>
+<li>アクセスできる attribute を指定できる．</li>
+<li>ただし指定すると子クラスが見れなくなる．:post_attributes としなくてはならない．冗長すぎる？</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-bash">attr_accessible :title, :post_attributes
+</code></pre>
+
+<ul>
+<li>attachment_fu で勝手に attr_accessible に追加されるので，nested-form だと子クラスを見れなくなってしまうので，はまるかも．</li>
+<li>default_scope は使わない方が吉
+
+<ul>
+<li>named_scope とは違う実装なので</li>
+</ul></li>
+<li>はまりどころが多いので，lighthouse はずっと見ておくべきだと思った．</li>
+</ul>
+
+<p>##KTP</p>
+
+<ul>
+<li><p>Keep</p>
+
+<ul>
+<li>名札率高かった</li>
+<li>Poken</li>
+<li>Keynote</li>
+<li>みんなでセッション決められた</li>
+<li>いつも会場ありがとうございます．</li>
+<li>外タレ連れてきました</li>
+<li>ust チーム</li>
+<li>懇親会</li>
+</ul></li>
+
+<li><p>Try</p>
+
+<ul>
+<li>次回予告</li>
+<li>聞きたい話・最近困っていることをコメントに書く</li>
+<li>初心者に聞きたいことを聞きたい</li>
+<li>ちょっと背伸びするなど運動してみる</li>
+<li>Rails walk!</li>
+</ul></li>
+
+<li><p>Problem</p>
+
+<ul>
+<li>事前のネタ出し</li>
+<li>忘れ物</li>
+<li>初心者セッションあった方がいいよね</li>
+<li>ネットに関して</li>
+<li>最近困っていること</li>
+<li>オープンセッションの説明が無かった</li>
+<li>基調講演がマニアックだった</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/04/21/ruby-rails-Rails-40/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/04/19/MySQL-ZABBIX-ZABBIX-MySQL/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/04/19/MySQL-ZABBIX-ZABBIX-MySQL/">ZABBIXで行うMySQLパフォーマンスチューニング</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/04/22/notitle/">今週のお題：好きな食べ物は？</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/04/22/notitle/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

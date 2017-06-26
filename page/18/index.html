@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/06/17/debian-xen-Debian-5-0-1-lenny-Xen/">Debian 5.0.1(lenny) で Xen をセットアップするまで</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/06/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  最初から Domain-U を作成するまで．ほぼ下記参考のままです．
+参考 : http://d.hatena.ne.jp/fujisan3776/20090309/1236576002
+##lenny のインストール 要点は標準システムのみにすることです．あとは普通にインストールします．今回は amd64 だったので，64bit install です．
+##Domain-0 のセットアップ 足りない部分を install していきます．
+$ su - # apt-get install sudo openssh-server # visudo # sudo の設定 # vim /etc/group # group に sudo した場合の編集 # vim /etc/ssh/sshd_config # sshd の設定(root とか) # vim /etc/network/interfaces # DHCP でセットアップした場合の変更など # /etc/init.d/networking restart # /etc/init.d/ssh restart  次に Xen Kernel のインストールなど
+$ sudo apt-get install xen-linux-system-2.6.26-2-xen-amd64 \ xen-tools linux-headers-2.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/06/17/debian-xen-Debian-5-0-1-lenny-Xen/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/06/12/capistrano-ruby-rails-Capistrano/">Capistrano でサーバをセットアップする</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/06/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  例えば新しく作成したサーバに database.yml とか設置しておきたい場合には自分でコピーする必要があったんですが，capistrano 使えば，deploy:setup のときに自動的に配置してくれるようにできます．
+set :initial_config_files, %w(database.yml thin.yml environment.rb environments/production.rb) after &quot;deploy:setup&quot;, :role =&gt; [:app] do try_sudo &quot;chmod -R g+w #{deploy_to}&quot; try_sudo &quot;chgrp -R wheel #{deploy_to}&quot; try_sudo &quot;mkdir -p #{shared_path/config/environments&quot; initial_config_files.each do |file| upload(&quot;config/shared/config/#{file}&quot;, &quot;#{shared_path}/config/#{file}&quot; end end  さらにデプロイ時にその設定ファイルをコピーしたい時には下記のように．
+set :config_files, %w(database.yml environment.rb environments/production.rb) after &quot;deploy:update_code&quot;, :role =&gt; [:app] do config_files.each do |file| try_sudo &quot;cp #{shared_path/config/#{file} #{release_path}/config/#{file}&quot; end end  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/06/10/google-Google-Developers-Day-2009/">Google Developers Day 2009に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/06/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  基調講演は飛ばして午後から参加．android携帯もらえました．これが目的と言っても過言ではない．
+##App Engine
+ Fred Sauer @fredsa いかに scale out するかということについて，データベース的な話
+ list properties
+ storage overhead を回避するために使う(?) CPU を使う -&gt; serializing/desirializing order はプロパティが1つだけの時に使える ex) Microblogging 要するに twitter Fan-out  投稿が他の人の timeline に現れるってことか？  RDBMS なら JOIN する Google App Engine なら  list properties を使う Bigtable で分散されている linear に scale するらしい 5000 indexed properties per entity ストレージ的にはRDBMSと同程度  それで scale するならすごいな   CPU cost 削減のために(serialization)  一般的な RDBMS のように，本文などのデータと，replatinship のみのインデックスデータに分割する MessageIndex から KEY のみを取得して，k.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/06/10/google-Google-Developers-Day-2009/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/06/08/ruby/">集合知勉強会@万葉</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/06/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  レコメンデーションエンジンを作る会 どうしようか考えながらの進行．ライブ感たっぷり！ 今回は中華屋ではなかった．チャーハン・・・・  しかし2杯目以降のビールはうまかった．   ##jugyo さんによる軽い説明
+ 背景  Cicindela の導入が面倒だったので，もっと手軽なものを Ruby で作りたいと思って  構想
+ Cicindela と似たような作りにする livedoor がオープンソースで公開している 簡単にインストール・運用も簡単に  Cicindela
+ アプリケーションでリコメンデーションしたいときに，サーバを立てればいいような感じ． サーバとは HTTP 通信でデータを送ればいいらしい．  「突き詰めると，こちらが買わせたいものを見せることがレコメンデーションエンジンになる」という話も
+  ##計画とか
+ とりあえずアプリケーションから呼び出して，リアルタイムで計算して，結果を返す  性能はあまり考えない． あとで考える．   ##協調フィルタリングの協議
+ 「あとで行く」というサービスを元に考えると，「ユーザ」と「場所」で考える．
+ 好きな食べ物リストで
+ 食べ物は   カレー 中華 焼き肉 いくら ホットドック スパゲッティ 獅子唐辛子 メロン  - ピアソン相関はできたっぽい． - あとで gist に上げる．   飲み物で  相関から一番近い人を探して，抜けている部分をピックアップすれば，それがレコメンドになる．   ##まとめ
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/06/08/ruby/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/06/02/tokyu-rb-ruby-Tokyu-rb-8/">Tokyu.rb#8に行ってきた，が・・・・</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/06/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  あまり Ruby の話してませんでした！むしろ某御大とかクリドラとか時代劇とかで熱く語って，カラオケでいろいろ熱唱してた記憶しかない．これはこれでいいのか．いや，いいのだ．
+と言うわけで，次は SICP 原書読書会の開催．ただしメンバーは決まっているので募集かけたりはしません．と言うか読書会ってそういうもんじゃないのかなと思ってたりもします．
+場所は，大田区のどこか or [id:littlestarling] さんのとこ or 某万葉 かなと思ってます． 初回は 6&frasl;13(土) か 6&frasl;14(日) の予定．Google Group とか作っとこうかな．
+さて，今日中に原書買わないと．．．．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/05/27/debian-Debian-6/">オレオレDebian サーバをセットアップする#6</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/05/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##目的と参考と過去ログ
+ http://d.hatena.ne.jp/conceal-rs/20090514/1242295818 http://d.hatena.ne.jp/conceal-rs/20090518/1242617005 http://d.hatena.ne.jp/conceal-rs/20090518/1242643016 http://d.hatena.ne.jp/conceal-rs/20090519/1242699858 http://d.hatena.ne.jp/conceal-rs/20090519/1242706919 http://d.hatena.ne.jp/conceal-rs/20090525/1243243424  ##Gem のパッケージを作る Rails 自体は REE に入っているので，その他の Gem パッケージを作ります．ファイルを設置するだけでいい場合は前に紹介した方法でいいのですが，build するようなものは作れません．
+なので checkinstall を使います．
+###checkinstall のインストール
+$ sudo apt-get install checkinstall  ###RMagick のパッケージ作成 まずは ImageMagick が必要なので，equivs の Depends に追加します．
+次に checkinstall を使って RMagick の deb パッケージを作ります．
+$ mkdir ~/source/gems $ cd ~/source/gems $ wget http://rubyforge.org/frs/download.php/56818/rmagick-2.9.2.gem $ sudo checkinstall -D /opt/ruby-enterprise/bin/gem install rmagick-2.9.2.gem ...snip... $ ls *.deb rmagick_2.9.2-1_i386.deb  いろいろ聞かれますが，適宜入力．
+###CD の作成 できあがった deb パッケージを所定のディレクトリに入れて，appserver.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/05/27/debian-Debian-6/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/05/25/debian-Debian-5/">オレオレDebian サーバをセットアップする#5</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/05/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##目的と参考
+ http://d.hatena.ne.jp/conceal-rs/20090514/1242295818 http://d.hatena.ne.jp/conceal-rs/20090518/1242617005 http://d.hatena.ne.jp/conceal-rs/20090518/1242643016 http://d.hatena.ne.jp/conceal-rs/20090519/1242699858 http://d.hatena.ne.jp/conceal-rs/20090519/1242706919  ##ディスクのパーティショニング ここを参考に調整．例えばこのように設定すると，
+ /boot に 50MB ～ 最大 100MB /home に 100MB ～ 最大 5GB /opt に 500MB ～ 空き全てまで拡大 / に 200MB ～ 最大 50GB swap に 64MB ～ 最大 8GB  のように割り当てできる．ディスク容量に応じて目一杯使ってくれます．
+##ネットワークの設定 debconf/priority を ciritical にするとホスト名指定のダイアログが出てこないので，例えば下記のように指定する．
+debconf debconf/priority select high d-i netcfg/get_hostname string sbox d-i netcfg/get_hostname seen false d-i netcfg/get_domain string stnard.jp  ##アカウントの追加設定 sudo をデフォルトで設定しておきたいので，ファイルツリーからのパッケージを作成してインストールするようにします．
+$ mkdir -p default-sudoers/etc $ mkdir default-sudoers/DEBIAN $ vim default-sudoers/DEBIAN/{postinst,prerm,control,compat} $ vim default-sudoers/etc/sudoers $ sudo -R chown root.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/05/25/debian-Debian-5/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/05/24/git-Git-3/">Git勉強会#3＠万葉</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/05/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今日は n-iwamatu さんが講師でコンフリクト大会！  ##あなたとコンフリクトしたい チーム分けしてコンフリクト合戦 ###チーム分け
+ Red Blue Green  green0 ですた．  Pink  ###コンフリクト合戦開始
+ コンフリクトしまくり．そしてバージョン管理できていない  各々が別個に conflict をマージしまくってるのが原因  どうすれば？  管理者を立てる 中央にリポジトリを立てる こちらでやっていく．  誰かが中央リポジトリを変更していたため，全員 push 失敗！  push -f で強制的にできるが，やってはいけない！  途中のコミットを変更できるが，それを中央リポジトリでやると，pull できない状況になってしまう．
+ rebase と pull と merge の違い
+ 自分のコミットがあって， origin/master に新たなコミットがある場合は，  git rebase は，リモートリポジトリ等を基準に，自分のコミットを再構成(re-base)する． git merge は，自分のコミットに，リモートリポジトリのコミットを上乗せする感じ． git pull は原則 merge ベース．ゆとり．&ndash;rebase オプションで，rebase する pull になる． pull 禁止！相手の修正のことを考えて，rebase することを心がける 順番が違う．どちらを基準とするかによって，使い分ける．  自分のコミットがないときは， pull で持ってくれば，新しいコミットを，単に持ってくるだけでいいはず． 間違えて pull した場合でも，git rebase すると，rebase した状態にしてくれる． rebase 最強． 中央リポジトリに近いほどマージがOKになる． 取り込む方が merge する感じ． 親がメインになので，親を基本と考えて rebase する．  相手を考えて行動することが重要というか，ちゃんと管理ポリシーを立ててやりましょうねと言うこと．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/05/24/git-Git-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/05/19/debian-Debian-3/">オレオレDebian サーバをセットアップする#3</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/05/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##目的と参考
+ http://d.hatena.ne.jp/conceal-rs/20090514/1242295818 http://d.hatena.ne.jp/conceal-rs/20090518/1242617005 http://d.hatena.ne.jp/conceal-rs/20090518/1242643016  ##もう一度 Simple-CDD を使ってみる実験 とりあえず再実行
+###preseed.cfgの編集 長いので省略．こんな感じ．
+###CDの作成のテスト
+$ mkdir ~/work/my-simple-cdd $ cd ~/work/my-simple-ccd $ build-simple-cdd  ###追加パッケージ これだけでは普通のインストールとあまり大差ないので，初期インストールするパッケージを追加してみます．
+$ cd ~/work/my-simple-ccd $ mkdir profiles $ cp ~/work/preseed.cfg profiles/mylenny.preseed $ for p in openssh-server build-essential postfix sudo; do echo $p &gt;&gt; profiles/mylenny.packages; done  ###CDの作成のテスト この状態でCDを作成してみます．
+$ build-simple-cdd --profiles mylenny  設定した preseed どおりに進むことを確認．
+###ローカルパッケージをダウンロード 次は Ruby Enterprise Edition は Ubuntu 用のパッケージ1を使います． 他にも追加したいところですが，実験なのでこれだけに．
+$ cd ~/source $ wget http://rubyforge.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/05/19/debian-Debian-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/05/19/debian-Debian-4/">オレオレDebian サーバをセットアップする#4</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/05/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##目的と参考
+ http://d.hatena.ne.jp/conceal-rs/20090514/1242295818 http://d.hatena.ne.jp/conceal-rs/20090518/1242617005 http://d.hatena.ne.jp/conceal-rs/20090518/1242643016 http://d.hatena.ne.jp/conceal-rs/20090519/1242699858  ##MySQL 5.1.34 をどうするか． とりあえず，http://www.dotdeb.org/ から持ってきて実行．
+###equivsを使ったメタパッケージの作成． MySQL 5.1.34 のテストをしたいので，データベースサーバのセットアップ用メタパッケージを作ってみます．
+$ equivs-control dbserver-setup $ vim dbserver-setup $ equivs-build dbserver-setup  内容はこんな感じ．
+###MySQL 5.1.34 のダウンロード． ここを mirror します．
+$ wget -m -np http://download.softagency.net/debian/dotdeb/dists/lenny/mysql-dfsg-5.1/ $ cp download.softagency.net/debian/dotdeb/dists/lenny/mysql-dfsg-5.1/binary-i386/* ~/source/debs  ###CDの作成．
+$ cd ~/my-simple-cdd $ cp profiles/mylenny.packages profiles/dbserver.packages $ echo &quot;dbserver-setup&quot; &gt;&gt; profiles/dbserver.packages $ cp profiles/mylenny.preseed profiles/dbserver.preseed $ build-simple-cdd --profiles dbserver --local-packages &quot;/home/ogawa/source/debs/&quot;  できあがった CD で，MySQL 5.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/05/19/debian-Debian-4/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/17/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;18 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/19/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

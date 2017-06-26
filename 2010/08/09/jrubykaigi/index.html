@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>JRubyKaigi前夜祭に行ってきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>JRubyKaigi前夜祭に行ってきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<h2 id="仕事で使うjruby-そこが知りたい技術-開発-案件の最新情報">仕事で使うJRuby! そこが知りたい技術・開発・案件の最新情報</h2>
+
+<ul>
+
+  <li>2010/08/05 19:00-</li>
+
+  <li>ジュンク堂 池袋本店</li>
+
+  <li>抽象エア社員として参戦</li>
+
+</ul>
+
+<h3 id="はじめに">はじめに</h3>
+
+<ul>
+
+  <li>自己紹介</li>
+
+  <ul>
+
+    <li>大場夫妻</li>
+
+    <li>橋本さん</li>
+
+    <li>中村さん(nahiさん)</li>
+
+    <ul>
+
+      <li>OpenSSLとかの人</li>
+
+    </ul>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="本を出した経緯">本を出した経緯</h3>
+
+<ul>
+
+  <li>大場さん</li>
+
+  <ul>
+
+    <li>原書は2007年に発刊</li>
+
+    <li>@takai さん経由で知らせてもらった</li>
+
+    <li>だいたい3部構成</li>
+
+    <ul>
+
+      <li>Rails を使いアプリを開発しながら、それとは気づかずにEEにはまる感じ</li>
+
+      <li>Java -> Ruby / Ruby -> Java の章がある</li>
+
+      <ul>
+
+        <li>黒魔術から白魔術まで</li>
+
+      </ul>
+
+<pre><code>&lt;/ul&gt;
+
+&lt;li&gt;原著作者に推薦文を書いてもらった！&lt;/li&gt;
+
+&lt;li&gt;みどころ&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;JRuby のリファレンスがある&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p><li>橋本さん</li></p>
+
+<p><ul></p>
+
+<pre><code>&lt;li&gt;DB Magazineでの連載&lt;/li&gt;
+
+&lt;li&gt;2部構成&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;後半にエンタープライズでRailsを使う上で注意すること&lt;/li&gt;
+
+  &lt;ul&gt;
+
+    &lt;li&gt;Javaシステムとの連携&lt;/li&gt;
+
+  &lt;/ul&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;Thomas Enebo に推薦文もらった！&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p><li>結論</li></p>
+
+<p><ul></p>
+
+<pre><code>&lt;li&gt;両方買うといいよ！&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p><li>総括 by nahi さん</li></p>
+
+<p><ul></p>
+
+<pre><code>&lt;li&gt;Olavini の本は入門として買うとかなりつらい&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;ただし細かい部分も書いてあるので、さらに進むにはいいのではないか。&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;橋本さんの方が入門としては良い&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="jruby-の魅力">JRuby の魅力</h3>
+
+<ul>
+
+  <li>大場さん</li>
+
+  <ul>
+
+    <li>好きなメソッド : to_java</li>
+
+    <ul>
+
+      <li>Ruby のオブジェクトを Java のオブジェクトにいい案配に変えてくれる黒魔術</li>
+
+    </ul>
+
+<p></ul></p>
+
+<p><li>橋本さん</li></p>
+
+<p><ul></p>
+
+<pre><code>&lt;li&gt;聞き逃したorz&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p><li>nahi さん</li></p>
+
+<p><ul></p>
+
+<pre><code>&lt;li&gt;JRuby の JIT コンパイラ&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="仕事で使えるか">仕事で使えるか</h3>
+
+<ul>
+
+  <li>橋本さん</li>
+
+  <ul>
+
+    <li>沖縄に幽閉されて地方自治体向けのシステムを作っていた</li>
+
+    <ul>
+
+      <li>Thomas らに用賀でたまたますれ違って、「使ってみてよ〜」と言われたので</li>
+
+    </ul>
+
+<pre><code>&lt;li&gt;Ruby でもあるから危なくなったら切り替えられる&lt;/li&gt;
+
+&lt;li&gt;1.2 のころだったので、かなりもっさりしていた&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;1.4, 1.5 で早くなった&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;Java の利点&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;SOAP のライブラリの運用などで便利だった&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="最近の-java-の動向">最近の Java の動向</h3>
+
+<ul>
+
+  <li>Java EE6 がでました</li>
+
+  <ul>
+
+    <li>アプリケーションサーバ用のAPI</li>
+
+    <ul>
+
+      <li>WebLogic とか</li>
+
+    </ul>
+
+<pre><code>&lt;li&gt;SOAP が大ブーム&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;Java のアプリケーションサーバがちゃんと SOAP 喋れるようになってきた&lt;/li&gt;
+
+  &lt;li&gt;REST 厨的には SOAP は滅んだと思ってたのに....&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="rails-の魅力">Rails の魅力</h3>
+
+<ul>
+
+  <li>最初に Rails が動くのを見たときは感動した</li>
+
+  <ul>
+
+    <li>Olavini が YAML の parser を書いて去っていった....</li>
+
+    <ul>
+
+      <li>4回もあったらしい</li>
+
+    </ul>
+
+<pre><code>&lt;li&gt;String を実装してあった&lt;/li&gt;
+
+&lt;li&gt;鬼車を Java で実装しある&lt;/li&gt;
+
+&lt;li&gt;CRuby に忠実&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;バグさえも&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;Rails 3.0 も対応している&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="jruby-を採用するには">JRuby を採用するには</h3>
+
+<ul>
+
+  <li>いつも JRuby と言い続けたので</li>
+
+  <ul>
+
+    <li>変更に強い部分とそうでない部分を切り分けてみたり</li>
+
+    <ul>
+
+      <li>Java で書く部分と Ruby で書く部分を分ける</li>
+
+    </ul>
+
+<pre><code>&lt;li&gt;インフラでは JRuby がいいんじゃないか&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;Windows サーバでは Java の方が有利&lt;/li&gt;
+
+  &lt;li&gt;クラスタリングなどやりやすいんじゃないか&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;ただしすべての利点を活用できる訳じゃないので、そこは注意すべき&lt;/li&gt;
+
+&lt;li&gt;地雷は根本的に避ける&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="xml-webサービス">XML &amp; Webサービス</h3>
+
+<ul>
+
+  <li>他社とつなぐのに堅くやるには Java の XML でやるのが利点</li>
+
+</ul>
+
+<h3 id="jms">JMS</h3>
+
+<ul>
+
+  <li>非同期通信のためにメッセージングキューの、標準化されたAPI</li>
+
+</ul>
+
+<h3 id="jruby-kaigi-2010">JRuby Kaigi 2010</h3>
+
+<ul>
+
+  <li>2010/08/28 に Ruby Kaigi 2010 内で開催</li>
+
+  <ul>
+
+    <li>JRuby Pony Show</li>
+
+    <ul>
+
+      <li>JRuby の現状と今後を JRuby の開発者が話します</li>
+
+      <li>9月に1.6が出るらしい</li>
+
+      <li>Android / GAE</li>
+
+    </ul>
+
+<pre><code>&lt;li&gt;RedBridge で Java -&gt; Ruby を&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;原田さん&lt;/li&gt;
+
+  &lt;ul&gt;
+
+    &lt;li&gt;Java アプリで Ruby を活用したい&lt;/li&gt;
+
+  &lt;/ul&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;JRuby on GAE/J のノウハウ&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;13個の TIPS&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;JRuby on Rails の力を JavaEE 技術を使ってさらに高める 10 の方法&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;本に書けなかったことを書きます&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;Ruby と DSL で MapReduce - Hadoop-papyrus&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;JRuby 上で Ruby で書いてしまえ&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;JRuby ソースコード詳説&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;JRuby のソースコードのどこに何があるかを示して、デバッグしやすいように解説します&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;li&gt;LT募集&lt;/li&gt;
+
+&lt;li&gt;Tシャツ購入募集&lt;/li&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;ファイナンシャルサポートも混みで 4000 円&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></ul></p>
+
+<h3 id="最後に">最後に</h3>
+
+<ul>
+
+  <li>JRuby 1.5 on Rails 2.3.x という安定していく環境の入門本を是非買いましょう</li>
+
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/08/09/jrubykaigi/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/07/27/nosqlkvs-nosql/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/07/27/nosqlkvs-nosql/">「ソーシャルアプリでNoSQL(あるいはKVS) 〜実践NoSQL〜」に行ってきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/08/26/rubykaigi-2010jpmobile-on-rails-3-0/">RubyKaigi 2010にて「jpmobile on Rails 3.0」という題名で発表してきます</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/08/26/rubykaigi-2010jpmobile-on-rails-3-0/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

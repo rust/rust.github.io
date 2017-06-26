@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Posts &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/post/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/post/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Posts</h1>
+</div>
+<div class="content">
+  
+  <h2>2017</h2>
+  <ul>
+  
+    <li><time>2017/06/01</time> - <a href="http://stnard.jp/2017/06/01/move-to-medium">Mediumに移転してみる</a></li>
+
+  
+    <li><time>2017/05/08</time> - <a href="http://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort">技術力は才能？努力？〜「超一流になるのは才能か努力か?」</a></li>
+
+  
+    <li><time>2017/05/01</time> - <a href="http://stnard.jp/2017/03/02/importance-to-make-engineer-carrer">キャリア形成の重要性〜『その「エンジニア採用」が不幸を生む』を読んだ</a></li>
+
+  
+    <li><time>2017/03/24</time> - <a href="http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer">優秀なエンジニアとは？採用の難しさ</a></li>
+
+  
+    <li><time>2017/03/02</time> - <a href="http://stnard.jp/2017/03/02/shift-authy">ShiftとAuthyが便利</a></li>
+
+  
+    <li><time>2017/02/09</time> - <a href="http://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop">jpmobileにCircleCIとonkcopを入れた</a></li>
+
+  
+    <li><time>2017/01/23</time> - <a href="http://stnard.jp/2017/01/23/cookpad-tech-conf-2017">Cookpad TechConf 2017に参加してきた</a></li>
+
+  
+    <li><time>2017/01/20</time> - <a href="http://stnard.jp/2017/01/20/basic-theory-of-management">待遇よりも重要なことはあるか - マネジメントの基礎理論を読んだ</a></li>
+
+  
+    <li><time>2017/01/12</time> - <a href="http://stnard.jp/2017/01/12/hobby-pc-history">ホピーパソコン興亡史を読んだ</a></li>
+
+  
+    <li><time>2017/01/04</time> - <a href="http://stnard.jp/2017/01/04/hackers-and-painters">ハッカーと画家を読んで</a></li>
+
+  
+  </ul>
+  
+  <h2>2016</h2>
+  <ul>
+  
+    <li><time>2016/12/31</time> - <a href="http://stnard.jp/2016/12/16/look-back-2016">2016の振り返り</a></li>
+
+  
+    <li><time>2016/12/16</time> - <a href="http://stnard.jp/2016/12/16/emotional-labor-syndrome">感情労働シンドローム</a></li>
+
+  
+    <li><time>2016/10/11</time> - <a href="http://stnard.jp/2016/10/11/build-llc/">合同会社を作ってみました</a></li>
+
+  
+    <li><time>2016/10/01</time> - <a href="http://stnard.jp/2016/10/01/resigned-from-cookpad/">クックパッドを退職しました</a></li>
+
+  
+    <li><time>2016/08/30</time> - <a href="http://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/">Microsoft Sculpt Ergonomic Keyboardを買ってみた</a></li>
+
+  
+    <li><time>2016/07/23</time> - <a href="http://stnard.jp/2016/07/23/consumer-game-machine-wars/">家庭用ゲーム機興亡史</a></li>
+
+  
+    <li><time>2016/07/16</time> - <a href="http://stnard.jp/2016/07/16/usergroup-ids-in-docker-run/">User/Group ids in Docker run</a></li>
+
+  
+    <li><time>2016/07/16</time> - <a href="http://stnard.jp/2016/07/16/thinkpad-x220/">Thinkpad X220</a></li>
+
+  
+    <li><time>2016/07/09</time> - <a href="http://stnard.jp/2016/07/09/birthdays-resolution/">誕生日の抱負</a></li>
+
+  
+  </ul>
+  
+  <h2>2014</h2>
+  <ul>
+  
+    <li><time>2014/09/13</time> - <a href="http://stnard.jp/2014/09/13/RubyKaigi2014/">RubyKaigi 2014に参加してきた</a></li>
+
+  
+    <li><time>2014/03/31</time> - <a href="http://stnard.jp/2014/03/31/TokyuRubyKaigi07/">TokyuRubyKaig07を開催してきた</a></li>
+
+  
+  </ul>
+  
+  <h2>2013</h2>
+  <ul>
+  
+    <li><time>2013/07/06</time> - <a href="http://stnard.jp/2013/07/06/tokyurubykaigi06/">TokyuRubyKaigi06を開催してきた</a></li>
+
+  
+    <li><time>2013/02/10</time> - <a href="http://stnard.jp/2013/02/10/tkrk10-final/">東京Ruby会議10 Finalの実行委員と司会をやってきた</a></li>
+
+  
+    <li><time>2013/01/15</time> - <a href="http://stnard.jp/2013/01/15/tokyo-ruby-kaigi-10/">東京Ruby会議10で実行委員と司会をやってきた</a></li>
+
+  
+  </ul>
+  
+  <h2>2012</h2>
+  <ul>
+  
+    <li><time>2012/12/12</time> - <a href="http://stnard.jp/2012/12/12/jimoto-ruby-kaigi/">地元Ruby会議について</a></li>
+
+  
+    <li><time>2012/09/24</time> - <a href="http://stnard.jp/2012/09/24/after-we-code/">After &#34;We Code&#34;, what should I do?</a></li>
+
+  
+    <li><time>2012/09/19</time> - <a href="http://stnard.jp/2012/09/19/tokyurubykaigi-05/">TokyuRubyKaigi 05を開催してきた</a></li>
+
+  
+    <li><time>2012/09/18</time> - <a href="http://stnard.jp/2012/09/18/after-sappororubykaigi-2012/">札幌Ruby会議2012に参加してきて</a></li>
+
+  
+    <li><time>2012/06/04</time> - <a href="http://stnard.jp/2012/06/04/minato-rubykaigi/">みなとRuby会議01に参加してきた</a></li>
+
+  
+    <li><time>2012/04/23</time> - <a href="http://stnard.jp/2012/04/23/git/">Git道場を開催してきた</a></li>
+
+  
+    <li><time>2012/03/23</time> - <a href="http://stnard.jp/2012/03/23/rubyruby/">&#34;仕事でRubyを始める人たちへ−私がRubyを始めた理由（ワケ）−&#34; で話をしてきた</a></li>
+
+  
+    <li><time>2012/03/19</time> - <a href="http://stnard.jp/2012/03/19/ruby/">トークセッション「仕事でRubyを始める人たちへ−私がRubyを始めた理由（ワケ）−」に出ることになりました</a></li>
+
+  
+    <li><time>2012/02/13</time> - <a href="http://stnard.jp/2012/02/13/jpmobile/">jpmobileの本書きました</a></li>
+
+  
+  </ul>
+  
+  <h2>2011</h2>
+  <ul>
+  
+    <li><time>2011/12/30</time> - <a href="http://stnard.jp/2011/12/30/2011/">2011年の振り返り</a></li>
+
+  
+    <li><time>2011/11/15</time> - <a href="http://stnard.jp/2011/11/15/physics/">物理勉強会に参加することにした</a></li>
+
+  
+    <li><time>2011/10/31</time> - <a href="http://stnard.jp/2011/10/31/tokyurubykaig04/">TokyuRubyKaig04を開催してきた</a></li>
+
+  
+    <li><time>2011/10/09</time> - <a href="http://stnard.jp/2011/10/09/git/">Gitの本を書きました</a></li>
+
+  
+    <li><time>2011/07/29</time> - <a href="http://stnard.jp/2011/07/29/rubykaigitokyurubykaigi/">RubyKaigiとかTokyuRubyKaigiとか</a></li>
+
+  
+    <li><time>2011/07/19</time> - <a href="http://stnard.jp/2011/07/19/rubykaigi-2011/">RubyKaigi 2011で発表してきた</a></li>
+
+  
+    <li><time>2011/06/01</time> - <a href="http://stnard.jp/2011/06/01/tokyurubykaigi03/">TokyuRubyKaigi03を開催してきました</a></li>
+
+  
+    <li><time>2011/05/13</time> - <a href="http://stnard.jp/2011/05/13/web-operations/">ウェブオペレーション - ウェブサイト・サービス運用してるなら読むべき</a></li>
+
+  
+    <li><time>2011/05/10</time> - <a href="http://stnard.jp/2011/05/10/management/">そもそもマネジメントとは何か - マネジメント - 基本と原則 [エッセンシャル版]</a></li>
+
+  
+    <li><time>2011/04/18</time> - <a href="http://stnard.jp/2011/04/18/what-is-justice/">考察力を身につけるための書籍〜これからの「正義」の話をしよう—いまを生き延びるための哲学〜</a></li>
+
+  
+    <li><time>2011/04/05</time> - <a href="http://stnard.jp/2011/04/05/rubykaigi-2011jpmobile/">RubyKaigi 2011でjpmobileの話をします</a></li>
+
+  
+    <li><time>2011/03/10</time> - <a href="http://stnard.jp/2011/03/10/ssl/">SSLの自己証明書の発行覚書</a></li>
+
+  
+    <li><time>2011/02/17</time> - <a href="http://stnard.jp/2011/02/17/small-business/">はじめの一歩を踏み出そう〜起業家でなくとも読むべき書籍〜</a></li>
+
+  
+    <li><time>2011/02/14</time> - <a href="http://stnard.jp/2011/02/14/freesoftware/">フリーソフトウェアと自由な社会 ーエンジニア必読の書ー</a></li>
+
+  
+    <li><time>2011/02/02</time> - <a href="http://stnard.jp/2011/02/02/job-moving/">転職活動のススメ</a></li>
+
+  
+    <li><time>2011/01/28</time> - <a href="http://stnard.jp/2011/01/28/97-tips-for-programmer/">未来の自分に対する問いかけ −プログラマが知るべき97のこと−</a></li>
+
+  
+    <li><time>2011/01/13</time> - <a href="http://stnard.jp/2011/01/13/dti-vpscentos-5-5nginx-0-8-53/">DTI VPS(CentOS 5.5)でnginx-0.8.53が動かない場合の対処</a></li>
+
+  
+    <li><time>2011/01/05</time> - <a href="http://stnard.jp/2011/01/05/rubydebian/">RubyとDebianとコミュニティとか</a></li>
+
+  
+    <li><time>2011/01/01</time> - <a href="http://stnard.jp/2011/01/01/20112010/">2011年の展望と2010年の振り返り</a></li>
+
+  
+  </ul>
+  
+  <h2>2010</h2>
+  <ul>
+  
+    <li><time>2010/12/07</time> - <a href="http://stnard.jp/2010/12/07/ruby03/">札幌Ruby会議03に参加してきた</a></li>
+
+  
+    <li><time>2010/11/22</time> - <a href="http://stnard.jp/2010/11/22/railsdevcon2010/">RailsDevCon2010を開催しました！</a></li>
+
+  
+    <li><time>2010/11/08</time> - <a href="http://stnard.jp/2010/11/08/nosql-afternoon-japan-in-rakuten/">NOSQL AFTERNOON JAPAN in Rakuten</a></li>
+
+  
+    <li><time>2010/11/05</time> - <a href="http://stnard.jp/2010/11/05/emacsscim-skk/">emacsでscim-skkを使わない方法</a></li>
+
+  
+    <li><time>2010/10/25</time> - <a href="http://stnard.jp/2010/10/25/zshgit-stash-list/">zshのプロンプトにgit stash listの数を表示する</a></li>
+
+  
+    <li><time>2010/09/22</time> - <a href="http://stnard.jp/2010/09/22/mongodb-on-debian-5-0lenny-/">MongoDB on Debian 5.0(Lenny) のインストール</a></li>
+
+  
+    <li><time>2010/09/14</time> - <a href="http://stnard.jp/2010/09/14/rails-3-0-rspec-2-0--response-should-redirect_to-/">Rails 3.0 &#43; RSpec 2.0 で response.should redirect_to の不具合</a></li>
+
+  
+    <li><time>2010/09/06</time> - <a href="http://stnard.jp/2010/09/06/-by-/">不満があるなら自分を変えろ by 少佐</a></li>
+
+  
+    <li><time>2010/09/04</time> - <a href="http://stnard.jp/2010/09/04/rubykaigi/">RubyKaigiついて思うこと</a></li>
+
+  
+    <li><time>2010/08/31</time> - <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-3rd-day/">RubyKaigi 2010 3rd day</a></li>
+
+  
+    <li><time>2010/08/31</time> - <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-2nd-day/">RubyKaigi 2010 2nd day</a></li>
+
+  
+    <li><time>2010/08/31</time> - <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-1st-day/">RubyKaigi 2010 1st day</a></li>
+
+  
+    <li><time>2010/08/28</time> - <a href="http://stnard.jp/2010/08/28/jpmobile-on-rails-3-0-in-rubykaigi-2010/">jpmobile on Rails 3.0 in RubyKaigi 2010</a></li>
+
+  
+    <li><time>2010/08/26</time> - <a href="http://stnard.jp/2010/08/26/rubykaigi-2010jpmobile-on-rails-3-0/">RubyKaigi 2010にて「jpmobile on Rails 3.0」という題名で発表してきます</a></li>
+
+  
+    <li><time>2010/08/09</time> - <a href="http://stnard.jp/2010/08/09/jrubykaigi/">JRubyKaigi前夜祭に行ってきた</a></li>
+
+  
+    <li><time>2010/07/27</time> - <a href="http://stnard.jp/2010/07/27/nosqlkvs-nosql/">「ソーシャルアプリでNoSQL(あるいはKVS) 〜実践NoSQL〜」に行ってきた</a></li>
+
+  
+    <li><time>2010/07/22</time> - <a href="http://stnard.jp/2010/07/22/toeic/">TOEICを受けてきたの巻</a></li>
+
+  
+    <li><time>2010/07/12</time> - <a href="http://stnard.jp/2010/07/12/accountings/">技術者はもっと説明責任を果たすべき</a></li>
+
+  
+    <li><time>2010/07/11</time> - <a href="http://stnard.jp/2010/07/11/to-overcome/">自分に負けないために</a></li>
+
+  
+    <li><time>2010/07/09</time> - <a href="http://stnard.jp/2010/07/09/mathematics-for-engineer/">「エンジニアのための数学・物理勉強会」など開催したい</a></li>
+
+  
+    <li><time>2010/07/08</time> - <a href="http://stnard.jp/2010/07/08/music-changes-my-feeling/">音楽で気分を変えてみる</a></li>
+
+  
+    <li><time>2010/06/28</time> - <a href="http://stnard.jp/2010/06/28/sinatra-with-jpmobile/">Sinatra with jpmobile</a></li>
+
+  
+    <li><time>2010/06/16</time> - <a href="http://stnard.jp/2010/06/16/-from-mysql-performance-blog/">JOIN使うときに気をつけること from MySQL Performance Blog</a></li>
+
+  
+    <li><time>2010/06/16</time> - <a href="http://stnard.jp/2010/06/16/innodb/">InnoDBテーブルでインデックスを拡張するとパフォーマンスが落ちるかも from MySQL Performance Blog</a></li>
+
+  
+    <li><time>2010/06/11</time> - <a href="http://stnard.jp/2010/06/11/dvd/">懐古主義と言われようとも - 王様のレストランとラビリンス</a></li>
+
+  
+    <li><time>2010/06/08</time> - <a href="http://stnard.jp/2010/06/08/emacs-23-2-with-shift-ime-patch-on-mac-os-x/">Emacs 23.2 with Shift IME patch on Mac OS X</a></li>
+
+  
+    <li><time>2010/06/07</time> - <a href="http://stnard.jp/2010/06/07/mathematics-text-reading/">「数学 — 物理を学び楽しむために —」の読書会的な何かをやってみたい</a></li>
+
+  
+    <li><time>2010/05/31</time> - <a href="http://stnard.jp/2010/05/31/tokyurubykaigi02/">TokyuRubyKaigi02を開催してきた</a></li>
+
+  
+    <li><time>2010/05/29</time> - <a href="http://stnard.jp/2010/05/29/tokyurubykaigi02/">今日はTokyuRubyKaigi02です！</a></li>
+
+  
+    <li><time>2010/05/23</time> - <a href="http://stnard.jp/2010/05/23/zabbixvpsdti-vps/">ZabbixでVPSのメモリを監視するには＠DTI-VPS</a></li>
+
+  
+    <li><time>2010/05/21</time> - <a href="http://stnard.jp/2010/05/21/zshrvmruby/">zshのプロンプトにrvmのRubyを表示する</a></li>
+
+  
+    <li><time>2010/05/20</time> - <a href="http://stnard.jp/2010/05/20/rvmruby/">rvmで拡張ライブラリを複数のRubyにインストールする方法</a></li>
+
+  
+    <li><time>2010/05/20</time> - <a href="http://stnard.jp/2010/05/20/emacs-23-2-on-mac-os-x/">Emacs 23.2 on Mac OS X</a></li>
+
+  
+    <li><time>2010/05/19</time> - <a href="http://stnard.jp/2010/05/19/57-/">ツイッター仕事で役立つ即効ワザ57 - これからの人の入門書</a></li>
+
+  
+    <li><time>2010/05/17</time> - <a href="http://stnard.jp/2010/05/17/tokyurubykaigi02/">TokyuRubyKaigi02参加者募集中！</a></li>
+
+  
+    <li><time>2010/05/17</time> - <a href="http://stnard.jp/2010/05/17/netgenesis-superopt100e-/">NetGenesis SuperOPT100E - 複数台接続ならちゃんとしたルータを</a></li>
+
+  
+    <li><time>2010/05/13</time> - <a href="http://stnard.jp/2010/05/13/wordpress-on-nginx-with-fastcgicentos/">WordPress on nginx with FastCGIのCentOSの場合</a></li>
+
+  
+    <li><time>2010/05/13</time> - <a href="http://stnard.jp/2010/05/13/rubymysql-/">RubyのMySQLドライバを見る - アクティブチェック問題</a></li>
+
+  
+    <li><time>2010/05/11</time> - <a href="http://stnard.jp/2010/05/11/activerecord/">ActiveRecordでの接続チェックはどこでやっているのか</a></li>
+
+  
+    <li><time>2010/05/07</time> - <a href="http://stnard.jp/2010/05/07/checking-for-a-live-database-connection-considered-harmful/">データベースアクティブチェックは負荷を上昇させるだけ</a></li>
+
+  
+    <li><time>2010/05/05</time> - <a href="http://stnard.jp/2010/05/05/infinty-loop-in-my-brain/">脳内ループ中</a></li>
+
+  
+    <li><time>2010/04/29</time> - <a href="http://stnard.jp/2010/04/29/dtiserversmanvps-standard/">DTIのServersMan@VPS Standardプランで最初にやったこと</a></li>
+
+  
+    <li><time>2010/04/27</time> - <a href="http://stnard.jp/2010/04/27/rails-ruby-on-rails/">Railsで携帯サイトを作るには - Ruby on Rails携帯サイト開発技法</a></li>
+
+  
+    <li><time>2010/04/26</time> - <a href="http://stnard.jp/2010/04/26/flush-tables-with-read-lock/">FLUSH TABLES WITH READ LOCKの速度について</a></li>
+
+  
+    <li><time>2010/04/23</time> - <a href="http://stnard.jp/2010/04/23/railsmysqlmediumblob/">RailsでMySQLのMEDIUMBLOBを使いたいとき</a></li>
+
+  
+    <li><time>2010/04/23</time> - <a href="http://stnard.jp/2010/04/23/gdd-phonecomplete-eclairrom/">GDD PhoneにComplete EclairというROMを入れてみた</a></li>
+
+  
+    <li><time>2010/04/21</time> - <a href="http://stnard.jp/2010/04/21/tdiaryrails/">tdiaryやRailsにしなかった理由</a></li>
+
+  
+    <li><time>2010/04/20</time> - <a href="http://stnard.jp/2010/04/20/x68k/">フェルガナの誓いと言うよりx68kサントラのために</a></li>
+
+  
+    <li><time>2010/04/20</time> - <a href="http://stnard.jp/2010/04/20/wordpress-on-nginx-with-fastcgi/">WordPress on nginx with FastCGIに移行してみた</a></li>
+
+  
+    <li><time>2010/04/20</time> - <a href="http://stnard.jp/2010/04/20/tokyuruby02-lt/">TokyuRuby会議02 LT発表者募集中</a></li>
+
+  
+    <li><time>2010/04/19</time> - <a href="http://stnard.jp/2010/04/19/notitle/">はてなダイアリーから移行します</a></li>
+
+  
+    <li><time>2010/04/18</time> - <a href="http://stnard.jp/2010/04/18/engineer-ceo-is-good/">技術者経営者がいいかどうか</a></li>
+
+  
+    <li><time>2010/04/16</time> - <a href="http://stnard.jp/2010/04/16/wp-emacs-emacswordpress/">wp-emacs - EmacsでWordPressの記事を書く</a></li>
+
+  
+    <li><time>2010/04/16</time> - <a href="http://stnard.jp/2010/04/16/sleep-cycle-/">Sleep Cycle - 睡眠周期にあわせて起こしてくれる目覚まし時計</a></li>
+
+  
+    <li><time>2010/04/14</time> - <a href="http://stnard.jp/2010/04/14/24/">エクセル・サーガ24巻</a></li>
+
+  
+    <li><time>2010/04/14</time> - <a href="http://stnard.jp/2010/04/14/cbnet-ping-optimizer-wordpressping/">cbnet Ping Optimizer - WordPressのPing送信プラグイン</a></li>
+
+  
+    <li><time>2010/04/13</time> - <a href="http://stnard.jp/2010/04/13/wordpress/">WordPressをインストールしてまず最初にやったこと</a></li>
+
+  
+    <li><time>2010/04/12</time> - <a href="http://stnard.jp/2010/04/12/what-should-I-do/">勉強会にあえて行かないと言うこと</a></li>
+
+  
+    <li><time>2010/04/12</time> - <a href="http://stnard.jp/2010/04/12/twitter-updates-for-2010-04-29/">Twitter Updates for 2010-04-29</a></li>
+
+  
+    <li><time>2010/04/11</time> - <a href="http://stnard.jp/2010/04/11/wordpress-settings/">いろいろ設定中</a></li>
+
+  
+    <li><time>2010/04/10</time> - <a href="http://stnard.jp/2010/04/10/wordpress/">WordPressに移行</a></li>
+
+  
+    <li><time>2010/03/21</time> - <a href="http://stnard.jp/2010/03/21/regionalrubykaigi-rubykaigi-Ruby-02/">仙台Ruby会議02に行ってきた</a></li>
+
+  
+    <li><time>2010/03/16</time> - <a href="http://stnard.jp/2010/03/16/Lifestyle/">自分の新たなスタートを感じた読了後(情熱プログラマー)</a></li>
+
+  
+    <li><time>2010/03/09</time> - <a href="http://stnard.jp/2010/03/09/git-Git-2/">実用Git - 2冊目に読む本</a></li>
+
+  
+    <li><time>2010/03/09</time> - <a href="http://stnard.jp/2010/03/09/scala-java-Java/">Java未経験者によるコップ本読書会(仮)</a></li>
+
+  
+    <li><time>2010/03/01</time> - <a href="http://stnard.jp/2010/03/01/ruby-tokyorubykaigi03-rubykaigi-jpmobile-Ruby-03/">東京Ruby会議03 に行ってきた</a></li>
+
+  
+    <li><time>2010/01/27</time> - <a href="http://stnard.jp/2010/01/27/notitle/">エンジニアのための本気で物理を勉強する会(仮)</a></li>
+
+  
+    <li><time>2010/01/27</time> - <a href="http://stnard.jp/2010/01/27/ruby-rails-git-git/">git で空ディレクトリを追加するには</a></li>
+
+  
+    <li><time>2010/01/20</time> - <a href="http://stnard.jp/2010/01/20/debian-lsyncd-lsyncd-rsync-on-Debian-lenny/">lsyncd &#43; rsync on Debian(lenny) でらくらく同期</a></li>
+
+  
+    <li><time>2010/01/19</time> - <a href="http://stnard.jp/2010/01/19/kvs-kumofs-kumofs-KVM-Debian-lenny/">kumofs を KVM 上の Debian(lenny) にインストールして動かすまで</a></li>
+
+  
+    <li><time>2010/01/18</time> - <a href="http://stnard.jp/2010/01/18/ruby-rails-thin-on-Debian/">thin の自動起動スクリプト on Debian</a></li>
+
+  
+    <li><time>2010/01/15</time> - <a href="http://stnard.jp/2010/01/15/rails-ruby-jpmobile-Asakusa-rb-jpmobile-01/">浅草jpmobile会議01</a></li>
+
+  
+    <li><time>2010/01/04</time> - <a href="http://stnard.jp/2010/01/04/ruby-rails-tokyu-rb-2009-2010/">2009年のふりかえりと2010年を迎えて</a></li>
+
+  
+  </ul>
+  
+  <h2>2009</h2>
+  <ul>
+  
+    <li><time>2009/12/23</time> - <a href="http://stnard.jp/2009/12/23/ruby-rails-Rails-46-Ruby/">Rails 勉強会＠東京 第46回と東京Ruby忘年会に行ってきた</a></li>
+
+  
+    <li><time>2009/12/08</time> - <a href="http://stnard.jp/2009/12/08/jpmobile-rails-ruby-http-jp-rubyist-net-magazine-0028-JpMobile-title/">Rubyist Magazine - jpmobile &#43; Rails 2.3.4 で作る携帯サイト入門 【前編】での補足</a></li>
+
+  
+    <li><time>2009/12/06</time> - <a href="http://stnard.jp/2009/12/06/ruby-sapporo-regionalrubykaigi-Ruby-02/">札幌Ruby会議02に行ってきた！</a></li>
+
+  
+    <li><time>2009/12/05</time> - <a href="http://stnard.jp/2009/12/05/ruby-rails-jpmobile-jpmobile-02-in/">jpmobile 会議02 in 札幌</a></li>
+
+  
+    <li><time>2009/12/04</time> - <a href="http://stnard.jp/2009/12/04/ruby-rails-Rails/">トークセッション「中と外から見た Rails」に行ってきた</a></li>
+
+  
+    <li><time>2009/11/30</time> - <a href="http://stnard.jp/2009/11/30/Tokyu-rb-ruby-tokyurubykaigi01-TokyuRuby-01/">TokyuRuby会議01を開催してきた！</a></li>
+
+  
+    <li><time>2009/11/26</time> - <a href="http://stnard.jp/2009/11/26/termtter-ruby-debian-TermtterOS-termtter/">TermtterOS であなたも termtter 生活を！</a></li>
+
+  
+    <li><time>2009/11/22</time> - <a href="http://stnard.jp/2009/11/22/gree-ost-http-labs-gree-jp-Top-Study-20091120-html-title-GREE-19/">GREE オープンソーステクノロジー勉強会#19に行ってきた．</a></li>
+
+  
+    <li><time>2009/11/19</time> - <a href="http://stnard.jp/2009/11/19/Tokyu-rb-rails-ruby-Tokyu-rb-01/">Tokyu.rb勉強会#01</a></li>
+
+  
+    <li><time>2009/11/13</time> - <a href="http://stnard.jp/2009/11/13/notitle/">そろそろネットとリアルの差別化は止めないか</a></li>
+
+  
+    <li><time>2009/11/02</time> - <a href="http://stnard.jp/2009/11/02/osc-Tokyu-rb-ruby-OSC-2009-Tokyo-Fall/">OSC 2009 Tokyo/Fall に展示ブースで参加してきた</a></li>
+
+  
+    <li><time>2009/10/26</time> - <a href="http://stnard.jp/2009/10/26/linux-tips-multital-development-log/">multital で development.log を色つきで表示</a></li>
+
+  
+    <li><time>2009/10/26</time> - <a href="http://stnard.jp/2009/10/26/git-Git-Git/">Git を知る最初の書籍としてオススメな「入門Git」</a></li>
+
+  
+    <li><time>2009/10/22</time> - <a href="http://stnard.jp/2009/10/22/rails-ruby-ActionController-Routing/">ActionController::Routing での不思議な挙動</a></li>
+
+  
+    <li><time>2009/10/20</time> - <a href="http://stnard.jp/2009/10/20/ruby-jruby-rails-Rails-JRuby/">既存の Rails アプリを JRuby で動かす</a></li>
+
+  
+    <li><time>2009/10/19</time> - <a href="http://stnard.jp/2009/10/19/rails-ruby-railstokyo-Rails-44/">Rails勉強会＠東京第44回</a></li>
+
+  
+    <li><time>2009/10/14</time> - <a href="http://stnard.jp/2009/10/14/livedoor-asin-4797354364-title/">4Gbpsを超えるWebサービス構築術を読んだ</a></li>
+
+  
+    <li><time>2009/10/09</time> - <a href="http://stnard.jp/2009/10/09/rails-ruby-Rails/">Rails でログを出力させるときの注意点</a></li>
+
+  
+    <li><time>2009/10/06</time> - <a href="http://stnard.jp/2009/10/06/ruby-rails-TokyuRuby-LT/">TokyuRuby会議 LT発表者募集中</a></li>
+
+  
+    <li><time>2009/10/01</time> - <a href="http://stnard.jp/2009/10/01/debian-tokyocabinet-TokyoCabinet-TokyoTyrant-Debian-lenny/">TokyoCabinet/TokyoTyrant を Debian (lenny) へインストール</a></li>
+
+  
+    <li><time>2009/09/30</time> - <a href="http://stnard.jp/2009/09/30/emacs-Emacs-01/">五反田Emacs#01に行ってきた</a></li>
+
+  
+    <li><time>2009/09/27</time> - <a href="http://stnard.jp/2009/09/27/bpstudy-mysql-bpstudy-25/">bpstudy#25に行ってきた</a></li>
+
+  
+    <li><time>2009/09/17</time> - <a href="http://stnard.jp/2009/09/17/debian-56-Debian/">第56回東京エリアDebian勉強会に行ってきた</a></li>
+
+  
+    <li><time>2009/09/17</time> - <a href="http://stnard.jp/2009/09/17/ruby-mac-Ruby-Mac-OS-X/">RubyによるMac OS Xデスクトップアプリケーション開発入門：無料プレゼント企画</a></li>
+
+  
+    <li><time>2009/09/10</time> - <a href="http://stnard.jp/2009/09/10/rails-Rails-2-3/">Rails 2.3以降でのセッションの設定場所</a></li>
+
+  
+    <li><time>2009/09/07</time> - <a href="http://stnard.jp/2009/09/07/debian-GPG-4096-bit/">GPG 鍵を 4096 bit に更新した</a></li>
+
+  
+    <li><time>2009/08/31</time> - <a href="http://stnard.jp/2009/08/31/ruby-Ubuntu-8-04-2-Ruby-capistrano/">Ubuntu 8.04.2 の Ruby で capistrano が動かない場合の対処</a></li>
+
+  
+    <li><time>2009/08/27</time> - <a href="http://stnard.jp/2009/08/27/debian-Lenny-on-amd64-Firefox-3-5/">Lenny on amd64 に Firefox 3.5 を入れる方法</a></li>
+
+  
+    <li><time>2009/08/26</time> - <a href="http://stnard.jp/2009/08/26/ruby-Mitaka-rb-04/">Mitaka.rb#04 に行ってきた！</a></li>
+
+  
+    <li><time>2009/08/25</time> - <a href="http://stnard.jp/2009/08/25/emacs-hatena-mode/">hatena-mode の調整</a></li>
+
+  
+    <li><time>2009/08/24</time> - <a href="http://stnard.jp/2009/08/24/debian-amd64-i386-chroot/">amd64 環境下で i386 環境を chroot で構築する</a></li>
+
+  
+    <li><time>2009/08/24</time> - <a href="http://stnard.jp/2009/08/24/tokyu-rb-Tokyu-rb-10/">Tokyu.rb#10に行ってきた((傍観モード))</a></li>
+
+  
+    <li><time>2009/08/18</time> - <a href="http://stnard.jp/2009/08/18/Ruby-rails-TIPS-Rails/">バッドノウハウ：Railsで他のアプリケーションとセッションを共有するために</a></li>
+
+  
+    <li><time>2009/08/14</time> - <a href="http://stnard.jp/2009/08/14/notitle/">はてなブロガーの本まとめて欲しい！</a></li>
+
+  
+    <li><time>2009/08/08</time> - <a href="http://stnard.jp/2009/08/08/mysql-http-labs-gree-jp-Top-Study-20090807-Report-html-title-GREE-18-MySQL/">GREE オープンソース勉強会 第18回 MySQLハッキングの手引きに行ってきた</a></li>
+
+  
+    <li><time>2009/07/23</time> - <a href="http://stnard.jp/2009/07/23/iphone-ui-iPhone-UI/">iPhone とか UI とか勉強会@万葉</a></li>
+
+  
+    <li><time>2009/07/23</time> - <a href="http://stnard.jp/2009/07/23/ruby-rails-Mitaka-rb-night/">Mitaka.rb night に行ってきた！</a></li>
+
+  
+    <li><time>2009/07/20</time> - <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-3-2009-07-19/">Ruby会議2009</a></li>
+
+  
+    <li><time>2009/07/20</time> - <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-2-2009-07-18/">Ruby会議2009</a></li>
+
+  
+    <li><time>2009/07/20</time> - <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-1-2009-07-17/">Ruby会議2009</a></li>
+
+  
+    <li><time>2009/07/14</time> - <a href="http://stnard.jp/2009/07/14/notitle/">お台場でガンダム見てきた</a></li>
+
+  
+    <li><time>2009/07/13</time> - <a href="http://stnard.jp/2009/07/13/hbstudy-hbstudy-01/">hbstudy#01 インフラエンジニア勉強会に行ってきた</a></li>
+
+  
+    <li><time>2009/07/02</time> - <a href="http://stnard.jp/2009/07/02/debian-linux-Compiz-Viewport-GNOME-workspace/">Compiz の Viewport と GNOME の workspace の混同を解決する</a></li>
+
+  
+    <li><time>2009/06/26</time> - <a href="http://stnard.jp/2009/06/26/git-subversion-git-svn-2/">git svn での開発方法#2</a></li>
+
+  
+    <li><time>2009/06/18</time> - <a href="http://stnard.jp/2009/06/18/debian-XenServer-XenServer-5-5-0-Debian-4-0-etch-GPG/">XenServer 5.5.0 の Debian 4.0(etch) での GPG エラーの対策</a></li>
+
+  
+    <li><time>2009/06/17</time> - <a href="http://stnard.jp/2009/06/17/debian-xen-Debian-5-0-1-lenny-Xen/">Debian 5.0.1(lenny) で Xen をセットアップするまで</a></li>
+
+  
+    <li><time>2009/06/12</time> - <a href="http://stnard.jp/2009/06/12/capistrano-ruby-rails-Capistrano/">Capistrano でサーバをセットアップする</a></li>
+
+  
+    <li><time>2009/06/10</time> - <a href="http://stnard.jp/2009/06/10/google-Google-Developers-Day-2009/">Google Developers Day 2009に行ってきた</a></li>
+
+  
+    <li><time>2009/06/08</time> - <a href="http://stnard.jp/2009/06/08/ruby/">集合知勉強会@万葉</a></li>
+
+  
+    <li><time>2009/06/02</time> - <a href="http://stnard.jp/2009/06/02/tokyu-rb-ruby-Tokyu-rb-8/">Tokyu.rb#8に行ってきた，が・・・・</a></li>
+
+  
+    <li><time>2009/05/27</time> - <a href="http://stnard.jp/2009/05/27/debian-Debian-6/">オレオレDebian サーバをセットアップする#6</a></li>
+
+  
+    <li><time>2009/05/25</time> - <a href="http://stnard.jp/2009/05/25/debian-Debian-5/">オレオレDebian サーバをセットアップする#5</a></li>
+
+  
+    <li><time>2009/05/24</time> - <a href="http://stnard.jp/2009/05/24/git-Git-3/">Git勉強会#3＠万葉</a></li>
+
+  
+    <li><time>2009/05/19</time> - <a href="http://stnard.jp/2009/05/19/debian-Debian-4/">オレオレDebian サーバをセットアップする#4</a></li>
+
+  
+    <li><time>2009/05/19</time> - <a href="http://stnard.jp/2009/05/19/debian-Debian-3/">オレオレDebian サーバをセットアップする#3</a></li>
+
+  
+    <li><time>2009/05/18</time> - <a href="http://stnard.jp/2009/05/18/debian-Debian-2/">オレオレDebian サーバをセットアップする#2(失敗)</a></li>
+
+  
+    <li><time>2009/05/18</time> - <a href="http://stnard.jp/2009/05/18/debian-deb/">お手軽 deb パッケージ作成方法</a></li>
+
+  
+    <li><time>2009/05/14</time> - <a href="http://stnard.jp/2009/05/14/debian-Debian-1/">オレオレDebian サーバをセットアップする#1</a></li>
+
+  
+    <li><time>2009/05/11</time> - <a href="http://stnard.jp/2009/05/11/notitle/">すべてを知っているかのように話した結果が</a></li>
+
+  
+    <li><time>2009/05/09</time> - <a href="http://stnard.jp/2009/05/09/git-Git-2/">Git 勉強会</a></li>
+
+  
+    <li><time>2009/04/26</time> - <a href="http://stnard.jp/2009/04/26/git-Git-1/">Git勉強会#1＠万葉</a></li>
+
+  
+    <li><time>2009/04/26</time> - <a href="http://stnard.jp/2009/04/26/debug-hack-conference-Debug-Hacks-Conference-2009/">Debug Hacks Conference 2009</a></li>
+
+  
+    <li><time>2009/04/24</time> - <a href="http://stnard.jp/2009/04/24/ruby-rails-Ubuntu-8-04-1-LTS-rubygems-1-3-2/">Ubuntu 8.04.1 LTSでrubygems 1.3.2を使うには．</a></li>
+
+  
+    <li><time>2009/04/22</time> - <a href="http://stnard.jp/2009/04/22/notitle/">今週のお題：好きな食べ物は？</a></li>
+
+  
+    <li><time>2009/04/22</time> - <a href="http://stnard.jp/2009/04/22/mysql-Oracle-Sun-MySQL/">OracleによるSun買収でMySQLはどうなるのか</a></li>
+
+  
+    <li><time>2009/04/21</time> - <a href="http://stnard.jp/2009/04/21/ruby-rails-Rails-40/">Rails勉強会＠東京第40回</a></li>
+
+  
+    <li><time>2009/04/19</time> - <a href="http://stnard.jp/2009/04/19/debian-Debian-51/">東京エリア Debian 勉強会 第51回</a></li>
+
+  
+    <li><time>2009/04/19</time> - <a href="http://stnard.jp/2009/04/19/MySQL-ZABBIX-ZABBIX-MySQL/">ZABBIXで行うMySQLパフォーマンスチューニング</a></li>
+
+  
+    <li><time>2009/04/16</time> - <a href="http://stnard.jp/2009/04/16/ruby-rails-mitaka-rb-Mitaka-rb/">Mitaka.rb設立総会に行ってきた</a></li>
+
+  
+    <li><time>2009/04/14</time> - <a href="http://stnard.jp/2009/04/14/git-git-svn-svn-branch/">git svn で svn の branch を操作するとき</a></li>
+
+  
+    <li><time>2009/04/13</time> - <a href="http://stnard.jp/2009/04/13/http-slashdot-jp-article-pl-sid-09-04-13-0310232-title/">ダンジョンズ＆ドラゴンズの作者デイビッド・ランス・アーンソン氏、死去</a></li>
+
+  
+    <li><time>2009/04/11</time> - <a href="http://stnard.jp/2009/04/11/debian-http-labs-gree-jp-Top-Study-20090410-Report-html-title-GREE-17/">GREE 第17回 オープンソーステクノロジー勉強会に行ってきました</a></li>
+
+  
+    <li><time>2009/04/09</time> - <a href="http://stnard.jp/2009/04/09/JavaScript/">関数を名前空間に閉じ込める簡単な方法のメモ</a></li>
+
+  
+    <li><time>2009/04/08</time> - <a href="http://stnard.jp/2009/04/08/git-subversion-Subversion-git-svn/">Subversion なプロジェクトを git-svn で開発するメモ</a></li>
+
+  
+    <li><time>2009/04/04</time> - <a href="http://stnard.jp/2009/04/04/Poken-Poken/">珍しいPoken？</a></li>
+
+  
+    <li><time>2009/04/04</time> - <a href="http://stnard.jp/2009/04/04/ruby-Tokyu-rb-7/">Tokyu.rb 第7回に行ってきた．</a></li>
+
+  
+    <li><time>2009/03/30</time> - <a href="http://stnard.jp/2009/03/30/Poken-Poken/">Poken到着</a></li>
+
+  
+    <li><time>2009/03/16</time> - <a href="http://stnard.jp/2009/03/16/ruby-rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0039-title-Rails-39/">Rails勉強会＠東京第39回に行ってきた</a></li>
+
+  
+    <li><time>2009/03/02</time> - <a href="http://stnard.jp/2009/03/02/drbd-linux-DRBD-GFS2-Primary-Primary-on-CentOS/">DRBD&#43;GFS2でPrimary/Primary構成 on CentOS での起動スクリプト</a></li>
+
+  
+    <li><time>2009/02/26</time> - <a href="http://stnard.jp/2009/02/26/centos-linux-drbd-CentOS-5-2-Primary-Primary-DRBD-GFS/">CentOS 5.2でPrimary/Primary構成のDRBD&#43;GFSを組む</a></li>
+
+  
+    <li><time>2009/02/24</time> - <a href="http://stnard.jp/2009/02/24/ruby-rails-Rails-2-3-0-MiddlewareStack/">Rails 2.3.0で MiddlewareStack に積む方法</a></li>
+
+  
+    <li><time>2009/02/21</time> - <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-2st-Day/">OSC 2009 Tokyo/Sprint 2st Day</a></li>
+
+  
+    <li><time>2009/02/21</time> - <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-1st-Day/">OSC 2009 Tokyo/Sprint 1st Day</a></li>
+
+  
+    <li><time>2009/02/16</time> - <a href="http://stnard.jp/2009/02/16/rails-ruby-Rails-38/">Rails勉強会＠東京第38回</a></li>
+
+  
+    <li><time>2009/02/14</time> - <a href="http://stnard.jp/2009/02/14/devsumi2009-2009-2/">デブサミ 2009 2日目</a></li>
+
+  
+    <li><time>2009/02/13</time> - <a href="http://stnard.jp/2009/02/13/http-codezine-jp-devsumi-2009-title-2009-1/">デブサミ2009 1日目に行ってきた</a></li>
+
+  
+    <li><time>2009/02/13</time> - <a href="http://stnard.jp/2009/02/13/ruby-http-atnd-org-events-297-title-Ruby/">『プログラミング言語Ruby』出版記念トーク懇親会に参加してきた．</a></li>
+
+  
+    <li><time>2009/02/10</time> - <a href="http://stnard.jp/2009/02/10/ruby-rails-Ruby-on-Rails-2-3/">Ruby on Rails 2.3 リリースノート</a></li>
+
+  
+    <li><time>2009/02/08</time> - <a href="http://stnard.jp/2009/02/08/ruby-rails-Rails-Flare-TokyoTyrant-TokyoCabinet/">Rails から Flare を TokyoTyrant(TokyoCabinet)の様に扱うには</a></li>
+
+  
+    <li><time>2009/02/04</time> - <a href="http://stnard.jp/2009/02/04/flare-Flare-Ubuntu-8-04-1/">FlareをUbuntu 8.04.1にインストールするメモ</a></li>
+
+  
+    <li><time>2009/01/28</time> - <a href="http://stnard.jp/2009/01/28/ruby-rails-file_column-Rails-2-2-2/">file_column を Rails 2.2.2 と確認画面に対応させてみた</a></li>
+
+  
+    <li><time>2009/01/26</time> - <a href="http://stnard.jp/2009/01/26/mysql-MySQL/">MySQLで文字化けする時のメモ</a></li>
+
+  
+    <li><time>2009/01/19</time> - <a href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/">Ruby 1.9に移行する際に注意すべき10のポイント</a></li>
+
+  
+    <li><time>2009/01/19</time> - <a href="http://stnard.jp/2009/01/19/ruby-rails-Rails-37/">Rails勉強会＠東京第37回に行ってきた</a></li>
+
+  
+    <li><time>2009/01/15</time> - <a href="http://stnard.jp/2009/01/15/drbd-ubuntu-Ubuntu-8-04-1-Server-LTS-DRBD/">Ubuntu 8.04.1 Server LTSにDRBDを入れてほげる</a></li>
+
+  
+    <li><time>2009/01/11</time> - <a href="http://stnard.jp/2009/01/11/2009/">新春座談会『このコンピュータ書がすごい！ 2009年版』</a></li>
+
+  
+    <li><time>2009/01/10</time> - <a href="http://stnard.jp/2009/01/10/ruby-gem-2/">gem を作ってみる#2</a></li>
+
+  
+    <li><time>2009/01/10</time> - <a href="http://stnard.jp/2009/01/10/ruby-Redmine-CA-fingerprint/">RedmineでオレオレCAのfingerprintを登録するには</a></li>
+
+  
+    <li><time>2009/01/09</time> - <a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoTyrant-Rails/">TokyoTyrantのレプリケーションとRailsでの利用</a></li>
+
+  
+    <li><time>2009/01/09</time> - <a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoCabinet-TokyoTyrant-Rails/">TokyoCabinet/TokyoTyrant を Rails で使う</a></li>
+
+  
+    <li><time>2009/01/04</time> - <a href="http://stnard.jp/2009/01/04/ruby-gem-1/">gem を作ってみる#1</a></li>
+
+  
+    <li><time>2009/01/03</time> - <a href="http://stnard.jp/2009/01/03/ruby-4/">拡張ライブラリチュートリアルをやってみる#4</a></li>
+
+  
+    <li><time>2009/01/03</time> - <a href="http://stnard.jp/2009/01/03/ruby-rails-2009/">2009年の目標</a></li>
+
+  
+  </ul>
+  
+  <h2>2008</h2>
+  <ul>
+  
+    <li><time>2008/12/31</time> - <a href="http://stnard.jp/2008/12/31/ruby-rails-2008/">2008年を振り返って</a></li>
+
+  
+    <li><time>2008/12/29</time> - <a href="http://stnard.jp/2008/12/29/notitle/">なぜ「な」なのか</a></li>
+
+  
+    <li><time>2008/12/28</time> - <a href="http://stnard.jp/2008/12/28/ruby-3/">拡張ライブラリチュートリアルをやってみる#3</a></li>
+
+  
+    <li><time>2008/12/26</time> - <a href="http://stnard.jp/2008/12/26/notitle/">うごメモ</a></li>
+
+  
+    <li><time>2008/12/26</time> - <a href="http://stnard.jp/2008/12/26/ruby-TokyoCabinet/">TokyoCabinetを使ってみる．</a></li>
+
+  
+    <li><time>2008/12/25</time> - <a href="http://stnard.jp/2008/12/25/ruby-merb-rails-Rails-and-Merb-Merge/">Rails and Merb Merge</a></li>
+
+  
+    <li><time>2008/12/24</time> - <a href="http://stnard.jp/2008/12/24/ruby-rails-merb-Merg-gets-merged-into-Rails3/">Merg gets merged into Rails3!</a></li>
+
+  
+    <li><time>2008/12/24</time> - <a href="http://stnard.jp/2008/12/24/ruby-rails-merb-Merb-gets-merged-into-Rails3/">Merb gets merged into Rails3!</a></li>
+
+  
+    <li><time>2008/12/22</time> - <a href="http://stnard.jp/2008/12/22/ruby-Ruby/">東京Ruby忘年会に行ってきた</a></li>
+
+  
+    <li><time>2008/12/22</time> - <a href="http://stnard.jp/2008/12/22/ruby-rails-Rails-36/">Rails勉強会＠東京第36回に行ってきた</a></li>
+
+  
+    <li><time>2008/12/21</time> - <a href="http://stnard.jp/2008/12/21/notitle/">忘れないうちに</a></li>
+
+  
+    <li><time>2008/12/20</time> - <a href="http://stnard.jp/2008/12/20/ruby-2/">拡張ライブラリチュートリアルをやってみる#2</a></li>
+
+  
+    <li><time>2008/12/18</time> - <a href="http://stnard.jp/2008/12/18/ruby-1/">拡張ライブラリチュートリアルをやってみる#1</a></li>
+
+  
+    <li><time>2008/12/17</time> - <a href="http://stnard.jp/2008/12/17/ruby-rails-Rails/">Rails ポケットリファレンスマニュアルを熱望します</a></li>
+
+  
+    <li><time>2008/12/12</time> - <a href="http://stnard.jp/2008/12/12/Ruby/">プログラミング初心者に Ruby を教える実験</a></li>
+
+  
+    <li><time>2008/12/09</time> - <a href="http://stnard.jp/2008/12/09/notitle/">いつも思い出す言葉</a></li>
+
+  
+    <li><time>2008/12/09</time> - <a href="http://stnard.jp/2008/12/09/rails-ruby-amazon-ecs-ISBN/">amazon-ecsでISBN検索するには</a></li>
+
+  
+    <li><time>2008/12/09</time> - <a href="http://stnard.jp/2008/12/09/rails-ruby-Test-flash/">Testの中でflashを検査したいとき</a></li>
+
+  
+    <li><time>2008/12/04</time> - <a href="http://stnard.jp/2008/12/04/notitle/">はてなブックマークのノベルティセット欲しい！</a></li>
+
+  
+    <li><time>2008/12/01</time> - <a href="http://stnard.jp/2008/12/01/ruby-rails-LT-rails-footnotes/">LT「rails-footnotesの紹介」の資料</a></li>
+
+  
+    <li><time>2008/11/29</time> - <a href="http://stnard.jp/2008/11/29/linux-php-ruby-rails-2008/">楽天テクノロジーカンファレンス2008</a></li>
+
+  
+    <li><time>2008/11/25</time> - <a href="http://stnard.jp/2008/11/25/slicehost/">セキュリティの設定とか</a></li>
+
+  
+    <li><time>2008/11/24</time> - <a href="http://stnard.jp/2008/11/24/ruby-rails-slicehost-slicehost-Rails2-2-2/">slicehostでRails2.2.2を動かすまで</a></li>
+
+  
+    <li><time>2008/11/22</time> - <a href="http://stnard.jp/2008/11/22/ruby-rails-forgot_password/">forgot_passwordプラグインを使ってみる</a></li>
+
+  
+    <li><time>2008/11/21</time> - <a href="http://stnard.jp/2008/11/21/Ruby-Rails-524/">524万人が利用する食のインフラ 「クックパッド」のものづくり セミナー</a></li>
+
+  
+    <li><time>2008/11/20</time> - <a href="http://stnard.jp/2008/11/20/ruby-module/">moduleのスコープについて調べてみた</a></li>
+
+  
+    <li><time>2008/11/19</time> - <a href="http://stnard.jp/2008/11/19/OS/">OSのキャッシュに貯めてからサーバを起動するのがいいらしい</a></li>
+
+  
+    <li><time>2008/11/16</time> - <a href="http://stnard.jp/2008/11/16/thrift-ruby-perl-Ubuntu-8-04-Thrift/">Ubuntu 8.04 で Thrift を試してみた</a></li>
+
+  
+    <li><time>2008/11/14</time> - <a href="http://stnard.jp/2008/11/14/ruby-iKnow-http-www-iknow-co-jp-blog-ja-2008-11-7-99671-11-13-ki-iknowdebberoppa-kanfarensu-kaisai-no-oshirase-title-iKnow/">iKnowデッベロッパー・カンファレンスに行ってきた</a></li>
+
+  
+    <li><time>2008/11/14</time> - <a href="http://stnard.jp/2008/11/14/ruby-iKnow-iKnow-Gem-API/">iKnow Gem &#43; API サンプル</a></li>
+
+  
+    <li><time>2008/11/13</time> - <a href="http://stnard.jp/2008/11/13/rails-ruby-Ubuntu-autotest-notify/">Ubuntu と autotest と notify で快適テスト生活</a></li>
+
+  
+    <li><time>2008/11/10</time> - <a href="http://stnard.jp/2008/11/10/MySQL-MySQL-Server/">MySQL Serverのメモリ使用量の見積り</a></li>
+
+  
+    <li><time>2008/11/05</time> - <a href="http://stnard.jp/2008/11/05/rails/">作りかけのもので作ってみました．</a></li>
+
+  
+    <li><time>2008/11/04</time> - <a href="http://stnard.jp/2008/11/04/ruby-Ubuntu-8-04-RMagick/">Ubuntu 8.04 で RMagick をインストールする</a></li>
+
+  
+    <li><time>2008/11/01</time> - <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-2nd-Day/">MySQL ユーザカンファレンス 2008 2nd Day</a></li>
+
+  
+    <li><time>2008/11/01</time> - <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-1st-Day/">MySQL ユーザカンファレンス 2008 1st Day</a></li>
+
+  
+    <li><time>2008/10/29</time> - <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-4/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#4</a></li>
+
+  
+    <li><time>2008/10/29</time> - <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-3/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#3</a></li>
+
+  
+    <li><time>2008/10/29</time> - <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-2/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#2</a></li>
+
+  
+    <li><time>2008/10/29</time> - <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-1/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#1</a></li>
+
+  
+    <li><time>2008/10/28</time> - <a href="http://stnard.jp/2008/10/28/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0034-title-Rails-34/">Rails勉強会＠東京第34回に行ってきた</a></li>
+
+  
+    <li><time>2008/10/28</time> - <a href="http://stnard.jp/2008/10/28/jpmobile-rails-ruby-Jpmobile-user_agent/">Jpmobile で user_agent を設定してテストするには</a></li>
+
+  
+    <li><time>2008/10/22</time> - <a href="http://stnard.jp/2008/10/22/linux-ATOK-X3-iiim-properties-core/">iiim-properties が core を吐く対策 など</a></li>
+
+  
+    <li><time>2008/10/22</time> - <a href="http://stnard.jp/2008/10/22/rails-JavaScript-Ajax-in/">Ajax.in</a></li>
+
+  
+    <li><time>2008/10/19</time> - <a href="http://stnard.jp/2008/10/19/2008/">パソナテックカンファレンス2008に行ってきた．</a></li>
+
+  
+    <li><time>2008/10/19</time> - <a href="http://stnard.jp/2008/10/19/lisp-http-shibuya-lisp-users-org-2008-10-18-sltt-1-tb-title-Shibuya-lisp-1/">Shibuya.lisp テクニカルトーク</a></li>
+
+  
+    <li><time>2008/10/18</time> - <a href="http://stnard.jp/2008/10/18/Ubuntu-linux-Ubuntu-8-04-1/">Ubuntu 8.04.1に乗り換えて１週間</a></li>
+
+  
+    <li><time>2008/10/08</time> - <a href="http://stnard.jp/2008/10/08/rails-rails-footnotes/">rails-footnotes でデバッグ表示．</a></li>
+
+  
+    <li><time>2008/10/08</time> - <a href="http://stnard.jp/2008/10/08/ubuntu-linux-ruby-Ubuntu-8-04-rubygems-1-3-0/">Ubuntu 8.04 で rubygems を 1.3.0 に上げるには．</a></li>
+
+  
+    <li><time>2008/10/07</time> - <a href="http://stnard.jp/2008/10/07/rails-gateway-cgi-Rails-2-1-1/">さくらインターネットで gateway.cgi を使う＠Rails 2.1.1</a></li>
+
+  
+    <li><time>2008/10/06</time> - <a href="http://stnard.jp/2008/10/06/rails-Git-Rails-Git-deploy/">さくらインターネットにRailsをGitでdeployする際の注意点</a></li>
+
+  
+    <li><time>2008/10/06</time> - <a href="http://stnard.jp/2008/10/06/MySQL-MySQL/">MySQL で最適化のために覚えておくこと．</a></li>
+
+  
+    <li><time>2008/10/05</time> - <a href="http://stnard.jp/2008/10/05/OSC2008-Tokyo-Fall/">OSC2008 Tokyo/Fall に行ってきた．</a></li>
+
+  
+    <li><time>2008/10/05</time> - <a href="http://stnard.jp/2008/10/05/Git-Git/">Git講習会に行ってきた．</a></li>
+
+  
+    <li><time>2008/10/01</time> - <a href="http://stnard.jp/2008/10/01/rails-ruby-capistrano-deploy/">ファイルによって deploy 先を変えるには</a></li>
+
+  
+    <li><time>2008/09/30</time> - <a href="http://stnard.jp/2008/09/30/MySQL-http-www-slideshare-net-ZendCon-joinfu-the-art-of-sql-tuning-for-mysql-presentation-title/">Join-fu: The Art of SQL Tuning for MySQL の簡易まとめ</a></li>
+
+  
+    <li><time>2008/09/28</time> - <a href="http://stnard.jp/2008/09/28/rails-ruby-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0033-title/">Rails勉強会＠東京第33回に参加してきた．</a></li>
+
+  
+    <li><time>2008/09/26</time> - <a href="http://stnard.jp/2008/09/26/rails-ruby-capistrano-deploy/">古いdeployを消すには</a></li>
+
+  
+    <li><time>2008/09/20</time> - <a href="http://stnard.jp/2008/09/20/http-labs-gree-jp-Top-Study-20080919-Report-html-title-15/">第15回オープンソーステクノロジー勉強会に行ってきた</a></li>
+
+  
+    <li><time>2008/09/19</time> - <a href="http://stnard.jp/2008/09/19/http-ac-nikkeibp-co-jp-nos-wssk-title/">安定稼働を導くＷｅｂシステム構築ノウハウに参加してきた</a></li>
+
+  
+    <li><time>2008/09/11</time> - <a href="http://stnard.jp/2008/09/11/ruby-rails-Rails-App/">Rails App でエラー発生時にメールを送ったりするには</a></li>
+
+  
+    <li><time>2008/09/10</time> - <a href="http://stnard.jp/2008/09/10/ruby-rails/">例外のバックトレースを表示するには</a></li>
+
+  
+    <li><time>2008/09/10</time> - <a href="http://stnard.jp/2008/09/10/notitle/">世界中で進行するメタボ危機</a></li>
+
+  
+    <li><time>2008/09/03</time> - <a href="http://stnard.jp/2008/09/03/rails-ruby-Hash-Array/">HashやArrayなどをデータベースに保存するには</a></li>
+
+  
+    <li><time>2008/08/31</time> - <a href="http://stnard.jp/2008/08/31/Ruby-llfuture-http-ll-jus-or-jp-2008-title/">Lightweight Language Futureに行ってきました．</a></li>
+
+  
+    <li><time>2008/08/26</time> - <a href="http://stnard.jp/2008/08/26/notitle/">勉強会とかセミナーとかの敷居</a></li>
+
+  
+    <li><time>2008/08/26</time> - <a href="http://stnard.jp/2008/08/26/http-sites-google-com-site-matcha445-title/">まっちゃ４４５に行ってきた．</a></li>
+
+  
+    <li><time>2008/08/24</time> - <a href="http://stnard.jp/2008/08/24/2-PC/">2台のノートPCでキーボード・マウス共有用</a></li>
+
+  
+    <li><time>2008/08/22</time> - <a href="http://stnard.jp/2008/08/22/ruby-http-regional-rubykaigi-org-tokyo01-title-Ruby-01/">東京Ruby会議01に参加してきた．</a></li>
+
+  
+    <li><time>2008/08/22</time> - <a href="http://stnard.jp/2008/08/22/Ruby/">オフィスで踏み出すRubyの世界</a></li>
+
+  
+    <li><time>2008/08/20</time> - <a href="http://stnard.jp/2008/08/20/rails-mongrel-apache/">重いクエリーを叩いたときにレスポンスが途切れる問題</a></li>
+
+  
+    <li><time>2008/08/18</time> - <a href="http://stnard.jp/2008/08/18/rails-ruby-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0032-title-Rails-32/">Rails勉強会＠東京第32回に参加してきた．</a></li>
+
+  
+    <li><time>2008/08/10</time> - <a href="http://stnard.jp/2008/08/10/notitle/">原書と翻訳本とのタイムラグ</a></li>
+
+  
+    <li><time>2008/08/06</time> - <a href="http://stnard.jp/2008/08/06/ruby-rails-ssb-Rev-17132-ubuntu-8-04-Ruby-1-8-6/">ssb Rev.17132 が ubuntu 8.04/Ruby 1.8.6 で動作しなくなってる問題に対処する</a></li>
+
+  
+    <li><time>2008/08/02</time> - <a href="http://stnard.jp/2008/08/02/notitle/">インフラは奥が深いよね</a></li>
+
+  
+    <li><time>2008/08/02</time> - <a href="http://stnard.jp/2008/08/02/ruby-Tokyu-rb-2/">Tokyu.rb第2回集会</a></li>
+
+  
+    <li><time>2008/07/31</time> - <a href="http://stnard.jp/2008/07/31/rails-ruby-Passenger/">開発環境でPassengerを使うには</a></li>
+
+  
+    <li><time>2008/07/30</time> - <a href="http://stnard.jp/2008/07/30/rails-debian-linux-Passenger/">Passengerをインストールしてみる</a></li>
+
+  
+    <li><time>2008/07/29</time> - <a href="http://stnard.jp/2008/07/29/rails-OpenID/">OpenIDを使ったユーザ認証の実験</a></li>
+
+  
+    <li><time>2008/07/28</time> - <a href="http://stnard.jp/2008/07/28/ruby-ruby-trunk-build/">ruby-trunkからのbuild</a></li>
+
+  
+    <li><time>2008/07/28</time> - <a href="http://stnard.jp/2008/07/28/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0031-title-Rails-31/">Rails勉強会＠東京第31回に参加してきた．</a></li>
+
+  
+    <li><time>2008/07/25</time> - <a href="http://stnard.jp/2008/07/25/notitle/">コンテンツ枯渇時代</a></li>
+
+  
+    <li><time>2008/07/25</time> - <a href="http://stnard.jp/2008/07/25/ruby-tokyo-rb-Tokyu-rb/">Tokyu.rb初集会での成果は</a></li>
+
+  
+    <li><time>2008/07/16</time> - <a href="http://stnard.jp/2008/07/16/C-12/">ロベール本学習記録#12</a></li>
+
+  
+    <li><time>2008/07/15</time> - <a href="http://stnard.jp/2008/07/15/notitle/">脱初心者に向けて大事なことは？</a></li>
+
+  
+    <li><time>2008/07/14</time> - <a href="http://stnard.jp/2008/07/14/notitle/">もったいないことは止めよう</a></li>
+
+  
+    <li><time>2008/07/09</time> - <a href="http://stnard.jp/2008/07/09/http-labs-gree-jp-Top-Study-20080708-html-title-14/">第14回 オープンソーステクノロジー勉強会に行ってきた．</a></li>
+
+  
+    <li><time>2008/07/03</time> - <a href="http://stnard.jp/2008/07/03/notitle/">「黙っとけ」で有名な本</a></li>
+
+  
+    <li><time>2008/06/29</time> - <a href="http://stnard.jp/2008/06/29/mysql-MySQL-on-MySQL-Weekly-Seminor-2008-06-27/">MySQL パフォーマンスチューニング on MySQL Weekly Seminor 2008/06/27</a></li>
+
+  
+    <li><time>2008/06/26</time> - <a href="http://stnard.jp/2008/06/26/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">RubyKaigi2008に参加してきた＃２</a></li>
+
+  
+    <li><time>2008/06/24</time> - <a href="http://stnard.jp/2008/06/24/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">RubyKaigi2008に参加してきた＃１</a></li>
+
+  
+    <li><time>2008/06/23</time> - <a href="http://stnard.jp/2008/06/23/ruby-rails-RubyKaigi2008/">RubyKaigi2008に参加してきました．</a></li>
+
+  
+    <li><time>2008/06/16</time> - <a href="http://stnard.jp/2008/06/16/notitle/">イス購入</a></li>
+
+  
+    <li><time>2008/06/16</time> - <a href="http://stnard.jp/2008/06/16/orz/">やはりあった買い忘れorz</a></li>
+
+  
+    <li><time>2008/06/16</time> - <a href="http://stnard.jp/2008/06/16/mysql-MySQL-Weeekly-Seminor-2008-06-13/">MySQL Weeekly Seminor 2008/06/13</a></li>
+
+  
+    <li><time>2008/06/13</time> - <a href="http://stnard.jp/2008/06/13/mysql-http-www-ospn-jp-osc2008-db-title/">オープンソースカンファレンス 2008.DBに参加してきた．</a></li>
+
+  
+    <li><time>2008/06/10</time> - <a href="http://stnard.jp/2008/06/10/debian-linux-Debian-sid-virtualbox-ose-1-6-2/">Debian - sid にて virtualbox-ose(1.6.2) を使うには</a></li>
+
+  
+    <li><time>2008/06/05</time> - <a href="http://stnard.jp/2008/06/05/C-11/">ロベール本学習記録#11</a></li>
+
+  
+    <li><time>2008/06/02</time> - <a href="http://stnard.jp/2008/06/02/C-10/">ロベール本学習記録#10</a></li>
+
+  
+    <li><time>2008/06/01</time> - <a href="http://stnard.jp/2008/06/01/C-9/">ロベール本学習記録#9</a></li>
+
+  
+    <li><time>2008/06/01</time> - <a href="http://stnard.jp/2008/06/01/rails-ruby-Redmine/">Redmineを入れてみた．</a></li>
+
+  
+    <li><time>2008/06/01</time> - <a href="http://stnard.jp/2008/06/01/dreamhost-Dreamhost-git/">Dreamhostでgit</a></li>
+
+  
+    <li><time>2008/05/29</time> - <a href="http://stnard.jp/2008/05/29/MySQL/">MySQLのチューニングには必須の本でしょうか</a></li>
+
+  
+    <li><time>2008/05/26</time> - <a href="http://stnard.jp/2008/05/26/1000Speakers-5/">1000Speakers#5に参加してきた</a></li>
+
+  
+    <li><time>2008/05/21</time> - <a href="http://stnard.jp/2008/05/21/rails-ruby-before_find-2-find_by_/">全てのモデルにbefore_findを追加するには#2(find_by_*)</a></li>
+
+  
+    <li><time>2008/05/20</time> - <a href="http://stnard.jp/2008/05/20/rails-ruby-before_find/">全てのモデルに before_find を追加するには</a></li>
+
+  
+    <li><time>2008/05/19</time> - <a href="http://stnard.jp/2008/05/19/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30/">Rails勉強会＠東京第30回に参加してきた#まとめ</a></li>
+
+  
+    <li><time>2008/05/19</time> - <a href="http://stnard.jp/2008/05/19/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30-2/">Rails勉強会＠東京第30回に参加してきた#2</a></li>
+
+  
+    <li><time>2008/05/18</time> - <a href="http://stnard.jp/2008/05/18/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30-1/">Rails勉強会＠東京第30回に参加してきた#1</a></li>
+
+  
+    <li><time>2008/05/18</time> - <a href="http://stnard.jp/2008/05/18/rails-TIPS-Rails-script-console/">Railsのscript/consoleで便利な技(？)</a></li>
+
+  
+    <li><time>2008/05/17</time> - <a href="http://stnard.jp/2008/05/17/Perl-YAPC-2008-Asia/">YAPC 2008 Asiaの収穫</a></li>
+
+  
+    <li><time>2008/05/16</time> - <a href="http://stnard.jp/2008/05/16/FreeBSD-ports-Apache22-mod_proxy/">portsからApache22をインストールする再に，mod_proxy付でコンパイルするには</a></li>
+
+  
+    <li><time>2008/05/16</time> - <a href="http://stnard.jp/2008/05/16/linum-vim-Vim/">Vimで行番号を表示するには</a></li>
+
+  
+    <li><time>2008/05/15</time> - <a href="http://stnard.jp/2008/05/15/Python-Python/">Pythonをちょこっと勉強してみる</a></li>
+
+  
+    <li><time>2008/05/15</time> - <a href="http://stnard.jp/2008/05/15/FreeBSD-MySQL-FreeBSD-ports-ujis/">FreeBSDのportsからインストールする際にujisを有効にする方法</a></li>
+
+  
+    <li><time>2008/05/15</time> - <a href="http://stnard.jp/2008/05/15/Perl-Fastladder-Plagger/">Fastladder&#43;Plaggerで快適生活を目指してみる</a></li>
+
+  
+    <li><time>2008/05/11</time> - <a href="http://stnard.jp/2008/05/11/Ruby-rails-ActiveRecord-SQL/">ActiveRecordでSQLを直接実行する方法</a></li>
+
+  
+    <li><time>2008/05/09</time> - <a href="http://stnard.jp/2008/05/09/notitle/">こないだ見た本人は相変わらず熱かった</a></li>
+
+  
+    <li><time>2008/05/06</time> - <a href="http://stnard.jp/2008/05/06/C-8/">ロベール本学習記録#8</a></li>
+
+  
+    <li><time>2008/05/05</time> - <a href="http://stnard.jp/2008/05/05/C-7/">ロベール本学習記録#7</a></li>
+
+  
+    <li><time>2008/05/03</time> - <a href="http://stnard.jp/2008/05/03/linux-debian-X61-Compiz-Fusion-Xfce-Terminal-Mac/">Compiz FusionとXfceと透過TerminalでMacっぽく</a></li>
+
+  
+    <li><time>2008/04/25</time> - <a href="http://stnard.jp/2008/04/25/linux-X61-debian-Compiz-Fusion-Xfce4/">Compiz Fusion &#43; Xfce4で快適生活</a></li>
+
+  
+    <li><time>2008/04/24</time> - <a href="http://stnard.jp/2008/04/24/linix-X61-debian-Compiz-Fusion/">Compiz Fusionを入れてみる．</a></li>
+
+  
+    <li><time>2008/04/23</time> - <a href="http://stnard.jp/2008/04/23/lisp-http-labs-gree-jp-Top-Study-20080422-Report-html-title-13/">第13回オープンソーステクノロジー勉強会に参加してきた．</a></li>
+
+  
+    <li><time>2008/04/21</time> - <a href="http://stnard.jp/2008/04/21/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29-2/">Rails勉強会＠東京第29回に参加してきた#2</a></li>
+
+  
+    <li><time>2008/04/20</time> - <a href="http://stnard.jp/2008/04/20/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29/">Rails勉強会＠東京第29回に参加してきた</a></li>
+
+  
+    <li><time>2008/04/12</time> - <a href="http://stnard.jp/2008/04/12/C-6/">ロベール本学習記録#6</a></li>
+
+  
+    <li><time>2008/04/10</time> - <a href="http://stnard.jp/2008/04/10/rails-ruby-BackgrounDRb-Logger/">BackgrounDRbでLoggerを使うときの注意点の覚書</a></li>
+
+  
+    <li><time>2008/04/09</time> - <a href="http://stnard.jp/2008/04/09/notitle/">いつもの．でも前のが消化できてないな．．．．</a></li>
+
+  
+    <li><time>2008/04/06</time> - <a href="http://stnard.jp/2008/04/06/notitle/">終わりはこないジャンプの法則がここに？！</a></li>
+
+  
+    <li><time>2008/04/06</time> - <a href="http://stnard.jp/2008/04/06/C-5/">ロベール本学習記録#5</a></li>
+
+  
+    <li><time>2008/04/04</time> - <a href="http://stnard.jp/2008/04/04/linux-daemontools-Signal/">daemontoolsでSignalをプロセスに送り込むには</a></li>
+
+  
+    <li><time>2008/04/03</time> - <a href="http://stnard.jp/2008/04/03/rails-ruby-Rails-daemon/">Rails環境を持った状態でdaemon化する方法</a></li>
+
+  
+    <li><time>2008/03/31</time> - <a href="http://stnard.jp/2008/03/31/Ruby-Signal-daemon/">Signalを受け取るdaemonを簡単に実装する方法</a></li>
+
+  
+    <li><time>2008/03/25</time> - <a href="http://stnard.jp/2008/03/25/JOB-perl-YAPC-Asia-2008/">YAPC::Asia 2008参加申し込み完了</a></li>
+
+  
+    <li><time>2008/03/25</time> - <a href="http://stnard.jp/2008/03/25/notitle/"></a></li>
+
+  
+    <li><time>2008/03/24</time> - <a href="http://stnard.jp/2008/03/24/C-4/">ロベール本学習記録#4</a></li>
+
+  
+    <li><time>2008/03/24</time> - <a href="http://stnard.jp/2008/03/24/debian-linux-ATOK-X3-Ctrl-Space-Shift-Space/">ATOK X3でCtrl&#43;SpaceでもShift&#43;Spaceでも反応しないようにする</a></li>
+
+  
+    <li><time>2008/03/23</time> - <a href="http://stnard.jp/2008/03/23/notitle/">仕事用キーボードとマウス</a></li>
+
+  
+    <li><time>2008/03/23</time> - <a href="http://stnard.jp/2008/03/23/C-3/">ロベール本学習記録#3</a></li>
+
+  
+    <li><time>2008/03/23</time> - <a href="http://stnard.jp/2008/03/23/C-2/">ロベール本学習記録#2</a></li>
+
+  
+    <li><time>2008/03/23</time> - <a href="http://stnard.jp/2008/03/23/C-1/">ロベール本学習記録#1</a></li>
+
+  
+    <li><time>2008/03/22</time> - <a href="http://stnard.jp/2008/03/22/debian-linux-evince-PDF/">evinceで日本語PDFを表示する</a></li>
+
+  
+    <li><time>2008/03/21</time> - <a href="http://stnard.jp/2008/03/21/notitle/">ジョニーって豆腐やではない</a></li>
+
+  
+    <li><time>2008/03/21</time> - <a href="http://stnard.jp/2008/03/21/JOB-Ruby/">Rubyを仕事でさわると</a></li>
+
+  
+    <li><time>2008/03/18</time> - <a href="http://stnard.jp/2008/03/18/JOB/">新職場にて</a></li>
+
+  
+    <li><time>2008/03/14</time> - <a href="http://stnard.jp/2008/03/14/notitle/">引っ越し完了</a></li>
+
+  
+    <li><time>2008/03/10</time> - <a href="http://stnard.jp/2008/03/10/Rails-Rails/">新しい職場用のRailsの本</a></li>
+
+  
+    <li><time>2008/03/10</time> - <a href="http://stnard.jp/2008/03/10/debian-linux-iiimf-GTK/">iiimfにするとGTKなのがダメな問題に対処するには</a></li>
+
+  
+    <li><time>2008/03/10</time> - <a href="http://stnard.jp/2008/03/10/debian-linux-iiimecf-emacs-ATOK-X3/">iiimecfでemacs &#43; ATOK X3</a></li>
+
+  
+    <li><time>2008/03/10</time> - <a href="http://stnard.jp/2008/03/10/debian-linux-ATOK-X3-on-Debian-sid/">ATOK X3 on Debian(sid)</a></li>
+
+  
+    <li><time>2008/03/09</time> - <a href="http://stnard.jp/2008/03/09/debian-linux-X61-xbacklight/">xbacklightを使わないように変更してみる</a></li>
+
+  
+    <li><time>2008/03/09</time> - <a href="http://stnard.jp/2008/03/09/debian-linux-X61-suspend-hibernate-backlight-brightness-on-X61/">suspend/hibernate/backlight-brightness on X61</a></li>
+
+  
+    <li><time>2008/03/07</time> - <a href="http://stnard.jp/2008/03/07/notitle/">引越し後に買うものリスト</a></li>
+
+  
+    <li><time>2008/03/04</time> - <a href="http://stnard.jp/2008/03/04/linux-debian-X61-hibernate/">hibernate後に電源が落ちなくなった</a></li>
+
+  
+    <li><time>2008/03/01</time> - <a href="http://stnard.jp/2008/03/01/debian-linux-X61-Iceweasel-Flash/">IceweaselのFlashで音を出すには</a></li>
+
+  
+    <li><time>2008/02/29</time> - <a href="http://stnard.jp/2008/02/29/debian-linux-emacs-emacs-23/">アンチエイリアスフォントのためにemacs-23を入れてみた．</a></li>
+
+  
+    <li><time>2008/02/29</time> - <a href="http://stnard.jp/2008/02/29/debian-linux-Intel-Driver-Install-on-X61/">Intel DriverのInstall on X61</a></li>
+
+  
+    <li><time>2008/02/28</time> - <a href="http://stnard.jp/2008/02/28/debian-linux-Iceweasel/">Iceweaselがよく落ちる問題</a></li>
+
+  
+    <li><time>2008/02/27</time> - <a href="http://stnard.jp/2008/02/27/Minibuffer-LDRize-AutoPagerzie/">Minibuffer &#43; LDRize &#43; AutoPagerzie</a></li>
+
+  
+    <li><time>2008/02/26</time> - <a href="http://stnard.jp/2008/02/26/notitle/">引越し作業開始</a></li>
+
+  
+    <li><time>2008/02/21</time> - <a href="http://stnard.jp/2008/02/21/debian-linux-vmware-VMware-libpng/">VMware起動するも，libpng関連でエラーが出る場合の対処方法</a></li>
+
+  
+    <li><time>2008/02/21</time> - <a href="http://stnard.jp/2008/02/21/debian-linux-vmware/"></a></li>
+
+  
+    <li><time>2008/02/19</time> - <a href="http://stnard.jp/2008/02/19/Silverlight-Storyboard/">Storyboardをコントロールするには</a></li>
+
+  
+    <li><time>2008/02/19</time> - <a href="http://stnard.jp/2008/02/19/Silverlight-JavaScript-XAML-Object/">JavaScript側からXAML Objectにアクセスする方法</a></li>
+
+  
+    <li><time>2008/02/18</time> - <a href="http://stnard.jp/2008/02/18/notitle/">買い忘れ</a></li>
+
+  
+    <li><time>2008/02/18</time> - <a href="http://stnard.jp/2008/02/18/debian-linux-Xen-on-Debian-sid/">Xen on Debian(sid)＃１</a></li>
+
+  
+    <li><time>2008/02/18</time> - <a href="http://stnard.jp/2008/02/18/debian-Rails-linux-Apache2-FCGI-mod_fcgid/">Apache2&#43;FCGI&#43;mod_fcgid環境を作る＃１</a></li>
+
+  
+    <li><time>2008/02/17</time> - <a href="http://stnard.jp/2008/02/17/notitle/">引越しに向けて買うのを控える事は</a></li>
+
+  
+    <li><time>2008/02/16</time> - <a href="http://stnard.jp/2008/02/16/X61-debian-LAN/">無線LANの切り替え</a></li>
+
+  
+    <li><time>2008/02/16</time> - <a href="http://stnard.jp/2008/02/16/X61-debian-PowerTOP/">PowerTOPを入れてみる．</a></li>
+
+  
+    <li><time>2008/02/15</time> - <a href="http://stnard.jp/2008/02/15/X61-debian-emobile-D01NE/">emobileのD01NEを買ってみた．</a></li>
+
+  
+    <li><time>2008/02/15</time> - <a href="http://stnard.jp/2008/02/15/X61-debian-WEP-HOTSPOT-WPA/">WEP(HOTSPOT)とWPA(自宅)の自動切換</a></li>
+
+  
+    <li><time>2008/02/13</time> - <a href="http://stnard.jp/2008/02/13/X61-debian-select-to-dev-rtc-to-wait-for-clock-tick-timed-out/">起動時のselect() to /dev/rtc to wait for clock tick timed out</a></li>
+
+  
+    <li><time>2008/02/13</time> - <a href="http://stnard.jp/2008/02/13/X61-debian-2-6-24/">2.6.24で輝度が変更できない．</a></li>
+
+  
+    <li><time>2008/02/10</time> - <a href="http://stnard.jp/2008/02/10/notitle/">実際は予約日記だな・・・・</a></li>
+
+  
+    <li><time>2008/02/10</time> - <a href="http://stnard.jp/2008/02/10/X61-debian/">ひととおり設定終わり</a></li>
+
+  
+    <li><time>2008/02/10</time> - <a href="http://stnard.jp/2008/02/10/X61-debian-linux-Windows-mount/">Windows共有をmountする</a></li>
+
+  
+    <li><time>2008/02/08</time> - <a href="http://stnard.jp/2008/02/08/notitle/">オブジェクト指向のために読んだ書籍</a></li>
+
+  
+    <li><time>2008/02/04</time> - <a href="http://stnard.jp/2008/02/04/notitle/">面接で徐々にわかってきたこと</a></li>
+
+  
+    <li><time>2008/02/04</time> - <a href="http://stnard.jp/2008/02/04/C/">オブジェクト指向とC&#43;&#43;</a></li>
+
+  
+    <li><time>2008/02/02</time> - <a href="http://stnard.jp/2008/02/02/notitle/">本日もセミナー？</a></li>
+
+  
+    <li><time>2008/02/02</time> - <a href="http://stnard.jp/2008/02/02/http-www-pasonatech-co-jp-2008shiftup-webapp-career_0202-jsp-title-Web/">すごいWebサービスを生み出す開発の現場に行ってきました．</a></li>
+
+  
+    <li><time>2008/02/02</time> - <a href="http://stnard.jp/2008/02/02/Ruby-on-Rails/">Ruby on Railsのセミナーにて</a></li>
+
+  
+    <li><time>2008/01/31</time> - <a href="http://stnard.jp/2008/01/31/notitle/">古きものは淘汰され，新しきものが覇権を握る</a></li>
+
+  
+    <li><time>2008/01/30</time> - <a href="http://stnard.jp/2008/01/30/notitle/">持ち運びたいが為に</a></li>
+
+  
+    <li><time>2008/01/29</time> - <a href="http://stnard.jp/2008/01/29/notitle/">また淘汰されていくのか</a></li>
+
+  
+    <li><time>2008/01/26</time> - <a href="http://stnard.jp/2008/01/26/notitle/">オブジェクト指向の再学習のための本を探してます．</a></li>
+
+  
+    <li><time>2008/01/24</time> - <a href="http://stnard.jp/2008/01/24/IPv4/">IPv4アドレス枯渇問題は本当か</a></li>
+
+  
+    <li><time>2008/01/23</time> - <a href="http://stnard.jp/2008/01/23/notitle/">上流と下流の間にあるものは</a></li>
+
+  
+    <li><time>2008/01/21</time> - <a href="http://stnard.jp/2008/01/21/RSS-Reader/">RSS Reader乗り換え</a></li>
+
+  
+    <li><time>2008/01/19</time> - <a href="http://stnard.jp/2008/01/19/notitle/">必読らしい</a></li>
+
+  
+    <li><time>2008/01/18</time> - <a href="http://stnard.jp/2008/01/18/notitle/">まさか・・・・</a></li>
+
+  
+    <li><time>2008/01/16</time> - <a href="http://stnard.jp/2008/01/16/notitle/">薄さと軽さは魅力的，だが</a></li>
+
+  
+    <li><time>2008/01/12</time> - <a href="http://stnard.jp/2008/01/12/notitle/">「ウェブ時代をゆく」を読んで</a></li>
+
+  
+    <li><time>2008/01/11</time> - <a href="http://stnard.jp/2008/01/11/TIPS/">回転・拡大縮小行列</a></li>
+
+  
+    <li><time>2008/01/11</time> - <a href="http://stnard.jp/2008/01/11/notitle/">「とりあえず，お願い」が多いのは</a></li>
+
+  
+    <li><time>2008/01/10</time> - <a href="http://stnard.jp/2008/01/10/notitle/">プログラマの生き残り方？</a></li>
+
+  
+    <li><time>2008/01/09</time> - <a href="http://stnard.jp/2008/01/09/notitle/">来週末の上京に向けて</a></li>
+
+  
+    <li><time>2008/01/09</time> - <a href="http://stnard.jp/2008/01/09/HD-DVD/">さよならHD DVD</a></li>
+
+  
+    <li><time>2008/01/07</time> - <a href="http://stnard.jp/2008/01/07/Fedora-Core-6-ASP-NET/">Fedora Core 6でASP.NETを動かす</a></li>
+
+  
+    <li><time>2008/01/04</time> - <a href="http://stnard.jp/2008/01/04/Rails-Upgrade-1-2-6-to-2-0-2/">Upgrade 1.2.6 to 2.0.2</a></li>
+
+  
+    <li><time>2008/01/02</time> - <a href="http://stnard.jp/2008/01/02/notitle/">新年初の購入品は</a></li>
+
+  
+    <li><time>2008/01/01</time> - <a href="http://stnard.jp/2008/01/01/notitle/">あけましておめでとうございます</a></li>
+
+  
+  </ul>
+  
+  <h2>2007</h2>
+  <ul>
+  
+    <li><time>2007/12/30</time> - <a href="http://stnard.jp/2007/12/30/Rails-Apache-FGCI-3/">Apache&#43;FGCIがよく落ちる問題</a></li>
+
+  
+    <li><time>2007/12/28</time> - <a href="http://stnard.jp/2007/12/28/Upgrade-Fedora-Core-from-7-to-8/">Upgrade Fedora Core from 7 to 8</a></li>
+
+  
+    <li><time>2007/12/28</time> - <a href="http://stnard.jp/2007/12/28/Rails-Apache-FGCI-Segmentation-fault-11/">Apache&#43;FGCIで日をまたぐとSegmentation fault (11)になる問題</a></li>
+
+  
+    <li><time>2007/12/27</time> - <a href="http://stnard.jp/2007/12/27/TIPS-mod_rewrite-QUERY_STRING/">mod_rewriteでQUERY_STRINGを受け渡すには</a></li>
+
+  
+    <li><time>2007/12/27</time> - <a href="http://stnard.jp/2007/12/27/Rails-Ruby-Rails/">Ruby/Railsの勉強にはソースコードを読むのが一番</a></li>
+
+  
+    <li><time>2007/12/27</time> - <a href="http://stnard.jp/2007/12/27/Rails-Mongrel1-1-2/">Mongrel1.1.2で改善？</a></li>
+
+  
+    <li><time>2007/12/26</time> - <a href="http://stnard.jp/2007/12/26/Rails-public-static-contents/">public内のstatic contentsを表示させる方法</a></li>
+
+  
+    <li><time>2007/12/26</time> - <a href="http://stnard.jp/2007/12/26/Rails-LogRotate-Log/">LogRotateさせる &amp; Logのレベルを指定する</a></li>
+
+  
+    <li><time>2007/12/25</time> - <a href="http://stnard.jp/2007/12/25/notitle/">リーダーの資質とは</a></li>
+
+  
+    <li><time>2007/12/21</time> - <a href="http://stnard.jp/2007/12/21/notitle/">順当な判断かなと思いますがいかが？</a></li>
+
+  
+    <li><time>2007/12/20</time> - <a href="http://stnard.jp/2007/12/20/notitle/">タイピング速度はいかに</a></li>
+
+  
+    <li><time>2007/12/20</time> - <a href="http://stnard.jp/2007/12/20/Rails-Apache-FCGI-Segmentation-fault/">Apache&#43;FCGIで，時間が経つとSegmentation faultで落ちて接続できなくなる</a></li>
+
+  
+    <li><time>2007/12/19</time> - <a href="http://stnard.jp/2007/12/19/notitle/">そろそろ終わるのだろうか</a></li>
+
+  
+    <li><time>2007/12/19</time> - <a href="http://stnard.jp/2007/12/19/Flickr/">Flickrアカウントを思い出した</a></li>
+
+  
+    <li><time>2007/12/18</time> - <a href="http://stnard.jp/2007/12/18/Flickr/">Flickrのアカウント</a></li>
+
+  
+    <li><time>2007/12/17</time> - <a href="http://stnard.jp/2007/12/17/notitle/">待ち何とか来ず</a></li>
+
+  
+    <li><time>2007/12/13</time> - <a href="http://stnard.jp/2007/12/13/Rails-fastcgi-apache2/">fastcgi&#43;apache2でのエラーに対処してみる</a></li>
+
+  
+    <li><time>2007/12/13</time> - <a href="http://stnard.jp/2007/12/13/Rails-act_as_authenticated-remember_me/">act_as_authenticatedでremember_meするときの注意点</a></li>
+
+  
+    <li><time>2007/12/12</time> - <a href="http://stnard.jp/2007/12/12/notitle/">いま赤字プロジェクトが多いらしい</a></li>
+
+  
+    <li><time>2007/12/11</time> - <a href="http://stnard.jp/2007/12/11/Rails-TIPS-h-html_escape-model/">h(html_escape)はmodelでは使えないので</a></li>
+
+  
+    <li><time>2007/12/11</time> - <a href="http://stnard.jp/2007/12/11/Rails-flash/">flashがすぐに消えない場合</a></li>
+
+  
+    <li><time>2007/12/11</time> - <a href="http://stnard.jp/2007/12/11/Rails-Ruby-GetText-Package-ActionMailer/">Ruby-GetText-PackageとActionMailerで日本語メール</a></li>
+
+  
+    <li><time>2007/12/07</time> - <a href="http://stnard.jp/2007/12/07/notitle/">クリドラは果たして終わるのか</a></li>
+
+  
+    <li><time>2007/12/07</time> - <a href="http://stnard.jp/2007/12/07/TIPS-JavaScript-setInterval-interval-0-IE/">setIntervalでinterval=0にするとIEで止まる</a></li>
+
+  
+    <li><time>2007/12/07</time> - <a href="http://stnard.jp/2007/12/07/TIPS-Rails-jpmobile-rails-1-2-4-transit_sid/">jpmobile &amp; rails 1.2.4以降だとtransit_sidがエラーになる</a></li>
+
+  
+    <li><time>2007/12/06</time> - <a href="http://stnard.jp/2007/12/06/TIPS-Perl-CPAN-Weak-references-are-not-implemented-in-the-version-of-perl-at/">Weak references are not implemented in the version of perl at...の対処方法</a></li>
+
+  
+    <li><time>2007/12/05</time> - <a href="http://stnard.jp/2007/12/05/Rails-Amazon-ECS/">Amazon-ECSの検索方法など</a></li>
+
+  
+    <li><time>2007/12/03</time> - <a href="http://stnard.jp/2007/12/03/Ruby-Ruby-forumg-PHP/">Ruby-forumgがPHPで動いている件について</a></li>
+
+  
+    <li><time>2007/11/30</time> - <a href="http://stnard.jp/2007/11/30/Rails-Rails/">Railsで携帯表示とメールの日本語化</a></li>
+
+  
+    <li><time>2007/11/23</time> - <a href="http://stnard.jp/2007/11/23/FFXI/">やはり買ってしまったのは呪いか</a></li>
+
+  
+    <li><time>2007/11/23</time> - <a href="http://stnard.jp/2007/11/23/Amazon/">Amazonの配送料問題</a></li>
+
+  
+    <li><time>2007/11/15</time> - <a href="http://stnard.jp/2007/11/15/notitle/">それどこのデビルマン？</a></li>
+
+  
+    <li><time>2007/11/15</time> - <a href="http://stnard.jp/2007/11/15/Rails-acts_as_paranoid/">acts_as_paranoid</a></li>
+
+  
+    <li><time>2007/11/15</time> - <a href="http://stnard.jp/2007/11/15/Rails-Mongrel/">Mongrelは負荷に弱い？</a></li>
+
+  
+    <li><time>2007/11/14</time> - <a href="http://stnard.jp/2007/11/14/Rails-Rails-HTTP-Header/">Railsで任意のHTTP Headerを返す方法</a></li>
+
+  
+    <li><time>2007/11/13</time> - <a href="http://stnard.jp/2007/11/13/Rails-Mongrel/">開発サーバのMongrelへの移行</a></li>
+
+  
+    <li><time>2007/11/13</time> - <a href="http://stnard.jp/2007/11/13/Rails-lighty/">lightyのインストールと設定</a></li>
+
+  
+    <li><time>2007/11/12</time> - <a href="http://stnard.jp/2007/11/12/Rails-routes-rb/">routes.rbで/アクセスを割り当てる</a></li>
+
+  
+    <li><time>2007/11/12</time> - <a href="http://stnard.jp/2007/11/12/Rails-layout-template-parts/">layoutとtemplateとpartsを使い分けるいい方法を知りたい</a></li>
+
+  
+    <li><time>2007/11/12</time> - <a href="http://stnard.jp/2007/11/12/Rails-Ruby-Amazon/">RubyでAmazon</a></li>
+
+  
+    <li><time>2007/11/10</time> - <a href="http://stnard.jp/2007/11/10/notitle/">どの分野も抱える病</a></li>
+
+  
+    <li><time>2007/11/09</time> - <a href="http://stnard.jp/2007/11/09/notitle/">古いマンガがおもしろのは？</a></li>
+
+  
+    <li><time>2007/11/09</time> - <a href="http://stnard.jp/2007/11/09/TIPS-Ruby/">オブジェクトのコピー</a></li>
+
+  
+    <li><time>2007/11/09</time> - <a href="http://stnard.jp/2007/11/09/TIPS-Ruby-method-attribute-Object/">method/attributeがObjectに存在するかどうか確認するには</a></li>
+
+  
+    <li><time>2007/11/09</time> - <a href="http://stnard.jp/2007/11/09/Rails-Rails/">Railsの本を買う</a></li>
+
+  
+    <li><time>2007/11/09</time> - <a href="http://stnard.jp/2007/11/09/TIPS-Rails-Apache2-FastCGI/">Apache2 &#43; FastCGI環境を構築する</a></li>
+
+  
+    <li><time>2007/11/07</time> - <a href="http://stnard.jp/2007/11/07/Rails-act_as_authenticated-2/">act_as_authenticated</a></li>
+
+  
+    <li><time>2007/11/05</time> - <a href="http://stnard.jp/2007/11/05/notitle/">「ウェブ時代をゆく」欲しい！</a></li>
+
+  
+    <li><time>2007/11/05</time> - <a href="http://stnard.jp/2007/11/05/Rails-assert_difference/">assert_differenceとは</a></li>
+
+  
+    <li><time>2007/11/05</time> - <a href="http://stnard.jp/2007/11/05/Rails-act_as_authenticated/">act_as_authenticated</a></li>
+
+  
+    <li><time>2007/11/05</time> - <a href="http://stnard.jp/2007/11/05/Rails-TIPS-ActionMailer/">ActionMailerでサーバの設定方法</a></li>
+
+  
+    <li><time>2007/11/05</time> - <a href="http://stnard.jp/2007/11/05/Account/">Accountコントローラの修正</a></li>
+
+  
+    <li><time>2007/11/02</time> - <a href="http://stnard.jp/2007/11/02/Ruby-JSON-parse/">JSONデータをparseするには</a></li>
+
+  
+    <li><time>2007/11/01</time> - <a href="http://stnard.jp/2007/11/01/notitle/">ルプ★さらだって，ゲームじゃなかったっけ</a></li>
+
+  
+    <li><time>2007/11/01</time> - <a href="http://stnard.jp/2007/11/01/Ruby-TIPS-Object-attributes/">Objectのattributesの中身を変更する別の方法</a></li>
+
+  
+    <li><time>2007/10/31</time> - <a href="http://stnard.jp/2007/10/31/TIPS-TeraStation-LinkStation-EM/">TeraStation/LinkStationで名前の最後に -EM がつくと復旧モード</a></li>
+
+  
+    <li><time>2007/10/30</time> - <a href="http://stnard.jp/2007/10/30/Rails-has_many-through-Association/">多対多で has_many :through を使ったときの Association へのデータ追加法</a></li>
+
+  
+    <li><time>2007/10/28</time> - <a href="http://stnard.jp/2007/10/28/notitle/">北極のナヌー</a></li>
+
+  
+    <li><time>2007/10/25</time> - <a href="http://stnard.jp/2007/10/25/Rails-has_many-through-associations/">has_many :through で associations までとってくるには．</a></li>
+
+  
+    <li><time>2007/10/25</time> - <a href="http://stnard.jp/2007/10/25/Rails-TIPS-cache/">cacheを削除するには</a></li>
+
+  
+    <li><time>2007/10/25</time> - <a href="http://stnard.jp/2007/10/25/Ruby-Ruby-property-attribute/">Ruby は property ではなく attribute</a></li>
+
+  
+    <li><time>2007/10/23</time> - <a href="http://stnard.jp/2007/10/23/JOB/">よくわかるし納得いくのだが．．．．</a></li>
+
+  
+    <li><time>2007/10/22</time> - <a href="http://stnard.jp/2007/10/22/notitle/">読みたい本</a></li>
+
+  
+    <li><time>2007/10/20</time> - <a href="http://stnard.jp/2007/10/20/notitle/">プリンタ到着</a></li>
+
+  
+    <li><time>2007/10/16</time> - <a href="http://stnard.jp/2007/10/16/notitle/">レーザープリンタ導入</a></li>
+
+  
+    <li><time>2007/10/13</time> - <a href="http://stnard.jp/2007/10/13/notitle/">これもやってみた</a></li>
+
+  
+    <li><time>2007/10/13</time> - <a href="http://stnard.jp/2007/10/13/TIPS-Windows-Vista-IPv6/">Windows VistaでIPv6を無効にする方法</a></li>
+
+  
+    <li><time>2007/10/12</time> - <a href="http://stnard.jp/2007/10/12/notitle/">再起動ということは？</a></li>
+
+  
+    <li><time>2007/10/11</time> - <a href="http://stnard.jp/2007/10/11/javascript-tips-setTimeout/">setTimeoutなどで引数を渡す方法</a></li>
+
+  
+    <li><time>2007/10/09</time> - <a href="http://stnard.jp/2007/10/09/2007-10-09/">読みたい本2007/10/09</a></li>
+
+  
+    <li><time>2007/10/08</time> - <a href="http://stnard.jp/2007/10/08/vmware-Fedora-Linux-FC6-to-FC7-on-vmware-4/">FC6 to FC7 on vmware</a></li>
+
+  
+    <li><time>2007/10/07</time> - <a href="http://stnard.jp/2007/10/07/vmware-Fedora-Linux-FC6-to-FC7-on-vmware-3/">FC6 to FC7 on vmware</a></li>
+
+  
+    <li><time>2007/10/07</time> - <a href="http://stnard.jp/2007/10/07/vmware-Fedora-Linux-FC6-to-FC7-on-vmware-2/">FC6 to FC7 on vmware</a></li>
+
+  
+    <li><time>2007/10/06</time> - <a href="http://stnard.jp/2007/10/06/notitle/">今日から</a></li>
+
+  
+    <li><time>2007/10/06</time> - <a href="http://stnard.jp/2007/10/06/vmware-Fedora-Linux-FC6-to-FC7-on-vmware/">FC6 to FC7 on vmware</a></li>
+
+  
+    <li><time>2007/10/05</time> - <a href="http://stnard.jp/2007/10/05/notitle/">さて次の段階は</a></li>
+
+  
+    <li><time>2007/09/06</time> - <a href="http://stnard.jp/2007/09/06/notitle/">だーくさいど</a></li>
+
+  
+    <li><time>2007/08/31</time> - <a href="http://stnard.jp/2007/08/31/zsh/">zshに移行計画</a></li>
+
+  
+    <li><time>2007/08/30</time> - <a href="http://stnard.jp/2007/08/30/TIPS-screenrc/">.screenrc</a></li>
+
+  
+    <li><time>2007/08/29</time> - <a href="http://stnard.jp/2007/08/29/TIPS-emacs/">emacsのカスタマイズ</a></li>
+
+  
+    <li><time>2007/08/29</time> - <a href="http://stnard.jp/2007/08/29/TIPS-GNU-Screen/">GNU Screenを使ってみる</a></li>
+
+  
+    <li><time>2007/08/27</time> - <a href="http://stnard.jp/2007/08/27/notitle/">読みたい本</a></li>
+
+  
+    <li><time>2007/08/21</time> - <a href="http://stnard.jp/2007/08/21/Lifestyle/">どうするか</a></li>
+
+  
+    <li><time>2007/08/12</time> - <a href="http://stnard.jp/2007/08/12/Lifestyle/">取り返しがつかなくなる前に</a></li>
+
+  
+    <li><time>2007/08/12</time> - <a href="http://stnard.jp/2007/08/12/Rails-Ruby/">プロジェクト作成の順序</a></li>
+
+  
+    <li><time>2007/08/12</time> - <a href="http://stnard.jp/2007/08/12/Rails-Ruby-Rails/">Railsのお約束</a></li>
+
+  
+    <li><time>2007/08/08</time> - <a href="http://stnard.jp/2007/08/08/Subversion-Trac-Trac/">さくらインターネットでTrac</a></li>
+
+  
+    <li><time>2007/08/08</time> - <a href="http://stnard.jp/2007/08/08/Subversion-3/">さくらインターネットでSubversion改#3</a></li>
+
+  
+    <li><time>2007/08/08</time> - <a href="http://stnard.jp/2007/08/08/Ruby-Rails-Plugin-LoginEngine-2/">PluginでLoginEngine#2</a></li>
+
+  
+    <li><time>2007/08/08</time> - <a href="http://stnard.jp/2007/08/08/Ruby-Rails-Plugin-LoginEngine-1/">PluginでLoginEngine#1</a></li>
+
+  
+    <li><time>2007/08/07</time> - <a href="http://stnard.jp/2007/08/07/Subversion-2/">さくらインターネットでSubversion改#2</a></li>
+
+  
+    <li><time>2007/08/06</time> - <a href="http://stnard.jp/2007/08/06/subversion/">さくらインターネットでsubversion改</a></li>
+
+  
+    <li><time>2007/08/05</time> - <a href="http://stnard.jp/2007/08/05/emacs-Putty-emac-256-4/">Putty&#43;emacで256色表示に挑戦＃4</a></li>
+
+  
+    <li><time>2007/08/05</time> - <a href="http://stnard.jp/2007/08/05/emacs-Putty-emac-256-3/">Putty&#43;emacで256色表示に挑戦＃3</a></li>
+
+  
+    <li><time>2007/08/05</time> - <a href="http://stnard.jp/2007/08/05/emacs-Putty-emac-256-2/">Putty&#43;emacで256色表示に挑戦＃2</a></li>
+
+  
+    <li><time>2007/08/05</time> - <a href="http://stnard.jp/2007/08/05/emacs-Putty-emac-256-1/">Putty&#43;emacで256色表示に挑戦＃1</a></li>
+
+  
+    <li><time>2007/08/03</time> - <a href="http://stnard.jp/2007/08/03/notitle/">実サンプル集として購入</a></li>
+
+  
+    <li><time>2007/08/03</time> - <a href="http://stnard.jp/2007/08/03/javascript-mode-install/">javascript-modeのinstall</a></li>
+
+  
+    <li><time>2007/08/02</time> - <a href="http://stnard.jp/2007/08/02/Rails/">さくらインターネットでRails</a></li>
+
+  
+    <li><time>2007/08/02</time> - <a href="http://stnard.jp/2007/08/02/Rails-with-sqlite3/">Rails with sqlite3</a></li>
+
+  
+    <li><time>2007/08/01</time> - <a href="http://stnard.jp/2007/08/01/on-subversion/">文字化け on subversion</a></li>
+
+  
+    <li><time>2007/08/01</time> - <a href="http://stnard.jp/2007/08/01/notitle/">さくらインターネットで構築</a></li>
+
+  
+    <li><time>2007/07/31</time> - <a href="http://stnard.jp/2007/07/31/emacs22-1/">emacs22.1導入</a></li>
+
+  
+    <li><time>2007/07/31</time> - <a href="http://stnard.jp/2007/07/31/TIPS-dabbrev-expand/">dabbrev-expand</a></li>
+
+  
+    <li><time>2007/07/30</time> - <a href="http://stnard.jp/2007/07/30/notitle/">なんとなく移動</a></li>
+
+  
+    <li><time>2007/07/30</time> - <a href="http://stnard.jp/2007/07/30/rdoc/">rdocは便利そう</a></li>
+
+  
+    <li><time>2007/07/29</time> - <a href="http://stnard.jp/2007/07/29/TIPS-Windows-Vista-Beep/">Windows VistaでBeepを無効に</a></li>
+
+  
+    <li><time>2007/07/28</time> - <a href="http://stnard.jp/2007/07/28/Fedora-Core-6/">Fedora Core 6の設定など</a></li>
+
+  
+    <li><time>2007/07/28</time> - <a href="http://stnard.jp/2007/07/28/CGI/">CGIの使い方</a></li>
+
+  
+    <li><time>2007/07/27</time> - <a href="http://stnard.jp/2007/07/27/notitle/">なんとなく別のを</a></li>
+
+  
+    <li><time>2007/07/26</time> - <a href="http://stnard.jp/2007/07/26/notitle/">入門書を買ってみる</a></li>
+
+  
+    <li><time>2007/07/26</time> - <a href="http://stnard.jp/2007/07/26/svn-ssh/">svn&#43;sshの設定</a></li>
+
+  
+    <li><time>2007/07/26</time> - <a href="http://stnard.jp/2007/07/26/TIPS-Emacs-indent/">Emacsのindent</a></li>
+
+  
+    <li><time>2007/07/25</time> - <a href="http://stnard.jp/2007/07/25/subversion/">さくらインターネットにsubversion</a></li>
+
+  
+    <li><time>2007/07/25</time> - <a href="http://stnard.jp/2007/07/25/JOB/">あぶなかった？</a></li>
+
+  
+    <li><time>2007/07/24</time> - <a href="http://stnard.jp/2007/07/24/notitle/">なんとなく</a></li>
+
+  
+  </ul>
+  
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

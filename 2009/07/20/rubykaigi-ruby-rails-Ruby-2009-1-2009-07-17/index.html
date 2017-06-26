@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Ruby会議2009 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Ruby会議2009</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>##まとめと感想</p>
+
+<ul>
+<li>初日で平日にも関わらず，結構な入り具合</li>
+<li>Rails 3 は劇的ビフォア・アフター
+
+<ul>
+<li>ただ構造はよくなる予感</li>
+</ul></li>
+<li>大場さん＠万葉社長のプレゼンの前半にのろけがあった模様？</li>
+<li>Github が小数で運用されているらしいのが，凄いことだと言うことと同時に，やればできるんだなぁと思いました．</li>
+</ul>
+
+<p>##開会の言葉</p>
+
+<ul>
+<li>高橋さんによる開会の言葉</li>
+<li>４回目</li>
+<li>３日間</li>
+<li>３セッション同時並行</li>
+<li>スポンサーのご紹介</li>
+<li>中継をどこかでやるらしい
+
+<ul>
+<li>中会議場，特別会議室などには電源がある</li>
+</ul></li>
+</ul>
+
+<p>##Using Git and GitHub to Develope One Millon Times Faster</p>
+
+<ul>
+<li>Scott Chacon from github.com</li>
+<li><a href="http://git-scm.com/">http://git-scm.com/</a> の人</li>
+<li>Pro git <a href="http://progit.org/">http://progit.org/</a></li>
+</ul>
+
+<p>###What is git</p>
+
+<ul>
+<li>Snapshot, not patch</li>
+<li>branche is pointer to a commit.</li>
+<li>merging -&gt; create a new commit which parent is default and experimental</li>
+<li>3 hot way(?)</li>
+<li>Save individual time
+
+<ul>
+<li>No network needed</li>
+<li>frictionless context switching &lt;- branching</li>
+<li>non-linear development
+
+<ul>
+<li>create new branches, switching between branches and development</li>
+</ul></li>
+<li>branching as a patch queue
+
+<ul>
+<li>ブランチを作ることでパッチを作成できる．キューっぽく</li>
+<li>fork queue on github. queue!</li>
+<li>git rebase/format-path/am</li>
+</ul></li>
+</ul></li>
+<li>git rebase -&gt; make patches
+
+<ul>
+<li>commit 間の patch をスタックして，rebase 先の commit に適用する感じ</li>
+</ul></li>
+<li>git rebase &ndash;onto master server
+
+<ul>
+<li>branch of branch の時に，親の親に rebase できないのを，onto で指定する感じ</li>
+</ul></li>
+<li>squash
+
+<ul>
+<li>commit message を１つにまとめる</li>
+</ul></li>
+<li>Save team time
+
+<ul>
+<li>integration manager をおいて管理する</li>
+<li>dictator/l&hellip;</li>
+</ul></li>
+</ul>
+
+<p>###Github</p>
+
+<ul>
+<li>Grit</li>
+<li>Jekyll</li>
+<li>4人の会社</li>
+<li>なぜ github を作ったのか
+
+<ul>
+<li>git の hosting は面倒だから</li>
+</ul></li>
+<li>git の Windows client は？
+
+<ul>
+<li>Git Extensions</li>
+<li>TortaiseGit</li>
+<li>EGit for Eclipse</li>
+</ul></li>
+<li>git submodule をもっと有効に使うにはどうすればいいか？
+
+<ul>
+<li>「subtree merging 40 lines of Rake」をググれ</li>
+<li>progit.org で１章丸ごと submodule について書いている</li>
+</ul></li>
+<li>いつ merge いつ rebase
+
+<ul>
+<li>自分で作業している場合は rebase ，外から来たのは merge</li>
+</ul></li>
+</ul>
+
+<p>##Pragmatic Patterns of Ruby on Rails</p>
+
+<ul>
+<li>大場寧子さん＠万葉</li>
+<li>Akasaka.rb</li>
+<li>飴，とギャルゲーがあるらしい</li>
+<li>iCarta
+
+<ul>
+<li>百人一首のトレーニングソフト</li>
+</ul></li>
+</ul>
+
+<p>###Personal Message</p>
+
+<ul>
+<li>Ruby でエンタープライズもいけるんじゃない？</li>
+</ul>
+
+<p>###conding patterns with RoR</p>
+
+<ul>
+<li>実装パターン</li>
+<li>ターゲット
+
+<ul>
+<li>large and complicated</li>
+<li>team building</li>
+</ul></li>
+<li>Problems of large applications
+
+<ul>
+<li>coding style</li>
+<li>coding quality</li>
+</ul></li>
+<li>メンテしにくくなる</li>
+<li>いいコードを書く必要がある
+
+<ul>
+<li>いい設計，読みやすい，わかりやすい，間違いにすぐ気づく</li>
+</ul></li>
+<li>そこでパターン
+
+<ul>
+<li>共通パターンを作る</li>
+<li>控えめに DSL を使う</li>
+</ul></li>
+<li>このプレゼンで触れないこと
+
+<ul>
+<li>パフォーマンスの追求</li>
+</ul></li>
+<li>ActiveRecord
+
+<ul>
+<li>OOP で書ける</li>
+<li>複雑さに耐えられる</li>
+<li>pragmatic</li>
+<li>RoR の中核</li>
+<li>AR 中心の話に</li>
+<li>基本的に RESTful な事例</li>
+</ul></li>
+<li>実例紹介#1
+
+<ul>
+<li>権限のあるデータを表示(show permitted data)</li>
+<li>パターン#1</li>
+<li>普通に検索する
+
+<ul>
+<li>find_by_id_and_user_id</li>
+<li>written_by(user_id).find(:id)</li>
+<li>named_scope</li>
+<li>これらは条件を忘れても気づきにくい</li>
+</ul></li>
+<li>オブジェクト起点で検索
+
+<ul>
+<li>current_user.notes.find(:id)</li>
+<li>文脈でわかる</li>
+</ul></li>
+<li>Filter で書く
+
+<ul>
+<li>controller の filter で書く</li>
+<li>@group = &hellip; を before_filter で処理しておく</li>
+<li>conding style に自然な強制力が働く</li>
+<li>ちゃんと名前をつけることで，わかりやすくできる</li>
+</ul></li>
+</ul></li>
+<li>実例紹介#2
+
+<ul>
+<li>複雑なビジネスロジック</li>
+<li>ビジネスロジックはモデルに書きたい</li>
+<li>テスト，再利用しやすい</li>
+<li>コードが分散せずに，読みやすい</li>
+<li>集め方が問題</li>
+<li>MVC を壊すのはダメ</li>
+<li>controller から model へ method の移し方を紹介</li>
+<li>パラメータによる分岐ロジック</li>
+<li>controller に処理を書きがち</li>
+<li>制御条件をモデルの属性に</li>
+<li>params の構造も変える</li>
+<li>あとは
+
+<ul>
+<li>付随する他モデルへの処理の委譲</li>
+<li>モデルの callback に移す</li>
+</ul></li>
+<li>自律的なモデルができる</li>
+</ul></li>
+</ul>
+
+<p>###実装パターンの見いだし方</p>
+
+<ul>
+<li>Rails において自然であるように考える
+
+<ul>
+<li>OOP</li>
+<li>「誰が」「何を」すべきかを考える</li>
+<li>テーブル(database tables)で決めない</li>
+<li>原則に従う</li>
+<li>DRY</li>
+<li>CoC</li>
+<li>RESTful
+
+<ul>
+<li>Rails では RESTful から逃げない方がいい</li>
+<li>リソース１つに１つのコントローラー</li>
+<li>URL 設計から考えるとよろしい感じ</li>
+</ul></li>
+</ul></li>
+
+<li><p>Rails プログラマにとって標準的な coding style になる</p>
+
+<ul>
+<li>誰でも読める</li>
+</ul></li>
+
+<li><p>Enterprise とは</p>
+
+<ul>
+<li>10人ぐらい</li>
+</ul></li>
+
+<li><p>モデルが肥大化するのでは？</p>
+
+<ul>
+<li>module に切り分けていたりしている</li>
+</ul></li>
+
+<li><p>RESTful で batch や非同期処理は？</p>
+
+<ul>
+<li>複数リソースへの PUT として考えている</li>
+</ul></li>
+</ul>
+
+<p>##「エンタープライズRails」に学ぶ企業ユーザのためのRailsアーキテクチャ</p>
+
+<ul>
+<li>高井さん＠Akasaka.rb
+
+<ul>
+<li>「私がエンタープライズRuby」「Ruby会議のエンタープライズ枠は全て私のもの」</li>
+</ul></li>
+</ul>
+
+<p>###前振り</p>
+
+<ul>
+<li>「人材は人月で買ってこれるから重要じゃない」＠高井</li>
+<li>企業システムにとって一番重要なのは「データ」</li>
+<li>DOA(Data Oriented Approach)
+
+<ul>
+<li>プロセスよりもデータの方が安定的</li>
+<li>業務フローは変更されるが，データは変更されない</li>
+<li>データに対する要求として体系化できる</li>
+<li>データモデルによって業務ルールを分析できる</li>
+</ul></li>
+<li>Rails は DOA に類似している
+
+<ul>
+<li>RDBMS 前提</li>
+<li>モデルを中心にした Framework</li>
+<li>CRUD 分析を重視する</li>
+</ul></li>
+<li>相違点もある
+
+<ul>
+<li>データモデルを重視していない</li>
+<li>業務ルールはアプリケーション層のみで実装</li>
+<li>背景にはリソース指向がある</li>
+</ul></li>
+<li>DOA - Rails = 「エンタープライズ Rails」</li>
+</ul>
+
+<p>###データベースの制約を活用する</p>
+
+<ul>
+<li>データ保護はアプリケーション層のみでは不十分
+
+<ul>
+<li>アプリケーションやフレームワークは変化する</li>
+<li>アプリケーションにはバグがある</li>
+<li>DBは複数のアプリケーションから利用される</li>
+</ul></li>
+<li>データベース層でもRDBMSレベルで保護すべき
+
+<ul>
+<li>NOT NULL制約 / CHECK制約</li>
+<li>データベースのユニットテスト
+
+<ul>
+<li>validation を skip して SQL Error が raise するかどうかを検証する</li>
+</ul></li>
+<li>参照制約</li>
+<li>外部キー制約</li>
+</ul></li>
+</ul>
+
+<p>###複合主キーを導入する</p>
+
+<ul>
+<li>has_many だと無駄な JOIN が発生してしまう</li>
+<li>望ましいのは，Employees に company_id を入れた感じ
+
+<ul>
+<li>ただしこれだとアプリケーションレベルでの制約しかなくなる</li>
+<li>そこで Departments に複合主キーを作る</li>
+<li>Employees にかならず Companies/Departments の組み合わせのキーが入るので，存在しない Companies/Departments の組み合わせを取得することができない</li>
+</ul></li>
+<li>Rails 側で導入するには
+
+<ul>
+<li># gem install composite_primary_key</li>
+</ul></li>
+<li>中間テーブルを複合主キー化する
+
+<ul>
+<li>子テーブルに親の親の主キーと親の主キーへの外部参照を設定する</li>
+</ul></li>
+</ul>
+
+<p>###ビューでシンプルにする</p>
+
+<ul>
+<li>複数のテーブルからの，複雑な検索条件を問い合わせたい</li>
+<li>ビューを作って，モデルも作れば参照できる
+
+<ul>
+<li>view-backed model と言うらしい</li>
+<li>ビューはサブクエリみたいに使える</li>
+</ul></li>
+</ul>
+
+<p>###Q&amp;A</p>
+
+<ul>
+<li>migration では制約はどう書く？
+
+<ul>
+<li>execute で書く</li>
+<li>エンタープライジーな人は migration なんて使わない</li>
+</ul></li>
+<li>ビューは使えるのか？
+
+<ul>
+<li>view-backed model は使える</li>
+<li>パフォーマンスの問題はある</li>
+<li>使いどころを見極める</li>
+</ul></li>
+<li>composite_primary_key は最新の Rails で使えるの？
+
+<ul>
+<li>forum 見ようね</li>
+</ul></li>
+<li>AR の代替は書いてる？AR は好き？
+
+<ul>
+<li>代替は書いてない</li>
+<li>AR は好きというか，流されてる？</li>
+</ul></li>
+<li>memcached とかどう？
+
+<ul>
+<li>materialized view の涙ぐましい努力を見ようね</li>
+<li>(キャッシュのレベルが違う？)</li>
+</ul></li>
+<li>複合主キーの良い例は書いてる？
+
+<ul>
+<li>複雑な例が書いてある</li>
+</ul></li>
+<li>Web の人に呼んで欲しい
+
+<ul>
+<li>原書 PDF で読もうかな</li>
+</ul></li>
+</ul>
+
+<p>##より良きruby市民のために Rails 3</p>
+
+<ul>
+<li>Better Ruby Citizen</li>
+<li>@wycats Yefuda Katz from EngineYard</li>
+<li>merb + Rails -&gt; Rails 3</li>
+<li>EngineYard
+
+<ul>
+<li>Solo</li>
+<li>Flex</li>
+</ul></li>
+<li>Rails 3
+
+<ul>
+<li>Rack</li>
+<li>JSON</li>
+<li>Erubis</li>
+<li>More love</li>
+</ul></li>
+<li>Rails 3 have special API
+
+<ul>
+<li>for DataMapper</li>
+<li>for jQuery</li>
+<li>for CouchRest</li>
+</ul></li>
+<li>ActiveModel
+
+<ul>
+<li>= ActiveRecord - DatabaseAdapter</li>
+<li>ex)</li>
+<li>include ActiveModel::Validations
+
+<ul>
+<li>use valdations like ActiveRecord</li>
+</ul></li>
+</ul></li>
+<li>Components
+
+<ul>
+<li>API</li>
+<li>extend ActiveModel::Naming
+
+<ul>
+<li>person_path(@person) works fine in controllers</li>
+<li>form_for/error_messages works fine too in views</li>
+</ul></li>
+</ul></li>
+<li>Decoupled
+
+<ul>
+<li>ActiveRecord + ActionController + ActionView = Rails 2.3</li>
+<li>three classes are mutually combined</li>
+<li>Rails 3 = ActionController + ActionView + ActiveModel</li>
+</ul></li>
+<li>ActionPack
+
+<ul>
+<li>ActionContoller::Http
+
+<ul>
+<li>Metal in Rails 2.3?</li>
+</ul></li>
+<li>Simple
+
+<ul>
+<li>Kaigi.action(:index) returns ActionController::Http object.</li>
+</ul></li>
+<li>Callbacks</li>
+<li>include AbstractController::Callbakcs
+
+<ul>
+<li>uses callbacks like ActionController::Base</li>
+</ul></li>
+<li>Render</li>
+<li>include ActionController::Renderer
+
+<ul>
+<li>uses render :template =&gt; &ldquo;&hellip;&rdquo; like ActionController::Base</li>
+</ul></li>
+<li>Layouts</li>
+<li>include ActionController::Layouts
+
+<ul>
+<li>uses layout &ldquo;&hellip;&rdquo; like ActionController::Base</li>
+</ul></li>
+</ul></li>
+<li>ActiveSupport
+
+<ul>
+<li>require &lsquo;active_support/all&rsquo; or require &lsquo;actiove_support/ruby/shim&rsquo; &lt;- Ruby 1.9.1</li>
+</ul></li>
+<li>Less Pollution</li>
+<li>Cherry Pick</li>
+<li>Manage Modules
+
+<ul>
+<li>ActiveSupport::Concern</li>
+<li>included?</li>
+</ul></li>
+<li>Isolation Testing
+
+<ul>
+<li>include ActiveSupport:::Testing::Isolation</li>
+<li>each test processes run in different enveioments</li>
+</ul></li>
+</ul>
+
+<p>###Summary</p>
+
+<ul>
+<li>劇的な変更があるが，これにあわせてシステムを書き換えるのはかなり大変そう
+
+<ul>
+<li>まあ一部の機能しか使わなければ，特に問題にはならないのかも知れないが</li>
+</ul></li>
+</ul>
+
+<p>###Q&amp;A</p>
+
+<ul>
+<li>Plugin はどうかわる？
+
+<ul>
+<li>API を定義するからこれで最後の変更になる</li>
+<li>こっからがんばってくれ</li>
+</ul></li>
+</ul>
+
+<p>##Lightning Talks</p>
+
+<ul>
+<li>あとで写真アップ予定</li>
+<li>KeyValue Store な話が複数あったのは，時代の流れだろうか．</li>
+<li>レガシー = P** な話が一番おもしろかった</li>
+</ul>
+
+<p>##懇親会</p>
+
+<ul>
+<li>キーサインパーティー
+
+<ul>
+<li>人生初のキーサイン．まだ署名してかぎ送ってないけど．．．．</li>
+</ul></li>
+<li>プチ jpmobile 会議
+
+<ul>
+<li>@darashi さんと初対面．Rails 2.3.2 対応はマージしちゃいましょう！と言う話になりました．</li>
+<li>来れなかった方ごめんなさい＞＜</li>
+</ul></li>
+<li>matz とかいろんなひとのサイン
+
+<ul>
+<li>人数でしたか．@ngtyk さんが一位だったらしい</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-1-2009-07-17/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-2-2009-07-18/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-2-2009-07-18/">Ruby会議2009</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/07/23/iphone-ui-iPhone-UI/">iPhone とか UI とか勉強会@万葉</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/07/23/iphone-ui-iPhone-UI/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>第14回 オープンソーステクノロジー勉強会に行ってきた． &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>第14回 オープンソーステクノロジー勉強会に行ってきた．</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>行ってきましたGREE主催の勉強会．と言うわけで，右後ろでカシャカシャ打ってたログを．</p>
+
+<h1 id="モバイルフレームワーク-mobasif">##モバイルフレームワーク MobaSiF</h1>
+
+<p>###昔と比べて携帯サービス開発は楽</p>
+
+<ul>
+<li>昔と比べて楽になった
+
+<ul>
+<li>端末の認証情報</li>
+<li>UIDの取得は確かに楽になった</li>
+<li>絵文字の扱い</li>
+<li>auが外字コードで出し入れ可能になった</li>
+<li>画像の出し分け</li>
+<li>タグの有効無効</li>
+<li>&lt;table&gt;の扱い</li>
+<li>ページ容量向上</li>
+<li>画面サイズと液晶の画質の向上</li>
+</ul></li>
+<li>MobaSiFが対象としているのは通常のHTMl
+
+<ul>
+<li>Flash/アプリ/動画などは機種個別の扱いが必要</li>
+</ul></li>
+<li>古い機種を切り捨ると確かに楽だが．．．．
+
+<ul>
+<li>i-mode IDの取り方(参考)</li>
+<li>guid=ONつけないとダメ</li>
+<li>formの場合は
+
+<ul>
+<li>GET  -&gt; hidden でかかないとダメ</li>
+<li>POST -&gt; action に query をつけないとダメ</li>
+</ul></li>
+<li>古い機種の対応</li>
+<li>mova
+
+<ul>
+<li>XHTML，背景色がダメ</li>
+</ul></li>
+<li>foma ～901, ～701
+
+<ul>
+<li>&lt;table&gt;が使えない</li>
+</ul></li>
+<li>au CDMA 1X
+
+<ul>
+<li>50Kまで</li>
+<li>絵文字が&lt;local src=&rdquo;***&rdquo;&gt;</li>
+</ul></li>
+<li>softbank 3GC 型以外
+
+<ul>
+<li>png 素材も用意しないとダメ</li>
+</ul></li>
+<li>softbank C型
+
+<ul>
+<li>公式以外では端末認証できない</li>
+<li>これは知らなかったので，いい情報．あとでUA調べてみよう．</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>###MobaSiFとは</p>
+
+<ul>
+<li>モバオク，ポケットアフィリエイト，モバゲータウン，モバコレで使われているものの機能を切り出した感じ．</li>
+<li>基本思想
+
+<ul>
+<li>気軽に作れて，ヒットしたらスケールできるのが理想</li>
+<li>細かいところはきにしない</li>
+<li>フレームワーク全体を把握して開発すべき．</li>
+<li>運用も想定して開発すべき</li>
+<li>フレームワークは生もの．サービスとともに成長する</li>
+<li>このあたりは Rails とは少し想定が違う感じ．</li>
+</ul></li>
+</ul>
+
+<p>###MobaSiF特徴</p>
+
+<ul>
+<li>モバイル特有の処理
+
+<ul>
+<li>端末情報・絵文字</li>
+</ul></li>
+<li>軽い
+
+<ul>
+<li>XS モジュール</li>
+<li>テンプレートの処理や地図・アバターの合成などはXSを使ってる</li>
+<li>起動コストが小さい</li>
+<li>トラフィックが多いことを想定しているので，サーバ再起動時などに，必要に応じてモジュールをロードできるような仕組み</li>
+<li>素朴な実装</li>
+<li>全体を把握しやすく，融通が利くように
+
+<ul>
+<li>Rails だとこの真逆かな．</li>
+</ul></li>
+<li>依存モジュールが少ない</li>
+<li>ほとんどPerlの基本モジュールのみ</li>
+<li>XSは build しなければならない？</li>
+<li>動作環境はある程度しばる</li>
+<li>Linux/Apache/MySQL/fastcgi
+
+<ul>
+<li>サーバ構成を縛ることは実はいいことかもしれない．</li>
+</ul></li>
+</ul></li>
+<li>動作環境
+
+<ul>
+<li>Linux CentOS4.x</li>
+<li>perl 5.8.0</li>
+<li>Apache 1.3.x + mod_fastcgi</li>
+<li>MySQL 5.0.x</li>
+</ul></li>
+<li>対応案末
+
+<ul>
+<li>DoCoMo</li>
+<li>Foma 900 以降</li>
+<li>au</li>
+<li>WIN 以降</li>
+<li>Softbank</li>
+<li>3GC型</li>
+<li>基本的に3G端末のみをサポート</li>
+</ul></li>
+</ul>
+
+<p>###基本機能構成</p>
+
+<ul>
+<li>ディスパッチャ
+
+<ul>
+<li>モバイル用環境変数の設定</li>
+<li>リクエストパラメータ取得</li>
+<li>ユーザデータ取得</li>
+<li>ステータスチェック</li>
+<li>モジュールロード</li>
+<li>処理実行</li>
+</ul></li>
+<li>端末情報取得
+
+<ul>
+<li>UserAgent から判別したキャリア</li>
+<li>データベースに機種情報があり，それとの組み合わせで判別もしている</li>
+<li>IPから判別したキャリア</li>
+<li>端末タイプ，モデル名</li>
+<li>UID</li>
+<li>画面サイズ</li>
+</ul></li>
+<li>ユーザ認証</li>
+<li>絵文字変換
+
+<ul>
+<li>内部コードはShift_JIS</li>
+<li>外部コード変換はラウンドトリップ対応</li>
+<li>変換はフレームワークで行うので，プログラマが意識することはない</li>
+</ul></li>
+<li>テンプレート
+
+<ul>
+<li>事前コンパイル方式</li>
+<li>コンパイル -&gt; 3キャリアのバイナリテンプレートが生成される</li>
+<li>共有メモリ(mmp)でテンプレートを読み込むので高速</li>
+<li>必要最低限の機能</li>
+<li>静的ページも動的生成</li>
+</ul></li>
+<li>テンプレート処理
+
+<ul>
+<li>変数埋め込みや分岐処理，ループ処理など</li>
+</ul></li>
+<li>基本遷移
+
+<ul>
+<li>ユーザの導線</li>
+</ul></li>
+</ul>
+
+<p>###Webアプリ以外での使用</p>
+
+<ul>
+<li>batch/daemon/監視スクリプトなどでも使える</li>
+<li>use MobaConf; だけで，Webアプリと同じ設定を読み込め，全機能にアクセスできる</li>
+<li>日記の更新
+
+<ul>
+<li>ローカルファイルにアクセス記録</li>
+<li>その後にデータベースサーバに集約している</li>
+<li>リアルタイムに処理するには重すぎる場合の処理</li>
+<li>モバゲーの日記はリアルタイムにアクセス数が更新されないのか</li>
+</ul></li>
+</ul>
+
+<p>###モバゲーのものとの違い</p>
+
+<ul>
+<li>メール送受信部分の割愛</li>
+<li>セキュリティー的に見せられないコードの割愛</li>
+<li>docomo の認証
+
+<ul>
+<li>SSL でとれないので，session で引き回して取得しなければならない</li>
+</ul></li>
+<li>絵文字のとりまわし</li>
+<li>誤字の訂正</li>
+</ul>
+
+<p>###モバゲーの課題</p>
+
+<ul>
+<li>DBアクセスで律速なので，フレームワーク高速化してもあまり意味がない
+
+<ul>
+<li>これはどこも同じか</li>
+<li>1サーバ15プロセスで，いかに詰まらせないかを考えている</li>
+<li>DB 500 台あるらしい</li>
+</ul></li>
+<li>システム全体が巨大になり，フレームワークの修正が危険になってきた．</li>
+<li>少人数開発前提なので，コード品質のばらつきに弱い</li>
+<li>そろそろutf8に移行すべきか．．．．</li>
+</ul>
+
+<p>###質疑応答</p>
+
+<ul>
+<li>非同期処理のキックは何で？
+
+<ul>
+<li>Webサーバでローカルキューに書き出し，daemon がbatch処理サーバに送信し，batch処理サーバが処理する</li>
+<li>ファイル監視方式．プログラム書く人がファイルの監視部分に注意する．</li>
+</ul></li>
+<li>デプロイ関係でデータベース変更がある場合の手順などは？
+
+<ul>
+<li>先に configuration 巻いて，手順通りにやる</li>
+<li>DNS ベースで slave 先を見ているので，そこを書き換えれば OK</li>
+<li>master の変更は，朝方に 5分程度のメンテナンス</li>
+<li>普段の deploy は rsync で１台ずつ</li>
+<li>Webサーバ200台ぐらいあるそうな</li>
+</ul></li>
+<li>直したいところは？
+
+<ul>
+<li>文字コード周りを直したい．</li>
+<li>MySQL 4.0 では問題ないが，MySQL 5.0 では SET NAME とか面倒なことしなければいけないので，そこな直したい．</li>
+<li>O/R Mapper を使おうとは思わない</li>
+</ul></li>
+<li>逆質問:Greeの藤本さんはどうなんですか？
+
+<ul>
+<li>手を離れているので，ちょっと</li>
+<li>utf-8 対応にしておきたかった．</li>
+</ul></li>
+<li>DeNAで使ってるCPAN module は？
+
+<ul>
+<li>DBI ぐらいしか入ってない</li>
+</ul></li>
+<li>コーディングルールとかは？
+
+<ul>
+<li>空気読めればいい！</li>
+<li>だんだん空気感が伝わらなくなってくる</li>
+<li>地道にルール作っていくしかない</li>
+<li>テストの基準もそろそろどうになしないと</li>
+</ul></li>
+<li>データベースとファイルの使い分けは？
+
+<ul>
+<li>ファイルは非同期処理の手段として使う</li>
+<li>決済処理などはファイルを使わない</li>
+<li>欠落しても問題なさそうな軽めの情報をファイルに書く</li>
+<li>ファイルだと現場ベースで扱いやすい</li>
+<li>端末データはデータベース上にあるが，基本的にプロセス上でキャッシュしている</li>
+</ul></li>
+<li>MobaSiFはXSも入ってるけど，どこをCでどこをPerl？
+
+<ul>
+<li>基本処理をPerlで書いて，処理時間を計って，頻度と時間に応じてかき分けている</li>
+<li>あとは書きたかったから</li>
+</ul></li>
+<li>データベース負荷分散は？
+
+<ul>
+<li>プログラムベースでIDベースのデータベースパーティショニングをやっている</li>
+<li>キーの値に応じて，DB1, DB2 などの振り分けは，手動で組んでやっている</li>
+<li>インフラ周りとしては標準の負荷分散</li>
+</ul></li>
+</ul>
+
+<p>##まとめ
+今回の主題である MobaSiF は Perl でのフレームワークだったわけですが，やはりモバイルではみんなどこも同じことをやるんだなぁと言うのが第一印象．あと日記のアクセス数など，バッチ処理でこなしている部分も結構あるみたいで，即時性と完全性が要求される部分とそうでない部分を切り分けるのも重要だと感じました．</p>
+
+<p>次回はインフラ周りか検索エンジンの話なのかな？それも期待です．</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/07/09/http-labs-gree-jp-Top-Study-20080708-html-title-14/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/07/03/notitle/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/07/03/notitle/">「黙っとけ」で有名な本</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/07/14/notitle/">もったいないことは止めよう</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/07/14/notitle/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

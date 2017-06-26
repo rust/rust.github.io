@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/10/notitle/">原書と翻訳本とのタイムラグ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  技術の進歩というか展開の早さが，翻訳のスピードに追いつかないのじゃないかと言うぐらい，出版のペースが速いので，原書を買う方向に転換しました．
+ Programming Ruby 1.9: The Pragmatic Programmers&#39; Guide (Facets of Ruby)  著者: Dave Thomas, Chad Fowler, Andy Hunt
+出版日: 2009-04
+出版社/メーカー: Pragmatic Bookshelf
+カテゴリ: Book
+    計算機プログラムの構造と解釈  著者: ジェラルド・ジェイ サスマン, ジュリー サスマン, ハロルド エイブルソン
+出版日: 2000-02
+出版社/メーカー: ピアソンエデュケーション
+カテゴリ: Book
+    月刊 アフタヌーン 2008年 10月号 [雑誌]  著者: 出版日: 2008-08-25
+出版社/メーカー: 講談社
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/06/ruby-rails-ssb-Rev-17132-ubuntu-8-04-Ruby-1-8-6/">ssb Rev.17132 が ubuntu 8.04/Ruby 1.8.6 で動作しなくなってる問題に対処する</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  変更点は2点．
+Index: libs/ssb.rb =================================================================== --- libs/ssb.rb (リビジョン 17132) +++ libs/ssb.rb (作業コピー) @@ -40,7 +40,7 @@ ['response is nil', 'N/A'] when ssb_response.instance_of?(String) string_response(cgi_response, ssb_response) - when ['301', '302'].include? ssb_response.code + when ['301', '302'].include?(ssb_response.code) redirect_response(cgi_response, ssb_response) else ok_response(cgi_response, ssb_response) @@ -159,7 +159,7 @@ when '/' %Q! #{attribute}=&quot;./?ssb_q=#{WEBrick::HTTPUtils.escape_form(('http://' + request_uri.host + ':' + request_uri.port.to_s + CGI.unescapeHTML(value)).to_s)}&quot;#{$5} target=&quot;_top&quot;&gt;! else - %Q! #{attribute}=&quot;./?ssb_q=#{WEBrick::HTTPUtils.escape_form((request_uri + CGI.escape(CGI.unescapeHTML(value))).to_s)}&quot;#{$5} target=&quot;_top&quot;&gt;! + %Q! #{attribute}=&quot;./?ssb_q=#{WEBrick::HTTPUtils.escape_form(((CGI.unescapeHTML(value))).to_s)}&quot;#{$5} target=&quot;_top&quot;&gt;! end when 'action' %Q! #{attribute}=&quot;./&quot; #{$5}&gt;&lt;input type=&quot;hidden&quot; name=&quot;ssb_q&quot; value=&quot;#{(request_uri + value).
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/08/06/ruby-rails-ssb-Rev-17132-ubuntu-8-04-Ruby-1-8-6/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/02/ruby-Tokyu-rb-2/">Tokyu.rb第2回集会</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##目標 ruby-trunk で edge-rails を動かそうぜ！
+##参加者
+ Rust/OGAWA(conceal-rs) cesare ginkouno Yuumi3 FUKUDA  ##ログ
+ ruby-trunk の build  % cd ruby-trunk % svn up % autoconf % ./configure --prefix=/usr/local/ruby-pkg/ruby-1.9-trunk % make % sudo make install % sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/ruby /usr/local/bin/ruby1.9 % sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/gem /usr/local/bin/gem1.9 % sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/rake /usr/local/bin/rake1.9 % sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/irb /usr/local/bin/irb1.9 % rehash % ruby1.9 --version ruby 1.9.0 (2008-08-01 revision 18249) [i686-linux]   edge-rails の clone  % cd edge-rails % git clone git://github.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/08/02/ruby-Tokyu-rb-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/02/notitle/">インフラは奥が深いよね</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  イベントは行ってみたかった．非常に残念です．
+ [24時間365日] サーバ/インフラを支える技術 ‾スケーラビリティ、ハイパフォーマンス、省力運用 (WEB&#43;DB PRESS plusシリーズ)  著者: 安井 真伸, 横川 和哉, ひろせ まさあき, 伊藤 直也, 田中 慎司, 勝見 祐己
+出版日: 2008-08-07
+出版社/メーカー: 技術評論社
+カテゴリ: Book
+    お釈迦様もみてる―紅か白か (コバルト文庫)  著者: 今野 緒雪
+出版日: 2008-08-01
+出版社/メーカー: 集英社
+カテゴリ: Book
+    少年ガンガン 2008年 09月号 [雑誌]  著者: 出版日: 2008-08-12
+出版社/メーカー: スクウェア・エニックス
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/31/rails-ruby-Passenger/">開発環境でPassengerを使うには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  環境変数 RAILS_ENV を設定する必要があるので，
+ VirtualHostの設定(/etc/apache2/sites-enabled/000-default)  RailsAutoDetect off &lt;VirtualHost *&gt; DocumentRoot /var/www RailsBaseURI /rails RailsEnv development &lt;/VirtualHost&gt;   などとしておく．設定内容は以下のような感じ． :RailsEnv (development|production):RAILS_ENV を設定する．デフォルトは production :RailsAutoDetect (on|off):Rails アプリを自動検出する．デフォルトは on :RailsBaseURI (PATH):Rails アプリのパス名を指定する．要するに /public の位置．  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/30/rails-debian-linux-Passenger/">Passengerをインストールしてみる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Passengerで動かすことを想定して，ローカル環境にもインストールしてみる．
+% sudo gem install passenger % sudo /var/lib/gems/1.8/bin/passenger-install-apache2-module Welcome to the Phusion Passenger Apache 2 module installer, v2.0.2. This installer will guide you through the entire installation process. It shouldn't take more than 3 minutes in total. Here's what you can expect from the installation process: 1. The Apache 2 module will be installed for you. 2. You'll learn how to configure Apache. 3. You'll learn how to deploy a Ruby on Rails application.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/07/30/rails-debian-linux-Passenger/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/29/rails-OpenID/">OpenIDを使ったユーザ認証の実験</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ruby-openidを使ってみることに．
+% ruby script/generate openid_login openid create lib/openid_login_system.rb create app/controllers/openid_controller.rb create test/functional/openid_controller_test.rb create app/helpers/openid_helper.rb create app/models/user.rb create test/unit/user_test.rb create test/fixtures/users.yml create app/views/layouts/scaffold.rhtml No such file or directory - /var/lib/gems/1.8/gems/rails-2.1.0/lib/rails_generator/generators/components/scaffold/templates/layout.rhtml  と，なんかファイルがないと言われる．なんか気持ち悪いので，他を調べて，open_id_authentication を使ってみることに．
+% ruby script/plugin install open_id_authentication % rake open_id_authentication:db:create (in /home/path/to/project) create db/migrate create db/migrate/20080729125249_add_open_id_authentication_tables.rb % rake db:migrate % ruby script/generate controller sessions   config/routes.rb  map.open_id_complete 'session', :controller =&gt; 'sessions', :action =&gt; 'create', :requirements =&gt; {:method =&gt; :get} map.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/07/29/rails-OpenID/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/28/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0031-title-Rails-31/">Rails勉強会＠東京第31回に参加してきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  先月は RubyKaigi 会場での開催となったので，2ヶ月ぶりの開催です．主催の皆さまありがとうございます．
+そしてまとめログを．
+##時間割
+ 13:30～14:45 前半セッション  named_scope 詳しく Redmineの半歩先 Scaffoldの半歩先  15:00～16:15 後半セッション  Rails2.2 i18n iKnowを詳しく  16:30～17:00 LT 17:00～18:00 ふりかえり  ====
+##前半セッション：named_scope についてくわしく
+ named_scope  Rails 2.1 からの新機能． 検索集合に対して名前をつける． Method Chain で賢く Query が吐かれる．  なにができるのか  ORM によって，SQL/RDBMS は単なるデータストレージぽくなった． そこに，named_scope が ORM に集合演算の概念を再度持ち込んでくれた．  実際には  :conditions を指定した絞り込み 引数を渡すこともできる method chain で適切な SQL を生成してくれる 集合に対する演算も適宜できる User.active.ban で active users を全て deleted = true にできる   named_scope :actione, :conditions =&gt; [&quot;#{table_name}.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/07/28/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0031-title-Rails-31/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/28/ruby-ruby-trunk-build/">ruby-trunkからのbuild</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  先っちょを使うと宣言した以上，trunkを使わねばと言うことで，そのログなどを．
+ Subversion Repository から checkout  % mkdir ruby-repos % cd ruby-repos % svn co http://svn.ruby-lang.org/repos/ruby/trunk/ ruby-trunk   http://doc.loveruby.net/wiki/HowToInstallRubys.htmlを参考に，/usr/local/ruby-pkg/ruby-1.9-trunk にインストール．  % cd ruby-trunk % autoconf % ./configure --prefix=/usr/local/ruby-pkg/ruby-1.9-trunk % make   と，ここで，bisonがないと言われるので持ってくる1．  % apt-get install bison  % sudo make install % sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/ruby /usr/local/bin/ruby1.9   確認  % rehash % ruby1.9 --version ruby 1.9.0 (2008-07-28 revision 18249) [i686-linux]   まあ当然必要だよねorz [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/25/ruby-tokyo-rb-Tokyu-rb/">Tokyu.rb初集会での成果は</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  qwik.jp に移動することが決まりました．それ以外は Wiki を待て！(ぉぃ．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/30/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;31 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/32/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

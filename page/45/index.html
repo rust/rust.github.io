@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/25/notitle/">リーダーの資質とは</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://bizmakoto.jp/makoto/articles/0712/25/news023.html
+ この幕引きで福田内閣の支持率が上がるわけではあるまい。リーダーシップが求められているときにリーダーシップを発揮できなければ、最後は追い込まれての決断であって、それで求心力を強めることにはつながらないからである。福田総理が分かっていないのがこの点なのだ。最近の流行り言葉で言えば、KYすなわち「空気が読めない」首相ということだ。
+ 後手後手に回って解決しました！と意気込んでも，それ以上のマイナスにならないだけで評価の向上には繋がらないってことですね．空気を読む・状況を理解することこそ，リーダーの資質として一番重要なことではないかと思う今日この頃．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/21/notitle/">順当な判断かなと思いますがいかが？</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://k-tai.impress.co.jp/cda/article/news_toppage/37779.html
+なんだかんだでDoCoMoは寡占的であるし，SoftBankはどうも胡散臭いしと言うことで，残るKDDIとWillcomになったような気がしないでもない．au好きのWillcom使いの私にとってはいい選択だと思います．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/20/Rails-Apache-FCGI-Segmentation-fault/">Apache&#43;FCGIで，時間が経つとSegmentation faultで落ちて接続できなくなる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いろいろ調べても解決法見つからず．と思ってたところに下記記事を見つけました．
+http://dsas.blog.klab.org/archives/50972695.html
+もしかして，ソースを更新するたびにちゃんとApacheをrestartせんといかんのだろうか(;´Д`)．当たり前なことなら，勉強不足でしたorz．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/20/notitle/">タイピング速度はいかに</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ちょっとやってみた．あんまり高くないそうだ．すごい人はこちらもすごい？平均はどれぐらいなんだろうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/19/Flickr/">Flickrアカウントを思い出した</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Flickrにメールで問い合わせると，アカウント名が記憶と違ったらしい(;´д`)．そのアカウント名でログインすると普通に入れたよ．．．．ちゃんと記録しとかんといかんなorz．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/19/notitle/">そろそろ終わるのだろうか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  マリア様がみてる―キラキラまわる (コバルト文庫)  著者: 今野 緒雪
+出版日: 2007-12-26
+出版社/メーカー: 集英社
+カテゴリ: Book
+    月刊 アフタヌーン 2008年 02月号 [雑誌]  著者: 出版日: 2007-12-25
+出版社/メーカー: 講談社
+カテゴリ: Book
+  いわゆるプライマーになったので，いろいろ考えずに注文できるぜー(ノ∀`)．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/18/Flickr/">Flickrのアカウント</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  あるはずなんだが，何を入力してもダメ．．．．新パスワード発行しようにも，メールアドレスが存在しないと言われる始末orz．いかん，記憶を取り戻さないと．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/17/notitle/">待ち何とか来ず</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  連絡ありません．悲しいかな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/13/Rails-act_as_authenticated-remember_me/">act_as_authenticatedでremember_meするときの注意点</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  複数の場所でログイン･ログアウトをすると，
+ FooControllerでは  :login_from_cookieではログイン成功 redirect_to :controller =&gt; &ldquo;hoge&rdquo;  HogeControllerでは  :login_requiredではログイン不成功 redirect_to :controller =&gt; &ldquo;foo&rdquo;   となり，無限ループに陥ってました．どうやら，Cookieのremember_tokenとDB上のそれが異なるためっぽい．詳しくは調べて無いので，断言は出来ませんがorz．とりあえず，
+if current_user.is_a? User  などとして回避した．ちなみに:falseが返ってくる．なぜだろうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/13/Rails-fastcgi-apache2/">fastcgi&#43;apache2でのエラーに対処してみる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Apache2.2 + FastCGIでRailsを動かしていると，
+FastCGI: comm with (dynamic) server &quot;/path/to/dispatch.fcgi&quot; aborted: (first read) idle timeout (30 sec) FastCGI: incomplete headers (0 bytes) received from server &quot;/path/to/dispatch.fcgi&quot;  などと言うlogを吐いて止まることが多々ある．こうなるとアクセスも出来ない状態なので色々調べてみると，-idle-timeoutが短いこととsuExec環境でFastCGIWrapperを設定していないこと原因に上げられるらしい．いまはsuExec環境では無いので，前者かなと，
+LoadModule fastcgi_module modules/mod_fastcgi.so FastCgiConfig -idle-timeout 300 -maxProcesses 100 -maxClassProcesses 1 -initial-env RAILS_ENV=development -startDelay 30 FastCgiIpcDir /var/run/fastcgi AddHandler fastcgi-script .fcgi  などと-idle-timeoutを300にしてみた．もうちょっと様子見よう．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/44/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;45 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/46/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

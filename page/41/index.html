@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/15/X61-debian-emobile-D01NE/">emobileのD01NEを買ってみた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ネットにつながらない環境で設定しようとしたのでかなり手間取りましたが，なんとか設定完了．一応メモ．
+pppとpppconfigを取ってきて，
+# apt-get install ppp pppconfig # pppconfig  設定する．
+config name : emobile DNS : Dynamic Auth : PAP User : em Password : em Speed 115200 Pulse/Tone : Tone Tel Num : *99***1# Settings：Yes Port : Manual &gt;　/dev/ttyACM0  参考URLのところには，ルーティングがと買いてあったけど，何もせずに繋がりました．これでさらに快適に．
+##追記
+接続するには
+$ pon emobile  切断するには
+$ poff emobile  とする．
+###参考 http://lists.debian.or.jp/debian-users/200705/msg00236.html
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/13/X61-debian-2-6-24/">2.6.24で輝度が変更できない．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  echo 100 &gt; /sys/class/backlight/acpi_video1/brightness  とかやれば変更されるんだが，AC抜いたりとかgnome-power-managerからは変更できない．どうもthinkpad-acpiやacpiなどが干渉しあってるようなので，色々調べてる最中です．何か情報あったら誰か教えてくださいorz．
+##追記
+/etc/modprobe.d/thinkpad_acpi.modprobeに
+options thinkpad_acpi hotkey=enable,0xffffbf experimental=1 brightness_enable=1  と設定することで，ひとまずACアダプタ抜いたときに輝度が下がるようになりました．あとはhotkeyか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/13/X61-debian-select-to-dev-rtc-to-wait-for-clock-tick-timed-out/">起動時のselect() to /dev/rtc to wait for clock tick timed out</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  hwclock.shの変更が必要らしい．
+http://pikmin.fam.cx/~pikmin/blog/log/eid1.html
+とりあえず変更だけしてみた．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/10/X61-debian-linux-Windows-mount/">Windows共有をmountする</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  # apt-get install samba  だけではsmbmountが入ってこないんで，どこよと探すとsmbfsらしいのでinstall．
+# apt-get install smbfs  漢字コードが異なるのでその差異を吸収するためにsmb.confに下記を記載．
+unix charset = UTF-8 dos charset = CP932 display charset = UTF-8  そしてmount．
+$ smbmount //ip.add.ress/dir /mnt/windows -o username=username,password=password,iocharset=utf8  ファイル名の漢字コードが面倒だったんで，これで移行しやすくなった．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/10/X61-debian/">ひととおり設定終わり</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  金曜に到着したThinkpad X61にdebain(sid)とWindows XPをインストール．設定も完了しようやく使えるようになりました．一番の難敵は無線LANと音．あとは電源関係だけだけど，そこはまあ順次やっていきます．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/10/notitle/">実際は予約日記だな・・・・</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  アオイホノオ 1 (ヤングサンデーコミックス)  著者: 島本 和彦
+出版日: 2008-02-05
+出版社/メーカー: 小学館
+カテゴリ: Book
+    少年ガンガン 2008年 03月号 [雑誌]  著者: 出版日: 2008-02-12
+出版社/メーカー: スクウェア・エニックス
+カテゴリ: Book
+  そろそろちゃんと例のを作らないといかんな・・・・
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/08/notitle/">オブジェクト指向のために読んだ書籍</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  オブジェクト指向でなぜつくるのか―知っておきたいプログラミング、UML、設計の基礎知識―  著者: 平澤 章
+出版日: 2004-06-03
+出版社/メーカー: 日経BP社
+カテゴリ: Book
+  転職活動で大阪&lt;-&gt;東京を往復する間に読了．感覚的に覚えてた部分の再確認ができたので，非常に有用な書籍でした．このあとはデザインパターンに関する本を読みたいと思ったんですが，Java/C++で紹介されている書籍が多いので，
+  PHPによるデザインパターン入門  著者: 下岡 秀幸, 道端 良, 畑 勝也
+出版日: 2006-11-27
+出版社/メーカー: 秀和システム
+カテゴリ: Book
+  PHPで書かれているこれを読んでます．これで概念と詳細を理解した上で，
+  オブジェクト指向における再利用のためのデザインパターン  著者: エリック ガンマ, ラルフ ジョンソン, リチャード ヘルム, ジョン ブリシディース
+出版日: 1999-10
+出版社/メーカー: ソフトバンククリエイティブ
+カテゴリ: Book
+  名著に挑む予定．C++への再挑戦も兼ねて．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/04/C/">オブジェクト指向とC&#43;&#43;</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ざっとしかやったことなかったので，この際だからちゃんと勉強しておこうと思います．なんかいい本あるでしょうか．あとデザインパターンの本も読みたいですね．これは
+ Design Patterns in Ruby (Addison-Wesley Professional Ruby)  著者: Russ Olsen
+出版日: 2007-12-10
+出版社/メーカー: Addison-Wesley Professional
+カテゴリ: Book
+  がいいんではなかろうかなと思うんだけど，いかんせん高いんだよなぁ．．．．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/04/notitle/">面接で徐々にわかってきたこと</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  自分が本当に何をしたいのか．ある程度わかっていたつもりだったけど，面接でいろいろ聞かれたり話しをしたりするうちに，どんな仕事がしたいのか，どんな開発がしたいのかが，ようやく見えて来た気がする．
+やっぱりWebサービス開発がやりたいな．
+この気持ちをちゃんと保ち続けないと，転職失敗する気がするので，しっかり維持し続けよう．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/02/Ruby-on-Rails/">Ruby on Railsのセミナーにて</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  昨日はウェブキャリア主催のセミナーに行ってきました．以下の書籍を書いておられる黒田さんの公演ですが，その言葉の端々にPHP-&gt;Ruby on Railsの移行の大変さがにじみ出てました．
+ 基礎Ruby on Rails (IMPRESS KISO SERIES)  著者: 黒田 努, 佐藤 和人
+出版日: 2007-10-25
+出版社/メーカー: インプレスジャパン
+カテゴリ: Book
+  規模は違いますが，同じような経験があるので，「おー，なるほど，そうか」なことが多かったので結構有用なセミナーでした．東京はこういうの多いんでしょうかねぇ．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/40/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;41 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/42/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

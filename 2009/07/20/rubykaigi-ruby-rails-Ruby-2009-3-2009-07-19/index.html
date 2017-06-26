@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Ruby会議2009 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Ruby会議2009</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <ul>
+<li>伝説に残るかもしれない Ruby会議 3日目
+
+<ul>
+<li>伝説になりました．</li>
+</ul></li>
+<li>RubyKaigi Staff のみなさん，KaigiFreeks のみなさん，ほんとにお疲れ様でした．そしてありがとうございました．</li>
+<li>午後のかくたにさんの話は良すぎた．あれを感じ取れないやつはいないはずだ．
+
+<ul>
+<li>島本和彦的に言うと，「スパークした男の魂は，本物の男には伝わるはずだ」的な</li>
+<li>たしかに「<a href="http://d.hatena.ne.jp/mkgin/20090720/1248047126">みんながRubyに対して持つ様々な「思い」すべてに真摯に受けて立つkakutaniさんは、頼れるRuby兄貴</a>」な感じ</li>
+</ul></li>
+<li>Termtter 会議は関西勢が過半数
+
+<ul>
+<li>jugyoさんも私も実は関西勢</li>
+</ul></li>
+<li>基調講演は，決意を表明したかのような，遺言のような，でも何か言いたいことは伝わった感じ．</li>
+<li>帰りに，RailsConf を日本でやりたいと急に思った．
+
+<ul>
+<li>Rails会議なら名前的に問題ないだろうかとか，いろいろ考えてしまった．</li>
+</ul></li>
+</ul>
+
+<p>##Project Report: Regional RubyKaigi</p>
+
+<ul>
+<li>角谷さんの話</li>
+<li>日本語でやります</li>
+<li>Ruby会議の運営委員長</li>
+<li>Regional RubyKaigi Founder</li>
+<li>Major Evnets in U.S.
+
+<ul>
+<li>RubyConf 2001-</li>
+<li>RejctConf 2006-</li>
+<li>Seattle.rb のドンが reject されたことにカッとなって始めたやつ</li>
+<li>Regional RubyConf 2006?-</li>
+<li>U.S. は人が多すぎるからいろいろできた</li>
+</ul></li>
+<li>日本では？
+
+<ul>
+<li>U.S.map(:&amp;localize)</li>
+<li>RubyKaigi 2006-</li>
+<li>RejectKaigi 2007-</li>
+<li>Regional RubyKaigi 2008-</li>
+<li>U.S. でやったことを再実装</li>
+</ul></li>
+<li>RubyKaig についておさらい
+
+<ul>
+<li>2006 - 251</li>
+<li>2007 - 410</li>
+<li>2008 - 564</li>
+<li>2009 - 700?</li>
+</ul></li>
+<li>More Submissions -&gt; More Rejects</li>
+<li>Regional を RejectKaigi で提案した
+
+<ul>
+<li>もっと Kaigi を！</li>
+</ul></li>
+<li>Regional は 8回 in 2008(Ruby会議歴)
+
+<ul>
+<li><sup>7</sup>&frasl;<sub>8</sub> 参加 founded by 永和さん</li>
+</ul></li>
+<li>参加人数は
+
+<ul>
+<li>60-200人</li>
+<li>1450人 in total</li>
+</ul></li>
+<li>告知メディアなど
+
+<ul>
+<li>るびま</li>
+<li>島田＠KaigiFreaksさん とりまとめ</li>
+<li>WEB+DB PRESS</li>
+<li>Most aggressive managine in Japan</li>
+</ul></li>
+<li>写真タイム発生</li>
+<li>Regional RubyKaigi の始め方
+
+<ul>
+<li>ML に入って</li>
+<li>名乗り出て</li>
+<li>レポートをるびまに出す</li>
+</ul></li>
+<li>Regional RubyKaig になるとなにがいい？
+
+<ul>
+<li>日本Rubyの会のサポートがつく</li>
+<li>スピーカーの旅費とか出せるかも</li>
+<li>ノウハウを提供できるかも</li>
+<li>HPやメアドとかが提供できるかも</li>
+</ul></li>
+<li>Regional RubyKaigi Kaigi in yesterday
+
+<ul>
+<li>対話の時間ができた</li>
+<li>2週目をやりたいと言う話に</li>
+<li>議事録をるびまに出せればいいんじゃないか</li>
+</ul></li>
+<li>Ruby Central の言葉
+
+<ul>
+<li>「Regional」は「地方」じゃない．一流のカンファレンスたり得る．</li>
+</ul></li>
+<li>名古屋#01 の賛同者現る！</li>
+<li>会議と勉強会はちょっと違う気がしている
+
+<ul>
+<li>勉強会はもっとやればいい</li>
+<li>一緒に大事にしていきたい</li>
+<li>東京#01に参加して初めて発表して，すごい楽しかったので，いろいろやるべきだ！</li>
+</ul></li>
+</ul>
+
+<p>##Termtter Kaigi</p>
+
+<ul>
+<li>内部構造
+
+<ul>
+<li>2 threads</li>
+<li>readline</li>
+<li>task manager
+
+<ul>
+<li>command</li>
+<li>one time task</li>
+<li>reload</li>
+<li>repeatable task</li>
+</ul></li>
+<li>main class</li>
+<li>Client</li>
+<li>Taskmanager</li>
+</ul></li>
+<li>run commands
+
+<ul>
+<li>Client.call_commands(&ldquo;&hellip;.&rdquo;)</li>
+<li>pre hooks
+
+<ul>
+<li>hooks for arguments</li>
+</ul></li>
+<li>TM.invoke_hogehoge</li>
+<li>post hooks</li>
+</ul></li>
+<li>plugin
+
+<ul>
+<li>regist commands</li>
+<li>regist hooks</li>
+</ul></li>
+<li>futures
+
+<ul>
+<li>Database</li>
+<li>sqlite3</li>
+<li>thread view</li>
+</ul></li>
+<li>twitter が好きな訳じゃなかった
+
+<ul>
+<li>Ubuntu on Eee PC で twitter やりたかった</li>
+</ul></li>
+<li>readline 外す
+
+<ul>
+<li>Vim の中から使える</li>
+<li>Emacs も？</li>
+</ul></li>
+<li>基調講演
+
+<ul>
+<li>羅針盤</li>
+<li>どっかで見たような</li>
+<li>地球環境への配慮が必要</li>
+<li>GUI は エコじゃない</li>
+<li>Terminal はエコ</li>
+<li>テキストこそが全て</li>
+<li>全ては Terminal に始まり，Terminal に終わる</li>
+</ul></li>
+<li>参加者はもれなく Comitter に</li>
+<li>外国人の Committer を作りたい</li>
+<li>Termtter の plugin を作る人が Termmter のユーザ</li>
+<li>Termtter の利用状況を知りたい</li>
+</ul>
+
+<p>##RubyならMacでしょう</p>
+
+<ul>
+<li>ヴァンサンさん
+
+<ul>
+<li>RHG 翻訳</li>
+<li>MacRuby の開発者</li>
+</ul></li>
+<li>Mac の Ruby
+
+<ul>
+<li>Ruby 入ってる</li>
+<li>RubyCocoa ある</li>
+<li>遅い
+
+<ul>
+<li>文字列とか遅い</li>
+</ul></li>
+</ul></li>
+<li>MacRuby
+
+<ul>
+<li>MacのデスクトップのためのRuby</li>
+<li>なぜ1.9ベースか</li>
+<li>ゼロから作るのは無理</li>
+<li>1.9は1.8より優れている</li>
+<li>1.9と同じライセンス</li>
+<li>違い</li>
+<li>GC         -&gt; Obj-C GC</li>
+<li>object     -&gt; Obj-C object</li>
+<li>core class -&gt; Obj-C core class
+
+<ul>
+<li>String/Arrayなどを Obj-C のコアクラスに</li>
+</ul></li>
+<li>変わってないところ</li>
+<li>Parser/YARV/標準ライブラリー</li>
+</ul></li>
+<li>HotCocoa
+
+<ul>
+<li>Cocoa をもっと Ruby っぽくするライブラリ</li>
+<li>デモ</li>
+</ul></li>
+<li>問題点
+
+<ul>
+<li>1.9 との非互換性</li>
+<li>スレッド / スピード</li>
+<li>1.9 の変更のマージ</li>
+</ul></li>
+<li>0.5 development start
+
+<ul>
+<li>新しい VM を作る</li>
+<li>speed and threads</li>
+<li>早くなった</li>
+<li>fibonacci 数列の計算が速くなった</li>
+<li>複数スレッド使える</li>
+<li>CPU usage が 100% を超える</li>
+</ul></li>
+<li>テスト
+
+<ul>
+<li>テストする必要がある</li>
+<li>テストは通る</li>
+</ul></li>
+<li>事前コンパイル
+
+<ul>
+<li>起動時間が早くなる</li>
+<li>コードを隠せる</li>
+</ul></li>
+<li>Cライブラリはやめよう
+
+<ul>
+<li>ruby-ffi</li>
+<li>JRuby などでも動かないから，C でかかないで！</li>
+</ul></li>
+<li>短所
+
+<ul>
+<li>オブジェクトが思い</li>
+<li>rake がちゃんと動かない</li>
+<li>32 bit で動かない</li>
+</ul></li>
+<li>Cocoa アプリを作りたい
+
+<ul>
+<li>安定 : RubyCocoa</li>
+<li>やってみたい : MacRuby 0.4</li>
+<li>クレージー : MacRuby 0.5</li>
+</ul></li>
+<li>MacRuby を手伝いたい人は
+
+<ul>
+<li>1.9 を学ぶ</li>
+<li>RubySpec を手伝う</li>
+<li>ピュア Ruby ライブラリを作ること</li>
+<li>チュートリアルを書くこと</li>
+</ul></li>
+<li>informations
+
+<ul>
+<li><a href="http://www.macruby.org/">http://www.macruby.org/</a></li>
+<li>twitter: @macruby</li>
+<li>#ruby-osx freenode</li>
+</ul></li>
+<li>iPhone ?
+
+<ul>
+<li>検討中</li>
+<li>CPU が違う</li>
+<li>Obj-C GC が使えない</li>
+<li>JIT が使えない</li>
+<li>でもなんとかなると言っているらしい(開発者)</li>
+<li>待っててください！</li>
+</ul></li>
+</ul>
+
+<p>##RubyによるMac OS X デスクトップアプリケーション開発入門～Ruby x RubyCocoa / MacRuby x HotCocoa～</p>
+
+<ul>
+<li>高尾さん＠nacl</li>
+<li>Nacl ではほとんど Debian 95% / OSX 5%</li>
+<li>MacBook Pro
+
+<ul>
+<li>妻の協力により購入できた！</li>
+</ul></li>
+<li>Ruby on Mac OS X
+
+<ul>
+<li>標準添付</li>
+</ul></li>
+<li>Cocoa
+
+<ul>
+<li>Obj-C ライブラリ集のような</li>
+</ul></li>
+<li>RubyCocoa
+
+<ul>
+<li>Ruby から Cocoa を使う Wrapper</li>
+</ul></li>
+<li>9月に本出ます！</li>
+</ul>
+
+<p>##Ruby をつかった iPhone アプリケーション開発</p>
+
+<ul>
+<li>takuma104 さん
+
+<ul>
+<li>夏ライオン の人</li>
+</ul></li>
+<li>iPhone
+
+<ul>
+<li>いわゆる組み込み系</li>
+<li>OS は OS X ベース</li>
+<li>HW は 10年前のレベル</li>
+<li>Ruby は16歳</li>
+</ul></li>
+<li>iPhone アプリ？
+
+<ul>
+<li>ネイティブアプリケーション</li>
+<li>AppStore で配布</li>
+<li>開発用であれば通さなくてもOK</li>
+<li>Mac必要</li>
+</ul></li>
+<li>SDK による普通の開発
+
+<ul>
+<li>Objective-C でかく</li>
+<li>Ruby のがいいよね！</li>
+<li>シミュレータである程度動作させる</li>
+<li>実機でないとパフォーマンスが見えない</li>
+<li>ある程度動いたら，実機で動作確認</li>
+<li>転送-&gt;起動で，10秒以上かかる．遅い！</li>
+</ul></li>
+<li>iPhone OS で Ruby を動かす
+
+<ul>
+<li>初代では irb がクラッシュした</li>
+<li>現在は</li>
+<li>パッチ書いたら，すんなり Build できた</li>
+<li>テストも8割方通過</li>
+<li>なんかうご板っぽい</li>
+<li>でも irb が実機で動かない</li>
+<li>singal を使ってるところで落ちてた模様
+
+<ul>
+<li>signal を使わないようにして irb も動いた</li>
+</ul></li>
+<li>irb はできた
+
+<ul>
+<li>AppStore に送るが，通過せず</li>
+</ul></li>
+</ul></li>
+<li>AppStore 審査
+
+<ul>
+<li>スクリプト言語について書かれてる</li>
+<li>インタプリタ自体が禁止されているわけではない
+
+<ul>
+<li>はずなのだが・・・・？</li>
+</ul></li>
+</ul></li>
+<li>RubyCocoa for iPhone
+
+<ul>
+<li>普通の iPhone アプリを RubyCocoa で書けない？</li>
+<li>libffi を使ってないのをベースに移植作業開始</li>
+</ul></li>
+<li>デモ
+
+<ul>
+<li>HelloWorld</li>
+<li>みじか・・・い？</li>
+<li>RemoteIRB</li>
+<li>リモートからオブジェクトを弄ることが出来る</li>
+<li>RemoteIRB2</li>
+<li>RubyCocoa for iPhone を組み込んだアプリを弄る</li>
+</ul></li>
+<li>問題点
+
+<ul>
+<li>遅い</li>
+<li>メモリもきつい</li>
+<li>どうしても Syntax が Ruby 的にならない</li>
+</ul></li>
+<li>使いどころ
+
+<ul>
+<li>Ruby のみでアプリを書く</li>
+<li>現実的には厳しい？</li>
+<li>Obj-C + Ruby で書く</li>
+<li>Obj-C で書いて，デバッグするときだけ組み込んで使う</li>
+</ul></li>
+<li>今後
+
+<ul>
+<li>デバッグ専用環境として</li>
+<li>MacRuby 0.5 で ARM のバイトコードはけるから審査通りそう？</li>
+</ul></li>
+<li>その他
+
+<ul>
+<li>Rhodes / Shinycocoa</li>
+</ul></li>
+</ul>
+
+<p>##Take the Red Pill</p>
+
+<ul>
+<li>かくたにさん
+
+<ul>
+<li>永和さんの提供</li>
+<li>Ruby会議2009 運営委員長</li>
+<li>Ruby で正当になっていることは，当然のこと(昨日のLTの続き)</li>
+</ul></li>
+<li>電波
+
+<ul>
+<li>自分だけは確信しているが，客観的な証拠に欠く発言</li>
+<li>周囲に充ち満ちているが見えないもの</li>
+<li>The Matrix
+
+<ul>
+<li>Blue -&gt; XML でエンタープライズ</li>
+<li>いままで通りの世界</li>
+<li>Red -&gt; Welcome to Real World</li>
+</ul></li>
+</ul></li>
+<li>Don&rsquo;t think, Feel
+
+<ul>
+<li>いきいきとした世界</li>
+<li>作る人が技術的卓越を追求でき，使う人の欲しかったものが手に入る世界</li>
+<li>無名の質
+
+<ul>
+<li>名づけえぬ質</li>
+<li>Quality Without A Name</li>
+</ul></li>
+<li>えも言われぬいい感じ
+
+<ul>
+<li>7 Propeties</li>
+</ul></li>
+</ul></li>
+<li>Ruby の世界は？
+
+<ul>
+<li>Ruby をキメると気持ちイイ by matz</li>
+<li>&ldquo;Ruby のすごいところは，言語の特徴を「たのしい」と言い切ってしまったこと．&rdquo;  by 原 信一郎</li>
+<li>たのしい
+
+<ul>
+<li>たのしい Ruby</li>
+</ul></li>
+</ul></li>
+<li>この楽しい気持ちをもっと分かち合えないかな
+
+<ul>
+<li>Rubyist と</li>
+<li>日本中 / 世界中</li>
+<li>Rubyist じゃない人と</li>
+<li>ネットで</li>
+</ul></li>
+<li>たのしいのも結構大変そう</li>
+<li>QWAN on Ruby
+
+<ul>
+<li>Ruby 会議で「Ruby で～です！」と言うの怖い！</li>
+</ul></li>
+<li>QWAN on RubyKaigi
+
+<ul>
+<li>Matz in nice, so we&rsquo;re nice.</li>
+<li>ナイスでいるのも結構大変</li>
+<li>みんなは無名の質を知っている</li>
+<li>えも言われぬいい感じ</li>
+<li>日本中，世界中から，なんか楽しそうだから来てくれている</li>
+<li>RubyKaigi は Rubyist たちと繋がろうとしていた</li>
+</ul></li>
+<li>RubyKaigi 2006
+
+<ul>
+<li>DHH -&gt; Write Less Software</li>
+</ul></li>
+<li>RubyKaigi 2007
+
+<ul>
+<li>Dave Thomas -&gt; Code Ruby Be Happy!</li>
+<li>新しい人達に(内輪だけじゃなく)開いていきなさい</li>
+<li>Ruby は Linux じゃなく，Ruby になりなさい</li>
+</ul></li>
+<li>RubyKaigi 2008
+
+<ul>
+<li>Chad Fowler &amp; Rich Kimiler -&gt; Know Ruby, Know Life!</li>
+</ul></li>
+<li>RubyKaigi の無名の質
+
+<ul>
+<li>これをどうやったら分かち合えるだろうか</li>
+<li>作る人と使う人が楽しくなる世界がどこにあるだろうか
+
+<ul>
+<li>Ruby の楽しさを大事にすれば，それは人に伝わっていく</li>
+</ul></li>
+</ul></li>
+<li>Q&amp;A
+
+<ul>
+<li>楽しさをわかってくれない人に，どうやって伝えればいいか</li>
+<li>青いピルを飲んだ方がいい人もいるよね</li>
+<li>解決策はないんじゃない？</li>
+<li>角谷事例 : 一緒にやってみて，面白さが伝わっていった</li>
+<li>いきいきするのも大変だというのは？</li>
+<li>仕事と家族と Ruby とどうバランスを取っていけばいいのかなぁ，と思うところがあった
+
+<ul>
+<li>この悩みは吉岡さんに持って行けばいいんじゃないか</li>
+<li>「仕切りをしない仕切りをしろ」 by hyoshioka</li>
+</ul></li>
+<li>ビジネスとか楽しいことに価値を見いだせない，楽しいだけじゃダメな人はにも，幅広くこの(RubyKaigiの)パワーをどう広めていけばいいのか</li>
+<li>プログラミングをしたことないやつが威張っている会社は早晩滅びる by ビューティフル・コード
+
+<ul>
+<li>が，これは負け戦</li>
+</ul></li>
+<li>仕事と「たのしい Ruby」の間での葛藤はある．悩みもある
+
+<ul>
+<li>相澤さんの仕事じゃないでしょうか</li>
+<li>コードを書いてない人も，ちゃんとやりたいこと，「たのしいこと」を持っているので，そういう人とどう繋がっていけばいいかを，絶賛募集中(by @ayumin)</li>
+</ul></li>
+<li>やりがいとか達成感で繋がる方法はあるはずで，いろいろ頑張っていきましょう！</li>
+<li>Ruby は所詮ピル(by 卜部さん)
+
+<ul>
+<li>飲んでも，ちょと気持ちいい程度．ちゃんとツールとして使ってください</li>
+</ul></li>
+<li>新しい人達が入ってきても，ゆるい意味で一体感を持ってとか，どれぐらいその宿題について，到達できましたか？あと懸念点とかは？</li>
+<li>自分たちに出来るペースで，いろいろできたと思う</li>
+<li>いまは幸せなので(ビルだから)，懸念点は思い浮かばない</li>
+<li>赤いピルを飲んだので，Ruby じゃなかったとしても，月を一緒に見て行こうと思いました</li>
+<li>こういう世界を教えてあげるのが新井さんの仕事じゃないですか！</li>
+<li>このあと RubyKaigi はどこに向かっていくのだろうか</li>
+<li>来たいと思っている人が気楽に来れるようにしたい(by いまの高橋さん)</li>
+<li>みんないろいろ考えている．一枚岩・一本道じゃないじゃない．決まってなくて，「いつの間にか使われる言語になってた by matz」みたいに，進んでいくところに道ができあがって，行き着くところに行くんじゃないだろうか</li>
+</ul></li>
+</ul>
+
+<p>##基調講演</p>
+
+<ul>
+<li>あとで写真アップ予定</li>
+<li>会場からは笑いが聞こえてきたけど，あのときの高橋会長の気合いの入れ方は尋常じゃなかった．</li>
+<li>卒業へ向けた話のようだったけど，要するにもっと大きくするためには，これ以上一人で抱え込めないぐらいに，いろんなものが大きくなってしまったってことじゃないでしょうか．</li>
+</ul>
+
+<p>##Reject Kaigi</p>
+
+<ul>
+<li>P<strong>ネタとかJa</strong>ネタとかみんな好きよね</li>
+<li>3分は短いね
+
+<ul>
+<li>でもネタをやるにはいい時間なのかな</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-3-2009-07-19/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/07/14/notitle/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/07/14/notitle/">お台場でガンダム見てきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-2-2009-07-18/">Ruby会議2009</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-2-2009-07-18/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

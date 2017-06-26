@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>FlareをUbuntu 8.04.1にインストールするメモ &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>FlareをUbuntu 8.04.1にインストールするメモ</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <ul>
+<li><a href="http://labs.gree.jp/Top/OpenSource/Flare.html">Flare</a></li>
+</ul>
+
+<p>GREEで開発・利用されている memcached 互換の分散キャッシュシステム．TokyoCabinet を使うことで，不揮発にすることができ，また大きなデータも扱えるらしいので，インストールと Rails で使うところまでやってみる．</p>
+
+<p><a href="http://d.hatena.ne.jp/conceal-rs/20081226/1230280802">TokyoCabineのインストール</a>が終わっていることが前提．</p>
+
+<p>##Boost関係のインストール</p>
+
+<pre><code class="language-bash">% sudo apt-get install zlib1g libbz2-1.0 libboost-program-options1.34.1 libboost-regex1.34.1
+</code></pre>
+
+<p>##Flareのインストール
+Debian ようパッケージをダウンロードしてインストール．</p>
+
+<pre><code class="language-bash">% sudo dpkg -i flare_1.0.8-1_i386.deb
+未選択パッケージ flare を選択しています。
+(データベースを読み込んでいます ... 現在 273907 個のファイルとディレクトリがインストールされています。)
+(flare_1.0.8-1_i386.deb から) flare を展開しています...
+dpkg: 依存関係の問題により flare の設定ができません:
+ flare は以下に依存 (depends) します: libboost-program-options1.33.1 ...しかし:
+  パッケージ libboost-program-options1.33.1 はまだインストールされていません。
+ flare は以下に依存 (depends) します: libboost-regex1.33.1 ...しかし:
+  パッケージ libboost-regex1.33.1 はまだインストールされていません。
+dpkg: flare の処理中にエラーが発生しました (--install):
+ 依存関係の問題 - 設定を見送ります
+以下のパッケージの処理中にエラーが発生しました:
+ flare
+</code></pre>
+
+<p>ぎゃっ．うーん，完全バージョン指定ですか．．．．ひとまず</p>
+
+<pre><code class="language-bash">% sudo dpkg --force-all -i flare_1.0.8-1_i386.deb
+(データベースを読み込んでいます ... 現在 273917 個のファイルとディレクトリがインストールされています。)
+flare 1.0.8-1 を (flare_1.0.8-1_i386.deb で) 置換するための準備をしています ...
+flare を展開し、置換しています...
+dpkg: flare: 依存関係の問題、しかし要求どおり設定を行います:
+ flare は以下に依存 (depends) します: libboost-program-options1.33.1 ...しかし:
+  パッケージ libboost-program-options1.33.1 はまだインストールされていません。
+ flare は以下に依存 (depends) します: libboost-regex1.33.1 ...しかし:
+  パッケージ libboost-regex1.33.1 はまだインストールされていません。
+flare (1.0.8-1) を設定しています ...
+
+設定ファイル `/etc/flarei.conf' がシステムに存在しません。
+あなたの要求に従って、新しい設定ファイルをインストールしています。
+
+設定ファイル `/etc/flared.conf' がシステムに存在しません。
+あなたの要求に従って、新しい設定ファイルをインストールしています。
+
+設定ファイル `/etc/init.d/flare' がシステムに存在しません。
+あなたの要求に従って、新しい設定ファイルをインストールしています。
+
+設定ファイル `/etc/default/flare' がシステムに存在しません。
+あなたの要求に従って、新しい設定ファイルをインストールしています。
+</code></pre>
+
+<p>まあ動かなければ，debian 使うかな・・・・</p>
+
+<p>##設定と起動</p>
+
+<pre><code class="language-bash">% sudo vim /etc/flarei.conf
+% sudo vim /etc/flared.conf
+% sudo vim /etc/flared.conf
+% vim /etc/default/flare
+% sudo vim /etc/default/flare
+% sudo /etc/init.d/flare start
+Starting flare: /usr/bin/flarei: error while loading shared libraries: libboost_regex-gcc-mt-1_33_1.so.1.33.1: cannot open shared object file: No such file or directory
+</code></pre>
+
+<p>諦めずに，</p>
+
+<pre><code class="language-bash">% cd /usr/lib
+% sudo ln -s libboost_regex-gcc42-1_34_1.so.1.34.1 libboost_regex-gcc-mt-1_33_1.so.1.33.1
+% sudo ln -s libboost_program_options-gcc42-1_34_1.so.1.34.1 libboost_program_options-gcc-mt-1_33_1.so.1.33.1
+% sudo /etc/init.d/flare start
+Starting flare: Segmentation fault (core dumped)
+</code></pre>
+
+<p>ぎゃっ．と言うわけで頓挫．</p>
+
+<p>##ソースからインストール
+ならばソースからビルドだ！と言うわけで，Boost の関係をインストール．</p>
+
+<pre><code class="language-bash">% sudo apt-get install libboost-program-options-dev libboost-regex-dev libboost-serialization-dev
+</code></pre>
+
+<p>そして configure -&gt; make -&gt; make install</p>
+
+<pre><code class="language-bash">% ./configure --with-tokyocabinet=/usr/local --prefix=/usr/local/flare
+% make
+% make install
+% cp etc/* ~/flare
+% vim ~/flare/flarei.conf ~/flare/flared.conf
+% sudo vim /etc/syslog.conf
+% sudo touch /var/log/flare.log
+% sudo /etc/init.d/sysklogd reload
+</code></pre>
+
+<p>見た目順調．</p>
+
+<p>##起動とテスト</p>
+
+<pre><code class="language-bash">% sudo /usr/local/flare/bin/flarei -f /home/flare/flarei.conf --daemonize
+% sudo /usr/local/flare/bin/flared -f /home/flare/flared.conf --daemonize
+% tail -f /var/log/flare.log
+</code></pre>
+
+<p>起動は問題無さそう．次にテスト．</p>
+
+<pre><code class="language-bash">% telnet localhost 12120
+Trying 127.0.0.1...
+Connected to local-mathine.com
+Escape character is '^]'.
+stats nodes
+STAT localhost:12121:role proxy
+STAT localhost:12121:state active
+STAT localhost:12121:partition -1
+STAT localhost:12121:balance 0
+STAT localhost:12121:thread_type 16
+END
+</code></pre>
+
+<p>おー動いているようだ．続きは明日．</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/02/04/flare-Flare-Ubuntu-8-04-1/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/01/28/ruby-rails-file_column-Rails-2-2-2/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/01/28/ruby-rails-file_column-Rails-2-2-2/">file_column を Rails 2.2.2 と確認画面に対応させてみた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/02/08/ruby-rails-Rails-Flare-TokyoTyrant-TokyoCabinet/">Rails から Flare を TokyoTyrant(TokyoCabinet)の様に扱うには</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/02/08/ruby-rails-Rails-Flare-TokyoTyrant-TokyoCabinet/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

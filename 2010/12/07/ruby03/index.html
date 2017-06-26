@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>札幌Ruby会議03に参加してきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>札幌Ruby会議03に参加してきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/12/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<h2 id="rubyのテスト文化とツール-2010-by-hsbt-さん">Rubyのテスト文化とツール 2010 by @hsbt さん</h2>
+
+<ul>
+
+    <li>Asakusa.rb &amp; 永和の人</li>
+
+    <li>去年と着ているものが同じ
+
+<ul>
+
+    <li>「テストを書かないとRubyistではない!」と言う話し</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h3 id="永和の文化">永和の文化</h3>
+
+<ul>
+
+    <li>テストを書くと言う文化がある</li>
+
+    <li>in Ruby World Conference
+
+<ul>
+
+    <li>Ruby を使うとどんどん書ける</li>
+
+    <li>Ruby を使うとどんどん書ける
+
+<ul>
+
+    <li>書けるが不安になるので、テストを書く</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;metric_fu
+</code></pre>
+
+<ul>
+
+    <li>静的解析ツールを一度に実行してくれる</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;Rails のレイヤーごとに使っているツール
+</code></pre>
+
+<ul>
+
+    <li>mock/stub
+
+<ul>
+
+    <li>stub -&gt; RSpec の stub</li>
+
+    <li>mock -&gt; RSpec の should_receive</li>
+
+    <li>rr</li>
+
+    <li>webmock
+
+<ul>
+
+    <li>stub な Web API 呼び出し</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;fixture replacement
+</code></pre>
+
+<ul>
+
+    <li>factory_girl</li>
+
+    <li>Machinist</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;intergration test
+</code></pre>
+
+<ul>
+
+    <li>Capybara
+
+<ul>
+
+    <li>Selenium Webdriver</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;動かなにテストを放置しない
+</code></pre>
+
+<ul>
+
+    <li>Hudson による CI
+
+<ul>
+
+    <li>完全テストは CI にまかせている</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;parallel_test&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;バグを再現するテストを書いてから直す
+</code></pre>
+
+<ul>
+
+    <li>テストの実行が遅いのをなんとかする</li>
+
+    <li>Spork</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;DRY
+</code></pre>
+
+<ul>
+
+    <li>多段ネストを止める</li>
+
+    <li>Custom Matchers を使う</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h3 id="私的まとめ">私的まとめ</h3>
+
+<ul>
+
+    <li>Hudson による CI は導入してみようかな</li>
+
+    <li>Custom Matchers を利用することを念頭に置いてみよう</li>
+
+</ul>
+
+<h2 id="高速な乗除算の実現と性能評価-by-mrkn-さん">高速な乗除算の実現と性能評価 by @mrkn さん</h2>
+
+<ul>
+
+    <li>計算の話し</li>
+
+    <li>速さ == ロマン</li>
+
+    <li>Rational の計算 -&gt; 通分される</li>
+
+</ul>
+
+<h3 id="私的まとめ-1">私的まとめ</h3>
+
+<ul>
+
+    <li>あとで直接聞いてみるか</li>
+
+</ul>
+
+<h2 id="rubyの未来-未来のruby-by-matz">Rubyの未来 未来のRuby by matz</h2>
+
+<ul>
+
+    <li>1993
+
+<ul>
+
+    <li>Ruby 生誕</li>
+
+    <li>利用者 1人</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;1995
+</code></pre>
+
+<ul>
+
+    <li>fj.sources で公開</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;2010
+</code></pre>
+
+<ul>
+
+    <li>TIOBEで10位</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;「いまだに職業としてチームプログラミングの経験がない」&lt;/li&gt;
+
+&lt;li&gt;1993
+</code></pre>
+
+<ul>
+
+    <li>悩めるプログラマ</li>
+
+    <li>もっと光を
+
+<ul>
+
+    <li>List/Smalltalk/Perl のパワー</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;&quot;光あれ&quot;
+</code></pre>
+
+<ul>
+
+    <li>そこに良いものがあるならば、それを届けよう (自分に)</li>
+
+    <li>なければ自分で作ろう</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;Ruby が届けた光
+</code></pre>
+
+<ul>
+
+    <li>オブジェクト指向</li>
+
+    <li>エンコーディング</li>
+
+    <li>ネットワーク
+
+<ul>
+
+    <li>IPv6 とか</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;Webプログランミング
+</code></pre>
+
+<ul>
+
+    <li>メタプログラミング</li>
+
+    <li>モンキーパッチング</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;TDD
+</code></pre>
+
+<ul>
+
+    <li>DSL/BDD</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;世界を変えよう
+</code></pre>
+
+<ul>
+
+    <li>自分を変えよう</li>
+
+    <li>世界がそれについてくる
+
+<ul>
+
+    <li>それが本当に良いものならば</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;未来のRuby
+</code></pre>
+
+<ul>
+
+    <li>Ruby 2.0
+
+<ul>
+
+    <li>Trais/Refinement/Method Combination/Keyword Arguments</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;Rubyの未来
+</code></pre>
+
+<ul>
+
+    <li>HPC
+
+<ul>
+
+    <li>生産性/オブジェクト指向を届ける</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;組み込み
+</code></pre>
+
+<ul>
+
+    <li>環境の制約が強い</li>
+
+    <li>RiteVM
+
+<ul>
+
+    <li>LuaっぽいVM</li>
+
+    <li>Rubyのサブセット</li>
+
+    <li>インクリメンタルGC</li>
+
+    <li>残念なこと
+
+<ul>
+
+    <li>事業の終わりが見える頃までオープンソースになりません</li>
+
+    <li>中途からオフィシャルに参加する方法がありません</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;すばらしいこと
+</code></pre>
+
+<ul>
+
+    <li>HPC/組み込みに光が届く</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;いつも人々に届ける「光」であり続ける&lt;/li&gt;
+
+&lt;li&gt;人々が「光」を届けるよう動機づける&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h3 id="質疑応答">質疑応答</h3>
+
+<ul>
+
+    <li>Module はどこから？
+
+<ul>
+
+    <li>lisp の mix-in (flavor)</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;Ruby をセールスする良い方法は？
+</code></pre>
+
+<ul>
+
+    <li>人は実績を見て判断するからそれか、マーケティングが得意な人(DHHとか)を見つける
+
+<ul>
+
+    <li>DHHは論争を恐れない(炎上しているところにガソリン持って飛び込んでいく)</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;北海道の印象は？
+</code></pre>
+
+<ul>
+
+    <li>体重的に危険な場所</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;Ruby 2.0 features は？
+</code></pre>
+
+<ul>
+
+    <li>trunk で</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;Module を名前空間として使うことは考えていた？
+</code></pre>
+
+<ul>
+
+    <li>わりと初期のころからそう思ってた</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;HPCのは論文が出ると思うが、無料で読めるようにできる？が
+</code></pre>
+
+<ul>
+
+    <li>相談します</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h2 id="rubyの教えてくれたこと-by-島田さん">Rubyの教えてくれたこと by 島田さん</h2>
+
+<ul>
+
+    <li>たのしいRuby</li>
+
+    <li>日本Rubyの会 理事</li>
+
+    <li>ブロックをキーにして、Rubyの楽しさや良さについて
+
+<ul>
+
+    <li>構造を複雑にせずに、柔軟性をあたえられる</li>
+
+    <li>YAGNI(You Ain't Gonna Need It)
+
+<ul>
+
+    <li>どうせ必要ないって</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;変化を抱擁する
+</code></pre>
+
+<ul>
+
+    <li>SOLID Principle</li>
+
+    <li>Open-Closed Principle in オブジェクト倶楽部</li>
+
+    <li>変化を受け入れられるようにしておくことが重要</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;道具を知ること
+</code></pre>
+
+<ul>
+
+    <li>道具を知り道具を選ぶこと</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;読めると分かるは違う
+</code></pre>
+
+<ul>
+
+    <li>分かるコード -&gt; Why がわかる</li>
+
+    <li>良いコード -&gt; わかって使える、修正できる</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h2 id="北のrails開発現場から-10-by-tmaeda-さん">北のRails開発現場から&rsquo;10 by @tmaeda さん</h2>
+
+<ul>
+
+    <li>Ruby逆引きレシピ のAmazon レビューを書いてくれる人募集</li>
+
+    <li>ペアプログラミング導入の経緯など</li>
+
+    <li>悩み
+
+<ul>
+
+    <li>技術者間のスキル差が埋まらない</li>
+
+    <li>新卒と中途と
+
+<ul>
+
+    <li>キャリアパスが見えにくい</li>
+
+    <li>時間が解決してくれる？
+
+<ul>
+
+    <li>してくれない</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;デスクワークな仕事は仕事っぷりが見えない
+</code></pre>
+
+<ul>
+
+    <li>見えないからこそ、判断基準がないため、新人さんのキャリアパスや、程度感がわからない</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;ペアプロの効果
+</code></pre>
+
+<ul>
+
+    <li>考える部分が加速する
+
+<ul>
+
+    <li>普通のプログラミングでのボトルネックは考えること</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;ものすごい集中と良い緊張感&lt;/li&gt;
+
+&lt;li&gt;コーディングとコードレビューと教育と引き継ぎを一気に&lt;/li&gt;
+
+&lt;li&gt;動いたという感動を共有できる&lt;/li&gt;
+
+&lt;li&gt;細かいところまで丸みえになる&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;GNU screen / readline などのライブラリなど使う&lt;/li&gt;
+
+&lt;li&gt;まとめ
+</code></pre>
+
+<ul>
+
+    <li>ペアプロしましょう!</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;環境は？
+</code></pre>
+
+<ul>
+
+    <li>環境はドライバー依存</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;ペアプロの難しさ
+</code></pre>
+
+<ul>
+
+    <li>導入前にはあったが、いまのところは大丈夫</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;技術力の差は埋まったか？
+</code></pre>
+
+<ul>
+
+    <li>結構埋まった。しかも仲良くなった。</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;ペアプロしたときの技術力ある人のパフォーマンス低下は？
+</code></pre>
+
+<ul>
+
+    <li>総合的に見たときには、仕方ない</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;ずっとやってる？
+</code></pre>
+
+<ul>
+
+    <li>午前と午後に2時間だけやってる</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;ベテラン同士のペアプロは？
+</code></pre>
+
+<ul>
+
+    <li>お互いの刺激になってよい</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;人月単価とか工数見積りは？
+</code></pre>
+
+<ul>
+
+    <li>コストとの問題は起きていない</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h2 id="カーリングとruby-2投目-making-ricochet-with-the-ruby-stone-into-granites-by-はしむかい-としかつ-curler-hashi-さん">(カーリングとRuby)2投目 - Making Ricochet with the Ruby stone into Granites. by はしむかい としかつ(@curler_hashi) さん</h2>
+
+<ul>
+
+    <li>妹背牛カーリング協会 強化委員</li>
+
+    <li>02で全てをかっさらった、あの人が帰ってきた</li>
+
+    <li>Geek でも Suits でもない人達のためのUI
+
+<ul>
+
+    <li>Markdown + 独自拡張</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;あったらいいなこんなソフト
+</code></pre>
+
+<ul>
+
+    <li>試合記録どか動画記録込み
+
+<ul>
+
+    <li>日本製のものがない</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;カーリングの石に加速度センサつけて、データを取るといいかも
+</code></pre>
+
+<ul>
+
+    <li>ダメな投擲のときにアラームがあると</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;カーリングをやるのにいくらぐらいかかる？
+</code></pre>
+
+<ul>
+
+    <li>石に200万円ぐらい</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;主要なプロダクトは米&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<h2 id="lightning-talk">Lightning Talk</h2>
+
+<h3 id="rvmについて語るときに僕の語ること">RVMについて語るときに僕の語ること</h3>
+
+<ul>
+
+    <li>"ささだメンバー"</li>
+
+</ul>
+
+<h3 id="文書検索ラングバ">文書検索ラングバ</h3>
+
+<ul>
+
+    <li>"デバッグ力"</li>
+
+</ul>
+
+<h3 id="rails-3-1-仮">Rails 3.1(仮)</h3>
+
+<ul>
+
+    <li>Isolated Engine</li>
+
+</ul>
+
+<h3 id="jrubyによるエンタープライズweb開発">JRubyによるエンタープライズWeb開発</h3>
+
+<ul>
+
+    <li>"みなさんエンタープライズな方"</li>
+
+</ul>
+
+<h3 id="htmlデザインをまったく崩さない-美しいテンプレートエンジンの作り方-パート2">HTMLデザインをまったく崩さない、美しいテンプレートエンジンの作り方 パート2</h3>
+
+<ul>
+
+    <li>分解して再構築する感じか</li>
+
+</ul>
+
+<h3 id="たまにはcgi-rbのことでも話してみる">たまにはcgi.rbのことでも話してみる</h3>
+
+<ul>
+
+    <li>"Passenger上でtdiayがそのまま動く"</li>
+
+</ul>
+
+<h3 id="perl-loves-ruby">Perl loves Ruby</h3>
+
+<ul>
+
+    <li>"Hokkaido.pm"</li>
+
+</ul>
+
+<h3 id="rubyでネイティブスマートフォンアプリ開発">Rubyでネイティブスマートフォンアプリ開発</h3>
+
+<ul>
+
+    <li>Rhodesは一回やってみるべきだな</li>
+
+</ul>
+
+<h3 id="どこでもrubyといっしょ-windowsmobile携帯にrubyを入れて遊んでみた">どこでもRubyといっしょ 〜WindowsMobile携帯にRubyを入れて遊んでみた〜</h3>
+
+<ul>
+
+    <li>"iPhoneではなく、なぜWindowsMobileを選んだか"</li>
+
+</ul>
+
+<h3 id="pusherアプリの作り方">Pusherアプリの作り方</h3>
+
+<ul>
+
+    <li>"会いに行けるプログラマ"</li>
+
+</ul>
+
+<h3 id="コンサドーレ札幌の情報収集をrubyでやるには">コンサドーレ札幌の情報収集をrubyでやるには</h3>
+
+<ul>
+
+    <li>"最終節4-0で勝ちました!"</li>
+
+</ul>
+
+<h3 id="或るwebサービス開発のこれから-オープンwebサービス-という妄想">或るWebサービス開発のこれから - &ldquo;オープンWebサービス&rdquo;という妄想 -</h3>
+
+<ul>
+
+    <li>コードも議論も展望も公開する、"オープンWebサービス"</li>
+
+</ul>
+
+<h2 id="ご自宅用ツール間同期メカニズム兼ストレージのご提案-by-m-seki-さん">ご自宅用ツール間同期メカニズム兼ストレージのご提案 by @m_seki さん</h2>
+
+<ul>
+
+    <li>"プロの無職"</li>
+
+    <li>toRuby</li>
+
+    <li>栃木Ruby会議03 at 2011/02/26</li>
+
+    <li>dRuby本初刷5周年!</li>
+
+    <li>Drop
+
+<ul>
+
+    <li>Rinda の実用的なライブラリ</li>
+
+    <li>似ているものは twitter</li>
+
+    <li>時刻をキーとするKVS</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;キーの排他制御は？
+</code></pre>
+
+<ul>
+
+    <li>同じ時刻であれば1単位待って追加する</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h2 id="railsアプリ開発-野生のカン-by-社長-エア的な">Railsアプリ開発 野生のカン by 社長(エア的な)</h2>
+
+<ul>
+
+    <li>マイペースにやりたいがスライドがが</li>
+
+    <li>コードレビューの前に設計資料を見る
+
+<ul>
+
+    <li>rspec は設計資料とは見ない</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;具体的に文章として書かれているかどうか
+</code></pre>
+
+<ul>
+
+    <li>機能の紹介やターゲットの記述など</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;複雑なところに図を書いているかどうか
+</code></pre>
+
+<ul>
+
+    <li>Class/Object</li>
+
+    <li>ベン図意外といい</li>
+
+    <li>URL設計がコードの外でされているかどうか
+
+<ul>
+
+    <li>コード書くまえに Wiki に書く</li>
+
+    <li>最初に書く</li>
+
+    <li>目で見て美しいかどうか重要</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;RESTful I/F
+</code></pre>
+
+<ul>
+
+    <li>CRUD</li>
+
+    <li>"みなさんもっと少女マンガを読まないといけないと思います"</li>
+
+    <li>ガラスの仮面を読んで REST 脳に
+
+<ul>
+
+    <li>4つの動詞だけで会話できるようになるために</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;本を借りる
+</code></pre>
+
+<ul>
+
+    <li>「本を借りること」を作る、と言う考えかた</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;filters on controller
+</code></pre>
+
+<ul>
+
+    <li>多すぎても少なすぎてもダメ</li>
+
+    <li>filter には前提条件</li>
+
+    <li>:except, :only はどっちを使う？
+
+<ul>
+
+    <li>:only のみを使う</li>
+
+    <li>指定されて「ない」ものは把握しづらい</li>
+
+    <li>:except だと追加で実装するときにわかりづらい</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;private/protected/public&lt;/li&gt;
+
+&lt;li&gt;例外処理
+</code></pre>
+
+<ul>
+
+    <li>Javaから来るとやりすぎる</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;パラメータの加工とか
+</code></pre>
+
+<ul>
+
+    <li>accessor でやれということ</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;transactions
+</code></pre>
+
+<ul>
+
+    <li>コントローラの中で使うことはないはず</li>
+
+    <li>それコールバックで</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;controller の継承
+</code></pre>
+
+<ul>
+
+    <li>アクション共有は難易度が高い</li>
+
+    <li>Mix-in とか partial で</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;attr_protected / attr_accessible
+</code></pre>
+
+<ul>
+
+    <li>前者が保護する、後者が指定した方を通す</li>
+
+    <li>attr_protected を使う方がいい</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;save/save!
+</code></pre>
+
+<ul>
+
+    <li>save で false を見ないのなら save! で例外出す方がいい</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;validation はまたの機械に&lt;/li&gt;
+
+&lt;li&gt;routes.rb
+</code></pre>
+
+<ul>
+
+    <li>コントローラ別にまとめよう</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;コメント
+</code></pre>
+
+<ul>
+
+    <li>コードが不自然なところに理由を書く</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;英語を入れるのは、世界と繋っているということを考えて&lt;/li&gt;
+
+&lt;li&gt;future
+</code></pre>
+
+<ul>
+
+    <li>未来に制約を残さない</li>
+
+    <li>あとから来た人が足を取られないようにしよう</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h3 id="私的まとめ-2">私的まとめ</h3>
+
+<ul>
+
+    <li>RESTful I/F は勉強になったので、実践してみよう</li>
+
+    <li>filters には :only を使う</li>
+
+    <li>ガラスの仮面を読みます</li>
+
+    <li>attr_protected を使うようにしましょう</li>
+
+</ul>
+
+<h2 id="私のプロフィール-by-takahashim-さん">私のプロフィール by @takahashim さん</h2>
+
+<ul>
+
+    <li>国内外に煽るだけ煽ってしまった感じがある</li>
+
+    <li>2010/06/02 株式会社達人出版会</li>
+
+    <li>オーム社よりも早かった</li>
+
+    <li>これまでの「征義」の話をしよう
+
+<ul>
+
+    <li>個人的すぎるかもしれないので構成変えました</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;達人出版会のサービス
+</code></pre>
+
+<ul>
+
+    <li>著者に原稿を書いてもらい、編集・組版して出版する
+
+<ul>
+
+    <li>EPUB/PDF で</li>
+
+</ul>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;近代的な書籍制作環境の構築&lt;/li&gt;
+</code></pre>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;執筆支援環境
+</code></pre>
+
+<ul>
+
+    <li>Redmine + git
+
+<ul>
+
+    <li>gitosis と Redmine を連携できるプラグインがある</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<p></li></p>
+
+<pre><code>&lt;li&gt;組版システム
+</code></pre>
+
+<ul>
+
+    <li>ReVIEW</li>
+
+</ul>
+
+<p></li></p>
+
+<p></ul></p>
+
+<h2 id="there-is-no-spoon-revisited-by-kakutani-さん">There Is No Spoon:Revisited by @kakutani さん</h2>
+
+<ul>
+
+    <li>オーム社の電子出版サイトの制作している</li>
+
+    <li>もう感極まってしまったので、何も書けなかった。</li>
+
+</ul>
+
+<h2 id="クロージング">クロージング</h2>
+
+<ul>
+
+    <li>遅れているのでさっさと懇親会へ</li>
+
+</ul>
+
+<h2 id="懇親会">懇親会</h2>
+
+<ul>
+
+    <li>名古屋のあれがかなりあれであることがわかったので、名古屋Ruby会議に参加することになりました。</li>
+
+    <li>いろんな人とお話しできたのがよかった。</li>
+
+</ul>
+
+<h2 id="二次会">二次会</h2>
+
+<ul>
+
+    <li>同上</li>
+
+    <li>もうなんか感極まっ（ｒｙ</li>
+
+</ul>
+
+<h2 id="五丈源">五丈源</h2>
+
+<ul>
+
+    <li>matz と深夜ラーメンというまれに見る状況に感極ま（ｒｙ）</li>
+
+</ul>
+
+<h2 id="まとめ">まとめ</h2>
+
+<ul>
+
+    <li>いろいろと会場や懇親会のことを伝えたいんだけど、やっぱり参加しないことにはこの雰囲気や熱意は伝わならないのではないかなと思う。この気持ちを味わいたいのなら、是非とも地域Ruby会議に、特に地方のは行くべき。そして懇親会で話をすべき。そうすると自分が何をしたかったのか、何をすべきかとかがわかるかもしれないと思う。少なくとも私はわかったので、これからも参加し続けるつもり。次は西側かな。</li>
+
+    <li>二晩ぐらい経ってみて、「一度終わってみるべき10の理由」的なのが思い浮んだが、もうちょい練れるまで表には出さないことにする。</li>
+
+    <li>二次会での「月曜から砂漠に戻るんですよ、みんな」的な話が印象に残ったな。それを打破するための RailsDevCon だったりするので、もうちょい頑張りたい。</li>
+
+    <li>滞在ホテルがえにしテックの最寄りだったらしい。エアを名乗ってもいいだろうか。</li>
+
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/12/07/ruby03/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/11/22/railsdevcon2010/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/11/22/railsdevcon2010/">RailsDevCon2010を開催しました！</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2011/01/01/20112010/">2011年の展望と2010年の振り返り</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2011/01/01/20112010/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

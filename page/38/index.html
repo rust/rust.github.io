@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/22/debian-linux-evince-PDF/">evinceで日本語PDFを表示する</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ここを参考に．ちなみに参考先はAutoPagerizeを有効にしていると，なぜか該当記事がどんどん下にいっちゃいました．html的にあわないのかな．
+# apt-get install evince ghostscript cmap-adobe-japan1 xpdf-japanese # mkdir -p /usr/share/poppler/cidToUnicode # ln --symbolic /usr/share/xpdf/japanese/Adobe-Japan1.cidToUnicode /usr/share/poppler/cidToUnicode/Adobe-Japan1 # mkdir -p /usr/share/poppler/cMap # ln --symbolic /usr/share/fonts/cmap/adobe-japan1 /usr/share/poppler/cMap/Adobe-Japan1  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/21/JOB-Ruby/">Rubyを仕事でさわると</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  PHP書くときにセミコロン忘れるんだよなー，というのはさておき，やはり洗練されてる気がするね，コードが．ただあまりにHackっぽい書き方しているコードは読み込むのに時間かかるんだけど，それでも読み込めたときのいい気分がいいね．
+ただプログラムの基礎的な勉強をあまりしてこなかったので，週末にでもC++/LISP/Pythonの勉強でもしてみようと思います．とりあえずは，
+ ロベールのC&#43;&#43;入門講座  著者: ロベール
+出版日: 2007-11-15
+出版社/メーカー: 毎日コミュニケーションズ
+カテゴリ: Book
+  でも勉強しようと思います．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/21/notitle/">ジョニーって豆腐やではない</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  騙し屋ジョニー 魔界都市〈新宿〉 (ソノラマノベルス)  著者: 菊地 秀行
+出版日: 2008-03-21
+出版社/メーカー: 朝日新聞社
+カテゴリ: Book
+  秋せつら？違うかな．魔界都市はやはり末弥純だよね，とか思ってしまいます．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/18/JOB/">新職場にて</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  総菜屋に行くのはさすがに初めて．まずは慣れることから始めようと思います．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/14/notitle/">引っ越し完了</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今日から世田谷区民です．テレビに上沼恵美子とかやしきたかじんとか円広志とか出てないのが新鮮です．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/10/debian-linux-ATOK-X3-on-Debian-sid/">ATOK X3 on Debian(sid)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  買ってみたのでインストールログ．
+$ tar zxvf atokx3.tar.gz $ cd ATOKX3 $ sudo su # gtk-query-immodules-2.0 &gt; /etc/gtk-2.0/gtk.immodules # ./setupatok_deb.sh # sudo dpkg -i bin/deb/IIIMF/iiimf-properties_trunk_r3104-js1_i386.deb $ im-switch -s iiimf ---- logout -&gt; login ---- $ iiim-properties  これで変換はできるようになりましたが，変換キーのみでトグルするようにしてるんで，emacsが不調．次はこっちの設定か．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/10/debian-linux-iiimecf-emacs-ATOK-X3/">iiimecfでemacs &#43; ATOK X3</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://www.meadowy.org/%7Ekawabata/iiimecf/をインストールすれば，とりあえず使えるようにはなったんだが，いつもキーバインドを[変換]キー=IME on/offとしているのが使えない．具体的には
+&lt;henkan&gt; is undefined  と出る．あと[Alt]+[半角/全角]も
+&lt;M-zenkaku-hankaku&gt; is undefined  と出て効かない．いろいろ調べるもなかなか見つからないので，明日以降に調整しよう．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/10/debian-linux-iiimf-GTK/">iiimfにするとGTKなのがダメな問題に対処するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Synapticが動かなくなる問題を修正する
+確かにSynapticが動作しなくなるので対処．要するに，
+GTK_IM_MODULE=xim  とすればいいので，適宜メニューから書き換える．
+#!/bin/bash GTK_IM_MODULE=xim gksu /usr/sbin/synaptic  その他，必要であれば同様の処置をすればいいみたい．とりあえずの対処っぽいですが．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/10/Rails-Rails/">新しい職場用のRailsの本</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  基礎Ruby on Rails (IMPRESS KISO SERIES)  著者: 黒田 努, 佐藤 和人
+出版日: 2007-10-25
+出版社/メーカー: インプレスジャパン
+カテゴリ: Book
+  再来週の月曜までに読まなくてはorz．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/03/09/debian-linux-X61-suspend-hibernate-backlight-brightness-on-X61/">suspend/hibernate/backlight-brightness on X61</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/03/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  こことUbuntuのForumに書いてあったshell scriptを使うことで，
+ Fn+Home/EndでのBacklight変更 suspend hibernate  が，一応まともに動くようになりました．長かった・・・・
+以下そのログ．  /etc/acpi/sleep.sh  #!/bin/sh rmmod usb_storage rmmod uhci_hcd rmmod ehci_hcd /usr/sbin/s2ram -f -a 1 -m modprobe uhci_hcd modprobe ehci_hcd modprobe usb_storage   /etc/acpi/hibernate.sh  #!/bin/bash # # Modified from /etc/acpi/hibernate.sh # - Does not get disabled by acpi-support # - May interfere with laptop mode # # prepare scripts in /etc/acpi/prepare.d . /etc/acpi/prepare.sh # use kernel to write img to disk, then shut power down echo -n &quot;shutdown&quot; &gt; /sys/power/disk # allow an image size up to 2GB echo -n &quot;427131535&quot; &gt; /sys/power/image_size # suspend to disk echo -n &quot;disk&quot; &gt; /sys/power/state # resume scripts in /etc/acpi/resume.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/03/09/debian-linux-X61-suspend-hibernate-backlight-brightness-on-X61/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/37/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;38 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/39/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

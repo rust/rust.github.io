@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>RubyKaigiとかTokyuRubyKaigiとか &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>RubyKaigiとかTokyuRubyKaigiとか</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/07/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>とうとう終わってしまったRubyKaigiですが、終わってよかったとは思ってません。こういうRubyKaigiが有志によって継続されることを願ってはいます。jpmobileだったらいくらでもコンテンツ提供できるので、もしものときはお声掛け下さい。</p>
+
+<p>さて<a href="http://stnard.jp/2010/09/04/362/">以前、RubyKaigiの問題点を書いてみた</a>のだけど、その問題点は当然解消されていません。まあこれは仕方ないことですが、懇親会の帰りとかに<a href="http://twitter.com/jugyo">@jugyo</a>さんとつらつらと話してて再認識したことは、「RubyKaigiはいわゆるアルファユーザのためにRubyやその文化を伝える会である」ことかなと。</p>
+
+<h3 id="rubyとrubykaigiと啓蒙">RubyとRubyKaigiと啓蒙</h3>
+
+<p>で、RubyKaigiが始まった当初から比べると、Rubyで仕事している人が増えてきて、Rubyは浸透してきたと思うわけです。なので、<a href="http://twitter.com/kakutani">@kakutani</a>さんたちが「Rubyを啓蒙する」ステージは過ぎてしまっているのではないかと思うわけです。</p>
+
+<p>RubyKaigiに来て<a href="http://twitter.com/kakutani">@kakutani</a>さんのセッションを聞き、感極まるような訓練されたRubyistはたくさん出来上がっていることでしょう。あの盛況ぶりやスタンディングオベーションとか見ても、実感できます。でもそれを他の人に伝えることができてるかというと、そうではない。そのあたりが、いまひとつRubyが広がり切らない良くない点なのかなと、再認識しました。</p>
+
+<h3 id="で-お前は何をするんだ">で、お前は何をするんだ</h3>
+
+<p>という問に対しては、まずはRubyの世界で仕事をしていき、雇用を増やすことで貢献していきたいと思ってます。今の会社にずっといるかどうかはわかりませんが、Rubyを仕事としてやっていこうとは思ってます。</p>
+
+<p>あとはTokyu.rbでしょうか。こう言ってはあれですが、作ったのは勢いです。感極まって感化されて、「いっちょやってみっか！」的な感じで<a href="http://twitter.com/ginkouno">@ginkouno</a>さんと共に始めたのが始まりです。それほど重くない感じで進めていきたかったのが功を奏したのか、はてはいろんな勉強会でTokyu.rbの宣伝をしたおかげか、割と多くの方に来ていただいて、定期的にTokyuRubyKaigiを開催できるまでになりました。</p>
+
+<h3 id="tokyu-rbとtokyurubykaigi">Tokyu.rbとTokyuRubyKaigi</h3>
+
+<p><iframe src="http://player.vimeo.com/video/26598026?title=0&amp;byline=0&amp;portrait=0" width="400" height="226" frameborder="0"></iframe><p><a href="http://vimeo.com/26598026">[18M03] All About RubyKaigi Ecosystem</a> from <a href="http://vimeo.com/rubykaigi">rubykaigi</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
+
+<p>このRubyKaigiのセッションで、「Tokyu.rbはずるい」的な話をされていますが、たぶんユルさというかある意味適当な感じが良かったんじゃないかなと思ってます。実際、TokyuRubyKaigiを開催するにあたって、1回目の実行委員達の中では「RegionalRubyKaigiにすると、格式とか仕来りとかいろいろ面倒だから、RubyKaigiってつけるのやめとこう。飲みながらのLT大会でも良ければRegionalRubyKaigiにしようか」ということを決めていました。</p>
+
+<p>それと言うのも、<a href="http://twitter.com/kakutani">@kakutani</a>さんが1回目をすごくしっかりやっていたからなのですが、意外にも<a href="http://twitter.com/takahashim">@takahashim</a>さんに聞いてみると、「いいんじゃないですか」とあっさり言われてRegionalRubyKaigiとして開催することに。</p>
+
+<p>お陰さまで2011/10/29(土)に4回目を開催できることになっていますが、最初は別に「LT楽しいからそれだけやればいいんじゃね」とか思ってたのではなく、「普通にLT大会しよう！でもTokyu.rbらしく飲みながらとかいいよね！」という感じだったし、通常のTokyu.rbも「懇親会が楽しいから、それだけやればいいんじゃね」と思っていたわけではなく、紆余曲折があっていまの形に落ち着いたわけです。</p>
+
+<p>実際産みの苦しみというのはあったと思います。それを僕自身は気楽に考えて、臨機応変に対応してきたらこうなってたってだけなので、周りから見ると「ずるいなー」と思われるのかもしれません。</p>
+
+<h3 id="もっと地域コミュニティを">もっと地域コミュニティを</h3>
+
+<p>で、まあ、つらつらと書いてきて、何が言いたいのかというと、もっとみんな地域Rubyコミュニティを作ろうということです。「技術系は<a href="http://qwik.jp/asakusarb/">Asakusa.rb</a>に、飲み会はTokyu.rbに行けばいいんじゃね」じゃなく、もっと小さなものでもいいし、一人で宣言してもいいと思うわけです。乱立してもいいし、何なら姉妹コミュニティになって共同開催とかすればいいわけです。</p>
+
+<h3 id="結論としては">結論としては</h3>
+
+<p>今度はみんなでRubyを広めて啓蒙していこうじゃないかと言いたい。そこから次のステップが始まるんじゃないかなと、こっそり考えてます。</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2011/07/29/rubykaigitokyurubykaigi/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2011/07/19/rubykaigi-2011/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2011/07/19/rubykaigi-2011/">RubyKaigi 2011で発表してきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2011/10/09/git/">Gitの本を書きました</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2011/10/09/git/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

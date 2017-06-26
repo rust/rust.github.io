@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>RubyKaigi2008に参加してきた＃２ &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>RubyKaigi2008に参加してきた＃２</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/06/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>つくばは遠いなぁ，と言うのが会場の印象．いやいい会場だったんですけどね．いかんせん自宅から遠かったなぁと．</p>
+
+<p>2日目のキーワードは，「Ruby 物産展」「Mac 万能説」．</p>
+
+<h1 id="本日は朝の諸注意は飛ばされた">##本日は朝の諸注意は飛ばされた</h1>
+
+<p>##Ruby Extended Library Howto</p>
+
+<ul>
+<li>拡張ライブラリとは
+
+<ul>
+<li>C/C++で書かれ組み込まれるライブラリ</li>
+</ul></li>
+<li>遅さ順</li>
+</ul>
+
+<pre><code class="language-ruby">1.uptp(10) { |x| puts x }
+</code></pre>
+
+<pre><code class="language-ruby">for i in 1..10; puts i; end
+</code></pre>
+
+<pre><code class="language-c">for(i=0; i&lt;10; i++){
+  rb_funcall(rb_stdout, rb_intern(&quot;puts&quot;), 1, INT2FIX(i));
+}
+</code></pre>
+
+<ul>
+<li>情報源
+
+<ul>
+<li>README.EXT(.ja)</li>
+<li>RHG / Web版など</li>
+</ul></li>
+<li>1次情報
+
+<ul>
+<li>ruby.h / intern.h / rubyio.h / rubysig.h / version.h / st.h</li>
+</ul></li>
+<li>配布
+
+<ul>
+<li>setup.rb / Gem / Binary</li>
+</ul></li>
+<li>extrails
+
+<ul>
+<li>拡張ライブラリのひな形が作れる</li>
+<li>この中に作法のひな形が書かれている</li>
+<li>せっかく C++ の勉強などしているので，一つ作ってみよう</li>
+</ul></li>
+<li>使いどころを考える</li>
+</ul>
+
+<p>##さらに仕事に使う Ruby</p>
+
+<ul>
+<li>業務中の割り込みが発生する時がある
+
+<ul>
+<li>顧客との連絡ツール</li>
+<li>Hiki</li>
+<li>顧客・案件毎に Hiki を立てて，Reverse Proxy でアクセスする</li>
+<li>案件管理</li>
+<li>Redmine</li>
+<li>伝票管理</li>
+<li>Kagemai</li>
+<li>ワークフローにフィットした</li>
+<li>依頼 -&gt; 見積 -&gt; 受注 -&gt; 検収 -&gt; 請求</li>
+</ul></li>
+<li>Non-RSS Web -&gt; created RSS -&gt; RSS Reader
+
+<ul>
+<li>Mechanize / Hpricot / Fastladder</li>
+</ul></li>
+</ul>
+
+<p>##erb を偲んで</p>
+
+<ul>
+<li>MVC = オブジェクト群の相対的な関係</li>
+<li>コードとテンプレート
+
+<ul>
+<li>独立しているが無関係ではない</li>
+</ul></li>
+<li>View とは
+
+<ul>
+<li>View オブジェクト</li>
+<li>ベンハムのコマ</li>
+</ul></li>
+</ul>
+
+<p>##matz を説得する方法</p>
+
+<ul>
+<li>不満があるという前提</li>
+<li>そうすると matz を説得する必要がある</li>
+<li>YARV の例
+
+<ul>
+<li>Ruby は遅い -&gt; 説得理由は速度なのでわかりやすい</li>
+</ul></li>
+<li>バグレポートは通りやすい</li>
+<li>新機能・機能変更
+
+<ul>
+<li>動機や解決策は適切かどうか</li>
+<li>Perl が採用しているか</li>
+<li>まともなサンプルが重要</li>
+<li>重要性と説得力あるサンプルを見つけよう</li>
+</ul></li>
+</ul>
+
+<p>##リファレンスマニュアル 2008 初夏</p>
+
+<ul>
+<li>刷新計画の概要
+
+<ul>
+<li>メソッドカバー率   : 52% 程度</li>
+<li>組み込みライブラリ : 97.2%</li>
+</ul></li>
+<li>これからの予定
+
+<ul>
+<li>来年までにカバー率を上げたい</li>
+<li>ライセンスを変更したい</li>
+<li>CC に変える</li>
+</ul></li>
+</ul>
+
+<p>マニュアル作りに参加してみたいなとは思ってたんで，これを契機に参加してみるかな．</p>
+
+<p>##Ruby と MacOS X の未来</p>
+
+<ul>
+<li>DTrace support</li>
+<li>Ruby/Cocoa
+
+<ul>
+<li>Ruby/Object-C Bridge / C bridge</li>
+</ul></li>
+<li>RubyCocoa 良すぎ
+
+<ul>
+<li>ProxyClass を経由して，Object-C Class にアクセスしている</li>
+<li>Create / Forwards Message / Convert / Exception</li>
+</ul></li>
+<li>MacRuby
+
+<ul>
+<li>Object-C ランタイム上の Ruby</li>
+<li>Apple が開発</li>
+<li>かなり使い勝手が良さそう</li>
+<li>Mac 買うべきか・・・・</li>
+</ul></li>
+</ul>
+
+<p>帰りの電車で同僚といかに Mac を買うかについて話していた気がする．ローンさえ終われば．．．．</p>
+
+<p>##REST 信者から見た Ruby on Rails 2.0</p>
+
+<ul>
+<li>Ruby and Rails</li>
+<li>REST と Ruby について
+
+<ul>
+<li>2002 から議論されていて仲良し</li>
+</ul></li>
+<li>REST と Rails も仲良し</li>
+<li>抽象化レベル
+
+<ul>
+<li>Architectural Style は HTTP/URI などの Architecture をさらに抽象化したもの</li>
+</ul></li>
+<li>リソース指向アーキテクチャ(ROA)
+
+<ul>
+<li>Addressability (アドレス可能性)</li>
+<li>Statelessness (ステートレス性)</li>
+<li>Connectedness (接続性)</li>
+<li>A Uniform Interface (統一インターフェイス)</li>
+<li>A &gt; C &gt; U &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; S</li>
+</ul></li>
+<li>Addressability
+
+<ul>
+<li>データリソースとして提供できるとき，アドレス可能</li>
+<li>リソース内の(見せたい)情報毎に URI を割り当てる</li>
+<li>URI 駆動開発</li>
+<li>URI の設計 -&gt; URI の実装</li>
+<li>ex) ブログ</li>
+<li>設計</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-bash">/entries            -&gt; list
+/entries/{entry_id} -&gt; entry resource
+</code></pre>
+
+<ul>
+<li>実装</li>
+</ul>
+
+<pre><code class="language-ruby">map.resources :entries
+</code></pre>
+
+<ul>
+<li>すばらしいがコードの構造に依存しがち</li>
+<li>URI は設計目標であって実装結果ではない</li>
+<li>Connectedness
+
+<ul>
+<li>現在のページ == アプリケーション状態</li>
+<li>ページのナビジェーションによって，アプリケーション状態が遷移する</li>
+<li>ハイパーメディアの設計 == リソースとリンクの設計</li>
+<li>リンクの実装</li>
+<li>url_for / link_to</li>
+<li>リンクの意味を意識できればもっといい</li>
+<li>rel attribute も正確に反映される方が良い</li>
+</ul></li>
+<li>まとめ
+
+<ul>
+<li>Rails は RESTful</li>
+</ul></li>
+</ul>
+
+<p>##Real-World Enterprise Ruby</p>
+
+<ul>
+<li>IT サービスプロバイダー = SIer</li>
+<li>顧客に納得してもらうために
+
+<ul>
+<li>教育体制・技術支援体制の確立</li>
+<li>開発標準への取り組み</li>
+<li>保守・運用フェーズでのサポート</li>
+</ul></li>
+<li>Java は大きい</li>
+<li>Ruby は物産品</li>
+</ul>
+
+<p>##Development and scaling iKnow!</p>
+
+<ul>
+<li>現在 20万 User</li>
+<li>12 カ国</li>
+<li>Develop -&gt; Freeze -&gt; QA -&gt; Release</li>
+<li>Env.
+
+<ul>
+<li>Nginx</li>
+<li>Ubuntu</li>
+<li>MySQL 5.1</li>
+<li>Rails 2.0</li>
+</ul></li>
+<li>60000 upload /day</li>
+<li>migration = 474</li>
+<li>Past
+
+<ul>
+<li>NGINX+Rails + MySQL Master + MySQL Slave  on VMware</li>
+<li>Next DB mem upgrade to 12GB</li>
+</ul></li>
+<li>Now
+
+<ul>
+<li>NFS</li>
+<li>MySQL Master + MySQL Slave + Legacy Database</li>
+<li>faster disks :: important!</li>
+<li>8 cpu cores</li>
+<li>16GB RAM     :: important!</li>
+</ul></li>
+<li>Future
+
+<ul>
+<li>Add App-server</li>
+<li>memcached</li>
+<li>DB Sharding</li>
+</ul></li>
+<li>Problems
+
+<ul>
+<li>ActiveRecord</li>
+<li>sum は limit を使わない ( ある意味当たり前だが，ARでは設定できる)</li>
+<li>has_many</li>
+<li>count = COUNT(*)</li>
+<li>length</li>
+<li>モデルを全部メモリ上にロードしているため，メモリ食い過ぎ</li>
+<li>size 使おうね</li>
+</ul></li>
+<li>OpenID
+
+<ul>
+<li>15% が OPenID 使っている</li>
+<li>同時リクエストで Rails のリソースを食いつぶされないように</li>
+<li>Timeout を設定する</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-ruby">timeout(5) do
+  methods....
+end
+</code></pre>
+
+<ul>
+<li>ファイルシステム
+
+<ul>
+<li>ext3</li>
+<li>テンポラリファイルは1ディレクトリ 32000</li>
+<li>xfs</li>
+<li>30000 以上可能</li>
+</ul></li>
+<li>最大の問題
+
+<ul>
+<li>Heavy SQL</li>
+</ul></li>
+<li>Kwala
+
+<ul>
+<li>継続インテグレーションツール</li>
+</ul></li>
+</ul>
+
+<p>##Inside Tabelog&rsquo;s Backend</p>
+
+<ul>
+<li>13台構成</li>
+<li>mongrel について
+
+<ul>
+<li>メモリ使用量</li>
+<li>15 Proces -&gt; 4日～5日 で 8GB を食いつぶす</li>
+<li>再起動 cron でまわす</li>
+<li>少しずつ落として再起動している</li>
+<li>ただ毎日のように deploy</li>
+<li>メモリ使用量が急激に増加したら要チェック</li>
+<li>安定性</li>
+<li>過負荷・メモリ食いつぶしたときに落ちる</li>
+<li>パフォーマンス</li>
+<li>50 access / sec</li>
+<li>平均 0.2 sec でさばいている</li>
+<li>DB:レンダリング比は 3:2</li>
+</ul></li>
+<li>スケールアウトについて
+
+<ul>
+<li>セッションの共有</li>
+<li>DB格納で解決</li>
+<li>分散アクセス</li>
+<li>AR はDBは1つのみ</li>
+<li>Plugin</li>
+<li>Magic Multi-Connections</li>
+<li>Connection はりすぎ
+
+<ul>
+<li>Table の数だけはってる</li>
+</ul></li>
+<li>ActsAsReadonlyable</li>
+<li>導入が簡単 find(.. :readonly =&gt; false) で master に行く</li>
+<li>フェイルオーバー</li>
+<li>同時接続数
+
+<ul>
+<li>全ての slave に接続するので，slave が増えると大変</li>
+</ul></li>
+</ul></li>
+<li>パフォーマンスについて
+
+<ul>
+<li>routes</li>
+<li>ほとんど使っていない</li>
+<li>routes は特にかく遅い</li>
+<li>create_url という自作メソッドを使っている</li>
+<li>cache</li>
+<li>memcached</li>
+<li>DB へのクエリ</li>
+<li>バッチ生成のhtml</li>
+<li>テンプレートはキャッシュしていない</li>
+<li>QueryCache on MySQL</li>
+<li>Query</li>
+<li>include は避ける</li>
+<li>メモリ大食い</li>
+<li>一覧系画面では重い</li>
+<li>paginate は劇重</li>
+<li>件数 -&gt; ID一覧 -&gt; 画面表示用テーブル</li>
+<li>AoR 2007 で解説中</li>
+<li>session</li>
+<li>memcached に変更予定</li>
+</ul></li>
+<li>まとめ
+
+<ul>
+<li>地味に広告が重い</li>
+</ul></li>
+</ul>
+
+<p>##Jpmobile</p>
+
+<ul>
+<li>日本の携帯市場は独自の進化を遂げている
+
+<ul>
+<li>バッドノウハウの蓄積</li>
+</ul></li>
+<li>機能
+
+<ul>
+<li>キャリア判別</li>
+<li>基本的な処理</li>
+<li>テンプレート切り替え(View)</li>
+<li>キャリア毎にも分けられる</li>
+<li>xxxx_mobile_au.html.erb</li>
+<li>xxxx_mobiel_docomo.html.erb</li>
+<li>位置情報</li>
+<li>緯度・経度も取得できる</li>
+<li>簡単ログイン</li>
+<li>機種固有・契約者固有情報もとれる</li>
+<li>IP アドレス帯域と検証しなければ</li>
+<li>IPアドレス検証</li>
+<li>携帯キャリアからのIPアドレスのみを許可</li>
+<li>セッションIDの不可</li>
+<li>trans_sid</li>
+<li>ディスプレイ情報の取得</li>
+<li>絵文字の相互変換</li>
+<li>mobile_filter</li>
+</ul></li>
+</ul>
+
+<p>##Building a Scalable Startup with Ruby</p>
+
+<ul>
+<li>TuneCore
+
+<ul>
+<li>Artist -&gt; TuneCore -&gt; mp3 -&gt; iTune Music Store -&gt; Money -&gt; TuneCore -&gt; Artiust</li>
+</ul></li>
+
+<li><p>Environment</p>
+
+<ul>
+<li>Front End</li>
+<li>Rails/MySQL</li>
+<li>1 Database</li>
+<li>Fragmented Cache</li>
+<li>Uploads via Merb</li>
+<li>Back End</li>
+<li>Audio transcoder</li>
+<li>Write metadata file</li>
+<li>Upload to the store</li>
+<li>Ruby + OpenSource transcode codec</li>
+<li>XML with Java</li>
+<li>8種類の店舗に</li>
+<li>Front End &lt;-&gt; Back End</li>
+<li>Message Queue</li>
+<li>キューのやりとり</li>
+<li>キューのメッセージは YAML</li>
+<li>Amazon が管理してくれる</li>
+<li>Amazon EC2 が配布サーバ</li>
+<li>配布サーバがメッセージキューから仕事をもらう</li>
+<li>キューによるサーバ起動が行われている？</li>
+
+<li><p>Backend なので常時起動している必要はなく，キューが来たら</p>
+
+<p>起動して処理を開始すればいい．</p></li>
+
+<li><p>Storage</p></li>
+
+<li><p>Amazon S3</p></li>
+
+<li><p>EC2 への転送は無料</p></li>
+</ul></li>
+</ul>
+
+<p>##Rails 症候群の研究</p>
+
+<ul>
+<li>ログ書き忘れ orz</li>
+<li>ようするに protected をなくそうぜ，と言う話．</li>
+</ul>
+
+<p>##感想
+いや～，みんな Ruby への愛にあふれた熱い戦いを見せてくれました．YAPC でもそうだけど，こういう場は言語に対する熱意にあふれていますね．愛を熱く語れる日は来るだろうか．．．．</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/06/26/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/06/24/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/06/24/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">RubyKaigi2008に参加してきた＃１</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/06/29/mysql-MySQL-on-MySQL-Weekly-Seminor-2008-06-27/">MySQL パフォーマンスチューニング on MySQL Weekly Seminor 2008/06/27</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/06/29/mysql-MySQL-on-MySQL-Weekly-Seminor-2008-06-27/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

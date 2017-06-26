@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Shibuya.lisp テクニカルトーク &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Shibuya.lisp テクニカルトーク</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Lisp関係でこれだけ熱い人たちが集まってくるのは，結構すごいね．あとLL言語に比べて，何かしらのこだわりが強い人が多かった感がある．楽しいだけじゃない，熱意というか．まだ初心者な私にも何かしら凄さを感じさせてくれました．</p>
+
+<p>話の内容的にあんまり追えてないので，詳しいまとめなどは，他の参加者を参照してくださいorz．</p>
+
+<p>====
+##開会の言葉＠ひげぽんさん</p>
+
+<p>##50万行オーダーのプロジェクトを俺Lispで書く</p>
+
+<ul>
+<li>mitamex さん</li>
+<li>ゼンリン電子地図帳Ziを開発</li>
+
+<li><p>docomo 標準バンドルのゼンリン地図＋ナビの開発など</p></li>
+
+<li><p>目的はプロジェクトの成功</p>
+
+<ul>
+<li>Lispを使いたいからじゃない</li>
+<li>切り分けて制作</li>
+</ul></li>
+
+<li><p>実際問題としてLispしか選択肢がなかった</p>
+
+<ul>
+<li>小さなコア</li>
+</ul></li>
+
+<li><p>チーム開発では</p>
+
+<ul>
+<li>Lisp に拒絶反応を起こす人がいる</li>
+</ul></li>
+
+<li><p>L4u</p>
+
+<ul>
+<li>Lisp for you! &lt;- 破壊的</li>
+<li>大規模開発用</li>
+<li>スケーラブル</li>
+<li>超並列型</li>
+<li>Rubyみたいな普通の言語っぽい見た目</li>
+<li>Erlangみたいに超並列型</li>
+<li>プロファイラー実装</li>
+<li>最適化しやすい</li>
+</ul></li>
+
+<li><p>超並列型</p>
+
+<ul>
+<li>アクターモデル</li>
+<li>クライアント／サーバモデルと同じ感覚で作れる？</li>
+</ul></li>
+
+<li><p>みんなに使ってもらうためにエディタも作った</p></li>
+
+<li><p>S式</p>
+
+<ul>
+<li>tuple を導入</li>
+<li>まずはJSONで開発して，後でS式に置き換える</li>
+<li>それとは気がつかないうちにS式を使ってる感じに．</li>
+</ul></li>
+
+<li><p>携帯電話のリモートデバッグ</p>
+
+<ul>
+<li>Doja はソケット使えないので，ポーリングして GET でコマンドを受け取る</li>
+</ul></li>
+
+<li><p>サーバサイド L4u</p>
+
+<ul>
+<li>携帯でもサーバでも同じ処理が動く</li>
+</ul></li>
+
+<li><p>どこでもREPL</p>
+
+<ul>
+<li>ホスト言語との連携を前提</li>
+<li>L4u で不得意な部分はホスト言語に置き換えた</li>
+</ul></li>
+
+<li><p>delegate/cc</p>
+
+<ul>
+<li>呼び出した時点でL4uの処理は止まる．戻りが発生したら，継続．</li>
+</ul></li>
+
+<li><p>プリプロセッサ・マクロ</p>
+
+<ul>
+<li>同じシリーズの携帯でもコードを分ける必要があるので，プリプロセッサを使う．</li>
+<li>どんな構文でも最後にはS式に変換される</li>
+</ul></li>
+
+<li><p>超並列指向</p>
+
+<ul>
+<li>Erlang と同じものを目指している</li>
+</ul></li>
+
+<li><p>L4uは人に優しい構文</p>
+
+<ul>
+<li>Lisp は人間に優しくなく，コンピュータにやさしい言語．</li>
+<li>return/breakとかloop/while が使える</li>
+<li>かっこを減らす工夫をしている．</li>
+<li>なぜCLOSがあるのにJavaっぽいクラスを使うのか</li>
+<li>ホスト言語で書き直す手間を低減させるために．</li>
+</ul></li>
+
+<li><p>Lisp と言わないのがポイント</p></li>
+</ul>
+
+<p>##HyperSpec ひとめぐり</p>
+
+<ul>
+<li>NANRI さん</li>
+</ul>
+
+<p>###HyperSpec</p>
+
+<ul>
+<li><p>ANSI Common Lisp の使用</p></li>
+
+<li><p>CLtL2 とは</p>
+
+<ul>
+<li>Common List the Language 2nd Edition</li>
+</ul></li>
+
+<li><p>感心したところ，他の言語にないところを紹介</p></li>
+</ul>
+
+<p>###数の体系</p>
+
+<ul>
+<li>数の種類
+
+<ul>
+<li>整数，有理数，実数，複素数</li>
+<li>正確数と非正確数の区別</li>
+<li><sup>1</sup>&frasl;<sub>3</sub> != 0.3333&hellip;. とかの区別</li>
+<li>有理数の正準化</li>
+<li><sup>2</sup>&frasl;<sub>1</sub> -&gt; 2 になど</li>
+<li>複素数の正準化</li>
+<li>(1 2) -&gt; 1 になど</li>
+<li>(1.0 0.0) だと，非正確数なので正準化は行われない</li>
+</ul></li>
+</ul>
+
+<p>###Common Lisp には</p>
+
+<ul>
+<li>コンパイラが含まれます
+
+<ul>
+<li>compile によりコンパイルできる</li>
+<li>他の言語の言語仕様では，Java/Haskell以外では見つからなかった．</li>
+<li>逆アセンブル関数 disassenmble がある</li>
+</ul></li>
+<li>デバッガが含まれます
+
+<ul>
+<li>Common Lisp ではエラーが起こるとデバッガに移行する．</li>
+</ul></li>
+<li>エディタを起動する関数がある
+
+<ul>
+<li>ed</li>
+</ul></li>
+</ul>
+
+<p>##scheme on PINBALL(仮)</p>
+
+<ul>
+<li>PINBALL で稼いでる人</li>
+<li>200fpsで動くらしい．140fpsを下回ると，動きがぎくしゃくするらしい．</li>
+<li>PINBALL のルールが複雑で，それを記述するために Ypsilon を作った．</li>
+<li>5ms 以内に処理を行わなければならないので，GC が起こるようだと厳しい．
+
+<ul>
+<li>しかしユーザに GC がないような言語で書いてもらうと，メモリリークを起こす．</li>
+<li>そこで Scheme</li>
+</ul></li>
+</ul>
+
+<p>###Ypsilon</p>
+
+<ul>
+<li>R6RS 準拠の ピンボールゲームのための Scheme インタープリタ</li>
+<li>マルチコアに最適化した Concurrent GC
+
+<ul>
+<li>ゲームに特化すると，マルチコアが前提でもOK</li>
+</ul></li>
+<li>極めて短い GC 停止時間と並列実行によるパフォーマンス</li>
+<li>システム全体の信頼性・レスポンスを重視</li>
+<li>VM の並列化が現在進行中</li>
+<li>ネイティブ・コード生成も予定中</li>
+</ul>
+
+<p>###YpsilonVM の開発</p>
+
+<ul>
+<li><p>基本的な最適化</p>
+
+<ul>
+<li>Direct Threading</li>
+<li>Dispatch のコストを少なく．</li>
+<li>Super Instruction</li>
+<li>プログラムに必要な VM 命令数を少なくすることにより，Dispatch の回数を少なくする．</li>
+<li>Data-Cache の利用効率が上がる</li>
+<li>トレードオフ
+
+<ul>
+<li>かなり頻繁に使用されるコードでなければ，実行コードの局所性が失われることになり逆効果をもたらす．</li>
+<li>あまり使われない処理を埋め込んでも，そこが使われる頻度が少なかったら，nop と同じ意味になり，局所性がなくなる．</li>
+</ul></li>
+<li>Operand Fusion</li>
+<li>Super Instruction と同じトレードオフがある．組み合わせ．</li>
+<li>Cache Access</li>
+<li>近年の CPU ではメモリアクセスがボトルネックになっている．</li>
+<li>D-Cache と CacheLine のコンフリクトが問題
+
+<ul>
+<li>広範囲に発生する場合は優先的に解消を図って，限定的な場合は放置する．</li>
+</ul></li>
+<li>VM では I-Cache が一般プログラム以上に重要</li>
+</ul></li>
+
+<li><p>Scheme 専用の最適化</p>
+
+<ul>
+<li>コンセプト</li>
+<li>ポータブル</li>
+<li>高いメンテナンス性</li>
+<li>デバッグ機能
+
+<ul>
+<li>Backtrace を有効にする．</li>
+<li>Scheme では末尾呼び出しでが継続で保存されない．</li>
+<li>エラーにならないと使わない機能なので，どうするか．</li>
+<li>Stack GC</li>
+</ul></li>
+<li>コードに弱点のない</li>
+<li>コンカレントGC が有効に働くこと</li>
+<li>Stack GC と Stack Closure の組み合わせで大きな効果を出す</li>
+</ul></li>
+
+<li><p>Concurrent GC</p>
+
+<ul>
+<li>Mark Phase</li>
+<li>Mutator を止める</li>
+<li>ルート集合をとる．</li>
+<li>Mutator を再開する．</li>
+<li>Mutator の実行と並列に Collector が Mark を行う．</li>
+<li>Mutator を止める．</li>
+<li>Mutator が変更のあったルート集合を集める</li>
+<li>Mutator を再開する．</li>
+<li>Sweep Phase</li>
+<li>ゴミは確定している</li>
+<li>Mutator はゴミにアクセスしない．</li>
+<li>Collector はヒープをみてゴミを回収する．</li>
+<li>簡単ではない理由</li>
+<li>Mutator と Collector が激しい競合を起こす．</li>
+<li>Mark Phase 中に Mutator がアロケーションを行っている．</li>
+<li>Incremental Update 方式に変更</li>
+<li>Mutator が早くなったが，アロケーションも多くなり，素食べーションが発生．</li>
+<li>スタベーション</li>
+<li>メモリ消費に回収が追いつかなくなること．</li>
+<li>Sweep Phase での競合が目立つ</li>
+<li>なぜ競合が起きるのか？
+
+<ul>
+<li>Concurrent Sweep だから．</li>
+<li>Collector が現在 Sweep を行っている領域からにはアクセスしないように変更．
+
+<ul>
+<li>そしてイタチごっこになった．</li>
+</ul></li>
+</ul></li>
+<li>Heap の使用量を減らす方向で VM の最適化を行う．</li>
+<li>まだまだイタチごっこは終わらない．</li>
+</ul></li>
+</ul>
+
+<p>##Lightning Talk</p>
+
+<ul>
+<li>ナベアツ問題
+
+<ul>
+<li>Gauche で日本語的にやってた．</li>
+</ul></li>
+<li>quine
+
+<ul>
+<li>自分自身を出力する</li>
+<li>format = printf</li>
+<li>let1   = 昔の LET</li>
+</ul></li>
+</ul>
+
+<p><a href="http://www.ice.nuie.nagoya-u.ac.jp/~h003149b/lang/quine.html">http://www.ice.nuie.nagoya-u.ac.jp/~h003149b/lang/quine.html</a></p>
+
+<ul>
+<li>設計なしでどうするか
+
+<ul>
+<li>某L言語の糖衣構文ですべて解決</li>
+</ul></li>
+<li>ケーゾク小説
+
+<ul>
+<li>Scheme と P言語で小説</li>
+</ul></li>
+<li>動的Cコンパイラモジュール dyncomp
+
+<ul>
+<li>Tiny C Compiler を組み込んで C の記法を S 式で(cise)</li>
+<li>評価，即コンパイル</li>
+</ul></li>
+<li>CL/Scheme</li>
+<li>Gauche でロボット制御
+
+<ul>
+<li>NetTanser++</li>
+<li>5万か・・・・</li>
+</ul></li>
+<li>Reading Gauche
+
+<ul>
+<li>Gauche のコードいいよ</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/10/19/lisp-http-shibuya-lisp-users-org-2008-10-18-sltt-1-tb-title-Shibuya-lisp-1/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/10/19/2008/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/10/19/2008/">パソナテックカンファレンス2008に行ってきた．</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/10/22/linux-ATOK-X3-iiim-properties-core/">iiim-properties が core を吐く対策 など</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/10/22/linux-ATOK-X3-iiim-properties-core/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

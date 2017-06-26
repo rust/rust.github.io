@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/30/TIPS-screenrc/">.screenrc</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  プチ修正．
+caption always &quot;$LOGNAME@%H %{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} [%l] %{=b wb}%y/%m/%d(%D) %{=b wm}%c&quot;  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/29/TIPS-GNU-Screen/">GNU Screenを使ってみる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  そのまま中断できるってのがいいね．作業中のままにできるし．これで例えばVMWareを再起動しても・・・・，って言うんならもっと良いんだがどうなんだろうか．とりあえず，設定記録．基本的にいろんなところのを引用してちょっと改良した感じ．もうちょっと煮詰めたいところではある．
+## 一部キー割り当てを変更 escape ^z^z # 比較的無難(衝突自体は存在する) bind ^W windowlist -b # リストから選択してEnterで切替 bind ^Q quit # 確認の後、全て終了 ## Emacs風ウィンドウ管理 bind 1 only # C-x 1 bind 2 split # C-x 2 bind 0 remove # C-x 0 bind o focus # C-x o ## 一発切替(あまり使っていない) F1 ～ F12 #bindkey -k k1 select 0 #bindkey -k k2 select 1 #bindkey -k k3 select 2 #bindkey -k k4 select 3 #bindkey -k k5 select 4 #bindkey -k k6 select 5 #bindkey -k k7 select 6 #bindkey -k k8 select 7 #bindkey -k k9 select 8 #bindkey -k k; select 9 #bindkey -k F1 select 10 #bindkey -k F2 select 11 ## 新規ウィンドウに対しての後方スクロールの長さ Gentoo Linuxでは1000 defscrollback 1000 # default: 100 ## 起動時のメッセージを表示しない(Gentoo Linuxではoff) startup_message off ## シェルのウィンドウタイトル(好みで変更) ## ---- .
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2007/08/29/TIPS-GNU-Screen/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/29/TIPS-emacs/">emacsのカスタマイズ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  選択範囲の反転と対応する括弧のハイライト
+(show-paren-mode t) ; 対応する括弧を光らせる。 (transient-mark-mode t) ; 選択部分のハイライト  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/27/notitle/">読みたい本</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  名著らしい．一度原書読みたい．
+ 人月の神話―狼人間を撃つ銀の弾はない (Professional computing series (別巻3))  著者: Jr.,フレデリック・P. ブルックス
+出版日: 2002-11
+出版社/メーカー: ピアソンエデュケーション
+カテゴリ: Book
+  達人になる日は必要らしい．今は，達人って？とか考えてはいけない．と思う．
+  達人プログラマー―システム開発の職人から名匠への道  著者: アンドリュー ハント, デビッド トーマス
+出版日: 2000-11
+出版社/メーカー: ピアソンエデュケーション
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/21/Lifestyle/">どうするか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  どうも応募先と今のところが繋がってる模様．バレタところでまあ別に良いが，世界は狭いね．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/12/Rails-Ruby-Rails/">Railsのお約束</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  規約のメモ
+ modelは単数．テーブル名は複数 テーブル間の関連には，  関連するテーブル名_idをカラムに追加する modelに has_manyなどを記載する 親は子を複数形1で指定し， 子は親を単数形2で指定する．    要するにテーブル名 [return] 要するにモデル名 [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/12/Rails-Ruby/">プロジェクト作成の順序</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+   railsコマンドでプロジェクトファイル一式生成  $ rails project   config/database.ymlでデータベース接続設定 script/generateでmodel生成  $ ruby script/generate model Model   migrationファイルからテーブル生成  $ emacs db/migrate/00X_create_models.rb $ rake migate   テーブル間の依存関係を修正  $ emacs app/models/model.rb --------------------------- has_many :XXXX validates_uniqueness_of :userid ---------------------------  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/12/Lifestyle/">取り返しがつかなくなる前に</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://d.hatena.ne.jp/umedamochio/20070811/p1
+確かにそうなんだよな，日本社会って．なんとか取り返せるうちに抜け出さないと，死ぬまで束縛されてしまう気がする．恐ろしい．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/08/Ruby-Rails-Plugin-LoginEngine-1/">PluginでLoginEngine#1</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Plugin Repositoryを探す  $ ruby script/plugin discover   Rails EngineとLoginEngineをインストール  $ ruby script/plugin install engines $ ruby script/plugin install login_engine  とするも， http://source.collectiveidea.com/public/rails/plugins/ への接続でTimeOutする．とりあえず保留．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/08/08/Ruby-Rails-Plugin-LoginEngine-2/">PluginでLoginEngine#2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/08/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Rails EnginesとLoginEngineをインストール  どうも接続できないのでググってみると，別の方法でできるみたいなのでやってみる．
+$ script/plugin install http://svn.rails-engines.org/plugins/engines $ script/plugin install http://svn.rails-engines.org/plugins/login_engine  できた．今日はここまでかな
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/51/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;52 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/53/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

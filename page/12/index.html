@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/12/what-should-I-do/">勉強会にあえて行かないと言うこと</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  去年の反動じゃないですが、今年は極力勉強会に参加しないようにしようと考えています。
+何のために勉強会に参加するのかを考え直す 勉強会なんだから勉強するために参加するんでしょと言うのは当然のような感じがしますが、でも実際にそこで見聞きする内容はどこかのブログで紹介済みだったり、雑誌に載っていたりする場合がかなり多いのも実情。まあ当然そこでしか聞けない内容のものもあるのでしょうが、それとてあとでブログでまとめ記事などを見れば内容は把握できてしまうことが多い。技術系の勉強会なので、やはり参加しなければ知ることができない内容なんてないのは、考えてみれば至極当然のこと。
+ではなぜ参加するかというと、参加者達とのコミュニケーションによって得られるものがあるから。これは現地に行ってみないとわからない。なればこそへべれけの人は飲み会重要と言う趣旨の発言をしたりするわけです。
+勉強会か懇親会か でそこでもう一度立ち戻って考えてみると、勉強会を開催したり行ったりするのって、結局は飲み会、つまり懇親会でコミュニケーションを図ることが主目的だったりするんじゃないかと言うこと。そこでの話のネタとして勉強会の内容があるのであって、それ以上でもそれ以下でもない状況ってのができあがってないかと。全ての勉強会と言われるものがそうだとは言わないけど、そういう雰囲気の場が多いのも確か。「続きは懇親会で！」というのはいいのだが、懇親会で発表があるわけでもないので、その「続き」はちょっと違うんじゃないかなと思い始めました。
+もちろん懇親会とか打ち上げがいらないと言うことではなく、すごい人見知りな割には、むしろ積極的に参加する方なのですが、自分の中で「勉強会の内容」の消化不足が気になっていました。「消化不足は予習復習で！」と言われそうですが、そういう意味での消化不足ではなく、「この勉強会に参加したことの意味はなんだ？」と言うことに対する消化不足です。
+なんかこう、「確かに楽しかったが、これで良かったのか？」という疑問が残ってしまうのです。
+読書会ともくもく会とハッカソン そう言う意味で、全員が読んでくることが前提の読書会とか、もくもく会やハッカソンと言うのは、今後はもっと必要なんじゃないかと思ってます。懇親会的な要素をバッサリ切り捨てた、潔い勉強会を開催したいなと、密かに考えてるところです。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/11/wordpress-settings/">いろいろ設定中</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まだまだWordPressを理解できていないようなのですが、なんとか設定をしているところです。この記事はiPhoneから書いているのですが、こういうのがいいところですね。
+あとでやったことのまとめ記事書こうかな。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/10/wordpress/">WordPressに移行</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  そこはtdiaryじゃないの？と言われはしないと思うので、あまり気にせずにいることにします。久しぶりにPHPのコード読んでみて、セミコロンとか波カッコとか懐かしかったりします。まあなんとなくやる感じで、いつもどおりに進めていきたいと思います。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/03/21/regionalrubykaigi-rubykaigi-Ruby-02/">仙台Ruby会議02に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/03/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  途中から(牛タンにより)  Ruby起業家を8年こなしてわかった５つのこと  @xibbar さん  なぜRubyなのか  Java のコンパイル時間にもうダメだと思った ひとりなんだから開発効率がいい環境で構築するのが重要  田舎親方の2つの道  先生  個人事業  製品プロバイダ / サービスプロバイダ  中小企業 受託開発を一生やれない と思ってる   開発が得意な会社？  営業が得意な会社は、常に売れる製品を探している 開発会社はだいたい営業が不得意というかちゃんと出来ない  代理店営業をする  やりたくない {営業・サポート} をしなくていい 売上山分け バージョンアップサポートはする 代理店のことを考える  分け前をケチッてはいけない   田舎と都会の決定的な違い  人口差が尋常じゃない  仕事  とってくる or 生み出す  自分の土俵で戦う  東京の土俵で戦うと負ける  価格とかしかない  土俵を福島にするにはどうすべきか ビジネスは、販売会社・顧客・開発会社  受託開発に疑問が残った ノウハウしか残らないのは苦しい これは自転車操業？  リスクマネジメント重要  減らないものを貸す  不動産業的な B2B アプリプロバイダを目指したい  商工会議所の会報にe-安否の広告を出した  上司の目につくようなところがいいんじゃ？ 反応なし＞＜  Google AdSense に出したら反応良かった 広告でパートナー企業が釣れた！  代理店営業のニュースタイル &lt;- いまここ  「発注者の悩み」 by recompile.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/03/21/regionalrubykaigi-rubykaigi-Ruby-02/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/03/16/Lifestyle/">自分の新たなスタートを感じた読了後(情熱プログラマー)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/03/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  情熱プログラマー ソフトウェア開発者の幸せな生き方  著者: Chad Fowler
+出版日: 2010-02-26
+出版社/メーカー: オーム社
+カテゴリ: Book
+  最初のイントロダクションを読んだだけで転職・独立したくなった。自分のキャリアプランを考えて、いまどうすべきかと、これからどうすべきかが書かれた、プログラマー必読の本。印象的なのは、「いまできることをしっかりやるべき」と言うことが、ちゃんと書かれていること。単にネガティブなことを書き連ねているだけではなくて、今後どうすべきかを見据えて、いまある立場と仕事をしっかりやり遂げるべきと書いてある。いろんな経験を積んできた Chad Fowler ならではの多彩な例え話が非常にわかりやすかった。また翻訳も素晴らしい。訳書で違和感なく読み進められたのは、{{ &lsquo;4274066304&rsquo; | amazon_link }} 以来でした。ソフトウェア業界に生きているなら、ぜひ一読を。
+全部は書けないので、特に印象に残った言葉。
+ 一番下手くそでいよう  自分よりも能力の高い場にいると言うのはよく言われるが、やはりそれを実践しないと成長しないのだなぁと。  ビジネスの仕組みを学ぶ  我々はお金をもらってソフトウェアを開発していると言うことを再認識するためにも、どう使われるのか、どうお金になるのかを理解しないといかん。  師匠を探す  routes職人の師匠に師事したくなった。  バケツ一杯の水の中の小石一つ  自己を過大評価してはいけない。会社組織のなかでは、自分は代替のきくものであると認識せよ。  スーツ語  「それは何のためになるのかな」と尋ねられても答えられるように。  業界で名前を売ろう  jpmobile 頑張ります！  ウォータフォール式のキャリア計画はやめよう  キャリア設計、つまりは人生設計もアジャイルに。  独立する  小さな新興企業で働くと言う選択肢。   と言うわけで、今の時点での自分の進むべき方向を見させてくれた本でした。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/03/09/scala-java-Java/">Java未経験者によるコップ本読書会(仮)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/03/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  このあいだの SICP 読書会で @gom さんとの会話でコップ本を独習しながら Java に触れる読書会的なことやろうかということになりました．ただあんまりがつがつやらずに，「平日の夜にちょっと集まって，みんなそれぞれ Scala の勉強する」感じにしようと言うことで，参加条件は下記の通り．
+ コップ本を持っている人
+ {{ &lsquo;4844327453&rsquo; | amazon_link }}  Java 未経験者
+ Java をこれから勉強しようという人の集まりを目指しています  平日夜にどこかに集まれる人
+ 平日夜の 1時間半～2時間ぐらいで  飲み会は無し
+ 各自自由にと言いたいところですが，あえて   こういう奇特な方がいれば @conceal_rs までリプライか D 送ってください．いなくても2名で開催予定です．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/03/09/git-Git-2/">実用Git - 2冊目に読む本</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/03/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  実用Git  著者: Jon Loeliger
+出版日: 2010-02-19
+出版社/メーカー: オライリージャパン
+カテゴリ: Book
+  入門Git に続いて2冊目だったのでざっと読む感じで読み進められました．内容的には「Gitを使い始めてしばらく経った人が読む本」もしくは「2冊目に読むべき本」と言う感じでしょうか．誰かにGitの説明を受けてから読むと結構すっと入っていきそうなんですが，これをいきなり読み始めると結構辛いんじゃないかな？という気がしました．逆に2冊目やもっと知りたいという方にはお勧めのGit本ではないでしょうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/03/01/ruby-tokyorubykaigi03-rubykaigi-jpmobile-Ruby-03/">東京Ruby会議03 に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/03/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  雨と東京マラソンとの戦い  メタプログラミング入門  Yugui さん  Ruby 1.9 Release Manager Java の人 広告＆ニュース配信の仕事   Agenda  メタプログラミングとは Ruby における特性 道具立て  ニーズによっていろいろ変わるから，道具は紹介するのであとはみなさんで  用例集  メタプログラミングとは  プログラムはプログラムすること ループ  繰り返しに使う コントロール配列を使う by VB界隈  アクセサがあるクラス  getter / setter が沢山あるとメンテナンスするときに面倒になる アクセサ名でループして attr_accessor とかする   Ruby における特性  特性  非S式 First class object コンパイルなし  非S式  Lisp S式 Ruby ブロックがある  Proc ループでメソッド定義とか  文字列がある  文字列を eval してやる ループでメソッド定義とか   コンパイルなし  コンパイルタイムなし 副作用がある 構文変更不可  マクロの否定    class LogWritable %w[host time].
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/03/01/ruby-tokyorubykaigi03-rubykaigi-jpmobile-Ruby-03/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/01/27/ruby-rails-git-git/">git で空ディレクトリを追加するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  そのままでは追加できないので普通は
+$ mkdir tmp $ touch tmp/.gitignore  とかするのですが，Rails ではそれがいくつもあるので手動では面倒です．なので find を使って自動すると便利です．
+$ find . -type d -empty -not -path './.git*' -exec touch {}\/.gitignore \;  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/01/27/notitle/">エンジニアのための本気で物理を勉強する会(仮)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ちゃんと物理勉強したい人たちでがんばろうぜ的な会があってもいいなかーと，ふと思ったので，人が集まればやっても良いんじゃないかと．まあ集まらなくても一人でもくもくとやると思うのですが．
+いまの想定では下記の順番にやっていこうかなと思ってます．ホントは全て原書がいいのですが，どうも売って無さそうなので2番目だけ訳書になってます．
+ Feynman Lectures On Physics   Feynman Lectures On Physics (3 Volume Set)  著者: Richard Phillips Feynman
+出版日: 1970-06
+出版社/メーカー: Pearson P T R
+カテゴリ: Book
+   量子力学と経路積分    量子力学と経路積分  著者: R.P. ファインマン, A.R. ヒッブス
+出版日: 1995-05
+出版社/メーカー: みすず書房
+カテゴリ: Book
+   Quantum Computation and Quantum Information    Quantum Computation and Quantum Information (Cambridge Series on Information and the Natural Sciences)  著者: Michael A.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/01/27/notitle/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/11/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;12 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/13/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

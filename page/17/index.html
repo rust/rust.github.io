@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/23/ruby-rails-Mitaka-rb-night/">Mitaka.rb night に行ってきた！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いやー，さすがおいしい食べ物の Mitaka.rb だけあって，おいしかったですね．雰囲気も良かったし．主催の @ysakaki さん，お疲れ様でした！ざっと感想など．
+##基調講演
+ 日本Hamlの会 会長の @ursm さんによる講演  Saas はかなり使えると思った． 今日から Haml の会の会員になりたいと思います．   ##客員研究員 @bto さんの話
+ 起業を支援してもらえるのはいいかなと思ったけど，私では技術力が足りなさそうです．  ##あとで行くの人 @jishiha さんの話
+ Getting Realは絶対に読みます．  ##ぺけBASICの人 @中谷さん
+ [http://labs.cybozu.co.jp/blog/nakatani/:サイボウズ・ラボ COO です！] みんな処理系作ろうよ！と言う話でした．  ##30min. の人 @野々村さん
+ [http://30min.jp/] エンジニア募集中！  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/23/iphone-ui-iPhone-UI/">iPhone とか UI とか勉強会@万葉</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##iPhone とか UI とか勉強会
+ by tsuyoshikawa iPhone UI 勉強会の開催のキッカケ  @jugyo &amp; @tsuyoshikawa の twitter の掛け合いから デザインイングインターフェイス パターンによる実践インタラクションデザイン ユーザの期待値が上がっているから，基本セットでそこそこのものでは，ユーザは満足しない イディオムの増加 Ajax などによる Web / Desktop の境界が無くなってきた  使いやすいアプリケーション  「直感的」だという場合，実は「慣用的」だと言わんとしている アフォーダンス 人間の脳は生得的に対象が何かを知るという本能的な情報はない 環境が有機体に意味を与える = afford 「使いやすいアプリケーション = 慣用的」になるようにデザインされる 人間にとっての「獣道」が作られていく  パターン・ランゲージ  パターン 様々な対象における「居住性」を向上させるような，構造・動作 つまり，イディオムに着目する  デザインのボキャブラリーを増やすこと   デザインのプロセス  フィールドの調査 データベースとかフォームという意味ではない，フィールド シナリオモデルで，ユーザをシミュレートする 結局は人を知ることが重要  人 = ユーザ ユーザの事情を理解し，台本を作って，用語を整理する必要がある   ユーザの分析  目的だけではなく，事情，状況，理由を考える必要がある 表層的な事情や目的にとらわれずに，ちゃんと考えなければならない  ユーザの調査  実際に要件定義から始めるような状況では，なかなか実行しづらい場合もある   ##ビアバッシュスタート
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/07/23/iphone-ui-iPhone-UI/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-1-2009-07-17/">Ruby会議2009</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##まとめと感想
+ 初日で平日にも関わらず，結構な入り具合 Rails 3 は劇的ビフォア・アフター  ただ構造はよくなる予感  大場さん＠万葉社長のプレゼンの前半にのろけがあった模様？ Github が小数で運用されているらしいのが，凄いことだと言うことと同時に，やればできるんだなぁと思いました．  ##開会の言葉
+ 高橋さんによる開会の言葉 ４回目 ３日間 ３セッション同時並行 スポンサーのご紹介 中継をどこかでやるらしい  中会議場，特別会議室などには電源がある   ##Using Git and GitHub to Develope One Millon Times Faster
+ Scott Chacon from github.com http://git-scm.com/ の人 Pro git http://progit.org/  ###What is git
+ Snapshot, not patch branche is pointer to a commit. merging -&gt; create a new commit which parent is default and experimental 3 hot way(?
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-1-2009-07-17/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-2-2009-07-18/">Ruby会議2009</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##まとめと感想
+ 朝早いからか，部屋が分かれるからか，ちょっと少なめな感じ 一橋記念会議場は都合により10分遅れ  まさか来ていない？  無線LANの繋がりにくいので，iPhone がうらやましい感じ Reject会議は体調の都合により不参加．非常に残念．．．． RegionalRubyKaigi会議では，高橋会長とかくたにさんの，Ruby会議への熱い思いを感じました． 「Ruby はフェアで」と言うのが，ここんところ周りで起こってた言語論争の答えじゃないかと思った．  Ruby を楽しんで，そして愛そう！  1.9 への移行を急いだ方がいいな，Rails アプリの． 今週中にるりまのMLに参加しよう．  手伝えそうなことは何でも手伝うべきだな．Ruby 好きだし．  コミュニティーアピールは時間切れ．漫才師の道は険しい．  ##Ruby 1.8 のゆくえ
+ 卜部さん @ Trans New Technology 2010 には Yugui さんが Commit 数 1位の予定  ###past
+ 1.X.0  trunk から start 安定したら branch を切る 1.8.1 から branch 化  1.8.6  Maintainer が Kirk Haines @ Engine Yard に 1.8.7 が incompatible だと思われた関係で，1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-2-2009-07-18/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-3-2009-07-19/">Ruby会議2009</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  伝説に残るかもしれない Ruby会議 3日目  伝説になりました．  RubyKaigi Staff のみなさん，KaigiFreeks のみなさん，ほんとにお疲れ様でした．そしてありがとうございました． 午後のかくたにさんの話は良すぎた．あれを感じ取れないやつはいないはずだ．  島本和彦的に言うと，「スパークした男の魂は，本物の男には伝わるはずだ」的な たしかに「みんながRubyに対して持つ様々な「思い」すべてに真摯に受けて立つkakutaniさんは、頼れるRuby兄貴」な感じ  Termtter 会議は関西勢が過半数  jugyoさんも私も実は関西勢  基調講演は，決意を表明したかのような，遺言のような，でも何か言いたいことは伝わった感じ． 帰りに，RailsConf を日本でやりたいと急に思った．  Rails会議なら名前的に問題ないだろうかとか，いろいろ考えてしまった．   ##Project Report: Regional RubyKaigi
+ 角谷さんの話 日本語でやります Ruby会議の運営委員長 Regional RubyKaigi Founder Major Evnets in U.S.  RubyConf 2001- RejctConf 2006- Seattle.rb のドンが reject されたことにカッとなって始めたやつ Regional RubyConf 2006?- U.S. は人が多すぎるからいろいろできた  日本では？  U.S.map(:&amp;localize) RubyKaigi 2006- RejectKaigi 2007- Regional RubyKaigi 2008- U.S. でやったことを再実装  RubyKaig についておさらい  2006 - 251 2007 - 410 2008 - 564 2009 - 700?
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/07/20/rubykaigi-ruby-rails-Ruby-2009-3-2009-07-19/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/14/notitle/">お台場でガンダム見てきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  第一印象は，「でけー」
+
+第二印象は，「これなら勝てる！」
+
+と言うわけで，思わず何度もシャッターを切ってました．
+
+##補足 上記のは qtpsftpi で HDR 補正したものです．お手軽でこんな感じにできて，ちょっと楽しい．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/13/hbstudy-hbstudy-01/">hbstudy#01 インフラエンジニア勉強会に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  株式会社ハートビーツ主催 色んな意味でアウェー感あり 何となく Mac/iPhone 率高い気がするなぁ  ##インフラエンジニア勉強会
+ 馬場さん  ハートビーツのCTO  インフラエンジニア  サーバエンジニア + ネットワークエンジニア + アーキテクト 情報とか交流とか少ない 情報が少ない SD, WEB+DB PRESS, サーバ/インフラを支える技術  インフラエンジニア勉強会  月1 で 2時間程度 セミナーじゃなくて，討論するスタイル bpstudy をまるパクリなんだそうな 扱ってみたいテーマ テクノロジー，運用・マネージメント，事例・実例 企画運営 ハートビーツ + 有志の方々   ##Kerne-based VIrtual Machine (KVM)
+ Accense Technology, Inc. Takano ENDOH http://twitter.com/MiCHiLU 資料 : http://tinyurl.com/WhatisKVM  ###What&rsquo;s KVM
+ loadable kernel module based on QEMU 仮想化支援技術サポート 動作する OS が多い  完全仮想化？   ###What&rsquo;s QEMU
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/07/13/hbstudy-hbstudy-01/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/07/02/debian-linux-Compiz-Viewport-GNOME-workspace/">Compiz の Viewport と GNOME の workspace の混同を解決する</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  CompizConfig Setting Manager(CCSM)の一般オプション -&gt; Desktop Size にあるデスクトップの数と水平仮想サイズ・垂直仮想サイズの意味を履き違えててしばらく悩んでました．
+まず前提として，Compiz の「Viewportのセット」は workspace につき1つ存在するので，「仮想デスクトップ1は8個欲しいから・・・・」と思って，
+|水平仮想サイズ|4| |垂直仮想サイズ|2| |デスクトップ数|8|
+なんてやると，
+|workspace1|Viewport1|Viewport2|Viewport3|Viewport4| | |Viewport5|Viewport6|Viewport7|Viewport8| |中略||| |workspace8|Viewport1|Viewport2|Viewport3|Viewport4| | |Viewport5|Viewport6|Viewport7|Viewport8|
+という具合に，全部で64個の viewport ができてしまいます． さらに都合が悪いのは，GNOME パネルのワークスペース切替器やウィンドウの一覧の表示がおかしくなってしまいます．GNOME 的には「workspace1に(viewport1～8の)全部のウィンドウがある」と思ってしまうようです．なので，ここは
+|水平仮想サイズ|4| |垂直仮想サイズ|2| |デスクトップ数|1|
+とすることで想定どおりの動作をするようになります．これに気づくまで時間がかなりとられました．．．．
+ これも違う単語なのでさらに混同しやすい [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/06/26/git-subversion-git-svn-2/">git svn での開発方法#2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/06/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  前回の改訂版．
+##remote branch の作成 Subversion リポジトリにブランチを作成する．
+% svn copy https://conceal-rs.repos/path/to/svn/trunk https://conceal-rs.repos/path/to/svn/branches/new-branch  ##git repository から fetch
+% git svn fetch  ##git branch の作成 Subversion のブランチは remote branch となるので，それを元に git branch を作成
+% git branch --track git-branch-name new-branch % git checkout git-branch-name  ##開発 普通に開発して git repos に commit
+##svn ci Subversion ブランチへコミットします．
+% git svn dcommit  ##マージ trunk やリリースブランチへマージする時は，git でマージして svn dcommit します．
+% git branch --track trunk-local trunk % git checkout trunk-local % git merge --squash git-branch-name % git commit -a -s -v % git svn dcommit  git でマージするので git の利点も堪能できます．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/06/26/git-subversion-git-svn-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/06/18/debian-XenServer-XenServer-5-5-0-Debian-4-0-etch-GPG/">XenServer 5.5.0 の Debian 4.0(etch) での GPG エラーの対策</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/06/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  # gpg --keyserver wwwkeys.eu.pgp.net --recv-keys 9AA38DCD55BE302B # gpg --armor --export 9AA38DCD55BE302B | apt-key add - # wget -q http://updates.vmd.citrix.com/XenServer/5.5.0/GPG-KEY -O- | apt-key add -  2つ出るのでその対処．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/16/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;17 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/18/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

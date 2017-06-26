@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/05/Git-Git/">Git講習会に行ってきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  kunitさん主催による Git のメンテナ Junio さんの Git 講習会．プレゼン資料が USB メモリで廻ってくると言う，今までにないスタイル1．最後のデモがかなり良かったです．
+ Git のメンテナの Junio C Hamano さん  Dell のノートに Ubuntu が入ってた．  元々は Linux Kernel の開発に使われていた． Wine, X.org, RoR などで使われている  ###メモと感想
+ みんなコミットできる  自分のやった仕事の全てコミットして記録できる． それを人がどう見るかは，人間関係によって決まる？  &ndash;amend で Commit を修正できるが，内部的には新たな Commit オブジェクトが生成されている．  GC で削除される対象とはなる．   ==== ###歴史を作る方法と構造
+ Concepts  コマンドのリファレンスを見てもあまり勉強にはならない． 20 のコマンドだけ使えばハッピー ただし概念を理解しておくのがいい．  Blog オブジェクト  オブジェクトデータベース 各ファイル毎に Blog データがある． 各ファイルに SHA-1 ハッシュキーがある．  Tree オブジェクト  ディレクトリ構造などを記録する． ファイルパス名に対応する Blog Hash の対応表 パス名から SHA-1 ハッシュがわかり，SHA-1 ハッシュから Blog データがわかる．  Commit オブジェクト  状態を記録する． Tree オブジェクトへの参照 誰が，どこから，何を変更したのかの情報  リポジトリ  上記オブジェクトの集合体 歴史(Building History)も全てを含んだ，オブジェクトの集合体．  Building History  HEAD 最新 Commit オブジェクトに対するポインタ Checkout Work tree と HEAD Commit の間に Index というバッファエリアがある． Edit &amp; Test 更新部分のみ Index というバッファ部分に書き戻す． Commit Index を使って次の Tree オブジェクトを作成 Tree オブジェクトを使って(？)，Commit オブジェクトを作成 そこに HEAD ポインタを移動させる．  なぜ Stage(Index，バッファエリア)があるのか？  バージョン管理システムが管理しているファイルの一覧とその内容まで記録したもの． Commit したい情報だけ Stage エリアに入れて，と言う使い方ができる． 小刻みな開発ができる．  A Typical Workflow  git clone 全てのオブジェクトが入った，リポジトリ全体を自分のローカルに再構築する． git add 「ファイルを追加する」だけではなく，「ファイルの変更を Index オブジェクトに記録する」こと． 「-p」で interactive mode git diff Index オブジェクトと Working Tree の差分が見れる． git diff &ndash;cached Index と HEAD との差分が見れる． git diff &ndash;color-words 変更部分の単語単位での色分け表示  git stash(1)  日本から来たパッチで追加された機能 今までやってきた作業を中断して保存する機能 Index エリアに git add で追加した変更をそのまま保存する機能． 保存後は，今までの変更は巻き戻される． ここで Edit&amp;Commit などする． stash apply で保存した変更を Index/HEAD/Working Tree に適用する． Merge される． stash して保存した変更と Index/HEAD/Working Tree をマージする．  git stash save &ndash;keep-index(1)  オブジェクトの状態を保存するのは git stash と同じだが，Index オブジェクトを Working Tree に再構築する． 例えば，Working Tree にデバッグ用コードがあるが，それは git add してないときなどに，Index = これから Commit する状態を再現して，テストが通るかどうか調べるなどで使える． git stash apply で元に戻せる．  git rebase &ndash;interactive  Commit の順序を変更できる git rebase -i HEAD~4  4つ前までの Commit の順序を変更できる． Commit の合体もできる． 新たに Commit Tree を構築できる． 新たな歴史(Building Histroy)を構築できる．   Distributed Development  最初は upstream repository から clone する． 開発を続ける upstream と merge する upstream に push する  Central Shared Repository  merge が強力なのがいいかな．  Push することなく共同開発  他の人のから fetch することで，その人の開発内容を取り込んだり，検証したりできる． 問題ななければ，merge し，その内容を pull したりなど．   ###Archeology
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/05/Git-Git/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/05/OSC2008-Tokyo-Fall/">OSC2008 Tokyo/Fall に行ってきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  初日は業務として行かせてもらえました．感謝．
+##メモと感想
+ 仮想化は今後のグリーンITとかエコとかでかなり重要な技術になりそう． またラックの省スペース化に貢献できそうなので，積極的に採用すべきだと思った． 予想以上に性能が良いようだ． ネットワーク越しの RAID1 は便利そう．個人ベースでも利用する価値があるかも．  ただし2台も使うかどうかは微妙．  Memcached はテキストベースだからこそ汎用的に使える． そろそろうちも Memcached とか使うかな． MySQL と PostgreSQL 単体の性能では，実際それほど差はないのかもしれない．  それよりもレプリケーションやクラスタリングなどの分散・冗長化技術の有り無しが効いてくるのかな．   ###行ってきたセッション
+ 1日目  仮想化環境におけるベンチマーク結果 MySQLシステム構成～高可用性構成編～ ディスクデータ冗長化ソフトウェア DRBDの機能と応用例の紹介 やっぱりすごい！Memchaced!!～最新MySQLサポートツールズのご紹介～  2日目  オープンソースDB性能検証 SMPスケーラビリティを探る   ==== ##仮想化環境におけるベンチマーク結果 日本仮想化技術株式会社 CEO 宮原さん
+ MacBook 使い  ###仮想化環境の設計手法
+ 設計のポイント  目的と優先することを明確化する必要がある  性能要因  Core数と仮想化支援技術があるかどうか クロック数はあまり気にしない場合が多い メモリ最大搭載容量は多い方が良い ストレージなどのI/Oの帯域にボトルネックが発生しやすい ストレージコントローラのキャッシュ容量，バス，仮想化支援技術など ソフトウェア スケジューラの特性によって，得手不得手がある．  何を求めるかを考える必要がある．   選定ポイント  CPU は仮想化してもそれほど下がりにくい 特に選ばなくてもいい傾向にある メモリ容量は仮想マシン数に影響を与える 積めるだけ積む 高速なI/Oの装備が必須 これが一番のキーポイント I/O仮想化支援技術の搭載かどうかにも気をつける  概算での統合計画だと，統合したいサーバのCPU使用率・メモリ容量の総計で見たりする  あくまで概算  ストレージの選定  速度と「どのようなI/Oアクセスがあるのか」を知る必要がある． DRBD「2つのノードでミラーリング環境＆冗長化」   ###ベンチマークについて
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/05/OSC2008-Tokyo-Fall/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/01/rails-ruby-capistrano-deploy/">ファイルによって deploy 先を変えるには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  単純に Capfile と config/deploy.rb を複製すればよい．
+% cp Capfile Capfile.host % cp config/deploy.rb config/deploy_host.rb % vim Capfile.host # load 'config/deploy' -&gt; load 'config/deploy_host' % vim config/deploy_host.rb # :app, :deploy_to, etc... % cap -f Capfile.host deploy:setup  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/30/MySQL-http-www-slideshare-net-ZendCon-joinfu-the-art-of-sql-tuning-for-mysql-presentation-title/">Join-fu: The Art of SQL Tuning for MySQL の簡易まとめ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  MySQL Pro の著者の ZendCon08 での発表スライド．
+http://www.slideshare.net/ZendCon/joinfu-the-art-of-sql-tuning-for-mysql-presentation ##ケチれ
+ ひたすらケチる．  VARCHAR よりも CHAR 使え．VARCHAR 使うときは慎重に考えろ． TEXT は節約して使え． BLOG はもっと節約して使え．  BIGINT とか必要か？  セッションとかで IP アドレス記録するときも，INET_ATON とかで INT UNSIGNED で扱う方が容量少なくてすむ． さらに範囲も INT の範囲になるな． 以下の定義でも，各レコードは 4 byte = 32bit int だけ消費する INT(1) の「1」はストレージ上の消費桁数ではなく，「1桁目以外を 0 で埋める」ということ．   CREATE TABLE ti ( a INT(1) UNSIGNED NOT NULL );  - 桁数で制限しても消費メモリは変わらない．  ##垂直分割と水平分割 ###垂直分割
+ 1つのテーブルに，更新頻度の高いカラムと，低いカラムを混在させてないか？ 分割することで，更新だけじゃなくて，バッファの節約にもなることを忘れないように． カラムに FULLTEXT は必要か？  ###MySQL query cache を知るために
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/09/30/MySQL-http-www-slideshare-net-ZendCon-joinfu-the-art-of-sql-tuning-for-mysql-presentation-title/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/28/rails-ruby-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0033-title/">Rails勉強会＠東京第33回に参加してきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ここ最近の9月としては結構冷え込む中，30人ぐらいが Git のために集まりました．Git すごいよ，Git．
+ 午前中は Git のお話 午後はそのとき決めることに  ##まとめと感想
+ はてブのタグ  RailsMeetingTokyo  ぎっとであってじっとではない． いろんな使い方があるけど，やっぱ基本はあると言うことがわかった． 専門家(？)を呼んでの講演は非常に良かった．こういう異文化交流っていいよね．  ##分散ソースコード管理システム Git  岩松さん＠Debian JP Project の中の人 もともと OSC Sapporo で高橋会長が依頼したようだ  ###はじめに
+ Git は「じっと」じゃなくて「ぎっと」 使い方は人によってそれぞれ異なる 朝起きてまずすることは -&gt; リポジトリのチェック  ###Git のデータモデルや考え方
+ 4つの階層  Working Copy index Local Repos Remote Repos  Git のコマンド  plumbing(git-xxx)コマンド(下位 メンテナ向け) porcelanin(git xxx)コマンド(上位 一般ユーザ向け)  Git のオブジェクトファイル  4つのオブジェクト commits trees blobls tags commit &gt; tree &gt; blob  1ファイル 1 blog  zlib で圧縮 圧縮前の SHA1 ハッシュで管理  1コミット毎に新たな commit オブジェクトが生成される  その生成された commit オブジェクトに HEAD が移る  ファイルが追加される -&gt; tree オブジェクトの内容が変わる -&gt; ハッシュが変わる git-cat-file  -t SHA1-Hash でそのオブジェクトが何かを見る -p SHA1-Hash で内容を表示 commit オブジェクトだと，前の commit が parent として表示される  tree はファイルツリー状態のオブジェクトで，commit は各 tree の前後関係を記録するオブジェクト tag オブジェクトは PGP 署名時のみ作成される  tag オブジェクトは 指定した時点での commit オブジェクトに名前をつけるようなもの  Pack ってなに？  オブジェクトを DB 化したもの git gc コマンドで pack される   ###ブランチの使い方
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/09/28/rails-ruby-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0033-title/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/26/rails-ruby-capistrano-deploy/">古いdeployを消すには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  cleanup すればいいだけ．
+% cap config/delopy.rb deploy:cleanup  もしくは deploy.rb の中で，:after_deploy を使う．
+task :after_deploy, :roles =&gt; :app do cleanup end  これで過去の5つのみを残して削除される．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/20/http-labs-gree-jp-Top-Study-20080919-Report-html-title-15/">第15回オープンソーステクノロジー勉強会に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  本日はさくらインターネットの専用サーバの中の人による，データセンターについてのあれこれ．
+##メモと感想
+ 一般的には 1ラック 30A で，場合によっては 60A ～ 80A となることも． 意外なほどデータセンターの消費電力量が多い． Atomの低消費電力性はやはり優秀らしい． 過密集約しないと需要に対応できない現状なんだろうか．  ====
+##基本スペック
+ 一般的にはラックがすらーっと・・・・  実際には裏に様々な条件やファシリティ(施設)がある  ファシリティ  立地条件 自然災害のリスク対策として，地震が少ない・台風や洪水の被害に遭わない・津波の影響を受けない場所などは避ける 23区内など，利用する顧客がアクセスしやすい場所が好まれる  確かに近い方が良い  耐震・免震・制震 地震でサーバが壊れると．．．． 建築基準法の耐震要件：震度6よりも高い，震度7を想定しているらしい． 耐震  ビルをひたすら頑丈な作りに  制震  揺れを吸収するような感じ  免震  揺れの影響を受けないようにする  電源 電源を2重化  商用電源(電力会社の電源)と自家発電の2系統を用意  瞬断・自家発電への切替時などの対策として，UPS を入れておけば安心 消化   ##省電力化
+ データセンターに求められているもの  災害対策 + セキュリティ対策 + グリーンIT つまり省電力化と発熱量の削減が求められる傾向にある．  消費電力のアメリカでのデータ  2006年度では，アメリカ全体の 1.5% がデータセンターの消費電力量(600億kWh)  日本では IT 関連の電気料の 12% (2006年度)  アメリカの 1/10，比率的には全体の 0.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/09/20/http-labs-gree-jp-Top-Study-20080919-Report-html-title-15/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/19/http-ac-nikkeibp-co-jp-nos-wssk-title/">安定稼働を導くＷｅｂシステム構築ノウハウに参加してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  スーツ姿が大多数を占める，普通の「企業向けセミナー」な感じでしょうか．一人だけ黄色いTシャツだったので，見た目には目立ったかな(ぉ．
+後半はNTTデータの宣伝のような雰囲気になってきたので退散．
+##メモと感想
+ サーバ統合でサーバ利用率は上昇するが，利用状況と頻度・アクセス時間帯などの統合的な状況を判断して統合する必要がある．  深夜のバッチサーバと昼間の Web/App サーバの統合など  統合によりサーバ環境が変化する場合もあり得る．  サーバソフトウェア が常時 Active になったりなど．  問題はネットワークかもしれないとき．  スペック上問題はなくても，実行値・実測値的には問題に． 例えばスイッチでアドレステーブルを処理するときに，16384 件目までは ASIC を使うが，それ以降は CPU 処理だったとか．  どこもやはりデータベースのチューニングは必須．  テーブル分割・負荷分散など  性能要件をしっかり踏まえた設計・開発をしなければ，将来的にコスト負担が大きくなる． インフラ設計にもアプリエンジニアも関わるべき．  単独で解決できるほど，単純ではなくなってきているし，アプリ設計がインフラに影響を及ぼす場合もあるから．  大は小を兼ねない場合もあるのは知っておくべき．  必要な部分に必要なコスト(人力・機材など)を投入すること  落とせないサービス・サーバには活性挿抜できるサーバが重要  ====
+##Web システムにおけるトラブル傾向とその事例 ###統合時の問題
+ 事例  19台の App サーバを 2台の UNIX サーバに統合 キャパシティ・プランニングはしたが，メモリーリークによってスワップ発生していた 夜間停止していた JavaVM が常時稼働になったため，メモリリークや GC がうまく効かない状況に陥っていた．   ###性能が追いつかない場合
+ コンシューマ向け，携帯向けサービス  まるでうちの会社のような問題  問題はネットワークだった．  スペック上問題はなくても，実行値・実測値的には問題に． 例えばスイッチでアドレステーブルを処理するときに，16384 件目までは ASIC を使うが，それ以降は CPU 処理だったとか．   ###もうどうしようもない状況で
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/09/19/http-ac-nikkeibp-co-jp-nos-wssk-title/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/11/ruby-rails-Rails-App/">Rails App でエラー発生時にメールを送ったりするには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ApplicationController に rescue_action なるメソッドを追加して，そこに実装すればよい．
+class ApplicationController &lt; ActionController::Base def rescue_action(e) HogeMailer.deliver_error(e.backtrace.join(&quot;\n&quot;)) super end end  最後に super 入れておくと，通常のエラー処理が継続するので，505.html などが表示される．メール送信やログ書き込みなどを『割り込ませたい』ときには付けておくのがいいのではないでしょうか．
+##追記
+メール送るだけならプラグインがあるそうなので，そっち使った方がいいかも．
+[http://dev.rubyonrails.org/browser/plugins/exception_notification/README]
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/10/notitle/">世界中で進行するメタボ危機</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://jp.techcrunch.com/archives/20080909are-linux-programmers-getting-too-fat/
+そうですか，日本だけではなく，世界中のエンジニアが戦っているのですね(ぉぃ．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/28/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;29 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/30/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>浅草jpmobile会議01 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>浅草jpmobile会議01</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<ul>
+<li>永和で開催
+
+<ul>
+<li>M17N についてあれこれするという話です</li>
+</ul></li>
+<li>そういえば名刺とか持ってくるの忘れたな</li>
+<li>足元の悪い中25名のほどの参加</li>
+</ul>
+
+<h2 id="なりたいアタシ-と-イマのアタシ">&ldquo;なりたいアタシ&rdquo;と&rdquo;イマのアタシ&rdquo;</h2>
+
+<ul>
+<li>設楽さん@えにしテック
+
+<ul>
+<li>現在と未来について</li>
+</ul></li>
+</ul>
+
+<h3 id="そもそもの企て">そもそもの企て</h3>
+
+<ul>
+<li>RubyConf の時
+
+<ul>
+<li>Ruby の m17n でケータイ絵文字を扱えるようにするヒントを nurse さんからいただこうよと言うのが今回の発端</li>
+</ul></li>
+<li>My Goal
+
+<ul>
+<li>いま</li>
+<li>未来</li>
+<li>この場</li>
+</ul></li>
+<li>悩み事マップ
+
+<ul>
+<li>プロジェクト</li>
+<li>テスト</li>
+<li>絵文字</li>
+<li>フルスタックすぎ</li>
+<li>細かい事</li>
+</ul></li>
+<li>イマのアタシ
+
+<ul>
+<li>Ruby 1.9 で動かない</li>
+<li>文字コード変換自体は汎用のハズ</li>
+<li>メール処理でも使いたい</li>
+<li>フィルタのコードが汚い</li>
+<li>nkf を使うために必死</li>
+<li>バグも [gh-17]</li>
+<li>せっかくなので 1.9 で</li>
+<li>キレイになりたい</li>
+</ul></li>
+<li>エンコーディング
+
+<ul>
+<li>いろいろありすぎ</li>
+</ul></li>
+<li>フルスタック過ぎる
+
+<ul>
+<li>Rails が上がると動かなくなる</li>
+<li>Rails に依存しすぎている</li>
+<li>壊れる部分</li>
+<li>テンプレート切り替え</li>
+<li>セッション</li>
+<li>など</li>
+</ul></li>
+<li>なりたいアタシ
+
+<ul>
+<li>わける</li>
+<li>jpmobile-rack</li>
+<li>jpmobile-rails</li>
+<li>絵文字変換エンジン</li>
+<li>分けたときに</li>
+<li>ディレクトリは？
+
+<ul>
+<li>gem とか？</li>
+<li>bundler を使う？</li>
+</ul></li>
+<li>リポジトリの切り分けは？</li>
+<li>現行バージョンとの互換性は？</li>
+</ul></li>
+<li>スマートフォンの対応
+
+<ul>
+<li>時々要望が上がって議論されるのだが</li>
+<li>キャリアと直行する</li>
+<li>使用や命名が悩ましい
+
+<ul>
+<li>iPhone / Android だけが特別扱い？</li>
+</ul></li>
+<li>emobile は作った</li>
+<li>User-Agent に規則性がないので，テーブルが汚い</li>
+<li>もしかして，テンプレート切り替えたいだけ？</li>
+</ul></li>
+<li>Jpmobile::Mobile のクラス階層
+
+<ul>
+<li>機能の上書きには便利</li>
+<li>動作としてはいいのだが，クラス継承がちょっと</li>
+</ul></li>
+<li>テンプレート切り替え
+
+<ul>
+<li>ファイル目の命名規則がよくない</li>
+<li>かなり無理してパッチを当てている</li>
+<li>Rails と仲が悪い</li>
+<li>分離した方が良い？</li>
+</ul></li>
+<li>テスト
+
+<ul>
+<li>Test::Unit / RSpec が混在</li>
+<li>粒度の違うテストが混在</li>
+<li>単体テストが Rails に依存</li>
+<li>どうするか</li>
+<li>単体テスト -&gt; Rack だけでテストする</li>
+<li>統合テスト -&gt; 空の Rails アプリで jpmobile の API を叩く</li>
+<li>統合テスト -&gt;テスト用の Rails app を外側から叩く</li>
+</ul></li>
+<li>テーブル
+
+<ul>
+<li>ハードコードされている</li>
+<li>アップデートスクリプトがバラバラ</li>
+<li>テーブルを差し替えられるようにする機構を入れるとか</li>
+</ul></li>
+<li>この場で出来ること
+
+<ul>
+<li>要らない機能が実は結構ある？</li>
+<li>Issues を整理したい</li>
+<li>Collaboators 募集</li>
+<li>分割するとしてそのレイアウトを議論したい</li>
+<li>ドキュメントの整理</li>
+<li>tag 切ってもいい？</li>
+<li>気になるバグ</li>
+</ul></li>
+</ul>
+
+<h3 id="絵文字まわり">絵文字まわり</h3>
+
+<ul>
+<li>Ruby 1.9 で unicode の絵文字を入れる？
+
+<ul>
+<li>Unicode も絵文字を Ruby 側で対応して，それに変換する</li>
+<li>NKF で softbank 絵文字(webcode)は unicode に変換されるらしい</li>
+<li>テーブルで実装した方が楽</li>
+<li>CP932 -&gt; euc-jp -&gt; JIS もどき -&gt; jis にすればいいらしいが</li>
+<li>enc/trans/ 以下に変換テーブルを作ってやればいいんじゃないか</li>
+<li>変換はあんまり早くない．むしろ gsub 使った方がいいんじゃという話も</li>
+</ul></li>
+</ul>
+
+<h3 id="いらない機能の整理">いらない機能の整理</h3>
+
+<ul>
+<li>GeoKit とか</li>
+<li>docomo のディスプレイ情報とか</li>
+<li>GetText の日本語指定とか</li>
+</ul>
+
+<h3 id="issues">Issues</h3>
+
+<ul>
+<li>@counter はなくてもいい</li>
+<li>いろいろ潰した #asakusarb</li>
+</ul>
+
+<h3 id="テストとか">テストとか</h3>
+
+<ul>
+<li>Rails のバージョンにあわせたテストする方法</li>
+<li>Cucumber を使う？</li>
+</ul>
+
+<h3 id="まとめ">まとめ</h3>
+
+<ul>
+<li>ust と資料を見ましょう</li>
+<li>オープンソースで collaboators を集うときは Asakusa.rb で会議開けばいいんじゃないかと思った．</li>
+<li>次は Tokyu.rb で開催ですね！</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/01/15/rails-ruby-jpmobile-Asakusa-rb-jpmobile-01/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/01/04/ruby-rails-tokyu-rb-2009-2010/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/01/04/ruby-rails-tokyu-rb-2009-2010/">2009年のふりかえりと2010年を迎えて</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/01/18/ruby-rails-thin-on-Debian/">thin の自動起動スクリプト on Debian</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/01/18/ruby-rails-thin-on-Debian/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

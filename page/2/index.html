@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/12/16/look-back-2016">2016の振り返り</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/12/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いままであまり振り返りは書いてこなかったんですが、さすがに今年はいろいろあったので軽く書いてみようと思う。
+仕事の役割が変わった これは2016年というわけではないけど、仕事の役割が大きく変わり続けた年でした。もともと前職にはサービス開発をやりたくて入社したんだけど、気がついたら人事部にいたという自分でもどうなってしまったのかという感じがする。
+しかし人事部での仕事はいろいろ新鮮で、特に採用や評価というのか自分の持っているものを総動員しないとできない仕事だったので、いろいろ大変ではあったが非常にやりがいがありました。
+TechConf1回目ができた やろうやろうという話だけは出ているが実行できなかったのを開催できたのは達成感がありました。特に某Kaigiの用に毎年開催できるようになるべく省力運用できたのは、その某所での経験が生きましたね。
+来年は2回目が開催されるので、
+退職した そんな最中、ほんとにいろいろあったので前職を退職することにしました。退職しようと決意したので4月頭ぐらいだったので、辞めるまでに半年ぐらいかけたことになります。まあ役割とか影響範囲を考えてのことでしたが、その間にもいろいろできたので、結果的にはよかったのかなという感じです。
+起業した 特に「このサービスをやるぜ！」というわけではないですが、会社作りました。退職する話をするとよく「受け皿としての会社を作っといたほうが良い」的なことを言われ続けた結果、作らないとダメなような気がしたんですよ。と言うのはさておき、会社を作る経験は社会を知る上でもいい勉強になっています。面倒だけど。
+業務委託をはじめた 退職して起業したとは言え、やることは業務委託エンジニアなので、まあ要するにフリーランスですね。最初はコード書く仕事を某所でさせてもらっていたんですが、やっぱりコード書くのは楽しいですね。それ以外は採用のお手伝いや組織全体のことなど、幅広くお手伝いさせていただいています。
+ただ時間を切り売りするようになって、スケジューリングの重要性を身にしみています。来年はこのあたりをもっとしっかりやって、ゆとりある感じで仕事していきたいと思っています。
+来年に向けて ひとまずは仕事のペースをしっかり作っていきたいですね。いまは若干流され気味なので。それ以外はなんでも良いので一つ大きなことに挑戦してみたいです。とは言え何とは決まってないので、それも考えながらですかね。
+というわけで、いろいろありましたが今年はありがとうございました。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/12/16/emotional-labor-syndrome">感情労働シンドローム</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/12/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  頂いた本を読み進められていないことに申し訳なさを改めて思ったので、聖典ためたりサブキャラ育てるのそこそこにしてもうちょい頑張ってみようと思った年末。みなさんいかがお過ごしですか。
+そしてそんななか、若者から最近読んで良かったと聞いた本を先に読んでしまいました。
+ 感情労働シンドローム (PHP新書)  著者: 岸本 裕紀子
+出版日: 2012-10-16
+出版社/メーカー: PHP研究所
+カテゴリ: Book
+  今の世の中、特にいわゆるITとかWeb系とか言われている業界では、定年までいるなんていうのは幻想でしかない状況。そんな状況で「下積みも大事」とか言われても、それがどう活かされるのかがわからないから「もっと実践的なことを」と主張する。「10年働いて一人前」と言われても、「10年もいる予定はない」など、ひと昔前の状況とはかなり変わってしまっています。
+またその若手を部下に持つ上司も、対応方法が変わったことについていけなかったりなど、社会構造の変化が早すぎて追いついていない人が多い。
+じゃあどうすればいいかというと特に答えはないんですが、これからの社会を考える上ではこの「感情労働」という観点を持って挑まないと、若い人も年配の人もどちらも辛い目に合うのではと感じました。これらを「感情労働」という観点でうまくまとめてあって、いろいろ理解が進んだ書籍でした。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/10/11/build-llc/">合同会社を作ってみました</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/10/11</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  10月からフリーランスで仕事をしているわけですが、いろいろあって合同会社を設立することにしました。
+レジャリーワークス合同会社
+理由としては、まあ前から会社作っといた方がいいよ的なお話を聞くことが多かったというのもあります。また個人事業主としてやっていくとしても経理的なことはいろいろとやらないといけないですし、いまならクラウド会計ソフトとかあるから会社としてやっていくのでもいいのかもしれないと思ったのが一つ。あと一度は会社を設立する経験をしてみようと思ってはいたので、いろいろあった今がいい機会かも？と思ったのがもう一つ。あと設立費用もそんなにかからないことがわかったのも大きな理由でもあります。
+そんなわけで、「レジャリーワークス」という名前の合同会社を設立しました。名前は、悠々と仕事ができる世に中になるといいなと思い、ゆったりとした（leisurely）仕事（work）を語源としています。worksと複数形なのはゴロが良いからです :)
+とは言え作ったばっかりでまだまだこれからやること多いのですが、あまり焦ることなく少しづつ整えていきたいと思っていますので、暖かく見守っていただければ幸いです。まずは会社HPの整備からやらないとな&hellip;
+と言う訳で、これからもひとつよろしくお願いします。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/10/01/resigned-from-cookpad/">クックパッドを退職しました</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/10/01</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  2016年9月30日付でクックパッド株式会社を退職しました。2013年3月入社なので、かれこれ3年7ヶ月在籍していたことになります。最初の2年ぐらいはサービス開発エンジニアとして普通にコード書く仕事してたはずなんですが、気がついたらマネージメントや採用中心の仕事をしていました。まあいい仲間がいたからか、非常に充実した仕事ができていたと思っています。
+みなさん気になる退職理由とかは、飲み会とかで個別に聞いていただければお答えしますが、たぶん聞きたいような答えじゃない気もするので、あまりwktkしないようにしていただけるとありがたいです。
+と言う訳で例のやつおいておきます。
+https://www.amazon.co.jp/registry/wishlist/2U0WK80HNEJWN
+来月からは心機一転、フリーランスエンジニア？としてお仕事をする予定でいます。経験としてはエンジニアの中途採用や新卒採用のビルドアップとか、エンジニア評価など、組織に関することが一番役に立てそうな気もしてますが、コード書きたい気持ちも強いのでそっちもやりたいと思っているところです。仕事頼みたいという方は、ひと声かけていただけると。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/">Microsoft Sculpt Ergonomic Keyboardを買ってみた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/08/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ちょっと腱鞘炎ぽい症状が出てきたのでエルゴノミクスキーボードを物色してたんですが、大体3万以上と割と高い。分割式だとちゃんとしたタッチタイピングできていないと思うので、最初辛そう。費用対効果考えると躊躇してしたんですが、Microsoftが出してる
+ Sculpt Ergnmc KB for Bsnss Blk  著者: 出版日: 出版社/メーカー: Microsoft
+カテゴリ: CE
+  というのを買ってみました。実際にヨドバシとかで触ってみてキーの感触は問題なかったんですが、意外なほどちゃんとタッチタイプできていなかったようで、いろいろ辛いです。特にC-bのbを右手で押しててようで、日常的に不都合が起こっています。
+まあこれに慣れたらErgodoxとかに挑戦してみたいので、訓練だと思って頑張ってみようと思ってます。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/07/23/consumer-game-machine-wars/">家庭用ゲーム機興亡史</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/07/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  誕生日ということで送ってもらった本、せっかくなので読んだら感想を書いていこうと思います。
+ 家庭用ゲーム機興亡史  著者: 前田 尋之
+出版日: 2014-04-25
+出版社/メーカー: オークラ出版
+カテゴリ: Book
+  いわゆるファミコンに代表される家庭用ゲーム機ですが、その登場からもう30年も経ってるんですね。リアルタイムで知ってたのはぴゅう太とかSC-3000から。欲しいと思ってたけど手が出ずにいましたね。
+それからファミコンを買ってゲーム道に突入。ただ直後にMSX(厳密にはMSX2)を買ってからはプログラミングにもハマっていったので、王道以外のゲームあんまりやってなかったりします。とは言え、いわゆるパソコンゲームは割とやったんですけどね。
+あとこの本の面白かったところは、いわゆるマイナー機をちゃんと調べてあるところですね。X1 twinとかレーザーアクティブ、PC-FXとかVサターンとか、要するに売れてなかったが知る人ぞ知る機種が紹介されていたのが、マニア心をくすぐってくれて楽しめました。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/07/16/thinkpad-x220/">Thinkpad X220</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/07/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Macbook Pro 2016 が出ないことにしびれを切らして中古のThinkpad X220を買ってみました。 ちょうど同僚が買ったという話を聞いたというのもありましたが、中古でまあまあの品が25kぐらい買えたので満足してます。 もともとSSDだったのでメモリだけ16GBにして、lubuntuを入れていろいろ設定してるんですが、設定楽しいですね＼(^o^)／
+ シリコンパワー ノートPC用メモリ DDR3 1600 PC3-12800 SO-DIMM 8GB×2枚 永久保証 SP016GBSTU160N22  著者: 出版日: 出版社/メーカー: シリコンパワー
+カテゴリ: Personal Computer
+  CtrlとCapsを入れ替えるのは当たり前に設定。
+% vim /etc/default/keyboard XKBOPTIONS=&quot;ctrl:nocaps&quot; # 追加  あとWindowsキーとメニューキー、ブラウザキーの誤入力が多かったので~/.Xmodmapに設定。
+keycode 133 = Alt_R Meta_R Alt_R Meta_R keycode 135 = Alt_R Meta_R Alt_R Meta_R keycode 166 = Left NoSymbol Left keycode 167 = Right NoSymbol Right  久々にさわるLinuxマシンはいいものですね。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/07/16/usergroup-ids-in-docker-run/">User/Group ids in Docker run</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/07/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  このブログはjekyllで構築してS3にアップしているんですが、手元でMarkdown作ってbuildしてS3にpushとか面倒なので、Gitlab CI + dockerで自動化しています。
+ただ単純にdocker runするとrootで実行されるので_site/配下のファイルがrootで作られたりして面倒なので、docker run -u $(id -u):$(id -g)とかで解決。Dockerfileに直書きする方法もあったけど、環境によって変わるものだからオプション指定に。他にいい方法あったりするんだろうか。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2016/07/09/birthdays-resolution/">誕生日の抱負</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/07/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  と言う訳で42になってしまいました。 例のやつ貼ってみたら、いろんな人に本を送っていただけて、非常に嬉しい誕生日でした。
+さて今年はいままでにやったことない挑戦をするとしかなと思っている次第です。何をやるかはもうしばらく考えますが、温かい目で見守っていただければ幸いです。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2014/09/13/RubyKaigi2014/">RubyKaigi 2014に参加してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/09/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  先日開催されたRubyKaigi 2014に参加してきました。場所は船堀と、世田谷区民としてはかなり遠かったんですが、頑張って通勤してきました。
+セッション内容は他にまとめてくれる人がいるので、そちらを参照してもらうとして、やはりRubyKaigiはテンション上がりますなーという話。
+実は毎年参加する度に転職したくなるので勢いで色々つぶやいたり
+よし、転◯しよう！
+&mdash; Shinichiro OGAWA (@conceal_rs) September 19, 2014  しますが、そこまで短絡的ではありません。
+でも最近はいろいろ考えさせられることが多いですね。RubyKaigi自体もそうだし、地域Rubyコミュニティとかも。さらには自分のキャリアプランとかも。その手の話をできるのも、RubyKaigiのいいところかなと思ってます。
+というわけでもっといろいろな人と話をしてみたいので、みなさんお誘いくださいませ。
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;2 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/3/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

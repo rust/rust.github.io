@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/21/ruby-rails-Rails-40/">Rails勉強会＠東京第40回</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今日も何故か快晴．誰だ晴れ男は！天気がいいのに室内に籠もってる30名．いろいろ素晴らしいですね！
+##まとめと感想
+ GAE/Jはかなり熱い模様．ここは Merb/JRuby 勉強するチャンスか！？  むしろ Python の方がいいのか迷うところ．  Rails 2.3 には色々罠が多い．  結構大規模な変更だし，仕方ないですね．  懇親会行けなかった．  マイレージのご利用は計画的に！！   ##はじめに
+ 今日は懇親会が準備されているようです．  昨日のあれが無ければ・・・・   ###セッションネタ
+ JRuby on GAE/J(takiuchiさん) Sinatra/Merb などの話 RSpec/Test の話 Werner さんを囲む会(English) Git 初心者向けセッション About AR2.3(a_matsuda)  ###セッション
+ 前半  Google AppEngine の話(基調講演) 雑談部屋  後半  About AR2.3 Git 初心者セッション RSpec/Test の話   ##JRuby on Google AppEngine
+ Google AppEngine で Java が動くようになったので，JRuby 経由で Rails/Merb などを動かすことができる． gem などをアプリケーションに組み込んだ状態でデプロイする必要がある．  Merb では thor コマンドで，Rails では rake で．  Java のバージョンは MacBook は preinstalled で，Windows/Linux などでは Java 1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/04/21/ruby-rails-Rails-40/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/19/MySQL-ZABBIX-ZABBIX-MySQL/">ZABBIXで行うMySQLパフォーマンスチューニング</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ミラクルリナックス主催のセミナー 業務参加 資料あり ZABBIX(ざびっくす)  ##ZABBIXの概要
+ 監視と表示，検知と通知まで一通りのことを一つのソフトウェアでできる Webインターフェイスから設定など可能，管理，情報表示が可能 エージェントを使わなくても，基本的なことなら監視可能  Ping/ポート監視 SNMP/SNMP Trap  管理サーバがデータベースに保存して，データベースを管理インターフェースで閲覧するイメージ マップとして視覚的にどこに何が起きているかを表示することも可能  対策を立てる手助けになりそう  障害発生箇所の一覧表示ができる 障害対応として，スクリプトによるカスタマイズができる．  プロセスの再起動とか特定スクリプトの実行とか   ##システム統合の監視例
+ 特定のサーバの，特定のグラフを自由に並べて表示できる．それを記録できるから，利便性は高い．  ##MySQLの監視
+ 監視の拡張機能と，テンプレート機能を利用してMySQLを監視する．  テンプレートとホストをリンクさせるだけで，テンプレートにある機能で監視可能になる  ミラクル・リナックスが独自テンプレートを提供している  mysqladmin で取得できる status 全般を定期的に収集できる   ##実際にやってみる
+ テンプレートーは xml 形式 テンプレートの取り込みは非常に簡単  ただし MySQL の監視には ZABBIX Agent に設定を追加する必要がある   ##まとめ
+ 標準でも MySQL テンプレートがある  死活監視や Query per second など  テンプレートを拡充していけば，サーバを追加しても設定に苦労しなくてもすみそう．  mysqladmin からの status を取得して監視できるので，とりあえず検証してみる価値はありそう．   ##質疑応答
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/04/19/MySQL-ZABBIX-ZABBIX-MySQL/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/19/debian-Debian-51/">東京エリア Debian 勉強会 第51回</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##感想とログなど
+ なんとなくゆるい感じ．  ##はじめに
+ Hack Cafe  毎週水曜日に開催中  Debian 常識クイズ！  ノリがいい気がする．何となく懐かしさを感じるのは気のせいです．  今日の参加の目標を聞かれた．  もちろん Poken を渡しに来たと言いました．  5分休憩  Poken タイム到来   ##Java ポリシーを読んでみた(mkouhei さん)
+ オープンソースをごにょごにょしようとして脱線 Java ポリシーとは  Java のを Debian パッケージにするためのポリシー RFC のように should/must が多い？  binfmt_misc  Java ファイルを直接実行できるらしい ファイル先頭の数バイトでバイナリタイプを判定できる Macバイナリのような？ #! と同じ仕組み Java に関わりたくないらしい！  Java 談義 やはりマイレージ不足にはなるそうです．  ##Debian で Ocaml を使ってみた
+ 関数型言語 advi とか unison とかパッケージが ocaml で書かれているらしい Tutorial がいいらしい 型推論がない！  + 演算子は int -&gt; int -&gt; int =  で，整数と整数から，整数を返す関数 +.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/04/19/debian-Debian-51/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/16/ruby-rails-mitaka-rb-Mitaka-rb/">Mitaka.rb設立総会に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  吉祥寺で開催されるというPoken NightMitaka.rb設立総会に参加してきました！一次会はヴィレッジ・ヴァンガード ディナーでおいしくハンバーグを食べ，2次会ではモモカレーでおいしくカレーを食べるという，素晴らしいイベントでした．
+主催者の榊さんが2次会では一人カウンターでカレーを食べていたのが印象的でした(？)． 
+あとPokenのハイフォーとか，twitter でしか知らない人とリアルで話ができたのが楽しかったです．
+2回目の開催も期待しています！
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/14/git-git-svn-svn-branch/">git svn で svn の branch を操作するとき</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##参考 以下のサイトを参考にして自分のワークフローにあわせてまとめてみました．
+ http://d.hatena.ne.jp/cooldaemon/20080702/1214928860  ##branch の作成 svn コマンドで普通に．
+% svn copy https://conceal-rs.repos/path/to/svn/trunk https://conceal-rs.repos/path/to/svn/branches/new-branch  ##branch の変更などの取り込み まずは remote から取り込む．
+% git svn fetch svn  次にローカルに git branch を作成する．
+% git -b local-branch new-branch  checkout して開発する
+% git checkout local-branch  ##remote へ commit ローカルに commit して dcommit する．念のために commit 先を確認しておく．
+% git commit -a -s -v % git svn info --url https://conceal-rs.repos/path/to/svn/branches/new-branch % git svn dcommit  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/13/http-slashdot-jp-article-pl-sid-09-04-13-0310232-title/">ダンジョンズ＆ドラゴンズの作者デイビッド・ランス・アーンソン氏、死去</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ダンジョンズ＆ドラゴンズと言えば，私が中高生のころにはやったテーブルトークRPGの元祖．その設定や世界観には非常に感心した記憶があります．
+その共同製作者のゲイリー・ガイギャックス氏は既に亡くなられていて，もう一人のデイビッド・ランス・アーンソン氏が4/9に癌との戦いの果てにこの世を去られました．
+Wizards of the Coast社のニュースリリースで，ダンジョンズ＆ドラゴンズの作者にふさわしい書き方だと思ったのが
+ Dave Arneson, co-creator of the original Dungeons &amp; Dragons game, passed away on Tuesday evening, April 7th, after waging one final battle against cancer.
+ の部分．「癌との最後の戦いを遂行したのち(after waging one final battle against cancer.)」と言うのが，なんとなくRPGっぽいかなと思いました．
+世に多くの RPG を送り出す源となった方々のご冥福を，心からお祈りします．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/11/debian-http-labs-gree-jp-Top-Study-20090410-Report-html-title-GREE-17/">GREE 第17回 オープンソーステクノロジー勉強会に行ってきました</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  六本木で開催されるという Poken NightGREEのOST勉強会#17に行ってきました．20分くらい遅れたので，岩松さんの発表は途中からしかログがありません．
+##岩松さんの発表でした
+ Application Manager 審査される
+ n-iwamatu の担当AMは，当時19歳の人だったそうな   Policy / Procedures チェック   Policy /Procedures を理解しているかチェック 答えとそれにたどり着いた経緯などが重要らしい  2006-2009の動き by 岩松さん
+ Debian Maintainer 制度の導入 岩松さんと山根さんがそう   Task / Skill チェック   メンテナンス方法などについての質問 実技試験がある FTBFS = Fail to build from source. やはり過程が重要   AM による評価   各チェックの内容が ML に流れる   NM(New Maintainer) Front Desk による評価   DAM (Debain Account Manager) による評価   DAM が DD として任命できる唯一の存在 現在 2 名いる   アカウント作成   不備があれば再チェック 問題があれば Reject  大変だったこと
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/04/11/debian-http-labs-gree-jp-Top-Study-20090410-Report-html-title-GREE-17/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/09/JavaScript/">関数を名前空間に閉じ込める簡単な方法のメモ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  無名関数の関数を作成する手法のメモ
+var my_name = new (function(){ this.foo = function(){ alert('hoge'); }; });  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/08/git-subversion-Subversion-git-svn/">Subversion なプロジェクトを git-svn で開発するメモ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##想定環境
+ Ubuntu 8.04 git 1.5.4.3  ##準備 Subversion から clone する
+% git svn clone -s https://svn.repos/path/to/svn  全てのコミットを取得するので，時間がかかりそうな場合は Revision を指定して持ってくる．
+% git svn clone -s https://svn.repos/path/to/svn -r 12345:HEAD  ##開発 ###Subversion 上の branch を使って開発する 1. checkout する
+% git checkout svn-branch01   コードを書く コミットする  % git add hogehoge.rb % git commit  または
+% git commit -a   コードを書く(繰り返す) デプロイ用に Subversion に上げる  % git svn dcommit   trunk にマージする  % git checkout trunk % git merge svn-branch01 --no-ff % git commit % git svn dcommit  merge 時に &ndash;no-ff つけないと git svn info の URL が branch のに変わってしまいます．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/04/08/git-subversion-Subversion-git-svn/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/04/ruby-Tokyu-rb-7/">Tokyu.rb 第7回に行ってきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  場所は自由が丘の「わん」．毎回ここなのはいろいろ理由があるのですよ．たぶん．
+いろいろな話が出てさすがにまとめきれませんが，やはり充実した内容でした．Pokenの受け渡しとかもできたし．
+次回はそろそろ真面目に飲み会じゃないのを開催したいなぁとか言ってみる．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/19/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;20 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/21/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

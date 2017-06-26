@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>RubyのMySQLドライバを見る - アクティブチェック問題 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>RubyのMySQLドライバを見る - アクティブチェック問題</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/05/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p><a href="http://stnard.jp/2010/05/07/196/">前々回</a>、前回の続きです。次はMySQLドライバを調べてみます。</p>
+
+<h2 id="activerecordからruby-mysqlへ">ActiveRecordからRuby/MySQLへ</h2>
+
+<p>さてアクティブチェックしては、<code>connection_adaptors/mysql_adaptor.rb</code>の<code>active?</code>メソッドでした。</p>
+
+
+      def active?
+        if @connection.respond_to?(:stat)
+          @connection.stat
+        else
+          @connection.query 'select 1'
+        end
+
+        # mysql-ruby doesn't raise an exception when stat fails.
+        if @connection.respond_to?(:errno)
+          @connection.errno.zero?
+        else
+          true
+        end
+      rescue Mysql::Error
+        false
+      end
+
+
+<p>ここでは、<code>@connection.stat</code>か<code>@connection.query 'select 1'</code>が呼び出されます。その前に、まず<code>@connection</code>とはなにかと言うと、親クラスである<code>AbstractAdapter</code>の38行目にある<code>initialize</code>メソッドで作成されるインスタンス変数です。ファイルは<code>connection_adaptors/abstract_adaptor.rb</code>です。</p>
+
+
+      def initialize(connection, logger = nil) #:nodoc:
+        @connection, @logger = connection, logger
+        @runtime = 0
+        @last_verification = 0
+        @query_cache_enabled = false
+      end
+
+
+<p>このメソッドは<code>connection_adaptors/mysql_adaptor.rb</code>の200行目で呼び出されるわけです。このクラスは同じファイルの75行目でインスタンスを生成しています。</p>
+
+
+    # Establishes a connection to the database that's used by all Active Record objects.
+    def self.mysql_connection(config) # :nodoc:
+      config = config.symbolize_keys
+      host     = config[:host]
+      port     = config[:port]
+      socket   = config[:socket]
+      username = config[:username] ? config[:username].to_s : 'root'
+      password = config[:password].to_s
+      database = config[:database]
+
+      # Require the MySQL driver and define Mysql::Result.all_hashes
+      unless defined? Mysql
+        begin
+          require_library_or_gem('mysql')
+        rescue LoadError
+          $stderr.puts '!!! The bundled mysql.rb driver has been removed from Rails 2.2. Please install the mysql gem and try again: gem install mysql.'
+          raise
+        end
+      end
+
+      MysqlCompat.define_all_hashes_method!
+
+      mysql = Mysql.init
+      mysql.ssl_set(config[:sslkey], config[:sslcert], config[:sslca], config[:sslcapath], config[:sslcipher]) if config[:sslca] || config[:sslkey]
+
+      default_flags = Mysql.const_defined?(:CLIENT_MULTI_RESULTS) ? Mysql::CLIENT_MULTI_RESULTS : 0
+      options = [host, username, password, database, port, socket, default_flags]
+      ConnectionAdapters::MysqlAdapter.new(mysql, logger, options, config)
+    end
+  end
+
+
+<p>この引数<code>mysql</code>はその前の<code>MySQL.init</code>で生成されています。この<code>MySQL</code>はRubyのMySQLドライバである<a href="http://www.tmtm.org/ja/mysql/ruby/index.html">MySQL/Ruby</a>のことです。</p>
+
+<h2 id="mysql-rubyを見てみる">MySQL/Rubyを見てみる</h2>
+
+<p>さてこの<a href="http://www.tmtm.org/ja/mysql/ruby/index.html">MySQL/Ruby</a>ですが、拡張ライブラリなのでC言語で書かれています。また内部的にはMySQL APIを呼び出しているので、適宜両方見ていきます。</p>
+
+<p>まず、<code>stat</code>メソッドがあればそれが呼ばれるので、そちらを調べると、<code>ext/mysql_api/mysql.c</code>の1978行目に<code>stat</code>メソッドの定義があります。</p>
+
+
+  rb_define_method(cMysql, "stat", my_stat, 0);
+
+
+<p>細かいことは省きますが、<code>MySQL#stat</code>が呼ばれると<code>my_stat</code>が実行されます。ではその<code>my_stat</code>は693行目にありました。</p>
+
+
+/*  stat()    */
+static VALUE my_stat(VALUE obj)
+{
+  MYSQL* m = GetHandler(obj);
+  const char* s = mysql_stat(m);
+  if (s == NULL)
+    mysql_raise(m);
+  return rb_tainted_str_new2(s);
+}
+
+
+<p>ここで<code>GetHandler</code>はマクロで、構造体の中にある接続ハンドラを取得しています。で、<code>mysql_stat</code>という関数を実行して結果を判定しているわけですね。ではこの<code>mysql_stat</code>はと言うと、<a href="http://dev.mysql.com/doc/refman/5.0/en/mysql-stat.html">MySQL 5.0のリファレンスマニュアル</a>には「mysqladmin statusと同じ結果を返す」とだけ書かれています。</p>
+
+<h2 id="mysqlのソースを読む">MySQLのソースを読む</h2>
+
+<p>あまりC/C++をやった経験がないのですが、とりあえず調査続行と言うことでMySQL本体のソースを追ってみます。まずは<a href="http://dev.mysql.com/downloads/mysql/">ダウンロード</a>して展開すると、<code>libmysql/libmysql.c</code>と言うファイルが見つかります。前述のは、いわゆる共有ライブラリ経由での接続なので、ここを見ればいいと思われます。このファイルの1407行目に<code>mysql_stat</code>がありました。</p>
+
+
+const char * STDCALL
+mysql_stat(MYSQL *mysql)
+{
+  DBUG_ENTER("mysql_stat");
+  if (simple_command(mysql,COM_STATISTICS,0,0,0))
+    DBUG_RETURN(mysql->net.last_error);
+  DBUG_RETURN((*mysql->methods->read_statistics)(mysql));
+}
+
+
+<p>どうやら<code>simple_command</code>を呼び出しているだけのようです。<code>simple_command</code>は<code>include/mysql.h</code>の852行目に定義されているマクロです。</p>
+
+
+#define simple_command(mysql, command, arg, length, skip_check) \
+  (*(mysql)->methods->advanced_command)(mysql, command, 0,  \
+                                        0, arg, length, skip_check, NULL)
+
+
+<p><code>mysql</code>経由で<code>advanced_command</code>を呼び出しています。<code>mysql</code>は<code>include/mysql.h</code>の258行目で定義されている構造体です。</p>
+
+
+typedef struct st_mysql
+{
+  NET   net;      /* Communication parameters */
+  unsigned char *connector_fd;    /* ConnectorFd for SSL */
+  char    *host,*user,*passwd,*unix_socket,*server_version,*host_info;
+  char          *info, *db;
+  struct charset_info_st *charset;
+  MYSQL_FIELD *fields;
+  MEM_ROOT  field_alloc;
+  my_ulonglong affected_rows;
+  my_ulonglong insert_id;   /* id if insert on table with NEXTNR */
+  my_ulonglong extra_info;    /* Not used */
+  unsigned long thread_id;    /* Id for connection in server */
+  unsigned long packet_length;
+  unsigned int  port;
+  unsigned long client_flag,server_capabilities;
+  unsigned int  protocol_version;
+  unsigned int  field_count;
+  unsigned int  server_status;
+  unsigned int  server_language;
+  unsigned int  warning_count;
+  struct st_mysql_options options;
+  enum mysql_status status;
+  my_bool free_me;    /* If free in mysql_close */
+  my_bool reconnect;    /* set to 1 if automatic reconnect */
+
+  /* session-wide random string */
+  char          scramble[SCRAMBLE_LENGTH+1];
+
+ /*
+   Set if this is the original connection, not a master or a slave we have
+   added though mysql_rpl_probe() or mysql_set_master()/ mysql_add_slave()
+ */
+  my_bool rpl_pivot;
+  /*
+    Pointers to the master, and the next slave connections, points to
+    itself if lone connection.
+  */
+  struct st_mysql* master, *next_slave;
+
+  struct st_mysql* last_used_slave; /* needed for round-robin slave pick */
+ /* needed for send/read/store/use result to work correctly with replication */
+  struct st_mysql* last_used_con;
+
+  LIST  *stmts;                     /* list of all statements */
+  const struct st_mysql_methods *methods;
+  void *thd;
+  /*
+    Points to boolean flag in MYSQL_RES  or MYSQL_STMT. We set this flag
+    from mysql_stmt_close if close had to cancel result set of this object.
+  */
+  my_bool *unbuffered_fetch_owner;
+  /* needed for embedded server - no net buffer to store the 'info' */
+  char *info_buffer;
+  void *extension;
+} MYSQL;
+
+
+<p>この中の<code>methods</code>は<code>st_mysql_methods</code>と言う構造体で、753行目に定義されています。</p>
+
+
+typedef struct st_mysql_methods
+{
+  my_bool (*read_query_result)(MYSQL *mysql);
+  my_bool (*advanced_command)(MYSQL *mysql,
+            enum enum_server_command command,
+            const unsigned char *header,
+            unsigned long header_length,
+            const unsigned char *arg,
+            unsigned long arg_length,
+            my_bool skip_check,
+                              MYSQL_STMT *stmt);
+  MYSQL_DATA *(*read_rows)(MYSQL *mysql,MYSQL_FIELD *mysql_fields,
+         unsigned int fields);
+  MYSQL_RES * (*use_result)(MYSQL *mysql);
+  void (*fetch_lengths)(unsigned long *to,
+      MYSQL_ROW column, unsigned int field_count);
+  void (*flush_use_result)(MYSQL *mysql);
+#if !defined(MYSQL_SERVER) || defined(EMBEDDED_LIBRARY)
+  MYSQL_FIELD * (*list_fields)(MYSQL *mysql);
+  my_bool (*read_prepare_result)(MYSQL *mysql, MYSQL_STMT *stmt);
+  int (*stmt_execute)(MYSQL_STMT *stmt);
+  int (*read_binary_rows)(MYSQL_STMT *stmt);
+  int (*unbuffered_fetch)(MYSQL *mysql, char **row);
+  void (*free_embedded_thd)(MYSQL *mysql);
+  const char *(*read_statistics)(MYSQL *mysql);
+  my_bool (*next_result)(MYSQL *mysql);
+  int (*read_change_user_result)(MYSQL *mysql, char *buff, const char *passwd);
+  int (*read_rows_from_cursor)(MYSQL_STMT *stmt);
+#endif
+} MYSQL_METHODS;
+
+
+<p>だんだん長くなってきました。さてこれは<code>MYSQL_METHODS</code>型なのですが、定義しかありません。実体はと言うと、<code>sql-common/client.c</code>の1885行目で代入されている、<code>client_methods</code>です。</p>
+
+
+  /* Don't give sigpipe errors if the client doesn't want them */
+  set_sigpipe(mysql);
+  mysql->methods= &client_methods;
+  net->vio = 0;       /* If something goes wrong */
+  mysql->client_flag=0;     /* For handshake */
+
+
+<p>で、この<code>client_methods</code>は1763行目で定義されています。</p>
+
+
+static MYSQL_METHODS client_methods=
+{
+  cli_read_query_result,                       /* read_query_result */
+  cli_advanced_command,                        /* advanced_command */
+  cli_read_rows,                               /* read_rows */
+  cli_use_result,                              /* use_result */
+  cli_fetch_lengths,                           /* fetch_lengths */
+  cli_flush_use_result                         /* flush_use_result */
+#ifndef MYSQL_SERVER
+  ,cli_list_fields,                            /* list_fields */
+  cli_read_prepare_result,                     /* read_prepare_result */
+  cli_stmt_execute,                            /* stmt_execute */
+  cli_read_binary_rows,                        /* read_binary_rows */
+  cli_unbuffered_fetch,                        /* unbuffered_fetch */
+  NULL,                                        /* free_embedded_thd */
+  cli_read_statistics,                         /* read_statistics */
+  cli_read_query_result,                       /* next_result */
+  cli_read_change_user_result,                 /* read_change_user_result */
+  cli_read_binary_rows                         /* read_rows_from_cursor */
+#endif
+};
+
+
+<p>もうちょい続きそうです。で、ここにある<code>cli_advanced_command</code>はと言うと、764行目にありました。</p>
+
+
+my_bool
+cli_advanced_command(MYSQL *mysql, enum enum_server_command command,
+         const uchar *header, ulong header_length,
+         const uchar *arg, ulong arg_length, my_bool skip_check,
+                     MYSQL_STMT *stmt)
+{
+  NET *net= &mysql->net;
+  my_bool result= 1;
+  init_sigpipe_variables
+  my_bool stmt_skip= stmt ? stmt->state != MYSQL_STMT_INIT_DONE : FALSE;
+  DBUG_ENTER("cli_advanced_command");
+
+  /* Don't give sigpipe errors if the client doesn't want them */
+  set_sigpipe(mysql);
+
+  if (mysql->net.vio == 0)
+  {           /* Do reconnect if possible */
+    if (mysql_reconnect(mysql) || stmt_skip)
+      DBUG_RETURN(1);
+  }
+  if (mysql->status != MYSQL_STATUS_READY ||
+      mysql->server_status & SERVER_MORE_RESULTS_EXISTS)
+  {
+    DBUG_PRINT("error",("state: %d", mysql->status));
+    set_mysql_error(mysql, CR_COMMANDS_OUT_OF_SYNC, unknown_sqlstate);
+    DBUG_RETURN(1);
+  }
+
+  net_clear_error(net);
+  mysql->info=0;
+  mysql->affected_rows= ~(my_ulonglong) 0;
+  /*
+    We don't want to clear the protocol buffer on COM_QUIT, because if
+    the previous command was a shutdown command, we may have the
+    response for the COM_QUIT already in the communication buffer
+  */
+  net_clear(&mysql->net, (command != COM_QUIT));
+
+  if (net_write_command(net,(uchar) command, header, header_length,
+      arg, arg_length))
+  {
+    DBUG_PRINT("error",("Can't send command to server. Error: %d",
+      socket_errno));
+    if (net->last_errno == ER_NET_PACKET_TOO_LARGE)
+    {
+      set_mysql_error(mysql, CR_NET_PACKET_TOO_LARGE, unknown_sqlstate);
+      goto end;
+    }
+    end_server(mysql);
+    if (mysql_reconnect(mysql) || stmt_skip)
+      goto end;
+    if (net_write_command(net,(uchar) command, header, header_length,
+        arg, arg_length))
+    {
+      set_mysql_error(mysql, CR_SERVER_GONE_ERROR, unknown_sqlstate);
+      goto end;
+    }
+  }
+  result=0;
+  if (!skip_check)
+    result= ((mysql->packet_length=cli_safe_read(mysql)) == packet_error ?
+       1 : 0);
+end:
+  reset_sigpipe(mysql);
+  DBUG_PRINT("exit",("result: %d", result));
+  DBUG_RETURN(result);
+}
+
+
+<p>だんだん面倒になってきたので、これぐらいにしておいて上から順に見ていくと、いろいろ初期化して何らかの事情で切断されたことを知っていれば(<code>mysql-&gt;net.vio == 0</code>)再接続。続いて準備をしてコマンド(<code>COM_STATISTICS</code>)送信(<code>net_write_command</code>)し、結果を返して終わる。</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>長くなりましたが、MySQL/Rubyの<code>stat</code>メソッドでは<code>COM_STATISTICS</code>を送信していると言うことがわかりました。これは統計情報を取得しようとしていると言うことで、件の負荷上昇に原因となります。ただ、じゃあ外せばいいかというと、<a href="http://d.hatena.ne.jp/koseki2/20070130/railslockup">Rails + MySQL (+ Mongrel?) でDB接続の通信が無い状態が続くとデッドロックする。 - こせきの技術日記</a>と言うこともあるのでそう簡単ではないようです。今回の場合はRubyではTCP接続をしていないのでMongrelの問題は発生しませんが、負荷軽減を目論んでアクティブチェックを外す場合には、フレームワークやドライバまでちゃんと調べた方が良さそうだと感じました。</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/05/13/rubymysql-/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/05/13/wordpress-on-nginx-with-fastcgicentos/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/05/13/wordpress-on-nginx-with-fastcgicentos/">WordPress on nginx with FastCGIのCentOSの場合</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/05/17/tokyurubykaigi02/">TokyuRubyKaigi02参加者募集中！</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/05/17/tokyurubykaigi02/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

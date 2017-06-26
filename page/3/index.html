@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2014/03/31/TokyuRubyKaigi07/">TokyuRubyKaig07を開催してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/03/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  TokyuRuby会議07 - Regional RubyKaigi  というわけで7回目となるTokyuRubyKaigiを開催してきました。まあやってることは毎度おなじみなのですが、今回は実行委員長を@tatsuoSakuraiさんがやるという違いがありました。まあ良かった点も悪かった点もいろいろありますが、参加者に楽しんでいただけたようなのでよかったですね。
+あと、幸いにして今回は最後まで記憶がありました＼(^o^)／
+次回も開催が決まっているような感じがするので、また司会として頑張れればいいなと思っております。あれでよければ…
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2013/07/06/tokyurubykaigi06/">TokyuRubyKaigi06を開催してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/07/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  先週になりますが、TokyuRubyKaigi 06を開催して来ました。 もう6回目になるんですが、いつものようにいつもどおり開催できたんじゃないかと思います。
+ただ今回は一つダメだった点があって、司会の記憶が飛び飛びだということですね。 なんかうまく喋ってたようなんですが、思い出そうとするといままでよりも記憶に抜けがあるんですよ。 要するに飲み過ぎただけなんですけどね。
+あ、あと同じチームの同僚が来てたんですが、 「会社でもあんな感じでおねがいしますよ」とか言われても、 あれは酒が入ったテンションだからできるのであって、 そうでなければ、ねぇ。
+というわけで、TokyuRubyKaigiはまだまだ続いていきます。 次回はどうやらM葉のS井さんが実行委員長をやってくれるそうなので、 どんな地域Ruby会議になるのか、今から楽しみです。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2013/02/10/tkrk10-final/">東京Ruby会議10 Finalの実行委員と司会をやってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/02/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  と言うわけで、前回に引き続き、 東京Ruby会議10 3日目で司会をやってきました。 2日目が大雪のために途中で中止となったのですが、 「俺たちは、まだ、終われない！」とかいう厨二っぽい感じでリベンジすることになりました。 ちょっと違うかも。まあいいや。 まあまさかネタとして序とかQとか良さそうっすよね！とか言ってたらそのまま採用されたりとか、 これで4部作ですねとか「全てはシナリオｄ(ry」みたいなこと言ってたら終わった感じです。 ダメっぽいですね。
+司会としてはどうだったのかは参加者やスピーカーの判断に任せたいと思いますが、 なるべく目立たないようにしてはいたつもりです。 TokyuRubyKaigiとかいうものとは違う、由緒正しさを醸し出そうと頑張ったんですが、 どうだったでしょうか。
+次は2013/6/29にTokyuRubyKaigi06が開催されます。 ここではいつもどおりの司会をやりたいと思ってるので、 そういうのが見たい方は来てみてはいかがでしょうか。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2013/01/15/tokyo-ruby-kaigi-10/">東京Ruby会議10で実行委員と司会をやってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/01/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  と言うわけで、東京Ruby会議10のアドバイザーという名の実行委員と、 当日の司会をやってきました。 大雪のために途中で終わらざるを得なかったのが心残りですが、リベンジしたい気持ちが大きいところです。
+アドバイザーとしては、なるべく参加者視点で情報出そうよと言ってきたつもりです。 ちゃんとできてたかどうかは、いろんな人から意見を聞いてみたいところです。
+司会としてはなるべく目立たないようにしようと心がけました。 TokyuRubyKaigiだったら最後に会場を沸かせるようなことをLT中に考えてるんですが、 今回はその必要はないのでちょっと安心しつつも、 寂しい気持ちの自分を発見しました。 どんだけ関西人やねん、とか自分でツッコんだりとか。
+あとは、シャイなRubistから質問がでない可能性も考慮しつつ、 司会という権限を生かして、もし自分が参加者だったらこういうこと聞くだろうな、 というのを聞いてみました。 司会と言うよりも、学会発表の時の座長のような感じだったかもしれませんが。 これが良かったのか悪かったのかはわかりませんが、 もしTokyuRubyKaigi以外に次の機会があれば、 これは続けてみたいなーと思ってます。
+ちなみにこれで東京で開催される地域Ruby会議のうち、60％で司会をしたことになります。 かといってなにか変わったわけでもないのですが。 もし司会の依頼があれば、いつでもやるのでお気軽にお問い合わせください :)
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/12/12/jimoto-ruby-kaigi/">地元Ruby会議について</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/12/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  地元Ruby会議は東京Ruby会議10の2日目の最後に行うLT大会なのですが、 ちょっと毛色が違います。ただしTokyu.rbとは別枠です。 まあ「またTokyu.rbが」と言われるような気がしなくもないですが、 細かいことは気にしないでいきたいと思ってます。
+事の発端は「関西弁Ruby会議やりたいねぇ」みたいな発言からでした。 具体的に誰が最初に言ったのかはよく覚えてないのですが、やれば面白いだろうなとは思っていました。 そんな時に参加したみなとRuby会議で、 Minami.rbから参加された @satomicchyさんが 「Amagasaki.rbとかも」と発言した時になぜかざわめく会場。 そして「関西弁Ruby会議やるべきか」と発言した時、 こしば@bash0C7さんに「ちょっとご相談が」と言われ、 東京Ruby会議10の打ち合わせの時にお邪魔してネタ話に花を咲かせることになりました。
+その場で出たのが「関西弁だけじゃなくてもっといろんなところも」という話。 なれば「地元の方言でLTを喋ってもらおうか」と結論付けられました。 いろんな地方から来た人が多い東京なればこそ、 いろんな方言でLTしてもらえれば人種のるつぼ感がでるんじゃない？と思ってます。 まあノリだけで決めたような気もしますが、 方言じゃなくても地元アピール、美味しい食べ物とか旨い酒とかを紹介したりとか、 Ruby繋がりで集まった人たちで、もっと交流したいなと思ってます。
+とは言っても、「方言で喋るのなんて恥ずかしいよ」という方もいると思います。 それはそれで仕方がないので、標準語で話していただいてもたぶん大丈夫です。 地元Ruby会議には 参加資格とか書いてはいますが、なるべくそうしていただけるとありがたいのですが、 どうしてもという場合は個別に相談してください。
+でも「みんな地元に帰れば地元の方言で喋るでしょ？」とも思うので、 可能な限り地元感を出していただけると、ありがたいですね。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/09/24/after-we-code/">After &#34;We Code&#34;, what should I do?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  「We Code.」と題した札幌Ruby会議2012が終わったわけですが、 みなさんはコード書いてますか？ 例の人も例のごとく発言しているように、 当然ですが我々はエンジニアでありコードを書くのが仕事なわけです。 感極まった・楽しかったことを、いかにコードで表現するかが重要なので、 記事書いて終わる人とか、感想話しあって酒のんでそれだけでは 開催してくれたスタッフに恩返しができません。
+じゃあコードさえ書けばいいのかというと、それはそうなんだが書いているだけでは「I Code.」でしかなく、 「We Code.」ではない。 やはりソーシャルコーディングの 時代なわけですね。 という訳で感極まったりとか意識の高い人は、とりあえず日本語でもいいので Githubにあるプロジェクトに参加しなくてはいけません。 日本人がやっているプロジェクトでコミットログが日本語なものも結構多いし、 pull requestとかissuesとか見てみてコメントするなり、 pull request出してみたりすればいいんじゃないでしょうか。
+あとは発表でしょうか。 「みんなの前で話すのって俺には無理だよ」みたいに言う人が多いんですが、 そういう人もスタッフには応募してたりします。 むしろ多くの人の前で話すよりも個別に人と対応する方が、 懇親会やセッション前後の休憩でぼっちになりやすい内向的 Rubyist である私なんかには辛いところなので、 その気持ちはあまりわかりません。 前でしゃべるのって不特定多数に向かってだし、会話のネタは決まってるから楽じゃないですか、 ある意味。
+あと、発表したりする方が、あとで声掛けてもらいやすいんですよね。 なので積極的に発表する側に回ろうと思って応募してます。 でも人に言わせると 「jpmobileっていうネタがあるからいいじゃないですか」 とか言われるんですが、そりゃ日々文字コードと戦ってればネタぐらいでるわけです。 じゃあみなさんは何かそういう困った経験とかありますかと聞けば、飲み会とかではバンバン出てくる。 でも発表となるとそこまでじゃないという。 「そういう時のTokyuRubyKaigiですよ！」とは言うのですが、 そういうのをまとめる機会としても発表するのっていいと思うんですよ。 もちろん札幌やThe RubyKaigiレベルになるとしっかりとした内容じゃないと厳しいかもしれませんが、 まずは出してみることが重要ではないでしょうか。 「きっとダメだから」と思っていては何事も前に進みません。 あとネタなんてどこにでも転がってます。 日々の業務にも。 なので、「We Code.」のあとは「We Apply.」という流れになればいいんじゃないでしょうか。
+という事を東京Ruby会議10の応募を集めるために書こうと 考えてたんですが、結局書けなくて何やってたんだかという気持ちと、 思ったよりも応募が集まったようでホッとしたようななんとも言えない気持ちが 混ざった感じになってます。
+最後に、「とは言っても、発表の場所がないじゃん。札幌も終わって、東京も締め切られたし。 どこで発表すればいいのよ」と思った人。 まずは社内や身近な仲間うちで、LT大会とかしてみましょう。 コードを書いて、面白いと思ったこと、苦労したことを発表という形でまとめて公表してみると、 ブログで書いただけではわからない、生の声が聞こえてきます。 そういう経験を積み上げていって、いろんな場所で発表できるようになってみませんか。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/09/19/tokyurubykaigi-05/">TokyuRubyKaigi 05を開催してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  もうかなり前になりますが、TokyuRubyKaigi 05を開催してきました。 会場も既に3回もお借りしているVOYAGE GROUPで、 同じくサントリーさんにスポンサーしていただいての開催です。 当日は司会として参加者の皆様をいろいろあれこれしたりと、 酔っ払いながら頑張ったのですが、 今回はいままでと違うことが若干ですがありました。
+まずは参加者の数。Doorkeererを使わせてもらったんですが、 キャンセル待ちが20人超えるとか大変な自体に。 「そんなすごいイベントでもないのに」とかちょっと思いつつ、 やはり来れる人には来てもらいたいと、 1週間前ぐらいから来れない人のキャンセルをお願いしてしまいました。 あとは発表者の応募の数。 思った以上に応募があったため、スタッフからの応募を一旦キャンセルするという事になってしまいました。 このあたりはいろいろ反省するべきところだったと思います。
+という訳で次回もいろいろやる予定なので、適度にご期待ください。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/09/18/after-sappororubykaigi-2012/">札幌Ruby会議2012に参加してきて</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  悲願だった肉チャーを完食してきました。また来年も挑みたいと思います。以上。
+というのはまあ割とネタではなく本気だったりするのですが、まあそれはそれとして、 札幌Ruby会議2012に参加してきました。 札幌Ruby会議自体は3回目の参加ですが、今回はどちらかというと The RubyKaigi の様相を呈していましたね。 3日間にわたって開催するというのは、さすがに大変そうでしたね。 でも何とか乗り切ってしまうところに、札幌の底力を感じた気がします。
+発表内容についてはいろんな人の感想や KaigiFreaks による録画、発表者によるスライド公開などでわかると思うので割愛。 探しづらい方ははてブや Twitterなどで検索すればすぐに見つかると思います。 特に参加者の感想を見ると、臨場感と言うか会場の雰囲気などがわかるんじゃないでしょうか。
+あと特徴的だったのが、参加者の顔ぶれ。なんかTokyu.rbとか関東地方でよく見かける人が 多かった気がします。あと海外からの参加者も結構いましたね。 地域Ruby会議でここまで海外参加者が多いのって、むしろありえない感じですね。 こちらもスタッフの対応力に脱帽の限りです。
+そんなこんなで非常に楽しかった4日間でした。肉チャーも食べられたので、満足感もひとしおですね。
+ただ反省点もたくさんあって、一つは今回は東京の人が多かったので逆に地元の人とあまり交流できなかったな、という点。 スタッフや参加者の人たちとこっちから語りかけるべきだったのですが、まあ内向的な Rubyist としては、どだい無理な話でしたという感じです。 このあたりをどうすればいいのかというのが、次回の地域Ruby会議参加へ向けての課題でしょうか。 あとやはりスタッフになってしまう人と話がしづらいのが、まあいつものことながら、ちょっと残念な感じですね。 それと発表者が直前までスライド作ってて、話をする余裕がないところもいつもどおりのことながら、なんだかなーとか思ってしまいます。 このあたりが来年のRubyKaigi 2013でなんとかなるといいのですが。
+もうひとつは、あとはありきたりですが英語。英語力不足と内向的な性格のせいで、なかなか会話できませんでした。 ただ@yokoletさんの発表にあった、「使い続けなければ覚えない」という言葉が重要だなと感じました。 いろいろ終わったらTokyo Rubyist MeetupとかTOKYO Railsなどにも 積極的に参加したいと思ってます。
+という訳で、次回は東京Ruby会議10へと続いて行きます。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/06/04/minato-rubykaigi/">みなとRuby会議01に参加してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  みなとRuby会議01   と言う訳で参加してきました。一番印象に残ったのは遠くて山の上だなーということですかね。
+まず最初はソーシャルコーディングということでしたが、要するにペアプロしてみようという事。何やら最初から座席が決まっていることから、それっぽいことやるんだろうなとは思ってましたが、予想は的中。座席は @netwillnet さん、@sora_h さん、@kei_s さんという面子。隣同士でやるかという事になって1時間ぐらいペアプロしてました。周りの回答とか見てると、発想の違いがあって面白かったですね。
+後の講演は誰かがまとめてくれるだろうから割愛。酒蔵と社長とLazyとKajaだけ覚えておけばいいでしょう。
+懇親会ではMinami.rbの方々と挨拶できたり、Tokyu.rbとTokyuRubyKaigiのステマしてきたりといろいろ楽しかったですね。他にも話をしたかった人たちがいたのですが、時間切れで帰宅しました。また機会があれば積極的にステマしていきたいと思います。
+最後に関西弁Ruby会議@東京をやろうか！と @bash07 さんと意気投合したので、それに向けていまから素振りしておくことを宣言して、TokyuRuby会議05に繋げたいと思います。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/04/23/git/">Git道場を開催してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/04/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  なんか師範ということで、課題とリベース・マージついてお話させていただきました。
+{{ &lsquo;http://speakerdeck.com/u/ogawa/p/git' | speakerdeck_embed }}
+もとよりコンセプトとして、「同じ型を繰り返し行うことで身につける」事を目的としていたので、「複数人でマージコンフリクトを解決してみる」ことと「複数人でリベースコンフリクトを解決してみる」ことを実習形式でやってもらいました。
+ただ午前中は某氏への講義を中継されたり、@iwamatsu さんと視聴者からの質問に応えてみたりと、私的にはよくわからない道場でした。さらに、実習の途中からニコ生で喋ってみたりと、人生初体験が多かった日ですね。まあ楽しかったのですが、非常に疲れました。
+参加者の方も、一人で使ってますとか、複数人だけど一人1プロジェクトとかが多いらしく、「複数人でわざとコンフリクトしやすい状況」での実習はかなりハードだったようで、最後のほうでは皆さんお疲れでした。ただ「手を動かすこと」をやってもらえたので開催した方としては非常に満足しています。
+当日解説したようなことは、例の書籍に書いてあることも多いので、まだの方は是非買って読んでみてください。
+ Gitによるバージョン管理  著者: 岩松 信洋, 上川 純一, まえだこうへい, 小川 伸一郎
+出版日: 2011-10-25
+出版社/メーカー: オーム社
+カテゴリ: Book
+  それと2回目の実行委員と会場も募集しているようです。我こそは！という方は、私か @ayumin さんへご連絡ください。
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/2/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;3 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/4/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

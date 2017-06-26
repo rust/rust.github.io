@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>RubyKaigi2008に参加してきた＃１ &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>RubyKaigi2008に参加してきた＃１</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/06/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>当日はあいにくの雨模様にもかかわらず，現場の熱気はすごかったですね．Rubyに対する愛を感じました．キーワードは，「スーツ漫才」「博士と助手の奇妙な世界」「だまっとけ」ですかね．</p>
+
+<h1 id="さて-感想を交えたログなどを">さて，感想を交えたログなどを．</h1>
+
+<p>##開会前</p>
+
+<ul>
+<li>電源確保できなかったので，省電力モードで活動開始．</li>
+<li>5時間はもつ予定．</li>
+</ul>
+
+<p>##開会</p>
+
+<ul>
+<li>テーマは多様性
+
+<ul>
+<li>様々な実装などで確かに多様．</li>
+</ul></li>
+<li>0th day
+
+<ul>
+<li>ビジネスよりのセッション</li>
+</ul></li>
+<li>2つの会場
+
+<ul>
+<li>メインセッションとサブセッション</li>
+<li>確かに良かったんだけど，セッションの開始時間の調整とかした方がよかったんじゃないかな？と思った．</li>
+</ul></li>
+</ul>
+
+<p>##現在の，そしてこれからのRubyVM開発</p>
+
+<ul>
+<li>Ruby の実装
+
+<ul>
+<li>JRuby, Rubinius, IronRuby, MagLev, CRuby(Matz)</li>
+</ul></li>
+<li>08/06/20 1.9.0-2 Release
+
+<ul>
+<li>1.9.0-N -&gt; snapshot version</li>
+<li>Bug-fix</li>
+<li>M17N</li>
+</ul></li>
+<li>1.9.1 は 2008/12/20 に Release 予定</li>
+<li>Ruby の下の部分，実装の話</li>
+<li>Parallel Thread Execution
+
+<ul>
+<li>並列スレッド実行</li>
+<li>現在のRubyは制限がある</li>
+<li>ただしそうすると他に影響が出る</li>
+</ul></li>
+<li>Multiple Virtual Machine
+
+<ul>
+<li>一つのインタプリタで複数のVM</li>
+</ul></li>
+<li>Compilation
+
+<ul>
+<li>Ruby 2 C</li>
+</ul></li>
+<li>HPC on Ruby
+
+<ul>
+<li>そこそこ性能が出て簡単に書ける</li>
+<li>並列計算 on Ruby</li>
+</ul></li>
+<li>Atomic Ruby
+
+<ul>
+<li>軽量版Ruby？</li>
+<li>肥大化した Ruby を，自分にあった機能のみを取り込んだ軽量版を作る</li>
+</ul></li>
+<li>Memory Revisit
+
+<ul>
+<li>GC 変更</li>
+<li>Malloc/Free の戦略変更</li>
+<li>いまの Ruby はメモリ使用量を把握していない</li>
+</ul></li>
+<li>Neo Garbage Collector
+
+<ul>
+<li>ささださんの周りでははやってるらしい</li>
+</ul></li>
+<li>笹田研ができたので，学生急募中
+
+<ul>
+<li>これが一番重要らしい</li>
+</ul></li>
+</ul>
+
+<p>##JRuby</p>
+
+<ul>
+<li>Introduction and Demonstration</li>
+<li>今後は 1.9.0 互換を目指す</li>
+<li>JRuby 1.1.2
+
+<ul>
+<li>1.1 系のメンテナンスリリース</li>
+<li>しかしパフォーマンスは結構上がっている</li>
+</ul></li>
+<li>JRuby はどこで使われているか
+
+<ul>
+<li>NetBeans などのパーサー</li>
+<li>NetBeans が一番いいらしい</li>
+</ul></li>
+<li>Ruby は Java よりも Swing を面白くするらしい</li>
+<li>Demonstration of JRuby with Swing
+
+<ul>
+<li>かなり簡単に Window(GUI) 出せるな</li>
+</ul></li>
+<li>Graphics Processing
+
+<ul>
+<li>Java の 画像処理ツール？を JRuby で使えるようにする</li>
+<li>ruby-processing</li>
+<li>こちらも簡単に書けるようだ</li>
+</ul></li>
+<li>Web application
+
+<ul>
+<li>Rails はいいのだが，遅い</li>
+<li>Mongrel は JRuby で動く</li>
+</ul></li>
+<li>Passenger は deploy を簡単にした</li>
+<li>Rails on GlassFish
+
+<ul>
+<li>Demonstration</li>
+<li>warbler</li>
+<li>WAR file を作る</li>
+<li>これで全ファイル一式入っているので，deploy が簡単</li>
+<li>確かに簡単だ．</li>
+</ul></li>
+<li>GrassFish V3 Gem
+
+<ul>
+<li>GlashFish を最初から適用？</li>
+</ul></li>
+<li>JRuby on Rails で多数のサービスが展開中</li>
+</ul>
+
+<p>##Rubunius</p>
+
+<ul>
+<li>Ruby を実行する新しいVM</li>
+<li>Ruby のコードを Kernel / User にわける
+
+<ul>
+<li>OS の Kernel/Userに分ける？</li>
+</ul></li>
+<li>コードもデータ
+
+<ul>
+<li>to_sexp -&gt; S式に変換</li>
+<li>lisp のようなものかな</li>
+<li>byte-code に decode してる？</li>
+</ul></li>
+<li>Binding.of_caller
+
+<ul>
+<li>今日の夜にでも調べよう</li>
+</ul></li>
+</ul>
+
+<p>##プログラミング梁山泊 :: Keynote Speech</p>
+
+<ul>
+<li>梁山泊
+
+<ul>
+<li>水滸伝の舞台 108人の勇士</li>
+<li>勇士が集まる場所</li>
+</ul></li>
+<li>梁山泊はあるか？
+
+<ul>
+<li>lisp</li>
+<li>list processor</li>
+<li>中心技術は S式</li>
+<li>GC/Exception は古くからある</li>
+<li>meta-programming/macro ( program as data )</li>
+<li>&lsquo;70 から実現されていた</li>
+<li>コンパイラ・インタプリタがある</li>
+<li>FORTRAN と同等の高速性がある</li>
+<li>list梁山泊</li>
+<li>技術者が集まることで，新たな技術が生まれ，世界が変わる</li>
+</ul></li>
+<li>梁山泊ではないもの
+
+<ul>
+<li>FORTRAN / COBOL / Ada</li>
+<li>仕事の道具であり，技術よりも結果に関心</li>
+<li>数値計算が高速にできることが重要なのだが，FORTRAN 自体の高速化には興味はない</li>
+</ul></li>
+<li>UNIX 梁山泊
+
+<ul>
+<li>small OS</li>
+<li>text/stream-based</li>
+<li>ベストでなくても便利である必要がある</li>
+<li>not best but convensional</li>
+</ul></li>
+<li>Smalltalk 梁山泊
+
+<ul>
+<li>OOP / class browser / class libraries</li>
+<li>基本的に lisp を踏襲している</li>
+<li>実装についての議論や技術革新が活発</li>
+</ul></li>
+<li>Java 梁山泊
+
+<ul>
+<li>温故知新</li>
+<li>VM/GC/Exception を一般に知らしめる契機になった</li>
+<li>エンタープライズ技術</li>
+<li>ビジネスに役立つコンピュータサイエンス</li>
+<li>GC や高速化が進んでいった</li>
+</ul></li>
+<li>プログラミング梁山泊
+
+<ul>
+<li>技術者が集まることで，新たな技術が生まれ，世界が変わる</li>
+<li>技術力より求心力が重要</li>
+<li>それゆえコミュニティも重要</li>
+</ul></li>
+<li>次の梁山泊は？</li>
+<li>Ruby 梁山泊
+
+<ul>
+<li>過去を継承</li>
+<li>lisp -&gt; meta-programming</li>
+<li>smalltalk -&gt; OOP</li>
+<li>POSIX API -&gt; text/stream-based</li>
+<li>感性を重視</li>
+<li>人に注目，楽しさに注目</li>
+<li>確かに Ruby は楽しいですね．</li>
+<li>生産性を重視</li>
+<li>マシンが高速化しているが，人件費は高騰している</li>
+<li>マシンを酷使すればいいんじゃないだろうか</li>
+<li>俊敏性を重視</li>
+<li>変化に対応できる機動力が必要</li>
+<li>Ruby on Rails</li>
+<li>生産性・俊敏性・動的に対応できる</li>
+<li>Ruby for Rails になっている</li>
+<li>逆に Ruby 入門として，Rails がある</li>
+<li>All-in-one</li>
+<li>Post Rails</li>
+<li>Merb / Ramaze / others&hellip;</li>
+<li>複数の実装</li>
+<li>Ruby 1.8 -&gt; CRuby</li>
+<li>Ruby 1.9 -&gt; YARV</li>
+<li>JRuby&ndash;&gt; Ruby on Java</li>
+<li>Rubinius -&gt; Ruby on Smalltalk</li>
+<li>Ruby.NET</li>
+<li>IronRuby -&gt; Ruby on DLL</li>
+<li>Maglev -&gt; Ruby on Smalltalk</li>
+<li>Magnetic Levitation :: 磁気浮上</li>
+<li>Opensource にはならないかもしれない</li>
+<li>多様性は善</li>
+<li>互換性はどうか</li>
+<li>RubySpec というテストスイートを充実させつつある</li>
+<li>Ruby 標準規格</li>
+<li>互換性と政府調達からの要請</li>
+<li>Ruby アソシエーション活動により，標準規格書などを</li>
+<li>今後は</li>
+<li>基本性能を向上</li>
+<li>競争と協調により向上し続けている</li>
+<li>機能強化</li>
+<li>M17N / Enemuration / etc&hellip;</li>
+<li>Name Space / Open Class</li>
+<li>アプリケーション</li>
+<li>Web 生産性 / スケーラビリティ</li>
+<li>スケーラビリティ</li>
+<li>大量データ・分散並列・大量マシン</li>
+<li>楽天では</li>
+<li>Huge Data/Access</li>
+<li>ROMA
+
+<ul>
+<li>分散 Hash</li>
+<li>数台に分散して保存する</li>
+<li>ホットスケール</li>
+<li>環状に並んでいて，追加されるとどこかに INSERT される</li>
+<li>フェイルオーバ</li>
+<li>消えても環状が元に戻る</li>
+<li>永続化</li>
+<li>消えない</li>
+</ul></li>
+<li>fairy
+
+<ul>
+<li>スケーラビリティがある</li>
+<li>Ruby フレンドリー</li>
+</ul></li>
+<li>未来へのアイデア</li>
+<li>よりよいプロファイラ</li>
+<li>イメージベースIDE</li>
+<li>Actor Model Programming</li>
+<li>Erlang</li>
+</ul></li>
+<li>まとめ
+
+<ul>
+<li>梁山泊ができてきて，新しい技術が生まれつつある</li>
+</ul></li>
+<li>質疑応答
+
+<ul>
+<li>MagLev を意識しすぎている？</li>
+<li>Smalltalk 陣営から出てきた</li>
+<li>Ruby 1.8 の 60 倍速いと言われた</li>
+<li>省電力実装への考えは？</li>
+<li>Matz さんは No idea</li>
+<li>MVM が流行ってるね</li>
+<li>CRuby にはいらないんじゃね？</li>
+<li>Google Summer of Code には？</li>
+<li>RubyCentral にて</li>
+<li>RubyAssociation では検討を始めたばかり</li>
+<li>ROMA/Fairy の実装は？</li>
+<li>Pure Ruby でのちのち C 化かな？</li>
+<li>Ruby を拡張する予定はいまのところない</li>
+<li>Matz 日記が更新されないのは？</li>
+<li>言い訳タイム</li>
+<li>上の人間に Java じゃなくて Ruby がいいのか？</li>
+<li>作者の性格がいいから？(ぉぃ)</li>
+<li>生産性にはプログラマの気分に依存する
+
+<ul>
+<li>Ruby をキメると気分がいい -&gt; 生産性が上がる</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>##Ruby M17N</p>
+
+<ul>
+<li>CSI 方式を採用
+
+<ul>
+<li>一般的にはUCS Nomalization 方式</li>
+<li>内部表現は 1 つ</li>
+<li>byte-code</li>
+<li>内部に特別なエンコーディングはない</li>
+<li>主に３つ</li>
+<li>ASCII Compatible</li>
+<li>EUC-JP / UTF-8 / Shift_JIS / etc&hellip;.</li>
+<li>ASCII-8BIT</li>
+<li>ASCII Incompatible</li>
+<li>Dummy</li>
+<li>名前は知ってるが中身を知らない</li>
+<li>$KCODE は廃止</li>
+<li>String の変化</li>
+<li>1.8 -&gt; Byte String</li>
+<li>1.9 -&gt; Byte String with encoding</li>
+<li>文字リテラル</li>
+<li>?a -&gt; 97 (Fixnum)    : 1.8</li>
+<li>?a -&gt; &ldquo;a&rdquo; (US-ASCII) : 1.9</li>
+<li>String#[] -&gt; 1.9 から文字が返るようになった</li>
+<li>String#length</li>
+<li>length   : &ldquo;あいう&rdquo; -&gt; 3</li>
+<li>bytesize : &ldquo;あいう&rdquo; =&gt; 6</li>
+<li>String#each_byte/char/line</li>
+<li>バイト列が一致していても，Encoding がことなれば違う文字</li>
+<li>バイト列処理と文字列処理をちゃんと使い分ける</li>
+<li>Magic Comment</li>
+<li>script encoding の決定など</li>
+<li>入出力に Encoding が多岐にわたって導入されている</li>
+</ul></li>
+<li>独自の変換モジュール
+
+<ul>
+<li>内部実装の話</li>
+</ul></li>
+<li>まとめ
+
+<ul>
+<li>Encoding を意識して，それに独立したコードを書くよう心がけよう</li>
+<li>Magic Comment を書こう</li>
+</ul></li>
+<li>質疑応答
+
+<ul>
+<li>cygwin などは？</li>
+<li>使えない場合は報告してください</li>
+<li>どう Encoding を意識すれば？</li>
+<li>バイト列と文字列のマッチ</li>
+<li>K オプションをつけて，動いてたらそれを Magic Comment をつける</li>
+<li>RDoc に Magic Comment が出る</li>
+<li>RDoc を直せばいいんじゃない？ By Martin さん</li>
+<li>RegExp で違う Encoding のときは？</li>
+<li>両方を合わせるべき</li>
+<li>自動変換については？</li>
+<li>自動ではなくて，ユーザが自らやるべきではないか</li>
+<li>ライブラリで文字列リテラルを使う場合には？</li>
+<li>UTF-8 に書いて，受け取った Encoding で返すように書くとか</li>
+<li>濁点問題は？</li>
+<li>(結論出た？)</li>
+<li>パフォーマンスについては？</li>
+<li>そこそこあるので，まあまあでしょう．</li>
+<li>極端に遅いわけではない．</li>
+<li>仕様は決まった？</li>
+<li>コアな部分はほとんど決まった．</li>
+<li>外部側はまだ積み残しがある．</li>
+<li>今日の話の資料は？</li>
+<li>まとめてどこかにアップするそうな</li>
+</ul></li>
+</ul>
+
+<p>##PC のバッテリーの都合でログなし orz</p>
+
+<p>##Lightning Talk
+###Java 2 Ruby についてどうしても言いたいことがある</p>
+
+<ul>
+<li>Ruby で書く != Ruby で考える</li>
+<li>歴史を繰り返さないように</li>
+<li>Java が初級者向け？</li>
+<li>Ruby が上級者向け？</li>
+<li>数よりも成果物を重視しようぜ</li>
+<li>大規模自慢は愚の骨頂</li>
+<li>ちゃんと考えようぜ</li>
+<li>dRuby and Security</li>
+<li>dRuby を不特定多数へ向けて公開するのはやめよう</li>
+</ul>
+
+<p>###RubyとODEでピタゴラ装置</p>
+
+<ul>
+<li>インパクトあるプレゼンメソッド．今後増えるかも？</li>
+</ul>
+
+<p>###初心者は Enumerator の夢を見るか</p>
+
+<ul>
+<li>Enumerator を使おう</li>
+<li>each_slice(n), each_cons(2) など使おうぜ</li>
+</ul>
+
+<p>###Folk Programming with Ruby</p>
+
+<ul>
+<li>Folk = 趣味で気軽に</li>
+</ul>
+
+<p>###Ruby.pm</p>
+
+<ul>
+<li>Perl から Ruby の CAPI を呼び出す</li>
+<li>でもあんまり使えない</li>
+</ul>
+
+<p>###toRuby で見つけた Rubyist 人生再出発</p>
+
+<ul>
+<li>toRuby = Tochigi Ruby</li>
+<li>気持ち重要．</li>
+</ul>
+
+<p>###Ruby 1.9 on Rails 2.1による新時代DBプログラミング</p>
+
+<ul>
+<li>古代 = PHP</li>
+<li>近代 = O/R Mapper</li>
+<li>現代 = ActiveRecord</li>
+<li>AR だけではなんともならない</li>
+<li>RDBMS 操作 != SQLを書く</li>
+<li>named_scope</li>
+<li>集合演算というイメージを持つといいかも</li>
+<li>ベン図</li>
+</ul>
+
+<p>###テストベースコードリーディングのすすめ</p>
+
+<ul>
+<li>テストカバレッジ測定ツールで，カバーされていない部分を探す</li>
+<li>是非 commit してください</li>
+</ul>
+
+<p>###A Jail Web Development</p>
+
+<ul>
+<li>ブラウザの問題でのXSSに気をつけないといけない</li>
+<li>wafful, wafful</li>
+</ul>
+
+<p>###工業デザイン</p>
+
+<ul>
+<li>想像と心の目で感じなければならない，弁士メソッド</li>
+</ul>
+
+<p>##初日まとめ</p>
+
+<ul>
+<li>JRuby や Rubinius など，互いにいい部分を生かそうというのが良い感じなのが，Ruby のいいところではないでしょうか．</li>
+<li>やっぱり LT は勢いとパワーがあって熱いね．こういうプレゼンやってみたい．</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/06/24/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/06/23/ruby-rails-RubyKaigi2008/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/06/23/ruby-rails-RubyKaigi2008/">RubyKaigi2008に参加してきました．</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/06/26/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">RubyKaigi2008に参加してきた＃２</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/06/26/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

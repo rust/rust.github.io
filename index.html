@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/06/01/move-to-medium">Mediumに移転してみる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/06/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hugo便利ではあるんですが、いろいろ運用面倒になってきたので、しばらくはMediumに移ってにみようと思います。
+運用の何が面倒って、記事を作成するには、
+ Markdownで記事を書く (esa.io) プレビューして確認 リポジトリにコミット Hugoのビルド (CI) S3にアップする (CI)  という手順を踏まないといけないんですが、一番面倒なのはプレビューのところ。まあ仕方ないとはいえ、どうせなら何らかのサービス使ってみたいなと思っていたので、いま話題（遅い）の Medium にしました。
+会社のHPも Mediumにした んで、記事も共有できれば良いなという思惑もあります。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort">技術力は才能？努力？〜「超一流になるのは才能か努力か?」</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/05/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  優秀な若者にオススメされて読んでみたんですが、常々思っていたことがちゃんと学問として検証されていたようで、ものすごく腑に落ちたので紹介してみます。
+ 超一流になるのは才能か努力か?  著者: アンダース エリクソン, ロバート プール
+出版日: 2016-07-29
+出版社/メーカー: 文藝春秋
+カテゴリ: Book
+  昔から「いわゆる生まれ持った才能はない」と思っていたんですが、それを研究や実験を通じて解説されていて、しかもどうすれば能力を伸ばせるのかが書かれていて非常に興味深かったです。
+特に新卒エンジニアの採用をしていると、いまの能力で評価するのか将来の伸び率で評価するのか難しい部分があるんですが、個人的には「技術力を伸ばすことはできる」と考えているので、どちらかと言うとカルチャーマッチのほうを重視したりしてました。
+とは言え、じゃあどうやって伸ばすのかと言われると答えられないんですよね。自分がどうやって成長してきたのかはある程度わかっているけど、それを他人に適用できるのかと言われれば無理だと断言できる。なぜなら趣味嗜好も違うだろうし、家庭や生育してきた環境も違う。前提条件が違うのに方法論だけ適用してもうまくいかないので、そういう相談をされたときにはあまり自分のことを話さないようにしてました。
+上記の本にはその方法として例えば、
+ 具体的な目標を立ててそれ目指して練習する できる人に適切なフィードバックを得られるような環境でやる コンフォートゾーン（居心地ところ）から外に出て練習する  と書かれています。3番目なんて僕の好きな情熱プログラマーの「一番の下手くそでいよう」というのに近いかなと、自分の中にスッと入ってきました。
+先日のポエムにも書いたんですが、「限界的練習で技術力は伸ばせる」という前提なら、いろいろ採用の仕方も変わってくるなと改めて考えさせられました。もちろん今度は教育が大変になるんですが。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/03/02/importance-to-make-engineer-carrer">キャリア形成の重要性〜『その「エンジニア採用」が不幸を生む』を読んだ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/05/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ちょっと前に発売されたエンジニア採用に関する本を読んだのでその感想。
+ その「エンジニア採用」が不幸を生む ~良い人材を見つけ、活躍してもらうには何が必要か?  著者: 正道寺 雅信
+出版日: 2016-12-07
+出版社/メーカー: 技術評論社
+カテゴリ: Book
+  内容的にはこれからエンジニアの採用を始めよう・強化しようと考えている経営者に読んでほしい書籍です。どういった人を採用すべきかがわからないと言う話はよく聞くんですが、その最初の一歩としてはまとまって書かれています。
+エンジニア採用でなにが不幸を招くのか いろいろ問題があると思うんですが、例えばこれから採用しようと考えている会社側の問題としては、経営者の理解が挙げられます。何のために採用するのか、何をやってもらいたいのかなどは整理されているか。また会社制度・文化とのマッチングは大丈夫か。これは前にも書いたんですが、会社と合うかどうかって非常に重要です。さらに日本は制度上簡単に解雇できないので、もし事業がなくなってしまったら別の仕事にアサインすることになりますが、そこまで考えて採用しているケースはほぼないんじゃないでしょうか。
+一方で既にエンジニアがいる組織では、待遇の問題というのが発生しがちです。新しくエンジニアを採用しようとすると、既存エンジニアとの給与バランスが悪くなってしまう可能性があります。かと言って現状の合わせて採用しようとすると期待するような技術力がある人が採用できないかもしれません。ここも難しい問題です。
+またエンジニア採用には戦略が重要で、ここをしっかり考えないと採用はうまく行きません。メディア露出もそうですが、どんな人が欲しいのか、技術力だけではなく人柄などはどうか。逆に技術力だけで採用するか、その場合は既存組織との住み分けなり融合はどうするのかなど、採用する前に考えて決めておくべき事項は多いです。このあたりを考えずに採用してしまうと、すぐに退職してしまったり、会社側は期待した結果を出してくれないと言う不満を覚えてしまうことになります。
+採用にうまくいってもそれで安心はできません。エンジニアのキャリアプランに王道がないからです。一昔前は、エンジニア(PG/SE)からマネージャー(PM)になるという話をよく聞きましたが、いまはエンジニアと言う職種も細分化されているので、そう簡単にはいきません。
+またよくある話なのが、「マネージャーになったけど現場で仕事したいから転職した」パターンです。どの会社で話聞いてもそういう人が一定数いて、現場でガリガリ開発してるようです。そしてそんな会社の悩みが「マネージャーがいない」というのもある意味納得です。そりゃ「マネージャーじゃなく現場で仕事したい人」を採用してればマネージャーいなくなるよね、と言うのはある意味当たり前の話ですよね。
+そうなるとマネージメントできそうな人にマネージャーの役割を担ってもらうことになるんですが、そうすると現場に戻りたくなって転職するという悪循環が発生してしまいます。このあたりもエンジニアのキャリアプランを会社として考えておかないと、エンジニア採用の長期的な解決になりません。
+と言うような話がざっとまとまってたので、これからエンジニア採用を始める方や、担当者がいなくて困ってるという方は一度読んでみてはいかがでしょうか。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer">優秀なエンジニアとは？採用の難しさ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/03/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  そもそも優秀なエンジニアってどういう人なんでしょうね。採用やってると、いろんな優秀さが見れるんですが、かと言ってそれを測る尺度をたくさん用意するのは運用上不可能です。特に技術やビジネスなど状況が毎週のように変わるので、下手すると尺度もそれと同じ頻度で変更する必要があります。このあたりで失敗してしまうと、いろいろ不都合が生じてしまうこともあるので、ちゃんとした尺度を持っておかないと後で辛いことになります。
+一方で「ある意味、優秀なエンジニアならなんでもできる」という話も聞きます。これも間違ってるわけではないんですが、「なんでもできる」ということと「やってもらおうと思っていることをやりたいと思っている」という話は別です。ここも間違いやすいんですが、確かに「一般的な尺度で言うところの優秀な人間」であれば、なんでもできるかもしれないんですが、そのことを見極める方がもっと大変じゃないかなと思ってます。
+たとえ見極められたとしても、優秀さというのが決まっているパラメータで、それ以上成長しないのであればいいんですが、まあ普通考えると仕事をしているうちに伸びていく可能性が高い。そうなると今度は伸び率とか到達地点みたいなのも考える必要があって、さらに難しくなります。「この人はいま技術力高いけど、このまま高いままでいられるのか？」などという見極めは、いくら面接で頑張っても無理があるので、銀の弾丸はやはりありません。
+また技術力がある人を採用したとしても、会社の文化と合わないと居心地が悪くなってしまい長続きしません。例えばエンジニアは一般的に朝に弱いと言われてますが、朝9時から始まる会社でフレックスはNGみたいな文化だと入ってから苦労するだろうし、やたらと社内イベントがあるのも辛いという話もあるでしょう。これらは良し悪しではなく好き嫌いなので、社内文化との合うかどうかということも重要な要素です。
+そんなこんなで優秀なエンジニアの採用は非常に難しいんですが、じゃあどうするかというと、一つはそもそもエンジニアの採用で技術力をそこまで重視しないという方法を取ることです。全く考慮しないのはさすがにナンセンスですが、技術力だけを見ないで成長力や適応力、また社内文化のとのカルチャーマッチを重視する方法です。個人的には技術力よりもカルチャーマッチのほうがなんともならないという気がしているので、ここをミスるとお互いが不幸になります。
+もう一つは優秀なエンジニアが入ってくれるように社内文化を変えることです。フレックスを導入したりリモート作業できるようにしたり、社内イベントなどは任意性にしたりと、変えられるところを変えていって受け入れられるようにする方法があります。
+ただこちらは既存文化からの反発が大きくなってしまうので、普通はやらないほうが良いでしょう。エンジニアだけがいれば会社が成り立つのであればいいんですが、普通はそうではなりません。総務・人事・経理など、いくらIT化しても面倒なことには変わりません。そんなことを自らすすんでやってくれるエンジニアなんてほとんどいないだろうし、いたとしても「俺が考える最強の社内システム」を作り出して自滅するのがオチです。
+個人的にはこの2つの方法を軸に、いろいろ試行錯誤しながら社内体制を徐々に変更しつつ、成長力やカルチャーマッチを考慮した人材を採用するのが良いのではないかと思っています。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/03/02/shift-authy">ShiftとAuthyが便利</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/03/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いろんな会社さんと仕事をしていると、複数のG Suiteを使わないといけなくなるんですが、まあ普通にGoogle Chromeのタブで使い分けていました。ただこれだとタブを開かないと見れないし、そのアカウントに対応するカレンダーとかGoogle Driveとかを開くのも一苦労でしたんですが、そこで見つけたのがShiftという、複数のG SuiteやGoogle Accountを管理できるアプリ。
+なにが便利って、ElectronなんですがWindows版があることですね。某MMORPGしないといけないので、Windowsは必須なんですが、そこで利用できるというのが大きなポイントです。Rebuild.fmでも紹介されてたんですが、複数アカウント持ちには便利ですね。
+あと最近Google AuthenticatorからAuthyに変えました。
+いまは業務用と個人用にスマホを2台持ってるんですが、2FAをどちらでもできたらなと思っていたところにAuthyを見つけました。Authyの便利なところはChrome Extensionがあるところで、いちいちスマホ起動しなくてもいいという点。ただこのように複数端末で使えるのでセキュリティ的に弱くなる可能性はありますね。ご利用は計画的にしないといけません :smile:
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop">jpmobileにCircleCIとonkcopを入れた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/02/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  最初に jpmobile の開発を始めてからもう7年も経つのかと感慨深い今日このごろ。ここしばらくは Rails と Ruby のバージョンアップのたびにいろいろ diff 見て回ったりテスト回したりする日々ですが、手元ではテスト回せるけどまあ割りと準備が必要なんですよね。
+と言う訳ではないですが、CircleCIで動くようにいろいろ頑張ってみました。
+苦労したことは特に無いんですが、
+ rakeタスクの中で rails new して `bundle exec rake test` なんてやってるので環境変数リセットする SMTPサーバ必須だったので、mailtrap.io使うように変更  などが試行錯誤ポイントでしょうか。特にSMTPサーバはCircleCI上でなんとかしようとしたんですが、頑張ってできたとしてもなんか違う感があったので、Webサービスでなんとかしました。
+あとはonkさん謹製のonkcopをベースにrubocopも適用しました。jpmobileが GitHub に来たのが2006年、その前は rubyforge で、開発開始から10年以上も経っているので、やはり古い記法とかが多い。CircleCI化するときにいっその事入れてしまうかと導入してみました。
+その他、READMEをmarkdown化してみたりなど、jpmobileも自動化、近代化できたかな？というところで、引き続きよろしくお願いします🙇
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/01/23/cookpad-tech-conf-2017">Cookpad TechConf 2017に参加してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  応募したら当選したのでCookpad TechConf 2017に行ってきました。
+いやー、一般参加者は気楽でいいですねー。みなさんの発表を聞きながら作業とかもできて、いろいろ捗りました。
+それにしてもクックパッドってタレントが豊富だなと改めて感心しました。16年入社の新卒が3名も発表していたり、基盤的なところだけではなく、サービス開発やデザインの話があったりと、幅広いトークがあって非常に楽しめました。 （という枠組みを一昨年から去年にかけて頑張って作ったかいがあったというものです :)）
+また来年も開催してほしいので、アンケート出してない方はバシバシ出しておきましょう。
+アンケートはこちら！ https://t.co/TtZcxvuTFX #CookpadTechconf
+&mdash; Cookpad Tech Life (@cookpad_tech) January 21, 2017  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/01/20/basic-theory-of-management">待遇よりも重要なことはあるか - マネジメントの基礎理論を読んだ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ずっと昔に買って読んでなかったマネジメントの基礎理論という本を読んだんですが、部下を成長させるにはどうするべきかなど、いわゆるマネジメントの方法論などが、マネジメント理論に基づいて解説されていて、いろいろ腹落ちして良い本でした。
+ 無理・無意味から職場を救うマネジメントの基礎理論 18人の巨匠に学ぶ組織がイキイキする上下関係のつくり方  著者: 海老原嗣生, 守島基博(解説)
+出版日: 2015-03-31
+出版社/メーカー: プレジデント社
+カテゴリ: Book
+  例えばハーズバーグの動機づけ・衛生理論は、いままで自分が感じてきたことが理論としてまとまってました。特に、
+ 衛生要因というのは、それがないと不満が高まるが、それがいくらたくさんあったとしても満足や納得にはつながらない要素です。
+たとえば、給与が高い、残業が少ない、休日が多い、会社のネームバリューがある、快適なオフィスなどです。いずれも仕事の中身とは関係ありません。
+ と言うのは、採用をする際にいろいろ考えさせられたことだったので、ここをしっかり分けて理論化されているのは納得感がありました。
+もちろん衛生要因が不要というわけではないので、十分な待遇がなければいけませんが、ただ待遇が良いからと言って仕事はなんでもいいのかというとそうではない。高待遇に引っ張られて転職に失敗してた人の話はたまに聞きますが、やはり「動機づけ要因」があるかどうかを見極めることが一番重要だし、採用する側もこの点を用意できるかどうかが重要だなと、改めて感じました。
+また、
+ モチベーションサイクルをつくることで、最終的には会社が儲かるという当たり前のことをマネジャーに理解徹底させていない
+仕組みはあってもマネジメントの現場でそれをどうやって実践するかが教えられていない
+ など、マネージャーの育成についても書かれていて、「あのとき言いたかったことはこれだ！」という気持ちになったりなど、もっと早く読んでおけばよかったと後悔しています。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/01/12/hobby-pc-history">ホピーパソコン興亡史を読んだ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  頂いた本を少しずつ読み進めてますが、とは言えなかなか消化完了は遠い未来な予感がします。
+ ホビーパソコン興亡史 国産パソコンシェア争奪30年の歴史  著者: 前田尋之
+出版日: 2014-09-26
+出版社/メーカー: オークラ出版
+カテゴリ: Book
+  というわけでホビーパソコン興亡史を読みましたが、いやー懐かしいですね。僕が初めてパソコンに出会ったのは、近所の西友にあったパソコン売り場。そこで見たYsのデモは衝撃的でした。ただパソコンとか買えるほど裕福ではなかったので、本屋でBASICの本を買って方眼紙に書き込み、店のデモ機でプログラム入力してたのを思い出します。店員さんとも仲良くなって、むしろ面白がられてましたね。
+そんな中、初めて買ったパソコン雑誌がOh!Xで、思えばここから王道から外れていくことになるんですが、最初はMSX→MSX2+と割と平凡に進みます。その後やっとX68000 EXPERT II→X68030と流れて、いまがある感じですかね。
+というところで思い立ってこういうところを見てノスタルジックな気持ちになってきました。
+惜しむらくはEPSONの98互換機の話がなかったことですかね。このあたりは版権とかいろいろ問題ありそうだけど、できれば書いてほしかったところ。
+とは言え、昔パソコン少年だったおっさんであればものすごくノスタルジック気持ちになれるので、是非読んでみてください。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2017/01/04/hackers-and-painters">ハッカーと画家を読んで</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  読みたいと思いつつ手が出なかったのがこれ。実はなんか周りのエモい人はみんな読んでいるので、逆に敬遠していたやつです。
+ ハッカーと画家 コンピュータ時代の創造者たち  著者: ポール グレアム
+出版日: 2005-01
+出版社/メーカー: オーム社
+カテゴリ: Book
+  誕生日とかのあれでいただいたので実際に読んでみると、内容はやはりエモい人が好きそうなネタが満載で、非常に楽しく読めました。やっぱり全てはLispですよね。
+周りと同じじゃダメで、その上を行くにはどうすればいいのか。エンジニアとしてさらに成長して飛躍するのにはどうすればいいのか。そもそもエンジニアと言う職種がいままでと同じままでいられるのだろうかなど、いろんなことを考えながら読み進められました。
+いまはエンジニアと言う職種がある一定層しかなれなかった時代から変わって、むしろ一般的な職業の一つになりつつある気がしています。まあ、どこまでをエンジニアだと言うかという問題はあるかもしれませんが、それでもエンジニアの需要は今後も増え続けるだろうし、そうすると供給が止まることもないでしょう。
+そういう時代でも、じゃあ全員に「ハッカーであれ」みたいなことを言って良いのかとは思わず、かと言ってそういう意識を持っていないと将来辛くなるので持ってて欲しいとも思う。特にこれからの時代、職業の一つとしてエンジニア職が選択されるようになったとき、どうすればみんなが悲しい思いをしなくてもすむんだろうかなどと考えることが多くなってきました。かと言って答えがあるわけではないので、これからいろいろ探りつつ仕事ができればなと思っているところです。
+他にもいろいろ示唆に富んでいる内容だったんですが、若干時代を感じることがありました。某所でも言われていたけど、まあ時代の流れが早すぎりので致し方ないのかなと言う気がしてます。
+というわけで、若い人に読めとは言いませんが、一度は読んでみてもいい本ではないでしょうか（ちょっと雑なまとめ）。
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <i class="fa fa-chevron-left"></i>
+  
+  <span>&nbsp;1 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/2/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

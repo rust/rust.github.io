@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/01/20/debian-lsyncd-lsyncd-rsync-on-Debian-lenny/">lsyncd &#43; rsync on Debian(lenny) でらくらく同期</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  やはり Debian ですよね，いろいろと．
+と言うわけで，以前は DRBD Dual Primary + GFS2 と言う構成で試していたんですが，起動や停止手順を誤るとプロセスが完全に死んじゃってシステム終了すらできなくなったりしたので，お気軽な方の検証を．
+参考 : [http://d.hatena.ne.jp/wadap/20090913/1252839223]
+下準備 いつも通り IP アドレスは手動で標準システムのみのものを用意します．そして
+# aptitude install sudo vim lv openssh-server # update-alternatives --config editor # visudo # addgroup wheel # adduser user wheel # logout  こんな感じのを2つ用意します．virt-clone を使ったやり方はhttp://d.hatena.ne.jp/conceal-rs/20100119/1263871161を参考に．今回は普通にインストールしました．
+slave 側の準備 $ sudo adduser rsyncd $ sudo mkdir /opt/folder $ sudo chmod 777 /opt/folder $ sudo chown rsyncd.rsyncd /opt/folder $ sudo vim /etc/rsyncd.conf  uid = rsyncd gid = rsyncd log file = /var/log/rsyncd.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/01/20/debian-lsyncd-lsyncd-rsync-on-Debian-lenny/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/01/19/kvs-kumofs-kumofs-KVM-Debian-lenny/">kumofs を KVM 上の Debian(lenny) にインストールして動かすまで</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  KVM on Debian(lenny) を使ったサーバを構築してみます．
+システムインストール 最初は virt-manager などで VM を作成．ホスト名は kumofs で標準システムのみに．
+下準備 まずは基本セットをインストール
+$ su - # aptitude install sudo vim lv openssh-server # update-alternatives --config editor There are 4 alternatives which provide `editor'. Selection Alternative ----------------------------------------------- 1 /bin/ed *+ 2 /bin/nano 3 /usr/bin/vim.tiny 4 /usr/bin/vim.basic Press enter to keep the default[*], or type selection number: 4 Using '/usr/bin/vim.basic' to provide 'editor'. # visudo # addgroup wheel # adduser user wheel # logout  日本語ドキュメントを見ると下記が必要らしいのでインストールします．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/01/19/kvs-kumofs-kumofs-KVM-Debian-lenny/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/01/18/ruby-rails-thin-on-Debian/">thin の自動起動スクリプト on Debian</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  サーバを再起動したときに，いちいち mongrel/thin を立ち上げないといけないのがどうもなーと思っていたので，さっと書いてみました．
+まずは下記ファイルを /etc/init.d/webapp とかに保存します．
+#!/usr/bin/env bash ### BEGIN INIT INFO # Provides: webapp # Required-Start: $local_fs $remote_fs $network $syslog # Required-Stop: $local_fs $remote_fs $network $syslog # Default-Start: 2 3 4 5 # Default-Stop: 0 1 6 # Short-Description: Start/stop thin application server ### END INIT INFO PATH=$PATH:/opt/ruby-enterprise/bin BASEDIR=/var/repos/webapp CURRENT_NAME=$BASEDIR/current THIN_CONFIG=$BASEDIR/shared/config/thin.yml case $1 in start) thin -c $CURRENT_NAME -C $THIN_CONFIG start ;; stop) thin -c $CURRENT_NAME -C $THIN_CONFIG stop ;; restart) thin -c $CURRENT_NAME -C $THIN_CONFIG stop thin -c $CURRENT_NAME -C $THIN_CONFIG start ;; *) echo &quot;Usage: webapp (start|stop|restart)&quot; ;; esac  そしておもむろに
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/01/18/ruby-rails-thin-on-Debian/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/01/15/rails-ruby-jpmobile-Asakusa-rb-jpmobile-01/">浅草jpmobile会議01</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  永和で開催  M17N についてあれこれするという話です  そういえば名刺とか持ってくるの忘れたな 足元の悪い中25名のほどの参加  &ldquo;なりたいアタシ&rdquo;と&rdquo;イマのアタシ&rdquo;  設楽さん@えにしテック  現在と未来について   そもそもの企て  RubyConf の時  Ruby の m17n でケータイ絵文字を扱えるようにするヒントを nurse さんからいただこうよと言うのが今回の発端  My Goal  いま 未来 この場  悩み事マップ  プロジェクト テスト 絵文字 フルスタックすぎ 細かい事  イマのアタシ  Ruby 1.9 で動かない 文字コード変換自体は汎用のハズ メール処理でも使いたい フィルタのコードが汚い nkf を使うために必死 バグも [gh-17] せっかくなので 1.9 で キレイになりたい  エンコーディング  いろいろありすぎ  フルスタック過ぎる  Rails が上がると動かなくなる Rails に依存しすぎている 壊れる部分 テンプレート切り替え セッション など  なりたいアタシ  わける jpmobile-rack jpmobile-rails 絵文字変換エンジン 分けたときに ディレクトリは？  gem とか？ bundler を使う？  リポジトリの切り分けは？ 現行バージョンとの互換性は？  スマートフォンの対応  時々要望が上がって議論されるのだが キャリアと直行する 使用や命名が悩ましい  iPhone / Android だけが特別扱い？  emobile は作った User-Agent に規則性がないので，テーブルが汚い もしかして，テンプレート切り替えたいだけ？  Jpmobile::Mobile のクラス階層  機能の上書きには便利 動作としてはいいのだが，クラス継承がちょっと  テンプレート切り替え  ファイル目の命名規則がよくない かなり無理してパッチを当てている Rails と仲が悪い 分離した方が良い？  テスト  Test::Unit / RSpec が混在 粒度の違うテストが混在 単体テストが Rails に依存 どうするか 単体テスト -&gt; Rack だけでテストする 統合テスト -&gt; 空の Rails アプリで jpmobile の API を叩く 統合テスト -&gt;テスト用の Rails app を外側から叩く  テーブル  ハードコードされている アップデートスクリプトがバラバラ テーブルを差し替えられるようにする機構を入れるとか  この場で出来ること  要らない機能が実は結構ある？ Issues を整理したい Collaboators 募集 分割するとしてそのレイアウトを議論したい ドキュメントの整理 tag 切ってもいい？ 気になるバグ   絵文字まわり  Ruby 1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/01/15/rails-ruby-jpmobile-Asakusa-rb-jpmobile-01/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/01/04/ruby-rails-tokyu-rb-2009-2010/">2009年のふりかえりと2010年を迎えて</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  2009年は割と激動の年だった気がします．仕事，プライベート含めて．ちょっとまとめてみます．
+まずはふりかえり 世の中の狭さを実感した去年の末 一昨年のことなんですが，やっぱもっとオープンソースに貢献できる環境がいいのかなぁと，急に思ったりなどとつぶやいて見たら，http://itpro.nikkeibp.co.jp/article/Watcher/20081111/318992/なんて記事の発端になったようで凄い焦りました．世の中狭いんだなーとか．貢献と言ってもいろいろあるというのを考えさせられました．
+仕事への関わり方を再認識 ある人との話で，「自分にはもっとできることがあるはず」と気付いたので，心新たに仕事に打ち込むことに．むしろ自分から環境を変えないと何事も打開しないんだなと感じたのでした．
+オープンソースへの貢献 jpmobile のコミッターになって，jpmobile 会議開催したりもしました．もともとは Tokyu.rb に来ていた @walf443 さんといろいろ話すようになって，「jpmobile のコミッターになるべきだ」とか言われてたんですが，「そうなると良いなー」とは思っていたものの，もう一つ進展しませんでした．
+そうこうするうちに仕事で使うような状況になり，Rails 2.3 対応版が出てこないので「ここは俺がやらないと」的に github を fork していろいろやってました．まあだいたい完成かなーと思ってたら本体が対応・・・・したと思いきや，ちゃんと動かない様子．どうしようか考えてたらメーリングリストとかでいろいろあってコミッターになりました．先行していろいろやっとくもんだなーとか思ったりもして，ブランチで開発していると Ruby会議で @darashi さんが来ると言うことで，急遽 jpmobile 会議やろうと思い立ちました．twitter でいろいろつぶやいてみたら懇親会でとりあえず集まろうとなりました．言ってみるもんだなーと．
+そして会議．「Rails 2.3対応どうしましょうか．あれでいいですかね．」と聞いてみると，すでにそのブランチを使っていると言う話に．じゃあもうマージしますね，と言うことでとうとう jpmobile の人となりました．意味不明ですがそんな感じです．
+Ruby 会議2009に参加 コミュニティアピールでは漫才の難しさを再認識しました．まあそれだけではないのですが，まだまだ見知らぬ人が多かったので，あまりいろんな人とは話できなかったのが心残り．2010 はもっと積極的に行きたい．
+TokyuRuby 会議の開催 Tokyu.rb は当初は飲み会メインとか肉メインじゃありませんでした．いや，ホントに．でもいつの間にか「Rubyist 達の憩いの場」として認知されてきたのですが，そろそろ LT 大会とかやりたいねー，と言うことで TokyuRuby 会議をやろうぜーと．ただ名前的に問題になったりして紆余曲折がいろいろとありました．有名な人に補足されるといろいろ大変だなーとか．
+で，当日は司会進行をさせていただきました．酒入った連中を誘導するのは楽しかったですね．こういう経験はあんまりできないので，次回も是非やってみたいです．
+筆頭エア社員に なんかそういうことになりました．まあ reply すぐ返すとか社員よりも会う機会が多いとかそういうところだと思うのですが．エアが取れる日が来るかどうかは未定です．こちらで取りたくても向こうでは取ってくれない可能性の方が大きい気もしますが．
+札幌 Ruby 会議02に参加 なんか流れ的に参加しなくては！という気分になったというのもあり，いろいろ頑張って行ってきました．jpmobile 会議02 が開催できたりとか，札幌の方々と交流が持てたり，あと各地の地域 Ruby 会議の方々ともお話しできたのが大きな成果でしょうか．
+Keep  この調子で頑張りたい．いつも通りとも言うけど． jpmobile 頑張ります＞＜ 筆頭は守りたい．エア的な意味で．  Problem  マイレージはホントに大事に使わないとダメだと再認識しました．  節約します．飲み会的に．  あまりコードを書けてない．  今年は手を動かすこと重視にしたいなー．   Try (2010年の目標)  もっと執筆活動したいなー  雑誌に書くとか本書くとか  オレオレサービスを早く本格化  いまは地味にやってます  関西凱旋とかしてみたいなー  誰も知らないだろうけど・・・・  自宅鯖で tdiary に移行する  ML115 の静穏化に着手中   まとめ 昨年は密度の高い年でした．ただ飲み会密度が高すぎたような気がするので，もう少し別方向に割り振りたいと思ってます．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/12/23/ruby-rails-Rails-46-Ruby/">Rails 勉強会＠東京 第46回と東京Ruby忘年会に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/12/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Rails 勉強会＠東京 第46回  遅れました そして8人  まとめ  Rack まわりは面白い  Rails のコード読むの楽しいですよねー  Ramaze とか Sinatra とか軽量フレームワークで GAE とかいいかもしれん 来年は RubyConf に行きたい  Ramaze  ActiveRecord / DataMapper など使える ERB / Haml とかも使える  デフォルトは Etanni  yhara さんの記事を参考にインストールなど  $ gem install ramaze   明示的に使うモデルとかコントローラを require しなければいけない require &lsquo;activerecord&rsquo; で ActiveRecord が使える Haml はどうよ  Ruby わかってるデザイナーなら使えるでしょう 使えないなら ERB も直接触れないから，結局プログラマがコーディングするからいいんじゃないか HTML が連想できない デザイナーに Rails の環境 / Git の使い方を提供しているから，大丈夫という話 DOM を意識して書ける人は Haml / Sass は大丈夫 プログラマが CSS や DOM の世界に乗り出していくのがキモチイイ  Ramaze は Rails と CGI の中間ぐらいでちょうど良い感じがする なぜ Sinatra じゃなくて Ramaze か  Sinatra はライブラリ集であってフレームワークじゃない 単なる Dispatcher Ramaze はフレームワーク CGI &lt; Sinatra &lt; Ramaze &lt; Rails PHP でやるようなことは Sinatra でやったりする  Rails はレスポンスを返すのに冗長すぎる感じがあるので Ramaze が良い気がする  でも Rails のは普通じゃない？ やっぱり Rails が大きく複雑なのが大変．Routing とか． Rails は REST が入ってきて link_to とかまどろっこしい   Rack  rails/lib/commands/server.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/12/23/ruby-rails-Rails-46-Ruby/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/12/08/jpmobile-rails-ruby-http-jp-rubyist-net-magazine-0028-JpMobile-title/">Rubyist Magazine - jpmobile &#43; Rails 2.3.4 で作る携帯サイト入門 【前編】での補足</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/12/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+   Rails 2.3.4 と書いてますが，2.3.5でも動作確認取れています．  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/12/06/ruby-sapporo-regionalrubykaigi-Ruby-02/">札幌Ruby会議02に行ってきた！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/12/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+   本編はこちら =&gt; [http://d.hatena.ne.jp/conceal-rs/20091206/1260069342]  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/12/05/ruby-rails-jpmobile-jpmobile-02-in/">jpmobile 会議02 in 札幌</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/12/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  突発的に開催されました！
+概要 札幌Ruby会議の前夜祭で開催されました．jpmobile 会議は飲み会の席上で開催されることが多いようです． ちなみに jpmobile 会議01 は Ruby会議2009の懇親会で開催されていました．
+参加者  @darashi さん @conceal_rs  まとめ  Iphone / Android クラスを作りましょう
+ ざっとやってみる予定  Jpmobile と Jpmobile::Rails に分けよう
+ Jpmobile は Rack でできる部分のみ ざっとやってみる予定 Sinatra で使えるようにできれば Jpmobile::Rails は ActionController べったりな部分のみ セッション回り ビュー切り替え でも書き換えすぎてあまり良い感じではない  早めに Rails 3 でやってみて，ダメそう(書き換え多そう)なら文句を言うべきなんじゃないか  わりと簡単にできそうではある  gemcutter
+ バージョン切るかどうか 切るなら gemcutter になるなー gemspec がかなり古いので，いろいろ大変かも  Issue Tracker
+ github に移しましょう  ホームページ
+ これも github に移しましょう  テストとかどうすべきか
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/12/05/ruby-rails-jpmobile-jpmobile-02-in/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/12/04/ruby-rails-Rails/">トークセッション「中と外から見た Rails」に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/12/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  エア社員としては参加しないわけには行かないので雨の中行ってきました． 12&frasl;3(木) 池袋ジュンク堂本店にて いつもの Tokyu.rb とか Asakusa.rb とか Rails勉強会＠東京とかの人が多かった 司会はオーム社の森田さん 登場人物  前田さん 大場社長 松田さん   自己紹介  前田さん  NaCl の方  大場社長  世界の万葉の社長  松田さん  フリーエンジニア Head First Rails   AWDwR3の紹介  概要  ある程度まとまったアプリケーションを作って技術を身に付けることができる Ajaxまで含めた内容らしい  第3版で変わったこと  第3部 Rails の各コンポーネントを細かく解説 あまりない Rails 2.2.2 安定したバージョン 「いつも本が出ると新しいバージョンが出る」 国際化は「こんなんじゃ物足りない」 by @a_matsuda ActiveResource についての説明 ルーティングのテストが熱いらしい  レビューの感想  突っ込みすぎて Rails のバージョンが上がると役に立たない 表紙がすごい レールから離れて飛んでいってしまってる 電車が速そうになってる  話しているうちにほんの宣伝ではなくなってきている可能性  AWDwR3に見る開発スタイル DHH の Rails vs みんなの Rails  コラムに「Rails にこういうのないよね」的なことが書かれている Rails 1, 2, 3 になるにつれて，DHH だけのものじゃなくなってきた 「レールはみんなの心の中にある」@a_matsuda DHH の強いポリシー  参照整合性制約 外部キーを入れるとたいへんなことになる プラグインで対処できはする 最初は入れないで，本番に近づくにつれて入れていく感じ 「外部キーなしでやりましょう！」を言う機会にはなる  だが年配の方には・・・・  Rails 3 になれば，ActiveRecord 使わなければ マイグレーションによるデータ投入 migration でデータを投入しているが，DHH は良くないと書いて言っているらしい マスタ系はやっている 使わないアソシエーションを定義する？ 全部用意する必要はない @nay3  チーム内で使う関連だけを考えているほうがいいんじゃないか？  あとで書けばいいんじゃないの？ @nay3 @a_matsuda 複合主キー オブジェクト指向的に STI をよく使う  テーブルの中身が気になるなー @a_matsuda クラスの方が気になるんですよー @nay3 紹介を先取り  REST REST 率高い 一番影響を受けたのが Scaffold Rails 2.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/12/04/ruby-rails-Rails/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/12/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;13 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/14/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

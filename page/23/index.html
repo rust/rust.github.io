@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/11/2009/">新春座談会『このコンピュータ書がすごい！ 2009年版』</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ジュンク堂池袋店(PM19:00～) 高橋さん+雑誌編集者さん+書籍編集者さんx4 終わって7階うろついていたら，[id:onering]さんがいたのでしばらく本の実物眺めてました．  本のまとめは[id:onering]さんのhttp://d.hatena.ne.jp/onering/20090110/1231582043が詳しいのでそちらを参考に．
+以下，本とその軽い紹介．
+##2008&frasl;01 2007年のがほとんどだから飛ばす
+##2008&frasl;02
+ ふわふわ素材集  データがEPSで収録されているので便利  BEST SOFTWARE WRITING  著名な人達のエッセイなどを編集したもの  モダン・コンピューティングの歴史  1945-2001までの歴史を編纂した書籍  人の作りしモノ  写真集．上記と併せて読む  キーボード配列 QWERTY の謎  DOVRAKは嘘っぱちだという本？   ##2008&frasl;03
+ 関数型言語  プログラミング Gauche プログラミング Erlang 実践 Common Lisp 親子二代にわたる書籍  Googleを支える技術 はじめての初音ミクボーカロイド２オフィシャルガイドブック  お祭り騒ぎでしたね  DTM Super Beginners  初めて DTM する人向けの本  CMS として使う MovableType ガイドブック -  ##2008&frasl;04
+ ハイパフォーマンス Web サイト Beautiful Code 受託開発の極意 小飼弾のアルファギークに逢ってきた スーパーアジャイルな Web 開発  Seasor2の本  Built with Processing シンプリシティの法則  DBNの開発者の本．シンプルなものが受け入れられる理由など．  インタラクションデザインの教科書  ハックされることを前提に考えてデザインせよ  SUBJECT TO CHANGE  プロダクトは顧客の体験を向上させるための設計すべし  未来のモノのデザイン  人とシステムをまとめて大きなシステムとして考える  +GAINER  日本製物理デバイス制御ライブラリ  Making Things Talk ITの専門知識を素人に教える技 初めての設計をやり抜くための本 たった３秒パソコン術  ショートカット集   ##2008&frasl;05 だいたい紹介しているので飛ばす
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/11/2009/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/10/ruby-Redmine-CA-fingerprint/">RedmineでオレオレCAのfingerprintを登録するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Redmine ディレクトリの Owner が svn コマンドを実行しているようなので，そのユーザで
+% svn info https://ssl.hogehoge.com/svn/repos/path/to/foobar  とか実行しておきます．その際に fingerprint を permanent で登録すれば以後問題ありません．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/10/ruby-gem-2/">gem を作ってみる#2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://nubyonrails.com/articles/tutorial-publishing-rubygems-with-hoe
+次は hoe を使ってみます．内容は前回と同じものを．
+##必要パッケージのインストール
+% sudo gem install hoe  まあなぜか入ってたので，実際にはインストールしてません．
+##テンプレートの作成
+% sow map_by_method creating project map_by_method ... done, now go fix all occurrences of 'FIX' MapByMethod/README.txt:3:* FIX (url) MapByMethod/README.txt:7:FIX (describe your package) MapByMethod/README.txt:11:* FIX (list of features or problems) MapByMethod/README.txt:15: FIX (code sample of usage) MapByMethod/README.txt:19:* FIX (list of requirements) MapByMethod/README.txt:23:* FIX (sudo gem install, anything else) MapByMethod/README.txt:29:Copyright (c) 2009 FIX MapByMethod/Rakefile:9: # p.developer('FIX', 'FIX@example.com')  FIX と書いてある部分を編集しろってことらしいです．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/10/ruby-gem-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoCabinet-TokyoTyrant-Rails/">TokyoCabinet/TokyoTyrant を Rails で使う</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##インストール ###TokyoCabinet
+% wget http://tokyocabinet.sourceforge.net/tokyocabinet-1.3.27.tar.gz % tar zxvf tokyocabinet-1.3.27.tar.gz % cd tokyocabinet-1.3.27 % ./configure --prefix=/usr/local % make % make check % sudo make install  ###TokyoCabinet Ruby API
+% wget http://tokyocabinet.sourceforge.net/rubypkg/tokyocabinet-ruby-1.18.tar.gz % tar zxvf tokyocabinet-ruby-1.18.tar.gz % cd tokyocabinet-ruby-1.18 % ruby extconf.rb % make % sudo make install  ###TokyoTyrant
+% wget http://tokyocabinet.sourceforge.net/tyrantpkg/tokyotyrant-1.1.11.tar.gz % tar zxvf tokyotyrant-1.1.11.tar.gz % cd tokyotyrant-1.1.11 % ./configure --prefix=/usr/local % make % sudo make install  ###TokyoTyrant Ruby API
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoCabinet-TokyoTyrant-Rails/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoTyrant-Rails/">TokyoTyrantのレプリケーションとRailsでの利用</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##レプリケーションの設定 http://tokyocabinet.sourceforge.net/tyrantdoc/にある Replication の例をやってみる ###マスター側
+% mkdir ulog-1 % ttserver -port 1978 -ulog ulog-1 -sid 1 casket-1.tch  こちらは通常の設定ですが，1つ更新ログ(ulog)の部分が追加されています．前回は更新ログはファイルだと思って設定したんですが，実はディレクトリを指定するべきでした．これは MySQL でいうバイナリログ(binlog)に相当するものでしょうかね，中身見ると．
+###スレーブ側
+% mkdir ulog-2 % ttserver -port 1979 -ulog ulog-2 -sid 2 -mhost localhost -mport 1978 -rts 2.rts casket-2.tch  スレーブ側ではマスターを指定します．mhost がマスターのホスト名，mport がマスターのポート番号，rts がレプリケーションタイムスタンプファイルの指定です．
+###動作テスト
+% tcrmgr put -port 1978 localhost one first % tcrmgr put -port 1978 localhost two second % tcrmgr put -port 1978 localhost three third % tcrmgr mget -port 1978 localhost one two three one first two second three third % tcrmgr mget -port 1979 localhost one two three one first two second three third  確かにレプリケーションしています．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoTyrant-Rails/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/04/ruby-gem-1/">gem を作ってみる#1</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://drnicwilliams.com/2006/10/11/generating-new-gems/
+newgem を使った作法を学びます．
+##必要パッケージのインストール
+% sudo gem install rubigen % sudo gem install newgem  ##テンプレートの作成
+% newgem map_by_method  ##モジュールの作成 これから作るのは MapByMethod モジュールなので，lib/map_by_method.rb が最初に呼び出されます．
+ lib/map_by_method.rb  module MapByMethod VERSION = &quot;0.0.1&quot; def self.included(base) super base.module_eval &lt;&lt;-EOS def method_missing(method, *arg, &amp;block) super rescue NoMethodError error = $! begin re = /(map|collect|select|each|reject)_([\\w\\_]+\\??)/ if (match = method.to_s.match(re)) iterator, callmethod = match[1..2] return self.send(iterator){|item| item.send callmethod} end return self.map{|item| item.send method.to_s.singularize.to_sym} rescue NoMethodError nil end end EOS end end unless String.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/04/ruby-gem-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/03/ruby-rails-2009/">2009年の目標</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今年はいろんな意味で勝負の年だと思ってます．何の勝負かはよくわかりませんが，フィーリングで．そういう意味でいろいろ目標があります．
+##Tokyu.rb を飲み会以外で開催する まず一つ目は Tokyu.rb を飲み会以外で開催すること．時間と会場が結構厳しそうですが，なんとかやりたいところです．ただ，じゃあ何するんだよと言うことになるので，そこは考えどころ．90分ぐらいのネタがどっかにころがってないかなぁ．
+##Rails 2.x への移行 仕事上のあれですが，やらないとまずいので．
+##環境を変える 環境と言ってもいろんな意味合いがあるのですが，とにかく変えたいですね．
+##Web サービスを出す 今も動いて入るんですが，全く公にはしてません．できたらいいなー的な．
+##知識の向上 まだまだ浅く広く的な知識なので，さらに深く広くを目指していろいろ勉強なりセミナー参加なりしていきたいと思ってます．
+##他言語の習得 Ruby が好きで Ruby で仕事しているわけですが，ちゃんと他の LL 言語のことを知っておかないと向き・不向きや有利・不利なことなどがわからないといかんと思うので，他の言語の習得を目指したいと思ってます．簡単な Web サービス作れるくらいが目標．以下リスト．
+ Perl PHP Java Python Gauche C/C++  上3つはやったことあるけど，フレームワークは使ったことないし，Perl/PHP については OO 的な書き方をちゃんとしらないので，これも含めて． 最後の C/C++ は，やはり基本事項として使えるようにはなりたいですね．まずは Ruby 拡張ライブラリからかな．
+##多方面への進出 MySQL とか Debian とか．Web 系やってると，普通に必要だよね的な感じなので．
+##英語 実は要達成度合いとしては最も高いのが，英語．特に「聞く」「話す」方．海外のカンファレンスで普通に内容わかるようになりたいなと．
+##願望など 以下は達成可能性がかなり低いので，願望として書いておく．
+ 何かにスタッフとして参加する セミナーを開けるぐらいになってみる． 雑誌に記事を書く 某武勇伝に載る  う～ん，我ながら無理そうなのばかり・・・・まあ，願望なのでなんとなく精神で書いてみた．できたらいいなー的に．
+##まとめると う～ん，時間と特にマイルが足りないな・・・・orz．日頃から貯めておかないとな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/03/ruby-4/">拡張ライブラリチュートリアルをやってみる#4</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://d.hatena.ne.jp/conceal-rs/20081228/1230455688 http://d.hatena.ne.jp/conceal-rs/20081220/1229764452 http://d.hatena.ne.jp/conceal-rs/20081218/1229609673  ラッパーをいちいち手書きすると大変なので，Swig を使うやり方．
+##下準備 Swig 自体のインストール
+% sudo apt-get install swig  ##整数の足し算 最初にやった例を，Swig でやってみる．
+まずは Swig の入力ファイルから1
+ test5.i  %module test %{ %} extern int add(int a, int b);  これは，
+ test モジュールを作成する 外部参照する関数 add を使う  ということを宣言しているらしい．そしてこれを使ってラッパーを作成
+% swig -ruby test5.i  作成されたファイルは test5_wrap.c で，中身は省略． ||&lt;
+Ruby の拡張ライブラリなので，extconf.rb を作成する．
+ extconf.rb  require 'mkmf' create_makefile('test')  これは最初にやった例と同じ．そしてコンパイル．
+% ruby extconf.rb % make % ruby -r'test' -e'p Test.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/03/ruby-4/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/31/ruby-rails-2008/">2008年を振り返って</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  昨年は本当にいろいろありました．
+##転職して東京へ 7年半あまり勤めてた大阪の Web 制作会社を退職し，さらに大阪を離れて東京へとやってきました．転職先は Web サービス開発・運営会社．言語は Ruby on Rails，データベースは MySQL という定番の構成ながら，負荷分散や最適化・高速化など，知識としては知っているがいままでやったことないことばかりでしたが，かなり充実した年になりました．
+##勉強会やセミナーへの参加 大阪では一度も行ったことなかったんですが，東京へ来てからは Rails 勉強会＠東京を筆頭に，行けるものは全部参加するぐらいの気合いで，いろいろ行ってみました．「いろんなすごい人がいるなー」と言う敗北感(？)を味わいつつ，多くの人の話を聞いて交流することの楽しさを満喫できました．
+##Tokyu.rbの設立を煽ったり 同僚に Tokyu.rb の設立を煽ってみて，飲み会ですが5回ほど開催できたのはいい経験になりました．
+##LTやってみたり 初のLTをやってみました．結構楽しかったですね．名前を覚えてもらえたのが一番の収穫でしょうか．
+##そして ともあれ無事に年を越すことができました．みなさん本当にありがとうございました．今年もよろしくお願いします．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/29/notitle/">なぜ「な」なのか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  名前でもないのに favicon とか Twitter とか名刺とかに「な」と書いてますが，なんとなくです．
+なんとなくここに書き始めたので，それならと「なんとなくの『な』」をアイコンにしてみたわけですね．
+あぁ，適当万歳．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/22/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;23 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/24/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

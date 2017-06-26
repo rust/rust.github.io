@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>MySQL Weeekly Seminor 2008/06/13 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>MySQL Weeekly Seminor 2008/06/13</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/06/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>Falcon/Mariaについて知りたかったので行ってきました．業務として行かせてくれた会社に感謝．内容は<a href="http://d.hatena.ne.jp/conceal-rs/20080613/1213362387">MySQL Update</a>とかなり被ってたんですが，さらにつっこんだ内容もありました．以下，そのログ．</p>
+
+<h1 id="ストレージエンジンとは">##ストレージエンジンとは？</h1>
+
+<ul>
+<li>MySQL はテーブル毎にエンジン変更可能</li>
+<li>SQL Interface や Parser の後ろにいる
+
+<ul>
+<li>データ実体を保存などする機能・場所</li>
+</ul></li>
+<li>ポイント
+
+<ul>
+<li>テーブル毎に変更できるので柔軟性が高い</li>
+<li>MySQL だけではなく，サードパーティやコミュニティが作っているものもある</li>
+</ul></li>
+<li>ストレージエンジンが提供する価値
+
+<ul>
+<li>各テーブルの機能に応じて，適材適所のエンジンを選択できる</li>
+<li>エンジンの種類は MySQL Server に隠蔽されるので，ユーザは，どのエンジンを使っているかを気にしなくてもいい</li>
+<li>ただしチューニングは別</li>
+</ul></li>
+<li>役割
+
+<ul>
+<li>どこに(Filesystem 上での実体)，どのよう(Format)に保管するか</li>
+<li>インデックスの実装アルゴリズム</li>
+<li>InnoDB は Clustered Index?</li>
+<li>メモリの利用方法</li>
+<li>トランザクション性</li>
+<li>同時実効性</li>
+</ul></li>
+<li>情報は資料を参照
+
+<ul>
+<li>Forge に Engine に関する情報がある</li>
+</ul></li>
+</ul>
+
+<p>##利用例と関連コマンド</p>
+
+<ul>
+<li>ストレージエンジン
+
+<ul>
+<li>Federated</li>
+<li>分散配置したデータに透過アクセスできるエンジンらしい
+
+<ul>
+<li>トランザクション非対応なので，InnoDB の代わりにはならない</li>
+</ul></li>
+<li>Archive</li>
+<li>ログ向け？SELECT/INSERT しか使えない</li>
+<li>MyISAM よりも秒間INSERT可能件数は多い(1.5倍程度)</li>
+<li>SELECT 性能も MyISAM よりもよい</li>
+<li>ただしインデックス非対応</li>
+<li>Merge</li>
+<li>パーティショニングできる (5.1 まで？)</li>
+<li>Enterprise で利用率が高い</li>
+<li>情報分析に利用されている
+
+<ul>
+<li>年月でテーブルを分割して利用</li>
+</ul></li>
+<li>Blackhole(/dev/null)</li>
+<li>多段レプリケーションの中間DBに使うと，中間DB自体のアクセスによる速度劣化が少ない？</li>
+<li>Proxy/Wrapper とかそういう感じ</li>
+<li>bin-log だけあればいいサーバでは，Blackhole エンジンを使うと，I/O がないのでいい</li>
+</ul></li>
+<li>利用状況
+
+<ul>
+<li>MyISAM/InnoDB が6割以上</li>
+</ul></li>
+
+<li><p>ALTER TABLE t ENGINE = NEW_ENGINE;</p>
+
+<ul>
+<li>内部的には，</li>
+</ul>
+
+<ol>
+<li>新テーブル作成</li>
+<li>INSERT INTO NEW_TABLE SELECT &hellip;.</li>
+</ol></li>
+</ul>
+
+<p>##各機能概要</p>
+
+<ul>
+<li>MyISAM
+
+<ul>
+<li>ファイル構造</li>
+<li>.frm テーブルテー擬</li>
+<li>.myd データ</li>
+<li>.myi インデックス</li>
+<li>トランザクション非対応</li>
+<li>圧縮できる</li>
+<li>圧縮すると読み取り専用となる</li>
+<li>ログには便利</li>
+<li>Concurrent Inser は可能</li>
+<li>テーブルロック中でも INSERT 可能</li>
+</ul></li>
+<li>InoDB
+
+<ul>
+<li>サーバ障害時に自動リカバリ機能あり</li>
+<li>クラスタ構造インデックス</li>
+<li>Primary キー以外のインデックスは，BTree の先に，Primary キーにたどり着き，そこからPrimary キーインデックスを見る</li>
+<li>表領域ファイルは中身を消しても小さくならない</li>
+</ul></li>
+<li>Memory
+
+<ul>
+<li>固定長のみ</li>
+<li>TEXT/BLOG 型は使えない</li>
+<li>トランザクション非対応</li>
+</ul></li>
+<li>Federated
+
+<ul>
+<li>テーブルの枠だけを作り，実体は別サーバのテーブルに割り当てる</li>
+<li>Proxy サーバ的な感じ</li>
+</ul></li>
+<li>Archive
+
+<ul>
+<li>SELECT/INSERT のみ</li>
+<li>UPDATE/DELEE が使えない</li>
+</ul></li>
+<li>NDB Clusterストレージエンジン
+
+<ul>
+<li>SQL を処理する部分と，データ実体を保持する部分が別のサーバに</li>
+<li>データがあるサーバは，全て同じデータがあるので，1台が落ちてもサービスは続行できる</li>
+<li>一度やってみなくてはわからない感じ．</li>
+<li>現在は MySQL Cluster 6.2 = MySQL Server 5.1 + ndb 6.2</li>
+</ul></li>
+<li>Falcon
+
+<ul>
+<li>トランザクション対応のストレージエンジン</li>
+<li>大容量メモリがあるサーバで，あたかも印メモリデータベースのように振る舞い，実際はデータ実体はファイルにあるような感じ</li>
+<li>32GB 以上が適当か</li>
+<li>全てのログ・情報をメモリ上で処理しようとする</li>
+<li>Worker Threads(別スレッド) でファイルシステムへ反映する</li>
+<li>InnoDB よりもトランザクション性能が高い</li>
+<li>中身を消せば表領域ファイルも小さくなる</li>
+<li>MySQL 6.0 で登場予定</li>
+</ul></li>
+<li>PBXT
+
+<ul>
+<li>コミュニティ開発のトランザクション対応エンジン</li>
+<li>InnoDB と同等の機能を目指して開発中</li>
+<li>HTTP 経由(BLOG Streaming Engineと組み合わせて)で MySQL に格納可能</li>
+</ul></li>
+<li>Nitroedb &amp; Infobright
+
+<ul>
+<li>リアルタイム・データウェアハウス向け</li>
+<li>オンラインでかつリアルタイムで大量のデータを扱うところ向け</li>
+</ul></li>
+<li>Maria
+
+<ul>
+<li>トランザクション対応</li>
+<li>トランザクション対応にするかどうかはテーブル単位で選べる</li>
+<li>サーバクラッシュ時の自動リカバリ機能実装予定</li>
+<li>MyISAM の拡張版</li>
+</ul></li>
+</ul>
+
+<p>##雑多なストレージエンジン</p>
+
+<ul>
+<li>memcached ストレージエンジン
+
+<ul>
+<li>登場時期は未定</li>
+<li>Application -&gt; MySQL Server -&gt; memcached x n</li>
+<li><a href="http://tangent.org/">http://tangent.org/</a></li>
+</ul></li>
+<li>Amazon S3 ストレージエンジン
+
+<ul>
+<li>Amazon S3 と連携するエンジン</li>
+</ul></li>
+<li>様々なエンジンがある</li>
+<li>source-code にはエンジンのひな形がある</li>
+</ul>
+
+<p>##質疑応答</p>
+
+<ul>
+<li>Falcon は小さなトランザクションで有利</li>
+<li>Falcon は数十GB単位でメモリがないとパフォーマンス発揮できない</li>
+<li>Maria は InnoDB でできないことをやろうとしている</li>
+<li>Maria は大きなトランザクション性能も良くしたいらしい</li>
+<li>ndb はデータ本体を持つサーバでトランザクションを管理している</li>
+<li>Fedeated で他社DBサーバを見れるようにするのは，なくなるかも？</li>
+</ul>
+
+<p>##その他情報</p>
+
+<ul>
+<li>6/12に5.1.25RCが出たらしい</li>
+<li>MySQL 5.1 からGeneral Log(MySQL Serverがはき出すログ)をテーブルに保存可能になる．その際に CSV エンジンを使うようだ．</li>
+<li>MySQL 5.1 から起動中に InnoDB を外したりできるようになるようだ</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/06/16/mysql-MySQL-Weeekly-Seminor-2008-06-13/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/06/16/orz/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/06/16/orz/">やはりあった買い忘れorz</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/06/23/ruby-rails-RubyKaigi2008/">RubyKaigi2008に参加してきました．</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/06/23/ruby-rails-RubyKaigi2008/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

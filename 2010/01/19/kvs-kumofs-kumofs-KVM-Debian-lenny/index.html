@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>kumofs を KVM 上の Debian(lenny) にインストールして動かすまで &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>kumofs を KVM 上の Debian(lenny) にインストールして動かすまで</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>KVM on Debian(lenny) を使ったサーバを構築してみます．</p>
+
+<h2 id="システムインストール">システムインストール</h2>
+
+<p>最初は virt-manager などで VM を作成．ホスト名は kumofs で標準システムのみに．</p>
+
+<h2 id="下準備">下準備</h2>
+
+<p>まずは基本セットをインストール</p>
+
+<pre><code class="language-bash">$ su -
+# aptitude install sudo vim lv openssh-server
+# update-alternatives --config editor
+
+There are 4 alternatives which provide `editor'.
+
+  Selection    Alternative
+-----------------------------------------------
+          1    /bin/ed
+*+        2    /bin/nano
+          3    /usr/bin/vim.tiny
+          4    /usr/bin/vim.basic
+
+Press enter to keep the default[*], or type selection number: 4
+Using '/usr/bin/vim.basic' to provide 'editor'.
+# visudo
+# addgroup wheel
+# adduser user wheel
+# logout
+</code></pre>
+
+<p><a href="http://github.com/etolabo/kumofs/blob/master/doc/doc.ja.md">日本語ドキュメント</a>を見ると下記が必要らしいのでインストールします．</p>
+
+<ul>
+<li>linux &gt;= 2.6.18</li>
+<li>g++ &gt;= 4.1</li>
+<li>ruby &gt;= 1.8.6</li>
+<li>Tokyo Cabinet &gt;= 1.4.10</li>
+<li>MessagePack for C++ &gt;= 0.3.1</li>
+<li>MessagePack for Ruby &gt;= 0.3.1</li>
+<li>libcrypto (openssl)</li>
+<li>zlib</li>
+</ul>
+
+<p>まずは Ruby と C++ など．</p>
+
+<pre><code class="language-bash">$ sudo aptitude install ruby1.8 ruby rubygems rubygems1.8 libcrypto++-dev zlib1g-dev build-essential
+</code></pre>
+
+<p>次に TokyoCabinet</p>
+
+<pre><code class="language-bash">$ mkdir tmp; cd tmp
+$ wget http://1978th.net/tokyocabinet/tokyocabinet-1.4.41.tar.gz
+$ tar zxvf tokyocabinet-1.4.41.tar.gz
+$ cd tokyocabinet-1.4.41/
+$ ./configure
+$ sudo aptitude install libbz2-dev # TokyoCabinet に必要なので追加
+$ ./configure
+$ make
+$ sudo make install
+$ sudo vim /etc/ld.so.conf.d/local.conf
+/usr/local/lib
+$ sudo ldconfig
+</code></pre>
+
+<p>そして MessagePack を．</p>
+
+<pre><code class="language-bash">$ cd ../
+$ wget &quot;http://sourceforge.jp/frs/redir.php?m=jaist&amp;f=%2Fmsgpack%2F45459%2Fmsgpack-0.4.0.tar.gz&quot;
+$ tar zxvf msgpack-0.4.0.tar.gz
+$ cd msgpack-0.4.0/
+$ ./configure
+$ make
+$ sudo make install
+$ sudo gem install msgpack --no-ri --no-rdoc
+$ sudo aptitude install ruby1.8-dev ruby-dev # 拡張ライブラリなので追加で必要
+$ sudo gem install msgpack --no-ri --no-rdoc
+</code></pre>
+
+<p>最後に kumofs をインストール</p>
+
+<pre><code class="language-bash">$ cd ../
+$ wget http://cloud.github.com/downloads/etolabo/kumofs/kumofs-0.3.0.tar.gz
+$ tar zxvf kumofs-0.3.0.tar.gz
+$ cd kumofs-0.3.0/
+$ ./configure
+$ sudo aptitude install libssl-dev # こちらも必要だった模様
+$ ./configure
+$ make
+$ sudo make install
+</code></pre>
+
+<p>これでインストールは完了．結局 Debian(lenny) に必要なパッケージは下記の通り．</p>
+
+<ul>
+<li>build-essential</li>
+<li>ruby1.8</li>
+<li>ruby</li>
+<li>ruby1.8-dev</li>
+<li>ruby-dev</li>
+<li>rubygems</li>
+<li>rubygems1.8</li>
+<li>libcrypto++-dev</li>
+<li>zlib1g-dev</li>
+<li>libbz2-dev</li>
+<li>libssl-dev</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo aptitude install build-essential ruby1.8 ruby ruby1.8-dev ruby-dev rubygems rubygems1.8 libcrypto++-dev zlib1g-dev libbz2-dev libssl-dev
+</code></pre>
+
+<h2 id="複数台の用意">複数台の用意</h2>
+
+<p>サンプルでは3台構成だったので，これをあと2つ作成します．(kumofs / kumofs2 / kumofs3)．ます先ほど作成した kumofs を shutdown します．</p>
+
+<pre><code class="language-bash">$ sudo poweroff
+</code></pre>
+
+<p>次に KVM ホストから virt-clone します．MAC アドレスは下位アドレスを被らない適当なのに．</p>
+
+<pre><code class="language-bash">$ sudo virt-clone --original kumofs --name kumofs2 --file kumofs2.img --mac 52:54:00:93:23:43
+$ sudo virt-clone --original kumofs --name kumofs3 --file kumofs3.img --mac 52:54:00:93:29:12
+</code></pre>
+
+<p>さてこのままでは MAC アドレスが変わったためにネットワークデバイスが追加されてしまいます．そこで console に入って必要な部分を直接変更します．</p>
+
+<ul>
+<li>/etc/udev/rules.d/70-persistent-net.rules から MAC アドレスが書かれている行を削除
+
+<ul>
+<li>恐らく2行ある</li>
+</ul></li>
+<li>/etc/network/interface の address の項目を変更
+
+<ul>
+<li>固定アドレスの場合</li>
+</ul></li>
+<li>/etc/hostname の変更</li>
+<li>/etc/hosts の変更</li>
+</ul>
+
+<pre><code class="language-bash">192.168.123.10 kumofs
+192.168.123.11 kumofs2
+192.168.123.12 kumofs3
+</code></pre>
+
+<ul>
+<li>再起動</li>
+<li>hostname / ifconfig で変更されていることを確認．</li>
+<li>poweroff</li>
+</ul>
+
+<p>という感じで2台(kumofs2 / kumofs3)実行します．最後の /etc/hosts の設定を kumofs にもして完了</p>
+
+<h2 id="実験開始">実験開始</h2>
+
+<p>いよいよ実験開始．ドキュメントにある構成との対応は以下のようにします．</p>
+
+<ul>
+<li>srv1 -&gt; kumofs</li>
+<li>srv2 -&gt; kumofs2</li>
+<li>srv3 -&gt; kumofs3</li>
+<li>cli  -&gt; kumofs</li>
+</ul>
+
+<h3 id="kumo-manager-の起動">kumo-manager の起動</h3>
+
+<pre><code class="language-bash">kumofs$ kumo-manager -v -l kumofs -p kumofs2
+kumofs2$ kumo-manager -v -l kumofs2 -p kumofs
+</code></pre>
+
+<h3 id="kumo-server-の起動">kumo-server の起動</h3>
+
+<pre><code class="language-bash">kumofs$ kumo-server -v -l kumofs -m kumofs -p kumofs2 -s /tmp/kumodb.tch
+kumofs2$ kumo-server -v -l kumofs2 -m kumofs -p kumofs2 -s /tmp/kumodb.tch
+kumofs3$ kumo-server -v -l kumofs3 -m kumofs -p kumofs2 -s /tmp/kumodb.tch
+</code></pre>
+
+<h3 id="kumo-server-の登録">kumo-server の登録</h3>
+
+<pre><code class="language-bash">kumofs$ kumoctl kumofs status
+hash space timestamp:
+  Thu Jan 01 09:00:00 +0900 1970 clock 0
+attached node:
+not attached node:
+  192.168.123.10:19800
+  192.168.123.11:19800
+  192.168.123.12:19800
+kumofs$ kumoctl kumofs attach
+nil
+</code></pre>
+
+<p>ここでザッとログが流れます．ちょっと楽しい．それにしても nil と表示されるとは，さすが Ruby なのか．
+また「hash space timestamp」のところが 1970 年とかになっているのは，Time クラスの基底なので，まだ値が取得できてないってことかな．再度 status を見ると，</p>
+
+<pre><code class="language-bash">kumofs$ kumoctl kumofs status
+hash space timestamp:
+  Tue Jan 19 11:09:32 +0900 2010 clock 230
+attached node:
+  192.168.11.180:19800  (active)
+  192.168.11.181:19800  (active)
+  192.168.11.182:19800  (active)
+not attached node:
+</code></pre>
+
+<p>追加されて，時刻も正常になってますね．</p>
+
+<h3 id="kumo-gateway-の起動">kumo-gateway の起動</h3>
+
+<pre><code class="language-bash">kumofs$ kumo-gateway -v -m kumofs -p kumofs -t 11211
+</code></pre>
+
+<p>memcache-client 互換だそうなので，telnet でアクセスしてみます．</p>
+
+<pre><code class="language-bash">kumofs$ telnet localhost 11211
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+set hoge 0 0 3
+Foo
+STORED
+set bar 0 0 22
+This is a sample text.
+STORED
+END
+Connection closed by foreign host.
+kumofs$ kumohash -m kumofs assigh hoge
+  0: 192.168.123.10:19800
+  1: 192.168.123.11:19800
+  2: 192.168.123.12:19800
+</code></pre>
+
+<p>kumohash の説明には，「あるデータがどのkumo-serverに保存されているか調べる」とあったのですが，全部出てきてしまいます．3台ぐらいじゃダメ分散されない？またはキーの数が少ない？</p>
+
+<h3 id="大量のデータ投入">大量のデータ投入</h3>
+
+<p>なんかこんなので実験</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+1000000.times do |i|
+  str = &quot;&quot;
+  (rand(100)+1).times do |j|
+    str += (65 + rand(26)).chr
+  end
+  puts &quot;set var#{i} 0 0 #{str.length}&quot;
+  puts str
+end
+</code></pre>
+
+<pre><code class="language-bash">kumofs$ ruby test.rb | telnet localhost 11211
+(snip)
+STORED
+STORED
+STORED
+STORED
+test.rb:8:in `write': Broken pipe (Errno::EPIPE)
+        from test.rb:8:in `puts'
+        from test.rb:8
+        from test.rb:3:in `times'
+        from test.rb:3
+</code></pre>
+
+<p>止まったので何が？と思って kumo-gateway の方を見ると</p>
+
+<pre><code class="language-bash">セグメンテーション違反です
+</code></pre>
+
+<p>telnet なので何かしらのバッファがあふれたとかでしょうか．よくわかりませんでした．</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>コマンドが Ruby で書かれていたりするのでわかりやすいのと，初めから分散前提なのが良い感じですね．ただセットアップはともかく，起動に手続きが必要だと言うのが，実稼働するときの大きな障壁かなと思いました．全て個別に起動できて，それぞれが kumo-server / kumo-manager / kumo-gateway の起動を関知して自動的に接続するようになれば，より使い勝手が増す感じがしました<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>．</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">まあ仮想環境だとしたらスクリプトでその順序も制御できそうなのですが．
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/01/19/kvs-kumofs-kumofs-KVM-Debian-lenny/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/01/18/ruby-rails-thin-on-Debian/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/01/18/ruby-rails-thin-on-Debian/">thin の自動起動スクリプト on Debian</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/01/20/debian-lsyncd-lsyncd-rsync-on-Debian-lenny/">lsyncd &#43; rsync on Debian(lenny) でらくらく同期</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/01/20/debian-lsyncd-lsyncd-rsync-on-Debian-lenny/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

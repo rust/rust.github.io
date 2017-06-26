@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Ruby 1.9に移行する際に注意すべき10のポイント &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Ruby 1.9に移行する際に注意すべき10のポイント</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><a href="http://dablog.rubypal.com/2009/1/14/10-things-to-be-aware-of-in-moving-to-ruby-1-9">http://dablog.rubypal.com/2009/1/14/10-things-to-be-aware-of-in-moving-to-ruby-1-9</a>の翻訳</p>
+
+<p>Ruby 1.9 についていろいろと書いてきて(The Well-Grounded Rubyist は2～3ヶ月のうちに出る予定だ)，Ruby 1.8 から Ruby 1.9 に移行する際に気をつけるべき個人的な見解を共有しようと思い立った．これは変更点のリストではない．これは Ruby 1.8 のコードを Ruby 1.9 で動くようにするために必要な変更点であり，知らなければひどい目にあいそうな事項のリストである．</p>
+
+<p>##String はもはや Enumerable ではない
+String はそれに類するもので string.each という具合に実行することはできない．これは例えば Rack インターフェイスにおいては衝撃的で，以前は戻り配列の3番目の要素が each に対応する必要があったためだ．</p>
+
+<p>##ブロック文法
+これは大きな変更でありトピック．特筆すべき点は，たとえば次のようなとき</p>
+
+<pre><code class="language-ruby">array.each {|x| ... }
+</code></pre>
+
+<p>ブロックパラメータのリストは，普通のメソッドパラメータリストのように扱われる．1.8 ではブロックの||内の変数のスコープは，ブロックよりも大きい<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>なので，@ と使うと @x= のように変数代入が可能になる．これは 1.8 で，</p>
+
+<pre><code class="language-ruby">array.each {|@x| ... }
+</code></pre>
+
+<p>や</p>
+
+<pre><code class="language-ruby">array.each {|self.attr| ... }
+</code></pre>
+
+<p>のように書くことができた理由である．これは 1.9 ではできなくなる．パラメータは assignment semantics ではなく，method-argument semantics を使って変数に束縛される．ブロックパラメータは，ブロックローカルになる．たとえば次のコードを考える．</p>
+
+<pre><code class="language-ruby">x = 1 [2,3].each {|x| ... }
+</code></pre>
+
+<p>1.8 では，実行後の x は 3 になる<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>．1.9 では2つの x は同じではなく，ブロック外部では x は 1 のままである．</p>
+
+<p>しかし既に存在している(a)か，ブロックパラメータでない場合(b)は，ブロックローカルではない．たとえば次のコードでは，</p>
+
+<pre><code class="language-ruby">x = 1 [2,3].each {|y| x = y }
+</code></pre>
+
+<p>x は 3 になる．もしブロックローカルな変数を他に使いたいときには，ブロック変数に変数宣言をセミコロンで追加すればいい．</p>
+
+<pre><code class="language-ruby">x = 1 [2,3].each {|y;x| x = y }
+</code></pre>
+
+<p>こうすると x は 1 のままになる．</p>
+
+<p>##メソッド引数の文法
+メソッド引数もいくつか新しくなる．特に，</p>
+
+<pre><code class="language-ruby">def my_method(a, *b, c)
+</code></pre>
+
+<p>のように，*b のあとに c という引数を指定できるようになる．</p>
+
+<p>ただこんな風に使う状況は多くないだろう．* 演算子は次のようになる．</p>
+
+<ul>
+<li>1.8 では，</li>
+</ul>
+
+<pre><code class="language-ruby">&gt;&gt; a = [1, 2]
+=&gt; [1, 2]
+&gt;&gt; *b = a
+=&gt; [[1, 2]]
+&gt;&gt; b
+=&gt; [[1, 2]]
+</code></pre>
+
+<ul>
+<li>1.9 では</li>
+</ul>
+
+<pre><code class="language-ruby">&gt;&gt; a = [1, 2]
+=&gt; [1, 2]
+&gt;&gt; *b = a
+=&gt; [1, 2]
+&gt;&gt; b
+=&gt; [1, 2]
+</code></pre>
+
+<p>私はいつも * 演算子を次のように解釈していた．</p>
+
+<pre><code class="language-bash">*x は 配列 x の中身リストとしてを表している
+</code></pre>
+
+<p>1.8 では *b = [1, 2] は，[1, 2] が配列 b の内容を意味するので，<em>b が [[1, 2]] となる．1.9 ではこのようには振る舞わない．</em> に対する一般法則がどうなっているか，もしくは一般法則があると言うのが間違っていたかは確信はない．</p>
+
+<p>##Hash が順序を持つ
+これは別に問題にならないだろうけど，あなたのコードや他のコードにあったときに気をつけおこう．ハッシュ(Hash)は挿入順を保存するようになる．キーを上書きしても順序は変更されない．</p>
+
+<p>##メソッド名は Symbol で返る
+1.9 では obj.method や klass.instance_methods が，String ではなく Symbol を返すようになる．もし String で欲しいなら，to_s しなければならない．でもねぇ．．．．</p>
+
+<p>##Symbol が String のように
+Symbol が String のようになる．正規表現や upcase/swapcase，その size を得ることができる．この目的が何なのかわからない．完全に String のようになるのでなければ，これ以上 Symbol を String のようにしたくない．</p>
+
+<p>##load-path にある Gem は自動的呼び出せるようになる
+Ruby/irb を実行したとき，load-path($:) はシステム上のすべての Gem のディレクトリを含む必要がある．これは Gem を require するときに，rubygems を最初に require する必要がないということである．gem メソッドの version 毎に load-path を操作できる．</p>
+
+<p>##多くの列挙メソッドが Enumerator を返す
+ブロックなしで each などのメソッドを呼ぶと，Enumerator を返すようになる．map/select などの戻り値の使い道はないかもしれないが，例えば Array#each がいつもそのレシーバーを返すと仮定できないことは知っておくべきだろう．</p>
+
+<p>この変更により，Enumerator を chain することができる．chain した Enumerator が実際に有効である状況はあまりないかもしれないにもかかわらずだ．map.with_index 以外に，次のようにする場合を私は知らない．</p>
+
+<pre><code class="language-ruby">array.map.other_method { ... }
+</code></pre>
+
+<p>ここでは map の呼び出しは本質的にはパススルーフィルターである．(1.9 の初期バージョンではそうではなく，chain された Enumerator にブロックの知識が付随していたが，いまはそうではなくなっている．)</p>
+
+<p>ちなみに，もし次の2つの違いを説明できるなら，栄光を勝ち取れるだろう(終わることのない栄光が :-))<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>．</p>
+
+<pre><code class="language-ruby">&gt;&gt; {1 =&gt; 2}.select {|x,y| x }
+=&gt; {1=&gt;2}
+&gt;&gt; {1 =&gt; 2}.select.select {|x,y| x }
+=&gt; [[1, 2]]
+</code></pre>
+
+<p>これが Enumerator についてのすべてです・・・・</p>
+
+<p>これらの変更に注意を払っていれば，そしてまた他にも警戒していれば，バージョン 1.9 やその先でも Ruby のファンでありつづけられるでしょう．</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">ブロックの外側
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">ブロックの外側
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3"><code>{1 =&gt; 2}.to_a</code> が <code>[[1, 2]]</code>になるからじゃないのかな？
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/01/15/drbd-ubuntu-Ubuntu-8-04-1-Server-LTS-DRBD/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/01/15/drbd-ubuntu-Ubuntu-8-04-1-Server-LTS-DRBD/">Ubuntu 8.04.1 Server LTSにDRBDを入れてほげる</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/01/19/ruby-rails-Rails-37/">Rails勉強会＠東京第37回に行ってきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/01/19/ruby-rails-Rails-37/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

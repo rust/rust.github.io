@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/12/Rails-layout-template-parts/">layoutとtemplateとpartsを使い分けるいい方法を知りたい</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Header+2pain+Footerなベーステンプレートがあって，それは全画面で使いたい．ただ各部では共通なpartsを利用して，main部分には各controllerに応じた表示をさせたい．のような場合，ひとまずはcontents_forを使う方法でやってますが，これよりいい方法あるんでしょうか．
+&lt;% content_for(:header) do -%&gt; header &lt;% end -%&gt; &lt;% content_for(:menu) do -%&gt; menu &lt;% end -%&gt; &lt;% content_for(:footer) do -%&gt; footer &lt;% end -%&gt; main contents  &lt;html&gt; &lt;body&gt; &lt;div id=&quot;header&quot;&gt;&lt;%= yield :header -%&gt;&lt;/div&gt; &lt;div id=&quot;container&quot;&gt; &lt;div id=&quot;menu&quot;&gt;&lt;%= yield :menu -%&gt;&lt;/div&gt; &lt;div id=&quot;main&quot;&gt;&lt;%= yield :layout -%&gt;&lt;/div&gt; &lt;/div&gt; &lt;div id=&quot;footer&quot;&gt;&lt;%= yield :footer -%&gt;&lt;/div&gt; &lt;/body&gt; &lt;/html&gt;  そもそも構成がまずいのかもしれないのだが，どうなんだろうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/12/Rails-routes-rb/">routes.rbで/アクセスを割り当てる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  単純に，
+map.connect '', :controller =&gt; 'top', :action =&gt; 'index'  などとすればいいのだが，public/index.htmlが存在するとそちらが優先されるらしい．ので削除を忘れずに．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/10/notitle/">どの分野も抱える病</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ニッポンIT業界絶望論
+どの業界でもやはり求められているのは，体力があり従順な一兵卒．組織やシステムに意見を言う，憂いを抱いた力ある改革者ではない．だからこそ改革者は新たな場を求めて旅立ってしまう．まあそんなところなんだろうか．身近がそういう傾向があるから凄く実感できるような気がする．だからこそ私も旅立つ決意をしたのかなとふっと思った．
+さらに，
+どうせ理系出身者なんていらねえんだよ。
+まさしくその通り，上司の言うことを聞いてくれればいいので，逆にいろいろ知ってる人は煙たがられる．自分より優秀な部下がいると自分の出世に関わるから潰そうとする．または「優秀なんだから」という謎の理由で無理難題をふっかけて，「おまえならできるはずだ」という根拠のない自信で部下を潰していく．
+いまの日本社会は善人が損をするようにできているのではないかと疑ってしまう．正直者が得をする世界へと旅立つ準備をしておかないといけないかな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/09/TIPS-Rails-Apache2-FastCGI/">Apache2 &#43; FastCGI環境を構築する</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  構築メモ．ターゲットはFC6 or FC7．以下を参考にしました．
+pools.jp | Apache2.2＋fastcgiで Ruby on Rails
+##ダウンロードとインストール ###FastCGI Developer&rsquo;s Kit/mod_fastcgiのダウンロード
+ FastCGI Developer&rsquo;s Kit  http://www.fastcgi.com/dist/fcgi-2.4.0.tar.gz  mod_fastcgi  http://www.fastcgi.com/dist/mod_fastcgi-2.4.2.tar.gz   ###展開とインストール
+ FastCGI Developer&rsquo;s Kit  $ tar zxvf fcgi-2.4.0.tar.gz $ cd fcgi-2.4.0 $ ./configure $ make $ sudo make install $ sudo vim /etc/ld.so.conf.d/local-lib.conf  local-lib.confの内容は
+/usr/local/lib   gemでfcgiをインストール  $ sudo gem install fcgi   mod_fastcgi  $ tar zxvf mod_fastcgi-2.4.2.tar.gz $ cd mod_fastcgi-2.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2007/11/09/TIPS-Rails-Apache2-FastCGI/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/09/Rails-Rails/">Railsの本を買う</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今2冊あるんだけど，いろいろ評判の高いこれを買ってみることに．
+ RailsによるアジャイルWebアプリケーション開発 第2版  著者: Dave Thomas, David Heinemeier Hansson, Leon Breedt, Mike Clark, Andreas Schwarz, James Duncan Davidson, Justin Gehtland
+出版日: 2007-10-26
+出版社/メーカー: オーム社
+カテゴリ: Book
+  ちなみに今あるのは下記の本．
+  ライド・オン・Rails Ruby on Railsを徹底攻略  著者: 吉田 和弘, 馬場 道明
+出版日: 2006-06-30
+出版社/メーカー: ソフトバンククリエイティブ
+カテゴリ: Book
+    Ruby on Rails入門優しいRailsの育て方  著者: 西 和則
+出版日: 2006-07-31
+出版社/メーカー: 秀和システム
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/09/TIPS-Ruby-method-attribute-Object/">method/attributeがObjectに存在するかどうか確認するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Object#respond_to?メソッドを使う
+class Hoge @foo attr_accessor :foo end a = Hoge.new a.respond_to?(&quot;foo&quot;) #=&gt; true a.respond_to?(&quot;bar&quot;) #=&gt; false  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/09/TIPS-Ruby/">オブジェクトのコピー</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  cloneやdupだとshallow copyなので，deep copyするには
+a = &quot;a&quot; b = Marshal.load(Marshal.dump(a))   としなくてはいかん．つまり， :shadow copy:参照．ポインタのような感じ？ :deep copy:複製．メモリ内のデータを異なる番地へコピーして，その番地の参照を戻すこと？  な感じかな？もうちょい勉強せんといかんな．．．．orz
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/09/notitle/">古いマンガがおもしろのは？</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いや，あえて言うまい．．．．
+ 聖闘士(セイント)星矢 (7) (集英社文庫―コミック版)  著者: 車田 正美
+出版日: 2001-05
+出版社/メーカー: 集英社
+カテゴリ: Book
+    聖闘士(セイント)星矢 (6) (集英社文庫―コミック版)  著者: 車田 正美
+出版日: 2001-04
+出版社/メーカー: 集英社
+カテゴリ: Book
+    Dragon quest―ダイの大冒険 (5) (集英社文庫―コミック版)  著者: 三条 陸, 稲田 浩司, 堀井 雄二
+出版日: 2003-08
+出版社/メーカー: 集英社
+カテゴリ: Book
+    Dragon quest―ダイの大冒険 (6) (集英社文庫―コミック版)  著者: 三条 陸, 稲田 浩司, 堀井 雄二
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2007/11/09/notitle/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/07/Rails-act_as_authenticated-2/">act_as_authenticated</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  前回の続き．どうやらuser_notifier.rbに問題があった模様．ちゃんとTestするべきだな．．．．
+class UserNotifier &lt; ActionMailer::Base def signup_notification(user) setup_email(user) @subject += 'Please activate your new account' @body[:url] = &quot;http://domain/account/activate/#{user.activation_code}&quot; end def activation(user) setup_email(user) @subject += 'Your account has been activated!' @body[:url] = &quot;http://domain/&quot; end protected def setup_email(user) @recipients = &quot;#{user.email}&quot; @from = &quot;info@domain&quot; @subject = &quot;Activation!&quot; @sent_on = Time.now @body[:user] = user end end  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/11/05/Account/">Accountコントローラの修正</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/11/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  class AccountController &lt; ApplicationController def signup # Activation前まで @user = User.new(params[:user]) return unless request.post? @user.save! #self.current_user = @user #redirect_back_or_default(:controller =&gt; '/account', :action =&gt; 'index') # Activationへ飛ばす redirect_to(:action =&gt; 'signup_notification') flash[:notice] = &quot;Thanks for signing up!&quot; rescue ActiveRecord::RecordInvalid render :action =&gt; 'signup' end # Notification用 def signup_notification end # ユーザをActivateする def activate @user = User.find_by_activation_code(param[:id]) if @user and @user.activate self.current_user = @user flash[:notice] = &quot;Your account has been activated.&quot; end end end  ###23:40 追記：Observerの設定 config/enviromnent.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2007/11/05/Account/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/47/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;48 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/49/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

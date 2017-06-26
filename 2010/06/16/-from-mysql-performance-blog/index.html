@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>JOIN使うときに気をつけること from MySQL Performance Blog &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>JOIN使うときに気をつけること from MySQL Performance Blog</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/06/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>いつものように気になったので意訳</p>
+
+<blockquote>
+<p><a href="http://www.mysqlperformanceblog.com/2010/05/17/joining-on-range-wrong/">Joining on range? Wrong! | MySQL Performance Blog</a></p>
+</blockquote>
+
+<p>これら書く問題というのはMySQLの最初の方にある問題なんだが、気をつけてクエリーを解析しないと知らないまま終わってしまうことだ。phpDay.it でこの落とし穴についてデモしてきたが、ブログの記事にするのもいいとおもったんだ。</p>
+
+<p>問題をデモするための典型的な例として、売上げクエリーを考えよう。データは次の3つのテーブルに入っている。</p>
+
+<pre><code class="language-sql">CREATE TABLE `products` (
+  `prd_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `prd_name` varchar(32) NOT NULL,
+  PRIMARY KEY (`prd_id`),
+  KEY `name` (`prd_name`)
+)
+
+CREATE TABLE `tags` (
+  `tag_prd_id` int(10) UNSIGNED NOT NULL,
+  `tag_name` varchar(32) NOT NULL,
+  PRIMARY KEY (`tag_name`, `tag_prd_id`)
+)
+
+CREATE TABLE `items_ordered` (
+  `itm_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `itm_prd_id` int(10) UNSIGNED NOT NULL,
+  `itm_order_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`itm_id`),
+  KEY `itm_prd_id__and__itm_order_timestamp` (`itm_prd_id`,`itm_order_timestamp`)
+)
+</code></pre>
+
+<p>そして十分な量のデータを入れた。</p>
+
+<p>そして次のクエリーを考える。昨日にどれだけ液晶テレビが売れたのかを調べるクエリーだ。</p>
+
+<pre><code class="language-sql">SELECT        COUNT(1)
+       FROM   tags t
+              JOIN products p
+              ON     p.prd_id = t.tag_prd_id
+              JOIN items_ordered i
+              ON     i.itm_prd_id    = p.prd_id
+       WHERE  t.tag_name             = 'lcd'
+       AND    i.itm_order_timestamp&gt;= '2010-05-16 00:00:00'
+       AND    i.itm_order_timestamp  &lt;'2010-05-17 00:00:00'
++----------+
+| COUNT(1) |
++----------+
+|     4103 |
++----------+
+</code></pre>
+
+<p>ちゃんとできたかな！</p>
+
+<p>データ構造を見る限り、うまくいったように見える。<code>tags</code>テーブルにはインデックス<code>tag_name</code>があり、<code>items_ordered</code>には<code>(itm_prd_id, itm_order_timestamp)</code>などが結合時に使われている。ではさらに詳細に見てみるとどうだろう。</p>
+
+<pre><code class="language-sql">SHOW STATUS LIKE 'Handler_read%';
+
++-----------------------+--------+
+| Variable_name         | Value  |
++-----------------------+--------+
+| Handler_read_first    | 0      |
+| Handler_read_key      | 3      |
+| Handler_read_next     | 118181 |
+| Handler_read_prev     | 0      |
+| Handler_read_rnd      | 0      |
+| Handler_read_rnd_next | 0      |
++-----------------------+--------+
+</code></pre>
+
+<p>ちょっとよくないように見える。結果が4103行なのに、120000行もスキャンしている。必要なカラムにはちゃんとインデックスつけているのに！<code>EXPLAIN</code>はどうなっているのか。</p>
+
+<pre><code class="language-sql">*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: t
+         type: ref
+possible_keys: PRIMARY
+          key: PRIMARY
+      key_len: 98
+          ref: const
+         rows: 1
+        Extra: Using where; Using index
+*************************** 2. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: p
+         type: eq_ref
+possible_keys: PRIMARY
+          key: PRIMARY
+      key_len: 4
+          ref: example_db.t.tag_prd_id
+         rows: 1
+        Extra: Using index
+*************************** 3. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: i
+         type: ref
+possible_keys: itm_prd_id__and__itm_order_timestamp
+          key: itm_prd_id__and__itm_order_timestamp
+      key_len: 4
+          ref: example_db.p.prd_id
+         rows: 10325
+        Extra: Using where; Using index
+</code></pre>
+
+<p>ここでちょっと思い出してみる。</p>
+
+<pre><code class="language-sql">`itm_prd_id` int(10) UNSIGNED NOT NULL
+  `itm_order_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  KEY `itm_prd_id__and__itm_order_timestamp` (`itm_prd_id`,`itm_order_timestamp`)
+</code></pre>
+
+<p><code>EXPLAIN</code>の3行目の<code>key_len</code>は4バイトなのだが、<code>(itm_prd_id, itm_order_timestamp)</code>は4+4で8バイトあるはずだ。と言うことは、1つのカラムしか見ていないことになる。</p>
+
+<p>これをどう理解すべきか。データベースはlcdとタグの付いたソートされたデータを全て読み込む。それはやく120000行で、そのあと日付で絞り込まれる。なんと非効率な方法だ！MySQLは製品IDと日付範囲をインデックスでマッチして関連する行を読み込むだけな単純な最適化もできない。</p>
+
+<p>これは結合するときだけ影響する。範囲条件を最初のテーブル(そしてそれのみ)に限定すれば、期待通りに動く。</p>
+
+<pre><code class="language-sql">EXPLAIN
+SELECT        COUNT(1)
+       FROM   items_ordered i
+       WHERE  i.itm_prd_id           = 5
+       AND    i.itm_order_timestamp&gt;= '2010-05-16 00:00:00'
+       AND    i.itm_order_timestamp  &lt;'2010-05-17 00:00:00'
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        TABLE: i
+         type: range
+possible_keys: itm_prd_id__and__itm_order_timestamp
+          KEY: itm_prd_id__and__itm_order_timestamp
+      key_len: 8
+          ref: NULL
+         rows: 1306
+        Extra: USING WHERE; USING INDEX
+</code></pre>
+
+<p>この場合、結合しないのでMySQLは<code>ref</code>とは表示せず、<code>key_len</code>も8バイトとなっている。つまりちゃんとインデックスが利用されていると言うことだ。</p>
+
+<p>この問題に対しては多くの回避策があるが、基本的に状況に依存する。本質的には、結合から範囲条件を外すことになる。今回の場合は、日付(<code>DATA</code>)のカラムを追加して、それで絞り込むことにすればよい。</p>
+
+<pre><code class="language-sql">ALTER TABLE items_ordered ADD itm_order_date DATE NOT NULL, ADD INDEX itm_prd_id__and__itm_order_date (itm_prd_id, itm_order_date);
+UPDATE items_ordered SET itm_order_date = DATE(itm_order_timestamp);
+</code></pre>
+
+<pre><code class="language-sql">EXPLAIN
+SELECT        COUNT(1)
+       FROM   tags t
+              JOIN products p
+              ON     p.prd_id = t.tag_prd_id
+              JOIN items_ordered i
+              ON     i.itm_prd_id = p.prd_id
+       WHERE  t.tag_name          = 'lcd'
+       AND    i.itm_order_date    = '2010-05-16'
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        TABLE: t
+         type: ref
+possible_keys: PRIMARY
+          KEY: PRIMARY
+      key_len: 98
+          ref: const
+         rows: 1
+        Extra: USING WHERE; USING INDEX
+*************************** 2. row ***************************
+           id: 1
+  select_type: SIMPLE
+        TABLE: p
+         type: eq_ref
+possible_keys: PRIMARY
+          KEY: PRIMARY
+      key_len: 4
+          ref: example_db.t.tag_prd_id
+         rows: 1
+        Extra: USING INDEX
+*************************** 3. row ***************************
+           id: 1
+  select_type: SIMPLE
+        TABLE: i
+         type: ref
+possible_keys: itm_prd_id__and__itm_order_timestamp,itm_prd_id__and__itm_order_date
+          KEY: itm_prd_id__and__itm_order_date
+      key_len: 7
+          ref: example_db.p.prd_id,const
+         rows: 206494
+        Extra: USING WHERE; USING INDEX
+</code></pre>
+
+<p>このクエリーは<code>itm_prd_id__and__itm_order_date</code>で7バイトとなっているので、<code>(itm_prd_id, itm_order_date)</code>をちゃんと利用していることが分かる。また<code>ref</code>でも2つのカラムを結合で利用していることが分かる。</p>
+
+<pre><code class="language-sql">SHOW STATUS LIKE 'Handler_read%';
++-----------------------+-------+
+| Variable_name         | Value |
++-----------------------+-------+
+| Handler_read_first    | 0     |
+| Handler_read_key      | 3     |
+| Handler_read_next     | 4104  |
+| Handler_read_prev     | 0     |
+| Handler_read_rnd      | 0     |
+| Handler_read_rnd_next | 0     |
++-----------------------+-------+
+</code></pre>
+
+<p>非常によくなったことが分かるだろう。</p>
+
+<p>しかし、クエリーが異なれば、解決方法も異なることは覚えておいて欲しい。</p>
+
+<p>この問題に対するバグレポートがいくつかある(例えば #8569, #19548)が、MySQLからの回答では6.0かそれ以降のバージョンで解決されると言うことだ。または「それは解説されている振る舞いである」と言うことらしい。でも実際には仕様ではなく致命的なバグであり、修正が必要だ。</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/06/16/-from-mysql-performance-blog/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/06/11/dvd/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/06/11/dvd/">懐古主義と言われようとも - 王様のレストランとラビリンス</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/06/16/innodb/">InnoDBテーブルでインデックスを拡張するとパフォーマンスが落ちるかも from MySQL Performance Blog</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/06/16/innodb/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

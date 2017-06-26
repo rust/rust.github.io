@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>GREE オープンソース勉強会 第18回 MySQLハッキングの手引きに行ってきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>GREE オープンソース勉強会 第18回 MySQLハッキングの手引きに行ってきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>すごい雨の中，GREE Labs さん主催による <a href="http://labs.gree.jp/Top/Study/20090807.html">http://labs.gree.jp/Top/Study/20090807.html</a> に参加してきました．以下，そのログなど．</p>
+
+<p>###まとめと感想</p>
+
+<ul>
+<li>すごい雨降ってました
+
+<ul>
+<li>それにしては人多い気がする</li>
+</ul></li>
+<li>日本MySQLユーザ会 松信さん</li>
+<li>ust ありません
+
+<ul>
+<li>来て良かった</li>
+</ul></li>
+<li>トラックバックまでが勉強会メソッド</li>
+<li>ちょっと寒かった</li>
+<li>ソースコード読むの楽しそう！
+
+<ul>
+<li>いろいろ奥が深そう</li>
+</ul></li>
+<li>プラグインレベルなら何とか作れそうな感じがした</li>
+<li>EXPLAIN じゃない実行計画をしっかり知りたいなと思った．それを理解しないと MySQL を使いこなせない印象．</li>
+</ul>
+
+<p>##MySQLハッキングの手引き</p>
+
+<ul>
+<li>MySQl のアーキテクチャ</li>
+<li>ビルド方法</li>
+<li>デバッグ方法</li>
+<li>プラグイン開発の方法</li>
+<li>本体拡張の方法</li>
+<li>本家へのコントリビュートの方法</li>
+<li>自己紹介
+
+<ul>
+<li>MySQLコンサルタント</li>
+<li>執筆</li>
+<li>現場で使える MySQL</li>
+<li>Linux-DB に関する本(<sup>2009</sup>&frasl;<sub>09</sub> 予定)</li>
+<li>DBマガジンで10月から連載？</li>
+</ul></li>
+</ul>
+
+<p>###MySQL とは</p>
+
+<ul>
+<li>C/C++/アセンブラ</li>
+<li>現在は MySQL 5.4 beta, MySQL 5.<sup>1</sup>&frasl;<sub>5</sub>.0 stable</li>
+</ul>
+
+<p>###アーキテクチャ</p>
+
+<ul>
+<li>固定部分
+
+<ul>
+<li>リスナー(認証) -&gt; パーサ -&gt; オプティマイザ -&gt; テーブルアクセス/ジョイン</li>
+<li>全文検索インデックス</li>
+<li>レプリケーション</li>
+</ul></li>
+
+<li><p>プラグイン部分</p>
+
+<ul>
+<li>監査ログ</li>
+<li>Information Schema</li>
+<li>UDF</li>
+<li>ストレージエンジン(MyISAM/InnoDB/etc)</li>
+</ul></li>
+
+<li><p>特徴</p>
+
+<ul>
+<li>外部ライブラリには極力依存しない</li>
+<li>STL/boost とか使っていない
+
+<ul>
+<li>プラットフォーム依存性を減らすため</li>
+</ul></li>
+<li>Drizzle では方針が逆転している</li>
+<li>デバッグ用の機能</li>
+<li>malloc/free, pthread_* は wrapper がある</li>
+<li>エンディアンフリー</li>
+<li>リトルエンディアン</li>
+<li>マルチプラットフォームのため</li>
+<li>関数ポインタ，サブクラスを多用して汎用性を上げている</li>
+<li>ストレージエンジンなどの，プラグインのために</li>
+<li>実行時速度重視のビルド</li>
+</ul></li>
+</ul>
+
+<p>###MySQL を拡張する</p>
+
+<ul>
+<li>MySQL の本体に手を入れる
+
+<ul>
+<li>なんでもできるがリスクは伴う</li>
+</ul></li>
+<li>MySQLの「プラグイン」を開発する
+
+<ul>
+<li>プラグインは共有ライブラリ (<em>.so/</em>.dll)</li>
+<li>要件によっては実装できない場合がある</li>
+<li>プラグインインターフェイスの範囲内</li>
+</ul></li>
+</ul>
+
+<p>###MySQL の入手方法</p>
+
+<ul>
+<li>本家サイトから</li>
+<li>bzr を利用</li>
+<li>launchpad 上でホストされている</li>
+</ul>
+
+<p>###開発の流れ</p>
+
+<ul>
+<li>初期ビルド -&gt; 改変 -&gt; デバッグビルド -&gt; テスト -&gt; 改変 -&gt;
+
+<ul>
+<li>BUILD/autorun.sh</li>
+<li>1～2分(速いマシン)</li>
+<li>松信さんは VisualStudio でやっているそうです</li>
+<li>VisualStudio は少数派</li>
+</ul></li>
+<li>BUILD/以下にテンプレートがある</li>
+<li>VisualStudio -&gt; あとで資料見て</li>
+</ul>
+
+<p>###デモ(1) デバッグ/トレース</p>
+
+<ul>
+<li>目的
+
+<ul>
+<li>クラッシュ原因を探る</li>
+<li>動作過程を探るため</li>
+</ul></li>
+<li>login_connection
+
+<ul>
+<li>ログインに関わる接続とか</li>
+</ul></li>
+<li>mysql_parse
+
+<ul>
+<li>SQL の parse</li>
+<li>MYSQL_parse で構文解析</li>
+<li>クエリーキャッシュにヒットするかどうか調べて，ヒットするれば返す</li>
+</ul></li>
+<li>mysql_execute_command
+
+<ul>
+<li>クエリーを実行する</li>
+<li>SQL コマンドによって処理の場合分けをしている</li>
+<li>SELECT だと，その中で権限管理するとか</li>
+</ul></li>
+<li>JOIN::optimize()
+
+<ul>
+<li>実行計画を決める</li>
+<li>毎回呼ばれる</li>
+</ul></li>
+<li>主キー指定の検索をすると
+
+<ul>
+<li>make_join_statistics</li>
+<li>主キーを使うのかとか，どういう条件かとか処理</li>
+<li>EXPLAIN で Const &lt;- JT_CONST</li>
+</ul></li>
+<li>範囲検索
+
+<ul>
+<li>InnoDB の storage engine の API records_in_range を呼んでいる</li>
+<li>どのぐらいのレコードを scan するかを問い合わせて，インデックスを使うか table scan かを決めている的な</li>
+<li>join-&gt;examined_rows++ で処理レコード数を出している
+
+<ul>
+<li>slow-query-log のあれ</li>
+</ul></li>
+</ul></li>
+<li>トレース
+
+<ul>
+<li>Solaris の dtrace で</li>
+<li>call stack を見る</li>
+<li>やってみてください！</li>
+<li>単純な SELECT で 4000行程度</li>
+</ul></li>
+</ul>
+
+<p>###プラグイン化の流れ</p>
+
+<ul>
+<li>本体改変の難易度が高い
+
+<ul>
+<li>QA の観点からパッチは入りにくい</li>
+</ul></li>
+<li>同期レプリケーションプラグインとかデータベースエンジンとかもプラグイン
+
+<ul>
+<li>プラグイン化の流れが進んでいる</li>
+<li>さらに推し進めたのが Drizzle</li>
+</ul></li>
+</ul>
+
+<p>###デモ(2) プラグインの開発</p>
+
+<ul>
+<li>information_schema に関するもの</li>
+<li>/proc/meminfo を information_schema から見れるようにする
+
+<ul>
+<li>ST_FIELD_INFO</li>
+<li>列情報</li>
+<li>file_meminfo</li>
+<li>fopen で /proc/meminfo を拾って，table に入れる</li>
+<li>schema_table_store_record で information_schema に入れる</li>
+<li>mysql_is_meminfo_plugin_init 初期化</li>
+<li>mysql_declare_plugin(mysql_meminfo) マクロで初期化補助？</li>
+</ul></li>
+
+<li><p>ビルド方法</p>
+
+<ul>
+<li>&ndash;shared 共有ライブラリ</li>
+</ul></li>
+
+<li><p>UDF</p>
+
+<ul>
+<li>ストレージエンジンAPI を使って直接テーブルにアクセスする</li>
+<li>Key Value Store を使うような感覚</li>
+<li>友人100人の，最新投稿メッセージIDを取得する
+
+<ul>
+<li>SQL でやるとフルインデックススキャン</li>
+</ul></li>
+<li>UDF でやることでかなり高速化できる</li>
+</ul></li>
+
+<li><p>ベンチマーク</p>
+
+<ul>
+<li>SQL &lt; STORED PROCEDURE &lt;&lt; UDF</li>
+<li>optimizer にキャッシュ機能がないので，毎回実行計画を立てている</li>
+<li>UDF はオレオレ実行計画なので，そこをすっ飛ばすから高速！</li>
+</ul></li>
+</ul>
+
+<p>###プラグイン開発の一般的な注意事項</p>
+
+<ul>
+<li>mysqld を落とすことが出来る
+
+<ul>
+<li>一般権限を付与しないこと</li>
+</ul></li>
+<li>セキュリティホールになるので注意
+
+<ul>
+<li>root で実行しない</li>
+</ul></li>
+<li>バージョン依存性が高くなる</li>
+</ul>
+
+<p>###次世代RDBMSアーキテクチャ？</p>
+
+<ul>
+<li>パーサー -&gt; クエリ書き換えで，テーブル実体に高速アクセス</li>
+</ul>
+
+<p>###MySQl 本体に手を入れる</p>
+
+<ul>
+<li>レビューのプロセスが必要</li>
+<li>多くの場合互換性の確保が大きな壁になる</li>
+</ul>
+
+<p>###デモ(3) MySQL本体拡張</p>
+
+<ul>
+<li>レコードサイズの最大サイズを 64kb 以上にする</li>
+<li>.frm = テーブル定義ファイル</li>
+<li>pack_header
+
+<ul>
+<li>reclength が max_record_length 超えているとエラーになる</li>
+<li>これを拡張</li>
+<li>さらにストレージエンジンの最大長も拡張</li>
+<li>.frm に保存領域がないので，最後の方に無理矢理書き込む
+
+<ul>
+<li>読み込みの時にも細工をする</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>###WorkLog</p>
+
+<ul>
+<li>開発計画</li>
+<li>パッチを投げると
+
+<ul>
+<li>レビューアがついてレビューされる</li>
+<li>コーディング規約に準拠しているか</li>
+</ul></li>
+</ul>
+
+<p>###テスト</p>
+
+<ul>
+<li>mysql-test</li>
+<li>mysql-stress-test.pl
+
+<ul>
+<li>ストレステスト</li>
+</ul></li>
+</ul>
+
+<p>###WorkLogの例</p>
+
+<ul>
+<li>バイナリログの追記 -&gt; 上書き変更パッチ
+
+<ul>
+<li>上書きにするとレプリケーションの binlog が EOF に来たことがわからない</li>
+<li>EOF -&gt; 転送終わりの判定をしている</li>
+<li>かなり他の部分も変更しなくてはならないので，簡単ではない</li>
+</ul></li>
+</ul>
+
+<p>###参考文献</p>
+
+<ul>
+<li><a href="http://forge.mysql.com/">http://forge.mysql.com/</a></li>
+<li>Expert MySQL</li>
+</ul>
+
+
+<div class="amazon_tag">
+    <a target="_blank" href="https://www.amazon.co.jp/Expert-MySQL-Charles-Bell/dp/1590597419%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1590597419">
+        <img src="http://ecx.images-amazon.com/images/I/516UmrphbfL._SL160_.jpg">
+    </a>
+    <div class="item_detail">
+        <a href="https://www.amazon.co.jp/Expert-MySQL-Charles-Bell/dp/1590597419%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1590597419">Expert MySQL</a>
+        <p>
+            著者: Charles Bell<br />
+            出版日: 2007-01-26<br />
+            出版社/メーカー: Apress<br />
+            カテゴリ: Book<br />
+        </p>
+    </div>
+</div>
+
+
+<ul>
+<li>UDF，ストレージエンジンを自作する方法など</li>
+<li>Understanding MySQL internals</li>
+</ul>
+
+
+<div class="amazon_tag">
+    <a target="_blank" href="https://www.amazon.co.jp/Understanding-MySQL-Internals-Sasha-Pachev/dp/0596009577%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0596009577">
+        <img src="http://ecx.images-amazon.com/images/I/51TGY%2BwPCAL._SL160_.jpg">
+    </a>
+    <div class="item_detail">
+        <a href="https://www.amazon.co.jp/Understanding-MySQL-Internals-Sasha-Pachev/dp/0596009577%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0596009577">Understanding MySQL Internals</a>
+        <p>
+            著者: Sasha Pachev<br />
+            出版日: 2007-04<br />
+            出版社/メーカー: Oreilly &amp;amp; Associates Inc<br />
+            カテゴリ: Book<br />
+        </p>
+    </div>
+</div>
+
+
+<ul>
+<li>超極める MySQL</li>
+</ul>
+
+
+<div class="amazon_tag">
+    <a target="_blank" href="https://www.amazon.co.jp/%E8%B6%85%E3%83%BB%E6%A5%B5%E3%82%81%E3%82%8B-MySQL-%E5%9D%82%E4%BA%95-%E6%81%B5/dp/4798112135%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4798112135">
+        <img src="http://ecx.images-amazon.com/images/I/51XVJ68F7EL._SL160_.jpg">
+    </a>
+    <div class="item_detail">
+        <a href="https://www.amazon.co.jp/%E8%B6%85%E3%83%BB%E6%A5%B5%E3%82%81%E3%82%8B-MySQL-%E5%9D%82%E4%BA%95-%E6%81%B5/dp/4798112135%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4798112135">超・極める!MySQL</a>
+        <p>
+            著者: 坂井 恵, 志村 和彦, ひろせ まさあき, 松信 嘉範<br />
+            出版日: 2006-10-04<br />
+            出版社/メーカー: 翔泳社<br />
+            カテゴリ: Book<br />
+        </p>
+    </div>
+</div>
+
+
+<p>##懇親会</p>
+
+<ul>
+<li>いつも通り「まずは食う」ｰ&gt;「落ち着いたら話す人探す」手法</li>
+<li>@littlestarling さんの DB の師匠さんとずっと話してました．いい話が聞けた．</li>
+<li>楽天の安武さんは emacs 使い仲間でした．</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/08/08/mysql-http-labs-gree-jp-Top-Study-20090807-Report-html-title-GREE-18-MySQL/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/07/23/ruby-rails-Mitaka-rb-night/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/07/23/ruby-rails-Mitaka-rb-night/">Mitaka.rb night に行ってきた！</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/08/14/notitle/">はてなブロガーの本まとめて欲しい！</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/08/14/notitle/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

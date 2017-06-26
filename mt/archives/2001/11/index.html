@@ -1,0 +1,1863 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="http://www.movabletype.org/" />
+<title>Stnard's Diary</title>
+<link rel="stylesheet" href="/mt/styles-site.css" type="text/css" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/mt/atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/mt/index.rdf" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/mt/index.xml" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/mt/rsd.xml" />
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="/mt/">
+<dc:title>Stnard&apos;s Diary</dc:title>
+<dc:description>All you need is ...., but all I need is ....</dc:description>
+<license rdf:resource="http://creativecommons.org/licenses/by/2.1/jp/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by/2.1/jp/">
+</License>
+</rdf:RDF>
+-->
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-97540-1";
+urchinTracker();
+</script>
+<script src="/mt/js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="/mt/js/AC_ActiveX.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="container">
+
+ <div id="banner">
+   <h1><a href="/mt/" accesskey="1">Stnard's Diary</a></h1>
+  <h2>All you need is ...., but all I need is ....</h2>
+<div style="position:absolute;top:10px;right:10px;"><a href="http://www.aozora.gr.jp/shomei/" target="_blank"><img src="http://www.aozora.gr.jp/images/noextension.png" border="0" alt="著作権保護期間延長に反対します" title="著作権保護期間延長に反対します" /></a></div>
+
+ </div>
+
+ <div id="main">
+  <div id="center">
+   <div class="content">
+    <div align="center">
+     
+      <a href="/mt/archives/2001/10/">&laquo; 2001年10月</a> |
+     
+      <a href="/mt/">メイン</a>
+     
+      | <a href="/mt/archives/2001/12/">2001年12月 &raquo;</a>
+     
+    </div>
+    
+     
+      
+       <h2 class="date">2001年11月29日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001929">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001929">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/29/001929.html"> Apache+PHP4+JSP+mod_ssl</a></h3>
+      全部一気にじゃなくて追加
+<li>openssl を download して展開後 -fPIC(Position Independent Code) を
+つけて config
+<pre class="cmd">
+# tar zxvf openssl-0.9.6b.tar.gz
+# cd openssl-0.9.6b
+# ./config -fPIC
+# make
+</pre>
+<li>mod_ssl を download して展開後 configure
+<pre class="cmd">
+$ tar zxvf cd mod_ssl-2.8.5-1.3.22.tar.gz
+# cd cd mod_ssl-2.8.5-1.3.22
+# ./configure --with-apache=../apache_1.3.22
+--with-ssl=../openssl-0.9.6b --enable-rule=SHARED_CORE
+--with-layout=Apache --enable-module=so --enable-module=status
+--enable-module=info --enable-module=rewrite --enable-module=usertrack
+--activate-module=src/modules/php4/libphp4.a --enable-shared=ssl
+</pre>
+<li>Apache の make
+<pre class="cmd">
+# cd ../apache-1.3.22
+# make
+# make certificate
+</pre>
+この時点で Certification に関して質問があるが，特に気にする必要も無く
+適当に．
+<font COLOR="#404040">大体公開しないし，CA</font>
+<font COLOR="#404040">個人用だから．</font>
+<li>make install
+<pre class="cmd">
+# make install
+</pre>
+<li>設定する．
+<font COLOR="#404040">まあ適当に．</font>
+<pre class="cmd">
+# emacs /usr/local/apache/conf/httpd.conf
+/->
+    order deny,allow
+    deny from all
+    allow from 192.168.0.0/255.255.255.0 127.0.0.1
+<Directory /home/*/public_html>
+     Options Indexes FollowSymLinks
+     AllowOverride Options FileInfo Limit AuthConfig
+     Order allow,deny
+     Allow from all
+</Directory>
+HostnameLookups On
+server-status, server-info -> Eliminate #
+</pre>
+<li>起動
+<pre class="cmd">
+# apachectl stop
+# apachectl startssl
+</pre>
+</ol>
+後は Browser で見たときに
+<span class="strong">サイト証明書</span>
+がどうとか出てくるので
+<span class="strong">はい</span>
+を選ぶだけ．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/29/001929.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001928">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001928">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/29/001928.html"> 奇跡(ココロ図書館(06))</a></h3>
+      <img src="img/2001/kokoro20011129p1.jpg" width="240" alt="あるとちゃん．．．．">
+<img src="img/2001/kokoro20011129p2.jpg" width="240" alt="生ける屍">
+<img src="img/2001/kokoro20011129p3.jpg" width="240" alt="MP0">
+<img src="img/2001/kokoro20011129p4.jpg" width="240" alt="生きる希望">
+<img src="img/2001/kokoro20011129p5.jpg" width="240" alt="やっぱり最後は？">
+<br>
+<span class="strike">あぁ～作画が．．．．</span>
+奇跡は起きたのでしょうか．
+<font COLOR="#404040">起きましたとも(ぉ．</font>
+まあ深く考えずに見てて楽しいのは素晴らしいことです．でも 1 クールで終
+わるんだよなぁ．次は 7 人のナナらしいが，そんなのよりこれが永遠に続く
+ことを希望(ぉ．
+<font COLOR="#404040">でもそれはつまり永遠に買い続けるということで．．．．</font>
+<font COLOR="#404040">あぁ背反二律が．．．．</font>
+それよりも，こころ＠
+<font COLOR="skyblue">斉藤千和</font>
+が出てる時だけ作画がいいのは気のせいか？それはそれでいいのだが．．．．
+次回はいよいよ新キャラ登場の巻です．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/29/001928.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月27日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001922">▽</a>[<a class="cat" href="/mt/archives/cat_junk.html#001922">junk</a>] <a class="titlelink" href="/mt/archives/2001/11/27/001922.html"> ネタ(初出某ML)</a></h3>
+      想定として<br>
+<font COLOR="skyblue">上司</font>
+：コンピュータやアニメ等に疎く，部下をよく頼る．<br>
+<font COLOR="lime">部下</font>
+：アレな人種．属性は萌え．<br>
+<font COLOR="yellow">友人A</font>
+：最近自作にはまりだした有望株．<br>
+<font COLOR="lime">友人B</font>
+：未だ PC/AT 互換機と呼ばれる頃から Parts を買いあさっていた強者．しか
+もアレ系．属性はやはり萌え．<br>
+<font COLOR="lime">店員</font>
+：店内で一番知識があると評判の店員．しかしやはり属性は萌え．<br>
+と言うのがあります．が，まちがっても，「部下＝友人B＝店員＝作者」では
+<font COLOR="#404040">たぶん</font>
+ないので悪しからず．ちなみに，会話中の「()」内はツッコミです(ぉ．
+<font COLOR="#808080">分かる人だけに．．．．</font>
+<ul>
+<li><font COLOR="#AAAAAA">会話その1<br></font>
+<font COLOR="skyblue">上司</font>
+：最近、うちのサーバーの処理がおぼつかなくなって来たんだが，どうすれば
+いいと思うかね．<br>
+<font COLOR="lime">部下</font>
+：本体を赤く塗りましょう(通常の3倍の速さ)．
+<li><font COLOR="#AAAAAA">会話その2<br></font>
+<font COLOR="yellow">友人A</font>
+：昨日，瞬間だけど700MHz越えたんだよ．でもその後熱がひどくてね．<br>
+<font COLOR="lime">友人B</font>
+：あ，V-MAX(瞬間最大3倍速)？
+<li><font COLOR="#AAAAAA">会話その3<br></font>
+<font COLOR="skyblue">上司</font>
+：そうそう，家のパソコンにだね，電磁波対策として，フィルターとかをつけ
+たんだよ．最近は怖いからねぇ．<br>
+<font COLOR="lime">部下</font>
+：え，ダグラム(Xネビュラ対応)？
+<li><font COLOR="#AAAAAA">会話その4<br></font>
+<font COLOR="skyblue">上司</font>
+：う～ん，どうやってもこのバグがとれないんだよ．どうすればいいと思うか
+ね．<br>
+<font COLOR="lime">部下</font>
+：右手に火をつけて，叫びましょう(東方は赤く燃えている)．<br>
+<font COLOR="skyblue">上司</font>
+：は？<br>
+<font COLOR="lime">部下</font>
+：それでもだめなら，身体中を金色に塗って，金粉をまいて，「ハイパーモー
+ド」って叫んでください．
+<li><font COLOR="#AAAAAA">会話その5<br></font>
+<font COLOR="skyblue">上司</font>
+：最近，UPSのモニターを見ると電力の低下が激しいみたいなんだ．これじゃ
+あ，いつサーバーが落ちても仕方無い状況だ．何故だか分かるかね．<br>
+<font COLOR="lime">部下</font>
+：月が見えないからですね(マイクロウェーブ)．
+<li><font COLOR="#AAAAAA">会話その6<br></font>
+<font COLOR="skyblue">上司</font>
+：ここのところ，回線の混み具合がひどくないか？実効値がかなり下がってる
+みたいなんだが．原因が分かるかね．<br>
+<font COLOR="lime">部下</font>
+：ミノフスキー粒子が戦闘濃度です．
+<li><font COLOR="#AAAAAA">会話その7<br></font>
+<font COLOR="yellow">友人A</font>
+：このCD-Rって書き込みの失敗が少ないって言うよね．なんでだろ．やっぱ相
+性なのかなぁ．<br>
+<font COLOR="lime">友人B：</font>
+戦艦の主砲なみだからね(白い伝説)．
+<li><font COLOR="#AAAAAA">会話その8<br></font>
+<font COLOR="yellow">友人A</font>
+：パソコンってさぁ，周辺機器をいっぱい繋げるとでかくなるよね．あれって，
+なんとかならないのかなぁ．かっこわるくてさぁ．<br>
+<font COLOR="lime">友人B：</font>
+キング(ゴウザウラー)だからしかたないね．<br>
+＃他，キング(エクスカイザー)，ゴッド(ライジンオー)，(グレート)ガンバル
+ガー，グレート(マイトガイン)等でも可
+<li><font COLOR="#AAAAAA">会話その9<br></font>
+<font COLOR="skyblue">お客：</font>
+このパッケージにはちゃんと LED が付いているように見えるのに，商品には
+付いていないじゃないか！どうなってるんだ！<br>
+<font COLOR="lime">店員：</font>
+あんな物は飾りです．上の人にはそれが分からんのです(足)．
+<li><font COLOR="#AAAAAA">会話その10<br></font>
+<font COLOR="skyblue">上司</font>
+：最近どうも頭のまわりが遅くなってなぁ．プログラムのバグなんかがすぐに
+潰せないんだ．おかしい場所を見付けるスピードが落ちてねぇ．もう年なのか
+ねぇ．なにか方法があると思うかね．<br>
+<font COLOR="lime">部下</font>
+：自閉症になりましょう(ニュータイプ)．
+<li><font COLOR="#AAAAAA">会話その11<br></font>
+<font COLOR="skyblue">上司</font>
+：うちの会社にもいよいよサーバーの導入だ．性能も十分高い．いまのニーズ
+には十分答えられる見込みだ．しかし，本体が大きいのと，扱いがいまいち困
+難なのが問題だな．<br>
+<font COLOR="lime">部下</font>
+：サイコですね(No.4)．
+<li><font COLOR="#AAAAAA">会話その12<br></font>
+<font COLOR="skyblue">上司</font>
+：なぜか朝から嫌な気分だったんだが，社長がお見えになるとはな．嫌な予感
+的中だよ．<br>
+<font COLOR="lime">部下</font>
+：君もプレッシャーを感じていたのか(シロッコ)．
+<li><font COLOR="#AAAAAA">会話その13<br></font>
+<font COLOR="skyblue">上司</font>
+：君，凄いじゃないか．あの不具合をどうやって克服したんだね．あれを何と
+かせんと，稼働率が一桁になってしまう程の物だったんだぞ．<br>
+<font COLOR="lime">部下</font>
+：僕が勇者だからです(承認)．
+<li><font COLOR="#AAAAAA">会話その14<br></font>
+<font COLOR="skyblue">上司</font>
+：君，昨日は大丈夫だったかね．あれだけ飲んだんじゃ，今日は辛いんじゃな
+いのかね．<br>
+<font COLOR="lime">部下</font>
+：そうなんですよ．昨日のことはほとんど覚えてないし，今日は二日酔いで頭
+が痛くて．<br>
+<font COLOR="skyblue">上司</font>
+：今，特に急ぐ仕事は無いし，サーバーも順調に動いている．今日は休んでは
+どうかね．<br>
+<font COLOR="lime">部下</font>
+：でも，サイコに乗らないと記憶を返してもらえないんです(研究所)．
+<li><font COLOR="#AAAAAA">会話その15<br></font>
+<font COLOR="skyblue">上司</font>
+：おお，凄いな．こんなもの(ペルチェ)でこんなにも温度が下がるんだな．ど
+ういう機構なんだ．ちょっと私に説明してくれんかね．<br>
+<font COLOR="lime">部下</font>
+：超合金 Z は超合金 Z です(理解を越えた合金)．
+<li><font COLOR="#AAAAAA">会話その16<br></font>
+<font COLOR="skyblue">上司</font>
+：あ，君．このハードウェアのDIPスイッチなんだが，3つあるんだから，全部
+で設定は8つあるはずだろう．なぜ3種類しか設定できないんだね．<br>
+<font COLOR="lime">部下</font>
+：ゲッターはスリーまでです．
+<li><font COLOR="#AAAAAA">会話その17<br></font>
+<font COLOR="skyblue">上司</font>
+：昨日，死んだ母が夢枕に立ってね．良くないことが起こるから注意しろと言
+うんだ．<br>
+<font COLOR="lime">部下</font>
+：エマ中尉(危機感知)？
+<li><font COLOR="#AAAAAA">会話その18<br></font>
+<font COLOR="skyblue">上司</font>
+：どうやら，このフロッピーはダメになったらしいな．ディスプレイの近くに
+置いてたためだろうか．<br>
+<font COLOR="lime">部下</font>
+：鋼鉄ジークです(威力)．
+<li><font COLOR="#AAAAAA">会話その19<br></font>
+<font COLOR="yellow">友人A</font>
+：ラジオって歌が流れるとき途中で DJ が喋るときがあるだろう．あれって，
+ちゃんと歌が聞こえなくて，嫌なんだよな．<br>
+<font COLOR="lime">友人B：</font>
+レイズナーを見ろ(コクピットは僕のものだ)．
+<li><font COLOR="#AAAAAA">会話その20<br></font>
+<font COLOR="skyblue">上司</font>
+：ステンレスも錆びることがあるんだなぁ．<br>
+<font COLOR="lime">部下</font>
+：グレートが待ってます(最初から空が飛べる)．
+</ul>
+1999 年の 8 月に作ったネタだからちょっと古いかな？今こんな気力は．．．．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/27/001922.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001923">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001923">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/27/001923.html"> PDF Writer</a></h3>
+      Samba + GS で簡易 PDF 出力用の仮想 Printer を作る．
+<li>Directry の準備
+<pre class="cmd">
+# mkdir /home/samba/bin/
+# mkdir /home/samba/pdfwork/
+# mkdir /home/samba/pdfoutput/
+# chmod 777 /home/samba/pdfwork/
+# chmod 777 /home/samba/pdfoutout/
+</pre>
+<li>Samba の設定
+<pre class="cmd">
+# vi /etc/smb.conf
+---------------------------------
+[pdf writer]
+printable = yes
+comment = PDF Writer
+print command = /home/samba/bin/pdfwrite %s &
+guest ok = yes
+path = /home/samba/pdfwork
+
+[pdfoutput]
+comment = PDF Output
+path = /home/samba/pdfoutput
+guest ok = yes
+read only = no
+writable = yes
+---------------------------------
+# service smb restart
+</pre>
+<li>PDF 変換用 Script
+<pre class="cmd">
+# vi /home/samba/bin/pdfwrite
+---------------------------------
+#!/bin/sh
+# usage: pdfwrite [ps filename]
+outdir=/home/samba/pdfoutput
+workdir=/home/samba/pdfwork
+psname=$1
+pdfname=${workdir}/$psname.pdf
+/usr/bin/ps2pdf $psname $pdfname
+mv $pdfname $outdir
+---------------------------------
+# chmod +x /home/samba/bin/pdfwrite
+</pre>
+<li>Windows 上での設定<br>
+普通にプリンタを追加する．ドライバが見つからないといわれる場合は，適当
+なものを選ぶ(Canon LBP-A404IIPS)．
+</ol>
+単に GS を通じて変換しているだけなので，Font は汚い．まあ飽く迄簡易な
+んで．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/27/001923.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月26日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001918">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001918">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/26/001918.html"> ADD PRIMARY KEY on PostgreSQL</a></h3>
+      作成された(ある程度データがある) Table に Priamry Key(or Foreign Key
+etc.) を追加する方法．
+<li>テーブルの名前を変える
+<pre class="cmd">
+=> alter table THE_TABLE rename to oldtable;
+</pre>
+<li>新しい Table を普通に作成する．
+<pre class="cmd">
+=> create table THE_TABLE (
+(>   test    int4      PRIMARY KEY,
+(>   test2   char(24)
+(> );
+</pre>
+<li>新しいテーブルに古いテーブルのデータを追加する．
+<pre class="cmd">
+=> insert into THE_TABLE select * from oldtable;
+</pre>
+<li>必要に応じて Table を削除する．
+<pre class="cmd">
+=> drop table oldtable;
+</pre>
+</ol>
+別に難しい事はなく，単に Insert するのがミソ．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/26/001918.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001921">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001921">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/26/001921.html"> ちなみに</a></h3>
+      <a href="" target="_blank">これ</a>
+は自分管理の一環で作ったものの拡張時に生じた作業．これがあるおかげで，
+某ヤマギワ
+<font COLOR="#40404">＜全然伏字じゃねぇ(ぉ</font>
+での予約作業に対する労力は一気に．．．．減って無いな(汗)．まあその月の
+予想出費が出力されるんで，目安にはなってますな，多分．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/26/001921.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001920">▽</a>[<a class="cat" href="/mt/archives/cat_junk.html#001920">junk</a>] <a class="titlelink" href="/mt/archives/2001/11/26/001920.html"> PSOv2</a></h3>
+      Ultimate の硬さは異常ですな．今更言うのもなんだけど．．．．Level 100
+は超えてないとろくにダメージすら与えられないよ．この調子で，v3 とかで
+は Hell とかもっと凶悪な Stage が増える事を少しだけ祈ってます．
+<font COLOR="#808080">つうかそれ以前に，DC</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/26/001920.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001919">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001919">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/26/001919.html"> 汎用性</a></h3>
+      汎用的な Program を使ってるとその汎用性故に煩わしくなることがある．そ
+ういう時，「自分で作ったほうが早いんじゃねぇか？」とか思うこともあるけ
+ど，そんな時間ないしなぁ．．．．Java って Binary Data 読めるんだろうか
+ら，勉強がてらちょっとやってみるか．JBuilder なら Free 版もあるし．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/26/001919.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001917">▽</a>[<a class="cat" href="/mt/archives/cat_junk.html#001917">junk</a>] <a class="titlelink" href="/mt/archives/2001/11/26/001917.html"> GRANDIA</a></h3>
+      <blockquote><a href="http://saru.enix.co.jp/grandia/" target="_blank">GRANDIA</a></blockquote>LNEW http://saru.enix.co.jp/grandia/ GRANDIA Xtream
+懐中時計ですか．．．．まあどうせ買うからいいけど．しかし Xtream からど
+うも
+<span class="strong">ゲーム性重視</span>
+に変わったみたいな記述が多いが，GRANDIA シリーズ，もっと言及すると
+Gamearts の RPG の特色はやっぱり Scenario だと思うんだけどなぁ．．．．
+発売は ENIX だが開発は Gamearts なので一応期待して待ってみよう．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/26/001917.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001916">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001916">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/26/001916.html"> Apache 1.3.22</a></h3>
+      JSP 用に入れたんだが，Permission か何かの問題で動かなかったのを修正．
+つうかわからんよそんなの．[error-log] には出ずに [access_log] にだけ出
+るから Directory Permission だろうとは思ったけど．．．．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/26/001916.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月25日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001915">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001915">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/25/001915.html"> JSP</a></h3>
+      Default で JSP が Listen するのは 8080 らしいのでそれを変更する．どう
+も Squid 立ててるのが影響しているようだ．
+<pre class="cmd">
+8080 -> 8088
+</pre>
+これで再起動する．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/25/001915.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001914">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001914">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/25/001914.html"> 誰かを想う気持ち(フルバ(19))</a></h3>
+      <img src="img/2001/fruitbasket20011125p1.jpg" width="240" alt="心配する">
+<img src="img/2001/fruitbasket20011125p2.jpg" width="240" alt="驚愕の">
+<img src="img/2001/fruitbasket20011125p3.jpg" width="240" alt="慌てふためく猫">
+<img src="img/2001/fruitbasket20011125p4.jpg" width="240" alt="高１？">
+<img src="img/2001/fruitbasket20011125p5.jpg" width="240" alt="へらへら～">
+<img src="img/2001/fruitbasket20011125p6.jpg" width="240" alt="幸せな気持ち">
+<img src="img/2001/fruitbasket20011125p7.jpg" width="240" alt="驚愕の．．．．誰？(ぉ">
+<img src="img/2001/fruitbasket20011125p8.jpg" width="240" alt="心配する子虎">
+<img src="img/2001/fruitbasket20011125p9.jpg" width="240" alt="注射中">
+<img src="img/2001/fruitbasket20011125p10.jpg" width="240" alt="最後の〆は魔王">
+<br>
+今回の作画は気合入ってました．作監は
+<font COLOR="lime">そえたかずひろ</font>
+だったようなんででしょうか．全編安定していて見ていてよかったです．かな
+り癒されました．特に最後に花島咲％魔王＠
+<span class="strike">相田紫</span>
+<font COLOR="skyblue">安原麗子</font>
+が締めてくれました．しかもカメラ目線(^_^;)．なんだかとっても狙ってる気
+がするのは．．．．
+<font COLOR="#404040">しかもその狙いに的中しました．何故？(汗)</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/25/001914.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月24日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001913">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001913">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/24/001913.html"> やっぱり最強の(スクライド(19))</a></h3>
+      <img src="img/2001/scryde20011124p1.jpg" width="240" alt="感動の再会">
+<img src="img/2001/scryde20011124p2.jpg" width="240" alt="帰ってきた">
+<img src="img/2001/scryde20011124p3.jpg" width="240" alt="最強のアルター使い">
+<br>
+やっぱり最強のアルター使いはかなみ＠
+<font COLOR="skyblue">田村ゆかり</font>
+でした．なんか
+<span class="strike">兄貴</span>
+無常とか言うのに狙われてるし．でも，この次の週撮り逃してるんだよ
+なぁ．．．．(T_T)
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/24/001913.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001912">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001912">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/24/001912.html"> アビリティ？(FFU(06))</a></h3>
+      <img src="img/2001/ffu20011124p1.jpg" width="240" alt="私の顔">
+<img src="img/2001/ffu20011124p2.jpg" width="240" alt="また怒ってる">
+<br>
+リサ＠
+<font COLOR="skyblue">氷上恭子</font>
+は新しいアビリティに開眼したようです．しかしあの子供たちは何かのアビリ
+ティなりスキルなりを習得できるんでしょうか．ずっと単なる役立たず？(ぉ
+<font COLOR="#404040">しかし今回は少し違う</font>
+<font COLOR="#404040">私の顔とか言われましたよ．幸せです(ぉぉ．</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/24/001912.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月23日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001911">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001911">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/23/001911.html"> 癒し(ココロ図書館(06))</a></h3>
+      <img src="img/2001/kokoro20011123p1.jpg" width="240" alt="出発">
+<img src="img/2001/kokoro20011123p2.jpg" width="240" alt="遠征中">
+<img src="img/2001/kokoro20011123p3.jpg" width="240" alt="コンパロイド">
+<img src="img/2001/kokoro20011123p4.jpg" width="240" alt="ちょっと不安">
+<img src="img/2001/kokoro20011123p5.jpg" width="240" alt="がっくし(ぉ">
+<img src="img/2001/kokoro20011123p6.jpg" width="240" alt="意外な">
+<img src="img/2001/kokoro20011123p7.jpg" width="240" alt="笑顔">
+<br>
+癒されます．これとフルバがあるから毎日を生きていけるような気がします
+<font COLOR="#40404">＜言い過ぎ(汗)</font>
+．今回は研修です．コンパロイドというメイドロボットが出てきました．
+<font COLOR="#80808">マルチ？ちぃ？</font>
+無表情に「
+<span class="strong">確率は</span>
+」とか言ってくれるんですごく癒されました
+<font COLOR="#404040">＜どういう原理だよ(ぉ</font>
+．しかも最後には珠音＠
+<font COLOR="skyblue">坂本真綾</font>
+の笑顔が．．．．狙いすぎ？(ぉ．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/23/001911.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月22日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001910">▽</a>[<a class="cat" href="/mt/archives/cat_life.html#001910">life</a>] <a class="titlelink" href="/mt/archives/2001/11/22/001910.html"> 睡眠</a></h3>
+      不足が続く毎日．．．．何故にこれほど忙しいのだろうか．．．
+<font COLOR="#404040">＜物買いすぎ(汗)．</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/22/001910.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月21日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001909">▽</a>[<a class="cat" href="/mt/archives/cat_junk.html#001909">junk</a>] <a class="titlelink" href="/mt/archives/2001/11/21/001909.html"> PSOv2</a></h3>
+      <font COLOR="#404040">かつ鬱を解消するために(T_T)</font>
+，中古で DC のクライマックスランダースと新品で DC の Phatasy Star
+Online Version 2，PS の Grandia -the best- を買いました．クライマック
+スランダースは．．．．風来のシレン？トルネコの大冒険？のような感じ．ま
+あアイテム集めは面白いけどね．Grandia は SS 版持ってるんだが，Grandia
+II やったあとに妙にやりたくなったので買った．SS がメモリ関係が怪しいの
+で PS2 ですることに．が，いまは PSOv2 ですな．Ultimate モード難しすぎ．
+攻撃が全然当たらない．Very Hard でもっと Lv(今92) 上げなきゃ．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/21/001909.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001908">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001908">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/21/001908.html"> ぱにょぱにょ？</a></h3>
+      来年1月から始まる新作が多いですな．今のところ期待できる作品は
+<ul>
+<ol>
+<li>ぱにょぱにょデ・ジ・キャラット
+<li>七人のナナ
+</ul>
+ぐらいか？まあ今すげえ Motivation 下がってるから
+<font COLOR="#404040">＜なに対してだよ(ぉ</font>
+これ位かなと．でも，
+<span class="strong">フルバ</span>
+も
+<span class="strong">おじゃ魔女どれみ</span>
+も
+<span class="strong">夢のクレヨン王国</span>
+も
+<span class="strong">超GALS!寿蘭</span>
+も最初はあまり気にもしてませんでした．．．．これは予言(汗)．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/21/001908.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001907">▽</a>[<a class="cat" href="/mt/archives/cat_life.html#001907">life</a>] <a class="titlelink" href="/mt/archives/2001/11/21/001907.html"> 大いなる意思</a></h3>
+      最近，周りの展開に置き去りにされている感がある．知らない間に状況が急速
+に展開している．何故だろうか．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/21/001907.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月20日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001906">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001906">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/20/001906.html"> Apache+PHP4+JSP</a></h3>
+      え～，色々なページからしらべた結果を残すことに．
+<li>Apache を configure
+<pre class="cmd">
+# tar zxvf apache_1.3.22.tar.gz
+# cd apache_1.3.22
+# ./configure
+# cd ../
+</pre>
+<li>PHP
+<pre class="cmd">
+# tar php-4.0.6.tar.gz
+# cd php-4.0.6
+# ./configure --with-pgsql --with-apache=../apache_1.3.22
+--enable-track-vars
+# make
+# make install
+</pre>
+<li>Apache に PHP Module 組み込ませるようにする．同時に DSO を有効にす
+る．
+<pre class="cmd">
+# cd ../apache_1.3.22
+# ./configure --enable-rule=SHARED_CORE --enable-module=so
+--activate-module=src/modules/php4/libphp4.a
+# make
+# make install
+</pre>
+<li>設定をする
+<pre class="cmd">
+# cd ../php-4.0.6
+# cp php.ini-dist /usr/local/lib/php.ini
+# vi /usr/local/apache/conf/httpd.conf
+# vi /etc/profile
+</pre>
+<li>tomcat を持ってくる．
+<pre class="cmd">
+# tar zxvf jakarta-tomcat-3.2.3.tar.gz -C /usr/local
+</pre>
+<li>mod_jk.so をコピーする
+<pre class="cmd">
+# cp mod_jk-noapi.so /usr/local/apache/libexec/mod_jk.so
+</pre>
+<li>設定する
+<pre class="cmd">
+# emacs /usr/local/apache/conf/httpd.conf
+Add
+Include "/usr/local/jakarta-tomcat-3.2.3/conf/mod_jk.conf-auto"
+</pre>
+<li>起動する
+<pre class="cmd">
+# sh /usr/local/jakarta-tomcat-3.2.3/bin/tomcat.sh start
+# /usr/local/apache/bin/apachectl start
+</pre>
+</ol>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/20/001906.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月19日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001905">▽</a>[<a class="cat" href="/mt/archives/cat_works.html#001905">works</a>] <a class="titlelink" href="/mt/archives/2001/11/19/001905.html"> 終了</a></h3>
+      え～，終わりました．疲れました．でも．．．．(T_T)
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/19/001905.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001904">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001904">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/19/001904.html"> Next Video Format</a></h3>
+      いま Capture して保存している形式は DivX-3.11(MPEG4V3) なんだが，この
+次ってのがなかなか出てこない．MPEG2 は確かに高画質なんだが，それ相応に
+bit-rate を消費する．DivX v4 もいいらしいんだが，OS が変わったときちゃ
+んと動くのかどうかが不安．やっぱ Windows 使ってるんだから，WMV8 とかが
+いいとは思うんだが，いかんせん，CODEC が無いから AVIUTL から使えない．
+いちいち temporary file を出力するのもあれだしなぁ．．．．VFAPI 使えば
+いいらしいのは知ってるが．．．．まあ一度試しにやってみるか．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/19/001904.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001903">▽</a>[<a class="cat" href="/mt/archives/cat_works.html#001903">works</a>] <a class="titlelink" href="/mt/archives/2001/11/19/001903.html"> 順番</a></h3>
+      今日がそうです．終われば．．．．？
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/19/001903.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月18日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001902">▽</a>[<a class="cat" href="/mt/archives/cat_thesis.html#001902">thesis</a>] <a class="titlelink" href="/mt/archives/2001/11/18/001902.html"> Motivation</a></h3>
+      何をするのか・何をしたいのかを明確にできずにズルズルと大学を卒業し，フ
+リーターなどになってる人間が多いと最近感じる．大学出たのに家で親に養っ
+てもらっているのを恥ずかしいとは思わないのだろうか．自立心が無いという
+か，そもそも惰性と怠惰の中で生きているような人種．それなのに上に行くこ
+とをを望む．しかも虚勢を張り虚栄心が旺盛．なんなのだろう，この人種は．
+このような人種に未来を担わせるのに，大いなる不安を禁じ得ない．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/18/001902.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001901">▽</a>[<a class="cat" href="/mt/archives/cat_blog.html#001901">blog</a>] <a class="titlelink" href="/mt/archives/2001/11/18/001901.html"> 本質</a></h3>
+      え～
+<font COLOR="#404040">で始まるのが最近多いなぁ．．．．</font>
+，この日記は
+<span class="strong">作者の全てを表しています</span>
+．完璧にです．
+<font COLOR="#404040">．．．(T_T)</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/18/001901.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001900">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001900">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/18/001900.html"> エンジェル(ココロ図書館(05))</a></h3>
+      <img src="img/2001/kokoro20011118p1.jpg" width="240" alt="拡大しすぎ(^_^;)">
+<img src="img/2001/kokoro20011118p2.jpg" width="240" alt="小さなこころん">
+<img src="img/2001/kokoro20011118p3.jpg" width="240" alt="カージーズ・エンジェル">
+<img src="img/2001/kokoro20011118p4.jpg" width="240" alt="怪盗発見？">
+<img src="img/2001/kokoro20011118p5.jpg" width="240" alt="不安">
+<img src="img/2001/kokoro20011118p6.jpg" width="240" alt="にせもの？">
+<img src="img/2001/kokoro20011118p7.jpg" width="240" alt="ご利用有難う御座います">
+<img src="img/2001/kokoro20011118p8.jpg" width="240" alt="最後に">
+<br>
+<a href="http://homepage2.nifty.com/orphee/" target="_blank">某広報日記</a>
+によると，えらい名前がついてるらしいんだが．．．．本編じゃ出てきてない
+じゃん＜ソリャソウダ(^_^;)．いやまあでも，なんだか作画が安定しないの
+は．．．．あともう少し頑張れば史上最強の称号を与えられるのに
+<font COLOR="#404040">ッテドコカラダヨ(ぉ</font>
+．しか～し，こうしていい部分を摘出できるんで，僕としては問題ありません．
+全く．
+<font COLOR="#808080">いや，マジで(ぉ．</font>
+で，いいな＠
+<font COLOR="skyblue">沢城みゆき</font>
+の「もちろんよ～こころん」っていうのが，なんかベテラン声優並に卓越され
+ているような気がするには気のせいか？まあある意味三姉妹の中で一番合って
+る気がする，原作と．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/18/001900.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月15日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001899">▽</a>[<a class="cat" href="/mt/archives/cat_blog.html#001899">blog</a>] <a class="titlelink" href="/mt/archives/2001/11/15/001899.html"> リンク</a></h3>
+      下にあったココロ図書館の OP/ED のリンクですが，指定間違ってました．落
+とそうと思っていた方
+<font COLOR="#404040">(約</font>
+，ごめんなさい．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/15/001899.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001898">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001898">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/15/001898.html"> 魔王の居城(フルバ(18))</a></h3>
+      <img src="img/2001/fruitbasket20011115p1.jpg" width="240" alt="魔王＃１">
+<img src="img/2001/fruitbasket20011115p2.jpg" width="240" alt="魔王の弟">
+<img src="img/2001/fruitbasket20011115p3.jpg" width="240" alt="スキル呪い">
+<img src="img/2001/fruitbasket20011115p4.jpg" width="240" alt="素子＠清水香里">
+<img src="img/2001/fruitbasket20011115p5.jpg" width="240" alt="カエル頭？">
+<img src="img/2001/fruitbasket20011115p6.jpg" width="240" alt="呪い発動">
+<img src="img/2001/fruitbasket20011115p7.jpg" width="240" alt="回避成功(ぉ">
+<img src="img/2001/fruitbasket20011115p8.jpg" width="240" alt="今封印が(^_^)">
+<img src="img/2001/fruitbasket20011115p9.jpg" width="240" alt="不意打ち(^_^)">
+<img src="img/2001/fruitbasket20011115p10.jpg" width="240" alt="勝利">
+<img src="img/2001/fruitbasket20011115p11.jpg" width="240" alt="会心の笑顔">
+<img src="img/2001/fruitbasket20011115p12.jpg" width="240" alt="暖かい微笑み">
+<img src="img/2001/fruitbasket20011115p13.jpg" width="240" alt="魔王＃２">
+<br>
+いや～花島咲＠
+<span class="strike">相田紫</span>
+<font COLOR="skyblue">安原麗子</font>
+の回は大成功でした
+<font COLOR="#80808">＜ナニガだよ(ぉ</font>
+．こんなに画像貼ったのは初めてですな．それほど素晴らしかったです．まあ，
+最初見たときは「あれ，ウテナ？」とか思わせる作風だったけど，花島恵＠
+<font COLOR="skyblue">南央美</font>
+の
+<span class="strong">呪いっぷり</span>
+もよかったです．今回は作画もしっかりしてたし．このまま続くんならいいん
+だけどなぁ．．．．
+<font COLOR="#404040">それでも買うんだが(ぉ．</font>
+それにしても，原作通りなら恵＠
+<font COLOR="skyblue">南央美</font>
+の出番もこれまでか．．．．残念です．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/15/001898.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001897">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001897">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/15/001897.html"> Flet's ADSL</a></h3>
+      「モデムだけ交換してくれ」っていったら素直に代替品を送ってくれました．
+なんだか話と違う気がするが，今の所，30 時間程度切断がありません．やっ
+ぱり機械的なものだったんだろうか．そういや急遽用意したとか言う話だから，
+無理に作って不良率が高くなったんだろう．土曜日には不良分を送り返すこと
+にする．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/15/001897.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001896">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001896">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/15/001896.html"> ナレーター(スクライド(18))</a></h3>
+      <img src="img/2001/scryde20011115p1.jpg" width="240" alt="決意">
+<img src="img/2001/scryde20011115p2.jpg" width="240" alt="思い">
+<br>
+段々と登場人物の過去が明らかになりますが，かなみ＠
+<font COLOR="skyblue">田村ゆかり</font>
+の過去はいつ紹介されるんだろうか．まあこのキャラだけ作画がいいんで満足
+です(ぉ．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/15/001896.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月13日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001895">▽</a>[<a class="cat" href="/mt/archives/cat_works.html#001895">works</a>] <a class="titlelink" href="/mt/archives/2001/11/13/001895.html"> Dipole sound wave</a></h3>
+      ．．．．解析的には作れない事はないだろうが，探すの面倒なので，素直に数
+値的に求める事にする．難しくは無いんだが，面倒ではあるしねぇ．．．．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/13/001895.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001894">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001894">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/13/001894.html"> Power Point</a></h3>
+      「視覚的に使いやすい」のはホントに便利なんだが，
+<span class="strong">ちょっとした微調整にえらく手間がかかる</span>
+のは何とかして欲しい．慣れればいいんだろうが，TeX に慣れた人間にとって
+は Keyboard 叩き割りたくなる(^_^;)．かと言って，これに慣れてしまうと，
+<span class="strong">MS 社製品しか使えなくなる</span>
+のではないかとものすごく不安な今日この頃(汗)．．．．大丈夫だよね(激汗)．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/13/001894.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001893">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001893">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/13/001893.html"> Server is Recovered</a></h3>
+      え～，単に電源入れただけ(ぉ．でも，ReiserFS だから起動早くていいですな．
+いきなり電源落ちても，File Consistency だけは大丈夫だし．
+<font COLOR="#888888">HDD</font>
+まあ落ちてたんで，日記用の絵が上がって無いんですな．今日のよるには上が
+る&修正する予定．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/13/001893.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月12日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001892">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001892">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/12/001892.html"> 予言(FFU(05))</a></h3>
+      <img src="img/2001/ffu20011112p1.jpg" width="240" alt="毎回のお楽しみ(ぉ．">
+<img src="img/2001/ffu20011112p2.jpg" width="240" alt="こんな顔＃１">
+<img src="img/2001/ffu20011112p3.jpg" width="240" alt="こんな顔＃１">
+<br>
+予言為だけに見てるんで，シドが若くてもメカマニアだとしても問題はありま
+せん(ぉぃ．いや，マジで．
+しかし，アイ＠
+<font COLOR="skyblue">桃井はるこ</font>
+はムッとしてる顔しか無いような気がするのは気のせいか？
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/12/001892.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001891">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001891">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/12/001891.html"> どっかで見た絵(超GALS!寿蘭(31))</a></h3>
+      <img src="img/2001/gals20011112p1.jpg" width="240" alt="やる気無しモード全開？">
+<br>
+どっかで見た絵だなと思うんだが．．．．思い出せない．まあ，いいか(ぉ．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/12/001891.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001890">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001890">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/12/001890.html"> Server Down</a></h3>
+      え～，停電のため，このサーバー死んでました．
+<font COLOR="#404040">どおりで</font>
+で，先程復旧(11/13 PM13:00頃)．．．．でもこの日記は11月12日(月)のも
+の．．．．予言だ＜違(ぉ．
+<font COLOR="#404040">単に下のを持ってくるためのもの(^_^;)．</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/12/001890.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月11日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001889">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001889">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/11/001889.html"> 避暑地での(ココロ図書館(04))</a></h3>
+      <a href="./img/kokoro_library_op.mpg" target="_blank"><img src="img/kokoro20011111p1.jpg" width="240" alt="水着"></a>
+<img src="img/2001/kokoro20011111p2.jpg" width="240" alt="幸せのハプニング">
+<img src="img/2001/kokoro20011111p3.jpg" width="240" alt="見守る姉">
+<img src="img/2001/kokoro20011111p4.jpg" width="240" alt="決意の少女">
+<img src="img/2001/kokoro20011111p5.jpg" width="240" alt="満足の笑顔">
+<a href="./img/kokoro_library_ed.mpg" target="_blank"><img src="img/kokoro20011111p6.jpg" width="240" alt="幸せの笑顔"></a>
+<br>
+ああ～ちゃんとコミック版のネタを入れているのがいいですな．美脚をもう
+ちょっと披露してほしかった気もするが．．．．
+<font COLOR="#404040">これなら身体検査も＜それはねぇ(ぉ</font>
+．それはそれとして，みさと＠
+<font COLOR="skyblue">半場友恵</font>
+の病弱
+<font COLOR="#888888">で白いレースで白い日傘に詩集だね</font>
+<font COLOR="#800000">ってそれは違う(ぉ</font>
+な少女が出てきましたが．．．．イルカを見に行く最中にまたもや
+<font COLOR="yellow">新居昭乃</font>
+のコーラスが．．．．人を陥れるにもほどがあるぜよ(T_T). まあ，
+<span class="strong">もう取り返しつかない</span>
+からいいや(激汗)．
+<font COLOR="#404040">ちなみにリンクがどっかから．．．．</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/11/001889.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月10日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001888">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001888">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/10/001888.html"> MS's Conspiration</a></h3>
+      あ～なんか最近，Office 製品を使うことが多い．Word, Excel, Power Points
+等．もしかしてハメられてますか．MS の策謀だけにはかからないようにしよ
+うと努力してたんだが，時間が無いときに手っ取り早いからねぇ．．．．
+Office 製品は．視覚的で簡単だと言うのは素晴らしいと思うんだが，いかん
+せん妙な重さがあるしねぇ．．．．これで快適な動作，もしくは例外処理のカ
+スタマイズとか出来れば全然問題ないんだけどなぁ．．．．これって欲張りで
+すか(汗)．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/10/001888.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月 9日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001887">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001887">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/09/001887.html"> The only useful MS product</a></h3>
+      Interface が Word と一緒なので別に困りはしないが．．．．微妙な配置とか
+がすごく難しいのは Office 関連製品の特徴でしょうか．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/09/001887.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001886">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001886">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/09/001886.html"> Nightmare of Windows</a></h3>
+      Windows の最大の欠点は Windows の Focus が飛ぶことでしょう．例えば
+co-process でバッチファイルを実行するときとか，その DOS Prompt に
+Forcus が移るときがある．その間は待ってろって言うことか？非常に
+[> /dev/null 2>1&] とかしたい気分．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/09/001886.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月 7日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001885">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001885">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/07/001885.html"> Controller for myself</a></h3>
+      Database 設計は出来ているので，後は実装のみ．．．．ってそれが難しい．
+しかも時間がない(ぉ．．．．どうしよう(汗)．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/07/001885.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月 6日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001883">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001883">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/06/001883.html"> Windows 2000 Installation without CD-ROM Drive</a></h3>
+      Notebook PC 等で CD-ROM が無い場合のインストール方法
+<ul>
+<ol>
+<li>Desktop PC に HDD を接続する方法<br>
+<li>Desktop PC の IDE Interface に Notebook PC 用の 2.5 inch HDD を
+<span class="strong">変換アダプタ</span>
+を用いて接続する．
+<li>HDD を
+<font COLOR="lime">FAT32</font>
+で Format する．この時，
+<span class="strong">Windows 98/98SE</span>
+を用いて System (MS-DOS) を入れておくとすごく楽になる．
+<li>Windows 2000 CD-ROM から \i386 を全て Copy する．これは SP2 を当て
+た image でもかまわない．
+<li>Notebook PC に HDD を接続する．この時，HDD に MS-DOS が入っていれば
+そのまま起動する．Format しただけであれば 起動ディスク (Windows
+98 等で作成できるもの．但し FAT32 が読めなくてはいけない) で起動する．
+<li>[c:\i386\winnt.exe] を実行する．
+</ol>
+<li>FDD が接続されていて Windows 95 の FD Install image があり，
+<li>FD から Windows 95 をインストールする．
+<li>PCMCIA LAN Card を認識させる．
+<li>CD-ROM が接続されている PC で CD-ROM (又は Install image) を共有す
+る．
+<li>CD-ROM 中の \i386 を全て Copy する．
+<span class="strong">MS-DOS モードで再起動する．</span>
+<li>[\i386] 以外のファイルを全て削除する．
+<li>FDD から起動ディスク (上記と同じもの) で起動する．
+<li>[c:\i386\winnt.exe] を実行する．
+</ol>
+</ul>
+とまあこのような感じで Clean Install 出来ます．その代わりに
+<span class="strong">桁違いに時間がかかります</span>
+．起動ディスクに smartdrv.exe 等の Disk Cache Driver を組み込んでおく
+か，後で組み込むといいでしょう．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/06/001883.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001884">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001884">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/06/001884.html"> 天使さま(ココロ図書館(03))</a></h3>
+      <img src="img/2001/kokoro20011106p1.jpg" width="240" alt="これからなにが．．．．">
+<img src="img/2001/kokoro20011106p2.jpg" width="240" alt="なんと．．．．">
+<img src="img/2001/kokoro20011106p3.jpg" width="240" alt="ほかほかマロン天使">
+<img src="img/2001/kokoro20011106p4.jpg" width="240" alt="こっちへ置いといて">
+<img src="img/2001/kokoro20011106p5.jpg" width="240" alt="待機中">
+<img src="img/2001/kokoro20011106p6.jpg" width="240" alt="．．．．">
+<img src="img/2001/kokoro20011106p7.jpg" width="240" alt="天使の微笑み＃１">
+<img src="img/2001/kokoro20011106p8.jpg" width="240" alt="撮影中＃１">
+<img src="img/2001/kokoro20011106p9.jpg" width="240" alt="撮影中＃２">
+<img src="img/2001/kokoro20011106p10.jpg" width="240" alt="天使の微笑み＃２">
+<br>
+何故かこころ＠
+<font COLOR="skyblue">斉藤千和</font>
+の作画だけがいいです．ちょっと気を抜いたシーンになるととたんに崩れるの
+に．．．．やっぱり作ってる人も意味を理解しているらしいですな
+<font COLOR="#808080">＜深読みしすぎ(ぉ</font>
+．しかしあると＠
+<font COLOR="skyblue">市原由美</font>
+ってこんな声だっけか？とか考えて聞いてみると．．．．あぁ，シャクティ
+(ぉ．次回は病弱な少女が出演らしいので期待してます
+<font COLOR="#404040">＜ナゼニ(汗)</font>
+．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/06/001884.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月 5日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001880">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001880">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/05/001880.html"> HDD change on Linux Server</a></h3>
+      換装終了．てなわけで，簡単に書いておく事にする．FDD が使えればもっと簡単になったんだろうが，FDD が死んでるようなのでちょっと複雑．
+<li>Partiting HDD<br>
+HDD の Partition を設定する．以降前と同じにする必要は無い．
+<pre class="cmd">
+# fdisk /dev/hdb
+/dev/hdb1  /boot primary partition
+/dev/hdb5  /     in extend partition
+/dev/hdb6  swap  in extend partition
+</pre>
+どうも，こうしないと駄目らしい．原因は不明．
+<font COLOR="#404040">これ以上調べたくないのでそのまま(ぉ．</font>
+<li>Formatting HDD<br>
+上記で作成した Partition を Format する．今回は [/boot] は [ext2] で，
+[/] は [ReiserFS] で Format する．
+<pre class="cmd">
+# mke2fs /dev/hdb1
+# mkreiserfs /dev/hdb5
+</pre>
+<li>Coping files<br>
+[cp -a (dirs) /mount/(dirs)] とでもして Copy する．[-a] をつけないと属
+性などが Copy されない．[/proc/] は Directory だけを作成しておく．
+<pre class="cmd">
+# mkdir /target
+# mkdir /target/boot
+# mount /dev/hdb5 /target
+# mount /dev/hdb1 /target/boot
+# cp -a /boot/* /target/boot/
+# cp -a /[bin|lib|usr|home|var|tmp|dev|etc|...]/ /target
+# mkdir /target/proc
+</pre>
+<li>Exchanging HDD<br>
+HDD を交換する．しかしこの段階ではまだ起動出来ない．
+<li>Boot from Install CD-ROM<br>
+Vine 2.1 の Install CD から Boot する．旧 HDD から起動しているときに
+[lilo -r /target] とかやっても，結局 [/dev/hda] の MBR に書き込まれる
+ため起動出来ない．Rescue Disk とかあればそこから起動すれば簡単なんだろ
+うが，FDD が死んでるためこの方法を使った．要点は
+<span class="strong">アップグレードインストールを選択</span>
+すること．これで現環境はとりあえず引き継げるでしょう．
+<li>Reboot<br>
+以上で作業終了．Reboot してちゃんと動くか確認．
+</ol>
+まあこんな感じで終了．[5.] を思いつくまでかなり時間食ったけど，成功し
+たからいいや．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/05/001880.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001882">▽</a>[<a class="cat" href="/mt/archives/cat_blog.html#001882">blog</a>] <a class="titlelink" href="/mt/archives/2001/11/05/001882.html"> 感想など</a></h3>
+      書いて頂けるとありがたいです．この右の方に小さく「御意見・御感想」と書
+いてあるやつをクリックするとメールが送れます．誰がなんて追跡しないんで
+(ぉ，気楽に書いてください．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/05/001882.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001881">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001881">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/05/001881.html"> GeForce2MX400 換装</a></h3>
+      なんだかあっさり動いた．もっとてこずるかと思ったのに．これでようやく，
+3DMark2001 が動いた．でもそんな機能使わない(ぉ．それより PC から TV ア
+ンテナへのノイズが減ったのが大きいですな．
+<font COLOR="#404040">メインワークだし(ぉ．</font>
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/05/001881.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月 4日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001879">▽</a>[<a class="cat" href="/mt/archives/cat_life.html#001879">life</a>] <a class="titlelink" href="/mt/archives/2001/11/04/001879.html"> 発散</a></h3>
+      まあそんなわけで，もやもやを発散させるために，アニメの DVD 買ったりと
+か，ゲーム買ったりとかするわけですな．そうでもせんとやってられんのよ
+(T_T)，マジで．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/04/001879.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001878">▽</a>[<a class="cat" href="/mt/archives/cat_thesis.html#001878">thesis</a>] <a class="titlelink" href="/mt/archives/2001/11/04/001878.html"> 強さ</a></h3>
+      まわりから見えるほどそんなに強くはない．何事にも動じずに平静を保ってい
+るように見えるかもしれないが，時には全てを投げ出したくなる事もある．だ
+が支えているものの大きさを考えると，そんな簡単に投げ出せはしない．ありっ
+たけの力を出し切って全力で闘うのみ．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/04/001878.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月 2日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001877">▽</a>[<a class="cat" href="/mt/archives/cat_pc.html#001877">PC</a>] <a class="titlelink" href="/mt/archives/2001/11/02/001877.html"> GeForce2MX400</a></h3>
+      実は凄い ATI 派なんだが，RADEON 8500 はまだまだこなれてないようなので
+<font COLOR="#808080">All</font>
+，まあこなれてきた定番の NVIDIA - GeForce2MX400 買ってきました．
+<a href="http://www.kuroutoshikou.com/" target="_blank">玄人指向</a>
+のヤツです．一番安かったし(ぉ．土日
+<span class="strike">を賭けて</span>
+かけて VGA 交換の巻です．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/02/001877.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+       <h2 class="date">2001年11月 1日</h2>
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001876">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001876">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/01/001876.html"> 予言します＜してください(ぉ(FFU(04))</a></h3>
+      <img src="img/2001/ffu20011101p1.jpg" width="240" alt="こんな顔専門？">
+<img src="img/2001/ffu20011101p2.jpg" width="240" alt="さすがは氷上恭子＜何が(ぉ">
+<img src="img/2001/ffu20011101p3.jpg" width="240" alt="魔剣士">
+<img src="img/2001/ffu20011101p4.jpg" width="240" alt="預言者さまっ(ぉ">
+<br>
+この作品の真の主役はファーブラ＠
+<font COLOR="skyblye">井上喜久子さまっ</font>
+です．これは真理であって推測や希望ではありません
+<font COLOR="#404040">＜ぉぃ</font>
+．この方の語りを
+聞くために毎週真剣に見入っています(ぉ
+<font COLOR="#404040">＜ってダメ人間じゃん(激汗)</font>
+．だから，初めの少しと終わる直前に最高潮を迎えます
+<font COLOR="#404040">＜言いすぎ(汗)</font>
+．素晴らしい作品ですね＜これはその通り(^_^;)．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/01/001876.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001875">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001875">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/01/001875.html"> シリアス路線突入？(スクライド(17))</a></h3>
+      <img src="img/2001/scryde20011101p1.jpg" width="240" alt="照れるシェリス">
+<img src="img/2001/scryde20011101p2.jpg" width="240" alt="最近影薄い(T_T)">
+<br>
+物語の核心にいよいよ突入でしょうか．まだまだこれから．．．．ってもしか
+して，白鳥哲ですか？これじゃぁまるで無限の(以下規制)(ぉ．でもまあ安心
+して見れる作品ですな．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/01/001875.html">00:00</a>
+      
+      
+     </div>
+    
+     
+      
+      <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001874">▽</a>[<a class="cat" href="/mt/archives/cat_anime.html#001874">anime</a>] <a class="titlelink" href="/mt/archives/2001/11/01/001874.html"> とら耳(フルバ(17))</a></h3>
+      <img src="img/2001/fruitbasket20011101p1.jpg" width="240" alt="噛まれる＃１">
+<img src="img/2001/fruitbasket20011101p2.jpg" width="240" alt="噛まれる＃２">
+<img src="img/2001/fruitbasket20011101p3.jpg" width="240" alt="心を開く">
+<img src="img/2001/fruitbasket20011101p4.jpg" width="240" alt="とら耳(*^_^*)">
+<img src="img/2001/fruitbasket20011101p5.jpg" width="240" alt="大好きですっ！">
+<img src="img/2001/fruitbasket20011101p6.jpg" width="240" alt="とまどう">
+<img src="img/2001/fruitbasket20011101p7.jpg" width="240" alt="決意の">
+<br>
+やはりホロホロしてしまいます．こういう暖かいお話が今の僕には．．．．
+(T_T)．めげずに頑張る透＠
+<font COLOR="skyblue">堀江由衣</font>
+と杞紗＠
+<font COLOR="skyblue">名塚佳織</font>
+に励まされつつホロホロしてます(^_^;)．いいですなぁ，しかし．いや，マジ
+で．とら耳も素晴らしいし(ぉ，透の「ん～～～～大好きですっ！」が今回の
+中では結構力入ってたような気がして
+<font COLOR="#808080">＜少し贔屓し過ぎ？(汗)</font>
+よかったです．ツボ抑えてるなぁ(^_^;)．
+      
+      <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/01/001874.html">00:00</a>
+      
+      
+     </div>
+    
+   </div>
+  </div>
+
+  <div id="left">
+   <div class="sidebar">
+
+<h2>最近の日記</h2>
+
+<ul>
+
+<li><a href="/mt/archives/2001/11/29/001929.html">Apache+PHP4+JSP+mod_ssl</a></li>
+
+<li><a href="/mt/archives/2001/11/29/001928.html">奇跡(ココロ図書館(06))</a></li>
+
+<li><a href="/mt/archives/2001/11/27/001922.html">ネタ(初出某ML)</a></li>
+
+<li><a href="/mt/archives/2001/11/27/001923.html">PDF Writer</a></li>
+
+<li><a href="/mt/archives/2001/11/26/001918.html">ADD PRIMARY KEY on PostgreSQL</a></li>
+
+<li><a href="/mt/archives/2001/11/26/001921.html">ちなみに</a></li>
+
+<li><a href="/mt/archives/2001/11/26/001920.html">PSOv2</a></li>
+
+<li><a href="/mt/archives/2001/11/26/001919.html">汎用性</a></li>
+
+<li><a href="/mt/archives/2001/11/26/001917.html">GRANDIA</a></li>
+
+<li><a href="/mt/archives/2001/11/26/001916.html">Apache 1.3.22</a></li>
+
+</ul>
+
+<h2>カテゴリー</h2>
+
+<ul>
+
+<li><a href="/mt/archives/cat_anime.html">anime</a> [506]</li>
+
+<li><a href="/mt/archives/cat_blog.html">blog</a> [175]</li>
+
+<li><a href="/mt/archives/cat_books.html">books</a> [95]</li>
+
+<li><a href="/mt/archives/cat_dv9200.php">dv9200</a> [1]</li>
+
+<li><a href="/mt/archives/cat_ffxi.html">FFXI</a> [396]</li>
+
+<li><a href="/mt/archives/cat_flash_mx.html">Flash MX</a> [3]</li>
+
+<li><a href="/mt/archives/cat_foods.html">foods</a> [1]</li>
+
+<li><a href="/mt/archives/cat_games.html">games</a> [88]</li>
+
+<li><a href="/mt/archives/cat_goods.html">goods</a> [1]</li>
+
+<li><a href="/mt/archives/cat_inspiron_6000.php">Inspiron 6000</a> [2]</li>
+
+<li><a href="/mt/archives/cat_jobs.html">jobs</a> [47]</li>
+
+<li><a href="/mt/archives/cat_junk.html">junk</a> [201]</li>
+
+<li><a href="/mt/archives/cat_latitude.html">Latitude</a> [4]</li>
+
+<li><a href="/mt/archives/cat_life.html">life</a> [154]</li>
+
+<li><a href="/mt/archives/cat_memorandum.html">memorandum</a> [22]</li>
+
+<li><a href="/mt/archives/cat_misc.html">misc</a> [3]</li>
+
+<li><a href="/mt/archives/cat_mobile.html">mobile</a> [3]</li>
+
+<li><a href="/mt/archives/cat_music.html">music</a> [50]</li>
+
+<li><a href="/mt/archives/cat_news.html">news</a> [8]</li>
+
+<li><a href="/mt/archives/cat_pc.html">PC</a> [411]</li>
+
+<li><a href="/mt/archives/cat_photo.html">photo</a> [26]</li>
+
+<li><a href="/mt/archives/cat_program.html">program</a> [7]</li>
+
+<li><a href="/mt/archives/cat_rd-style.html">RD-Style</a> [26]</li>
+
+<li><a href="/mt/archives/cat_science.html">science</a> [8]</li>
+
+<li><a href="/mt/archives/cat_srx3.php">SRX3</a> [20]</li>
+
+<li><a href="/mt/archives/cat_thesis.html">thesis</a> [62]</li>
+
+<li><a href="/mt/archives/cat_w-zero3es.php">W-ZERO3[es]</a> [10]</li>
+
+<li><a href="/mt/archives/cat_works.html">works</a> [86]</li>
+
+<li><a href="/mt/archives/cat_wow.html">WoW</a> [6]</li>
+
+<li><a href="/mt/archives/cat_.html">忍者</a> [2]</li>
+
+<li><a href="/mt/archives/cat_.html">業務連絡</a> [1]</li>
+
+</ul>
+
+<h2>リンク</h2>
+<span class="side">
+ <div class="side" align="left">
+  <div style="overflow: auto; height: 240px; width: 190px;">
+   <script language="javascript" type="text/javascript" src="http://www.blogpeople.net/display/usr/0f0d445659085016.js"></script>
+  </div>
+ </div>
+    <a href="javascript:void(bloppop=window.open('http://www.blogpeople.net/addlink.jsp?n=1&u=http%3A%2F%2Fstnard.jp%2Fmt%2F&ti='+escape(document.title),'blop','scrollbars=no,width=475,height=350,left=75,top=175,status=yes,resizable=yes'));">Stnard's Diaryを登録 by BlogPeople</a>
+    <br /><br />
+    <a href="http://www.blogpeople.net/GB/">GBで異世界へ旅立つ</a>
+    <br />Powered by<br />
+    <a href="http://www.blogpeople.net/member/service/index.jsp" target="_blank"><img src="http://www.blogpeople.net/GB-banner.gif" alt="BlogPeopleガチャガチャブログ" width="90" height="35" border="0" /></a><br /><br />
+<a href="http://www.blogpeople.net/Option_Service.html#hirogaru" target="_blank"><img src="http://www.blogpeople.net/images/hirogaru-banner/hirogaru2.gif" border="0" /></a>
+</span>
+
+<span class="side">
+<!-- track word -->
+<table id="trackwordv" width="120" cellspacing="0" cellpadding="0">
+<tr><th><a href="http://www.trackword.net/"><img style="border:0" src="http://www.trackword.net/img/minilogov.gif" alt="blog seo tool : track word" width="120" height="14px"></a></th></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/1">blog SEO tool</a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/2"></a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/3"></a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/4"></a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/5"></a></td></tr>
+</table>
+<script type="text/javascript" src="http://az.trackword.net/show.phtml?r=stnard" charset="utf-8"></script>
+<!-- track word -->
+</span>
+
+<h2>過去の日記</h2>
+<span class="side">
+ <div style="overflow: auto; height: 240px; width: 190px;">
+
+<a href="/mt/archives/2009/08/">2009年8月</a>[1]<br />
+
+<a href="/mt/archives/2007/10/">2007年10月</a>[1]<br />
+
+<a href="/mt/archives/2007/09/">2007年9月</a>[3]<br />
+
+<a href="/mt/archives/2007/08/">2007年8月</a>[3]<br />
+
+<a href="/mt/archives/2007/07/">2007年7月</a>[3]<br />
+
+<a href="/mt/archives/2007/06/">2007年6月</a>[1]<br />
+
+<a href="/mt/archives/2007/05/">2007年5月</a>[4]<br />
+
+<a href="/mt/archives/2007/04/">2007年4月</a>[6]<br />
+
+<a href="/mt/archives/2007/03/">2007年3月</a>[3]<br />
+
+<a href="/mt/archives/2007/02/">2007年2月</a>[7]<br />
+
+<a href="/mt/archives/2007/01/">2007年1月</a>[6]<br />
+
+<a href="/mt/archives/2006/12/">2006年12月</a>[5]<br />
+
+<a href="/mt/archives/2006/11/">2006年11月</a>[10]<br />
+
+<a href="/mt/archives/2006/10/">2006年10月</a>[5]<br />
+
+<a href="/mt/archives/2006/09/">2006年9月</a>[11]<br />
+
+<a href="/mt/archives/2006/08/">2006年8月</a>[10]<br />
+
+<a href="/mt/archives/2006/07/">2006年7月</a>[8]<br />
+
+<a href="/mt/archives/2006/06/">2006年6月</a>[7]<br />
+
+<a href="/mt/archives/2006/05/">2006年5月</a>[9]<br />
+
+<a href="/mt/archives/2006/04/">2006年4月</a>[7]<br />
+
+<a href="/mt/archives/2006/03/">2006年3月</a>[14]<br />
+
+<a href="/mt/archives/2006/02/">2006年2月</a>[13]<br />
+
+<a href="/mt/archives/2006/01/">2006年1月</a>[11]<br />
+
+<a href="/mt/archives/2005/12/">2005年12月</a>[9]<br />
+
+<a href="/mt/archives/2005/11/">2005年11月</a>[16]<br />
+
+<a href="/mt/archives/2005/10/">2005年10月</a>[19]<br />
+
+<a href="/mt/archives/2005/09/">2005年9月</a>[13]<br />
+
+<a href="/mt/archives/2005/08/">2005年8月</a>[17]<br />
+
+<a href="/mt/archives/2005/07/">2005年7月</a>[23]<br />
+
+<a href="/mt/archives/2005/06/">2005年6月</a>[26]<br />
+
+<a href="/mt/archives/2005/05/">2005年5月</a>[27]<br />
+
+<a href="/mt/archives/2005/04/">2005年4月</a>[26]<br />
+
+<a href="/mt/archives/2005/03/">2005年3月</a>[30]<br />
+
+<a href="/mt/archives/2005/02/">2005年2月</a>[24]<br />
+
+<a href="/mt/archives/2005/01/">2005年1月</a>[17]<br />
+
+<a href="/mt/archives/2004/12/">2004年12月</a>[12]<br />
+
+<a href="/mt/archives/2004/11/">2004年11月</a>[30]<br />
+
+<a href="/mt/archives/2004/10/">2004年10月</a>[25]<br />
+
+<a href="/mt/archives/2004/09/">2004年9月</a>[31]<br />
+
+<a href="/mt/archives/2004/08/">2004年8月</a>[23]<br />
+
+<a href="/mt/archives/2004/07/">2004年7月</a>[49]<br />
+
+<a href="/mt/archives/2004/06/">2004年6月</a>[34]<br />
+
+<a href="/mt/archives/2004/05/">2004年5月</a>[55]<br />
+
+<a href="/mt/archives/2004/04/">2004年4月</a>[43]<br />
+
+<a href="/mt/archives/2004/03/">2004年3月</a>[49]<br />
+
+<a href="/mt/archives/2004/02/">2004年2月</a>[40]<br />
+
+<a href="/mt/archives/2004/01/">2004年1月</a>[30]<br />
+
+<a href="/mt/archives/2003/12/">2003年12月</a>[40]<br />
+
+<a href="/mt/archives/2003/11/">2003年11月</a>[35]<br />
+
+<a href="/mt/archives/2003/10/">2003年10月</a>[67]<br />
+
+<a href="/mt/archives/2003/09/">2003年9月</a>[40]<br />
+
+<a href="/mt/archives/2003/08/">2003年8月</a>[33]<br />
+
+<a href="/mt/archives/2003/07/">2003年7月</a>[35]<br />
+
+<a href="/mt/archives/2003/06/">2003年6月</a>[41]<br />
+
+<a href="/mt/archives/2003/05/">2003年5月</a>[53]<br />
+
+<a href="/mt/archives/2003/04/">2003年4月</a>[32]<br />
+
+<a href="/mt/archives/2003/03/">2003年3月</a>[59]<br />
+
+<a href="/mt/archives/2003/02/">2003年2月</a>[47]<br />
+
+<a href="/mt/archives/2003/01/">2003年1月</a>[57]<br />
+
+<a href="/mt/archives/2002/12/">2002年12月</a>[72]<br />
+
+<a href="/mt/archives/2002/11/">2002年11月</a>[55]<br />
+
+<a href="/mt/archives/2002/10/">2002年10月</a>[42]<br />
+
+<a href="/mt/archives/2002/09/">2002年9月</a>[47]<br />
+
+<a href="/mt/archives/2002/08/">2002年8月</a>[28]<br />
+
+<a href="/mt/archives/2002/07/">2002年7月</a>[38]<br />
+
+<a href="/mt/archives/2002/06/">2002年6月</a>[41]<br />
+
+<a href="/mt/archives/2002/05/">2002年5月</a>[39]<br />
+
+<a href="/mt/archives/2002/04/">2002年4月</a>[53]<br />
+
+<a href="/mt/archives/2002/03/">2002年3月</a>[54]<br />
+
+<a href="/mt/archives/2002/02/">2002年2月</a>[21]<br />
+
+<a href="/mt/archives/2002/01/">2002年1月</a>[50]<br />
+
+<a href="/mt/archives/2001/12/">2001年12月</a>[74]<br />
+
+<a href="/mt/archives/2001/11/">2001年11月</a>[52]<br />
+
+<a href="/mt/archives/2001/10/">2001年10月</a>[62]<br />
+
+<a href="/mt/archives/2001/09/">2001年9月</a>[68]<br />
+
+<a href="/mt/archives/2001/08/">2001年8月</a>[34]<br />
+
+<a href="/mt/archives/2001/07/">2001年7月</a>[55]<br />
+
+<a href="/mt/archives/2001/06/">2001年6月</a>[54]<br />
+
+<a href="/mt/archives/2001/05/">2001年5月</a>[2]<br />
+
+<a href="/mt/archives/2001/04/">2001年4月</a>[4]<br />
+
+<a href="/mt/archives/2001/03/">2001年3月</a>[9]<br />
+
+<a href="/mt/archives/2001/02/">2001年2月</a>[1]<br />
+
+<a href="/mt/archives/2001/01/">2001年1月</a>[7]<br />
+
+<a href="/mt/archives/1999/12/">1999年12月</a>[2]<br />
+
+<a href="/mt/archives/1999/11/">1999年11月</a>[6]<br />
+
+<a href="/mt/archives/1999/10/">1999年10月</a>[1]<br />
+
+<a href="/mt/archives/1999/09/">1999年9月</a>[3]<br />
+
+<a href="/mt/archives/1999/07/">1999年7月</a>[3]<br />
+
+<a href="/mt/archives/1999/06/">1999年6月</a>[11]<br />
+
+<a href="/mt/archives/1999/02/">1999年2月</a>[2]<br />
+
+<a href="/mt/archives/1998/10/">1998年10月</a>[5]<br />
+
+<a href="/mt/archives/1998/07/">1998年7月</a>[4]<br />
+
+<a href="/mt/archives/1998/06/">1998年6月</a>[17]<br />
+
+<a href="/mt/archives/1998/05/">1998年5月</a>[23]<br />
+
+<a href="/mt/archives/1998/04/">1998年4月</a>[8]<br />
+
+<a href="/mt/archives/1998/03/">1998年3月</a>[14]<br />
+
+ </div>
+</span>
+
+<h2>Misc.</h2>
+
+<span class="side-center">
+<!--
+Skype 'My status' button
+http://www.skype.com/go/skypebuttons
+-->
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<a href="skype:stnard?call"><img src="http://mystatus.skype.com/bigclassic/stnard" style="border: none;" width="182" height="44" alt="My status" /></a>
+</span>
+
+<span class="side-center">
+<!-- Search Google -->
+<form method="get" action="http://www.google.co.jp/custom" target="google_window">
+<table bgcolor="#000000">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25blk.gif" border="0" alt="Google" align="middle"></img></a>
+<br/>
+<input type="text" name="q" size="15" maxlength="255" value=""></input>
+</td></tr>
+<tr><td valign="top" align="left">
+<input type="submit" name="sa" value="検索"></input>
+<input type="hidden" name="client" value="pub-9996981468066870"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="channel" value="3286551650"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"></input>
+<input type="hidden" name="hl" value="ja"></input>
+</td></tr></table>
+</form>
+<!-- Search Google -->
+</span>
+
+<span class="side-center">
+<a href="/mt/cgi-bin/mt4i.cgi?id=1" target="_blank"><img src="http://www.hazama.nu/t2o2/archives/banner_mt4i_nagasawa_01.gif"  border="0"></a>
+</span>
+
+<span class="side-center">
+<a href="http://research.goo.ne.jp/cgi-bin/goo.cgi?::SID=afreg&afd=25ef2fa929519bccf5cb07c02c0c96b19993c9961d3e298dc1d3680023b549c1&adtype=a3" target="_blank"><IMG border=0 src="http://research.goo.ne.jp/Campaign/images/mybanner3.gif" width="120" height="120" alt="gooリサーチモニターに登録！"></a>
+</span>
+
+<span class="side-center">
+<script src="http://trackfeed.com/usr/b8dfcbb5f5.js"></script><br>
+<a href="http://feedmeter.net/detail.php?r=http%3A%2F%2Fstnard.jp%2Fmt%2Findex.rdf" target="_feedmeter"><img src="http://feedmeter.net/image.php?r=http%3A%2F%2Fstnard.jp%2Fmt%2Findex.rdf" border="0" width="60" height="36" alt="RSS feed meter for /mt/" /></a><br>
+</span>
+
+<span class="side-center">
+<script type='text/javascript' src='http://track.mybloglog.com/js/jsserv.php?mblID=2005083123132317'></script>
+</span>
+
+<span class="side">
+<a href="http://px.a8.net/svt/ejp?a8mat=OEZFY+CIP5PU+D8Y+5ZEMP" target="_blank">
+<img border="0" width="100" height="60" alt="Click Here!" src="http://ad.a8.net/svt/bgt?aid=041009902757&wid=001&eno=01&mid=s00000001717001005000&mc=1"></a>
+<img border="0" width="1" height="1" src="http://ad.a8.net/0.gif?a8mat=OEZFY+CIP5PU+D8Y+5ZEMP" alt="">
+<a href="http://px.a8.net/svt/ejp?a8mat=OF1S3+24SXTE+K+ZRQ0X" target="_blank">
+<img border="0" width="100" height="60" alt="Click Here!" src="http://ad.a8.net/svt/bgt?aid=041012931129&wid=001&eno=01&mid=s00000000002006008000&mc=1"></a>
+<img border="0" width="1" height="1" src="http://ad.a8.net/0.gif?a8mat=OF1S3+24SXTE+K+ZRQ0X" alt="">
+<a href="http://www.jpweb.co.jp/yuriwaka/dlink/" onMouseOver="self.status='『日記リンク』';return true" target="_blank"><img src="http://www.jpweb.co.jp/yuriwaka/dlink/nikkilin.gif" width="88" height="31" border="0" ALT="日記リンク" /></a>
+</span>
+
+</div>
+
+  </div>
+
+  <div id="right">
+   <div class="sidebar">
+
+<h2>別館</h2>
+<span class="side-center">
+<ul>
+ <li><a href="http://rust.vox.com/" target="_blank">Rustのブログ on VOX</a></li>
+</ul>
+</span>
+
+<h2>FFXI Prof.</h2>
+<span class="side-center">
+<a href="http://takayu.sakura.ne.jp/xi-prof/"><img src="http://takayu.sakura.ne.jp/xi-prof/js/id43c311ec76adf.png" border="0" alt="Profile" target="_top"></a>
+</span>
+
+<h2>最近のトラックバック</h2>
+<span class="side">
+<ul>
+
+<li>
+<a href="http://renkon.jp/blog/?eid=653">PSP「グラディウス ポータブル」スゴイかも</a><br>
+ from renkon.jp</li>
+
+<li>
+<a href="http://plaza.rakuten.co.jp/bluesidusfield/diary/200509180002/">Gmailって知ってます？</a><br>
+ from 星が見える名言集</li>
+
+<li>
+<a href="http://luli.net/archives/2005/06/30/1741.html">Musical Baton</a><br>
+ from LAPISLAZULI HILL</li>
+
+<li>
+<a href="http://blog.livedoor.jp/nuru_se/archives/24444629.html">AppleさんがIntelプロセッサ採用を正式発表！！</a><br>
+ from ぬるいSEの生態</li>
+
+<li>
+<a href="http://mildseven10.ameblo.jp/entry-68861ddd6e8e09028da99b12b82e440a.html">損失540億円！</a><br>
+ from 誰も知る事のない明日へ　～Tomorrow Never Knows～</li>
+
+<li>
+<a href="http://blog.livedoor.jp/gran_cody/archives/20689531.html">ナムコ×カプコンの後は、ナムコ×バンダイかよ！</a><br>
+ from ＣＯＤＹ　スピリッツ！</li>
+
+<li>
+<a href="http://stnard.jp/mmt/archives/003516.html">非常にヤバイ進捗状況</a><br>
+ from Kerce's Room</li>
+
+<li>
+<a href="http://stnard.jp/mmt/archives/003465.html">次のRDのコードネームは・・・</a><br>
+ from Kerce's Room</li>
+
+<li>
+<a href="http://stnard.jp/mmt/archives/003434.html">今クールの作品</a><br>
+ from Kerce's Room</li>
+
+<li>
+<a href="http://stnard.jp/mmt/archives/003433.html">Re：ソフマップにビックカメラが出資</a><br>
+ from Kerce's Room</li>
+
+</ul>
+</span>
+
+<h2>最近のコメント</h2>
+<span class="side">
+<ul>
+
+</ul>
+</span>
+
+<span class="side-center">
+ <script type="text/javascript"><!--
+  amazon_ad_tag = "stnardsdiary-22";  amazon_ad_width = "160";  amazon_ad_height = "600";  amazon_color_border = "CCCCFF";  amazon_color_background = "000000";  amazon_color_text = "FFFFFF";  amazon_color_link = "FFFFFF";  amazon_color_price = "FF0000";  amazon_color_logo = "000000";  amazon_ad_link_target = "new";//--></script>
+<script type="text/javascript" src="http://www.assoc-amazon.jp/s/ads.js"></script>
+</span>
+
+<span class="side-center">
+ <script type="text/javascript"><!--
+google_ad_client = "pub-9996981468066870";
+google_ad_width = 180;
+google_ad_height = 150;
+google_ad_format = "180x150_as";
+google_ad_type = "text_image";
+google_ad_channel ="9567259143";
+google_color_border = "CCCCCC";
+google_color_bg = "000000";
+google_color_link = "00CCFF";
+google_color_text = "FFFFFF";
+google_color_url = "00FF00";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</span>
+
+</div>
+
+  </div>
+
+ </div>
+</div>
+
+</body>
+</html>

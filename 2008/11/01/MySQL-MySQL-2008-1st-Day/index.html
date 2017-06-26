@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>MySQL ユーザカンファレンス 2008 1st Day &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>MySQL ユーザカンファレンス 2008 1st Day</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>というわけで行ってきました．かなり大勢の人が来ていたので，かなり熱い<strike>戦い</strike>カンファレンスになりました．聞いてきたセッションのほとんどが英語だったので，もう少しヒアリングできればなと，少し後悔しています．</p>
+
+<p>かなり長いのですが，2日分のログを．</p>
+
+<p>##基調講演</p>
+
+<ul>
+<li>ビジネスボリュームはかなり大きくなっている．</li>
+</ul>
+
+<p>##創設者 David の挨拶</p>
+
+<ul>
+<li><p>History</p>
+
+<ul>
+<li>1982 First database code</li>
+<li>1995 MySQL code</li>
+<li>1996 public release</li>
+<li>2001 &lsquo;Real&rsquo; Company start</li>
+<li>2008 Sun acquires MySQL</li>
+</ul></li>
+
+<li><p>特徴</p>
+
+<ul>
+<li>Pluggable Storage Engines</li>
+<li>それぞれに特徴あるストレージエンジンを，状況に応じて使い分けることができる</li>
+<li>しかし Connector/Parser などは共通なので開発者に優しい</li>
+</ul></li>
+
+<li><p>Storage Engines</p>
+
+<ul>
+<li>External</li>
+<li>Archive</li>
+<li>InnoDB</li>
+<li>PBXT</li>
+<li>InfoBright
+
+<ul>
+<li>automatic indexing</li>
+</ul></li>
+<li>NitroSecrity</li>
+<li>IBM DB2</li>
+<li>Internal</li>
+<li>Falcon</li>
+<li>Maria
+
+<ul>
+<li>MyISAM の上位番</li>
+</ul></li>
+</ul></li>
+
+<li><p>Data Warehousing Appliance</p>
+
+<ul>
+<li>Kickfire</li>
+</ul></li>
+
+<li><p>たくさんのイノベーションを自由に利用できるのが MySQL の特徴</p>
+
+<ul>
+<li>MySQL Proxy</li>
+<li>MySQL Cluster</li>
+<li>Stored Procedure</li>
+</ul></li>
+
+<li><p>多くをサポート</p>
+
+<ul>
+<li>数多くの言語でサポートされている</li>
+<li>数多くのOSでもサポートされている</li>
+</ul></li>
+
+<li><p>Sun CEO のブログで，買収しても何も変わらないことを明言している．</p></li>
+
+<li><p>ユーザなどから報告されたバグリストは公開している．</p>
+
+<ul>
+<li>「隠された汚い下着」と言っているらしい．</li>
+</ul></li>
+
+<li><p>MySQL = My(ミー)のSQL</p></li>
+</ul>
+
+<p>##MyNA</p>
+
+<ul>
+<li>日本 MySQL ユーザ会</li>
+<li>2000年発足</li>
+<li>MySQL ML に入れば会員</li>
+<li>要望
+
+<ul>
+<li>日本語の情報が欲しい</li>
+<li>オープンソースを続けてほしい</li>
+<li>MySQL 社の社員の協力を，今後もいただきたい．</li>
+</ul></li>
+</ul>
+
+<p>##スポンサー紹介</p>
+
+<ul>
+<li>住商情報システム
+
+<ul>
+<li>MySQL をやって 5 年</li>
+<li>MySQL + Senna のサポート</li>
+<li>MySQL Cluster の実績がある</li>
+<li>VikingZone</li>
+<li>OpenSPARC + Solaris + MySQL</li>
+</ul></li>
+<li>野村総研
+
+<ul>
+<li>オープンソースの普及やサポートなどをやっている</li>
+</ul></li>
+<li>HP
+
+<ul>
+<li>MySQL 初のパートナーベンダー</li>
+<li>HP と Sun は裏で OpenSource 的につながっている</li>
+</ul></li>
+</ul>
+
+<p>##A Bried Overview of the Work Done in Shinsei Bank</p>
+
+<ul>
+<li>新生銀行
+
+<ul>
+<li>IT部門ではかなり革新的で注目されているらしい</li>
+<li>1000万人規模の顧客がいる</li>
+</ul></li>
+<li>裏側
+
+<ul>
+<li>紙書類ばかり</li>
+<li>情報が集約されていない</li>
+<li>大型メインフレームが必要だった</li>
+</ul></li>
+<li>Methodology
+
+<ul>
+<li>Harvard Bisuiness Review</li>
+<li>atricleID=R0803J</li>
+</ul></li>
+<li>8年前に立てた原則
+
+<ul>
+<li>部分的に構築するが，基本的には何も変えない</li>
+<li>既存のものだけを使い自社開発はしない</li>
+<li>Open なものを使う</li>
+<li>顧客の Experience を重視</li>
+<li>Virtual な組織を形成して，世界中の知恵を集結</li>
+<li>紙を極力使わないように</li>
+</ul></li>
+<li>Benefits of using standard components
+
+<ul>
+<li>Low cost</li>
+<li>Speed</li>
+<li>Flexibility</li>
+<li>For customers</li>
+<li>For staff</li>
+<li>Embedded controls</li>
+</ul></li>
+<li>Methodology at a glance
+
+<ul>
+<li>Process と Technology に分解</li>
+<li>それぞれを各エレメントに分解</li>
+<li>Technology を conponents(Software/hardware/etc&hellip;)に分解</li>
+<li>すべては失敗すると仮定する</li>
+<li>人が階級しなくても稼働し続けることを重視した</li>
+</ul></li>
+<li>保証すべきもの
+
+<ul>
+<li>安全性・フレキシビリティ・速度・コスト・能力</li>
+</ul></li>
+<li>3ヶ月サイクルで動く</li>
+<li>低コスト
+
+<ul>
+<li>ハイエンドなものはつかっておらず，低コストなものを数多く用意する</li>
+</ul></li>
+<li>各コンポーネント間で依存性を排除する</li>
+<li>古いソースコードはみていない
+
+<ul>
+<li>古い技術での完成物を参考に，新しいシステムを制作する</li>
+</ul></li>
+<li>リソースの制約
+
+<ul>
+<li>問題を小さく分割して，各個に解決していく</li>
+</ul></li>
+<li>Dell PC/Server を使っている</li>
+<li>裏側の変化
+
+<ul>
+<li>すべての情報が集約化されてスッキリ</li>
+</ul></li>
+<li>手法を CCL で公開
+
+<ul>
+<li>プレゼン資料も CCL で公開</li>
+</ul></li>
+</ul>
+
+<p>##MySQL トラブルシューティング概要</p>
+
+<ul>
+<li><p>開発目標</p>
+
+<ol>
+<li>安定性</li>
+<li>パフォーマンス</li>
+<li>使いやすさ</li>
+</ol></li>
+
+<li><p>安定性重視だが多くのトラブルが起きる</p></li>
+
+<li><p>トラブルシューティング3種の神器</p>
+
+<ul>
+<li>エラーログ</li>
+<li>エラーが記録されているもの</li>
+<li>実際にはSTDOUTをリダイレクトしたもの</li>
+<li>SHOW コマンド</li>
+</ul></li>
+</ul>
+
+<p>:SHOW WARNINGS:Query が失敗したときのエラー小度
+:SHOW GLOBAL STATUS:統計情報
+:SHOW GLOBAL VARIABLES:設定値を表示
+:SHOW INNODB STATUS:InnoDB モニタ</p>
+
+<ul>
+<li><p>perror</p>
+
+<ul>
+<li>OS エラーの意味を表示</li>
+<li>MySQL Cluster なら -ndb で各種情報をみることができる</li>
+</ul></li>
+
+<li><p>その他よく使うツール</p>
+
+<ul>
+<li>Slow Query Log/Query.log/Binlog/OS Log</li>
+<li>デバッガ</li>
+<li>DTrace</li>
+<li>動作確認</li>
+<li>xVM/VMWare</li>
+<li>動作確認</li>
+<li>gcc</li>
+<li>動作検証プログラムの作成</li>
+</ul></li>
+</ul>
+
+<p>###レプリケーション</p>
+
+<ul>
+<li>マスター側</li>
+</ul>
+
+<p>アプリなど&ndash;&gt;テーブル&ndash;(更新)&ndash;&gt;バイナリログ&ndash;(マスタースレッド)&ndash;&gt;スレーブへ</p>
+
+<ul>
+<li>スレーブ側</li>
+</ul>
+
+<p>&ndash;(I/O スレッド)&ndash;&gt;リレーログ&ndash;(SQL スレッド)&ndash;&gt;テーブル</p>
+
+<p>###SQL スレッドが停止してしまった</p>
+
+<ul>
+<li>原因
+
+<ul>
+<li>メモリ不足</li>
+<li>各種バッファに割り当てるメモリが足りない -&gt; 増やして再起動</li>
+<li>スレーブ上のテーブルを更新してしまった</li>
+<li>マスターデータからリストア</li>
+<li>バイナリログ欠損</li>
+<li>コマンドで明示的に purge したりすると発生する</li>
+<li>対象テーブルがわかっていればマスター上で dump/restore で復旧できる</li>
+<li>その他一時的なエラー</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-sql">SET GLBOAL SQL_SLAVE_SKIP_COUNTER = N;
+START SLAVE;
+</code></pre>
+
+<p>###I/Oスレッドが停止</p>
+
+<ul>
+<li>ネットワークのエラー
+
+<ul>
+<li>ping で確認</li>
+<li>max_allowed_packet を増やす</li>
+</ul></li>
+<li>ユーザがログインできない
+
+<ul>
+<li>パスワードを変更したりとか</li>
+</ul></li>
+<li>server_id がかぶっていないか</li>
+</ul>
+
+<p>###スレーブの遅延</p>
+
+<ul>
+<li>長時間かかるクエリはないか？
+
+<ul>
+<li>マスター上ではクエリ完了時に binlog に記録される</li>
+<li>テーブルの更新は素早く！</li>
+</ul></li>
+<li>スレーブに負荷をかけすぎていないか？
+
+<ul>
+<li>参照系処理の CPU リソースがとられてしまっている</li>
+<li>マスターからのクエリが SQL スレッドでなかなか実行できなくなるから</li>
+</ul></li>
+<li>ネットワーク帯域は十分か？</li>
+</ul>
+
+<p>###サポートに問い合わせるときは</p>
+
+<ul>
+<li>SHOW SLAVE STATUS\G</li>
+<li>SHOW MASTER STATUS\G</li>
+<li>SHOW MASTER LOGS\G</li>
+<li>エラーログ</li>
+<li>my.cnf</li>
+<li>テーブル定義</li>
+</ul>
+
+<p>###レプリケーショントラブル対策</p>
+
+<ul>
+<li>バイナリログ欠損を防ぐ</li>
+</ul>
+
+<pre><code class="language-bash">sync_binlog=1
+innodb_flush_logs_at_trx_commit=1
+</code></pre>
+
+<ul>
+<li>ただし更新が遅くなる</li>
+<li>テンポラリテーブルは使わない
+
+<ul>
+<li>クラッシュ再起動後にはなくなるから，CREATE TEMPORARY TABLE は使わない．</li>
+</ul></li>
+<li>マスターとスレーブにおいて，コネクション毎のバッファは同じ程度に設定しておく
+
+<ul>
+<li>スレーブでクエリが実行できなくなることを防ぐため</li>
+</ul></li>
+<li>スレーブを複数用意する
+
+<ul>
+<li>マスターがこけたとき対策</li>
+<li>バイナリログを有効化</li>
+<li>log_slave_update=ON</li>
+</ul></li>
+</ul>
+
+<p>###クラッシュ!!</p>
+
+<ul>
+<li>SEGV が発生するのは
+
+<ul>
+<li>MySQL のバグ</li>
+<li>NULL を boolean に変換すると crash するというバグがあった</li>
+<li>OS のバグ</li>
+<li>ハードウェアの故障</li>
+</ul></li>
+<li>Linux は stack trace が表示される</li>
+<li>core file
+
+<ul>
+<li>core-file オプションが必要</li>
+</ul></li>
+</ul>
+
+<p>###MySQL サーバが起動しない!!</p>
+
+<ul>
+<li>情報源はエラーログ
+
+<ul>
+<li>繰り返し発生してないか？</li>
+<li>InnoDB のリカバリは完了しているか？</li>
+<li>クラッシュ後の再起動に自動的にリカバリするので，バイナリログの大きさが大きいと時間がかかる</li>
+<li>ファイルシステムがいっぱいではないか？</li>
+<li>設定に問題は？</li>
+<li>InnoDB の設定変更は特に注意</li>
+</ul></li>
+</ul>
+
+<p>###テーブルコラプション・MyISAM</p>
+
+<ul>
+<li>なぜ起きるのか
+
+<ul>
+<li>MySQL サーバやOSのクラッシュ</li>
+<li>MyISAM はクラッシュセーフではない</li>
+<li>HDDやファイルシステムの不具合</li>
+<li>MyISAM のバグ</li>
+</ul></li>
+<li>復旧手順
+
+<ul>
+<li>CHECK TABLE/REPAIR TABLE</li>
+</ul></li>
+<li>mysqlcheck
+
+<ul>
+<li>起動中に実行</li>
+</ul></li>
+<li>myisamcheck
+
+<ul>
+<li>起動していないときに実行</li>
+<li>テーブルの再作成</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-sql">CREATE TABLE new_tbl KILE tbl;
+INSERT INTO new_tbl SELECT * FROM tbl;
+DROP TABLE tbl;
+</code></pre>
+
+<ul>
+<li>予防策は
+
+<ul>
+<li>ない！</li>
+<li>定期的にバックアップ</li>
+<li>レプリケーションをバックアップとして</li>
+<li>クラッシュしたらバックアップからのリストアを検討</li>
+<li>他のストレージエンジンへ移行</li>
+<li>InnoDB/Maria/Falcon</li>
+</ul></li>
+</ul>
+
+<p>###テーブルコラプション・InnoDB</p>
+
+<ul>
+<li>修復する機能はない
+
+<ul>
+<li>クラッシュ後にリカバリしなければ The END!!!</li>
+<li>テーブルスペースとログファイルの不整合が起きるパターンが多い</li>
+</ul></li>
+<li>復旧方法
+
+<ul>
+<li>innodb_force_recovery=4 or 6</li>
+<li>mysqldump!</li>
+<li>テーブルをドロップ</li>
+<li>innodb_force_recovery を解除して再起動</li>
+<li>リストア</li>
+</ul></li>
+<li>予防策
+
+<ul>
+<li>innodb_flush_log_at_trx_commit=1</li>
+<li>innodb_doublewrite を有効化</li>
+<li>ファイルシステムのジャーナリング</li>
+<li>H/W RAID のバッテリバックアップ</li>
+</ul></li>
+</ul>
+
+<p>###デッドロック</p>
+
+<ul>
+<li>トランザクションではつきもの</li>
+<li>リトライで会費</li>
+<li>lock-wait-timeout とデッドロックは違う
+
+<ul>
+<li>lock-wait-timeout はロックが獲得できていない状況</li>
+<li>データにアクセする順序を工夫する</li>
+</ul></li>
+</ul>
+
+<p>###SHOW INNODB STATUS</p>
+
+<ul>
+<li>統計情報を見るコマンド</li>
+<li>1分か見るたびに更新</li>
+<li>SEMAPHORES : ロック情報</li>
+</ul>
+
+<p>###クエリの実行結果がおかしい</p>
+
+<ul>
+<li>バグの可能性がある
+
+<ul>
+<li>再現テスト</li>
+</ul></li>
+<li>とにかくソースコードを解析</li>
+<li>SHOW WARNINGS が重要な手がかりに</li>
+<li>dtrace が役に立つ</li>
+</ul>
+
+<p>##Out of Memory</p>
+
+<ul>
+<li>32bit バージョンは使わない
+
+<ul>
+<li>論理アドレス枯渇で起こる</li>
+<li>RSS = 使用物理メモリが 1GB でも起こりうる</li>
+</ul></li>
+<li>バッファの割り当てすぎ
+
+<ul>
+<li>特にセッション毎のバッファが大きすぎる場合が多い</li>
+<li>read_buffer_size=64M とかは多すぎ</li>
+<li>512K 程度でよい</li>
+</ul></li>
+</ul>
+
+<p>###Sort Aborted</p>
+
+<ul>
+<li>ソートバッファを割り当てるためのメモリが足りない</li>
+<li>テンポラリが作れない</li>
+<li>ロック待ち</li>
+<li>ソート中に KILLされた シャットダウンされた</li>
+</ul>
+
+<p>###Aborted Connections</p>
+
+<ul>
+<li>mysql_close() を忘れた</li>
+<li>TCP/IP timeout</li>
+</ul>
+
+<p>###table is full</p>
+
+<ul>
+<li>MyISAM
+
+<ul>
+<li>内部ポインタのサイズが小さすぎる</li>
+<li>テーブル再作成</li>
+</ul></li>
+<li>InnoDB
+
+<ul>
+<li>テーブルスペースを使い効いてしまった</li>
+<li>テーブルスペースの拡張</li>
+</ul></li>
+<li>ndb
+
+<ul>
+<li>メモリが足りない</li>
+</ul></li>
+</ul>
+
+<p>###ログインできない</p>
+
+<ul>
+<li>パスワードが違う
+
+<ul>
+<li>root でリセット</li>
+</ul></li>
+<li>4.0 以前から 4.1 移行へ接続
+
+<ul>
+<li>サーバ側で -old-password を用いる</li>
+<li>場ジョンアップする</li>
+</ul></li>
+<li>Can&rsquo;t create a new thread
+
+<ul>
+<li>スレッド数の上限(OS)</li>
+<li>スタック不足</li>
+</ul></li>
+<li>Connection refused
+
+<ul>
+<li>TCP/IP の問題</li>
+</ul></li>
+</ul>
+
+<p>###文字化け</p>
+
+<ul>
+<li>接続用の文字コードは？</li>
+<li>端末の文字コードは？
+
+<ul>
+<li>コマンドプロンプトは使わない方がよい</li>
+<li>Query Browser がおすすめ</li>
+</ul></li>
+<li>LOAD DATA IN FILE で文字化けする
+
+<ul>
+<li>SHOW CREATE DATABASE で DATABASE の文字コードを確認</li>
+</ul></li>
+</ul>
+
+<p>###バックアップ</p>
+
+<ul>
+<li>終わらない
+
+<ul>
+<li>巨大なテーブルを mysqldump でバックアップ</li>
+<li>メモリ不足</li>
+<li>&ndash;quick オプションで</li>
+</ul></li>
+<li>適切なバックアップを
+
+<ul>
+<li>レプリケーションなど</li>
+</ul></li>
+</ul>
+
+<p>###リストアなど</p>
+
+<ul>
+<li>リストアが終わらない
+
+<ul>
+<li>5.0.52 ～ 5.0.54 では CLI が極端に遅い</li>
+</ul></li>
+<li>設定が違う
+
+<ul>
+<li>-max-allowed-packet</li>
+<li>-innodb-buffer-pool-size</li>
+<li>-key-buffer-size</li>
+</ul></li>
+<li>時間見積もりが甘かった
+
+<ul>
+<li>何とかは買うする</li>
+<li>バイナリログを無効化</li>
+<li>doublewrite を無効化</li>
+<li>trx_commit を2に</li>
+</ul></li>
+</ul>
+
+<p>###MySQL Enterprise Monitor</p>
+
+<ul>
+<li>エージェントがサーバへ到達できない
+
+<ul>
+<li>これが 99% らしい</li>
+</ul></li>
+</ul>
+
+<p>###MuSQL Cluster</p>
+
+<ul>
+<li>SQL ノードがクラスタに接続できない
+
+<ul>
+<li>ネットワーク</li>
+<li>connect-string</li>
+<li>ノードIDなど</li>
+<li>ndb_mgm -e SHOW</li>
+<li>SHOW ENGINE NDB STATUS</li>
+</ul></li>
+<li>クラッシュしたら
+
+<ul>
+<li>まずはデータノードを再起動</li>
+</ul></li>
+<li>クラスタ全体が停止</li>
+</ul>
+
+<p>###パフォーマンス系の問題</p>
+
+<ul>
+<li>コンサルティングサポートで解析</li>
+</ul>
+
+<p>###SHOW GLOBAL STATUS</p>
+
+<ul>
+<li>Select_*
+
+<ul>
+<li>遅いクエリに関する情報</li>
+</ul></li>
+</ul>
+
+<p>###ワンポイントアドバイス</p>
+
+<ul>
+<li>仕様を理解する
+
+<ul>
+<li>正常・異常の区別</li>
+</ul></li>
+<li>再現してみる</li>
+<li>ソースコードを読む</li>
+<li>OSに詳しくなる
+
+<ul>
+<li>POSIX など</li>
+</ul></li>
+</ul>
+
+<p>##Memcached and MySQL</p>
+
+<ul>
+<li>なぜ Memcached を使うか
+
+<ul>
+<li>Chaos だから</li>
+</ul></li>
+<li>LiveJournal
+
+<ul>
+<li>30GB cache TB data</li>
+</ul></li>
+
+<li><p>Mixi</p></li>
+
+<li><p>Server</p>
+
+<ul>
+<li>slab allocator</li>
+<li>libevent based</li>
+<li>simple protocol</li>
+<li>Hash Table</li>
+<li>他のサーバのことは知らない</li>
+</ul></li>
+
+<li><p>Client</p>
+
+<ul>
+<li>Client hashed Key to Serve List(分散)</li>
+<li>オブジェクトはシリアライズ</li>
+<li>データの圧縮など</li>
+</ul></li>
+
+<li><p>Consistent Hash</p></li>
+
+<li><p>特徴</p>
+
+<ul>
+<li>memcached はデータベースじゃないからダンプできない</li>
+<li>冗長的ではない</li>
+<li>サーバではフェイルオーバーじゃない</li>
+<li>認証機能はない</li>
+</ul></li>
+
+<li><p>Examples</p>
+
+<ul>
+<li>key:value の巨大ハッシュとして扱える</li>
+</ul></li>
+
+<li><p>memcached in MySQL</p>
+
+<ul>
+<li>SQL を通じて memcached cluster にアクセス可能</li>
+</ul></li>
+
+<li><p>limit</p>
+
+<ul>
+<li>Key Size(250 bytes)</li>
+<li>Data Size ! Mega byte</li>
+</ul></li>
+
+<li><p>Tools</p>
+
+<ul>
+<li>Protocol</li>
+<li>Telne</li>
+<li>Text baseだから</li>
+</ul></li>
+
+<li><p>CPU 使用率はかなり低い</p></li>
+
+<li><p>Memcached 1.2.5</p>
+
+<ul>
+<li>Multi Interface Support</li>
+<li>UDP all the time</li>
+</ul></li>
+
+<li><p>Future</p>
+
+<ul>
+<li>Binary Protocol</li>
+<li>Multiple Engine Support</li>
+<li>Char based</li>
+<li>Durable</li>
+<li>Queue</li>
+<li>Highly Threaded</li>
+</ul></li>
+</ul>
+
+<p>##MySQL Enterprise ツールのご紹介
+###Workbench</p>
+
+<ul>
+<li>MySQL Query Browser
+
+<ul>
+<li>SQL IDE</li>
+</ul></li>
+<li>MySQL Administrator
+
+<ul>
+<li>管理用</li>
+</ul></li>
+<li>MySQL Migration Tooklit
+
+<ul>
+<li>移行ツールキット</li>
+</ul></li>
+
+<li><p>MySQL Workbench</p>
+
+<ul>
+<li>Entity/Relation Designer</li>
+<li>データ・データベースを文書化する</li>
+</ul></li>
+
+<li><p>特徴</p>
+
+<ul>
+<li>複雑なデータベース構造を可視化</li>
+<li>モデル化することで関係性をわかりやすく表示する</li>
+</ul></li>
+
+<li><p>Forward Engineering</p>
+
+<ul>
+<li>E/R図からSQLへ変換</li>
+<li>データベースへ接続して直接実行可能</li>
+</ul></li>
+
+<li><p>Reverse Engineering</p>
+
+<ul>
+<li>実在するデータベースの E/R 図に</li>
+<li>変更を適用可能</li>
+</ul></li>
+
+<li><p>Database Compare</p>
+
+<ul>
+<li>データベースの比較</li>
+</ul></li>
+
+<li><p>Database Synchronization</p>
+
+<ul>
+<li>データベースの同期化</li>
+<li>オブジェクトレベルでの同期</li>
+</ul></li>
+
+<li><p>Documentation</p>
+
+<ul>
+<li>文書化．設計書・仕様書など．</li>
+</ul></li>
+
+<li><p>Roadmap</p>
+
+<ul>
+<li>Linux/Mac/Solaris 2008Q4</li>
+<li>SQL IDE 2009Q2</li>
+<li>これは調べておこう</li>
+</ul></li>
+</ul>
+
+<p>###Enterprise</p>
+
+<ul>
+<li>Subscription 形式
+
+<ul>
+<li>Database</li>
+<li>Community Server よりも Fix が早い</li>
+<li>Monitoring</li>
+<li>Enterprise Monitor</li>
+<li>Support</li>
+<li>コンサル</li>
+</ul></li>
+</ul>
+
+<p>###Enterprise Monitor</p>
+
+<ul>
+<li><p>特徴</p>
+
+<ul>
+<li>MySQL Server と Replication を自動探知</li>
+<li>[NEW] Problem Query Detection, Analysis and Tuning</li>
+</ul></li>
+
+<li><p>Architecture</p>
+
+<ul>
+<li>Agent + Manager(JSP)/Dashboard + Repository</li>
+</ul></li>
+
+<li><p>MySQL Enterprise Advisor</p>
+
+<ul>
+<li>設定やセキュリティ，アップデートやカスタマイズなどの管理機能</li>
+<li>Replication の遅延やメモリの使用率などの統計・監視</li>
+<li>Schema/Performance などの解析とチューニング</li>
+<li>予期しない変更・更新などの検知</li>
+</ul></li>
+</ul>
+
+<p>###問題の解決に向けて</p>
+
+<ul>
+<li><p>Common Pain Points</p>
+
+<ul>
+<li>データの利用側面と利用率の見込みの甘さ</li>
+</ul></li>
+
+<li><p>Slow Query Log</p>
+
+<ul>
+<li>遅いクエリーの検出</li>
+<li>インデックス使っているかどうかを調べられる</li>
+</ul></li>
+
+<li><p>SHOW PROCESSLIST</p>
+
+<ul>
+<li>on-time のプロセス一覧が見れる</li>
+</ul></li>
+
+<li><p>EXPLAIN</p>
+
+<ul>
+<li>インデックスがどのように使われているのかがわかる</li>
+</ul></li>
+</ul>
+
+<p>###Query Analyzer</p>
+
+<ul>
+<li><p>特徴</p>
+
+<ul>
+<li>リアルタイムに「問題あるクエリー」の検出ができる</li>
+<li>悪いクエリーの検出</li>
+<li>クエリーの EXPLAIN</li>
+<li>Enterprise Monitor に統合される</li>
+</ul></li>
+
+<li><p>MySQL Proxy 上で動いている</p>
+
+<ul>
+<li>Proxy を通すことによるパフォーマンスの劣化があるが，一応ドキュメント化されている</li>
+</ul></li>
+
+<li><p>表示する情報</p>
+
+<ul>
+<li>各クエリーの情報を一覧で表示可能</li>
+<li>実行回数</li>
+<li>最短時間</li>
+<li>最速時間</li>
+<li>一定期間内の実行時間総計
+
+<ul>
+<li>どんなクエリーがデータベース内で時間を消費しているのかがわかる</li>
+</ul></li>
+<li>Slow Query Log/SHOW PROCESSLIST に依存しないので，サーバ再起動など必要ない</li>
+</ul></li>
+</ul>
+
+<p>###Q&amp;A</p>
+
+<ul>
+<li>将来的には Workbench に統合される計画のようだ</li>
+</ul>
+
+<p>##Life-X における MySQL 導入事例紹介</p>
+
+<ul>
+<li>ライフログサービス</li>
+<li>クローズドβで公開中</li>
+</ul>
+
+<p>###ソニーマーケティング概要</p>
+
+<ul>
+<li>ソニー商品の販売と促進</li>
+<li>新規ビジネス開発部門がある</li>
+</ul>
+
+<p>###Life-X とは？</p>
+
+<ul>
+<li>ネットとデバイスが融合する時代へ向けた，新しい使い方・情報共有の仕方の提案
+
+<ul>
+<li>テレビやPSPなどのデバイスを製造しているメーカーならではの展開</li>
+</ul></li>
+</ul>
+
+<p>###Life-X 構築について</p>
+
+<ul>
+<li>更新・参照ともに多いので，分散が大変らしい</li>
+</ul>
+
+<p>##Backup Best Practices BoF Tokyo
+###基本的なバックアップ</p>
+
+<ul>
+<li>前提として
+
+<ul>
+<li>binlog と データ本体の HDD は分けてる</li>
+<li>binlog は on にしておく</li>
+</ul></li>
+<li>どこかでフルバックアップをとる</li>
+<li>binlog とは
+
+<ul>
+<li>COMMITのタイミングで変更点まるごと書き出される</li>
+<li>各書き込み毎に位置(position)が割り当てられる</li>
+<li>バックアップ時に master_log_pos をとっておけば，どこまでバックアップしたかがわかる</li>
+</ul></li>
+</ul>
+
+<ol>
+<li>おおっと！(HDD全損)</li>
+<li>HDD新調</li>
+
+<li><p>バックアップからリストアしても，バックアップ後の更新は反映されない</p>
+
+<ul>
+<li>バックアップのポジションがわかるかが重要</li>
+</ul></li>
+
+<li><p>mysqlbinlog をつかうと，あるログファイルのあるポジションからの SQL を取り出すことができる</p></li>
+</ol>
+
+<pre><code class="language-bash">$ mysqlbinlog --start-position=3356424 binlog.000039 | mysql
+</code></pre>
+
+<p>###バックアップの方法</p>
+
+<ul>
+<li>バックアップの種類
+
+<ul>
+<li>Warm/Hot/Cold</li>
+<li>対応ストレージエンジン</li>
+<li>論理(Statement-base)/物理(ファイルコピー的)</li>
+<li>有償/無償</li>
+</ul></li>
+<li>SQL 分ペース
+
+<ul>
+<li>特定のデータだけをバックアップなど可能</li>
+</ul></li>
+<li>mysqldump
+
+<ul>
+<li>InnoDB だと SINGLE TRANSACTION にすることで HOT Backup が可能</li>
+</ul></li>
+<li>OS のファイルコピー
+
+<ul>
+<li>/var/db/mysql/data などをコピーしてバックアップ</li>
+</ul></li>
+<li>mysqlhotcopy
+
+<ul>
+<li>すべてのテーブルにロックをかけてファイルコピーするスクリプト</li>
+<li>Memory/InnoDB/NDB 以外はおおむね対応(表領域を使わないエンジン)</li>
+</ul></li>
+<li>MySQL Administrator
+
+<ul>
+<li>GUI で Warm Backup</li>
+</ul></li>
+<li>レプリケーション
+
+<ul>
+<li>バックアップスレーブとして</li>
+</ul></li>
+<li>スナップショット
+
+<ul>
+<li>ファイルシステムのスナップショット機能を使ってバックアップ</li>
+</ul></li>
+<li>InnDB Hot Backup
+
+<ul>
+<li>InnoDB/MyISAM のみだが HOT バックアップできる有償ソフトウェア</li>
+</ul></li>
+<li>Zmanda Recovery Manager
+
+<ul>
+<li>GUI でバックアップができる MySQL Enterprise のオプション</li>
+</ul></li>
+<li>MySQL Parallel Dump
+
+<ul>
+<li>MySQL Forge か Sourceforge にある．</li>
+</ul></li>
+</ul>
+
+<p>###MySQL 6.0 のデモ</p>
+
+<ul>
+<li>幻の MySQL 5.2.4
+
+<ul>
+<li>BACKUP DATABASE [database names] TO &lsquo;FILE_PATH&rsquo;;</li>
+<li>RESTORE FROM &lsquo;FILE_PATH&rsquo;;</li>
+</ul></li>
+<li>バックアップ処理を Driver でやるか Engine 側でやるのかも議論がある</li>
+<li>MySQL 6.0.6 では MyISAM も Hot Backup 可能</li>
+<li>バックアップ中に DDL(ALTER TABLE など) は実行できない
+
+<ul>
+<li>MySQL 6.1 では実行可能になる予定</li>
+</ul></li>
+</ul>
+
+<p>###InnoDB Hot Backup vs. mysqldump &ndash;single-transaction &ndash;master-data</p>
+
+<ul>
+<li><p>InnoDB Hot Backup</p>
+
+<ol>
+<li>ファイルをごっそりコピー</li>
+<li>バックアップ開始時点での InnoDB 内部ログの位置を記録</li>
+<li>ファイルコピー終了時点での InnoDB 内部ログの位置から，開始～終了までの redolog を抜き出して一緒にバックアップ</li>
+<li>リストアするときは，ファイルコピーをしてから redolog を適用する</li>
+</ol></li>
+
+<li><p>mysqldump</p>
+
+<ul>
+<li>&ndash;single-transaction &ndash;master-data をつけると，TRANSACTION が走り，その中で SELECT が実行されるのでバックアップ開始時点でのデータであることが保証される．</li>
+<li>mysqldump -&gt; mysqld -&gt; FileSystem -&gt; mysqld -&gt; mysqldump となり，オーバーヘッドがある</li>
+<li>RESTORE のときは SQL を parse したりするので重い</li>
+</ul></li>
+</ul>
+
+<p>##展示セッションにて</p>
+
+<ul>
+<li>SPIDER ENGINE
+
+<ul>
+<li>α版だが，内容を聞く限りではかなり期待大</li>
+<li>GPLで公開なので，実験に使うのはいいかもしれない．</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-1st-Day/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-2nd-Day/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-2nd-Day/">MySQL ユーザカンファレンス 2008 2nd Day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/11/04/ruby-Ubuntu-8-04-RMagick/">Ubuntu 8.04 で RMagick をインストールする</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/11/04/ruby-Ubuntu-8-04-RMagick/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

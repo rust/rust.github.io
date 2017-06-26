@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/04/04/Poken-Poken/">珍しいPoken？</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/04/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  確かに12個セットのはランダムだと言う話だったのですが，1回目の注文で普通っぽかったから2回目も大丈夫だろうと思ってたら．．．．
+
+Panda/Alien以外に新キャラがっ！
+
+Ninja/Geishaはわかるんだけど，あとのはなんだろ．左上はドラキュラ(Dracula)？左下は・・・・酋長？情報探しても見つからない・・・・一応レアっぽいので，実は当たり？よくわからなくなってきましたｗｗｗ
+と言うわけで，もう一度調整し直しですね・・・・orz
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/03/30/Poken-Poken/">Poken到着</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/03/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  到着してました！とりあえず写真アップ．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/03/16/ruby-rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0039-title-Rails-39/">Rails勉強会＠東京第39回に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/03/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今日は天気もいいのでお出かけ日和．にもかかわらず，勉強会．すごいのかなんなのか．でもマイレージは減ってゆく・・・・orz
+ 今日は人数少なめ．何か他のと重なっている人が多い模様  ##セッション ###タネ
+ scaffold の半歩先へ(Yuumi3さん) RP を作ってみよう(moroさん) 認証機能(三好さん) Haml(ursmさん) テストがらみ(TDD/BDD) Web サーバのベストプラクティス  ###割り振り
+ 前半  テストとWebサーバ  テストがらみ(TDD/BDD) Web サーバのベストプラクティス  認証とか RP を作ってみよう(moroさん) 認証機能(三好さん)  後半  scaffold の半歩先へ(Yuumi3さん) Haml(ursmさん)   ##テストとWebサーバとか ###Webサーバとか
+ サーバ構成
+ Frontend Apache Nginx(えぬじんえっくす(？)) Lighttpd(らいてぃ(？)) Application Mongrel Passenger FastCGI  Load Balancer
+ Apache/Nginx/Lighttpd で分散とかリバースプロキシで  Application Server
+ Mongrel/Thin などで受ける  Passenger
+ 共有ホスト的に使うにはよさそう いろいろなアプリを同時に使える  Cache
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/03/16/ruby-rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0039-title-Rails-39/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/03/02/drbd-linux-DRBD-GFS2-Primary-Primary-on-CentOS/">DRBD&#43;GFS2でPrimary/Primary構成 on CentOS での起動スクリプト</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/03/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  2台のLinuxサーバを使った DRBD + GFS2 での Primary/Primary 構成では，シャットダウンと起動の順序に気を遣う必要があります．そうしないと DRBD が Split-Brain1となってしまいます．それを防ぐために，以下のようなスクリプトを作ってみました．
+ 使い方はかんたん．
+% git clone git://gist.github.com/71325.git gist-71325 % sudo cp cluster /etc/init.d/cluster % sudo /sbin/chkconfig --add cluster  VirtualBox 上で何度か再起動実験してますが，特に問題はありません．起動時間がずれたときにどうするかという問題がありますが，そのときは wfc-timeout / degr-wfc-timeout の値を調整すればいいのではないかと思います．
+##追記 start/stopに反応するスクリプト書いて，K01とかやれば1番目に実行されるだろうと思ってたらそうではなく，/etc/rcにある 49行目～52行目で continue されてしまいます．
+45 # First, run the KILL scripts. 46 for i in /etc/rc$runlevel.d/K* ; do 47 check_runlevel &quot;$i&quot; || continue 48 49 # Check if the subsystem is already up. 50 subsys=${i#/etc/rc$runlevel.d/K??} 51 [ -f /var/lock/subsys/$subsys -o -f /var/lock/subsys/$subsys.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/03/02/drbd-linux-DRBD-GFS2-Primary-Primary-on-CentOS/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/26/centos-linux-drbd-CentOS-5-2-Primary-Primary-DRBD-GFS/">CentOS 5.2でPrimary/Primary構成のDRBD&#43;GFSを組む</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ひとまず ext3 で構築はしたのですが，性能的な制約で Primary/Primary 構成をとる必要に迫られて Primary/Primary 構成で組み替えることに．そのために VirtualBox で検証しました．そのログを．
+ 参考  http://cafelounge.net/dev/?Cluster%2FDRBD%2F8 http://blog.sqawasmi.com/index.php/2008/05/23/drbd-primary-primary-using-gfs/   ##準備編 ###CentOS 5.2 のインストール VirtualBox 上で作ります．
+ Name : Primary/Secondary Memory : 256MB HDD : 8GB CentOS  パーティション / : 6000MB swap : 512MB 残りは空き(DRBD 用) インストールタスク : Server   ###必要パッケージのインストール 両ノードにインストール
+% sudo yum update % sudo reboot % sudo yum install drbd82 kmod-drbd82 cman lvm2 lvm2-cluster kmod-gfs2 gfs2-utils % sudo reboot  ###ネットワークの設定 DRBDの設定ファイルとホスト名が一致している必要があるので設定．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/26/centos-linux-drbd-CentOS-5-2-Primary-Primary-DRBD-GFS/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/24/ruby-rails-Rails-2-3-0-MiddlewareStack/">Rails 2.3.0で MiddlewareStack に積む方法</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まず Rails 2.3.0 RC1 は Rack 対応なおかげで，
+% rake middleware use Rack::Lock use ActionController::Failsafe use ActiveRecord::SessionStore, {:session_key=&gt;&quot;_session_id&quot;, :cookie_only=&gt;false} use ActionController::RewindableInput use ActionController::ParamsParser use Rack::MethodOverride use Rack::Head use ActiveRecord::QueryCache run ActionController::Dispatcher.new  と言う感じで Rack 対応モジュールが順次実行されています．このどこかにオレオレモジュール
+class DummyRack def initialize(app) @app = app end def call(env) @app.call(env) end end  を積むには config/environment.rb に下記を追記
+ActionController::Dispatcher.middleware.use DummyRack  すれば，
+% rake middleware use Rack::Lock use ActionController::Failsafe use ActiveRecord::SessionStore, {:cookie_only=&gt;false, :session_key=&gt;&quot;_session_id&quot;} use ActionController::RewindableInput use ActionController::ParamsParser use Rack::MethodOverride use Rack::Head use ActiveRecord::QueryCache use DummyRack run ActionController::Dispatcher.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/24/ruby-rails-Rails-2-3-0-MiddlewareStack/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-1st-Day/">OSC 2009 Tokyo/Sprint 1st Day</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  emobile の設定しわすれてネットつながらない・・・・  ##仮想化環境の設計手法～プロのテクニック教えます～
+ 仮想化で問われるのはセンス プロのテクニックとは  知ってるか知らないか   ###設計のポイント
+ 既存環境の移行が一番多い ちゃんと設計をするとコストは下がる  押し上げる要因は過大な見積り Hardwareの見積りをしっかりすれば，コストは下がる． コストの適正化 性能が足りなくなったら，スケールアウトする コスト削減のメリット・デメリットを「見える化」する システム寿命を2年増やす =&gt; 仮想化する・しないの場合での見積り   ###設計フェーズ
+ 論理的な機能(サーバ)を整理する  物理マシンじゃなくて，論理機能として抽象化して整理する いま2GHz/8GBだからといって，そのまま落としこまない  仮想化の設計をする  まだ物理マシンは出てこない コンピュータリソースは無制限だと考える  注意点  リソースプールは最低3台で構成するのが望ましい どのHardwareで動くかは考えない．考えてはいけない． 障害発生時はリソースプール内で相互にカバーする なのでStand-byサーバはない   ###設計手順詳細
+ サーバのリストアップ  重要度と負荷率で，ABCランクをつける  マシングループ毎に仕分け  マシン間の関連を書いておく  グループ毎の要求リソースを算出  I/O, Network が算出しづらいので，現行サーバのを調べておく  CPU/メモリは搭載量 x 60% と考える  ###ハードウェアの選定
+ 1台あたり16GB積むのを指標とする  場合によっては32GB/64GBもありうる  高速なI/Oが必須 CPU使用率  CPU使用率30%の物理マシンを仮想マシンに CPU60%ルールなら，VM2台 とか   ###ブレード or ラックマウント？
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-1st-Day/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-2st-Day/">OSC 2009 Tokyo/Sprint 2st Day</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##はてなでの仮想化技術あれこれ
+ AMD でのセミナーのRevise版  ###はてなの紹介
+ 700万ユーザ 10億PV  ###仮想化技術
+ ハードウェアを抽象化し，複数のOSが動作できるようにする  Xen/VMware/QEMU/UML/KVM/OpenVZ/etc.  古くはメインフレームの技術らしい 仮想化のメリット(from Wikipedia)  可用性・柔軟性の向上 運用コストの低下 セキュリティの向上   ###はてなでの仮想化
+ Xen を利用 Xen における仮想化モデル  仮想化モデルとは 準仮想化  エミュレーションオーバーヘッドを最小に押さえられるが，OS 側の対応が必要  完全仮想化  実ハードウェア用OSがそのまま動作するが，エミュレーションオーバーヘッドが大きくなる   はてなにおける仮想化の歴史  CentOS 5 系への移行した際に，Xen を試し始める(2007 前半) 2007 夏頃から，スモールスタートで適用開始 サーバ管理ツール開発開始，仮想化対応  サーバの台数  物理サーバ500台で，仮想化して890台(ホスト+インスタンス)  はてなシステムの全体像と解説  三層構造 リバースプロキシ アプリケーションサーバ データベースサーバ 各所に LVS でロードバランス サーバ台数の割合 Web:DB = 4:6 ～ 6:4 全体の6～7割が Web/DB その他は，ネットワーク関係・ファイルサーバ・管理用・メール・分散ストレージサーバ 非同期システムが増量中 MapReduce 計算クラスタなど 仮想化サーバの構築ポリシー あいているリソースを主に利用する DomU を投入  CPU があいているなら Web サーバ IO があいているなら DB サーバ メモリが空いているなら キャッシュサーバ  同じ傾向で，かつ負荷の高い用途同士は避ける  はてなでの Xen  CentOS 5.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-2st-Day/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/16/rails-ruby-Rails-38/">Rails勉強会＠東京第38回</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今日は TIS さんにて開催  会場提供ありがとうございます．  今日もおとなしめで．  ##セッション案
+ Rails 2.3.0 Ruby 1.9.1(Rails, merb) RSpec と Cuke SKIP のソースコードを読む thoughtbot とか  ##セッション
+ 前半  SKIP RSpec と Cuke (Ruby 1.9.1)  後半  Rails 2.3.0 Ruby 1.9.1   ##RSpec と Cuke
+ 2009/01/24の仙台Ruby会議での発表資料 永和システムマネジメントの提供です．  ###いままでのテストを振り返る
+ Cucumber で受け入れテスト RSpec で単体テストで書くべき Controller とか View とか Helper もいいのではないかな 2006年までは  UnitTest/FunctionalTest でテスト いままでのテスト？ フレームワークがテスト環境を用意しているのが良かったのではないか  2007年-2008年は？  RSpec が出てきた Model/View/Controller/Helper を個別に RSpec でテスト Integration テストで，全体をテスト  2009年からは？  Cucumber で統合テスト Model を RSpec でテスト   ###Test for developer
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/16/rails-ruby-Rails-38/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/14/devsumi2009-2009-2/">デブサミ 2009 2日目</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  代休使って行ってきました．マイレージ消費せずに行けるのはありがたい・・・・
+##これからのWebテクノロジーを予測する ###自己紹介
+ 仮面の人 Asiajin の人 ならべて.com プレゼン資料は akimoto.jp で公開予定  ###本日の発表内容
+ 予想する？ 「僕の」予想です どれぐらい先？今年から数年  ###予測の反省
+ 2004年頃には RSS がすごい来ると思ってた  が，予測は外れた，とも当たったとも言えない．  部分部分では使われている場合もあるが，世間一般の認知は得られていない
+ 海外のRSSニュースを提供していたりした
+ アメリカ在住時の話 会社のブログを書くことにしたので止めた   ###Web 2.0
+ だいぶ飽きられた感じ バズワード  いろんな思惑で使われてた  なんとなく新しい特徴を備えていると，Web 2.0 的だという感じ  ###クラウドコンピューティング
+ 今年熱いキーワード バズワードだけど定義も難しい 「スケールするバックエンドをネット越しに量り売りするサービス．それを使うこと」 たとえば  Amazon EC2/S3/etc. Akamai Salesforce Google App Engine  日本でやるところは？  エンド開発者にはこないかも．企業向けかな．   ###OpenID
+ Web に特化した SSO(Single Sigh On) OpenID は来るの？  OP 側のメリットは大きい RP 側のメリットが見えにくい RP が得する方法を思いついたらすごいかもしれない．   ###OpenSocial
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/14/devsumi2009-2009-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/20/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;21 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/22/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

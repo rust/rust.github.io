@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed version="0.3" xmlns="http://purl.org/atom/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">
+<title>Stnard&apos;s Diary</title>
+<link rel="alternate" type="text/html" href="/mt/" />
+<modified>2010-05-17T04:43:48Z</modified>
+<tagline>All you need is ...., but all I need is ....</tagline>
+<id>tag:stnard.jp,2006:/mt/1</id>
+<generator url="http://www.movabletype.org/" version="5.02">Movable Type</generator>
+<copyright>Copyright (c) 2010, Rust Stnard</copyright>
+
+<entry>
+<title>WordPressに移行しました</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2010/05/17/003910.html" />
+<modified>2010-05-17T04:43:48Z</modified>
+<issued>2010-05-17T02:37:08Z</issued>
+<id>tag:stnard.jp,2010:/mt/1.3910</id>
+<created>2010-05-17T02:37:08Z</created>
+<summary type="text/plain">と言うわけで、ここは更新されません。とりあえず報告まで。 http://stna...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[と言うわけで、ここは更新されません。とりあえず報告まで。
+
+<a href="http://stnard.jp/">http://stnard.jp/</a>]]>
+
+</content>
+</entry>
+
+<entry>
+<title>WordPressに移行しました</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2010/05/17/003909.html" />
+<modified>2010-05-17T04:42:17Z</modified>
+<issued>2010-05-17T02:37:08Z</issued>
+<id>tag:stnard.jp,2010:/mt/1.3909</id>
+<created>2010-05-17T02:37:08Z</created>
+<summary type="text/plain">と言うわけで、ここは更新されません。とりあえず報告まで。 http://stna...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>blog</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[と言うわけで、ここは更新されません。とりあえず報告まで。
+
+<a href="http://stnard.jp/">http://stnard.jp/</a>]]>
+
+</content>
+</entry>
+
+<entry>
+<title>携帯変わります</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2009/08/03/003908.html" />
+<modified>2009-08-03T14:59:52Z</modified>
+<issued>2009-08-03T14:55:37Z</issued>
+<id>tag:stnard.jp,2009:/mt/1.3908</id>
+<created>2009-08-03T14:55:37Z</created>
+<summary type="text/plain">Willcomを解約するので．だって iPhone の圧力が高ｓ(ｒｙ． さて，...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>業務連絡</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[Willcomを解約するので．だって iPhone の圧力が高ｓ(ｒｙ．
+
+さて，そろそろブログとかの移転先を告知します．
+
+<ul>
+	<li>FFとか http://rust.vox.com/</li>
+	<li>それ以外 http://d.hatena.ne.jp/conceal-rs/</li>
+	<li>Twitter http://twitter.com/conceal_rs/</li>
+</ul>
+]]>
+
+</content>
+</entry>
+
+<entry>
+<title>しばしのお休み</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/10/13/003894.html" />
+<modified>2007-10-12T15:25:26Z</modified>
+<issued>2007-10-12T15:22:42Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3894</id>
+<created>2007-10-12T15:22:42Z</created>
+<summary type="text/plain">ここでのブログはしばしお休みします．まあなんとなくですが，別のところで書いてます...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>junk</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+ここでのブログはしばしお休みします．まあなんとなくですが，別のところで書いてます．重いんだよね，MovableType．．．．
+
+</content>
+</entry>
+
+<entry>
+<title>いまこの業界に必要なこと</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/09/07/003893.html" />
+<modified>2007-09-07T08:25:36Z</modified>
+<issued>2007-09-07T08:21:26Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3893</id>
+<created>2007-09-07T08:21:26Z</created>
+<summary type="text/plain"> 【XDev】「とりあえず作って，後から作り直せ」，Rubyのまつもと氏が語るエ...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>program</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[<blockquote>
+<a href="http://itpro.nikkeibp.co.jp/article/NEWS/20070907/281335/" target="_blank">【XDev】「とりあえず作って，後から作り直せ」，Rubyのまつもと氏が語るエンタープライズ開発：ITpro:</a>
+</blockquote>
+まあそうなのかもしれない．終着点が見えないままに進んでいくのではなくて，プロトタイプを製作しつついくのがいいんだろうね．ただプロトタイプ製作自体に時間とコストがかかってしまう状況でもあるので，そこを改善せねばな．やっぱRuby on RailsとかCatalystとか，フレームワークかな．]]>
+
+</content>
+</entry>
+
+<entry>
+<title>ここ最近の負荷</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/09/06/003892.html" />
+<modified>2007-09-06T05:49:21Z</modified>
+<issued>2007-09-06T05:45:00Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3892</id>
+<created>2007-09-06T05:45:00Z</created>
+<summary type="text/plain">超高め．．．．これはD論書いている時以来だな．しかもあの時は終わりがあったが，今...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>life</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+超高め．．．．これはD論書いている時以来だな．しかもあの時は終わりがあったが，今回は先が見えない．何かがトリガーになれば．．．．という状況．久しぶりに橘いずみかな．．．．orz
+
+
+</content>
+</entry>
+
+<entry>
+<title>精神的に参る</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/09/03/003891.html" />
+<modified>2007-09-06T05:46:10Z</modified>
+<issued>2007-09-03T08:36:36Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3891</id>
+<created>2007-09-03T08:36:36Z</created>
+<summary type="text/plain">正直，管理職の柄ではないので，いまは結構心的負荷高め．妻と猫とが癒し元です．これ...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>life</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+正直，管理職の柄ではないので，いまは結構心的負荷高め．妻と猫とが癒し元です．これがないと逃げてるな，きっと．．．．
+
+まあそれはさておき，そろそろプログラム書きたくなってきた．仕事とはかけ離れて，自分が使いたいツールを作りたい．Railsでも勉強がてらにやってみようかな．そして楽天にｔ（ｒｙ．
+
+</content>
+</entry>
+
+<entry>
+<title>考えて書く・話す</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/08/14/003890.html" />
+<modified>2007-08-21T23:01:16Z</modified>
+<issued>2007-08-14T10:16:34Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3890</id>
+<created>2007-08-14T10:16:34Z</created>
+<summary type="text/plain">今日1日、形容詞は禁止です。 - シロクマ日報 [ITmedia オルタナティブ...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>junk</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[<blockquote><a href="http://blogs.itmedia.co.jp/akihito/2007/08/1_67fa.html" target="_blank">今日1日、形容詞は禁止です。 - シロクマ日報 [ITmedia オルタナティブ・ブログ]</a></blockquote>
+形容ばかりで本質を語れない人が最近多い気がしますね．文章全体が形容だけになると，聞いている人は実際に何が言いたいのか理解できなくなる．そういう意味で，形容詞禁止で語るのはいい試みじゃないかと思う．]]>
+
+</content>
+</entry>
+
+<entry>
+<title>ホットスポット初体験</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/08/11/003889.html" />
+<modified>2007-08-11T12:39:09Z</modified>
+<issued>2007-08-11T00:54:55Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3889</id>
+<created>2007-08-11T00:54:55Z</created>
+<summary type="text/plain">今日はビル停電のため，朝から出社して電源落としてきた．んで，電源入れるために待っ...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>W-ZERO3[es]</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+今日はビル停電のため，朝から出社して電源落としてきた．んで，電源入れるために待ってるあいだ，近くのドトールで暇をつぶしているんだが，ホットスポット対応なので非常に快適．高速通信は便利だ・・・・
+
+</content>
+</entry>
+
+<entry>
+<title>話題の？</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/08/10/003888.html" />
+<modified>2007-08-10T15:13:41Z</modified>
+<issued>2007-08-10T14:50:13Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3888</id>
+<created>2007-08-10T14:50:13Z</created>
+<summary type="text/plain"></summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>junk</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/QVSGRwqgvl0"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/QVSGRwqgvl0" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>]]>
+
+</content>
+</entry>
+
+<entry>
+<title>自宅開発環境再構築</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/07/16/003887.html" />
+<modified>2007-07-16T05:31:15Z</modified>
+<issued>2007-07-16T05:27:42Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3887</id>
+<created>2007-07-16T05:27:42Z</created>
+<summary type="text/plain">何となく再構築． Fedora Core 6 on VMware emacs w...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>PC</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[何となく再構築．
+<br />
+<br />
+<ul>
+<li>Fedora Core 6 on VMware</li>
+<li>emacs with php-mode/javascript-mode/etc.</li>
+<li>Poderosa</li>
+<li>Firefox</li>
+</ul>
+まあこんな感じで．特に凄いことをするわけでもないので，]]>
+
+</content>
+</entry>
+
+<entry>
+<title>Outland上陸，そして・・・・</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/07/03/003886.html" />
+<modified>2007-07-03T04:41:48Z</modified>
+<issued>2007-07-03T04:41:44Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3886</id>
+<created>2007-07-03T04:41:44Z</created>
+<summary type="text/plain">緑装備の高性能さに唖然とする．．．．下と上とじゃ全然違うのね．下のEpicでも上...</summary>
+<author>
+<name>Rust@W-ZERO3[es]</name>
+
+<email>stnard@gmail.com</email>
+</author>
+<dc:subject>WoW</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[<p>緑装備の高性能さに唖然とする．．．．下と上とじゃ全然違うのね．下のEpicでも上の緑に勝てなかったりとか．まあLv上限上がったからそうなるんだろうけど，ちょっと桁違いだな．まあ強化されていくのは気持ちいいんだけどね．いまLv61．もう少しかな．</p>]]>
+
+</content>
+</entry>
+
+<entry>
+<title>日々変わりなしorz</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/07/03/003885.html" />
+<modified>2007-07-03T04:40:45Z</modified>
+<issued>2007-07-03T04:37:41Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3885</id>
+<created>2007-07-03T04:37:41Z</created>
+<summary type="text/plain">えー，まあ特に何も変ったことは茄子．近況としては会社の大阪事務所が引っ越しでてん...</summary>
+<author>
+<name>Rust@W-ZERO3[es]</name>
+
+<email>stnard@gmail.com</email>
+</author>
+<dc:subject>life</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[<p>えー，まあ特に何も変ったことは茄子．近況としては会社の大阪事務所が引っ越しでてんやわんやとか．FFXIは相変わらず引退状態．物価がかなり下がってるらしいんで，今戻ったら金持ちなんだろうなぁ，と考えるだけでログインはせず．そんな感じの毎日．日々変わりなし．</p>]]>
+
+</content>
+</entry>
+
+<entry>
+<title>Advancedと言えば・・・・</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/06/07/003884.html" />
+<modified>2007-06-07T13:11:26Z</modified>
+<issued>2007-06-07T13:03:56Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3884</id>
+<created>2007-06-07T13:03:56Z</created>
+<summary type="text/plain">ウィルコム、無線LAN対応の「Advanced/W-ZERO3［es］」 ネーミ...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+<dc:subject>W-ZERO3[es]</dc:subject>
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[<blockquote><a href="http://k-tai.impress.co.jp/cda/article/news_toppage/34882.html" target="_blank">ウィルコム、無線LAN対応の「Advanced/W-ZERO3［es］」</a></blockquote>
+ネーミングはともかく，
+<ul>
+<li>サイズが小さくなった？</li>
+<li>メモリ増えた</li>
+<li>解像度アップ</li>
+<li>CPU増強</li>
+<li><strong>無線LAN搭載</strong></li>
+</ul>
+はいい感じ．機種交換するかな．．．．割賦販売あるらしいし，ちょっと考え中．]]>
+
+</content>
+</entry>
+
+<entry>
+<title>今日の購入日記：大人買い</title>
+<link rel="alternate" type="text/html" href="/mt/archives/2007/05/15/003883.html" />
+<modified>2008-03-20T04:16:06Z</modified>
+<issued>2007-05-15T13:24:57Z</issued>
+<id>tag:stnard.jp,2007:/mt/1.3883</id>
+<created>2007-05-15T13:24:57Z</created>
+<summary type="text/plain">大人買い，楽しい．すばらしき行為（ぉぃ． ハギワラシスコム USB対応フラッシュ...</summary>
+<author>
+<name>Rust Stnard</name>
+<url>http://stnard.jp/</url>
+<email>rust@stnard.jp</email>
+</author>
+
+<content type="text/html" mode="escaped" xml:lang="en" xml:base="/mt/">
+<![CDATA[大人買い，楽しい．すばらしき行為（ぉぃ．<br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MWW9CS/stnardsdiary-22/ref=nosim"><img src="http://ec1.images-amazon.com/images/I/11WP00z8cpL.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MWW9CS/stnardsdiary-22/ref=nosim">ハギワラシスコム USB対応フラッシュメモリ LumitasMシリーズ 2GB(WindowsVista ReadyBoost対応)オレンジ HUD-M2GLJ-OR<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2006/01/31</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MWW9CS/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000JJ4ANU/stnardsdiary-22/ref=nosim"><img src="http://ec1.images-amazon.com/images/I/21281MWBXBL.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000JJ4ANU/stnardsdiary-22/ref=nosim">USB2.0/1.1フラッシュメモリ ToteBag BH TB-BH4G/B<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2006/11/30</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000JJ4ANU/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/481246577X/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/481246577X/stnardsdiary-22/ref=nosim">てけてけマイハート 6 (6)<br>
+</a>
+<br>
+         竹本 泉
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/05/17</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/481246577X/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/406372610X/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/406372610X/stnardsdiary-22/ref=nosim">ピアノの森 14 (14)<br>
+</a>
+<br>
+         一色 まこと
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/06/22</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/406372610X/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710920/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710920/stnardsdiary-22/ref=nosim">海皇紀 32 (32)<br>
+</a>
+<br>
+         川原 正敏
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/06/15</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710920/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>]]>
+<![CDATA[<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000QCQDZ8/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000QCQDZ8/stnardsdiary-22/ref=nosim">月刊 アフタヌーン 2007年 07月号 [雑誌]<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/05/25</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000QCQDZ8/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062754258/stnardsdiary-22/ref=nosim"><img src="http://ec1.images-amazon.com/images/I/31RUuzMk4KL.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062754258/stnardsdiary-22/ref=nosim">創竜伝13〈噴火列島〉<br>
+</a>
+<br>
+         田中 芳樹
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/05/16</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062754258/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http%]]>
+</content>
+</entry>
+
+</feed>

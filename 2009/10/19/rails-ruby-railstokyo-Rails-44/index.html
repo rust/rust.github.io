@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails勉強会＠東京第44回 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails勉強会＠東京第44回</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<ul>
+<li>久しぶりの参加</li>
+<li>でも実は作業しに来た可能性大
+
+<ul>
+<li>でも 13 時の段階で @ysakaki は現れず</li>
+</ul></li>
+<li>意外に Mac 率低めな気がした</li>
+<li>17 名の参加</li>
+<li>何故か無線LAN繋がらずorz</li>
+</ul>
+
+<p>##セッション
+###ネタ</p>
+
+<ul>
+<li>Scala</li>
+<li>初心者</li>
+<li>Cucumber</li>
+<li>MVC</li>
+<li>github の活用法</li>
+<li>Rails のソースの読み方</li>
+</ul>
+
+<p>###前半</p>
+
+<ul>
+<li>Scala を 1.5h</li>
+</ul>
+
+<p>###後半</p>
+
+<ul>
+<li>高橋さん来たら MVC とかの話をする予定で</li>
+</ul>
+
+<h2 id="ruby-使いのための-scala-で学ぶ関数型プログラミング">Ruby 使いのための Scala で学ぶ関数型プログラミング</h2>
+
+<ul>
+<li>Scala のインストール</li>
+<li>Rubyist がステップアップするには Lisp を学ぶべきという話がある</li>
+<li>Scala なら何とかしてくれるはずだ！と言う思いがある</li>
+</ul>
+
+<h3 id="文法">文法</h3>
+
+<ul>
+<li>var 型(variable) と val 型(value)
+
+<ul>
+<li>前者は使ったら負け</li>
+<li>後者は再代入できない</li>
+<li>純粋関数型言語は後者しかない</li>
+<li>最初は var 型で，後々 val 型に移行するのがいいんじゃない？</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; var n: Int = 1
+n: scala.Int = 1
+
+scala&gt; n = 3
+n = 3
+scala&gt; val n: Int = 1
+n: scala.Int = 1
+
+scala&gt; n = 3
+&lt;console&gt;:5 error: assignment to non-variable
+  n = 3
+    ^
+</code></pre>
+
+<ul>
+<li>いろいろな型</li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; val str: String = &quot;hoge&quot;
+str: java.lang.String = hoge
+
+scala&gt; var sym: Symbol = 'piyo
+sym: scala.Symbol = 'piyo
+
+scala&gt; val l: List[Int] = List(1, 2, 3)
+l: scala.List[scala.Int] = List(1,2,3)
+
+scala&gt; val l: List[Any] = List(1, &quot;hoge&quot;, 4.2)
+l: scala.List[scala.Any] = List(1,hoge,4.2)
+</code></pre>
+
+<ul>
+<li>リストの [] は，中の型を表す</li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; Nil
+line9: scala.Nil.type = List()
+
+scala&gt; List()
+line10: scala.List[scala.Nothing] = List()
+
+scala&gt; null
+line14: scala.Null = null
+
+scala&gt; 1::2::3::Nil
+line15: scala.List[scala.Int] = List(1,2,3)
+</code></pre>
+
+<ul>
+<li>:: が左係りのメソッド
+
+<ul>
+<li>Nil に 3 を unshift する</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; Console println &quot;Hello&quot;
+Hello
+line18: scala.Unit = ()
+
+scala&gt; Console.println(&quot;Hello&quot;)
+Hello
+line19: scala.Unit = ()
+</code></pre>
+
+<ul>
+<li>Scala は厳密な型付け言語</li>
+<li>関数の定義</li>
+</ul>
+
+<pre><code class="language-bash">def function(v1:Type, ....):Type = {
+  processes....
+}
+</code></pre>
+
+<ul>
+<li>最終的に値を返す</li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; def max(x: Int, y: Int): Int = { if ( x &lt; y ) y else x }
+max: (scala.Int,scala.Int)scala.Int
+
+scala&gt; max(1, 3)
+line21: scala.Int = 3
+
+scala&gt; max(4, 3)
+line22: scala.Int = 4
+</code></pre>
+
+<ul>
+<li>型推論</li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; val d = List(0.1, 4, &quot;hoge&quot;)
+d: scala.List[scala.Any] = List(0.1,4,hoge)
+
+scala&gt; def hello = &quot;Hello, world!&quot;
+hello: =&gt; java.lang.String
+
+scala&gt; List(3, 34, 5) == List.apply(3, 34, 5)
+line1: scala.Boolean = true
+</code></pre>
+
+<ul>
+<li>制御構造
+
+<ul>
+<li>if</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-scala">if (str.size &lt; 3) {
+  &quot;It's short.&quot;
+} else if (str.size &lt; 6) {
+  &quot;Not so long.&quot;
+} else &quot;It's long.&quot;
+</code></pre>
+
+<ul>
+<li>for</li>
+</ul>
+
+<pre><code class="language-scala">for (ブロック引数 &lt;- コレクション; ...) 処理内容
+for (i &lt;- 1 to 10 if i % 2 == 0) print(i + &quot; &quot;)
+2 4 6 8 10
+for (i &lt;- 1 to 2; j &lt;- 1 to 3) print &quot;[&quot; + i + &quot;][&quot; + j + &quot;]&quot;
+</code></pre>
+
+<ul>
+<li>高階関数</li>
+</ul>
+
+<pre><code class="language-scala">List(1,2,3).map(n =&gt; n + 1)
+</code></pre>
+
+<ul>
+<li>クロージャ</li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; val sq = (n: Int) =&gt; Math.pow(n, 2).toInt
+sq: (Int) =&gt; Int = &lt;function&gt;
+
+scala&gt; sq(6)
+res0: Int = 36
+
+scala&gt; val half = (n: Int) =&gt; n / 2
+half: (Int) =&gt; Int = &lt;function&gt;
+
+scala&gt; half(14)
+res1: Int = 7
+
+scala&gt; def quartize(n: Int) = n / 4
+quartize: (Int)Int
+
+scala&gt; val quarter = quartize _
+quarter: (Int) =&gt; Int = &lt;function&gt;
+
+scala&gt; quarter(20)
+res2: Int = 5
+</code></pre>
+
+<ul>
+<li>パターンマッチング</li>
+</ul>
+
+<pre><code class="language-scala">var str = &quot;world&quot;
+str match {
+  case &quot;world&quot; =&gt; println(&quot;Hello&quot;)
+  case _ =&gt; ()
+}
+
+List(1, 2, 3) match {
+  case List(a, b, c) =&gt; a + b + c
+  case _ =&gt; 0
+}
+</code></pre>
+
+<ul>
+<li>再帰関数</li>
+</ul>
+
+<pre><code class="language-scala">def sumRec(n: Int): Int = n match {
+  case 1 =&gt; 1
+  case _ =&gt; n + sumRec(n - 1)
+}
+</code></pre>
+
+<ul>
+<li>カリー化</li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; def multi(n: Int)(m: Int) = m * n
+multi: (Int)(Int)Int
+
+scala&gt; multi(6)(9)
+res5: Int = 54
+
+scala&gt; def multiTwo = multi(2)_
+multiTwo: (Int) =&gt; Int
+
+scala&gt; multiTwo(5)
+res6: Int = 10
+
+scala&gt; def multiTwo(n: Int) = multi(n)(2)
+multiTwo: (Int)Int
+
+scala&gt; multiTwo(5)
+res7: Int = 10
+</code></pre>
+
+<ul>
+<li>遅延評価</li>
+</ul>
+
+<pre><code class="language-scala">class SchrodingerCat {
+  lazy val status = {
+    println(&quot;Here open a box...&quot;); &quot;alive!&quot;
+  }
+}
+
+val cat = new SchrodingerCat
+cat.status
+</code></pre>
+
+<ul>
+<li>暗黙の型変換</li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; class Cat
+defined class Cat
+
+scala&gt; class Man { def greet = &quot;Hello!&quot; }
+defined class Man
+
+scala&gt; implicit def cat2man(c: Cat): Man = new Man
+cat2man: (Cat)Man
+
+scala&gt; val cat = new Cat
+cat: Cat = Cat@bc5245
+
+scala&gt; cat.greet
+res8: java.lang.String = Hello!
+</code></pre>
+
+<ul>
+<li>Structual Subtyping
+
+<ul>
+<li>Scala でダックタイピングっぽいことをやるための仕組み</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-scala">scala&gt; class Cat
+defined class Cat
+
+scala&gt; class Duck {
+     |   def swim = ()
+     |   def quack = &quot;Quaaa!&quot;
+     | }
+defined class Duck
+
+scala&gt; def duckTest[T](x: T { def swim; def quack: String }) = &quot;You're duck!&quot;
+duckTest: [T](T{def swim: Unit; def quack: String})java.lang.String
+
+scala&gt; duckTest(new Duck)
+res10: java.lang.String = You're duck!
+
+scala&gt; duckTest(new Cat)
+&lt;console&gt;:11: error: type mismatch;
+ found   : Cat
+ required: ?{def swim: Unit; def quack: String}
+       duckTest(new Cat)
+                ^
+</code></pre>
+
+<ul>
+<li>Unit はつまり void な型</li>
+</ul>
+
+<h2 id="mvc-とは-by-高橋さん">MVC とは by 高橋さん</h2>
+
+<ul>
+<li>ソフトウェアパターン
+
+<ul>
+<li>アーキテクチャーパターン</li>
+<li>デザインパターンよりもさらにレイヤー化されたような？</li>
+<li>デザインパターン</li>
+<li>イディオム</li>
+<li>デザインパターンよりももう少し具体的？</li>
+</ul></li>
+<li>MVC はアーキテクチャーパターン</li>
+</ul>
+
+<h3 id="mvc">MVC</h3>
+
+<ul>
+<li>Controller はユーザからの入力を取り扱う</li>
+<li>更新伝搬
+
+<ul>
+<li>C -&gt; M -&gt; V のような感じ</li>
+<li>Web にはない</li>
+<li>M が発行者，C, V が購読者</li>
+</ul></li>
+<li>View が Controller を生成する
+
+<ul>
+<li>GUI Toolkit のコントローラみたいな感じ -&gt; Controller</li>
+</ul></li>
+<li>POSA(1996) -&gt; J2EE BluePrints(1998) -&gt; PoEAA(2002) -&gt; Rails(2004)
+
+<ul>
+<li>この流れの中でいろいろ変わっていった</li>
+</ul></li>
+<li>ドキュメントビュー
+
+<ul>
+<li>Document = M, View = V, C</li>
+</ul></li>
+<li>Rails のあとに，モデルをどうすればいいのかと考えたときに出てきたのが Service</li>
+<li>複数のモデル(会員と日記)を扱うようなものが欲しい
+
+<ul>
+<li>Service を作る</li>
+</ul></li>
+<li>なんかしらの基準でモデルを切り分けたい</li>
+
+<li><p>Java の話はわかりませんでした．</p></li>
+
+<li><p>RESTful MVC</p>
+
+<ul>
+<li>Web 2.0 時代の MVC</li>
+<li>Model が Web サービス
+
+<ul>
+<li>Web API がある</li>
+</ul></li>
+<li>M が変わってきた</li>
+<li>M(M-V-C)-V-C</li>
+<li>アプリケーション全体がモデルになる</li>
+</ul></li>
+</ul>
+
+<h3 id="結論">結論</h3>
+
+<ul>
+<li>Rails がえせ MVC かどうかはどうでもよくて，もっといろんな MVC がありますよ</li>
+</ul>
+
+<h2 id="helper-はどう使ってる">Helper はどう使ってる？</h2>
+
+<ul>
+<li><p>ステータスを日本語で出すのは？</p>
+
+<ul>
+<li>helper で書いた方がいいのではないか</li>
+<li>本来はマスタテーブルを作る必要があるのだが，そこまでたいそうじゃないので，モデルに書く</li>
+</ul></li>
+
+<li><p>Rails で「こういうのはここに書けばいい」みたいなベストプラクティスがない</p>
+
+<ul>
+<li>テーブルのないモデル</li>
+<li>何をヘルパーに書くか</li>
+<li>Mix-in か継承か</li>
+</ul></li>
+
+<li><p>Controller のメソッドに 5 行以上書くと負け</p>
+
+<ul>
+<li>モデルに書く</li>
+</ul></li>
+
+<li><p>サイドバーとかを @title で Controller で呼び出すのはなんかやだ</p>
+
+<ul>
+<li>View と Controller にまたいでやりとりするデータを減らしたい</li>
+</ul></li>
+</ul>
+
+<h2 id="checkout">Checkout</h2>
+
+<ul>
+<li><p>それぞれ一言</p>
+
+<ul>
+<li>MVC は勉強になったらしい</li>
+<li>Scala と言うか関数型言語に興味ある人は多いらしい</li>
+</ul></li>
+
+<li><p>Nu</p>
+
+<ul>
+<li>S 式で書ける Ruby らしい</li>
+</ul></li>
+</ul>
+
+<h2 id="kpt">KPT</h2>
+
+<ul>
+<li>Keep
+
+<ul>
+<li>みんなで参加するセッションがあればよかった</li>
+<li>PoSA の資料印刷ありがとうございました</li>
+<li>名札・売人</li>
+<li>Twitter で tsuda る</li>
+<li>チェックアウトする時間があった</li>
+</ul></li>
+<li>Keep &amp; Problem
+
+<ul>
+<li>人数が少ない．一体感があていいけど，寂しい？</li>
+</ul></li>
+<li>Problem
+
+<ul>
+<li>案内が遅かった</li>
+<li>喋る人が固定されている</li>
+<li>Scala は ust やれば良かった</li>
+</ul></li>
+<li>Try
+
+<ul>
+<li>RailsConf 09 どうなった？</li>
+<li>Rails 3 事情</li>
+<li>求む ust 番長</li>
+<li>ML に流す人(moro)</li>
+<li>困ったことをいろいろ聞くセッション</li>
+<li>Rails 近い話がない</li>
+<li>実践 Rails (仮) をやります by @yuumi3</li>
+</ul></li>
+</ul>
+
+<h2 id="次回">次回</h2>
+
+<ul>
+<li><sup>11</sup>&frasl;<sub>15</sub>(日) の予定</li>
+<li>永和で良ければそのまま</li>
+<li>Ruby 忘年会が年末に予定されているそうだ</li>
+</ul>
+
+<p>##懇親会</p>
+
+<ul>
+<li>都合8名での参加
+
+<ul>
+<li>むしろ濃い話が出来ました．</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/10/19/rails-ruby-railstokyo-Rails-44/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/10/14/livedoor-asin-4797354364-title/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/10/14/livedoor-asin-4797354364-title/">4Gbpsを超えるWebサービス構築術を読んだ</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/10/20/ruby-jruby-rails-Rails-JRuby/">既存の Rails アプリを JRuby で動かす</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/10/20/ruby-jruby-rails-Rails-JRuby/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

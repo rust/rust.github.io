@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>トークセッション「中と外から見た Rails」に行ってきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>トークセッション「中と外から見た Rails」に行ってきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/12/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<ul>
+<li>エア社員としては参加しないわけには行かないので雨の中行ってきました．</li>
+<li><sup>12</sup>&frasl;<sub>3</sub>(木) 池袋ジュンク堂本店にて</li>
+<li>いつもの Tokyu.rb とか Asakusa.rb とか Rails勉強会＠東京とかの人が多かった</li>
+<li>司会はオーム社の森田さん</li>
+<li>登場人物
+
+<ul>
+<li>前田さん</li>
+<li>大場社長</li>
+<li>松田さん</li>
+</ul></li>
+</ul>
+
+<h2 id="自己紹介">自己紹介</h2>
+
+<ul>
+<li>前田さん
+
+<ul>
+<li>NaCl の方</li>
+</ul></li>
+<li>大場社長
+
+<ul>
+<li>世界の万葉の社長</li>
+</ul></li>
+<li>松田さん
+
+<ul>
+<li>フリーエンジニア</li>
+<li>Head First Rails</li>
+</ul></li>
+</ul>
+
+<h2 id="awdwr3の紹介">AWDwR3の紹介</h2>
+
+<ul>
+<li>概要
+
+<ul>
+<li>ある程度まとまったアプリケーションを作って技術を身に付けることができる</li>
+<li>Ajaxまで含めた内容らしい</li>
+</ul></li>
+<li>第3版で変わったこと
+
+<ul>
+<li>第3部</li>
+<li>Rails の各コンポーネントを細かく解説</li>
+<li>あまりない</li>
+<li>Rails 2.2.2</li>
+<li>安定したバージョン</li>
+<li>「いつも本が出ると新しいバージョンが出る」</li>
+<li>国際化は「こんなんじゃ物足りない」 by @a_matsuda</li>
+<li>ActiveResource についての説明</li>
+<li>ルーティングのテストが熱いらしい</li>
+</ul></li>
+<li>レビューの感想
+
+<ul>
+<li>突っ込みすぎて Rails のバージョンが上がると役に立たない</li>
+<li>表紙がすごい</li>
+<li>レールから離れて飛んでいってしまってる</li>
+<li>電車が速そうになってる</li>
+</ul></li>
+<li>話しているうちにほんの宣伝ではなくなってきている可能性</li>
+</ul>
+
+<h2 id="awdwr3に見る開発スタイル">AWDwR3に見る開発スタイル</h2>
+
+<h3 id="dhh-の-rails-vs-みんなの-rails">DHH の Rails vs みんなの Rails</h3>
+
+<ul>
+<li>コラムに「Rails にこういうのないよね」的なことが書かれている</li>
+<li>Rails 1, 2, 3 になるにつれて，DHH だけのものじゃなくなってきた</li>
+<li>「レールはみんなの心の中にある」@a_matsuda</li>
+<li>DHH の強いポリシー
+
+<ul>
+<li>参照整合性制約</li>
+<li>外部キーを入れるとたいへんなことになる</li>
+<li>プラグインで対処できはする</li>
+<li>最初は入れないで，本番に近づくにつれて入れていく感じ</li>
+<li>「外部キーなしでやりましょう！」を言う機会にはなる
+
+<ul>
+<li>だが年配の方には・・・・</li>
+</ul></li>
+<li>Rails 3 になれば，ActiveRecord 使わなければ</li>
+<li>マイグレーションによるデータ投入</li>
+<li>migration でデータを投入しているが，DHH は良くないと書いて言っているらしい</li>
+<li>マスタ系はやっている</li>
+<li>使わないアソシエーションを定義する？</li>
+<li>全部用意する必要はない @nay3
+
+<ul>
+<li>チーム内で使う関連だけを考えているほうがいいんじゃないか？</li>
+</ul></li>
+<li>あとで書けばいいんじゃないの？ @nay3 @a_matsuda</li>
+<li>複合主キー</li>
+<li>オブジェクト指向的に STI をよく使う
+
+<ul>
+<li>テーブルの中身が気になるなー @a_matsuda</li>
+<li>クラスの方が気になるんですよー @nay3</li>
+<li>紹介を先取り</li>
+</ul></li>
+<li>REST</li>
+<li>REST 率高い</li>
+<li>一番影響を受けたのが Scaffold</li>
+<li>Rails 2.x 以降の Scaffold が REST 的になった</li>
+<li>Rails の REST は HTTP Method とリソースURIであれこれする</li>
+<li>Rails は REST に忠実なフレームワーク
+
+<ul>
+<li>Rails 界隈では REST と親和性が高い</li>
+</ul></li>
+<li>前田さんはあまり REST をお好きではない
+
+<ul>
+<li>普通にブラウザで使うアプリケーションなら，そこまで頑張らなくてはいいのでは？</li>
+<li>軽く考えればいいんじゃないの？ @nay3</li>
+<li>結構頑張って作る @a_matsuda</li>
+</ul></li>
+<li>Practical に役立つ部分だけで良いんじゃないのか</li>
+<li>REST はガラスの仮面に似ている @nay3
+
+<ul>
+<li>4つのせりふだけでやる寸劇がある．似ている</li>
+</ul></li>
+<li>ActiveSupport</li>
+<li>Rails 症候群 = なんでも Open Class で拡張したがるヤツが多い！</li>
+<li>でもそれが許される文化が Rails</li>
+<li>やるのは中二だけ @nay3</li>
+<li>アプリケーションでやるのはどうかと思う @前田さん
+
+<ul>
+<li>限定的に使えばいいけどねー</li>
+</ul></li>
+<li>1.days.ago とか英語っぽくなってしまってる</li>
+<li>好きな method / 嫌いな method
+
+<ul>
+<li>Object#try が大好き @a_matsuda</li>
+<li>ほんとに良い機能なら Ruby そのものに入れるべきじゃないかと思ってる @前田さん</li>
+<li>Rails から Ruby に逆輸入はいいんじゃないの？</li>
+</ul></li>
+<li>RSpec</li>
+<li>古い人たちは RSpec が好きじゃない
+
+<ul>
+<li>DSL がー</li>
+</ul></li>
+<li>RubyConf では matz が Internal DSL をもっと使いましょうーと言っていた @a_matsuda</li>
+<li>まるで英文で書いて実行できる</li>
+<li>オブジェクト指向の次のパラダイム
+
+<ul>
+<li>何がオブジェクトで何がメソッドかが</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="世界の-rails-vs-日本の-rails">世界の Rails vs 日本の Rails</h3>
+
+<ul>
+<li>RubyWorldConference では世界の Ruby．日本の Ruby の話があった
+
+<ul>
+<li>Jeremy Kemperを呼びたいと言ったのは前田さん</li>
+<li>Rails comitter と Ruby commiter</li>
+<li>Ruby わかってて Rails わかってる人は少数</li>
+<li>Rails が出てきたときにちょっと嫉妬した @前田さん</li>
+<li>「ここまではなー」という内容に踏み込んだ</li>
+</ul></li>
+</ul>
+
+<h2 id="railsの進化">Railsの進化</h2>
+
+<ul>
+<li>Rails 3
+
+<ul>
+<li>WEB+DB PRESS に Rails 3 特集書きました @a_matsuda</li>
+<li>agnostic</li>
+<li>選択の自由が我々に与えられる</li>
+<li>Rails っぽければ Rails って呼んでいいよねー
+
+<ul>
+<li>Rack に乗る何かであればいいんじゃないか</li>
+</ul></li>
+<li>Merb を取り込んだ政治力と懐の広さ</li>
+<li>「決められたレールなんてなくなってしまうんだ」と言うのが Rails 3</li>
+<li>Rails + Merb = Rails 3</li>
+<li>みんな Jeremy Kemper のを見ようぜ！</li>
+<li>みんなちゃんと動画見ようぜ！</li>
+<li>広がると Rails エンジニアの定義が広がってしまう</li>
+<li>今まで通りのコードを書ける</li>
+<li>Rails 3 になるとプラグインは全滅です</li>
+<li>プラグイン作者乙</li>
+</ul></li>
+</ul>
+
+<h2 id="rubyとrails">RubyとRails</h2>
+
+<ul>
+<li><p>Rails は Github, Ruby は Subversion</p>
+
+<ul>
+<li>中央がないのが git</li>
+<li>Subversion が中央にあるのでいいんじゃないの？</li>
+<li>あの Github のを公式だと言っていいんじゃないの？</li>
+<li>Ruby は matz がコントロールしているのでいいよね</li>
+<li>Rails アプリのリポジトリは git がいい @a_matsuda</li>
+<li>文化的にマッチする感じ</li>
+<li>git はアジャイルにマッチする</li>
+<li>マージが賢いので，分散開発に向いている</li>
+<li>Ruby の方が若干保守的</li>
+<li>ユーザとしては保守的がいい</li>
+<li>弄る側はもっともっと！な感じ？</li>
+<li>Ruby 1.9.2 が出たら Ruby 2.0 の開発始まるので，みなさんのご協力を</li>
+<li>RubySpec
+
+<ul>
+<li>Ruby 1.9 が出ない -&gt; Rails 3 が出ない -&gt; 本が売れ続けるという流れ</li>
+</ul></li>
+<li>Ruby の trunk で RubySpec 動かしてみて，みんないろいろやりましょうー</li>
+</ul></li>
+
+<li><p>本買ってください</p>
+
+<ul>
+<li>ジュンク堂さんで買ってください</li>
+</ul></li>
+</ul>
+
+<h2 id="懇親会">懇親会</h2>
+
+<ul>
+<li>Tokyu.rb 席完成
+
+<ul>
+<li>ひとまず食う</li>
+</ul></li>
+<li>いろんな人乱入
+
+<ul>
+<li>ありがたい話など</li>
+</ul></li>
+<li>最後に g 席に乱入してきた
+
+<ul>
+<li>社長にご挨拶も</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/12/04/ruby-rails-Rails/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/11/30/Tokyu-rb-ruby-tokyurubykaigi01-TokyuRuby-01/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/11/30/Tokyu-rb-ruby-tokyurubykaigi01-TokyuRuby-01/">TokyuRuby会議01を開催してきた！</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/12/05/ruby-rails-jpmobile-jpmobile-02-in/">jpmobile 会議02 in 札幌</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/12/05/ruby-rails-jpmobile-jpmobile-02-in/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

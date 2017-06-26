@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/20/wordpress-on-nginx-with-fastcgi/">WordPress on nginx with FastCGIに移行してみた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  やっぱりApacheのメモリ消費量が多い気がしてきたのでnginxに移行しました。要点としては、mod_phpのようなものはないため、FastCGIでPHPを動作させる必要があると言うこと。
+インストールは大して難しくないのですが、いかんせん日本語での情報が少ないのが難点です。基本的には公式wikiのPHP/FastCGI Exampleを参考にすれば問題ありません。以下、Debian (lenny) での作業ログです。
+まずは必要なパッケージをインストールします。その前に、必要に応じてApacheを停止しておきます。
+% sudo invoke-rc.d apache2 stop % sudo aptitude install php5-cgi nginx  次にFastCGI用daemonのスクリプトを作成。
+% sudo vim /etc/init.d/php5-fastcgi  #!/bin/bash BIND=127.0.0.1:9000 USER=www-data PHP_FCGI_CHILDREN=2 PHP_FCGI_MAX_REQUESTS=1000 PHP_CGI=/usr/bin/php5-cgi PHP_CGI_NAME=`basename $PHP_CGI` PHP_CGI_ARGS=&quot;- USER=$USER PATH=/usr/bin PHP_FCGI_CHILDREN=$PHP_FCGI_CHILDREN PHP_FCGI_MAX_REQUESTS=$PHP_FCGI_MAX_REQUESTS $PHP_CGI -b $BIND&quot; RETVAL=0 start() { echo -n &quot;Starting PHP FastCGI: &quot; start-stop-daemon --quiet --start --background --chuid &quot;$USER&quot; --exec /usr/bin/env -- $PHP_CGI_ARGS RETVAL=$? echo &quot;$PHP_CGI_NAME.&quot; } stop() { echo -n &quot;Stopping PHP FastCGI: &quot; killall -q -w -u $USER $PHP_CGI RETVAL=$?
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/04/20/wordpress-on-nginx-with-fastcgi/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/20/x68k/">フェルガナの誓いと言うよりx68kサントラのために</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  イース -フェルガナの誓い-(通常版)  著者: 出版日: 出版社/メーカー: 日本ファルコム
+カテゴリ: Video Games
+  と言うわけで注文しました。x68kと言われては買わざるを得ません。これで人生決まったようなもんだし。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/19/notitle/">はてなダイアリーから移行します</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  すごい理由があるわけではないですが、ホントなんとなく。
+http://stnard.jp/
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/18/engineer-ceo-is-good/">技術者経営者がいいかどうか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  最近よく、「経営者が技術者の会社がいいよねー」的な話しをするのですが、一概にそれが良いかどうかを考える時があります。
+技術者のことを理解できるのは技術者だけなのか 確かに経営者が技術者だと、社員である技術者の気持ちやトレンドをよく理解してくれそうな気になります。確かにそれはあるのですが、逆に理解しすぎて本当に大事なことをおろそかにしてしまう可能性があります。技術者といっても仕事をしてお金を稼いでるわけです。それを大事にしないで、技術者のこだわりや気持ちを重視してしまうことがあるのではないかと、最近思うようになりました。
+またここで言う「理解する」というのも、ちゃんと考えなくてはいけない部分です。単に「技術者側に立つ」だけでは理解した事になりません。よく「本当に貴方のことを思ってやってるんですよ」的な話がありますが、短期的ではなく長期的に見たときに、「ああ、ちゃんと理解してたんだな」となることが、「理解して」いたことになるのではないでしょうか。こういうのって人に説明し辛いし、その場ではわかってもらえないことが多いので、「まあ、とりあえずはいいか」と短期的に賛同を得られる方に進んでしまいケースが多いんじゃないかなと思ってます。
+経営者と技術者を同時にできるかどうか と言うのも、世の中で技術者主導の会社というのは結構あるのですが、うまく行っているところばかりではないと、よく聞くからです。技術者が経営者になるというのは、簡単なことではないでしょう。仙台Ruby会議02でいろんな話を聞きましたが、みなさんかなり苦労している感じでした。やはり、考え方が違う２つの職種を同時にこなそうとするのは大変で、どちらの立場もわかる苦しさがあるのだなと感じました。
+ちょっと考えがまとまらないところなのですが、この点についてはいろいろと書いていきたいと思っています。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/16/sleep-cycle-/">Sleep Cycle - 睡眠周期にあわせて起こしてくれる目覚まし時計</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Twitterで知ったのですが、結構使ってる人がいるのですね。このiPhoneアプリ。
+ Sleep Cycle   この目覚ましを使うと、起きたい時間前の、最も眠りの浅いときにアラームを鳴らして起こしてくれます。最近はこれで一度目覚めたあとに、普通の目覚まし時計で起きるという、極楽の二度寝生活をしています。
+まあ、二度寝自体が眠さの原因らしいので、頑張って普通に起きたいところなのですが。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/16/wp-emacs-emacswordpress/">wp-emacs - EmacsでWordPressの記事を書く</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いちいちブラウザを立ち上げてテキストエリアでがりがり書く、と言うのが苦手なので、hatena-modeを使っていました。で、今回 WordPress に移行して、同じように Emacs でできないかなと探して見つけたのが、wp-emacs です。
+ EmacsでWordPressにポストしたい方は「wp-emacs」  インストールして M-x weblogger-setup-weblog を実行して設定を入力すれば使えるようになります。これでこっそり記事を書くことができるようになりました(ぇ。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/14/cbnet-ping-optimizer-wordpressping/">cbnet Ping Optimizer - WordPressのPing送信プラグイン</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  WordPress › cbnet Ping Optimizer « WordPress Plugins
+久々にブログを再開したので、各所にPingでも飛ばしてみることにしました。しかしデフォルトで記事編集時にも飛ぶらしいので、それを抑止するためにプラグインを導入。さてどうなることやら。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/14/24/">エクセル・サーガ24巻</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  エクセル・サーガ 24 (ヤングキングコミックス)  著者: 六道 神士
+出版日: 2010-04-09
+出版社/メーカー: 少年画報社
+カテゴリ: Book
+  そろそろ佳境かなと思ってたんですが、どうもまだまだ謎が多いようで。ちょっと風呂敷広げすぎてしないか？とか思ってしまいますが、面白いんで読んでしまう。次は5人目って、まだ増えるのか。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/13/wordpress/">WordPressをインストールしてまず最初にやったこと</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  WordPressは初体験なので、下記のサイトを参考にさせていただきました。
+Wordpressをインストールしたらやるべきことのまとめ（設定・SEO） Google AnalyticsとGoogle AdSenseははてダ時代からあったので、それを設定。検索エンジンには、これまたウェブマスターツールは登録してあったのでそれと、サイトマップは紹介されているプラグインをインストールしました。
+インストールしたプラグインは下記の通り。まだまだ設定途中です。
+ AdSense Manager Akismet Analytics360 CodeColorer Google Analytics for WordPress Google XML Sitemaps Simple Amazon Simple Tags Social Bookmarking JP Tweetable WordPress.com Stats WP-Options-Manager WP HatenaNotation WP Multibyte Patch WP Super Cache WPtouch iPhone Theme  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/04/12/twitter-updates-for-2010-04-29/">Twitter Updates for 2010-04-29</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/04/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&#039;m at 二子玉川駅 (二子玉川駅, 世田谷区). http://4sq.com/4DbuiT # 若葉台は遠すぎるな・・・ # I&#039;m at 大岡山駅 (大岡山駅, 大田区). http://4sq.com/5oMt0E # I&#039;m at 東急目黒線 目黒駅 (目黒駅, 品川区). http://4sq.com/b0AeBf # いろいろ頑張らねば # I&#039;m at 二子玉川駅前 バス停. http://4sq.com/bbPdZ0 #  Powered by Twitter Tools
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/10/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;11 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/12/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

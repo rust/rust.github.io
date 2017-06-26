@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>OSC 2009 Tokyo/Sprint 2st Day &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>OSC 2009 Tokyo/Sprint 2st Day</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>##はてなでの仮想化技術あれこれ</p>
+
+<ul>
+<li>AMD でのセミナーのRevise版</li>
+</ul>
+
+<p>###はてなの紹介</p>
+
+<ul>
+<li>700万ユーザ</li>
+<li>10億PV</li>
+</ul>
+
+<p>###仮想化技術</p>
+
+<ul>
+<li>ハードウェアを抽象化し，複数のOSが動作できるようにする
+
+<ul>
+<li>Xen/VMware/QEMU/UML/KVM/OpenVZ/etc.</li>
+</ul></li>
+<li>古くはメインフレームの技術らしい</li>
+<li>仮想化のメリット(from Wikipedia)
+
+<ul>
+<li>可用性・柔軟性の向上</li>
+<li>運用コストの低下</li>
+<li>セキュリティの向上</li>
+</ul></li>
+</ul>
+
+<p>###はてなでの仮想化</p>
+
+<ul>
+<li>Xen を利用</li>
+<li>Xen における仮想化モデル
+
+<ul>
+<li>仮想化モデルとは</li>
+<li>準仮想化
+
+<ul>
+<li>エミュレーションオーバーヘッドを最小に押さえられるが，OS 側の対応が必要</li>
+</ul></li>
+<li>完全仮想化
+
+<ul>
+<li>実ハードウェア用OSがそのまま動作するが，エミュレーションオーバーヘッドが大きくなる</li>
+</ul></li>
+</ul></li>
+<li>はてなにおける仮想化の歴史
+
+<ul>
+<li>CentOS 5 系への移行した際に，Xen を試し始める(2007 前半)</li>
+<li>2007 夏頃から，スモールスタートで適用開始</li>
+<li>サーバ管理ツール開発開始，仮想化対応</li>
+</ul></li>
+<li>サーバの台数
+
+<ul>
+<li>物理サーバ500台で，仮想化して890台(ホスト+インスタンス)</li>
+</ul></li>
+<li>はてなシステムの全体像と解説
+
+<ul>
+<li>三層構造</li>
+<li>リバースプロキシ</li>
+<li>アプリケーションサーバ</li>
+<li>データベースサーバ</li>
+<li>各所に LVS でロードバランス</li>
+<li>サーバ台数の割合</li>
+<li>Web:DB = 4:6 ～ 6:4</li>
+<li>全体の6～7割が Web/DB</li>
+<li>その他は，ネットワーク関係・ファイルサーバ・管理用・メール・分散ストレージサーバ</li>
+<li>非同期システムが増量中</li>
+<li>MapReduce 計算クラスタなど</li>
+<li>仮想化サーバの構築ポリシー</li>
+<li>あいているリソースを主に利用する DomU を投入
+
+<ul>
+<li>CPU があいているなら Web サーバ</li>
+<li>IO があいているなら DB サーバ</li>
+<li>メモリが空いているなら キャッシュサーバ</li>
+</ul></li>
+<li>同じ傾向で，かつ負荷の高い用途同士は避ける</li>
+</ul></li>
+<li>はてなでの Xen
+
+<ul>
+<li>CentOS 5.2</li>
+<li>Xen 3.0.3</li>
+<li>LVM 上にパーティション作成</li>
+</ul></li>
+<li>ストレージ選択のパターン on Xen
+
+<ul>
+<li>LVM -&gt; はてなでは LVM を利用している</li>
+<li>USB メモリで起動して起動後は RAM Disk に展開</li>
+<li>ネットワークストレージを使う</li>
+<li>ネットブート(PXE ブート &amp; aufs イメージを RAM Disk に展開)</li>
+</ul></li>
+<li>Xen の運用
+
+<ul>
+<li>install_xen.sh というコマンド１発で作成している</li>
+<li>IP/Memory/root size などを指定すると，7～8分で作成できるスクリプトを用いている</li>
+<li>親子関係の負荷を見ている</li>
+<li>ラックに含まれるサーバの構成を負荷と共に見られるようにしている</li>
+<li>負荷の監視は xentop で</li>
+<li>仮想 OS の移動・コピー</li>
+<li>dd でイメージコピー</li>
+<li>LVM のスナップショットをコピーしている</li>
+<li>DNS との連携</li>
+<li>MyDNS(MySQL をバックエンドに使った DNS) と連携
+
+<ul>
+<li>hostname.domain の Dom0 を parent.hostname.domain とすることで，わかりやすく</li>
+</ul></li>
+<li>DomU の強制再起動</li>
+<li>monit で</li>
+<li>たとえば，30秒間 httpd にアクセスできないと強制再起動
+
+<ul>
+<li>Xem DomU の destroy/create している</li>
+</ul></li>
+<li>突然落としても問題ないものだけ</li>
+</ul></li>
+<li>Xen の使っていない機能
+
+<ul>
+<li>ライブマイグレーション</li>
+<li>信頼性の高いストレージが必要
+
+<ul>
+<li>コストが高くなる</li>
+</ul></li>
+<li>完全仮想化</li>
+<li>すべて Linux なので</li>
+<li>オーバーヘッドを嫌っている</li>
+</ul></li>
+<li>Xen のデメリット
+
+<ul>
+<li>ホスト数の増加</li>
+<li>Dom0 の台数分は増加</li>
+<li>1物理サーバあたり，IP アドレス3つ消費</li>
+<li>ホスト x 1</li>
+<li>ゲスト x 1</li>
+<li>IPMI(or AMT) x 1
+
+<ul>
+<li>用途毎に IP アドレス帯を分割</li>
+</ul></li>
+<li>不可解なバグの発生</li>
+<li>NIC ドライバの不具合(Realtek ?)</li>
+<li>突然ネットワークに接続なる
+
+<ul>
+<li>Dom0 の再起動で解消(過去2回)</li>
+</ul></li>
+<li>パフォーマンスの低下</li>
+<li>メモリアクセス
+
+<ul>
+<li>ランダムアクセス時に顕著で 10% 程度</li>
+</ul></li>
+<li>I/O 性能</li>
+<li>I/O処理でバッファのメモリコピーが発生
+
+<ul>
+<li>ネットワーク負荷が高いサーバでは厳しそう</li>
+</ul></li>
+<li>ディスク性能
+
+<ul>
+<li>2～3% の低下</li>
+</ul></li>
+</ul></li>
+<li>Xen の運用上の注意ポイント
+
+<ul>
+<li>DomU が迷子にならないようにする</li>
+<li>DomU から Dom0 の情報は得られない</li>
+<li>サーバの単機能化</li>
+<li>サーバの管理負荷低減と不具合の影響範囲の最小化
+
+<ul>
+<li>かなり小さな機能に分割するのがいいようだ</li>
+</ul></li>
+</ul></li>
+<li>仮想化によって得られるもの
+
+<ul>
+<li>物理的なリソース制約からの解放</li>
+<li>VM 環境の統一化・標準化</li>
+<li>冗長化によるリソース利用効率の低下を最小限に</li>
+</ul></li>
+</ul>
+
+<p>###今後の展開</p>
+
+<ul>
+<li>仮想ホストの自動制御</li>
+<li>他の仮想化技術の検討
+
+<ul>
+<li>KVM</li>
+<li>OpenVZ</li>
+</ul></li>
+</ul>
+
+<p>###管理ツール</p>
+
+<ul>
+<li>リソースに空きがある物理サーバを探している
+
+<ul>
+<li>Ruby on Rails 製！</li>
+</ul></li>
+<li>撮影禁止だったようだ</li>
+</ul>
+
+<p>###Q&amp;A</p>
+
+<ul>
+<li>なぜ Xen を導入したのか
+
+<ul>
+<li>空きのあるリソースの有効活用をするために Xen を導入した</li>
+<li>リソースの有効活用のためというのは，非常に納得できる理由</li>
+</ul></li>
+</ul>
+
+<p>##オープンソースでシステム監視！統合監視ソフトウェア ZABBIX の機能と利用事例のご紹介</p>
+
+<ul>
+<li><a href="http://www.zabbix.jp/">http://www.zabbix.jp/</a> (ZABBIX-JP)</li>
+<li>ZABBIX(ざびっくす)</li>
+</ul>
+
+<p>###OSS統合監視ソフトウェア ZABBIX のご紹介</p>
+
+<ul>
+<li>機能紹介
+
+<ul>
+<li>監視機能</li>
+<li>表示機能</li>
+<li>障害見知，通知機能</li>
+</ul></li>
+<li>対抗
+
+<ul>
+<li>Cacti(かくたい)</li>
+<li>Hinemos(ひねもす)</li>
+</ul></li>
+<li>他の製品の課題
+
+<ul>
+<li>テキストベースで設定しないといけないので，管理コストが大変</li>
+<li>Nagios + Cacti の組み合わせで監視することも管理コストの増大になる</li>
+<li>商用製品は，非常に高価で使わない機能も多い</li>
+</ul></li>
+<li>ZABBIX の特徴
+
+<ul>
+<li>オープンソース</li>
+<li>さまざまな OS に対応した専用エージェント</li>
+<li>Web インターフェースから選択式による監視設定が/表示が可能</li>
+<li>監視設定・収集データを RDBMS で一元管理</li>
+<li>生データをそのまま保存できるので，あとでいろいろ再利用可能</li>
+<li>テンプレートが使えるので，大量のサーバにも比較的対応しやすい</li>
+</ul></li>
+<li>動作環境
+
+<ul>
+<li>ZABBIX サーバ</li>
+<li>MySQL(/PostgreSQL/Oracle/SQLite)</li>
+<li>Apache + PHP で表示・設定など</li>
+<li>障害通知</li>
+<li>SNMP/SNMP Trap</li>
+<li>エージェント</li>
+<li>64bit 対応</li>
+<li>Ping/ポート監視</li>
+</ul></li>
+<li>ZABBIX エージェント
+
+<ul>
+<li>導入するだけで，基本的な項目はすべて監視できる</li>
+</ul></li>
+<li>表示機能
+
+<ul>
+<li>生データを表示できる</li>
+<li>レポート作成できる</li>
+<li>月刊レポートなどの資料になる</li>
+</ul></li>
+<li>通知機能
+
+<ul>
+<li>メール本文に復旧手順を入れるなどできる</li>
+<li>障害レベルの設定に応じて，通知するグループ・ユーザを設定可能</li>
+<li>かなり柔軟にできるようだ</li>
+<li>スクリプトの実行</li>
+<li>エージェントにより，各サーバの shutdown/restart などが可能</li>
+</ul></li>
+<li>まとめ
+
+<ul>
+<li>中小規模のシステム監視に最適</li>
+<li>シェルスクリプト・MRTG の Replace として</li>
+<li>ここは有用そうです．うちの linode とかで試してみよう</li>
+</ul></li>
+</ul>
+
+<p>###ZABBIX による Web システムの監視事例</p>
+
+<ul>
+<li><p>環境1</p>
+
+<ul>
+<li>サーバ43台のホスティング</li>
+<li>ZABBIX サーバ: CentOS 4.4</li>
+<li>エージェント: CentOS 4.4/RHEL 3.8</li>
+</ul></li>
+
+<li><p>環境2</p>
+
+<ul>
+<li>Xen でのホスティング</li>
+<li>DomU に ZABBIX サーバ</li>
+</ul></li>
+
+<li><p>環境3</p>
+
+<ul>
+<li>小規模 ASP サービス</li>
+<li>Cacti が入ってた
+
+<ul>
+<li>監視間隔を短くしたいとか，メールを送りたいとか</li>
+<li>メール送信には plig-in が必要だったり，監視追加・変更が大変</li>
+</ul></li>
+<li>なので，ZABBIX</li>
+</ul></li>
+
+<li><p>Summary</p>
+
+<ul>
+<li>ZABBIX の DB は週に1回，MySQL の DB 再編を行ってデータの増加を防ぐことが重要</li>
+</ul></li>
+
+<li><p>体験談</p>
+
+<ul>
+<li>MySQL は InnoDB</li>
+<li>innodb_file_perl_table で</li>
+<li>定期的にデフラグ(alter table で最適化かな？)</li>
+</ul></li>
+</ul>
+
+<p>###ZABBIXによるネットワーク機器のパフォーマンス測定検証事例</p>
+
+<ul>
+<li>ZABBIX の選定理由
+
+<ul>
+<li>Fedora に標準搭載</li>
+</ul></li>
+<li>とりあえずやってみるが，あまり深追いしない
+
+<ul>
+<li>わりと重要な考え方</li>
+</ul></li>
+</ul>
+
+<p>##オープンソースの本を書きましょう！
+###まとめ</p>
+
+<ul>
+<li>自分出版で，本を印刷する直前まで作って出版社に持ち込み，印刷代も自分で払って名刺代わりに！</li>
+</ul>
+
+<p>##勉強会大集合 ー スピーカーへのススメー</p>
+
+<ul>
+<li>パネラー(敬称略)
+
+<ul>
+<li>Genesis Lightning Talks: さとうようぞう</li>
+<li>Java-ja: ヨシオリ</li>
+<li>高専カンファレンス: 五十嵐</li>
+<li>XPJUG/PFP: あまのりょー</li>
+<li>わんくま同盟 勉強会: とっちゃん</li>
+</ul></li>
+<li>モデレーター
+
+<ul>
+<li>鈴木＠LIND</li>
+</ul></li>
+</ul>
+
+<p>###開催の趣旨</p>
+
+<ul>
+<li>勉強会の悩み事
+
+<ul>
+<li>話す人がいなく，いつも同じ人になる</li>
+</ul></li>
+<li>知ってもらう，感じてもらう
+
+<ul>
+<li>なぜ話すの？どう話すの？</li>
+</ul></li>
+<li>何を伝えたいか
+
+<ul>
+<li>みんなスピーカーになろう！</li>
+<li>メリット，喜び，成長感など</li>
+<li>スピーカに慣れる場所を探そう！</li>
+<li>社内勉強会もいいよ！</li>
+<li>内輪勉強会でやれば，気軽にできそうだよね！</li>
+<li>重要なのは実践すること</li>
+</ul></li>
+<li>心の壁を作らずに聞いて欲しい
+
+<ul>
+<li>「あの人だからできる」とは感じないで欲しい</li>
+</ul></li>
+</ul>
+
+<p>###パネルディスカッション</p>
+
+<ul>
+<li>初めて発表したキッカケ
+
+<ul>
+<li>さとうようぞうさん</li>
+<li>社内で自分で話したいと思ったから
+
+<ul>
+<li>社内のレベルを自分で上げないといかないという危機感</li>
+</ul></li>
+<li>ヨシオリさん</li>
+<li>ひがなんとかさんに，「おまえも発表しろよ」と言われたから</li>
+<li>最近は緊張感を愉しんでいる</li>
+<li>五十嵐さん</li>
+<li>LT を見て楽しそうだなと思ったから
+
+<ul>
+<li>そのときに2つ山があった</li>
+<li>登壇者のレベルが高い気がした
+
+<ul>
+<li>発表のレベルは聴衆が決めるんだから，気にしても仕方ない</li>
+</ul></li>
+<li>完璧じゃないと発表できないんじゃないか
+
+<ul>
+<li>世の中に埋もれてしまう前に，6～7割までできたら出した方がフィードバックとかあっていいよ</li>
+</ul></li>
+</ul></li>
+<li>あまのりょーさん</li>
+<li>20~30年生きてきて，5分ぐらいなら発表するネタがあるだろうから，それを気楽に話してみるのがいいんじゃないか</li>
+<li>気楽な場所
+
+<ul>
+<li>何回か出た勉強会とかで</li>
+</ul></li>
+<li>とっちゃんさん</li>
+<li>東京でわんくま同盟立ち上げるときに，「Microsoft MVP だから喋ってみてよ」と言われたから
+
+<ul>
+<li>Windows Installer について喋りたいと思ったので</li>
+</ul></li>
+<li>さとう＠LINDさん(モデレータ)(PHP勉強会の人)</li>
+<li>大きな場所でやるのは今日が初めて</li>
+<li>自分がやってきたことを人に伝えたいと思ったから</li>
+</ul></li>
+<li>スピーカーのメリット
+
+<ul>
+<li>とっちゃんさん</li>
+<li>名前を覚えてもらえる．非常に大きなメリット．</li>
+<li>あまのりょーさん</li>
+<li>人とつながりが出来る，のは言われてしまった</li>
+<li>資料を作ると再度勉強し直せるのがメリットじゃないか</li>
+<li>ヨシオリさんが，「あの発表が良かったよ」と言われるのが嬉しいと言ってました</li>
+<li>五十嵐さん</li>
+<li>LT での発表資料を作っているときに，考え直せる
+
+<ul>
+<li>そのネタで雑誌に記事を書けたりしたので，よかった</li>
+</ul></li>
+<li>ヨシオリさん</li>
+<li>お金に関するメリット
+
+<ul>
+<li>発表するとチケットがただで手にはいるとか，控え室で電源の心配がないとか</li>
+</ul></li>
+<li>ブログなどで反応があるのが嬉しい</li>
+<li>他のコミュニティから呼ばれることも嬉しい</li>
+<li>さとうようぞうさん</li>
+<li>名刺が大量に減る</li>
+<li>控え室にいる著名な人と会えるとか</li>
+</ul></li>
+<li>発表した内容の反応で嬉しかったことは？
+
+<ul>
+<li>とっちゃんさん</li>
+<li>大阪のイベントに四国から来てくれた人がいた！
+
+<ul>
+<li>わざわざ来てくれた人がいると嬉しい</li>
+</ul></li>
+</ul></li>
+<li>社内勉強会をして評価あがった？
+
+<ul>
+<li>表情で察していただければ・・・・首にはなってないし</li>
+</ul></li>
+<li>MISAO
+
+<ul>
+<li>発表中に IRC のメッセージをプレゼンの上にのせられる</li>
+</ul></li>
+<li>メリットとして
+
+<ul>
+<li>乱入が出来る</li>
+<li>発表者間の内輪感を楽しめる</li>
+</ul></li>
+<li>勉強会の開催について
+
+<ul>
+<li>さとうようぞうさん</li>
+<li>発表の敷居を出来るだけ下げる
+
+<ul>
+<li>Genesis Lightning Talk では何でもありにしている</li>
+<li>勉強会で得たことを次に生かせる，何かアクションを起こせるような内容になれば，いい勉強会になるんじゃないか</li>
+</ul></li>
+<li>ヨシオリさん</li>
+<li>自分が聞きたいので勉強会を主催している(java-ja)</li>
+<li>「勉強会」と言う名前をつけてない
+
+<ul>
+<li>堅苦しい感じがするので，発表者と聴衆の溝が広がる</li>
+</ul></li>
+<li>五十嵐さん</li>
+<li>LINDさんのために話しているという感じ？</li>
+<li>高専というマイノリティの集まり．他の場所とのつながりや，学校とのつながり
+
+<ul>
+<li>学校の先生が雑談だけの授業をやってほしいと思ってる</li>
+</ul></li>
+<li>あまのりょーさん</li>
+<li>同僚と朝スタバとかで本の感想を言い合う感じ<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>
+
+<ul>
+<li>朝だと気分良く一仕事追えた感じで，業務に入れる</li>
+<li>名前も「読書会」と書いてはいない</li>
+</ul></li>
+<li>勉強会の最小開催人数は2名</li>
+<li>とっちゃんさん</li>
+<li>わんくま同盟の知名度を上げるために，こういう場所に出ている</li>
+</ul></li>
+<li>仲間を誘うときのコツなど
+
+<ul>
+<li>あまのりょーさん</li>
+<li>話のわかる上司がいる．その上司を巻き込める</li>
+<li>さとうようぞうさん</li>
+<li>仲間にも恵まれている</li>
+</ul></li>
+<li>上司から「その勉強会やってどう成果が出るの？」に対する切り返しは？
+
+<ul>
+<li>さとうようぞうさん</li>
+<li>成果を数字で出せば上司は納得する
+
+<ul>
+<li>社内勉強会の開催前後で，アンケート・テストを行う</li>
+<li>その内容が成果に繋がる</li>
+</ul></li>
+<li>ヨシオリさん</li>
+<li>そこまでやって社内でやる意味がないのなら，社外でやればいいんじゃないか</li>
+</ul></li>
+<li>社外でやるばあいの場所は？
+
+<ul>
+<li>とっちゃんさん</li>
+<li>わんくま同盟は，固定で借りている
+
+<ul>
+<li>東京だとルノアールの貸し会議室が安く借りれる．プロジェクター貸してくれる</li>
+</ul></li>
+<li>五十嵐さん</li>
+<li>企業の会議室を借りる
+
+<ul>
+<li>貸してくれる会社さんのメリットが出れば，Win-Win の関係になる</li>
+</ul></li>
+<li>鈴木＠LINDさん</li>
+<li>勉強会勉強会の会議室一覧を参考にしては</li>
+</ul></li>
+</ul>
+
+<p>###LT 大会</p>
+
+<ul>
+<li>さとうようぞうさん
+
+<ul>
+<li>スピーカー楽しいヨ！</li>
+<li>Ruby Business Commons の裏方やってます</li>
+<li>リハーサルで時間配分をやる</li>
+<li>ビデオを撮って練習するのがいいかも</li>
+<li>次は <sup>2</sup>&frasl;<sub>25</sub>(水)</li>
+</ul></li>
+<li>ヨシオリさん
+
+<ul>
+<li>java-ja温泉で検索！</li>
+<li>資料作成方法</li>
+<li>楽しさ = 正義
+
+<ul>
+<li>「伝えたいこと + 楽しさ」を心がけている</li>
+</ul></li>
+<li>前日に作る</li>
+<li>メモは emacs で書いている</li>
+<li>そのファイルを DropBox を使って共有している</li>
+</ul></li>
+<li>五十嵐さん
+
+<ul>
+<li>大事なことは何度も言う</li>
+<li>発表で失敗することの方が難しい</li>
+</ul></li>
+<li>あまのりょーさん
+
+<ul>
+<li>PFPの人</li>
+<li>Project Facilitation Project</li>
+<li>次回WS <sup>3</sup>&frasl;<sub>18</sub>(水)</li>
+<li>資料制作 Hacks</li>
+<li>ノンデザイナーズ・デザインブック</li>
+</ul></li>
+<li>とっちゃんさん
+
+<ul>
+<li>わんくま同盟の宣伝</li>
+<li>発表はアドリブでやってる．型はない！</li>
+</ul></li>
+</ul>
+
+<p>###最後のお願い</p>
+
+<ul>
+<li>今日聞いたことを是非実践してください</li>
+<li>フィードバック
+
+<ul>
+<li>ブログとかに書こう！</li>
+</ul></li>
+</ul>
+
+<p>##ライトニングトーク＆大抽選会＆閉会式
+###IPA「第2回オープンソースソフトウェア活用ビジネス実体調査」のご紹介</p>
+
+<ul>
+<li>みずほ総研の人</li>
+<li>報告書は Java をオープンソースとして扱っている</li>
+<li>Ruby を使いたい人が多いらしい
+
+<ul>
+<li>Matz 効果か</li>
+</ul></li>
+</ul>
+
+<p>###Tech Seminor Timemap</p>
+
+<ul>
+<li>さとうようぞうさん</li>
+<li>Tech Seminor Timemap
+
+<ul>
+<li><a href="http://ittimemap.com/">http://ittimemap.com/</a></li>
+</ul></li>
+</ul>
+
+<p>###MoodleMoot Hakodate 参加リポート</p>
+
+<ul>
+<li>Moodle とは，OSS の e-Learnign 構築できるもの</li>
+</ul>
+
+<p>###学校現場でのオープンソースの話題</p>
+
+<ul>
+<li>Linux on 御神輿
+
+<ul>
+<li>ustream from 御神輿 も計画中</li>
+</ul></li>
+</ul>
+
+<p>###COCO - 管理者により社内監視システム</p>
+
+<ul>
+<li>社内 LAN の監視システム</li>
+<li>DNS と連携できる</li>
+<li>nmap で異常検出</li>
+<li>社内PCの場所と IP アドレスの対応をグラフィカルに表示できる</li>
+<li>DHCP/LDAP/nmap/IP-Sentinel</li>
+</ul>
+
+<p>###Linux+Webカメラでハムスター観察</p>
+
+<ul>
+<li>ハムスターかわいいよ！</li>
+</ul>
+
+<p>###milter manager フリーソフトで迷惑メール対策</p>
+
+<ul>
+<li>rabbit の人</li>
+<li>milter manager
+
+<ul>
+<li>安心メールを素通し</li>
+</ul></li>
+<li>rabbit++</li>
+</ul>
+
+<p>###インターネットと危機管理 怪文書編</p>
+
+<ul>
+<li>Ruby がマイブーム</li>
+<li>インターネットで遭遇した怖い話</li>
+<li>知らない人を煽るのは止めた方がいいと言うお話</li>
+</ul>
+
+<p>##抽選会</p>
+
+<ul>
+<li>いない！ので，所属がわかってる人に</li>
+<li>OSC で商用ソフトウェアが抽選される事態はちょっと面白い</li>
+</ul>
+
+<p>##まとめ</p>
+
+<ul>
+<li>懇親会はマイレージ不足のために欠席</li>
+<li>会場提供で SEO 効果！！</li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">これはいいスタイルじゃないでしょうか
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-2st-Day/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/02/16/rails-ruby-Rails-38/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/02/16/rails-ruby-Rails-38/">Rails勉強会＠東京第38回</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-1st-Day/">OSC 2009 Tokyo/Sprint 1st Day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-1st-Day/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

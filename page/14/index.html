@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/11/30/Tokyu-rb-ruby-tokyurubykaigi01-TokyuRuby-01/">TokyuRuby会議01を開催してきた！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/11/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  さる良い肉の日(2009/11/29)に http://regional.rubykaigi.org/tokyu01 を開催してきました． 役目としては広報と司会です．ずっと喋ってましたね．よかったんだろうか． ひたすら笑いをとろうとしてしまうところに関西人の性が出てしまったようですが．
+さて何度も言いますが，TokyuRuby会議01 はみなさんのおかげで開催できました． 当日机・椅子を並べていただいた方々，酒と食べ物を持ってきていただいた方々， 参加者の方々，発表者の方々，そしてスタッフの方々． みなさんのご協力があってこその TokyuRuby会議でした． 本当にありがとうございます．
+と，お礼はここまでにして，ざっくり感想を．
+ 空気中のアルコール濃度が異常に高かった． 意外に食う力が足りない気がした．  ただし Tokyu.rb 標準である，@ginkouno &amp; @conceal_rs 基準ですが．  Rubyist にあるまじき進行の早さ  やっぱ酒とか肉とか入ると早く動くんですよね．むしろ職場にもさｋ（ｒｙ．  Accept LT の参加者の多さにビックリ＆ありがとう！  やはり酒の力は強い．むしろ全ての LT は Alcohol Driven でいいんじゃないかとも思うくらい  ドラとドラ娘さんありがとうございます！  みんな進行良すぎて鳴らす機会少なかったのですが，あるだけでなんか雰囲気が違いました！  司会席前方の Ruby 会のカリスマ達が，終始楽しそうでした．  やってよかった！と思える瞬間  新たなカリスマ誕生の瞬間に立ち会えた．  何も言うことはない．考えるな，感じるんだ．   と言うわけで，一段落してあとはるびま用の記事を書くだけです．あとで写真版から素材もらおうっと．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/11/26/termtter-ruby-debian-TermtterOS-termtter/">TermtterOS であなたも termtter 生活を！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/11/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  勢いだけで作ってみました．ネタです．
+[http://stnard.jp/TermtterOS.zip]
+VirtualBox 3.0 のアプライアンスなので，VirtualBox でインポートしてみてください．
+id: termtter pw: termtter root pw: termtteros  まあ起動するとわかるのですが，実際には Debian 5.0.3 ベースで， termtter on jfbterm + uim-fep + anthy-utf8 という感じです． 片手間でやったわりには(udev 周り以外は)さくっとできました．
+某 EmacsOS のように，あくまでネタなのであとは適当に．
+##追記 スクリーンショット追加
+昔懐かしい感じで日本語も表示できます．FEPなんて何年ぶりだろ，設定したの．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/11/22/gree-ost-http-labs-gree-jp-Top-Study-20091120-html-title-GREE-19/">GREE オープンソーステクノロジー勉強会#19に行ってきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/11/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  第19回 オープンソーステクノロジー勉強会に参加してきました．  ##前説的な
+ 女性率高い？HTML5だから？ 白石俊平＠あゆた さん トラックバックまでが勉強会です！  サイト見てください！   ##デベロッパのためのHTML5入門
+###自己紹介
+ html5-developers-jp 管理人 株式会社あゆた 取締役  Gears のアプリ開発とかリッチクライアント開発とか   ###HTML5ってなに？
+ HTML の最新版 新要素盛りだくさん 10月に最終ドラフトが出た 勧告は 2022 年と言われている・・・・
+ 2つの仕様
+ マークアップ中心の仕様 ウェブアプリケーション用 API 中心の仕様 Gears 由来の API もある  HTML5 の基本
+ ファイルの拡張子，Content-type はこれまで通り 先頭に空の DOCTYPE 宣言が必要   &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; ... &lt;/body&gt; &lt;/html&gt;  - ブラウザにできる最高のことをしてレンダリング仕様としてくれる   新要素を使ったマークアップ
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/11/22/gree-ost-http-labs-gree-jp-Top-Study-20091120-html-title-GREE-19/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/11/19/Tokyu-rb-rails-ruby-Tokyu-rb-01/">Tokyu.rb勉強会#01</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/11/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  [http://atnd.org/events/2085]
+と言うわけで参加してきました．と言うかむしろずっと喋ってました．無謀にも「Rails のソースコードを読もう！」だったのですが，ActiveRecord の transaction 周りが知りたいと言うことで，ざっと説明してきました．Rails 2.3.4 の ActiveRecord は余り読んだことなかったのですが，まあさして 2.1&frasl;2.2 とは変わってないですね，その部分の流れは．相変わらずいろんなところに飛びまくってるのが大変でしたが．
+次は何をするのか特に決まってないので，参加する・したい人が「これやりたい！」と言えばそれになるような気がしないでもない感じ．あまり多くは入れませんが，まあお気軽に．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/11/13/notitle/">そろそろネットとリアルの差別化は止めないか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/11/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ちょっと書きたくなったので．
+ http://d.hatena.ne.jp/LM-7/20091111/1257948660
+最後にもっとも重要なのが仮想世界のルールである。ユーザ調査によって明らかになったのは、世知辛い現実とは異なり、自分の活動や努力が正しく報われる「公平」な社会が強く求められるという事実だ。ルールはユーザの納得できるものでなくてはならず、そして現実よりも楽しいと感じられるものでなくてはならない。
+ そういうものだろうか．得てしてこういう場合に文句を言う人の割合は，全ユーザ数に比べて圧倒的に少ないのが実情．某国産オンラインRPGもそんな感じ．
+そして
+ http://d.hatena.ne.jp/Nachbar/20091112/p1
+公平に見えるようで全く公平でない競争が裏では展開される。
+「いやーテスト勉強なんか全然してないよー」
+　と言いつつ必死で勉強していた人間がいたように、
+「こんなネトゲに金払うわけないじゃん」
+　と表向きは笑いながら課金に手を伸ばす人間は存在しているのだ。
+　有料化直後にクレカの漏洩問題が発生してミソがついてしまったが、きっと文句をつけていた人間の何割かは
+「金を払いつつ文句を言う」
+ こういう人が多いのも実情である．「RMTうぜー」とか言いつつ，買っている人は買っていたりする．
+そもそも「公平である」というのはどういう状況かにも依存する．「時間をかければそれ相応の価値を創造できる」と言うことは，逆に言えば「時間を割けない人は価値が低い」となってしまい，「時間を掛けられない人に対して公平ではない」ということになる．これは「先行組」と「後発組」の差にも当てはまる．逆に「お金を掛ければいいものがもらえる」だと貧富の差が公平性を崩してしまう．
+後者の方がより人々の苛立ちを誘うので，クレームがつきやすく荒れる原因でもあるのだが，どちらにせよ公平ではない．そもそも仮想世界だからと言っても，人間同士が関わり合うのだから，現実世界と同じことが起こるのはあたりまえなのではないだろうか．もちろん世界を提供しているのも現実世界の会社なのだから，こういう問題はいつも起こりうる．
+もうそろそろ「リアルをネットに持ち込むな！」とか「ネットとリアルは違う」とか言うのは止めた方がいいんじゃないだろうか．結局のところ，人と人が「何で」繋がっているかぐらいしか差はないんだから．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/11/02/osc-Tokyu-rb-ruby-OSC-2009-Tokyo-Fall/">OSC 2009 Tokyo/Fall に展示ブースで参加してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/11/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+   蒲田駅は Tokyu.rb の陣地だということもいろいろあって Tokyu.rb で展示ブース出してきました．
+1日目  とりあえずいつも通りハッカソン 平日と言うこともありあまり人来ない お隣のブースの売り込み具合が凄かった．負けたと思った． 向かい側は自作 OS 軍団．  部屋の選択はこれで良かったのか？  CakeMatsuri 2009 があったらしいので，PHP 系の人がいなかった模様 Tokyu.rb も実はそこそこ知っている人がいることが判明 昼は凜でかなり苦しい思い  年齢には勝たれへん・・・・   2日目  またしてもハッカソン．いつも通り． さすがに土曜日だけあって1日目よりも人が増えていました． オブジェクト指向と意味論と集合論の話とか Rails 勉強会セッションで紹介してもらった！ありがとうございます！ 代わる代わる知り合いが来客  Tokyu.rb のいつもの姿を見せられました＞＜  昼は東京ミートパラダイス  にんにく醤油にすれば良かったと二人とも後悔   まとめ  人見知りの僕でもブース出せたよ＞＜ やっぱハッカソンだよね！ 蒲田は侮れない（肉的な意味で）  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/26/git-Git-Git/">Git を知る最初の書籍としてオススメな「入門Git」</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  入門Git  著者: 濱野 純(Junio C Hamano)
+出版日: 2009-09-24
+出版社/メーカー: 秀和システム
+カテゴリ: Book
+  Git さわったことがない人はこの本を見てとりあえずコマンドたたいてみよう．そして履歴管理について書かれていることをゆっくり読んでみよう．Git 使っている人は履歴管理についてしっかり確認しよう．
+この本には Git のことだけではなく，Git を使ったバージョン管理について細かく書かれている．オープンソース系で Git を使う場合には是非とも読んでおいた方がいい．特に Github を使っている人は，リモートリポジトリについては必読なんじゃないかな．
+ただ例が Linux Kernel のことだったりするので，ぱっと見たときに「？」な感じになるかも知れないが，そこはそれ，適宜自分にプロジェクトやプロジェクトメンバーのことを考えながら読み進めていけばいいんじゃないでしょうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/26/linux-tips-multital-development-log/">multital で development.log を色つきで表示</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  % multitail -cT ansi development.log /var/log/mail.log  terminalcode に ansi を指定すればいい
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/22/rails-ruby-ActionController-Routing/">ActionController::Routing での不思議な挙動</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  前振り Rails 2.3.4 では，URL にピリオド(.)があると，それ以降は :format だと思うらしく，例えば /mails/show/hogehoge@domomo.ne.jp なんて言う URL は使えません． まあそれはいいのですが，かといって link_to でその補正はしてくれないので，絶えず URL.encode などする必要があります．
+link_to &quot;メール&quot;, :controller =&gt; &quot;mails&quot;, :action =&gt; &quot;show&quot;, :id =&gt; URI.encode(@user.mail, &quot;.&quot;) # =&gt; /mails/show/hogehoge@domomo%2ene%2ejp  これで /mails/show/hogehoge@domomo%2ene%2ejp にアクセスすると
+/mails/show/hogehoge@domomo%2ene%2ejp -&gt; {:controller =&gt; &quot;mails&quot;, :aciton =&gt; &quot;show&quot;, :id =&gt; &quot;hogehoge@domomo.ne.jp&quot;  となります．
+問題発生 さて，ここまではいいのですが，問題はテスト． そもそもなぜこれが問題になったかというと，RSpec で route_for を使っていて，以下の spec がありました．
+route_for(:controller =&gt; &quot;mails&quot;, :action =&gt; &quot;show&quot;, :cid =&gt; &quot;hogehoge@domomo.ne.jp&quot;).should == &quot;/mails/show/hogehoge@domomo%2ene%2ejp&quot;  これを rspec-rails 1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/10/22/rails-ruby-ActionController-Routing/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/20/ruby-jruby-rails-Rails-JRuby/">既存の Rails アプリを JRuby で動かす</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  インストールから順番にやってみる
+インストール JRuby のサイトからダウンロードして適当なパスに展開．
+% cd ~/tmp % tar zxvf ~/downloads/jruby-bin-1.3.1.tar.gz % sudo mv jruby-1.3.1 /usr/local/jruby % export PATH=$PATH:/usr/local/jruby/bin % jruby -v jruby 1.3.1 (ruby 1.8.6p287) (2009-06-15 2fd6c3d) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_12) [amd64-java]  Rails のインストール 適宜インストールします．ただし環境変数 GEM_HOME が指定されていたりすると，そこにインストールしようとして Permission error になる可能性あり．なのでそれを JRuby 用に指定し直します．
+% GEM_HOME=/usr/local/jruby/lib/ruby/gems/1.8 jruby -S gem install rails --no-ri --no-rdoc JRuby limited openssl loaded. gem install jruby-openssl for full support. http://wiki.jruby.org/wiki/JRuby_Builtin_OpenSSL Successfully installed activesupport-2.3.4 Successfully installed activerecord-2.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/10/20/ruby-jruby-rails-Rails-JRuby/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/13/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;14 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/15/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

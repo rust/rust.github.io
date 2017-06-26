@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/21/debian-linux-vmware-VMware-libpng/">VMware起動するも，libpng関連でエラーが出る場合の対処方法</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  /usr/lib/vmware/bin/vmware: /usr/lib/vmware/lib/libpng12.so.0/libpng12.so.0: no version information available (required by /usr/lib/libcairo.so.2)  などとエラーが出た場合，
+# cd /usr/lib/vmware/lib/libpng12.so.0/ # mv libpng12.so.0 libpng12.so.0.org # ln -sf /usr/lib/libpng12.so.0 ./libpng12.so.0  として，
+# vim /usr/lib/vmware/lib/wrapper-gtk24.sh export LD_PRELOAD=/usr/lib/libdbus-1.so.3  でこのエラーは出なくなりました．
+###参考URL VMware が起動しない
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/19/Silverlight-JavaScript-XAML-Object/">JavaScript側からXAML Objectにアクセスする方法</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まず，XAMLにて
+&lt;Rectangle x:Name=&quot;control&quot; Width=&quot;300&quot; Height=&quot;300&quot; Fill=&quot;#FFFFFFFF&quot; MouseEnter=&quot;mouseOver&quot; MouseLeave=&quot;mouseLeave&quot;/&gt;   などと名前(x:Name)とイベント(MouseEnter/MouseLeave)を登録．ちなみにFlashで言うところの， :MouseEnter:onRollOver :MouseLeave:onRollOut  に対応．これを制御するのがJavaScriptで，
+function mouseOver( sender, args ){ sender.Fill = &quot;Red&quot;; } function mouseOut(　sender, args ){ sender.Fill = &quot;Blue&quot;; }  などとすれば，マウスイベントで色を変えたりできる．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/19/Silverlight-Storyboard/">Storyboardをコントロールするには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  x:Nameなどで名前をつけて，
+function storyPlay( sender, args ){ sender.findName(&quot;story1&quot;).begin(); } function storyGotoAndPlay( sender, args ){ sender.findName(&quot;story1&quot;).seek(&quot;0:0:0&quot;); sender.findName(&quot;story1&quot;).begin(); } function storyStop( sender, args ){ sender.findName(&quot;story1&quot;).stop(); }  なぜここはbegin．．．．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/18/debian-Rails-linux-Apache2-FCGI-mod_fcgid/">Apache2&#43;FCGI&#43;mod_fcgid環境を作る＃１</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  前回はmod_fastcgiだったので，今回はmod_fcgidに変更して環境構築．
+まずは同じようにFastCGI Developer&rsquo;s Kitをインストール．
+$ tar zxvf fcgi-2.4.0.tar.gz $ cd fcgi-2.4.0 $ ./configure $ make $ sudo make install $ sudo vim /etc/ld.so.conf.d/local-lib.conf  次にmod_fcgidをインストール．
+# apt-get install libfcgi-ruby1.8 libfcgi-dev libapache2-mod-fcgid # gem install fcgi  これで設定は終わりのはず．動作チェックは次回に持ち越し．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/18/debian-linux-Xen-on-Debian-sid/">Xen on Debian(sid)＃１</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  とりあえず動くようになるまでのログ．
+# apt-get install apt-get install linux-image-2.6.24-1-xen-686 xen-tools libc6-xen xen-hypervisor-3.2-1-i386 # reboot  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/18/notitle/">買い忘れ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  エクセル・サーガ 19 (ヤングキングコミックス)  著者: 六道 神士
+出版日: 2008-02-08
+出版社/メーカー: 少年画報社
+カテゴリ: Book
+    退魔針 紅虫魔殺行―超伝奇小説 (ノン・ノベル 842)  著者: 菊地 秀行
+出版日: 2008-02
+出版社/メーカー: 祥伝社
+カテゴリ: Book
+  こういうのがなくなるサービスが欲しい．．．．orz
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/17/notitle/">引越しに向けて買うのを控える事は</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  しないと言うかできない・・・・orz
+ 月刊 アフタヌーン 2008年 04月号 [雑誌]  著者: 出版日: 2008-02-25
+出版社/メーカー: 講談社
+カテゴリ: Book
+    蟲師(9) (アフタヌーンKC)  著者: 漆原 友紀
+出版日: 2008-02-22
+出版社/メーカー: 講談社
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/16/X61-debian-PowerTOP/">PowerTOPを入れてみる．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  どうもWindows XPに比べてバッテリーの減りが早いので，なんかないかと探すとPowerTOPというなんだか洗剤みたいな名前のがあるようなので入れてみました．
+# apt-get install powertop # powertop  実行するとTerminalがtopのような画面になり，いろいろSuggestionしてくれます．とりあえず提案どおりにしていって様子を見てみます．持ちがよくなるといいんだが．
+##追記
+パームレスト部がかなり冷えた．減りも改善された模様．これはいいかもしれないが，C4 Stateが見えないのが気になる．さすがに出先で調べるのも限界なので，あとは自宅で調整してみよう．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/16/X61-debian-LAN/">無線LANの切り替え</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  自宅とHOTSPOTとの切り替えをするためにいろいろ探してみると，ESSID(SSID)によって接続方法を切り替えることができるそうな．
+http://d.hatena.ne.jp/macks/20070317
+/etc/network/interfacesに記載するだけでいいので，こっちのが楽ですね．しばらくはこれで試そうと思います．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/02/15/X61-debian-WEP-HOTSPOT-WPA/">WEP(HOTSPOT)とWPA(自宅)の自動切換</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/02/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  wpa_supplicantに設定を記載すれば，自動で～とか書いてあったんでやってみたんだが，どうもWEPで接続しに行ってくれない．
+# ifup wlan0  とかやってもダメ．もうちょい設定煮詰めないといかんかな．
+# iwconfig essid &quot;ESSID&quot; # iwconfig key &quot;WEP-KEY-STRING&quot; # dhclient wlan0  で直接していすれば接続するってことは，設定ファイルの記載ミスかな．家帰ってから考えよう．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/39/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;40 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/41/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

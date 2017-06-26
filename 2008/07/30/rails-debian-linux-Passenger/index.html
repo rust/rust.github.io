@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Passengerをインストールしてみる &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Passengerをインストールしてみる</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Passengerで動かすことを想定して，ローカル環境にもインストールしてみる．</p>
+
+<pre><code class="language-bash">% sudo gem install passenger
+% sudo /var/lib/gems/1.8/bin/passenger-install-apache2-module
+Welcome to the Phusion Passenger Apache 2 module installer, v2.0.2.
+
+This installer will guide you through the entire installation process. It
+shouldn't take more than 3 minutes in total.
+
+Here's what you can expect from the installation process:
+
+ 1. The Apache 2 module will be installed for you.
+ 2. You'll learn how to configure Apache.
+ 3. You'll learn how to deploy a Ruby on Rails application.
+
+Don't worry if anything goes wrong. This installer will advise you on how to
+solve any problems.
+
+Press Enter to continue, or Ctrl-C to abort.
+1
+Checking for required software...
+
+ * GNU C++ compiler... found at /usr/bin/g++
+ * Ruby development headers... found
+ * OpenSSL support for Ruby... found
+ * RubyGems... found
+ * Rake... found at /usr/bin/rake
+ * Apache 2... found at /usr/sbin/apache2
+ * Apache 2 development headers... not found
+ * Apache Portable Runtime (APR) development headers... found
+ * fastthread... found
+ * rack... found
+
+Some required software is not installed.
+But don't worry, this installer will tell you how to install them.
+
+Press Enter to continue, or Ctrl-C to abort.
+</code></pre>
+
+<p>と言うわけで，Apache2 の開発用パッケージが必要らしい．で，いろいろ調べると，</p>
+
+<pre><code class="language-bash">% sudo apache2 -V
+Server version: Apache/2.2.9 (Debian)
+Server built:   Jul 20 2008 08:23:41
+Server's Module Magic Number: 20051115:15
+Server loaded:  APR 1.2.12, APR-Util 1.2.12
+Compiled using: APR 1.2.12, APR-Util 1.2.12
+Architecture:   32-bit
+Server MPM:     Prefork
+  threaded:     no
+    forked:     yes (variable process count)
+Server compiled with....
+ -D APACHE_MPM_DIR=&quot;server/mpm/prefork&quot;
+ -D APR_HAS_SENDFILE
+ -D APR_HAS_MMAP
+ -D APR_HAVE_IPV6 (IPv4-mapped addresses enabled)
+ -D APR_USE_SYSVSEM_SERIALIZE
+ -D APR_USE_PTHREAD_SERIALIZE
+ -D SINGLE_LISTEN_UNSERIALIZED_ACCEPT
+ -D APR_HAS_OTHER_CHILD
+ -D AP_HAVE_RELIABLE_PIPED_LOGS
+ -D DYNAMIC_MODULE_LIMIT=128
+ -D HTTPD_ROOT=&quot;&quot;
+ -D SUEXEC_BIN=&quot;/usr/lib/apache2/suexec&quot;
+ -D DEFAULT_PIDLOG=&quot;/var/run/apache2.pid&quot;
+ -D DEFAULT_SCOREBOARD=&quot;logs/apache_runtime_status&quot;
+ -D DEFAULT_LOCKFILE=&quot;/var/run/apache2/accept.lock&quot;
+ -D DEFAULT_ERRORLOG=&quot;logs/error_log&quot;
+ -D AP_TYPES_CONFIG_FILE=&quot;/etc/apache2/mime.types&quot;
+ -D SERVER_CONFIG_FILE=&quot;/etc/apache2/apache2.conf&quot;
+</code></pre>
+
+<p>と言うことで，prefork-dev をインストール．</p>
+
+<pre><code class="language-bash">% sudo apt-get install apache2-prefork-dev
+</code></pre>
+
+<p>そして再度，</p>
+
+<pre><code class="language-bash">% sudo /var/lib/gems/1.8/bin/passenger-install-apache2-module
+...略...
+The Apache 2 module was successfully installed.
+
+Please edit your Apache configuration file, and add these lines:
+
+   LoadModule passenger_module /var/lib/gems/1.8/gems/passenger-2.0.2/ext/apache2/mod_passenger.so
+   PassengerRoot /var/lib/gems/1.8/gems/passenger-2.0.2
+   PassengerRuby /usr/bin/ruby1.8
+
+After you restart Apache, you are ready to deploy any number of Ruby on Rails
+applications on Apache, without any further Ruby on Rails-specific
+configuration!
+
+Press ENTER to continue.
+
+
+--------------------------------------------
+Deploying a Ruby on Rails application: an example
+
+Suppose you have a Ruby on Rails application in /somewhere. Add a virtual host
+to your Apache configuration file, and set its DocumentRoot to
+/somewhere/public, like this:
+
+   &lt;VirtualHost *:80&gt;
+      ServerName www.yourhost.com
+      DocumentRoot /somewhere/public
+   &lt;/VirtualHost&gt;
+
+And that's it! You may also want to check the Users Guide for security and
+optimization tips and other useful information:
+
+  /var/lib/gems/1.8/gems/passenger-2.0.2/doc/Users guide.html
+
+Enjoy Phusion Passenger, a product of Phusion (www.phusion.nl) :-)
+http://www.modrails.com/
+
+Phusion Passenger is a trademark of Hongli Lai &amp; Ninh Bui.
+</code></pre>
+
+<p>なので，設定開始．</p>
+
+<ul>
+<li>/etc/apache2/mods-available/passenger.load</li>
+</ul>
+
+<pre><code class="language-bash">LoadModule passenger_module /var/lib/gems/1.8/gems/passenger-2.0.2/ext/apache2/mod_passenger.so
+</code></pre>
+
+<ul>
+<li>/etc/apache2/mods-available/passenger.conf</li>
+</ul>
+
+<pre><code class="language-bash">PassengerRoot /var/lib/gems/1.8/gems/passenger-2.0.2
+PassengerRuby /usr/bin/ruby1.8
+</code></pre>
+
+<ul>
+<li>シンボリックリンクを張る</li>
+</ul>
+
+<pre><code class="language-bash">% sudo ln -s /etc/apache2/mods-available/passenger.load /etc/apache2/mods-enabled/passenger.load
+% sudo ln -s /etc/apache2/mods-available/passenger.conf /etc/apache2/mods-enabled/passenger.conf
+</code></pre>
+
+<ul>
+<li>VirtualHostの設定</li>
+</ul>
+
+<pre><code class="language-bash">&lt;VirtualHost *&gt;
+  DocumentRoot /path/to/app/public
+&lt;/VirtualHost&gt;
+</code></pre>
+
+<ul>
+<li>fcgidを無効にしておく．</li>
+</ul>
+
+<pre><code class="language-bash">% sudo rm /etc/apache2/mods-enabled/fcgid.*
+</code></pre>
+
+<ul>
+<li>再起動</li>
+</ul>
+
+<pre><code class="language-bash">% sudo apache2ctl restart
+</code></pre>
+
+<p>これで，<a href="http://localhost/">http://localhost/</a> にアクセスすると，Railsのあの画面が表示される．</p>
+
+<p><img src="http://img.f.hatena.ne.jp/images/fotolife/c/conceal-rs/20080730/20080730222702.png" alt="image" /></p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/07/30/rails-debian-linux-Passenger/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/07/29/rails-OpenID/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/07/29/rails-OpenID/">OpenIDを使ったユーザ認証の実験</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/07/31/rails-ruby-Passenger/">開発環境でPassengerを使うには</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/07/31/rails-ruby-Passenger/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

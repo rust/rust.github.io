@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/05/rails/">作りかけのもので作ってみました．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  とりあえず購入日記再開．
+ くるねこ  著者: くるねこ大和
+出版日: 2008-01-15
+出版社/メーカー: エンターブレイン
+カテゴリ: Book
+    くるねこ 2  著者: くるねこ 大和
+出版日: 2008-06-20
+出版社/メーカー: エンターブレイン
+カテゴリ: Book
+    くるねこ 3  著者: くるねこ大和
+出版日: 2008-12-20
+出版社/メーカー: エンターブレイン
+カテゴリ: Book
+    蟲師(10) (アフタヌーンKC)  著者: 漆原 友紀
+出版日: 2008-11-21
+出版社/メーカー: 講談社
+カテゴリ: Book
+    ピアノの森(16) (モーニング KC)  著者: 一色 まこと
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/05/rails/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/04/ruby-Ubuntu-8-04-RMagick/">Ubuntu 8.04 で RMagick をインストールする</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  # apt-get install libmagick9-dev # gem install rmagick  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-1st-Day/">MySQL ユーザカンファレンス 2008 1st Day</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  というわけで行ってきました．かなり大勢の人が来ていたので，かなり熱い戦いカンファレンスになりました．聞いてきたセッションのほとんどが英語だったので，もう少しヒアリングできればなと，少し後悔しています．
+かなり長いのですが，2日分のログを．
+##基調講演
+ ビジネスボリュームはかなり大きくなっている．  ##創設者 David の挨拶
+ History
+ 1982 First database code 1995 MySQL code 1996 public release 2001 &lsquo;Real&rsquo; Company start 2008 Sun acquires MySQL  特徴
+ Pluggable Storage Engines それぞれに特徴あるストレージエンジンを，状況に応じて使い分けることができる しかし Connector/Parser などは共通なので開発者に優しい  Storage Engines
+ External Archive InnoDB PBXT InfoBright  automatic indexing  NitroSecrity IBM DB2 Internal Falcon Maria  MyISAM の上位番   Data Warehousing Appliance
+ Kickfire  たくさんのイノベーションを自由に利用できるのが MySQL の特徴
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-1st-Day/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-2nd-Day/">MySQL ユーザカンファレンス 2008 2nd Day</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  #[MySQL]MySQL ユーザカンファレンス 2008 2nd Day ##MySQL Performance Tuning #1 ###Introduction
+ Through put  どこに問題が 輻輳  Slow queries  インデックスの問題 書き直したほうがいいんじゃないか Optimizerがどう動くのか  Application  Roundtrips   ##The Slow Query Log
+ 遅いクエリーを記録するログ 問題  どの部分が遅いのかがわからない INFORMATION_SCHEMA が出てくるときがある  Details  Execution TIme 実行された時間にをみる User Account 誰が実行しているのか Query_time 全実行時間 Lock_time ロック時間 SET timestamp= サーバで実行された timestamp  5.1 では  テーブルに保存できる 再起動なしに On/Off ミリ秒まで可 全ログを記録可能  Configurations  long-queries-not-using-indexes インデックス使わないクエリー min-examined-ro-limit 最小行数  mysqldumpslow  Slow Query の統計をとることができる ログ中の統計 全実行時間 平均実行時間   ###EXPLAIN Basics
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-2nd-Day/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-1/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#1</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まず thread safe にする設定は config/environments/production.rb にある
+# Enable threaded mode # config.threadsafe!  からなので，これを調べると railties/lib/initializer.rb の def threadsafe! self.cache_classes = true self.dependency_loading = false self.action_controller.allow_concurrency = true self end  なので，actionpack/lib/action_controller/base.rb を見ると
+@@allow_concurrency = false cattr_accessor :allow_concurrency  とあるだけ．ならばと rak &lsquo;allow_concurrency&rsquo; とかやってみると
+activerecord/test/cases/pooled_connections_test.rb 79| def test_allow_concurrency_is_deprecated 80| assert_deprecated('ActiveRecord::Base.allow_concurrency') do 81| ActiveRecord::Base.allow_concurrency 83| assert_deprecated('ActiveRecord::Base.allow_concurrency=') do 84| ActiveRecord::Base.allow_concurrency = true activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb 181| # * &lt;tt&gt;:allow_concurrency&lt;/tt&gt; - If true, use async query methods so Ruby threads don't deadlock; otherwise, use blocking query methods.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-2/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  続き．actionpack/lib/action_controller/dispatcher.rb を見ると
+5 | @@guard = Mutex.new 104 | def dispatch_unlocked 105 | begin 106 | run_callbacks :before_dispatch 107 | handle_request 108 | rescue Exception =&gt; exception 109 | failsafe_rescue exception 110 | ensure 111 | run_callbacks :after_dispatch, :enumerator =&gt; :reverse_each 112 | end 113 | end 114 | 115 | def dispatch 116 | if ActionController::Base.allow_concurrency 117 | dispatch_unlocked 118 | else 119 | @@guard.synchronize do 120 | dispatch_unlocked 121 | end 122 | end 123 | end  と言うことなので，いままでは Mutex で共有ロックかけてるのがわかる．んで，dispatch_unlocked が呼び出されて，例えば development 環境であれば run_callbacks :before_dispatch から reload_application が実行されたりする．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-3/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#3</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  次は ConnectionPool について．ひとまず関連部分を出すために % rak &lsquo;ConnectionPool&rsquo; &ndash;ruby で
+activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb 19| # connection back in. ConnectionPool is completely thread-safe, and will 21| # as long as ConnectionPool's contract is correctly followed. It will also 24| # connection anyway, then ConnectionPool will wait until some other thread 57| class ConnectionPool 60| # Creates a new ConnectionPool object. +spec+ is a ConnectionSpecification 63| # this ConnectionPool. 65| # The default ConnectionPool maximum size is 5.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-4/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#4</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  と言うことは，threadsafe! によっては
+ ActionController 側では同期しなくなっただけ． ActiveRecord 側では，ConnectionPool によって接続を使いまわすようになっただけ．  かな？
+次は IRC で上がってた http://m.onkey.org/2008/10/23/thread-safety-for-your-rails を読んでみる．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/28/jpmobile-rails-ruby-Jpmobile-user_agent/">Jpmobile で user_agent を設定してテストするには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  get/post などの前に，
+@request.user_agent = &quot;DoCoMo/2.0&quot;  としてユーザエージェントを設定する．@request.env[&lsquo;USER_AGENT&rsquo;] では，TestRequest 生成時に上書きされた値が使われてしまうようだ．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/28/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0034-title-Rails-34/">Rails勉強会＠東京第34回に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  日曜に参加してきました．そして初懇親会だったのですが，かなり楽しかったです．皆さんお疲れ様でした．
+##まとめ
+ gettextとi18nのどっちにすべきだろうか． Rails 2.2でとりあえず作っておいた方がいいかな． リファレンスマニュアルには秘密がたくさん．もっと読もう．  ##セッション
+ 前半  Rails 2.2 をほげる＠松田さん Scaffoldの半歩先へ＠Yuumi3  後半  plugin について語る リファレンスマニュアルを読む   ==== ##Rails 2.2 をほげる
+ Rails 2.2.0 がでた  http://guides.rubyonrails.org/2_2_release_notes.html RC1 扱い  特徴
+ Internationalization 高速化  Internationalization
+ 省略  RoR がマルチスレッド化
+ ETagサポート
+ Connection Pooling
+ Thread Safe なので Connection 使い回さないと大変なことに  Memoizable
+ インスタンス変数へキャッシュする   def full_name @full_name ||= &quot;#{first_name} #{last_name}&quot; end --after-- def full_name &quot;#{first_name} #{last_name}&quot; end  - @full_name へキャッシュされて，2回目以降に文字列結合は実行されない． - 更新するときは，full_name(true) で．   PostgreSQL 使うと db:migrate で失敗しても Rollback するようになった． config.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/28/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0034-title-Rails-34/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/26/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;27 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/28/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

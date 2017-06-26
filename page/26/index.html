@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/24/ruby-rails-slicehost-slicehost-Rails2-2-2/">slicehostでRails2.2.2を動かすまで</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  DreamhostでどうしてもRails2.2.2にできなかったので，カッとなってやってしまったログ．
+##slicehostに登録する まあ普通に．いわゆるアレ張っておきます:)．
+[https://manage.slicehost.com/customers/new?referrer=49a030fcbd9a4d672c26bd8e55597026]
+OS は慣れてる Ubuntu 8.04.1 を．
+##Ubuntu 8.04.1 の構築
+###日本語 まずログインしてhttp://de-lab.com/article/slicehost-ubuntu-locale/を参考に．
+# dpkg-reconfigure tzdata # Asia -&gt; Tokyo # apt-get install language-pack-ja # dpkg-reconfigure locales # update-locale LANG=ja_JP.UTF-8 % exit  ###接続まで
+# apt-get update # apt-get install zsh # useradd -m rust -s /usr/bin/zsh # su - rust $ ssh localhost $ vim .ssh/authorized_keys  公開鍵接続できる状態になったので，
+# vim /etc/ssh/sshd_config PermitRootLogin no UsePAM no # /etc/init.d/ssh reload  ###MySQL
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/24/ruby-rails-slicehost-slicehost-Rails2-2-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/22/ruby-rails-forgot_password/">forgot_passwordプラグインを使ってみる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  restful_authenticationが入っていて，セットアップも終わっている前提でインストール．
+% cd /path/to/app % ruby script/plugin install git://github.com/greenisus/forgot_password.git % ruby script/generate forgot_password user % rake db:migrate  次はパスワード忘れ用画面へリンクを張ります．
+&lt;%= link_to &quot;パスワードを忘れた場合は&quot;, &quot;/forgot_password&quot; -%&gt;  今回は application.rb で
+before_filter :login_required  としていたので，app/controller/forgot_passwords_controller.rb で，
+skip_before_filter :login_required  を追加．さらにここを参考に，
+51 |# PasswordMailer.deliver_reset_password(@user) 52 | ForgotPasswordMailer.deliver_reset_password(@user)  とコメントアウトします．サーバを起動してパスワード忘れリンクをクリックすると，
+ここにメールアドレスを入力すると
+こんな感じのメッセージが flash[:notice] で表示されてメールが送られてきます．
+ Date: Sat, 22 Nov 2008 00:50:42 +0900 From: ADMINEMAIL To: rust.stnard@gmail.com Subject: [YOURSITE] You have requested to change your password Mime-Version: 1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/22/ruby-rails-forgot_password/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/21/Ruby-Rails-524/">524万人が利用する食のインフラ 「クックパッド」のものづくり セミナー</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  日本一のRailsでの大規模サイトである「クックパッド」のお話を聞きに，WebCareer主催のセミナーに参加してきました．
+ MacBook Pro 17inch だった．  ##クックパッドとは
+ ミッション：毎日の料理を楽しみにすることで，心からの笑顔を増やす 1998年オープン 料理のレシピを  公開する 探す 作者に報告することもできる  写真付きで   45万品のレシピがある
+ 524万人/月
+ 四国の人口よりも多い  月間 2.8 億 PV
+  ###トラフィック
+ 16～18 時がピーク 秋からバレンタインにかけてトラフィックが伸びる  ##524万人をささえるサーバ・ネットワーク ###サーバ構成
+ apache x 8 app x 44 master x 1 log master 1 slave x 13 Apache 2.2.3 / Rails 2.0 / Tritton  ###運用
+ capistrano god nagios munin(モニタリング) FiveRuns Manage(モニタリング)  ###パフォーマンス
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/21/Ruby-Rails-524/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/20/ruby-module/">moduleのスコープについて調べてみた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いろいろ気になったので調査．以下のようなコードを用意．
+module Parent CONST = 2 end module Parent module Base BASE_CONST = 3 end end module Parent module Base class Child class &lt;&lt; self def bar puts BASE_CONST puts CONST end end end end end class Hoge include Parent::Base def fuga puts BASE_CONST puts CONST end end class Huga include Parent def baz puts CONST puts BASE_CONST end end  % irb &gt;&gt; foo = Hoge.new =&gt; #&lt;Hoge:0x......&gt; &gt;&gt; foo.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/20/ruby-module/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/19/OS/">OSのキャッシュに貯めてからサーバを起動するのがいいらしい</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://codezine.jp/article/detail/3315?p=2
+ 運用面で大規模データを扱う際に気をつけなければいけないのは、OSを起動した直後、すぐにサーバーを立ち上げないということだ。キャッシュが全く構築されていないので、ディスクにアクセスしに行ってしまいハングアップしてしまう。
+　次のデータは、OS起動直後に数GBのファイルをリードしたときのもの。最初はメモリがほとんど使われていない（4％）が、18時40分からの10分間でいきなり96％になっている。
+　このように、ページキャッシュは透過的に作用するので、大きなファイルを一気にリードするだけでキャッシュが溜まってくれる。ノウハウとしては、OSが起動したら、データベースのファイルを全部catして「/dev/null」に投げておくと、メモリにキャッシュが構築される。
+　性能評価を実地のマシンで行うときにも、キャッシュが最適化されるまで少し時間がかかる。最適化されてない状態でテストしても意味がない。負荷がだんだん落ち着いたところで測定するのがポイントだ。
+ 
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/16/thrift-ruby-perl-Ubuntu-8-04-Thrift/">Ubuntu 8.04 で Thrift を試してみた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##準備
+% sudo apt-get install build-essential automake libtool flex bison libboost\* % sudo apt-get install libbit-vector-perl libclass-accessor-perl  ##インストール
+% cd program/thrift % wget -O thrift.tgz &quot;http://gitweb.thrift-rpc.org/?p=thrift.git;a=snapshot;h=HEAD;sf=tgz&quot; % tar zxvf thrift.tgz % cd thrift % ./bootstrap.sh % ./configure --disable-gen-java --without-java --disable-gen-csharp --disable-gen-st --disable-gen-ocaml --disable-gen-cocoa % make % sudo make install % cd lib/perl % perl Makefile.PL % sudo make install % cd ../rb % sudo ruby setup.rb  ##サンプル WEB+DB Vol.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/16/thrift-ruby-perl-Ubuntu-8-04-Thrift/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/14/ruby-iKnow-iKnow-Gem-API/">iKnow Gem &#43; API サンプル</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  iKnow Gem を使った簡単なサンプル作ってみた！
+require 'rubygems' require 'iknow' Iknow::Config.init do |conf| conf.api_key = 'KEY' end user = Iknow::User.find(USERNAME) puts user.profile.description  これはお手軽でいいな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/14/ruby-iKnow-http-www-iknow-co-jp-blog-ja-2008-11-7-99671-11-13-ki-iknowdebberoppa-kanfarensu-kaisai-no-oshirase-title-iKnow/">iKnowデッベロッパー・カンファレンスに行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Ruby on Railsでのサービスということで(？)，カンファレンスに行ってきました．iKnowも最近休みがちなので，景気づけの意味も含めて．
+##ふぁーすといんぷれっしょん
+ 外人率たけー ビールとかピザとかアメリカっぽい！ しかし日本人比率もそこそこある？  ##はじめの挨拶とか
+ 3年ぐらい前から B2B -&gt; B2C に変わった． 英語学習だけじゃなくて，日本語，その他の言語へも広げていきたい SNS は学習補助のため CGM的にコンテンツを作れるように目指している  ##iKnow API
+ MASHERY を通じて API を提供  Key の発行などの Proxy 的な役割  Next month : New replease  Text to Speech 外部サービスを使っている API を使って item を作成できるようになる 非常にシンプルなAPI OpenSearch に対応 日本語 -&gt; 英語  Next repelase  OAuth に対応 学習の結果も登録できるようになる 単語の意味だけではなく，セマンティック的にサーチできるようにしたいなぁ(？) Open Social に対応する予定   ###Q&amp;A
+ どうやって金儲けるの？  センテンスの中に企業名を入れたり ゲーム内広告のような感じ？ 学習という集中するコンテンツなので，広告性が高いのでは  取得するデータにフィルターをかけれないのか  一括取得するときに，そのとき必要じゃないデータが付随してくるのを，何とかしてほしい． Open Search に対応するときに，何件あるかなどの情報を出すようになる  吹き出し(Skypeのあれ)を変更するAPIは？  できるようにする  サイズ指定で XML とか取りたい  ##LT ###iPhone で復習できる App
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/14/ruby-iKnow-http-www-iknow-co-jp-blog-ja-2008-11-7-99671-11-13-ki-iknowdebberoppa-kanfarensu-kaisai-no-oshirase-title-iKnow/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/13/rails-ruby-Ubuntu-autotest-notify/">Ubuntu と autotest と notify で快適テスト生活</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まだ Test::Unit なんですが1，http://blog.s21g.com/articles/913を参考に autotest + notify を導入してみました．
+% sudo su - # gem install ZenTest # apt-get install libnotify-bin # exit % cp /var/lib/gems/1.8/gems/ZenTest-3.11.0/example_dot_autotest.rb ~/.autotest % chmod 644 ~/.autotest  次に .autotest の修正．
+# -*- ruby -*- # require 'autotest/autoupdate' # require 'autotest/camping' # require 'autotest/cctray' # require 'autotest/emacs' # require 'autotest/email_notify' # require 'autotest/fixtures' # require 'autotest/growl' # require 'autotest/heckle' # require 'autotest/html_report' # require 'autotest/jabber_notify' # require 'autotest/kdenotify' # require 'autotest/menu' # require 'autotest/migrate' require 'autotest/notify' # require 'autotest/once' # require 'autotest/pretty' # require 'autotest/rcov' require 'autotest/redgreen' # require 'autotest/restart' # require 'autotest/screen' # require 'autotest/shame' # require 'autotest/snarl' # require 'autotest/timestamp' # Autotest::AutoUpdate.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/13/rails-ruby-Ubuntu-autotest-notify/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/10/MySQL-MySQL-Server/">MySQL Serverのメモリ使用量の見積り</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://dsas.blog.klab.org/archives/50860867.html
+仕事で12台の MySQL サーバの my.cnf を見直す必要があったため，上記リンク先の mymemcheck を使って見積もって見ました．実行環境は Ubuntu 8.04．
+で，実行しようとすると module 足りないといわれたのでインストール1．
+&gt; perl -MCPAN -e shell &gt; o conf commit &gt; install CPAN &gt; reload CPAN &gt; install Readonly &gt; install UNIVERSAL::require  で，実行してみると，ちょっと欲しい機能があったので Ruby で書き直してみました．
+mysqlmemcheck
+追加したのは，サーバ搭載メモリ容量(&ndash;memory=SIZE)とOSが使うメモリ容量(&ndash;system=SIZE)です．実際どれぐらい使われるのかと，余裕あるのかどうかなどの見積りに使えるかなと．
+ この方法しか知らないんだけど，他にあるのかな [return]   
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/25/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;26 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/27/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

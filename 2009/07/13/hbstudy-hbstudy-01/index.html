@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>hbstudy#01 インフラエンジニア勉強会に行ってきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>hbstudy#01 インフラエンジニア勉強会に行ってきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <ul>
+<li>株式会社ハートビーツ主催</li>
+<li>色んな意味でアウェー感あり</li>
+<li>何となく Mac/iPhone 率高い気がするなぁ</li>
+</ul>
+
+<p>##インフラエンジニア勉強会</p>
+
+<ul>
+<li>馬場さん
+
+<ul>
+<li>ハートビーツのCTO</li>
+</ul></li>
+<li>インフラエンジニア
+
+<ul>
+<li>サーバエンジニア + ネットワークエンジニア + アーキテクト</li>
+<li>情報とか交流とか少ない</li>
+<li>情報が少ない</li>
+<li>SD, WEB+DB PRESS, サーバ/インフラを支える技術</li>
+</ul></li>
+<li>インフラエンジニア勉強会
+
+<ul>
+<li>月1 で 2時間程度</li>
+<li>セミナーじゃなくて，討論するスタイル</li>
+<li>bpstudy をまるパクリなんだそうな</li>
+<li>扱ってみたいテーマ</li>
+<li>テクノロジー，運用・マネージメント，事例・実例</li>
+<li>企画運営</li>
+<li>ハートビーツ + 有志の方々</li>
+</ul></li>
+</ul>
+
+<p>##Kerne-based VIrtual Machine (KVM)</p>
+
+<ul>
+<li>Accense Technology, Inc. Takano ENDOH</li>
+<li><a href="http://twitter.com/MiCHiLU">http://twitter.com/MiCHiLU</a></li>
+<li>資料 : <a href="http://tinyurl.com/WhatisKVM">http://tinyurl.com/WhatisKVM</a></li>
+</ul>
+
+<p>###What&rsquo;s KVM</p>
+
+<ul>
+<li>loadable kernel module</li>
+<li>based on QEMU</li>
+<li>仮想化支援技術サポート</li>
+<li>動作する OS が多い
+
+<ul>
+<li>完全仮想化？</li>
+</ul></li>
+</ul>
+
+<p>###What&rsquo;s QEMU</p>
+
+<ul>
+<li>open source processor emulator</li>
+<li>Host : x86(64), PowerPC
+
+<ul>
+<li>Target : x86(64), ARM, SPARC, MIPS</li>
+<li>エミュレーション : ビデオカード，マウス・キーボード，IDE，NIC なども</li>
+<li>VNC をサポート，BIOS エミュレーションも</li>
+</ul></li>
+<li>Eucalyptus</li>
+<li>OpenNebula</li>
+</ul>
+
+<p>###How does it work?</p>
+
+<ul>
+<li>Kernel の上に QEMU があり，その上に QEMU OS が動く</li>
+<li>ネットワークは
+
+<ul>
+<li>ブリッジ，TAP，TUN</li>
+<li>昔の VirtualBox や VMware の接続に近い？</li>
+</ul></li>
+</ul>
+
+<p>###Quick Start KVM</p>
+
+<ul>
+<li>Fedora</li>
+</ul>
+
+<pre><code class="language-bash"># yum install kvm quemu-img bridge-utils
+</code></pre>
+
+<ul>
+<li><p>CPU の仮想化支援技術が有効になっているかチェック</p></li>
+
+<li><p>Network は bridge の設定が必要</p>
+
+<ul>
+<li>QEMU が起動したときに TAP が割り当てられるようなスクリプト作っている</li>
+</ul></li>
+
+<li><p>qemu-img でイメージを作成</p></li>
+
+<li><p>qemu-kvm で起動</p>
+
+<ul>
+<li>VNC で起動画面を取得</li>
+<li>ネットワークブート(-boot n)などとやると，インストール後もネットワークブートしようとするから，それを外して再起動</li>
+</ul></li>
+</ul>
+
+<p>###Problems</p>
+
+<ul>
+<li>ホストの複数のNICの割り当て</li>
+<li>ネットワーク負荷のモニタリング</li>
+</ul>
+
+<p>###Roadmap</p>
+
+<ul>
+<li>Intel VT の I/O サポートの取り込み</li>
+<li>メモリ効率の改善</li>
+<li>リアルモードのサポート</li>
+</ul>
+
+<p>###Announces&hellip;</p>
+
+<ul>
+<li>Tokyu GTUG Night #1
+
+<ul>
+<li>恵比寿で <sup>8</sup>&frasl;<sub>5</sub> に</li>
+</ul></li>
+</ul>
+
+<p>##動的構成管理ソフトウェア Wakame の話</p>
+
+<ul>
+<li>やまざき＠株式会社あくしゅ さん</li>
+</ul>
+
+<p>###自己紹介</p>
+
+<ul>
+<li>Virual Reality を長年作っていた</li>
+<li>あくしゅ
+
+<ul>
+<li>Ruby で受託開発</li>
+<li>GANREF.jp (PHP)</li>
+</ul></li>
+</ul>
+
+<p>###インフラエンジニアに期待すること</p>
+
+<ul>
+<li>日々安定させて</li>
+<li>提案もして</li>
+<li>もっとアプリ側に出てきて欲しい</li>
+
+<li><p>プログラマを押しのけてほしい！</p></li>
+
+<li><p>なぜか</p>
+
+<ul>
+<li>インフラはアプリの特性を知らなければ構築できない</li>
+</ul></li>
+
+<li><p>Scalability</p>
+
+<ul>
+<li>必ず提案される問題</li>
+<li>実際のところ，大規模サイトを運営した経験があるエンジニアは少ない</li>
+<li>Amazon EC2 でやってみればいいじゃない！</li>
+</ul></li>
+
+<li><p>いまのホスティングデータセンタ</p>
+
+<ul>
+<li>データセンターにあるリソースを確保する感じ</li>
+<li>自律的にリソースの確保も出来るようになってきた
+
+<ul>
+<li>Amazon Web API</li>
+</ul></li>
+</ul></li>
+
+<li><p>システム管理者のように振る舞うソフトウェアがあれば</p>
+
+<ul>
+<li>そこで Wakame</li>
+</ul></li>
+</ul>
+
+<p>###Wakame</p>
+
+<ul>
+<li>sudo gem install wakame</li>
+<li>技評で特集された</li>
+
+<li><p>Google でも1位に</p></li>
+
+<li><p>どのような振る舞いをするのか</p></li>
+
+<li><p>全体像</p>
+
+<ul>
+<li>Xen インスタンス群 + リソースマネージャ + ストレージ = Amazon EC2</li>
+</ul></li>
+
+<li><p>動作原理</p>
+
+<ul>
+<li>マシンに Wakeme にインストールしておく</li>
+<li>Master/Agent 型</li>
+<li>起動させると，Master が Agent にサービス起動を指示する</li>
+<li>なので init.d などからは削除しておく</li>
+<li>Master にスケールアウト計画の指示</li>
+<li>Master がリソースマネージャに指示を出してインスタンスを起動する
+
+<ul>
+<li>その際に Master を起動しないようにしておくと，起動済みの Master から Agent にサービスを起動する指示を出す</li>
+<li>Load balancer に指示を出して，トラフィックを分散するなども可能</li>
+</ul></li>
+</ul></li>
+
+<li><p>スケールアウトは計画的に</p>
+
+<ul>
+<li>予言はできない</li>
+<li>アクセス負荷の予測など</li>
+<li>キャンペーンなどは計画できる</li>
+<li>Yahoo! からのリンク張られる時間とかわかれば・・・・</li>
+</ul></li>
+
+<li><p>計画できないのではない．準備が間に合わないだけ</p></li>
+
+<li><p>似たようなもの</p>
+
+<ul>
+<li>RightScale</li>
+<li>Vertebra</li>
+<li>Scalr</li>
+<li>Chef</li>
+<li>Puppet の様な感じ</li>
+</ul></li>
+
+<li><p>どこから，いつ，どれだけのトラフィックが流れるか交換できるプロトコルを作りたい</p></li>
+
+<li><p>ダウンしないインフラへ</p></li>
+
+<li><p>Q&amp;A</p>
+
+<ul>
+<li>負荷を監視してスケール出来るの？</li>
+<li>いろいろな値をトリガーに動作することが出来る</li>
+<li>ロジックをいろいろ作れる</li>
+<li>Amazon EC2 でノイズのようなスパイクをどうする？</li>
+<li>本当のスパイクと区別できないので，難しい</li>
+<li>実際の利用例は？</li>
+<li>いまやっているところ</li>
+<li>実験ベースで何台まで？</li>
+<li>Amazon EC2 の 20台リミットがあるので，まだ</li>
+<li>Master が落ちたら？</li>
+<li>データベースに情報を入れておけば，ディザスタリカバリのようなこともできるので，計画中</li>
+<li>どうやってる？</li>
+<li>内部でサーバの階層構造を決めて</li>
+<li>トリガーを指定して</li>
+<li>設定できる</li>
+<li>Eucalyptus で動くの？</li>
+<li>動くらしい</li>
+<li>なぜ Ruby ？</li>
+<li>流行だから</li>
+<li>労力を削減できる</li>
+<li>Ruby のバージョン依存については考えてなかった</li>
+<li>AMQP よりも XMPP の方がいい</li>
+<li>XMPP の方がログアウト(セッション切れ)をサポートしているので，変えたい</li>
+<li>ただ，AMQP の方がエンタープライズなのでウケがいい</li>
+<li>MySQL の Slave を増やすことはできる</li>
+<li>Snapshot を取得して mount して replication をする方法はあって実際にできている</li>
+</ul></li>
+</ul>
+
+<p>##まとめとメモなど</p>
+
+<ul>
+<li>Wakame は便利そう
+
+<ul>
+<li>サーバの増強計画は必須</li>
+<li>Master が落ちたときには，何も指示を出さなくなる</li>
+<li>構成情報を全て外部に保存できれば，failover はできそうですね</li>
+<li>Eucalyptus で実験したいな</li>
+<li>RabbitMQ のバックエンドが Erlang</li>
+</ul></li>
+<li>Rubyの気持ちよさと気持ち悪さについていろいろ話した気がする</li>
+<li>Poken率結構高かったな</li>
+<li>インフラを勉強するための会じゃなくて，インフラやってる人が勉強する
+
+<ul>
+<li>もちろん次回も行く予定です</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/07/13/hbstudy-hbstudy-01/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/07/02/debian-linux-Compiz-Viewport-GNOME-workspace/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/07/02/debian-linux-Compiz-Viewport-GNOME-workspace/">Compiz の Viewport と GNOME の workspace の混同を解決する</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/07/14/notitle/">お台場でガンダム見てきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/07/14/notitle/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

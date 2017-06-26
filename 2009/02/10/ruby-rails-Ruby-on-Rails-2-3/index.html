@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Ruby on Rails 2.3 リリースノート &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Ruby on Rails 2.3 リリースノート</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>いつものように意訳．たぶん<a href="http://webtama.jp/series/railstips/articles/31">ここ</a>を見た方がいいような気もします．</p>
+
+<ul>
+<li><a href="http://guides.rubyonrails.org/2_3_release_notes.html">http://guides.rubyonrails.org/2_3_release_notes.html</a></li>
+</ul>
+
+<p>Rails 2.3 には数多くの新しい機能が含まれている．Rack への対応や Rails エンジンの一新，Active Record ではトランザクションのネストやスコープ，レンダリングの統一や効率的なルーティング，そしてアプリケーションテンプレートと静かなバックトレース．本記事のリストは，メジャーアップグレードの内容をカバーしているが，細かな変更やバグフィックスは記載していない．もしすべてを知りたいときは，Commit ログか CHANGELOG を見てほしい．</p>
+
+<p>##アプリケーションアーキテクチャー
+Rails アプリケーションのアーキテクチャーについて2つの大きな変更がある．Rack への対応と Rails エンジンに対する新しいサポートである．</p>
+
+<p>###Rack への対応
+Rails は，いまや CGI の過去を破壊してすべての場面で Rack を使うようになった．これには莫大な数の内部変更を伴った(ただしもし CGI を使うときも心配しなくてもいい．Rails はプロキシーインターフェイスを通じて CGI をサポートしている)．まだこれは Rails 内部への大きな変更であるので，2.3 へアップグレードしたのちには，ローカル環境と Production 環境でテストする必要がある．テストすべき点は下記のとおりだ．</p>
+
+<ul>
+<li>セッション(session)</li>
+<li>クッキー(cookie)</li>
+<li>ファイルのアップロード</li>
+<li>JSON/XML の API</li>
+</ul>
+
+<p>以下に Rack に関わる変更点をまとめておく．</p>
+
+<ul>
+<li>script/server は Rack を使うように変更されたので，Rack 互換のどんなサーバをもサポートするようになった．script/server はまた rackup 設定ファイルがあればそれを参照するようになる．デフォルトでは，config.ru ファイルを探し，-c オプションで指定可能だ．</li>
+<li>FCGI handler は Rack を通じて</li>
+<li>ActionController::Dispatcher はそのデフォルトのミドルウェアスタックを維持する．ミドルウェアは inject されるか整理されるか削除されるだろう．スタックは起動処理中にコンパイルされる．envrionment.rb でミドルウェアスタックを構成することができる．</li>
+<li>ミドルウェアスタックを調査するための Rake タスクが追加された．ミドルウェアスタックの順序をデバッグするのに役に立つ．</li>
+<li>統合テストがミドルウェアとアプリケーションスタック全体に対して実行するように変更された．これは統合テストを Rack ミドルウェアのテストを万全のものとする．</li>
+<li>ActionController::CGIHandler は Rack での CGI ラッパーと後方互換性がある．CGIHandler は古い CGI オブジェクトとその環境情報を Rack 形式に変換する．</li>
+<li>CgiRequest と CgiResponse は削除された</li>
+<li>Session store が Lazy Loadingになった．もし session を使わない場合は，session データを読み込むことはない．(cookie を parse したり，memcache からデータを取得したり，Active Record オブジェクトを探したりしない)</li>
+<li>CGI::Session::CookieStore は ActionController::Session::CookieStore に変更された．</li>
+<li>CGI::Session::MemCacheStore が ActionController::Session::MemCacheStore に変更された．</li>
+<li>CGI::Session::ActiveRecordStore が ActiveRecord::SessionStore に変更された．</li>
+<li>session store を</li>
+</ul>
+
+<pre><code class="language-ruby">ActionController::Base.session_store = :active_record_store
+</code></pre>
+
+<p>に変更することもまだできる．</p>
+
+<ul>
+<li>デフォルトのセッションオプション指定もまだ，</li>
+</ul>
+
+<pre><code class="language-ruby">ActionController::Base.session = { :key =&gt; &quot;...&quot; }
+</code></pre>
+
+<p>の形式のまま．</p>
+
+<ul>
+<li>mutex はミドルウェア ActionController::Lock に移動した．</li>
+<li>ActionController::AbstractRequest と ActionController::Request は統合された．新しい ActionController::Request は Rack::Request を継承している．これはたとえば response.headers[type] ではなく，response.content_type を使うなどの影響を与える．</li>
+<li>ActiveRecord::QueryCache ミドルウェアは ActiveRecord がロードされた場合には自動的にミドルウェアスタックに入るようになっている．このミドルウェアは Active Record のクエリーキャッシュを制御する．</li>
+<li>Rails のルーティングと controller クラスは Rack の仕様に従うので，SomeController.call(env) のように直接呼び出せるようになり，ルーティングパラメータは rack.routing_args に保存される．</li>
+<li>ActionController::Record は Rack::Request を継承する．</li>
+<li>config.action_controller.session は</li>
+</ul>
+
+<pre><code class="language-ruby">config.action_controller.session = {:session_key =&gt; foo}
+</code></pre>
+
+<p>ではなく</p>
+
+<pre><code class="language-ruby">config.action_controller.session = {:key =&gt; foo}
+</code></pre>
+
+<p>を使うようになる．</p>
+
+<ul>
+<li>ParamsParser ミドルウェアが XML/JSON/YAML リクエストの前処理を行うので，その後では Rack::Request オブジェクトを使うことができる．</li>
+</ul>
+
+<p>###Rails エンジンへの一新されたサポート
+バージョンアップ後，Rails 2.3 は Rails エンジン<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>の新しい特徴を提供する．第一に，routes.rb のようなルーティングファイルは自動的に読み込み・再読み込みされる(他のプラグインのルーティングファイルでも同様)．第二に，もしプラグインに app フォルダーがあれば，その app/[models|controllers|helpers] は自動的に Rails のロードパスに追加される．エンジンは view のパスの追加もサポートする．</p>
+
+<p>##ドキュメント
+Ruby on Rails ガイドプロジェクトは Rails 2.3 についてのガイドを追加した．加えて別のサイトで Edge Rails のガイドも立ち上げた．Rails wiki の再開と早い段階での Rails 本の計画が計画されている．</p>
+
+<ul>
+<li>[<a href="http://weblog.rubyonrails.org/2009/1/15/rails-documentation-projects:Rails">http://weblog.rubyonrails.org/2009/1/15/rails-documentation-projects:Rails</a> Documentation Projects]</li>
+</ul>
+
+<p>##Active Record
+Rails 2.3 では，Action Record に多くの新機能が追加され，また多くのバグフィックスが行われた．目立ったところでは，属性指定とトランザクションのネスト対応，動的スコープとデフォルトスコープがある．</p>
+
+<p>###属性のネスト対応
+Active Record はネストしたモデルの属性を直接扱うことができるようになった．</p>
+
+<pre><code class="language-ruby">class Book &lt; ActiveRecord::Base
+  has_one :author
+  has_many :pages
+
+  accepts_nested_attributes_for :author, :pages
+end
+</code></pre>
+
+<p>ネストした属性は様々な恩恵をもたらす．関連モデルと一緒に(原子的に)保存できたり，関連モデルからの検証，関連モデル一括でのフォーム(後述する)など．</p>
+
+<ul>
+<li>開発者:<a href="http://www.superalloy.nl/blog/">Eloy Duran</a></li>
+<li>情報源:<a href="http://weblog.rubyonrails.org/2009/1/26/nested-model-forms">http://weblog.rubyonrails.org/2009/1/26/nested-model-forms</a></li>
+</ul>
+
+<p>###ネストしたトランザクション
+Active Record は多くの要望があったネストしたトランザクションに対応する．</p>
+
+<pre><code class="language-ruby">User.transaction do
+  User.create(:username =&gt; 'Admin')
+
+  User.transaction(:requires_new =&gt; true) do
+    User.create(:username =&gt; 'Regular')
+
+    raise ActiveRecord::Rollback
+  end
+end
+
+User.find(:all) # =&gt; :username =&gt; 'Admin' だけが返る
+</code></pre>
+
+<p>ネストしたトランザクションは，外側のトランザクションの状態に影響を与えること無く，内部のトランザクションのみロールバックさせることができる．もしトランザクションをネスト化したいときは，明示的に :requires_new オプションを追加すればいい．そうでなければ，ネストしたトランザクションは親トランザクションの一部になる(現在の Rails 2.2 と同様)．ネスト化したトランザクションは savepoint を使うので，データベースがネスト化したトランザクションをサポートしていなくても動作する．またテストのときに，トランザクション用のフィクスチャーがうまく動作するような小さな魔法もある．</p>
+
+<ul>
+<li>開発者:<a href="http://www.workingwithrails.com/person/4985-jonathan-viney">Jonathan Viney</a>と<a href="http://izumi.plan99.net/blog/">Hongli Lai</a></li>
+</ul>
+
+<p>###動的スコープ
+Rails での動的検索(find_by_color_and_flavor のようなメソッドをでっち上げる機能)と named_scope(再利用可能なクエリー条件をカプセル化して名前をつけられる機能) は知っているだろう．動的スコープはメソッドチェーンでフィルタリングできる構文だ．例えば，</p>
+
+<pre><code class="language-ruby">Order.scoped_by_customer_id(12)
+Order.scoped_by_customer_id(12).find(:all, :conditions =&gt; &quot;status ='open'&quot;)
+Order.scoped_by_customer_id(12).scoped_by_status(&quot;open&quot;)
+</code></pre>
+
+<p>scopes: で定義しなくても動的にスコープを使うことができる．</p>
+
+<ul>
+<li>開発者:<a href="http://evilmartians.com/">Yaroslav Markin</a></li>
+<li>参考:<a href="http://ryandaigle.com/articles/2008/12/29/what-s-new-in-edge-rails-dynamic-scope-methods">What’s New in Edge Rails: Dynamic Scope Methods.</a></li>
+</ul>
+
+<p>###デフォルトスコープ
+Rails 2.3 は named_scope のようなデフォルトのスコープを導入する．これはすべての named_scope と find メソッドに適用される．例えば</p>
+
+<pre><code class="language-ruby">default_scope :order =&gt; &quot;name ASC&quot;
+</code></pre>
+
+<p>とすると，いつでも name でソートした結果が得られる(もちろん上書きすればそうではないが)</p>
+
+<ul>
+<li>開発者:Pawe〓 Kondzior</li>
+<li>参考:<a href="http://ryandaigle.com/articles/2008/11/18/what-s-new-in-edge-rails-default-scoping">What’s New in Edge Rails: Default Scoping</a></li>
+</ul>
+
+<p>###コールバックの多重条件
+Active Record のコールバックを使うとき，:if/:unless を同じコールバックに同時に使うことができるようになった．
+また複数の条件を Array で渡すことができるようになった．</p>
+
+<pre><code class="language-ruby">before_save :update_credit_rating, :if =&gt; :active, :unless =&gt; [:admin, :cash_only]
+</code></pre>
+
+<ul>
+<li>開発者:L. Caviola</li>
+</ul>
+
+<p>##HAVING 付きの find
+Rails は find メソッドで :having を扱えるようになった(has_may や has_and_belongs_to_many でも同様)．これはグループ化によるフィルタリングを可能にする．</p>
+
+<pre><code class="language-ruby">developers = Developer.find(:all, :group =&gt; &quot;salary&quot;, :having =&gt; &quot;sum(salary) &gt; 10000&quot;, :select =&gt; &quot;salary&quot;)
+</code></pre>
+
+<p>###has_many での Hash 指定
+has_many で条件を Hash で指定できるようになった．</p>
+
+<pre><code class="language-ruby">has_many :orders, :conditions =&gt; {:status =&gt; 'confirmed'}
+</code></pre>
+
+<p>これは Rails 2.1 では動作していたが，Rails 2.2 では動かなくなっていた．そして Rails 2.3 で復活した(Rails 2.1 では Hash ではなく String)．</p>
+
+<ul>
+<li>開発者:<a href="http://www.spacevatican.org/">Frederick Cheung</a></li>
+</ul>
+
+<p>###MySQL接続への再接続
+MySQL はその接続において再接続フラグをサポートしている．これが true だと，クライアントは前の接続が切断される前にサーバへ再接続を試みる．Rails 2.3 ではこれを設定することができるようになった．デフォルトでは false なので，既存のアプリへの影響はない．</p>
+
+<ul>
+<li>開発者:<a href="http://twitter.com/dubek">Dov Murik</a></li>
+<li>参考:
+
+<ul>
+<li><a href="http://dev.mysql.com/doc/refman/5.0/en/auto-reconnect.html">Controlling Automatic Reconnection Behavior</a></li>
+<li><a href="http://groups.google.com/group/rubyonrails-core/browse_thread/thread/49d2a7e9c96cb9f4">MySQL auto-reconnect revisited</a></li>
+</ul></li>
+</ul>
+
+<p>###他の Active Record 周りの変更</p>
+
+<ul>
+<li>has_and_belongs_to_many の場合の余分な AS (alias)を削除した．</li>
+<li>ActiveRecord::Base#new_record? は既存レコードの場合に，nil ではなく false を返すようになった．</li>
+<li>has_many :through でのテーブル名クォートのバグが解消された．</li>
+<li>updated_at の値を指定できるようになった．</li>
+</ul>
+
+<pre><code class="language-ruby">cust = Customer.create(:name =&gt; &quot;ABC Industries&quot;, :updated_at =&gt; 1.day.ago)
+</code></pre>
+
+<ul>
+<li>find_by_attribute! メソッドのエラーメッセージを改善した．</li>
+<li>Active Record の to_xml に :camelize オプションを追加して，よりフレキシブルに．</li>
+<li>before_update/before_create コールバックをキャンセルに関するバグを解消した．</li>
+<li>JDBC 経由のデータベーステスト Rake task を追加した．</li>
+<li>validates_length_of にて :in/:within があった場合に指定したエラーメッセージを使うようになった．</li>
+</ul>
+
+<p>##Action Controller
+今回のリリースでは，Action Controller におけるレンダリングに関する変更は，ルーティングや他の変更と同じぐらい重要なものとなっている．</p>
+
+<p>###統一されたレンダリング
+ActionController::Base#reder は何をレンダリングするかをスマートに決定するようになった．何をレンダリングするか指示すれば，それが正しく返る．Rails 2.3 以前は，render する情報を明確に与える必要があった．</p>
+
+<pre><code class="language-ruby">render :file =&gt; '/tmp/random_file.erb'
+render :template =&gt; 'other_controller/action'
+render :action =&gt; 'show'
+</code></pre>
+
+<p>Rails 2.3 では，何をレンダリングしたいかを指示するだけでいい．</p>
+
+<pre><code class="language-ruby">render '/tmp/random_file.erb'
+render 'other_controller/action'
+render 'show'
+render :show
+</code></pre>
+
+<p>Rails はファイル・テンプレート・アクションを，引数のスラッシュなどから何をレンダリングすべきかを選択する．アクションの場合は String ではなく Symbol も使える．古い形式も使えるが，明示的にオプションを指定しなければならない．</p>
+
+<p>###Application Controller の名前変更
+もし application.rb だけ特別なネーミングなので困っていたのなら喜んでほしい．Rails 2.3 では application_controller.rb に変更される．加えて，rake rails:update:application_controller という新しい rake task が追加されるので，これを使って自動的に名前を変更できる．これは rails:update の処理の一部だ．</p>
+
+<ul>
+<li>参考
+
+<ul>
+<li><a href="http://afreshcup.com/2008/11/17/rails-2x-the-death-of-applicationrb/">The Death of Application.rb</a></li>
+<li><a href="http://ryandaigle.com/articles/2008/11/19/what-s-new-in-edge-rails-application-rb-duality-is-no-more">What’s New in Edge Rails: Application.rb Duality is no More</a></li>
+</ul></li>
+</ul>
+
+<p>###HTTP Digest Authentication のサポート
+Rails 2.3 から HTTP digest Authentication をサポートする．利用するには authenticate_or_request_with_http_digest をユーザのパスワードを返すようなブロック付きで呼び出せばいい．(パスワードはハッシュ化されていて，クレデンシャルと比較されている．)</p>
+
+<pre><code class="language-ruby">class PostsController &lt; ApplicationController
+  Users = {&quot;dhh&quot; =&gt; &quot;secret&quot;}
+  before_filter :authenticate
+
+  def secret
+    render :text =&gt; &quot;Password Required!&quot;
+  end
+
+  private
+  def authenticate
+    realm = &quot;Application&quot;
+    authenticate_or_request_with_http_digest(realm) do |name|
+      Users[name]
+    end
+  end
+end
+</code></pre>
+
+<ul>
+<li>開発者:<a href="http://www.kellogg-assoc.com/">Gregg Kellogg</a></li>
+<li>参考:<a href="http://ryandaigle.com/articles/2009/1/30/what-s-new-in-edge-rails-http-digest-authentication">What’s New in Edge Rails: HTTP Digest Authentication</a></li>
+</ul>
+
+<p>###より効率的なルーティング
+Rails 2.3 では重要なルーティングの変更が2つある．まず :format オプションの解析を止められるようになった．これにより，ルートの生成処理が 50% 削減された．その結果かなりの量のメモリを削減できた(大きなアプリだと 100MB 程度)．もし format helper を使っているなら，また使うことはできるのだが，そのうち使えなくなるし，新しく書き換えることでアプリケーションはより効率的に動作するようになる．もう一つの大きな変更は，複数のルーティングファイルのサポートだ．RouteSet#add_configuration_file を使うことで，同時により多くのルートファイルを扱うことができる．既に読み込まれたルート情報をクリアしなくても大丈夫．この変更は Engine にとってはかなり有用である一方，アプリケーションで使うにはバッチでルートファイルを読み込む必要がある．</p>
+
+<ul>
+<li>開発者:[:title=Aaron Batalion]</li>
+</ul>
+
+<p>###Rack ベースの遅延ロードセッション
+Action Controller の session ストレージが Rack レベルまで押し下げられた．これはかなりのコードの変更があったが，Rails アプリからは完全に透過な状態となっている<sup class="footnote-ref" id="fnref:CGI"><a rel="footnote" href="#fn:CGI">0</a></sup>．これは重要だが一つの単純な理由による．それは Rails ではない Rack アプリが同じセッションを見れるようにするためだ．加えて，セッションが遅延ロードされることになった(in line with the loading improvements to the rest of the framework)．つまりセッションを使わないときに明示的に disable にする必要がなくなったということだ．参照しなければ，ロードもされない．</p>
+
+<p>###MIME タイプの処理方法変更
+Rails 2.3 では，MIME 処理方法について2つの変更がある．
+最初は MIME::Type に =~ 演算子を導入して，検証をよりわかりやすくできるようにした．</p>
+
+<pre><code class="language-ruby">if content_type &amp;&amp; Mime::JS =~ content_type
+  # do something cool
+end
+
+Mime::JS =~ &quot;text/javascript&quot;        =&gt; true
+Mime::JS =~ &quot;application/javascript&quot; =&gt; true
+</code></pre>
+
+<p>もう一方の変更は，JavaScript の検出に Mime::JS を使うようになったことだ．</p>
+
+<ul>
+<li>開発者:<a href="http://www.workingwithrails.com/person/5510-seth-fitzsimmons">Seth Fitzsimmons</a></li>
+</ul>
+
+<p>###respond_to の最適化
+Rails-Merb チームの合流による最初の果実は，Rails 2.3 が respond_to の最適化を含んでいることだろう．それはもちろんリクエストの MIME 型に応じて結果を整形することができる，多くの Rails アプリケーションで使われている．method_missing の呼び出しを削除，プロファイリングと微調整により，3種類のフォーマットを切り替える respond_to への単純な呼び出しのパフォーマンスが 8% 向上した．いいところは？アプリ側のコードを書き換えること無く，高速化できることだ．</p>
+
+<p>###キャッシュパフォーマンスの改善
+Rails 2.3 ではリクエストごとのローカルキャッシュを保存するようになった．不必要な読み込みを抑え，サイトのパフォーマンスを向上させる．当初は MemCacheStore に限定されていたが，必要なメソッドが実装されているあらゆる保存先を選べるようになった．</p>
+
+<ul>
+<li>開発者:<a href="http://www.motionstandingstill.com/">Nahum Wild</a></li>
+</ul>
+
+<p>###Viewのローカライズ
+Rails 2.3 では，迫っていされた locale に応じて，ローカライズされた View を表示できる．例えば，Posts controller に show action があるしよう．デフォルトでは，app/views/posts/show.html.erb をレンダリングする．もし I18n.locale = :da と設定すれば，app/views/posts.show.da.html.erb をレンダリングするようになる．ローカライズされたテンプレートが無い場合は，デフォルトのものが使われる．Rails に I18n#available_locales と I18n::SimpleBackend#available_locales が追加され，有効な locale の Array が帰ってくる．</p>
+
+<p>###その他の Action Controller の変更</p>
+
+<ul>
+<li>ETag 処理を少しだけ整理した．Rails 2.3 は response body が無いか send_file でファイルを送信するときには，ETag ヘッダーをスキップするようになった．</li>
+<li>携帯サイトのプロキシーは一般的に正しく設定されていないので，Rails が IP spoofing をチェックする事実は厄介なものになる．そんなときは，ActionController::Base.ip_spoofing_check = false に設定すれば，チェックを無効にできる．</li>
+<li>ActionController::Dispatcher はミドルウェアスタックとして実装された．rake middleware でそれを見ることができる．</li>
+<li>サーバ側の保存との API 互換性のために，Cookie セッションが永続的なセッション識別子を持つようになった．</li>
+<li>以下のように，send_data/send_fila のオプションに Symbol を設定可能となった．</li>
+</ul>
+
+<pre><code class="language-ruby">send_file(&quot;fabulous.png&quot;, :type =&gt; :png)
+</code></pre>
+
+<ul>
+<li>map.resources では，:only/:except はネストしたりソースには継承されなくなった．</li>
+</ul>
+
+<p>##Action View
+Rails 2.3 の Action View はネストされたモデルのモームや，レンダリングの改善，
+日付選択ヘルパーのフレキシブルな表示，そしてキャッシュの高速化などがある．</p>
+
+<p>###ネストされたモデルのフォーム
+(Active Record の項目で議論したが)親モデルが子モデルの属性を受け取ることができるので，form_for や field_for を使ってネストしたフォームを作成することができる．このフォームは任意の深さまでネストすることができ，少ないコードで複雑なヒエラルキーのフォームを扱うことができる．例えば次のような場合，</p>
+
+<pre><code class="language-ruby">class Customer &lt; ActiveRecord::Base
+  has_many :orders
+
+  accepts_nested_attributes_for :orders, :allow_destroy =&gt; true
+end
+</code></pre>
+
+<p>Rails 2.3 では View を以下のように書くことができる．
+&gt;|html+erb|
+&lt;% form_for @customer do |customer_form| %&gt;
+  <div>
+    &lt;%= customer_form.label :name, &lsquo;Customer Name:&rsquo; %&gt;
+    &lt;%= customer_form.text_field :name %&gt;
+  </div>
+  <!-- Here we call fields_for on the customer_form builder instance.
+       The block is called for each member of the orders
+       collection. -->
+  &lt;% customer_form.fields_for :orders do |order_form| %&gt;
+    <p>
+      <div>
+        &lt;%= order_form.label :number, &lsquo;Order Number:&rsquo; %&gt;
+        &lt;%= order_form.text_field :number %&gt;
+      </div>
+      <!-- The allow_destroy option in the model enables deletion of child records. -->
+      &lt;% unless order_form.object.new_record? %&gt;
+        <div>
+          &lt;%= order_form.label :_delete, &lsquo;Remove:&rsquo; %&gt;
+          &lt;%= order_form.check_box :_delete %&gt;
+        </div>
+      &lt;% end %&gt;
+    </p>
+  &lt;% end %&gt;
+  &lt;%= customer_form.submit %&gt;
+&lt;% end %&gt;
+||&lt;</p>
+
+<ul>
+<li>開発者:<a href="http://www.superalloy.nl/blog/">Eloy Duran</a></li>
+<li>参考
+
+<ul>
+<li><a href="http://weblog.rubyonrails.org/2009/1/26/nested-model-forms">Nested Model Forms</a></li>
+<li><a href="http://github.com/alloy/complex-form-examples/tree/nested_attributes">complex-form-examples</a></li>
+<li><a href="http://ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes">What’s New in Edge Rails: Nested Object Forms</a></li>
+</ul></li>
+</ul>
+
+<p>###スマートな partial レンダリング
+render メソッドは旧来に比べてかなりスマートになった．もしオブジェクトかコレクションと適切な partial template があって，その名前がマッチしていれば，オブジェクトなどを適切にレンダリングできる．例えば Rails 2.3 では次の用に書ける．</p>
+
+<pre><code class="language-ruby">render @article
+# Equivalent of render :partial =&gt; 'articles/_article', :object =&gt; @article
+render @articles
+# Equivalent of render :partial =&gt; 'articles/_article', :collection =&gt; @articles
+</code></pre>
+
+<ul>
+<li><a href="http://ryandaigle.com/articles/2008/11/20/what-s-new-in-edge-rails-render-stops-being-high-maintenance">What’s New in Edge Rails: render Stops Being High-Maintenance</a></li>
+</ul>
+
+<p>###日付選択ヘルパーのプロンプト
+Rails 2.3 では様々な日付選択ヘルパーの表示を，select に配列を渡したときと同じようにカスタマイズできる．プロンプトを，文字列や複数の属性があるときには Hash で指定できる．また :prompt に true を設定すれば，一般的な :prompt を使うことができる．</p>
+
+<pre><code class="language-ruby">select_datetime(DateTime.now, :prompt =&gt; true)
+
+select_datetime(DateTime.now, :prompt =&gt; &quot;Choose date and time&quot;)
+
+select_datetime(DateTime.now, :prompt =&gt; {:day =&gt; 'Choose day', :month =&gt; 'Choose month', :year =&gt; 'Choose year', :hour =&gt; 'Choose hour', :minute =&gt; 'Choose minute'})
+</code></pre>
+
+<ul>
+<li>開発者<a href="http://samoliver.com/">Sam Oliver</a></li>
+</ul>
+
+<p>###AssetTag のタイムスタンプキャッシュ(AssetTag Timestamp Caching)
+キャッシュを使わないようにするために URL にタイムスタンプを追加したりするのはよくある．これにより，サーバ上で画像やスタイルシートなどを変更した際，ブラウザにキャッシュを使わずにサーバからデータを取得させることができる．Rails 2.3 ではこの振る舞いを Action View の cache_asset_timestamps で変更することができる．もしキャッシュを有効にすれば，Rails はそのリソースを最初にアクセスした時間を計算し，その時間を保存する．これは静的ファイルは少数しかサーバから配信されないことを意味する．しかしこれはまた，サーバの動作中はリソースを変更できないということであり，クライアントが変更を取得できないということである．</p>
+
+<p>###ホストをオブジェクトとして扱う
+Edge Rails ではよりフレキシブルにレスポンスを返すホストを定義することができるようになった．これはホスト資源に応じて選択ロジックを実装することができる．</p>
+
+<ul>
+<li>参考:<a href="http://github.com/dhh/asset-hosting-with-minimum-ssl/tree/master">asset-hosting-with-minimum-ssl</a><sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">2</a></sup></li>
+</ul>
+
+<p>###grouped_options_for_select ヘルパー
+いままでも select タグのための多くのヘルパーがあったが，今回もう一つ grouped_options_for_select が追加された．
+これは String の Hash や Array を受け取って optgroup/option タグを生成してくれる．
+例えば，</p>
+
+<pre><code class="language-ruby">grouped_options_for_select([[&quot;Hats&quot;, [&quot;Baseball Cap&quot;,&quot;Cowboy Hat&quot;]]], &quot;Cowboy Hat&quot;, &quot;Choose a product...&quot;)
+</code></pre>
+
+<p>は</p>
+
+<pre><code class="language-ruby">&lt;option value=&quot;&quot;&gt;Choose a product...&lt;/option&gt;
+&lt;optgroup label=&quot;Hats&quot;&gt;
+  &lt;option value=&quot;Baseball Cap&quot;&gt;Baseball Cap&lt;/option&gt;
+  &lt;option selected=&quot;selected&quot; value=&quot;Cowboy Hat&quot;&gt;Cowboy Hat&lt;/option&gt;
+&lt;/optgroup&gt;
+</code></pre>
+
+<p>となる．</p>
+
+<p>###その他の Action View の変更</p>
+
+<ul>
+<li>CSRF 対策のトークン生成がよりシンプルになった．セッションIDをどうこうするよりも，ActiveSupport::SecureRandom により生成されるシンプルなランダムも字列を使う．</li>
+<li>auto_link は，e-mail リンクを生成するのに適切に(:target/:class のような)オプションを適用するようになった．</li>
+<li>auto_link ヘルパーが綺麗に直感的にリファクタリングされた．</li>
+</ul>
+
+<p>##Active Support
+Active Support にはおもしろい変更，とくに Object#try がある．</p>
+
+<p>###Object#try
+多くの人が try() という記法を，オブジェクトに対してメソッドを「試みる」処理として受け入れている．これは特に View で便利で，&lt;%= @person.try(:name) -%&gt; のように書くことで nil チェックをしなくても済む．よしこれで Rails は焼き上がった<sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">3</a></sup>．ただし実装されたとしても，private メソッドは NoMethodError になるし，nil の場合はいつも nil が返る．</p>
+
+<ul>
+<li>参考:<a href="http://ozmm.org/posts/try.html">try()</a></li>
+</ul>
+
+<p>###Object#tap のバックポート
+Object#tap は <a href="http://www.ruby-doc.org/core-1.9/classes/Object.html#M000309">Ruby 1.9</a> や Ruby 1.8.7 で追加されたもので，ブロックを実行し生成されたオブジェクトを返すメソッドだ．Rails 2.3 ではこれを Ruby 1.8.7 以前でも動作するようにして取り込んだ．</p>
+
+<p>###TimeWithZone で1秒以下を扱うように
+Time/TimeWithZone クラスには時間を XML にやさしい文字列で返す xmlschema メソッドがある．
+Rails 2.3 では TimeWithZone が秒以下の単位をサポートするようになった．
+桁数を指定可能で，例えば以下のようになる．</p>
+
+<pre><code class="language-ruby">&gt;&gt; Time.zone.now.xmlschema(6)
+=&gt; &quot;2009-01-16T13:00:06.13653Z&quot;
+</code></pre>
+
+<ul>
+<li>開発者:<a href="http://www.workingwithrails.com/person/13536-nicholas-dainty">Nicholas Dainty</a></li>
+</ul>
+
+<p>###JSON キーのクオート
+json.org で仕様を見ると，すべての JSON のキーは文字列であり，ダブルクオートで括られなければならないことがわかる．Rails 2.3 からは，数値のキーでもダブルクオートで括るようになる．</p>
+
+<p>###Active Support の他の変更</p>
+
+<ul>
+<li>ブロックでマッチした要素がないかどうかをチェックする Enumerable#none? が追加された．</li>
+<li>Active Support の移譲を使うとき，新しく :allow_nil オプションを使えるようになった．このオプションが設定されていると，オブジェクトが nil の場合に例外を出すのではなく， nil を返すようになる．</li>
+<li>ActiveSupport::OrderedHash が each_key と each_value でサポートされた．</li>
+<li>ActiveSupport::MessageEncryptor によってクッキーのような信頼性の低い場所に情報を保存するための，簡単な暗号化を提供する．</li>
+<li>Active Support の from_xml メソッドはもはや XmlSimple には依存していない．かわりに Rails は XmlMini の実装を取り込んでいる．これにより，Rails は XmlSimple が無くても動作するようになった．</li>
+</ul>
+
+<p>##Railties
+前述した Rack 対応に加えて，Railties(Rails のコアの部分)にも多くの重要な変更がある．Rails Metal やアプリケーションテンプレート，静かなバックトレースなどだ．</p>
+
+<p>###Rails Metal
+Raile Metal は Rails アプリに高速コントローラーを提供する機構である．Metal クラスはルーティングと Action Contoller の処理をパスしてスピードを稼ぐことができる．これは Rails をミドルウェアスタックとして Rack アプリケーションに対応したことによる．</p>
+
+<ul>
+<li>参考:
+
+<ul>
+<li><a href="http://weblog.rubyonrails.org/2008/12/17/introducing-rails-metal">Introducing Rails Metal</a></li>
+<li><a href="http://soylentfoo.jnewland.com/articles/2008/12/16/rails-metal-a-micro-framework-with-the-power-of-rails-m">Rails Metal: a micro-framework with the power of Rails</a></li>
+<li><a href="http://www.railsinside.com/deployment/180-metal-super-fast-endpoints-within-your-rails-apps.html">Metal: Super-fast Endpoints within your Rails Apps</a></li>
+<li><a href="http://ryandaigle.com/articles/2008/12/18/what-s-new-in-edge-rails-rails-metal">What’s New in Edge Rails: Rails Metal</a></li>
+</ul></li>
+</ul>
+
+<p>###アプリケーションテンプレート
+Rails 2.3 は Jeremy McAnally のアプリケーションジェネレーター <a href="http://github.com/jeremymcanally/rg/tree/master">rg</a>を取り込んだ．これは Rails にテンプレートベースのアプリケーションジェネレーターが導入されたと言うことだ．もしいつもアプリケーションにセットアップしているようなプラグインがあるのなら，テンプレートを1度だけ設定すれば，rails コマンドを使うときに何度でもそれを使うことができる．既存のアプリケーションにテンプレートを適用するための rake task もある．</p>
+
+<pre><code class="language-ruby">rake rails:template LOCATION=~/template.rb
+</code></pre>
+
+<p>これは既存のコードの上にテンプレートの変更を重ねることになる．</p>
+
+<ul>
+<li>開発者:<a href="http://www.jeremymcanally.com/">Jeremy McAnally</a></li>
+<li>参考:<a href="http://m.onkey.org/2008/12/4/rails-templates">Rails templates</a></li>
+</ul>
+
+<p>###静かなバックトレース
+Test::Unit のバックトレース部分を取り除ける Thoughtbot の <a href="http://www.thoughtbot.com/projects/quietbacktrace">Quiet Backtrace</a>プラグインを取り込んで，Rails 2.3 は ActiveSupport::BacktraceCleaner と Rails::BacktraceCleaner をコア部分に実装した．これはフィルター(バックトレースを正規表現に従って置換する)とサイレンサー(バックトレースを完全に取り除く)の両方をサポートする．Rails は新しいアプリケーションでのもっとも一般的なノイズを取り除くためにサイレンサーを自動的に追加し，config/backtrace_silencers.rb を追加する．これによりバックトレースであらゆる gem からの表示を見やすくしてくれる<sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">4</a></sup>．</p>
+
+<p>###遅延ロード／オートロードによる development 環境における起動の高速化
+Rails(とそれに依存しているもの)の一部のみが必要になったときにメモリに読み込まれるという，極めて小さな仕事がなされた．フレームワークのコア部分(Active Support/Active Record/Action Controller/Action Mailer/Action View)はそれぞれのクラスを遅延ロードするためにオートロードが使われる．これはメモリ少量を削減し，全体的な Rails のパフォーマンスを改善する．</p>
+
+<p>また(preload_frameworks オプションを使うことで)起動時にどのコアライブラリをロードするかを指定することができる．これはデフォルトでは false なので，Rails は一つずつ読み込んでいくが，1度にすべてを読み込む必要がある状況もある．たとえば Passenger/JRuby は Rails のすべてが一緒にロードされることが求められる．</p>
+
+<p>###他の Railties の変更</p>
+
+<ul>
+<li>Rails をビルドするために CI サーバをアップデートする説明を更新した．</li>
+<li>Rails 内部のテストを Test::Unit::TestCase から ActiveSupport::TestCase に変更し，Rails コア部分はテストに Mocha を必要としている．</li>
+<li>デフォルトの environment.rb が整理された．</li>
+<li>dbconsole スクリプトですべて数値のパスワードを使ってもクラッシュしなくなった．</li>
+<li>Rails.root が Pathname オブジェクトを返すので，File.join を使ってパス名部分を整理できる．</li>
+<li>CGI/FCGI のディスパッチで扱われる /public 以下の多くのファイルが，デフォルトでは生成されなくなった(&ndash;with-dispatches オプションで生成することができるし，rails:generate_dispatchers で追加することもできる．)．</li>
+</ul>
+
+<p>##廃止予定
+古いコードのいくつかがこのリリースで廃止予定となる．</p>
+
+<ul>
+<li>inspector/reaper/spawner スクリプトに依存するような書き方で開発しているのなら，これらのスクリプトは Rails にはもはや含まれないことを知る必要がある．必要であれば<a href="http://github.com/rails/irs_process_scripts/tree">irs_process_scripts</a>プラグインを使おう．</li>
+<li>render_component は Rails 2.3 では &ldquo;廃止予定&rdquo; から &ldquo;存在しない&rdquo; になった．もし必要なら，<a href="http://github.com/rails/render_component/tree/master">render_component</a>プラグインをインストールしてほしい．</li>
+<li>Rails コンポーネントのサポートはなくなった．</li>
+<li>もし統合テストでパフォーマンスを見るために script/performance/request を使っていたのなら，このスクリプトが Rails からなくなったことを知る必要がある．新しい request_profiler プラグインをインストールすれば，全く同じ機能を取り戻すことができる．</li>
+<li>セッションが遅延ロードされることになったので，ActionController::Base#session_enabled? は廃止予定になった．</li>
+<li>protect_from_forgery の :digest/:cecret オプションは廃止予定となり，効果がなくなる．</li>
+<li>いくつかの統合テストヘルパーが削除された．response.headers[&ldquo;Status&rdquo;] と headers[&ldquo;Status&rdquo;] はもはや何も返さなくなった．しかし status と status_message ヘルパーはまだ使える．response.headers[&ldquo;cookie&rdquo;] と headers[&ldquo;cookie&rdquo;] はもはやどんな CGI Cookie も返さなくなった．headers[&ldquo;Set-Cookie&rdquo;] を調べて生の Cookie 情報を取得するか，クライアントに送信する Cookie の Hash を取得する Cookie ヘルパーを使うことができる．</li>
+<li>formatted_polymorphic_url が廃止予定となった．代わりに polymorphic_url を :format オプション付きで使おう．</li>
+</ul>
+
+<p>##クレジット
+リリースノートは Mike Gunderloy によってコンパイルされた．</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">他のアプリケーションに埋め込み可能な Rails アプリRails アプリ
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:3">例えば SSL と非 SSL のホストを自動的に切り替えられるとか，分散に使えそう？
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:4">Well, now it&rsquo;s baked right into Rails.
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+<li id="fn:5">This feature also enables prettier printing from any gem in the backtrace.
+ <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/02/10/ruby-rails-Ruby-on-Rails-2-3/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/02/08/ruby-rails-Rails-Flare-TokyoTyrant-TokyoCabinet/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/02/08/ruby-rails-Rails-Flare-TokyoTyrant-TokyoCabinet/">Rails から Flare を TokyoTyrant(TokyoCabinet)の様に扱うには</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/02/13/http-codezine-jp-devsumi-2009-title-2009-1/">デブサミ2009 1日目に行ってきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/02/13/http-codezine-jp-devsumi-2009-title-2009-1/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

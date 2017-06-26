@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>NOSQL AFTERNOON JAPAN in Rakuten &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>NOSQL AFTERNOON JAPAN in Rakuten</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/11/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>と言うわけで、先週の11/01に楽天で開催された<a href="" target="_blank">NOSQL AFTERNOON JAPAN</a>に行ってきました。全体的に、もうRDBMSじゃなくてKVSなんだなぁと感じさせるような賑いでした。以下、当日のログを。</p>
+
+<h2 id="hibari-nosql-for-bigdata-gemini-mobile-tech">Hibari/NOSQL for BIGDATA @ Gemini Mobile Tech.</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Function programing world conference will hold at Japan&lt;/li&gt;
+
+  &lt;li&gt;About Gemini&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Products&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;MMSC for Japanese mobile carriers&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;2010/07 Hibari open source&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;@geminimobile&lt;/li&gt;
+
+  &lt;li&gt;@hibaridb&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="hibari">Hibari</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;for GB mailbox webmail&lt;/li&gt;
+
+  &lt;li&gt;chain-replication&lt;/li&gt;
+
+  &lt;li&gt;good performance for read big data&lt;/li&gt;
+
+  &lt;li&gt;Linux distribusion supported&lt;/li&gt;
+
+  &lt;li&gt;Erlang/OTP R13B03&lt;/li&gt;
+
+  &lt;li&gt;supports Amazon S3, JSON, native Erlang client API&lt;/li&gt;
+
+  &lt;li&gt;&quot;read-optimized&quot;&lt;/li&gt;
+
+  &lt;li&gt;Admin server&lt;/li&gt;
+
+  &lt;li&gt;Why NoSQL?&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;necessary to support TB data&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;for webmail&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;needs&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Durability, Strong Consistensy, Low Latency, High Avalilabirity&lt;/li&gt;
+
+          &lt;li&gt;Heavy READ&lt;/li&gt;
+
+          &lt;li&gt;Big DATA&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Features&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;fsync()&lt;/li&gt;
+
+          &lt;li&gt;Chain Replication&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;Chain order : Head -&gt; Middle -&gt; Tail&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;Keys serves to Multi-servers&lt;/li&gt;
+
+          &lt;li&gt;Automatic rehashing (Fault Tolerance)&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Benchmarking&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Hibari Stub&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;150k ~ 30ms latency&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Hibari and Cassandra&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Hibari : 150k ~ 70ms&lt;/li&gt;
+
+          &lt;li&gt;Cassandra : 100k ~ 70ms&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Langurage Barrier&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Java &lt;-&gt; Erlang&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Roadmap&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Thrift API&lt;/li&gt;
+
+      &lt;li&gt;Hadoop API&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Admin server's availability&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;hot stand-by&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;CAP 定理でどれが重要か&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;いまはいい答えができない&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Erlang にパッチを当てないといけないのか？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;????&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Chain Replication はどの単位？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;key-value group&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Key, Value の最大値は？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;特にないが、各値がサーバのメモリで処理できるかどうか&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="summary">Summary</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;読み込みに特化した KVS&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;特に巨大なデータの読み込みに特化している&lt;/li&gt;
+
+      &lt;li&gt;携帯ウェブメールとかSNSとか&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;オンメモリで動作している模様&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="cap-定理について">CAP 定理について</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;どれに特化するかはもちろん場合によりけりなので、一概に言い答えを出すことはできない&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="okuyama-kobe-digital-labo">Okuyama @ Kobe Digital Labo</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Name from Okuyama Drive-way&lt;/li&gt;
+
+  &lt;li&gt;made by Java&lt;/li&gt;
+
+  &lt;li&gt;for small data&lt;/li&gt;
+
+  &lt;li&gt;Persisitence, Network, Replication&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Master nodes -&gt; Data Notes (x3)&lt;/li&gt;
+
+      &lt;li&gt;Persistence&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Memory, Disk, Disk+Memory&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Network&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Original Protocol, Memcached(not CAS), HTTP(get only)&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Redundancy / Avalilability&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Data stored by Multi servers&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Persisntent Mechanism&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Memory -&gt; Fastest mode&lt;/li&gt;
+
+      &lt;li&gt;Disk -&gt; Key and Value have saved in separeted files&lt;/li&gt;
+
+      &lt;li&gt;Diska and Memory&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Type 1 : Save to file&lt;/li&gt;
+
+          &lt;li&gt;Type 2 : Save to file, and keys stored in memory&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Network&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Queueing system&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Original Features&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Tagged value&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;multi key?&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;JavaScript run in Data Nodes&lt;/li&gt;
+
+      &lt;li&gt;Data locking&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Locking time&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a-1">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;タグで指定する場合のスピードの差は？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;キーで指定するよりも倍程度かかる&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Disk mode の用途は？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;低スペックで扱いたい場合に&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Master / Data Notes のスケーラビリティは&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Data note を増やせば上昇する&lt;/li&gt;
+
+      &lt;li&gt;Master node は stand-by のみでスケーラビリティはまだない&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="summary-1">Summary</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;小さなデータを扱うことに特化している&lt;/li&gt;
+
+  &lt;li&gt;タグが特徴的で、それで性能劣化が低い状況下であれば良さそう&lt;/li&gt;
+
+  &lt;li&gt;問題は scalability と availability で、その部分がまだ不十分というか、未検証かなという感じ&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="introduction-to-apache-cassandra">Introduction to Apache Cassandra</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;by @zznate&lt;/li&gt;
+
+  &lt;li&gt;Casanndra -&gt; Inbox Search -&gt; Amazon Dynamo's clustering infrastructure and BigTable' data model&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="cassandra">Cassandra</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Scaling&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Scaling up by adding data hosts, and separete keys into added and exist hosts&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Reliablitiy&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;データはいくつかのホストに分散保存しているので、障害体制がある&lt;/li&gt;
+
+      &lt;li&gt;またホストが落ちたときも、すぐに再生できることができる&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Tunable Consistency&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Select consistency level&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Flexible Data Mode&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Not a Key/Value store&lt;/li&gt;
+
+      &lt;li&gt;Column famiries like BigTable or Dynamo&lt;/li&gt;
+
+      &lt;li&gt;Super columns&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;column grouping&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;apple -&gt; colA, colFoo, fram in key &quot;a&quot;&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Supports secondary index in Version 7&lt;/li&gt;
+
+  &lt;li&gt;Analytics&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Hadoop Data Locality&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;MapReduce runs each Data Note&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Monitoring&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Graphical UI interface&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Community: Clinet Library&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Pythin/Java/Ruby/.NET/PHP(new!)&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Add-ons&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Lucandra: Lucenne + Cassandra for full text search&lt;/li&gt;
+
+      &lt;li&gt;Munin configuration&lt;/li&gt;
+
+      &lt;li&gt;Chef recipes&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Riptano&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Supports and Training&lt;/li&gt;
+
+      &lt;li&gt;Clustering Visualizing Tools&lt;/li&gt;
+
+      &lt;li&gt;Administration Tools&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a-2">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Compaction Problem : More memory and CPU usage&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Need to configure and tuning parameters, so resolve such problem&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;???&lt;/li&gt;
+
+  &lt;li&gt;Range ???(25件取得するために10000件なめる必要があるときがある)&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;状況にによりけりだが、Secondary index で解決できるのではないだろうか&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Avro or Slate for searlization format&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Not Avro, but Slate&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;ノードの障害時に、隣接するノードに対する負荷が上昇して、さらに障害が発生する、と言う連鎖に対する解決方法は？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;適切な設計をすればいいのではないだろうか&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;適切な性能計画、サーバの選定などを行う必要がある&lt;/li&gt;
+
+          &lt;li&gt;Amazon EC2 2台で10万リクエストとか厳しいでしょ？&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;I/O QPS に対応するかどうか&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Slate Priority in Version 0.7&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="summary-2">Summary</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Hadoop 使うには良さそう&lt;/li&gt;
+
+  &lt;li&gt;何が特徴かがこのプレゼンでは不明だったので、あとで調べる&lt;/li&gt;
+
+  &lt;li&gt;書き込み性能重視にしている&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="roma-user-customizable-nosql-database-in-ruby">ROMA - User-Customizable NoSQL Database in Ruby</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;ROMA is development in Rakuten&lt;/li&gt;
+
+  &lt;li&gt;ROMA used by Rakuten services&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;session data, personal page view history&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;ex)&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Rakuten travel&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;page view history&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;ROMA features&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;High Availability / Scalability&lt;/li&gt;
+
+      &lt;li&gt;Fault-tolerance&lt;/li&gt;
+
+      &lt;li&gt;Better throughput&lt;/li&gt;
+
+      &lt;li&gt;Plugin Architecture&lt;/li&gt;
+
+      &lt;li&gt;DSL&lt;/li&gt;
+
+      &lt;li&gt;Technology&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Consistency Hashing, Virtual Node, Chain-replication, lamport clock&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Access to data&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;client -&gt; some nodes&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;returns node ID which stores such data&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Chain-Replication to N nodes&lt;/li&gt;
+
+  &lt;li&gt;Message Protocol&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Extended Memcached Protocol&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Failure Detection&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;heartbeat/1 sec&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;plugin features&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a-3">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Ruby の GC は気にならないか？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;ボトルネックは I/O なので、そこは気にならない&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;基本的な script は公開されていたりするのか？基本的な script をライブラリとして提供してはどうか？という提案&lt;/li&gt;
+
+  &lt;li&gt;Licence&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;GPL v3&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Why Ruby ?&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Matz driven development&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="tokyo-tech-の-nakamura-さん">Tokyo Tech の Nakamura さん</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;飛び入り&lt;/li&gt;
+
+  &lt;li&gt;Cassandra = Dynamo + Bigtable&lt;/li&gt;
+
+  &lt;li&gt;Cassandra の SSTable を MySQL のストレージエンジンに変えてみた&lt;/li&gt;
+
+  &lt;li&gt;JDBC 経由で MySQL にアクセスするだけ&lt;/li&gt;
+
+  &lt;li&gt;Future Work&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;MySQL と Cassandra のいいところ取りした NoSQL プラットフォームのようなものを作りたい&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="mongodb-10gen">MongoDB @ 10gen</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;@rogerb&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="mongodb">MongoDB</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;@mongodb&lt;/li&gt;
+
+  &lt;li&gt;90000 downloads per month&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;growing&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;production usages&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;forsquare&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Implemented by C++&lt;/li&gt;
+
+  &lt;li&gt;32/64bit Windows, Linux, MacOS X, FreeBSD, Solaris&lt;/li&gt;
+
+  &lt;li&gt;Ruby/Rails/Java/C#/JavaScript/C/C++/Erlang/Pythin/Perl/etc.&lt;/li&gt;
+
+  &lt;li&gt;NoSQL&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;non-relational, next-generation operational datastores and databases&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;no joins + no complex transcations&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Horizontally Scalable Architectures&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;New Data Model&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Terminology&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Table -&gt; Collection&lt;/li&gt;
+
+          &lt;li&gt;Row -&gt; JSON Document&lt;/li&gt;
+
+          &lt;li&gt;Index -&gt; Index&lt;/li&gt;
+
+          &lt;li&gt;Join -&gt; Embedding &amp; Linking&lt;/li&gt;
+
+          &lt;li&gt;Partition -&gt; Shared&lt;/li&gt;
+
+          &lt;li&gt;Partition key -&gt; Shared key&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;API&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;db.posts.save(JSON Document)&lt;/li&gt;
+
+      &lt;li&gt;db.posts.find #=&gt; JSON Document&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;_id : unique ID&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Index&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;db.posts.ensureIndex({autho: 1}) # 1 -&gt; ASC, -1 -&gt; DESC&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;db.posts.find({author: 'roger'}) #=&gt; JSON document&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Query operators&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;conditional operators : $exists, $size, $type, $lt, $gt, ...&lt;/li&gt;
+
+          &lt;li&gt;Regexp search&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;db.posts.find({author: /^k/})&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Extending the Schema&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;update = {'$push' : {comments: comments JSON Document}}&lt;/li&gt;
+
+          &lt;li&gt;db.posts.update(JSON document, update)&lt;/li&gt;
+
+            &lt;ul&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;posts.comments -&gt; Array of comment JSON Document&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Secondary Index&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;db.posts.ensureIndex({&quot;comments.author&quot; : 1})&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;Generate sub-model's index&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Deploying MongoDB&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;1st step&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Read/Write &lt;-&gt; Primary&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;2nd step&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Primary -&gt; Secondary replication&lt;/li&gt;
+
+          &lt;li&gt;Read &lt;- Secondary&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;3rd step&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Secondary -&gt; Secondary for Backup&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Read/Write Scalability&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;ReplicaSet&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;Primary / Secondary / Secondary for Backup&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;Key Shading on some ReplicaSet&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Monitoring&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Munin plugins&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;MongoDB makes building applications easy&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Map/Reduce, Capped Collections, Tail-able Cursors, Geo indexing&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a-4">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;どのようにRepicaSetを見つけるのか？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;各Shadeがキーに対応するshadeを知っている？&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Shadingを追加したときの負荷は？ベンチマークは？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;当初はshadingをしないで実装する&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;shade を追加するのは簡単&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;日本での展開は？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;サポート体制を立ち上げる&lt;/li&gt;
+
+      &lt;li&gt;MongoDB Conference を2月に行うかも？&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Availability について&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;データセンター障害の用無い場合でも Primary が落ちても自動的にどれが Primary に適切かを判断して切り替わる&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="summary-3">Summary</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;後発だけあってかなり負荷とかデータモデルを頑張ってる感じ&lt;/li&gt;
+
+  &lt;li&gt;ReplicaSet の追加で shading が勝手に行われるというのはいい感じ&lt;/li&gt;
+
+  &lt;li&gt;データモデルを設計しなくてもいいので、スタートアップ的に作るのに向いている&lt;/li&gt;
+
+  &lt;li&gt;Ruby/Rails との相性がいい&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="kumofs-and-the-messagepack-project">Kumofs and The MessagePack Project</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;kumofs and MessagePack&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="kumofs">kumofs</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Distributed key-value store&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Get, Set, Delete, CAS&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Dymanic Re-balancing&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Not automatically, but dynamic&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Needs&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Manage heavy random reads and writes&lt;/li&gt;
+
+      &lt;li&gt;Low latency&lt;/li&gt;
+
+      &lt;li&gt;Archtectures&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;kumo-manager : node manager&lt;/li&gt;
+
+          &lt;li&gt;kumo-gateway : installed in application server&lt;/li&gt;
+
+          &lt;li&gt;kumo-server : data-store&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;Local Database : TokyoCabine&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="messagepack-messagepack-rpc">MessagePack / MessagePack-RPC</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;MessagePack&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;binary-based object serialization format&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;MessagePack-RPC&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Cross-langurate RPC format&lt;/li&gt;
+
+      &lt;li&gt;Event-driven I/O&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;server&lt;/li&gt;
+
+          &lt;li&gt;clients&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;shared event loop&lt;/li&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;shared server and client&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Production users&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Ameba now&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Apache SoIr + MessagePack&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Sedue&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a-5">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;TokyoCabinet のように一つのキーに複数の値を保存するなどは？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;厳しいです。用途が違うのかな？&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;どういうきっかけでこういうプロジェクトを始めたのか&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;えとらぼの例のあれで作った&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="summary-4">Summary</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;kumo-gateway がサーバ群の構造を隠して分散してくれるのはありがたい&lt;/li&gt;
+
+  &lt;li&gt;バックエンドに TokyoCabinet を使っている&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="relaxing-with-couthdb">RELAXING WITH COUTHDB</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;for beginner&lt;/li&gt;
+
+  &lt;li&gt;schema-free database management sysytem&lt;/li&gt;
+
+  &lt;li&gt;Erlang&lt;/li&gt;
+
+  &lt;li&gt;Top-level Apache project&lt;/li&gt;
+
+  &lt;li&gt;Robust, concurrent, fault-tolerant&lt;/li&gt;
+
+  &lt;li&gt;RESTful JSON API&lt;/li&gt;
+
+  &lt;li&gt;Bi-directional replication&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="couchdb">CouchDB</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;JSON Document&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;MVCC&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;RESTful&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;CRUD&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Suddenly server restarting does't affect CouchDB&lt;/li&gt;
+
+  &lt;li&gt;VIEWS&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Secondary Index&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;INCREMENTAL INDEXES&lt;/li&gt;
+
+  &lt;li&gt;REPLICATION&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;peer-based, bi-directional replication using normal HTTP&lt;/li&gt;
+
+      &lt;li&gt;&quot;ground computing&quot; : offline replication&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;MULTI-COUCH SETUPS&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Master-slave&lt;/li&gt;
+
+      &lt;li&gt;Master-Master&lt;/li&gt;
+
+      &lt;li&gt;Rubust Multi-Master&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;CONFLICTS&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;リビジョン管理により、コンフリクトが発生したときのデータをすべて保存しておける&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="bigcouch">BigCouch</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;&quot;Without the clustering, it's just OuchDB&quot;&lt;/li&gt;
+
+  &lt;li&gt;What is 'Scaling'&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Horizontal Scaling&lt;/li&gt;
+
+      &lt;li&gt;Transparent to the application&lt;/li&gt;
+
+      &lt;li&gt;NO SPOF&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;BigCouch -&gt; Couch + Scaling&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Inspired from Dynamo&lt;/li&gt;
+
+      &lt;li&gt;on github&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Best Practice for BigCouch&lt;/li&gt;
+
+  &lt;li&gt;Fractral Scaling&lt;/li&gt;
+
+  &lt;li&gt;Paraphasing the crowd&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Many cons will be improved, improving&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;External Indexers : CouchDB-Lucene&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;ad-hoc query&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Mobile Couch by CouchOne&lt;/li&gt;
+
+  &lt;li&gt;2GB free account on cloudant&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a-6">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Differences between MongoDB and CouchDB&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;CouchDB : MVCC&lt;/li&gt;
+
+      &lt;li&gt;MongoDB : Update&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;How about Ad hoc query in CouchDB ?&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;CouchDB-Lucene&lt;/li&gt;
+
+      &lt;li&gt;Views&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;pre-processing query&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="summary-5">Summary</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;RESTful APIであるところが特徴&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;HTTP でアクセスするという点が他と違う&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;&quot;ground computing&quot;が革新的かも&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;BigCouch を使えばクラスタリングができるのかな&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Clustering はまだまだという感じ&lt;/li&gt;
+
+          &lt;li&gt;RESTful アクセス以外に弱いのかもしれない&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h2 id="apache-hadoop-and-hbase-cloudera">Apache Hadoop and HBase @ cloudera</h2>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Data is everywhere / Data is important&lt;/li&gt;
+
+  &lt;li&gt;Data analytics is important&lt;/li&gt;
+
+  &lt;li&gt;Are you throwing away data?&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Log/SQL log/etc. are throwed out?&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="hadoop">Hadoop</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;HDFS, Map/Reduce&lt;/li&gt;
+
+  &lt;li&gt;A Typical Look&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;5-4000 comodity servers&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;8-core, 24GB RAM, 4-12TB, gigabit-E)&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Cluster nodes&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Master nodes&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;NameNode for metadata server and database&lt;/li&gt;
+
+          &lt;li&gt;JobTracker for scheduler&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Slave nodes&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Saving file -&gt; Nama node splits a file -&gt; Save each of splitted file data to 3 DataNodes&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="map-reduce">Map/Reduce</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;map, reduce function&lt;/li&gt;
+
+  &lt;li&gt;map&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;(k, v) -&gt; (k', v')&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;reduce&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;(k, v1) , (k, v2) -&gt; (k, v1+v2)&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="hive">Hive</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Add SQL support to Hadoop&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="hbase">HBase</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;open source, distributed, map&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;like BigTable&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;HBase = HDFS + random read/write&lt;/li&gt;
+
+  &lt;li&gt;MVCC of row/colun&lt;/li&gt;
+
+  &lt;li&gt;Consistency over Availability&lt;/li&gt;
+
+  &lt;li&gt;Great Hadoop integration&lt;/li&gt;
+
+  &lt;li&gt;Ordered range partitions&lt;/li&gt;
+
+  &lt;li&gt;Automatically shareds/scales&lt;/li&gt;
+
+  &lt;li&gt;Sparse column storage&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="q-a-7">Q&amp;A</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;HBase はリアルタイムウェブで使える？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;使える。Facebook でもそのうちリリースされる&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Switch について&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;???&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="summary-6">Summary</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Hadoop は大量のデータ処理に向いている&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Hive は Map/Reduce をSQLでやる試み&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;HBase は BigTable のような NoSQL&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/11/08/nosql-afternoon-japan-in-rakuten/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/11/05/emacsscim-skk/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/11/05/emacsscim-skk/">emacsでscim-skkを使わない方法</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/11/22/railsdevcon2010/">RailsDevCon2010を開催しました！</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/11/22/railsdevcon2010/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

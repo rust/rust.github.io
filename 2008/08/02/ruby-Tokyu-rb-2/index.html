@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Tokyu.rb第2回集会 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tokyu.rb第2回集会</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>##目標
+ruby-trunk で edge-rails を動かそうぜ！</p>
+
+<p>##参加者</p>
+
+<ul>
+<li>Rust/OGAWA(conceal-rs)</li>
+<li>cesare</li>
+<li>ginkouno</li>
+<li>Yuumi3</li>
+<li>FUKUDA</li>
+</ul>
+
+<p>##ログ</p>
+
+<ul>
+<li>ruby-trunk の build</li>
+</ul>
+
+<pre><code class="language-bash">% cd ruby-trunk
+% svn up
+% autoconf
+% ./configure --prefix=/usr/local/ruby-pkg/ruby-1.9-trunk
+% make
+% sudo make install
+% sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/ruby /usr/local/bin/ruby1.9
+% sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/gem /usr/local/bin/gem1.9
+% sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/rake /usr/local/bin/rake1.9
+% sudo ln -s /usr/local/ruby-pkg/ruby-1.9-trunk/bin/irb /usr/local/bin/irb1.9
+% rehash
+% ruby1.9 --version
+ruby 1.9.0 (2008-08-01 revision 18249) [i686-linux]
+</code></pre>
+
+<ul>
+<li>edge-rails の clone</li>
+</ul>
+
+<pre><code class="language-bash">% cd edge-rails
+% git clone git://github.com/rails/rails.git
+</code></pre>
+
+<ul>
+<li>とりあえずprojectを作ってみる</li>
+</ul>
+
+<pre><code class="language-bash">% cd ~/program/rails
+% ruby1.9 /path/to/edge-rails/railties/bin/rails ruby-1.9
+% cd ruby-1.9
+</code></pre>
+
+<p>できた．</p>
+
+<ul>
+<li>起動確認</li>
+</ul>
+
+<pre><code class="language-bash">% ruby1.9 script/server
+/home/rust/program/rails/ruby-1.9/config/boot.rb:86:in `load_rubygems': undefined method `&gt;=' for nil:NilClass (NoMethodError)
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:52:in `load_initializer'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:38:in `run'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:11:in `boot!'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:109:in `&lt;top (required)&gt;'
+  from script/server:2:in `require'
+  from script/server:2:in `&lt;main&gt;'
+</code></pre>
+
+<p>いきなり動かない．どうも Gem が Ruby1.9 から取り込まれたのに起因しているようだが，ひとまず
+86行目あたりを変更して対処．</p>
+
+<pre><code class="language-bash">86c86
+&lt;         unless true or rubygems_version &gt;= min_version
+---
+&gt;         unless rubygems_version &gt;= min_version
+</code></pre>
+
+<p>さらに RAILS_GEM_VERSION もコメントアウトしておく．そして再度挑戦．</p>
+
+<pre><code class="language-bash">% ruby1.9 script/server
+gem_prelude.rb:98:in `push_gem_version_on_load_path': Could not find RubyGem rails (&gt;= 0) (LoadError)
+  from gem_prelude.rb:8:in `gem'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:61:in `load_rails_gem'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:53:in `load_initializer'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:38:in `run'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:11:in `boot!'
+  from /home/rust/program/rails/ruby-1.9/config/boot.rb:109:in `&lt;top (required)&gt;'
+  from script/server:2:in `require'
+  from script/server:2:in `&lt;main&gt;'
+</code></pre>
+
+<p>んー，これも上記の Gem 系かな？と思ったんだが，もしかしたら Rails を /var/lib/gems から見てるんじゃないかと思い，vender 以下にシンボリックリンクを張ってみる．</p>
+
+<pre><code class="language-bash">% ln -s /path/to/edge-rails/rails /home/rust/program/rails/ruby-1.9/vendor/rails
+% ruby1.9 script/server
+=&gt; Booting WEBrick...
+=&gt; Rails 2.1.0 application started on http://0.0.0.0:3000
+=&gt; Ctrl-C to shutdown server; call with --help for options
+[2008-08-02 16:09:15] INFO  WEBrick 1.3.1
+[2008-08-02 16:09:15] INFO  ruby 1.9.0 (2008-08-01) [i686-linux]
+[2008-08-02 16:09:15] INFO  WEBrick::HTTPServer#start: pid=1964 port=3000
+</code></pre>
+
+<p>ひとまず動いた．</p>
+
+<ul>
+<li>ブラウザから見てみる．</li>
+</ul>
+
+<p><a href="http://localhost:3000/">http://localhost:3000/</a> をブラウザで開く．</p>
+
+<p><img src="http://img.f.hatena.ne.jp/images/fotolife/c/conceal-rs/20080802/20080802161629.png" alt="image" /></p>
+
+<p>まあそりゃないよね．と言うわけでインストール．</p>
+
+<ul>
+<li>sqlite3-rubyをインストール</li>
+</ul>
+
+<pre><code class="language-bash">% sudo gem1.9 install sqlite3-ruby
+Building native extensions.  This could take a while...
+Successfully installed sqlite3-ruby-1.2.2
+1 gem installed
+Installing ri documentation for sqlite3-ruby-1.2.2...
+Installing RDoc documentation for sqlite3-ruby-1.2.2...
+</code></pre>
+
+<ul>
+<li>再度ブラウザから．</li>
+</ul>
+
+<pre><code class="language-bash">% ruby1.9 script/server
+</code></pre>
+
+<p><img src="http://img.f.hatena.ne.jp/images/fotolife/c/conceal-rs/20080802/20080802161630.png" alt="image" /></p>
+
+<p>違うエラーが出た．いろいろやって調べてみると，どうも sqlite3/database.rb を読み込めないらしい．ファイルはあるのになぜか読めない<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>ので，ファイルを開いてみることに．</p>
+
+<pre><code class="language-bash">% cat /usr/local/ruby-pkg/ruby-1.9-trunk/lib/ruby/gems/1.9.0/gems/sqlite3-ruby-1.2.2/lib/sqlite3/database.rb
+cat: /usr/local/ruby-pkg/ruby-1.9-trunk/lib/ruby/gems/1.9.0/gems/sqlite3-ruby-1.2.2/lib/sqlite3/database.rb: 許可がありません
+</code></pre>
+
+<p>工工工エエエエエエェェェェェェ(゜Д゜)ェェェェェェエエエエエエ工工工
+ん？開けない？何で？と思って，</p>
+
+<pre><code class="language-bash">% ls -la /usr/local/ruby-pkg/ruby-1.9-trunk/lib/ruby/gems/1.9.0/gems/sqlite3-ruby-1.2.2/lib/sqlite3/
+合計 84
+drwxr-xr-x 3 root root  4096 2008-08-01 22:17 .
+drwxr-xr-x 3 root root  4096 2008-08-01 22:17 ..
+-rw-r--r-- 1 root root  1745 2008-08-01 22:17 constants.rb
+-rw-rw--w- 1 root root 24774 2008-08-01 22:17 database.rb
+drwxr-xr-x 4 root root  4096 2008-08-01 22:17 driver
+-rw-r--r-- 1 root root  2307 2008-08-01 22:17 errors.rb
+-rw-r--r-- 1 root root  7480 2008-08-01 22:17 pragmas.rb
+-rw-r--r-- 1 root root  4690 2008-08-01 22:17 resultset.rb
+-rw-r--r-- 1 root root  6843 2008-08-01 22:17 statement.rb
+-rw-rw--w- 1 root root  3738 2008-08-01 22:17 translator.rb
+-rw-r--r-- 1 root root  1057 2008-08-01 22:17 value.rb
+-rw-r--r-- 1 root root   153 2008-08-01 22:17 version.rb
+</code></pre>
+
+<p>642って何ですか．．．．なぜか書き込みしかできない Permission で保存されるようなので，これは Ruby1.9 の Gem の問題か？とは思ったが，ひとまず変更して試してみる．</p>
+
+<pre><code class="language-bash">% sudo chmod 644 /usr/local/ruby-pkg/ruby-1.9-trunk/lib/ruby/gems/1.9.0/gems/sqlite3-ruby-1.2.2/lib/sqlite3/*.rb
+</code></pre>
+
+<ul>
+<li>もっかい挑戦</li>
+</ul>
+
+<pre><code class="language-bash">% ruby1.9 script/server
+</code></pre>
+
+<p><img src="http://img.f.hatena.ne.jp/images/fotolife/c/conceal-rs/20080802/20080802161631.png" alt="image" /></p>
+
+<p>できたーヽ(´ー｀)ノ<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+
+<p>##宴
+ようやくできたところぐらいで，cesare さんのバッテリーがなくなりそうということで，後はずっと懇親会に．いろいろ話せて楽しかったです．</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Yuumi3 アドバイスにより判明
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">ここまでおよそ2時間ぐらいの試行錯誤orz
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/08/02/ruby-Tokyu-rb-2/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/08/02/notitle/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/08/02/notitle/">インフラは奥が深いよね</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/08/06/ruby-rails-ssb-Rev-17132-ubuntu-8-04-Ruby-1-8-6/">ssb Rev.17132 が ubuntu 8.04/Ruby 1.8.6 で動作しなくなってる問題に対処する</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/08/06/ruby-rails-ssb-Rev-17132-ubuntu-8-04-Ruby-1-8-6/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

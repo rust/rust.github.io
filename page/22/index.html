@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/13/ruby-http-atnd-org-events-297-title-Ruby/">『プログラミング言語Ruby』出版記念トーク懇親会に参加してきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Ruby の中の人達がいるという懇親会に参加してきました．一番の収穫は猫カードを matz に渡せたことかな :)．しかし，Mac にサインしてもらうのはいいなぁと素直に思いました．白いサインペンもっていって，X61に書いてもらえば良かったか・・・・
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/13/http-codezine-jp-devsumi-2009-title-2009-1/">デブサミ2009 1日目に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##まとめ
+ 今年のキーワードはクラウドコンピューティングのようだ．  クラウドセッションへの参加者数が多い気がする．  今日は Ruby で，明日は PHP/Perl とほどよく分散されている． いいセッションが被ってるのが悲しい．これは Ruby 会議とかでもそうだけど，仕方ないのかなぁ．  ##開会の挨拶
+ テーマは「つなぐ、つながる、そして未来へ」 コンテンツ委員の挨拶  和田(t_wada)さんでした． 代打らしいです． 世代を超えて繋がることで，新しい見知を得られるのではないか．  資料は後日公開予定  ##クラウドによるソフトウェア開発のパラダイム(12-D-1)
+ クラウド技術に Deep Dive する ソフトウェア開発のパラダイム  構造化 -&gt; オブジェクト指向 -&gt; コンポーネント指向 -&gt; サービス指向 -&gt; Web 指向  パラダイムの途中変更は困難  Scale-up vs. Scale-out 同期 vs. 非同期 システム要件によっては途中での変更が出来ない  Domain Specific Paradigm  ドメイン単位 ワークフロー，オブジェクト，アスペクトなど パラダイム適用(選択)はスナップショット 時代と共に選択は変わる パラダイム変更は Agile では扱いにくい  マルチパラダイム  SOA/WOA/Component/OO/Model-driven/etc&hellip;  SOAの問題はどこにあるか  再利用性の限界 ビジネス的な制限で 再利用可能でもスケーラブルでない メッセージだけを扱うため サービス内部実装は隠蔽され，関係が複雑化しているから これからのクラウドは サービスという機能分割単位は有効 REST を使うのが業界のコンセンサスになりつつある SOAP は How で，REST が What  属人性が無くなる   N-tier モデルの問題は？  もはや最適なアプリケーションアーキテクチャではない ACID のスケーラビリティに依存してしまう  ロック・分散トランザクション 2相コミットが前提のアーキテクチャはクラウドでは厳しい  RPC の脆弱性  通信障害耐性が低い  スケールアップに制限がある  Azure クラウド OS  構造化オーバーレイ 分散ハッシュテーブル 100万台規模 処理するインスタンスを選ぶのに，ルーティングが行われる クラスタリングでよく使う手 他ノードへのデータの複製は非同期で行う 可用性を重視して，完全性を犠牲にしている  アプリケーションアーキテクチャ  Key-valu で非同期 非同期がキーポイントかな  クラウドにおねるパラダイム  スケーラビリティと可用性を重視する DDR(Data Dependent Routing)  ロンドン・NY・東証などがこのアーキテクチャを使っている  データ分割 重要なのはこの2つ  Azure の例  OO パラダイム REST のように CRUD でやるばあいなど メソッドスコープのトランザクション RoR の Polymophic Data Functional パラダイム MapReduce クエリーエンジンによるクエリー機能  データモデル Entity  データ1行ごとにスキーマがあるような考え方  Partition Key の例  テーブルの水平分割  Scale-out 設計の指針(Top-down)
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/13/http-codezine-jp-devsumi-2009-title-2009-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/10/ruby-rails-Ruby-on-Rails-2-3/">Ruby on Rails 2.3 リリースノート</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いつものように意訳．たぶんここを見た方がいいような気もします．
+ http://guides.rubyonrails.org/2_3_release_notes.html  Rails 2.3 には数多くの新しい機能が含まれている．Rack への対応や Rails エンジンの一新，Active Record ではトランザクションのネストやスコープ，レンダリングの統一や効率的なルーティング，そしてアプリケーションテンプレートと静かなバックトレース．本記事のリストは，メジャーアップグレードの内容をカバーしているが，細かな変更やバグフィックスは記載していない．もしすべてを知りたいときは，Commit ログか CHANGELOG を見てほしい．
+##アプリケーションアーキテクチャー Rails アプリケーションのアーキテクチャーについて2つの大きな変更がある．Rack への対応と Rails エンジンに対する新しいサポートである．
+###Rack への対応 Rails は，いまや CGI の過去を破壊してすべての場面で Rack を使うようになった．これには莫大な数の内部変更を伴った(ただしもし CGI を使うときも心配しなくてもいい．Rails はプロキシーインターフェイスを通じて CGI をサポートしている)．まだこれは Rails 内部への大きな変更であるので，2.3 へアップグレードしたのちには，ローカル環境と Production 環境でテストする必要がある．テストすべき点は下記のとおりだ．
+ セッション(session) クッキー(cookie) ファイルのアップロード JSON/XML の API  以下に Rack に関わる変更点をまとめておく．
+ script/server は Rack を使うように変更されたので，Rack 互換のどんなサーバをもサポートするようになった．script/server はまた rackup 設定ファイルがあればそれを参照するようになる．デフォルトでは，config.ru ファイルを探し，-c オプションで指定可能だ． FCGI handler は Rack を通じて ActionController::Dispatcher はそのデフォルトのミドルウェアスタックを維持する．ミドルウェアは inject されるか整理されるか削除されるだろう．スタックは起動処理中にコンパイルされる．envrionment.rb でミドルウェアスタックを構成することができる． ミドルウェアスタックを調査するための Rake タスクが追加された．ミドルウェアスタックの順序をデバッグするのに役に立つ． 統合テストがミドルウェアとアプリケーションスタック全体に対して実行するように変更された．これは統合テストを Rack ミドルウェアのテストを万全のものとする． ActionController::CGIHandler は Rack での CGI ラッパーと後方互換性がある．CGIHandler は古い CGI オブジェクトとその環境情報を Rack 形式に変換する． CgiRequest と CgiResponse は削除された Session store が Lazy Loadingになった．もし session を使わない場合は，session データを読み込むことはない．(cookie を parse したり，memcache からデータを取得したり，Active Record オブジェクトを探したりしない) CGI::Session::CookieStore は ActionController::Session::CookieStore に変更された． CGI::Session::MemCacheStore が ActionController::Session::MemCacheStore に変更された． CGI::Session::ActiveRecordStore が ActiveRecord::SessionStore に変更された． session store を  ActionController::Base.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/10/ruby-rails-Ruby-on-Rails-2-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/08/ruby-rails-Rails-Flare-TokyoTyrant-TokyoCabinet/">Rails から Flare を TokyoTyrant(TokyoCabinet)の様に扱うには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まあ要するに，前回のをFlare用に書き直す感じです．
+ インターフェイスがMemcached互換なので，[memcache-client]がそのまま使えます．memcached でデータが永続的に使えるのは便利そうなので，実サービスでどう使うか考えてみようと思ってます．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/02/04/flare-Flare-Ubuntu-8-04-1/">FlareをUbuntu 8.04.1にインストールするメモ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Flare  GREEで開発・利用されている memcached 互換の分散キャッシュシステム．TokyoCabinet を使うことで，不揮発にすることができ，また大きなデータも扱えるらしいので，インストールと Rails で使うところまでやってみる．
+TokyoCabineのインストールが終わっていることが前提．
+##Boost関係のインストール
+% sudo apt-get install zlib1g libbz2-1.0 libboost-program-options1.34.1 libboost-regex1.34.1  ##Flareのインストール Debian ようパッケージをダウンロードしてインストール．
+% sudo dpkg -i flare_1.0.8-1_i386.deb 未選択パッケージ flare を選択しています。 (データベースを読み込んでいます ... 現在 273907 個のファイルとディレクトリがインストールされています。) (flare_1.0.8-1_i386.deb から) flare を展開しています... dpkg: 依存関係の問題により flare の設定ができません: flare は以下に依存 (depends) します: libboost-program-options1.33.1 ...しかし: パッケージ libboost-program-options1.33.1 はまだインストールされていません。 flare は以下に依存 (depends) します: libboost-regex1.33.1 ...しかし: パッケージ libboost-regex1.33.1 はまだインストールされていません。 dpkg: flare の処理中にエラーが発生しました (--install): 依存関係の問題 - 設定を見送ります 以下のパッケージの処理中にエラーが発生しました: flare  ぎゃっ．うーん，完全バージョン指定ですか．．．．ひとまず
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/02/04/flare-Flare-Ubuntu-8-04-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/28/ruby-rails-file_column-Rails-2-2-2/">file_column を Rails 2.2.2 と確認画面に対応させてみた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  [http://github.com/rust/file_column/tree/master]
+Rails 2.2.2 はともかく，確認画面というのは，
+ 入力画面からファイルをアップロード．ただし他の部分で validation エラーになるようにする 確認画面で validation に失敗する 再度入力画面でそのまま送信 再び確認画面で validation に失敗 再再度入力画面でそのまま送信すると，最初にアップロードしたテンポラリファイルが消えている  という現象に対応するために，同一のテンポラリーファイル名だと，削除しないように変更しました．それだけなんですがね．
+プラグイン自体のテストはまだできていないので，問題があれば報告いただけると助かります :)
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/26/mysql-MySQL/">MySQLで文字化けする時のメモ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  他の接続は問題無いのに，なぜか
+Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=':  などと言われるときは，character-set/collation を確認．
+mysql&gt; SHOW VARIABLES LIKE '%character%'; +--------------------------+----------------------------------------+ | Variable_name | Value | +--------------------------+----------------------------------------+ | character_set_client | utf8 | | character_set_connection | utf8 | | character_set_database | utf8 | | character_set_filesystem | binary | | character_set_results | utf8 | | character_set_server | utf8 | | character_set_system | utf8 | | character_sets_dir | /usr/local/mysql/share/mysql/charsets/ | +--------------------------+----------------------------------------+ 8 rows in set (0.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/26/mysql-MySQL/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/19/ruby-rails-Rails-37/">Rails勉強会＠東京第37回に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://wiki.fdiary.net/rails/?RailsMeetingTokyo-0037に行ってきました．さらに懇親会にも参加してきました．参加された皆さん，お疲れさまでした．
+以下，当日のログ．
+##セッション案
+ 初心者セッション(Yuumi3) 月刊 merb レオさんとペアプロ named_scope いろいろ + Rack を読む Rails がはまるビジネスなどの話が聞きたい i18n Generator について 1からRailsでLinuxでメール  ##セッション分け
+ 前半  named_scope いろいろ + Rack を読む Rails がはまるビジネスなどの話が聞きたい 1からRailsでLinuxでメール   ##named_scope いろいろ + Rack を読む
+ named_scope とは  with_scope で使っていた「検索スコープ」名前がつけられるようになった．  scope_do  named_acl アクセスコントロールするためのプラグイン User がアクセスできる Blog だけを取り出すときは   @blogs = Blog.accessible_by(current_user) @blogs = current_user.accessible_blog   has_children  has_many の子要素が存在する親要素だけを取得する  chainable_scope  blank な値を入れたいときに使える．  これは便利そうです．   SQL であとあと不整合にならないように，副問い合わせを使っている．  ###FAQ
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/19/ruby-rails-Rails-37/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/">Ruby 1.9に移行する際に注意すべき10のポイント</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://dablog.rubypal.com/2009/1/14/10-things-to-be-aware-of-in-moving-to-ruby-1-9の翻訳
+Ruby 1.9 についていろいろと書いてきて(The Well-Grounded Rubyist は2～3ヶ月のうちに出る予定だ)，Ruby 1.8 から Ruby 1.9 に移行する際に気をつけるべき個人的な見解を共有しようと思い立った．これは変更点のリストではない．これは Ruby 1.8 のコードを Ruby 1.9 で動くようにするために必要な変更点であり，知らなければひどい目にあいそうな事項のリストである．
+##String はもはや Enumerable ではない String はそれに類するもので string.each という具合に実行することはできない．これは例えば Rack インターフェイスにおいては衝撃的で，以前は戻り配列の3番目の要素が each に対応する必要があったためだ．
+##ブロック文法 これは大きな変更でありトピック．特筆すべき点は，たとえば次のようなとき
+array.each {|x| ... }  ブロックパラメータのリストは，普通のメソッドパラメータリストのように扱われる．1.8 ではブロックの||内の変数のスコープは，ブロックよりも大きい1なので，@ と使うと @x= のように変数代入が可能になる．これは 1.8 で，
+array.each {|@x| ... }  や
+array.each {|self.attr| ... }  のように書くことができた理由である．これは 1.9 ではできなくなる．パラメータは assignment semantics ではなく，method-argument semantics を使って変数に束縛される．ブロックパラメータは，ブロックローカルになる．たとえば次のコードを考える．
+x = 1 [2,3].each {|x| ... }  1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/01/15/drbd-ubuntu-Ubuntu-8-04-1-Server-LTS-DRBD/">Ubuntu 8.04.1 Server LTSにDRBDを入れてほげる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  すべて VirtualBox 上の Ubuntu Server で実行しています．
+##セットアップ ###仮想マシンの用意 同一構成の仮想マシンを2つ用意します．
+ VirtualBox VM  |*Memory|384MB| |*HDD|8GB| |*ACPI|有効| |*IO ACPI|有効| |*PAE/NX|有効| |*SATA|有効|
+###Ubuntu 8.04.1 Server のインストール
+ 日本語 キー切り替えは無効 パーティション  |基本|4.0GB|/|ext3|システム| |論理|4.2GB|/opt|ext3|DRBD用| |swap|400MB|swap|swap||
+ ソフトウェアは何も入れない
+ ホストインターフェイスを使う
+  ホスト1上で実行．ユーザ名は rust とします．
+% sudo apt-get install bridge-utils % sudo vim /etc/network/interfaces ----add---- auto br0 iface br0 inet dhcp bridge_ports eth0 ----------- % sudo /etc/init.d/networking restart % sudo VBoxAddIf vbox0 rust br0 # Primary 用 % sudo VBoxAddIf vbox1 rust br0 # Secondary 用 % VBoxManage modifyvm &quot;Ubuntu 8.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/01/15/drbd-ubuntu-Ubuntu-8-04-1-Server-LTS-DRBD/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/21/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;22 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/23/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

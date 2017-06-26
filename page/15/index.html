@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/19/rails-ruby-railstokyo-Rails-44/">Rails勉強会＠東京第44回</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  久しぶりの参加 でも実は作業しに来た可能性大  でも 13 時の段階で @ysakaki は現れず  意外に Mac 率低めな気がした 17 名の参加 何故か無線LAN繋がらずorz  ##セッション ###ネタ
+ Scala 初心者 Cucumber MVC github の活用法 Rails のソースの読み方  ###前半
+ Scala を 1.5h  ###後半
+ 高橋さん来たら MVC とかの話をする予定で  Ruby 使いのための Scala で学ぶ関数型プログラミング  Scala のインストール Rubyist がステップアップするには Lisp を学ぶべきという話がある Scala なら何とかしてくれるはずだ！と言う思いがある  文法  var 型(variable) と val 型(value)  前者は使ったら負け 後者は再代入できない 純粋関数型言語は後者しかない 最初は var 型で，後々 val 型に移行するのがいいんじゃない？   scala&gt; var n: Int = 1 n: scala.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/10/19/rails-ruby-railstokyo-Rails-44/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/14/livedoor-asin-4797354364-title/">4Gbpsを超えるWebサービス構築術を読んだ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  4Gbpsを超えるWebサービス構築術  著者: 伊勢 幸一, 池邉 智洋, 栗原 由樹, 山下 拓也, 谷口 公一, 井原 郁央
+出版日: 2009-08-21
+出版社/メーカー: ソフトバンククリエイティブ
+カテゴリ: Book
+  これは Web サービスのみならず，Web サイトを構築する上で気をつけるべき点について書かれている，必読に近い書です．特にキャッシュについて技術的に詳細に書かれているので，言語を問わずに役立つ情報が満載でした．
+ただやはり Perl/Java をある程度読めた方がいいというのは確かなことなので，できればそれらの基礎知識(特に文法)を覚えてから読み進めるのがいいと思います．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/09/rails-ruby-Rails/">Rails でログを出力させるときの注意点</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  よく Rails で
+class Hoge &lt; ActiveRecord::Base .... # logger def my_log(text) Logger.new(File.join(Rails.root, &quot;/log/my_logger.log&quot;, &quot;daily&quot;)).info text end end  などとやって，ログを出力させたりする場合がありますが，上記の場合だと毎回ファイルをオープンしてしまうので，そのコストは場合によっては馬鹿にならなくなります．
+そこで
+class Hoge &lt; ActiveRecord::Base .... # logger def my_log(text) @@my_logger ||= Logger.new(File.join(Rails.root, &quot;/log/my_logger.log&quot;, &quot;daily&quot;)) @@my_logger.info text end end  として，クラス変数にキャッシュさせることで，その頻度を下げることができます．
+一つ注意点としては @@logger を使わないこと．これは ActiveRecord や ActionMailer デフォルトのロガーになっているので，それを上書きしてしまいます．結構はまりやすい罠なので，ご注意を．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/06/ruby-rails-TokyuRuby-LT/">TokyuRuby会議 LT発表者募集中</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  TokyuRuby会議の広報担当です．
+と言うわけで募集です．
+##LT発表者募集
+ 現在，ATNDにてLT発表者の募集を行っています  [http://atnd.org/events/1719]  ジャンルは問いません．たぶん． 応募者多数の場合は，応募者多数の場合は運営側にて選考の上，結果をご連絡いたします． 楽しくわいわいやるようなイベントにしたいと思っておりますので、お気軽にご応募下さい。  ##TokyuRuby会議 開催概要
+ 日時  2009年11月29日(日曜日)(いい肉の日) 午後2時～午後6時過ぎを予定しています  場所  大田区大森東地域センター  内容  LT大会です． 参加費は無料 飲み物・食べ物は各自の持ち込みとします． 発表者・参加者ともにアルコール歓迎です．  募集開始日時  10月下旬を予定しております． なお参加者募集に関しては，ATNDを利用する予定です． 参加者募集開始後に，再度ご案内を送付させていただきます．   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/10/01/debian-tokyocabinet-TokyoCabinet-TokyoTyrant-Debian-lenny/">TokyoCabinet/TokyoTyrant を Debian (lenny) へインストール</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/10/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##TokyoCabinet パッケージは 1.2.1 と古いので，ビルドすることに．
+$ sudo apt-get build-dep tokyocabinet-bin  ただこれだけじゃダメで，bzip2 ライブラリも必要
+$ sudo aptitude install libbz2-dev  そしたらインストール
+$ tar zxvf tokyocabinet-1.4.33.tar.gz $ cd tokyocabinet-1.4.33/ $ ./configure --prefix=/usr/local $ make $ make check $ sudo checkinstall -D sudo make install  ###Ruby binding
+$ tar zxvf tokyocabinet-ruby-1.29.tar.gz $ cd tokyocabinet-ruby-1.29/ $ ruby extconf.rb $ make $ sudo checkinstall -D sudo make install  ##TokyoTyrant
+$ tar zxvf tokyotyrant-1.1.34.tar.gz $ cd tokyotyrant-1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/10/01/debian-tokyocabinet-TokyoCabinet-TokyoTyrant-Debian-lenny/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/09/30/emacs-Emacs-01/">五反田Emacs#01に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  向かってると前方を歩く @cesare さんを発見．連れて行ってもらうことに． emacs 使いがたくさんいますね！ 19:30 スタートで会場 19:00 という，勉強会じゃない感じのいいスケジュール 見たことあるようなー，ないようなー，人がたくさん 「ピザを食うにもかかわらず，酒は禁止とは，まるで肉のないすき焼きじゃないか」とか思った 「今日やる内容はあまり知りません」と言う発言．なんかゆるふわ． 「敵が一人紛れ込んでいる！」  ##まとめ
+ Emacs 使いに悪人なし anything は富豪的  ##Emacsを活用したプログラマ採用
+ アリエルネットワーク社員番号２番の井上さん SD の Emacs のトラノマキ監修＆時々執筆 ストールマンに３回会ったことがある  FSF に行って Tシャツ買ったら Free Software Award 1st に招待してもらったときに，会ったのが初めて  パーフェクト Java を執筆  プレゼント条件はストールマンに会ったことある人 ３回の人なし ２回のは吉岡さんと上野さん ストールマンに会える機会は逃さないように！   ###本題
+ Emacs使い(軽い感じで)  道具へのこだわりがある 難しいものが好き バッドノウハウと「奥が深い症候群」 優れたプログラマはバッドノウハウに惹かれることが多い 機能美がわかる 優れたプログラマなら self-insert-command のセンス・オブ・ワンダーに共感できるはず 拡張性の価値がわかる 開発の多くは抽象レイヤの作成 王と道化  まとめ  Emacs 使いに悪人なし   ##anything のソースを書けるようになってみる + anything.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/09/30/emacs-Emacs-01/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/09/27/bpstudy-mysql-bpstudy-25/">bpstudy#25に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  恵比寿で．やっぱり迷いました・・・・  ##最初のプレゼン
+ ここ遅刻orz  ##Scaling?
+ 演算速度  ムーアの法則で高速化される  フラッシュメモリ  12ヶ月で2倍になってきてる  HDD  2年で倍ぐらいになっている  インターネット回線  高速化されている  スケールしないものもある  HDDのレイテンシ 回転速度は20年で2倍ぐらいにしかならない インターネットのレイテンシ 東京～サンフランシスコは8300km  光の速度 55ms よりは早くならない   4Gbps って速いの？  スイッチングハブが12Gbps Perl で書いたHTTPサーバ 10Gbps も出るらしい HDD からのランダムリード 0.5GB/s -&gt; 2000台いるかも！  遅いのはHDD  RDBMS/ファイルストレージ SSDは部分的解決策 他に CPU intensive な処理もある  なぜスケールアウトが流行るのか  スケールアウトは 2000 年代のトレンド パッケージからサービスへ マスメディア(Yahoo!)からコミュニケーションツールへ(mixi)  多人数間の疎なソーシャルグラフ  従来よりも，スケールアウトしやすくなっている状況  代表的なスケールアウト技術  RDB Shading MapReduce/Hadoop KVS(Key Value Store) Message Queue  3層構成  HTTPサーバ アプリケーションサーバ ここにプログラマは注力する ストレージ  規模の拡大 vs ムーアの法則  スケールアウトにはバランスが重要   ##Incline &amp; Pacific
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/09/27/bpstudy-mysql-bpstudy-25/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/09/17/ruby-mac-Ruby-Mac-OS-X/">RubyによるMac OS Xデスクトップアプリケーション開発入門：無料プレゼント企画</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://www.takao7.net/rhcbk/news/2009/09/15/20090915-present/
+と言うわけで，Ruby会議でもセッションされた高尾宏治さんによる書籍RubyによるMac OS Xデスクトップアプリケーション開発入門の公式サポートサイトで， この書籍自体の無料プレゼント企画が行われています．参加方法は下記の通り
+ あなたのWebサイトやブログに「RubyによるMac OS Xデスクトップアプリケーション開発入門」という文字列と無料プレゼント企画をやっている旨を含む本書の紹介を書いてください。できれば、公式タグ「RHCBK」をつけてください。
+または、本書のサポートページ（http://www.takao7.net/rhcbk/）をWebのブックマークサイトを使ってブックマークしてください。できれば、公式タグ「RHCBK」をつけてください。
+ と言うわけで，書籍が当たったら MacBook Pro 買います :)
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/09/17/debian-56-Debian/">第56回東京エリアDebian勉強会に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://tokyodebian.alioth.debian.org/2009-09.html
+要するにキーサインパーティに参加してきました．参加者は総勢26名．DD(Debian Developer)が6人(？)ほどいると言う，非常に希な集まりだったらしいです．(恐らく)違うクラスターなので，いろいろ緊張しました1．
+さて帰宅して鍵を署名してみなさんに送付しましたが，届いてるでしょうか．あとはメールで送られてくる署名済み鍵を import するだけですね．
+ただなんかああいう場には LL 系の人は少ないというか，ほとんどいませんね．インフラ系のもそうだけど，みんな興味ないのでしょうか．私は Rubyist をアピールするため(？)に，ずっとRuby会議の名札つけてました．みんなもっと参加しようよ！
+ 会場について参加費を払えずコンビニに走ったりしました．．．． [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/09/10/rails-Rails-2-3/">Rails 2.3以降でのセッションの設定場所</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://d.hatena.ne.jp/KoshianX/20090909/1252513404を見て思ったのですが，意外に設定場所があるの知られてないようです．
+(確か)Rails 2.x から，config/initializers/ と言うフォルダができており，アプリケーションの初期設定はここに書かれるようです．そして Rails 2.3 からはここに session_store.rb というファイルがあります．
+# Be sure to restart your server when you modify this file. # Your secret key for verifying cookie session data integrity. # If you change this key, all old sessions will become invalid! # Make sure the secret is at least 30 characters and all random, # no regular words or you'll be exposed to dictionary attacks. ActionController::Base.session = { :key =&gt; '_rails-2.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/09/10/rails-Rails-2-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/14/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;15 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/16/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

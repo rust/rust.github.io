@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/10/ruby-rails/">例外のバックトレースを表示するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Rails でエラーが発生した時に，何言もなかったかのように Redirect などして，管理者にのみエラーメールを送りたいときがあったとする．そんなときは，backtrace を使う．
+class SomeController &lt; ApplicationController def hoge # 例外が発生するかもしれない処理 rescue =&gt; ex HogeMailer.deliver_error(ex.backtrace.join(&quot;\n&quot;)) end end  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/09/03/rails-ruby-Hash-Array/">HashやArrayなどをデータベースに保存するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  HashやArrayをデータベースの1カラムとして保存したときに，それを元のHashやArrayに戻すには，YAML.load を使う．
+と言うのも，保存されるときに to_yaml で YAML 化されるので，それを戻せばいいだけの話．
+item = Item.new hash = {:hoge =&gt; &quot;foo&quot;, :bar =&gt; &quot;baz&quot;} item.data = hash item.save item.reload pp YAML.load(item.data) # =&gt; {:hoge =&gt; &quot;foo&quot;, :bar =&gt; &quot;baz&quot;}  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/31/Ruby-llfuture-http-ll-jus-or-jp-2008-title/">Lightweight Language Futureに行ってきました．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  雨が降ったり止んだりのいやな感じの天気にもかかわらず，800人も集まったのはすごいなLL．
+##開会
+ 6年目だそうです．今年初参加．  ====
+##基調講演 : Larry Wall
+ Larry Wall は Ubuntu ぽい？  3x5の仮想画面  Perl6 は Perl5 との後方互換性は捨てている
+ エミュレータかトランスレータ使うしかないようだ． 後方互換性を捨て去るって結構すごい決断だよな．  英語力鍛えたいorz．
+  ##LLで未来を発明する ###100年後の言語はどうなっているか
+ Matz(Ruby)  プログラミング言語によるインタラクションはなくなるようなかんじで，今よりももっとマイナーになってると悲しい予想． LL は自然言語にとってからわれる？  住井さん(MinCaml)  100年前ぐらいにクロージャがでてきた 面白いアイデアを記録して形にして残しておけば役に立つかもしれない  藤田さん(Ypsilon)  Matz が言うようになくなれば職業プログラマとしては困る 100年後は面倒だと思うことがなくなるんじゃないか メモリの確保と解放 マルチコア CPU などでの並列処理・マルチスレッディング GC とか並列化とか勝手にやってくれる CPU とか出てくるかも  ひげぽんさん(Mosh)  2078年に言語の大統一理論が発見されて，すべては lisp へと帰る(ネタ)  Larry Wall(Perl)  予測は不可能   ###あなたは何をしてきたか
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/08/31/Ruby-llfuture-http-ll-jus-or-jp-2008-title/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/26/http-sites-google-com-site-matcha445-title/">まっちゃ４４５に行ってきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  夏休みなのでログ書くのが遅くなりました(；・∀・)．
+##First impressions いやー，雰囲気違うなぁ．と言うか，Rubyist がおとなしすぎるのか歳を食ってるのか． Perl/PHP とかどうなんだろうね．あと Windows 率が高い．これは開発者とは人種が異なると言うことだろうかね．
+ 内容は原則公開禁止．内容が内容だけに仕方ないよね． 内輪ネタが多かった．かなり． 主催者＆スタッフの人が会場全体を廻って話しかけていたのは非常に良かった．あれないと取り残される感が生じるかもしれない．  ##当日の流れ
+ 説明 自己紹介 セッション1 ディスカッション セッション2 ディスカッション 全体ディスカッション  ====
+##VPN再考 ###専用線とVPN
+ ネットで仕事は？  安全に，確実に，接続元がわかる，必要がある． インターネット経由だと，誰が見てる変わらないところもある． 専用を使う でも使えない場合は？  専用線って？  特定の地点間を結ぶ通信回線のようなもの  利点・欠点・特徴  特徴 専用なので占有可能 利点 経路が保証される 欠点 高い  64kbps で 77000円/月 とか 28000円/月   VPNって？  Virtual = ～みたいなもの VPN = 専用線みたいなもの 機密性・安全性・完全性を確保するもの 暗号化・認証を用いて「正当な相手」に安全に送る技術 形態や構成はいろいろ  何をもって VPN というのか  専用線じゃなければ VPN と言っていいかも  VPN を使うシーン  拠点間通信 インターネットを経由して安全な接続(トンネル)を張る． 端末を安全に LAN に接続する   ###VPN プロトコルと VPN 接続
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/08/26/http-sites-google-com-site-matcha445-title/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/26/notitle/">勉強会とかセミナーとかの敷居</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  これはどこの勉強会でも一緒なんだけど，内輪ネタで少人数だけ盛り上がってる場合が多いことが，初参加者の入りやすさを阻害している気がするな．まあ無理にでも輪に入れってことかもしれないし，そこに入り込める人だけでいいのかもしれないけど．
+ただ主催する苦労というのもあるし，知ってる人と話するのが一番楽なのは確かなので，あんまり言うのもどうかなと言う気がしてた．
+たが，下記のまっちゃ４４５の主催者が，休憩中に「どうですか～」な感じで会場内廻ってたのと，ディスカッションで「みんな話そうよー」と話題振ってたのを見て，主催者やスタッフの雰囲気とかやり方ってのが，勉強会にかなり影響するんだなと言うのがわかった．
+まあ，そうやってフォローするのが良いのかどうかすらも，勉強会の趣旨や雰囲気次第だから，やっぱ正解はないのかな．なんか書いてて自分でわからなくなってきたorz．ただせめて Tokyu.rb では，ゆるふわな雰囲気を保ちつつ，内輪ネタばかりにならないように気をつけようと思ってます．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/24/2-PC/">2台のノートPCでキーボード・マウス共有用</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  レビューとかいろいろ見てみてこれに決めました．HHK だと ScrollLock が Fn+ なんでどうかと思ったけど，それほど頻繁に変えることもないのでこれにしました．
+ corega CG-PC2UVMN  著者: 出版日: 出版社/メーカー: コレガ
+カテゴリ: Personal Computer
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/22/Ruby/">オフィスで踏み出すRubyの世界</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  エピソード  in : Java Source -&gt; out : Text File Excel -&gt; Ruby -&gt; Java なぜ Ruby ERB / Java の友達 JRuby / YAML なぜ Excel Excel 文化 / 異常に使いこなされている 史上最大シェアの構造化エディタ  モテポイント  ERB Excel(API) 案外使いやすい高レベル API プラグイン機能あり 階層 + 2次元配列データ構造 Win32OLE VB より Ruby と仲良し Primitive/Object 意識不要 Block 渡せる そこで XLS モジュール作った 1行目をハッシュキーとして，2行目から順次ハッシュデータとして取り出す  効果  短いコード / 社内の食いつきが良かった  今後  gem 化 / JRuby 対応 / XLSBeans (Java の XLS クラス？)  まとめ  Excel 大好き！   ##唐突に LT ###DocDiff：Rubyで書かれたテキスト比較ユーティリティ
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/08/22/Ruby/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/22/ruby-http-regional-rubykaigi-org-tokyo01-title-Ruby-01/">東京Ruby会議01に参加してきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  最初は少なかったんですが，終わる頃にはかなりの大人数になってました．さすがは東京(？)．当日は２時間早く出社して早めに変える変則シフトでがんばりましたヽ(´ー｀)ノ．
+それでは当日のログを．
+==== ##それRubyでもやりたい ＠ 和田さん
+ gihyoコラボ企画 TDD 講座 デブサミ2009でコンテンツ委員やるらしい  ###移植した中身のこと
+ 問題意識  テーブル構造が複雑  餅は餅屋
+ SQLが書きたい 移植したのは S2Dao Seasar の DAO ここの 2 Way SQL の移植  手書きのSQL のサポート SQL を知っていれば書ける  2 Way SQL   代入コメント
+ ビューのように SQL を扱う プレースホルダーをと配列を使う IF文が書ける BEGIN/END 内部的にいろいろ処理してくれる    ###移植した方法のこと
+ まず検討  定番ライブラリでダメか？代替案は？  次は全部移植するべきか？  その美点と既存のものとの融合なども検討  最初に確認すること  テストがあるか？ 欲する機能の切り出し可能か？  大原則 : 一度に複数を相手にしない by 宮本武蔵  だんだん動くように書き直す手法  逐次訳的移植  名前などはそのまま  逐次訳的テスト移植  これも語意などを変えずに移植 SDao は JUnit xUnit が共通語彙 interface は Ruby にはないので移植しない  変えたもの  言語間の違いは変更した  PTSCTCPW  単純なテストから移植していく それ以外は pending  Characterization Test  移行元の振る舞いに不明な点がある 移行元コードの現在の振る舞いを自動テストに落とし込む  洗練する  TDDのサイクル  実装のテストから仕様に対するテスト  ホワイトボックステストからブラックボックステストに変換 RSpec でやってみる 外部仕様の記述に切り替える  郷に入っては郷に従え  Ruby っぽいコード変換していく  王道を知る  王道があればそれを取り入れる  パーサジェネレータ racc  割愛されたのであとで調べる  恩返し  移植時にわかった点やいいコードなどを元に Feedback する   ###Q&amp;A
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/08/22/ruby-http-regional-rubykaigi-org-tokyo01-title-Ruby-01/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/20/rails-mongrel-apache/">重いクエリーを叩いたときにレスポンスが途切れる問題</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  一般的な，
+ Apache + mod_proxy_balancer Mongrel Rails  という状況で，かなり重いクエリー(200秒前後かかる)を実行すると，
+ Rails のログでは処理が終わってレンダリングされているのを確認 Apache のログでは結果が帰って来ているのを確認(コンテンツの大きさも表示される) ところが，ブラウザ側では読み込み中まま．  と言う問題が発生中．環境は Firefox 3&frasl;2 on ubuntu なのだが，ここに問題があるとは思えないので，Apache とブラウザのセッションなり接続が切れるのかなぁと考えて調査中．
+教えてエロい人orz
+##2008/08/21 9:30 追記
+どうも 30 秒を越えると反応がなくなる．具体的には，
+def test_request st = params[:st] sleep(st.to_i) render :text =&gt; st end  などとしてアクセスすると，
+ st=31 までは問題無い． st=32 で帰って来なくなる．  という状況．ただし，Timeout はデフォルト値(300 sec)のままなので，やっぱ mod_proxy_balancer の問題かな？
+##2008/08/23 18:40 追記 社内ネットワークの問題でした(ノ∀`)タハー
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/08/18/rails-ruby-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0032-title-Rails-32/">Rails勉強会＠東京第32回に参加してきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今回はお盆休み中ということもあってか，20名弱と少ない参加人数でした．そう言う私は風邪気味で，ちょっとログを追えていない部分があります(；´Д｀)．
+##セッションネタ
+ yuguiさんの Redmine RESTful 化  REST の話も含める  Java を使って Ruby の Class を書く方法 git を maiha さんに教える  セッションの割り振りの時，どうせなら3つともやってしまおうと言うことになり，1時間15分 x 3という時間割になりました． ##時間割
+ 13:15～14:30 14:40～15:55 16:05～17:20  ##Redmine RESTful 化
+ Trac に対する利点は？  複数のプロジェクトを管理できる 親子関係を1階層だけだが作れる 複雑な Role を作成することができる プラグインがある   ###REST の話
+ Web サービスとは  RESTful RPC(SOAP) ある URI に Method を含む内容を POST する hybrid(XML-RPC)  RESTfulとは(高橋さん) Web は世界初の大規模分散アーキテクチャ REST はアーキテクチャスタイル HTTP Method で PUT/DELETE とか言ってるのは，原理主義者にとっては異端 原論文を見ないといけない？ GET URL が重要  URL にリソースに関する全ての情報が入っている cachable(キャッシュ可能)なリソース 認証はクライアントサイドで毎回認証情報をサーバに送信する RESTful だとサーバは stateless なのでセッション管理はクライアントでやるべき．  Webサービスでユーザ個別の Presentation なのは，「ようこそ＊＊さん」とかユーザへのメッセージとか  この部分だけを更新するような Rich Client(Flash/Javascript)があれば，分離できる． 共通部分は cachable ユーザ個別の部分は認証込みのリクエストを出す．  認証は SSL-Basic認証が最強？  DNS Poisoning 問題に波及  どの部分をスケールして欲しいかで，認証・キャッシュなどを使い分ける 日本では確認画面が問題  確認画面は RESTful ？ Lock 機構？  HTTP Status  201 Created は新しく URI (リソース) が生成されたときに返す Updated は 204 (no content)  Ruby Authentication  RubyConf 2008 (http://www.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/08/18/rails-ruby-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0032-title-Rails-32/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/29/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;30 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/31/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

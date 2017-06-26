@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>MySQL ユーザカンファレンス 2008 2nd Day &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>MySQL ユーザカンファレンス 2008 2nd Day</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>#[MySQL]MySQL ユーザカンファレンス 2008 2nd Day
+##MySQL Performance Tuning #1
+###Introduction</p>
+
+<ul>
+<li>Through put
+
+<ul>
+<li>どこに問題が</li>
+<li>輻輳</li>
+</ul></li>
+<li>Slow queries
+
+<ul>
+<li>インデックスの問題</li>
+<li>書き直したほうがいいんじゃないか</li>
+<li>Optimizerがどう動くのか</li>
+</ul></li>
+<li>Application
+
+<ul>
+<li>Roundtrips</li>
+</ul></li>
+</ul>
+
+<p>##The Slow Query Log</p>
+
+<ul>
+<li>遅いクエリーを記録するログ</li>
+<li>問題
+
+<ul>
+<li>どの部分が遅いのかがわからない</li>
+<li>INFORMATION_SCHEMA が出てくるときがある</li>
+</ul></li>
+<li>Details
+
+<ul>
+<li>Execution TIme</li>
+<li>実行された時間にをみる</li>
+<li>User Account</li>
+<li>誰が実行しているのか</li>
+<li>Query_time</li>
+<li>全実行時間</li>
+<li>Lock_time</li>
+<li>ロック時間</li>
+<li>SET timestamp=</li>
+<li>サーバで実行された timestamp</li>
+</ul></li>
+<li>5.1 では
+
+<ul>
+<li>テーブルに保存できる</li>
+<li>再起動なしに On/Off</li>
+<li>ミリ秒まで可</li>
+<li>全ログを記録可能</li>
+</ul></li>
+<li>Configurations
+
+<ul>
+<li>long-queries-not-using-indexes</li>
+<li>インデックス使わないクエリー</li>
+<li>min-examined-ro-limit</li>
+<li>最小行数</li>
+</ul></li>
+<li>mysqldumpslow
+
+<ul>
+<li>Slow Query の統計をとることができる</li>
+<li>ログ中の統計</li>
+<li>全実行時間</li>
+<li>平均実行時間</li>
+</ul></li>
+</ul>
+
+<p>###EXPLAIN Basics</p>
+
+<ul>
+<li>Optimizer のクエリ実行計画</li>
+<li>SELECT の前に EXPLAIN をつける
+
+<ul>
+<li>key_len: インデックスのバイト数</li>
+<li>表示順で結合されている</li>
+</ul></li>
+<li>:id カラム
+
+<ul>
+<li><union1,2> id:1, id:2 の結合</li>
+</ul></li>
+<li>:select_type
+
+<ul>
+<li>SIMPLE</li>
+<li>通常の JOIN</li>
+<li>SUBQUERY</li>
+<li>DPENDENT SUBQUERY : 注意が必要</li>
+<li>UNION</li>
+<li>DPENDENT UNION : 注意が必要</li>
+<li>PRIMARY</li>
+</ul></li>
+<li>:table
+
+<ul>
+<li>どのテーブルか</li>
+<li>なければ NULL</li>
+</ul></li>
+
+<li><p>:type</p>
+
+<ul>
+<li>取得方法</li>
+<li>NULL</li>
+<li>データなし</li>
+<li>system, const, eq_ref</li>
+<li>1行</li>
+<li>ref,ref_of_null,range</li>
+<li>複数行</li>
+<li>ALL</li>
+<li>全行</li>
+<li>*_subquery</li>
+</ul></li>
+
+<li><p>Single Row EXPLAIN type</p>
+
+<ul>
+<li>system</li>
+<li>1行のみのテーブル</li>
+<li>const</li>
+<li>Optimizer の中で実行される</li>
+<li>UNIQUE and NOT NULL のカラムが指定されている</li>
+<li>eq_ref</li>
+<li>JOIN で 1:1 のとき</li>
+</ul></li>
+
+<li><p>Many-Row EXPLAIN type</p>
+
+<ul>
+<li>ref</li>
+<li>非ユニークなマッチ</li>
+<li>range</li>
+<li>範囲, BETWEEN, &lt;= &gt;=, in, PATTERN-SEARCH</li>
+<li>index</li>
+<li>フルインデックススキャン</li>
+<li>LIMIT で制限かけられるが，EXPLAIN ではわからない</li>
+<li>ALL</li>
+<li>完全テーブルスキャン</li>
+</ul></li>
+
+<li><p>:possible_keys</p>
+
+<ul>
+<li>使えそうなキー</li>
+</ul></li>
+
+<li><p>:key</p>
+
+<ul>
+<li>実際に使ったキー</li>
+</ul></li>
+
+<li><p>:key_len</p>
+
+<ul>
+<li>複合インデックスの場合のその利用範囲</li>
+</ul></li>
+
+<li><p>:ref</p></li>
+
+<li><p>:rows</p>
+
+<ul>
+<li>1行目はその行数を見る</li>
+<li>2行目は，1行目の結果毎に見る</li>
+<li>3行目は，2行目の結果毎に(つまり1行目 X 2行目)毎に見る</li>
+<li>見てる行数なので，最後の結果行数ではない</li>
+</ul></li>
+
+<li><p>:Extra</p>
+
+<ul>
+<li>Using where</li>
+<li>インデックスされたあとに条件がある場合</li>
+<li>Using temporary</li>
+<li>内部的に作られる一時テーブルを使って</li>
+<li>JOIN/GROUP BY</li>
+<li>Using filesort</li>
+<li>ソートするときに</li>
+<li>Using index</li>
+<li>実際のテーブル行まで見ないで実行する
+
+<ul>
+<li>インデックスを見るだけで結果がわかる場合</li>
+</ul></li>
+<li>複合インデックスの場合には有用</li>
+<li>Using index for group-by</li>
+<li>DISTINCT 使ったときなどに</li>
+</ul></li>
+
+<li><p>mk-visual-explain</p>
+
+<ul>
+<li><a href="http://www.maatkit.org/">http://www.maatkit.org/</a></li>
+<li>表示を見やすくしてくれる</li>
+</ul></li>
+</ul>
+
+<p>###Query Cache</p>
+
+<ul>
+<li>クエリーの結果全体を保存する
+
+<ul>
+<li>同じクエリーなら，キャッシュから返すのでかなり効率的</li>
+<li>ハッシュ形式で，クエリーがキーとして保存されている</li>
+</ul></li>
+<li>pre-parser が先頭の 3文字が SEL なら保存</li>
+<li>キャッシュできるもの
+
+<ul>
+<li>関数 CURDATE() などはキャッシュされない</li>
+</ul></li>
+<li>設定するには
+
+<ul>
+<li>query-cache-type</li>
+<li>ON/OFF</li>
+<li>DEMAND(SQL_CACHE をつければ)</li>
+<li>query-cache-size</li>
+<li>キャッシュ容量</li>
+<li>query-cache-limit</li>
+<li>結果の最大サイズ</li>
+</ul></li>
+<li>統計
+
+<ul>
+<li>SHOW GLOBAL STATUS;</li>
+<li>Com_select
+
+<ul>
+<li>キャッシュミス</li>
+</ul></li>
+<li>Qcache_hits
+
+<ul>
+<li>ヒット数</li>
+</ul></li>
+<li>Qcache_lowmem_pruned
+
+<ul>
+<li>メモリ不足でキャッシュできなかった数</li>
+</ul></li>
+<li>Qcache_not_cached
+
+<ul>
+<li>関数仕様などによりキャッシュされなかった</li>
+</ul></li>
+<li>Qcache_free_blocks
+
+<ul>
+<li>大きくなると断片化が起こっている</li>
+</ul></li>
+</ul></li>
+<li>注意
+
+<ul>
+<li>サイズを大きすぎると，その処理に時間をとられすぎてしまって遅くなる．</li>
+<li>Parser の前段で見るから</li>
+<li>ものによっては削除した方がいいかもしれない</li>
+</ul></li>
+</ul>
+
+<p>##5.1 In-Depth</p>
+
+<ul>
+<li>特徴</li>
+</ul>
+
+<p>###データウェアハウス向け</p>
+
+<ul>
+<li><p>テーブルパーティショニングがエンジンに関係なく利用可能</p>
+
+<ul>
+<li>range//hash/key/list で分割</li>
+<li>1024まで分割可能</li>
+<li>保存すべきテーブルは自動的に判別してくれる</li>
+<li>判別できない場合には最後のテーブルに入る</li>
+<li>分割するには分割する計画もしっかりたてなければならない</li>
+<li>結果的に負荷の増大につながる</li>
+<li>2重にパーティショニングも可能</li>
+<li>hash</li>
+<li>I/O 削減にもつながる
+
+<ul>
+<li>パーティショニングテーブルを別ディスクに入れることで I/O を削減</li>
+</ul></li>
+<li>key</li>
+<li>地域ごとに分けるなど</li>
+<li>Partitioning Metadata</li>
+<li>desc patitinings;</li>
+<li>分割する範囲と内容がしっかり精査されていれば，I/O(Random Access) の削減につながるので高速化される．</li>
+</ul></li>
+
+<li><p>Full Text/Plug-in</p>
+
+<ul>
+<li>テキストパーサーを本体から取り除いて，プラグインを作成できるようになった．</li>
+<li>オンタイムでプラグインのインストール・アンインストールができる．</li>
+</ul></li>
+
+<li><p>XML Xpath Support</p>
+
+<ul>
+<li>クエリーを Xpath で記述可能になった．</li>
+</ul></li>
+
+<li><p>Archive Engine Enhancements</p>
+
+<ul>
+<li>MyISAMよりもログなどに特化した感じのエンジン</li>
+<li>集約系はかなり早いが，1レコードピックアップは非常に遅い</li>
+<li>圧縮率の向上</li>
+<li>Archive Reader</li>
+<li>オンラインバックアップツール</li>
+<li>ユニーク・非ユニークキーのサポート</li>
+<li>ファイルコピーで他サーバで自動的にデータベースを発見してくれるようになる．</li>
+</ul></li>
+
+<li><p>MySQL Cluster Disk-based Data</p>
+
+<ul>
+<li>メモリ以外にディスクに保存できるようになった．</li>
+</ul></li>
+
+<li><p>行ペースレプリケーション</p>
+
+<ul>
+<li>INSERT は Statement-base と Row-base とコストはあまり変わらない</li>
+<li>UPDATE などはコストが高くなる可能性がある</li>
+<li>変更範囲の小さい場合はかなり有利になる</li>
+</ul></li>
+
+<li><p>MySQL Cluster Replication</p>
+
+<ul>
+<li>データセンターレプリケーション</li>
+</ul></li>
+</ul>
+
+<p>###管理を容易に</p>
+
+<ul>
+<li>タスクスケジューラ
+
+<ul>
+<li>STORED PROCUDURE的に登録しておくと，決まった時間に実行できる</li>
+</ul></li>
+</ul>
+
+<p>###高パフォーマンス化</p>
+
+<ul>
+<li>ALTER/DROP INDEX/ADD INDEX =&gt; Faster</li>
+<li>データロードの高速化</li>
+
+<li><p>SHOW PROCESSLIST =&gt; desc processlist;</p></li>
+
+<li><p>mysqlslap</p>
+
+<ul>
+<li>パフォーマンス・テストツール</li>
+<li>同時接続数・接続回数など，実際に近いテストを行うことも可能</li>
+</ul></li>
+</ul>
+
+<p>##Introduction to MySQL Cluster Carrier Grade Edition
+###MySQL in Telecom</p>
+
+<ul>
+<li>通信事業者でも多くの企業に採用されている</li>
+</ul>
+
+<p>###MySQL Cluster Distribution</p>
+
+<ul>
+<li>MySQL Cluster SE
+
+<ul>
+<li>Commercial</li>
+</ul></li>
+<li>MySQL Cluster Community
+
+<ul>
+<li>GPL</li>
+</ul></li>
+<li>MySQL Cluster CGE
+
+<ul>
+<li>Commercial</li>
+</ul></li>
+<li>Difference
+
+<ul>
+<li>SQL 以外のアクセスができる</li>
+<li>Geographical Replication が可能</li>
+<li>LDAP Interfaceがある</li>
+</ul></li>
+</ul>
+
+<p>###Archetecture Overview</p>
+
+<ul>
+<li>Hight Availability
+
+<ul>
+<li>同期レプリケーション</li>
+<li>通常のレプリケーションとは異なる</li>
+</ul></li>
+<li>Performance
+
+<ul>
+<li>In-Memory データベース</li>
+<li>Native API がある</li>
+</ul></li>
+<li>Scalability
+
+<ul>
+<li>容易な scale-out 性</li>
+</ul></li>
+<li>Geographic Replication
+
+<ul>
+<li>地理的に離れたデータセンターに対してレプリケーション可能</li>
+</ul></li>
+<li>Reliability</li>
+<li>Interoperatablity</li>
+<li>Rapid Development</li>
+
+<li><p>Lower TCO</p>
+
+<ul>
+<li>通常のサーバ上で動作するので，TCO 削減が可能</li>
+</ul></li>
+
+<li><p>CGE とは？</p>
+
+<ul>
+<li>Telecom に対応できるように開発されたもの</li>
+</ul></li>
+
+<li><p>Components of CGE</p>
+
+<ul>
+<li>C++ API によって高速化されている</li>
+<li>SQL Node とは別に NDB API があり，mysql の wrapper ではなく Native Code が書ける</li>
+<li>Data Node では，Disk にも書き込めるようになった</li>
+<li>Management Node</li>
+</ul></li>
+
+<li><p>Synchronous Replication</p>
+
+<ul>
+<li>2相コミットプロトコルでやりとりしている</li>
+<li>状況によって同期・非同期を使い分けている</li>
+</ul></li>
+
+<li><p>Goegraphic Redundancy</p>
+
+<ul>
+<li>Cluster 間のレプリケーションは非同期に行われる</li>
+</ul></li>
+
+<li><p>障害耐性 : Checkpoint</p>
+
+<ul>
+<li>すべてのデータをディスクに書き込んでいる(Local Checkpoint)</li>
+<li>すべてのデータに完全性があるかどうか(Global Checkpoint)</li>
+<li>データをノードグループに分散保存するので，各ノードグループで1台壊れてもサービスを提供し続けることができる.</li>
+</ul></li>
+
+<li><p>データのサイズ</p>
+
+<ul>
+<li>データ:2GB x 2 コピー x 1.1 = 2#1.1 = 4.4GB</li>
+<li>各サーバは 4.4GB/4 = 1.1 GB</li>
+</ul></li>
+
+<li><p>Native NDB API を使うと4倍高速</p></li>
+
+<li><p>死活監視</p>
+
+<ul>
+<li>Heartbeats で</li>
+</ul></li>
+</ul>
+
+<p>###Installation Basics</p>
+
+<ul>
+<li><p>System Requirements</p>
+
+<ul>
+<li>Hosts max 255 nodes</li>
+</ul></li>
+
+<li><p>Steps</p>
+
+<ol>
+<li>Install Management Server</li>
+<li>Install Management Client</li>
+<li>Create config.ini</li>
+<li>Initialize Management Server</li>
+<li>Install Data Node</li>
+<li>Install MySQL Server</li>
+<li>Install MySQL Client</li>
+</ol></li>
+</ul>
+
+<p>###Evaluation Tips</p>
+
+<ul>
+<li><p>複雑なJOINはできない</p></li>
+
+<li><p>Hardware Recommendation</p>
+
+<ul>
+<li>In-Memory データベースなので，64bit CPU がよい</li>
+<li>よいディスクシステムも必要</li>
+</ul></li>
+
+<li><p>NDB API vs. SQL</p>
+
+<ul>
+<li>lowr latency and less overhead</li>
+</ul></li>
+
+<li><p>Distribution Awareness</p>
+
+<ul>
+<li>NDB API をつかうと，アクセスすべきデータノードががわかるので，ネットワークトラフィックも軽減できる</li>
+</ul></li>
+</ul>
+
+<p>###Benchmarks</p>
+
+<ul>
+<li><p>DBT2 Benchmark</p>
+
+<ul>
+<li>OLTP</li>
+</ul></li>
+
+<li><p>System Configuration</p>
+
+<ul>
+<li>CGE 5.1 w/patches</li>
+<li>X5120 x 2</li>
+<li>4GB</li>
+<li>8 nodes</li>
+</ul></li>
+
+<li><p>Results</p>
+
+<ul>
+<li>Dolphine Express を使うと性能が上がる？</li>
+<li>8ノードで 100000トランザクション/分まで対応可能だった</li>
+</ul></li>
+</ul>
+
+<p>###Roadmap</p>
+
+<ul>
+<li>MySQL Cluster 6.2
+
+<ul>
+<li>Disk Data サポート</li>
+<li>Geo-Replication</li>
+<li>DIstribution Awareness</li>
+<li>多接続時の最適化</li>
+<li>レプリケーションの最適化</li>
+</ul></li>
+<li>MySQL Cluster 6.3
+
+<ul>
+<li>LDAP Interface</li>
+<li>圧縮バックアップ，圧縮 Local ChechPoint</li>
+<li>Master/Master レプリケーション</li>
+<li>MySQL 5.1 の機能など</li>
+</ul></li>
+<li>MySQL Cluster 6.4
+
+<ul>
+<li>クラスターのオンライン操作</li>
+<li>8 core までの対応</li>
+<li>GUI 管理ユーティリティ</li>
+<li>Windows Support</li>
+</ul></li>
+<li>Beyond MySQL Cluster 6.4
+
+<ul>
+<li>MySQL 6.0/6.1 のインテグレーション</li>
+<li>外部キーサポート</li>
+<li>Isolation Level の細分化など</li>
+</ul></li>
+</ul>
+
+<p>##MySQL Performance Tuning #2</p>
+
+<ul>
+<li>System Configuration
+
+<ul>
+<li>All logging turned off</li>
+<li>Query cache turned off</li>
+<li>Memoby buffers &ldquo;large enough&rdquo;</li>
+</ul></li>
+</ul>
+
+<p>###Logging Application</p>
+
+<ul>
+<li>options
+
+<ul>
+<li>MyISAM</li>
+<li>MyISAM with INSERT DELAYED</li>
+<li>InnoDB</li>
+<li>Archive</li>
+</ul></li>
+<li>Inserts/seconds vs. Concurrent connection
+
+<ul>
+<li>MyISAM</li>
+<li>16で頭打ちで下がり始める</li>
+<li>MyISAM with INSERT DELAYED</li>
+<li>256までスケール</li>
+<li>InnoDB</li>
+<li>64で頭打ちで下がり始める</li>
+<li>Archive</li>
+<li>256以上にスケール</li>
+</ul></li>
+<li>CPU Usage
+
+<ul>
+<li>MyISAM は 64 で下がり始める</li>
+<li>調べるテールブロックの競合が起き，ロック待ちが多発する</li>
+<li>DELAYED</li>
+<li>64 で 頭打ちになった</li>
+<li>Archive</li>
+<li>使い切っている</li>
+</ul></li>
+<li>Disk Utilization(every 10 COMMITs)
+
+<ul>
+<li>InnoDB</li>
+<li>かなり高いディスク利用率</li>
+</ul></li>
+<li>Conclution
+
+<ul>
+<li>MyISAM</li>
+<li>64ぐらいでロック待ち多発</li>
+<li>DELAYED</li>
+<li>CPU 利用率で頭打ち</li>
+<li>InnoDB</li>
+<li>ディスク利用率が原因で頭打ちになる</li>
+<li>Archive</li>
+<li>DELETE/UPDATE できない</li>
+</ul></li>
+</ul>
+
+<p>###Track entry-time automatically</p>
+
+<ul>
+<li>options
+
+<ul>
+<li>TIMESTAMP column</li>
+<li>TRIGGER</li>
+<li>TIMESTAMP に NOW() など値を INSERT</li>
+</ul></li>
+<li>Results
+
+<ul>
+<li>TIMESTAMP column が最も早い</li>
+<li>TRIGGER がもっとも遅い</li>
+</ul></li>
+</ul>
+
+<p>###Intex Merge Test</p>
+
+<ul>
+<li>起こりうる条件(複合インデックスでの)
+
+<ul>
+<li>2つのインデックス張ったカラムの OR 接続</li>
+<li>AND である場合</li>
+<li>どちらかが LIKE/BETWEEN</li>
+</ul></li>
+<li>SELECT ip, uid, ts FROM sessions WHERE ip = &lsquo;<em>ip</em>&rsquo; OR ts = &lsquo;<em>TS</em>&rsquo;;
+
+<ul>
+<li>特定の値で SELECT</li>
+<li>EXPLAIN で index_merge がでる</li>
+<li>インデックスからキーを取得して，キーをマージ，そのリストからデータを取得</li>
+</ul></li>
+<li>SELECT ip, uid, ts FROM sessions WHERE ip = &lsquo;<em>ip</em>&rsquo; UNION SELECT ip, uid, ts FROM sessions WHERE ts = &lsquo;<em>TS</em>&rsquo;;
+
+<ul>
+<li>各結果を結合する</li>
+<li>index_merge の方が高速</li>
+</ul></li>
+<li>SELECT ip, uid, ts FROM sessions WHERE ip = &lsquo;<em>ip</em>&rsquo; AND ts = &lsquo;<em>TS</em>&rsquo;;
+
+<ul>
+<li>Intersect vs .composit index</li>
+<li>各 index から該当キーを取得，合致する部分を見つけ出し，データを取得</li>
+<li>複合インデックスサーチの方が若干高速ではあった．</li>
+</ul></li>
+<li>SELECT ip, uid, ts FROM sessions WHERE ip = &lsquo;<em>ip</em>&rsquo; AND ts BETWEEN  &lsquo;<em>TS</em>&rsquo; AND &lsquo;<em>TS</em>&rsquo;;
+
+<ul>
+<li>範囲で検索</li>
+<li>インデックスを範囲から取得してソート，キーをマージして，データを取得</li>
+<li>複合インデックスの方が，2つの条件を同時に満たすキーを取得できるので，高速に検索できる</li>
+</ul></li>
+</ul>
+
+<p>###NOW()</p>
+
+<ul>
+<li>options
+
+<ul>
+<li>NOW()</li>
+<li>MONTH(NOW())</li>
+<li>MONTH(&lsquo;YYYY-MM-DD&rsquo;)</li>
+<li>DATE_FORMAT</li>
+<li>SUBSTRING</li>
+</ul></li>
+<li>BENCHMARK 関数は有用なツールになる</li>
+</ul>
+
+<p>##InnoDB Index Merge</p>
+
+<ul>
+<li>UPDATE/INSERT でインデックスの再作成などは非常に高コスト
+
+<ul>
+<li>INSERT BUFFER がある</li>
+</ul></li>
+<li>Insert Buffer with LOAD DATA INFILE
+
+<ul>
+<li>インデックスがない場合に比べて</li>
+<li>ユニークではないキーならそれほど変わらない</li>
+<li>ユニークインデックスならかなり低下する
+
+<ul>
+<li>UNIQUE_CHECKS=0 とすると，ユニークチェックしないので，非常に高速化される</li>
+</ul></li>
+<li>同時接続32程度だと有意な差がなくなる</li>
+<li>SHOW ENGINE INNODB STATUS;</li>
+</ul></li>
+</ul>
+
+<p>###What&rsquo;s the last payment of my customers?</p>
+
+<ul>
+<li>Using the SAKILA schema&hellip;
+
+<ul>
+<li>1.5/sec</li>
+<li>64 Threads になると，8時間たっても終わらなかった</li>
+</ul></li>
+<li>Delrived Table を使う(サブクエリー)
+
+<ul>
+<li>12.5/sec 程度に向上</li>
+</ul></li>
+<li>View を作る
+
+<ul>
+<li>いいと思ったが，あまり変わらない</li>
+<li>同じ操作だから変化はない</li>
+</ul></li>
+<li>最終支払日のみを記録したテーブルを作る
+
+<ul>
+<li>25/sec 程度に向上</li>
+<li>ただし2重にテーブル更新しなくてはならない</li>
+</ul></li>
+<li>複合インデックスをはると，非常に高速になる．
+
+<ul>
+<li>370/sec ぐらいまで</li>
+</ul></li>
+</ul>
+
+<p>##Who Is a Query REALLY Executed</p>
+
+<ul>
+<li>SHOW GLOBAK STATUS LIKE &lsquo;handl%&rsquo;;</li>
+<li>どのように実行されているのかの情報．</li>
+<li>Handler_delete
+
+<ul>
+<li>DELETEs</li>
+</ul></li>
+<li>Handler_read_first
+
+<ul>
+<li>最初のインデックスから</li>
+</ul></li>
+<li>Handler_read_key
+
+<ul>
+<li>キーにマッチするものをすべて持ってくる場合</li>
+</ul></li>
+<li>Handler_update
+
+<ul>
+<li>UPDATEa</li>
+</ul></li>
+<li>Handler_write
+
+<ul>
+<li>INSERTs</li>
+</ul></li>
+</ul>
+
+<p>###SHOW STATUS</p>
+
+<ul>
+<li>SHOW SESSION STATUS
+
+<ul>
+<li>該当セッションのみの情報を表示できる</li>
+</ul></li>
+<li>Com_select/Select_scan/Handler_read_rnd_next
+
+<ul>
+<li>フルテーブルスキャンが行われているので</li>
+<li>Rows + 1 で empty になって終わり</li>
+</ul></li>
+<li>Created_tmp\tables/Handler_read_key/Handler_update/Handler_write
+
+<ul>
+<li>テンポラリテーブルが作られる感じ</li>
+</ul></li>
+<li>Handler_read_rnd_next/Sort_scan/Sort_rows/Handler_read_rnd
+
+<ul>
+<li>テンポラリテーブルの結果について，ファイルソート(filesort)が行われている</li>
+</ul></li>
+<li>内部をしっかり知っていれば，わかることなんだろう．</li>
+</ul>
+
+<p>##MySQL Replication を理解する</p>
+
+<ul>
+<li>Instance
+
+<ul>
+<li>MySQL の process</li>
+</ul></li>
+<li>Schema
+
+<ul>
+<li>オブジェクトのコンテナ</li>
+<li>テーブルとか</li>
+</ul></li>
+</ul>
+
+<p>###通常のレプリケーション</p>
+
+<ul>
+<li>Slave
+
+<ul>
+<li>IO Threads</li>
+<li>SQL Threads</li>
+</ul></li>
+</ul>
+
+<p>###Clustering != Replication</p>
+
+<ul>
+<li>実時間 = 同期的ではない</li>
+<li>フォールトトレラントではない</li>
+<li>2相コミットではない</li>
+</ul>
+
+<p>###Replication == Clustering</p>
+
+<ul>
+<li>参照のスケールアウトが可能</li>
+</ul>
+
+<p>###MySQL Cluster</p>
+
+<ul>
+<li>同期的であり，完全性が保証されている</li>
+</ul>
+
+<p>###Common Paradigms</p>
+
+<ul>
+<li>Read Replication
+
+<ul>
+<li>参照のスケールアウト</li>
+<li>同期的ではない</li>
+<li>One Point Failure がある</li>
+<li>だが簡単に参照のスケールアウトができる</li>
+</ul></li>
+<li>Application Cluster
+
+<ul>
+<li>InnoDB Master -&gt; MyISAM Slave</li>
+<li>Slashdot は検索用データベースを分割することで，メインデータベースから負荷を分散した．</li>
+<li>特定用途向けにデータベースサーバを立てた感じ</li>
+<li>Blackhole エンジンによって，Binlog にだけ書き込むことで，I/O を削減できる</li>
+</ul></li>
+<li>Master -&gt; Slave -&gt; Slave
+
+<ul>
+<li>I/O を低減できる</li>
+</ul></li>
+<li>Writing Cluster
+
+<ul>
+<li>Multi Master</li>
+<li>Master-Master Replication</li>
+<li>No single point of failure</li>
+<li>主キーやコンフリクトに備える必要がある</li>
+</ul></li>
+<li>Split Master
+
+<ul>
+<li>共有ディスク/DRBD</li>
+</ul></li>
+<li>Star Cluster
+
+<ul>
+<li>やはり主キー問題がある</li>
+</ul></li>
+<li>Circular
+
+<ul>
+<li>循環参照</li>
+</ul></li>
+<li>Federated
+
+<ul>
+<li>リモートサーバのテーブルをローカルのように参照できる</li>
+</ul></li>
+<li>Memchached Clustering</li>
+</ul>
+
+<p>###どう考えるべきか</p>
+
+<ul>
+<li>何が遅くて，何を早くしたいのか</li>
+<li>パーティショニングも考える</li>
+<li>同期的ではないことを前提としたアプリケーション設計
+
+<ul>
+<li>パフォーマンスを優先するならば，同期的ではないことを念頭に置くべきかもしれない</li>
+</ul></li>
+</ul>
+
+<p>##インデックスを使いこなす</p>
+
+<ul>
+<li>現場で使えるMySQL の作者</li>
+<li>この内容も DB マガジンに掲載予定</li>
+</ul>
+
+<p>###検索処理とインデックス</p>
+
+<ul>
+<li>CPU/メモリに対して，HDD のアクセス時間は1000倍近い差がある
+
+<ul>
+<li>ディスク I/O が性能阻害要因</li>
+</ul></li>
+<li>B+Treeインデックスの構造とI/O
+
+<ul>
+<li>インデックスは 16KB 単位のブロックで読む</li>
+<li>ブランチとルートはキャッシュされるが，リーフとデータで2回のディスクアクセスが発生する</li>
+</ul></li>
+<li>InnoDB のインデックス構造
+
+<ul>
+<li>クラスタインデックス</li>
+<li>主キーとそれ以外のデータの組
+
+<ul>
+<li>データが大きくなるとインデックス自体が大きくなる</li>
+</ul></li>
+<li>セカンダリインデックス</li>
+<li>PK との組み合わせ</li>
+<li>主キー検索に関しては1回で読めるので早い</li>
+<li>主キーは可能な限り小さくする</li>
+</ul></li>
+<li>B+Treeインデックスの構造とI/O(範囲検索)
+
+<ul>
+<li>リーフは1回でいいが，データは数回読む必要がある</li>
+</ul></li>
+<li>インデックスの副作用
+
+<ul>
+<li>選択範囲が多すぎるとフルテーブルスキャンを採用してしまう</li>
+<li>インデックスは使用せずにデータをシーケンシャルスキャンする</li>
+<li>ブロック単位でのリードなので，1件毎のランダムアクセスよりも効率がよくなる</li>
+<li>隣接ブロックも読み込むので，さらに効率よくなる</li>
+<li>全体の 10～15% 以上だとフルテーブルスキャンになる</li>
+</ul></li>
+<li>Covering Index
+
+<ul>
+<li>インデックスだけを読む検索</li>
+<li>データファイルにアクセスせずに，インデックスのみを調べるだけで処理が完結する場合</li>
+<li>SELECT primary_key from TABLE;</li>
+<li>WHERE/SELECT のすべてのカラムがインデックスに含まれていること</li>
+<li>EXPLAIN の Extra: が Using index になっていれば，Covering Index になっている</li>
+</ul></li>
+<li>マルチカラムインデックス
+
+<ul>
+<li>キーのすべてが AND 条件で使われている</li>
+</ul></li>
+<li>インデックスマージ
+
+<ul>
+<li>ディスクリード回数は，インデックス x 2 + データで3回で，さらにマージ処理が加わるので，マルチカラムインデックスよりも遅い場合がある</li>
+</ul></li>
+<li>マルチカラムインデックスが使えない場合
+
+<ul>
+<li>WHERE 条件に先頭列が指定されていない場合</li>
+<li>OR 条件の場合</li>
+<li>インデックスマージの方がいい</li>
+</ul></li>
+<li>ソート処理とインデックス
+
+<ul>
+<li>インデックスがソート対象だと，ソート処理の必要がない</li>
+<li>ORDER BY がインデックス対象でないと，データを取得した後にソート処理している</li>
+<li>Extra: Using filesort の場合</li>
+<li>両方インデックスに入っていても，片一方が範囲であれば，ソート処理が発生する</li>
+<li>ソート対象のキーが使われていると，Using filesort は起きないが，フルテーブルスキャンが発生する</li>
+</ul></li>
+
+<li><p>ORDER BY LIMIT N の落とし穴</p>
+
+<ul>
+<li>以下のどれかが使われる</li>
+</ul>
+
+<ol>
+<li>条件にあるインデックスが使われ，ソートして N 件を取得する</li>
+</ol>
+
+<ul>
+<li>type=range, key=条件, Using filesort)</li>
+<li>条件を満たすレコードが少ないといい</li>
+</ul>
+
+<ol>
+<li>ソート対象のインデックスが使われ，レコードを上からなめて N 件になったら返す</li>
+</ol>
+
+<ul>
+<li>レコードが大量にあれば， LIMIT の条件を満たす可能性が高くなる</li>
+</ul>
+
+<ol>
+<li>フルテーブルスキャンが使われる</li>
+</ol>
+
+<ul>
+<li>条件でインデックスが使えず，2番目の条件も満たさない場合</li>
+<li>FORCE INDEX/IGNORE INDEX ヒントでコントロールしてみる</li>
+</ul></li>
+
+<li><p>DBT1 ベンチマーク結果</p>
+
+<ul>
+<li>インデックスを適切に張れば，8コアまではスケールアウトする</li>
+</ul></li>
+</ul>
+
+<p>###更新処理とインデックス</p>
+
+<ul>
+<li>INSERT すると何が起こるのか
+
+<ul>
+<li>リーフブロックがいっぱいになると，新しいリーフブロックが割り当てられる</li>
+</ul></li>
+<li>昇順INSERT
+
+<ul>
+<li>インデックスのブロックがフルに使われ，効率がよくキャッシュされやすい</li>
+</ul></li>
+<li>ランダムINSERT
+
+<ul>
+<li>リーフブロックに空きを作るように INSERT されていくので，虫食い状態になりやすく，キャッシュが有効に働かなくなる</li>
+<li>ベンチマーク</li>
+<li>1000件レコードに 100万件 INSERT</li>
+<li>インデックス1個
+
+<ul>
+<li>時間1.8倍</li>
+<li>大きさ2倍</li>
+</ul></li>
+<li>インデックス3個
+
+<ul>
+<li>時間3倍ちょっと</li>
+<li>大きさ2倍ちょっと</li>
+</ul></li>
+</ul></li>
+<li>InnoDB と AUTO_INCREMENT
+
+<ul>
+<li>5.0 では AUTO_INCREMENT 時にテーブルロックをかけるために，同時接続数の増加に対してスケーラビリティが劇的に落ちる</li>
+<li>5.1 ではかなり軽減される</li>
+</ul></li>
+<li>昇順INSERTのためのアーキテクチャ
+
+<ul>
+<li>Buffering insert</li>
+<li>インデックスの無いテーブル</li>
+<li>緩衝材サーバに INSERT -&gt; SELECT + Sort + Bulk update + DELETE
+
+<ul>
+<li>リアルタイム性が求められるとダメ</li>
+</ul></li>
+<li>キャッシュサーバ</li>
+<li>memcached にストアして，その結果をバッチジョブなのでまとめて本サーバに送る</li>
+<li>キューを使う(Q4M Storage Engine)</li>
+<li>memcached の代わりに Q4M を使う</li>
+<li>実稼働サービスがある</li>
+</ul></li>
+<li>Blackhome Engine
+
+<ul>
+<li>テーブルデータが空のエンジン</li>
+<li>binlog によってスレーブで反映する</li>
+</ul></li>
+</ul>
+
+<p>###プラクティス</p>
+
+<ul>
+<li><p>インデックスが多すぎる</p>
+
+<ul>
+<li>インデックスが多すぎると</li>
+<li>更新性能が落ちる</li>
+<li>サイズが増える</li>
+<li>キャッシュが働かなくなる</li>
+<li>必要なものだけに張る</li>
+</ul></li>
+
+<li><p>インデックスが大きすぎる</p>
+
+<ul>
+<li>スペースを消費してパフォーマンスが悪化</li>
+<li>URL/UUID</li>
+<li>先頭 N バイトだけにする</li>
+<li>ハッシュ値をインデックスにするなど</li>
+</ul></li>
+
+<li><p>データ型の不正比較</p>
+
+<ul>
+<li>varchar_column にインデックスがあっても，=1 とかならインデックスが使われない</li>
+<li>型をあわせる</li>
+</ul></li>
+
+<li><p>無意味なマルチカラムインデックス</p>
+
+<ul>
+<li>意図的にマルチカラムインデックスを使えるように条件を追加するなど</li>
+</ul></li>
+
+<li><p>MEMORY ENGINE は ハッシュインデックスを作るので，btree などで意図的にインデックスタイプを指定する</p></li>
+
+<li><p>テストパターン・データの準備の欠如</p>
+
+<ul>
+<li>実データとかけ離れていると，ちゃんと性能評価できないので，最適化もできない</li>
+<li>データに偏りがあると，インデックス戦略も変わるので，注意が必要</li>
+</ul></li>
+</ul>
+
+<p>###まとめ</p>
+
+<ul>
+<li>ランダムアクセス回数を最小化すること</li>
+<li>EXPLAIN を使い，実行計画を知る</li>
+<li>データ型，サイズなどはしっかりあわせる</li>
+</ul>
+
+<p>##スタンプラリー抽選会</p>
+
+<ul>
+<li>デュークタオル当たりました:)</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-2nd-Day/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-1/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#1</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-1st-Day/">MySQL ユーザカンファレンス 2008 1st Day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/11/01/MySQL-MySQL-2008-1st-Day/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

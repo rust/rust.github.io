@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/29/MySQL/">MySQLのチューニングには必須の本でしょうか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  2nd Editionが出るというので，1st Editionの日本語訳は買うのやめてみました．あといまさらですが勉強会用に(ぉぃ．
+ High Performance MySQL  著者: Baron Schwartz, Peter Zaitsev, Vadim Tkachenko, Jeremy D. Zawodny, Arjen Lentz
+出版日: 2008-06
+出版社/メーカー: Oreilly &amp;amp; Associates Inc
+カテゴリ: Book
+    RESTful Webサービス  著者: Leonard Richardson, Sam Ruby
+出版日: 2007-12-21
+出版社/メーカー: オライリー・ジャパン
+カテゴリ: Book
+    Railsレシピブック 183の技  著者: 高橋 征義, 諸橋 恭介
+出版日: 2008-05-31
+出版社/メーカー: ソフトバンククリエイティブ
+カテゴリ: Book
+    月刊 アフタヌーン 2008年 07月号 [雑誌]  著者: 出版日: 2008-05-24
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/05/29/MySQL/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/26/1000Speakers-5/">1000Speakers#5に参加してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ちょっと怖々だったんですが，何とか参加してきました(ぉぃ．ひとまずログっぽいなにかを．
+==== ##iKnow
+ OpenIDに対応しているのは初めて知りました． 出題の順序などは脳科学に基づいている  瞬間記憶とかいうあれかな？  コースやリストにいろんなものがある  SF Vocabulary なんてのがある 懇親会で Rails プログラマのための英単語 なんてのもあるのを聞きました．  SNS自体が，学習の動機付けの元になっている． 日本語学習サイトを作って，英語を学びたい日本人 &lt;-&gt; 日本語を学びたい英語圏の人のコラボレーションを実現したい．  ##HTMLと漢字
+ 異体字の話．  lang 属性なんてあんまり知らなかったけど，UTF-8だけでは字体まで再現しない． デモしれもらったけど，結構違うもんだな．   ##組み込み系開発
+ 処理時間とリソースにかなりの制限があるのは，組み込み系の常なのか． パイプライン処理というより，並列処理，さらにいうと分散並列に近い考えかな？  ##Don&rsquo;t forget Cygwin
+ 昔使いました．いまは会社も自宅もLinuxなので・・・・ 結論は「Mac 買えばいいんじゃね？」？  ##WindowsMobile 用アプリケーションのお話
+ MZ3.iの人でした．フリーソフトウェア作者に会うのは初めてなので，ちょっと感動． いつのまにか Twitter に対応．これ使うべし．  ##DoCoMo と Twitter と Cookie と
+ 「にゃー」の人？誰か説明を・・・・ Cookie Proxyなのかな．これは良いアイデアではないでしょうか．  何かに応用できそう．   ##Wii で Greasemonky を使う方法
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/05/26/1000Speakers-5/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/21/rails-ruby-before_find-2-find_by_/">全てのモデルにbefore_findを追加するには#2(find_by_*)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Model.find_by_name などでも before_find したい場合には，
+class Human &lt; ActiveRecord::Base self.abstract_class = true class &lt;&lt; self def find(*params) puts &quot;before_find&quot; super end def method_missing(method_id, *arguments) if match = /^find_(all_by|by)_([_a-zA-Z]\w*)$/.match(method_id.to_s) # find_* なので before_find 範疇 puts &quot;Human.before_find_by_*&quot; end super end end end class Person &lt; Human end  などとする．これもちょっと強引だなぁ．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/20/rails-ruby-before_find/">全てのモデルに before_find を追加するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  下記のようなに，抽象モデルを上位に作り，それを継承する感じにする．
+class Human &lt; ActiveRecord::Base self.abstract_class = true class &lt;&lt; self def find(*params) puts &quot;before_find&quot; super end end end class Person &lt; Human end  すると，
+&gt;&gt; Person.find(:all) before_find =&gt; [#&lt;Person id: 1....  などとなる．データベース実体のない抽象モデルを作ることで，ActiveRecordに手を加えなくともテーブル分割や分散データベース処理などできそうです．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/19/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30-2/">Rails勉強会＠東京第30回に参加してきた#2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  さて続きを．と言うか，松田さんのPPで十分な気がしますが，とりあえずログを．
+===== ##Rails 2.1の新機能 一番の目玉は named_scope ですね．これはかなり便利だ． ###イントロ
+ Rails関係の情報源の紹介  松田さんのポジションペーパーを見る  has_one :through  今までできなかったのか．あんまり使うことないような気もしますが，なきゃないで困るか．  named_scope  後でも書きますが，SQLの合成がかなり良いな．   ###Rails 2.1を使ってみよう
+ インストール  方法としては， freeze piston (git に対応したら) git clone 今回は git clone する．   $ rails edge-git $ cd edge-git/vender/ $ git clone git://github.com/rails/rails.git $ ls   rake tasks  前回参照  script/dbconsole  database.ymlを見なくても，指定された environment の Database に接続してくれる．勝手に接続してくれるのは便利だな．いちいち「あれ？MySQLだっけ？」とか考えなくてもいいのは(ただ，それは忘れないだろうから，Username/Passwordの省入力化かな)．  Model.create に block が渡せる  Rubyっぽいくていいらしいが，ちょっと使いどころが見えない．．．．  Model.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/05/19/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/19/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30/">Rails勉強会＠東京第30回に参加してきた#まとめ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まとめと感想をば．
+##まとめ
+ script/console で再読込できるとは知らなかった．これでかなり作業効率あがるかな． Rails 2.1では変わってるところが多いので，2.0だけじゃなくて，ちゃんと追っておかないといかんぽい． メール受信に関しては，やはり Rails 起動が遅いという見解 by Yuguiさん．  確かに遅い．そして BackgrouDRb か．舞波さんも言うてたし，やっぱこの手法なんだろうか．  druby をキャッシュに使うのはいいかもしれない．  daemontools でプロセス管理させてみるのもいいかな． その場合は「druby に存在しない場合は読み込みに行き，存在すればその値を採用する」となるか．   ##業務連絡(？)
+ 次回は6/20で場所は筑波  RubyKaigi2008内で 通常の勉強会はなし ただし自発的に集まるのは良いんじゃないだろうか的な．  7月は7/20に  ##反省点と次に向けて
+ 名札忘れないように．YAPC のを再利用しよう．と言うか，鞄入れっぱなしにしておこう．．．． 重くともACアダプター持ってこう．RubyKaigiは時間長いから必須かな． もう少し積極的に発言などしていこう．受け身だけじゃ自分のためにならんな．  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/18/rails-TIPS-Rails-script-console/">Railsのscript/consoleで便利な技(？)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まあ知らなかっただけなのですが．．．．今日のRails勉強会で知った便利な技のログを．
+##変更の再ロード
+&gt;&gt; reload!  なんだこれだけでよかったのかorz．ずっと再起動してたよ．．．．
+##consoleにログをだす
+&gt;&gt; ActiveRecord::Base.logger = Logger.new($stderr)  これで一つのterminalで実行＞結果表示までできて便利そうだった．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/18/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30-1/">Rails勉強会＠東京第30回に参加してきた#1</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いつものように，まとめログを．
+##セッション一覧
+ 前半  scaffold 半歩先へ Redmine &amp; git/github &amp; ActiveRecord without Rails &lt;- ここに参加 OpenID  後半  Rails 2.1の新機能 &lt;- ここに参加 Agile Web Development with Rails 3rd editionを読んでみる Passenger(mod_rails)   ##Redmine &amp; git/github &amp; ActiveRecord without Rails ###git
+ 分散バージョン管理システム offline でも commit や log を見ることができるのが便利 merge が便利 やってみる(Yuguiさんが開発中のRedmine for ruby-langを元に)  githubから持ってくる   % git clone git://github.com/yugui/redmine4ruby-lang.git   branchを見る  % git branch * master  - master が trunk にあたるものだが，名称は慣習的なもの   .
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/05/18/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0030-title-Rails-30-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/17/Perl-YAPC-2008-Asia/">YAPC 2008 Asiaの収穫</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ざっとまとめてみる．
+##本買った
+10%オフに負けたorz．  プログラミングGauche  著者: Kahuaプロジェクト
+出版日: 2008-03-14
+出版社/メーカー: オライリージャパン
+カテゴリ: Book
+    詳説 正規表現 第3版  著者: Jeffrey E.F. Friedl
+出版日: 2008-04-26
+出版社/メーカー: オライリージャパン
+カテゴリ: Book
+   Rubyスクリプティングテクニック ―テスト駆動による日常業務処理術  著者: Brian Marick
+出版日: 2008-02-23
+出版社/メーカー: オライリー・ジャパン
+カテゴリ: Book
+  ##絵文字関係
+TypeCastやMobaSiFなどEncode::JP::Mobileとか独自実装とか，その手法などわかったのは収穫でした．あとはソース読むかな．
+##バックエンド関係
+O/Rマッパーにいろいろと，キャッシュ周りについての話題を聞いてきましたが，モバゲーがmemcashed使ってないってのは，ある意味新鮮でした．チャットっぽいことにキャッシュ使っても意味ないと言うことでしょうかね．
+あとPatitioningを自動的にやってくれるとか透過キャッシュとか，O/Rマッパーにもいろいろありますね．ActiveRecord上ではどうするのかを調べてないといけないな．
+##某Danを見た
+リアルでは初めて見ました．
+##まとめ
+Perlも一回勉強し直さないといかんな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/05/16/linum-vim-Vim/">Vimで行番号を表示するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  .vimrcに
+set number  を追加する．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/33/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;34 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/35/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

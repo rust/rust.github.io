@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails 2.2の threadsafe と ConnectionPool を読んでみる#3 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails 2.2の threadsafe と ConnectionPool を読んでみる#3</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>次は ConnectionPool について．ひとまず関連部分を出すために % rak &lsquo;ConnectionPool&rsquo; &ndash;ruby で</p>
+
+<pre><code class="language-ruby">activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb
+  19|    # connection back in. ConnectionPool is completely thread-safe, and will
+  21|    # as long as ConnectionPool's contract is correctly followed. It will also
+  24|    # connection anyway, then ConnectionPool will wait until some other thread
+  57|    class ConnectionPool
+  60|      # Creates a new ConnectionPool object. +spec+ is a ConnectionSpecification
+  63|      # this ConnectionPool.
+  65|      # The default ConnectionPool maximum size is 5.
+ 255|    # ConnectionHandler is a collection of ConnectionPool objects. It is used
+ 288|        @connection_pools[name] = ConnectionAdapters::ConnectionPool.new(spec)
+</code></pre>
+
+<h1 id="と言うことなので-activerecord-lib-active-record-connection-adapters-abstract-connection-pool-rb-の動作を調べる-まずは-activerecord-connectionadapters-connectionpool-initialize-から">と言うことなので activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb の動作を調べる．まずは ActiveRecord::ConnectionAdapters::ConnectionPool#initialize から</h1>
+
+<pre><code class="language-ruby">65 |      # The default ConnectionPool maximum size is 5.
+66 |      def initialize(spec)
+67 |        @spec = spec
+68 |        # The cache of reserved connections mapped to threads
+69 |        @reserved_connections = {}
+70 |        # The mutex used to synchronize pool access
+71 |        @connection_mutex = Monitor.new
+72 |        @queue = @connection_mutex.new_cond
+73 |        # default 5 second timeout
+74 |        @timeout = spec.config[:wait_timeout] || 5
+75 |        # default max pool size to 5
+76 |        @size = (spec.config[:pool] &amp;&amp; spec.config[:pool].to_i) || 5
+77 |        @connections = []
+78 |        @checked_out = []
+79 |      end
+80 |
+81 |      # Retrieve the connection associated with the current thread, or call
+82 |      # #checkout to obtain one if necessary.
+83 |      #
+84 |      # #connection can be called any number of times; the connection is
+85 |      # held in a hash keyed by the thread id.
+86 |      def connection
+87 |        if conn = @reserved_connections[current_connection_id]
+88 |          conn
+89 |        else
+90 |          @reserved_connections[current_connection_id] = checkout
+91 |        end
+92 |      end
+93 |
+</code></pre>
+
+<p>ActiveRecord::ConnectionAdapters::ConnectionPool#connection で現在のコネクションが取得できて，</p>
+
+<pre><code class="language-ruby">218 |      def current_connection_id #:nodoc:
+219 |        Thread.current.object_id
+220 |      end
+</code></pre>
+
+<p>どのコネクションを使うかには，Thread.current オブジェクトのID を使ってるらしい．</p>
+
+<pre><code class="language-ruby">287 |   def establish_connection(name, spec)
+288 |        @connection_pools[name] = ConnectionAdapters::ConnectionPool.new(spec)
+289 |      end
+</code></pre>
+
+<p>ここで初心に戻ると，ActiveRecord は通常 establish_connection で接続しに行くので，該当部分を activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb から見ると</p>
+
+<pre><code class="language-ruby">49 |    def self.establish_connection(spec = nil)
+50 |      case spec
+51 |        when nil
+52 |          raise AdapterNotSpecified unless defined? RAILS_ENV
+53 |          establish_connection(RAILS_ENV)
+54 |        when ConnectionSpecification
+55 |          @@connection_handler.establish_connection(name, spec)
+56 |        when Symbol, String
+57 |          if configuration = configurations[spec.to_s]
+58 |            establish_connection(configuration)
+59 |          else
+60 |            raise AdapterNotSpecified, &quot;#{spec} database is not configured&quot;
+61 |          end
+62 |        else
+</code></pre>
+
+<p>establish_connection の引数に ConnectionSpecification クラスが指定されていれば，@@connection_handler の establish_connection を呼ぶ．@@connection_handler の establish_connection というのは</p>
+
+<pre><code class="language-ruby">10 |    # The connection handler
+11 |    cattr_accessor :connection_handler, :instance_writer =&gt; false
+12 |    @@connection_handler = ConnectionAdapters::ConnectionHandler.new
+</code></pre>
+
+<p>で，ActiveRecord::ConnectionAdapters::ConnectionHandler#establish_connection が</p>
+
+<pre><code class="language-ruby">287 |      def establish_connection(name, spec)
+288 |        @connection_pools[name] = ConnectionAdapters::ConnectionPool.new(spec)
+289 |      end
+</code></pre>
+
+<p>なので，上に書いてある ActiveRecord::ConnectionAdapters::ConnectionPool#connection に戻る．そこで<b>現状のスレッド(Thread.current)で接続が無い(else)場合</b>は checkout が呼ばれ</p>
+
+<pre><code class="language-ruby">173 |      def checkout
+174 |        # Checkout an available connection
+175 |        @connection_mutex.synchronize do
+176 |          loop do
+177 |            conn = if @checked_out.size &lt; @connections.size
+178 |                     checkout_existing_connection
+179 |                   elsif @connections.size &lt; @size
+180 |                     checkout_new_connection
+181 |                   end
+182 |            return conn if conn
+183 |            # No connections available; wait for one
+184 |            if @queue.wait(@timeout)
+185 |              next
+186 |            else
+187 |              # try looting dead threads
+188 |              clear_stale_cached_connections!
+189 |              if @size == @checked_out.size
+190 |                raise ConnectionTimeoutError, &quot;could not obtain a database connection within #{@timeout} seconds.  The pool size is currently #{@size}, perhaps you need to increase it?&quot;
+191 |              end
+192 |            end
+193 |          end
+194 |        end
+195 |      end
+</code></pre>
+
+<p>なので @connection_mutex.synchronize = Mutex#synchronize によって他のスレッドと同期がとられて，データベースコネクションの Pooling が行われる．</p>
+
+<p>続く．</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-3/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-4/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-4/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#4</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-2/">Rails 2.2の threadsafe と ConnectionPool を読んでみる#2</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/10/29/rails-Rails-2-2-threadsafe-ConnectionPool-2/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

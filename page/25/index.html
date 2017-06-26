@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/18/ruby-1/">拡張ライブラリチュートリアルをやってみる#1</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  なんかlibyamlを移植することになったらしいので，ちょっとやってみる．
+参考：http://ruby.gfd-dennou.org/tutorial/ruby-ext/
+##「Hello, world」を表示するために ###処理内容を記述したファイル まずライブラリ本体．処理内容を C 言語で記述したファイル．
+ hello.c  #include &lt;stdio.h&gt; void hello() { printf(&quot;Hello, world!\n&quot;); }  ###C と Ruby を繋ぐファイル 次に，ライブラリを呼出実行できるようにする，Ruby のモジュールを作成するための C 言語で記述したファイル．
+ test1.c  #include &quot;ruby.h&quot; void hello(); VALUE wrap_hello(self) VALUE self; { hello(); return Qnil; } void Init_test() { VALUE module; module = rb_define_module(&quot;Test&quot;); rb_define_module_function(module, &quot;hello&quot;, wrap_hello, 0); }  ここで ruby.h には繋ぐための仕組みなどが記述されているらしいが，この段階ではまだ見てない．VALUE は構造体で，Ruby のオブジェクトを保存できる．
+###処理の流れ
+ Rubyが test ライブラリを読み込む  require 'test'   Init_test を実行する rb_define_module で Test モジュールを登録する．戻り値は VALUE 型構造体．  VALUE rb_define_module(const char *name);   rb_define_module_function で module(つまり Test モジュール)に hello メソッドを登録する．wrap_hello は関数ポインタで，引数の数は 0 個．self という VALUE 型構造体が第一引数として渡されるらしい．  void rb_define_module_function(VALUE module, const char *name, VALUE (*func)(), int argc);   warp_hello では hello が実行され，Qnil(Ruby の nil)が返される．  ###コンパイルするするために Makefile を作成するために，extconf.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/12/18/ruby-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/17/ruby-rails-Rails/">Rails ポケットリファレンスマニュアルを熱望します</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  どっか出版しないですかね．もちろん Rails の VersionUp に合わせて新版出す感じで．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/12/Ruby/">プログラミング初心者に Ruby を教える実験</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  うちの奥さんが「Ruby勉強したいっ！」というので，なんかいい本ないかと探してこれにしました．目指すは「土日は夫婦でプログラミング」です．
+ みるみるRubyがわかる本  著者: 掌田 津耶乃
+出版日: 2008-03-24
+出版社/メーカー: 秀和システム
+カテゴリ: Book
+    ああっ女神さまっ(38) (アフタヌーンKC)  著者: 藤島 康介
+出版日: 2008-12-22
+出版社/メーカー: 講談社
+カテゴリ: Book
+    そんな奴ァいねえ!!(14) (ワイドKC)  著者: 駒井 悠
+出版日: 2008-12-22
+出版社/メーカー: 講談社
+カテゴリ: Book
+    少年ガンガン 2009年 01月号 [雑誌]  著者: 出版日: 2008-12-12
+出版社/メーカー: スクウェア・エニックス
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/09/rails-ruby-Test-flash/">Testの中でflashを検査したいとき</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  flash[:notice] = &quot;おーけーです&quot;  などとしたときに，これをテスト側で
+assert_equal flash[notice], &quot;おーけーです&quot;  としてもエラーになる場合は，
+flash = @response.session.data[&quot;flash&quot;]  などとして取得可能．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/09/rails-ruby-amazon-ecs-ISBN/">amazon-ecsでISBN検索するには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  response = Amazon::Ecs.item_lookup({:IdType =&gt; &quot;ISBN&quot;, :SearchIndex =&gt; &quot;Books&quot;})  URL的には IdType=ISBN&amp;SearchIndex=Books&amp;ItemID=XXXXISBNXXXXX として検索できる．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/09/notitle/">いつも思い出す言葉</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  中高生のころ聞いていたECHOESのこのフレーズを最近よく思い出す．
+年を一つ取るたび 忘れることがある 純粋という名前の あのころの自分を STOP STOP STOP 愛と希望は節約できない STOP STOP STOP まだ間に合うさ夢は積み立てるな (This is) Radio &quot;K.I.D.S&quot; by ECHOES  そう節約したって始まらない．積み立てても増えるわけじゃない．ちゃんと使わないと埋もれていくだけ．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/04/notitle/">はてなブックマークのノベルティセット欲しい！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  はてなブックマークのノベルティセット欲しい！
+なんとなく書いてみました．お気に入り機能はまだ使ってないなー．というか，ブックマークするだけで調べたりあんまりしてないのが・・・・
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/01/ruby-rails-LT-rails-footnotes/">LT「rails-footnotesの紹介」の資料</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  slideshareで共有することを前提とすると，高橋メソッドとかがいいのかなぁと思いつつ，いろいろ試行錯誤しての初アップです．
+rails-footnotesView SlideShare presentation or Upload your own. (categories: plugin rails) 
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/29/linux-php-ruby-rails-2008/">楽天テクノロジーカンファレンス2008</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  無線LANはFON提供 タリーズコーヒーで1杯無料  ##オープニングセッション
+ 楽天10周年を機に技術的にはオープンに．技術コミュニティに楽天も含めてもらう方向に．  ##基調講演
+ グローバルな時代のエンジニアライフ  開かれたネットワークの存在が，情報隠蔽を無意味なものにしている エンジニアとしてどう生きるかは自分で決めようね by Matz  グローバル化した際に最後に残るのが，言語と文化 情報格差は位置エネルギーを発生させるので，そこからエネルギーを取り出すことができる タイムマシンビジネス リスクテーク = チャレンジ  チャレンジしないこと自体がリスクになるんじゃないか  自分の位置エネルギーを上げるために  ラストマン戦略 「この人に聞けば」という人になること 重要なことはコネクション 本人がすべてを知ってる必要はなく，適切な答えにたどり着くまでの道筋をしっていること 勉強会で重要なことは，誰かにあってコネクションを得ること  安住の地を捨て去り，差別化と価値創造のために，位置エネルギーが高い場所へと一歩踏み出すチャレンジが必要  ##Ride on Rubinnovaton
+ 福岡が熱いようだ  ##カーネル読書会番外編
+ CentOS  コミュニティー主導のエンタープライズディストリビューション 長期間サポート CentOS Plus/Extra リポジトリにDRDBとかあるらしい  Debian  FreeBSDカーネルなんてのもあるらしい  Fedora Gentoo  最近までインストーラすらなく，fdisk/tarball展開とか Linux の勉強になるらしい  Momonga Linux OpenSUSE Slax-ja Ubuntu Vine
+ なぜたくさんディストリビューションがあるのか
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/11/29/linux-php-ruby-rails-2008/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/11/25/slicehost/">セキュリティの設定とか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/11/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  やはりそのままではまずいので，ここを参考に設定．基本的はそのままで，ポート番号を変更しました．次は Postfix/NTPだな，先は長い．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/24/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;25 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/26/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

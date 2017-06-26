@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Ubuntu 8.04.1 Server LTSにDRBDを入れてほげる &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Ubuntu 8.04.1 Server LTSにDRBDを入れてほげる</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>すべて VirtualBox 上の Ubuntu Server で実行しています．</p>
+
+<p>##セットアップ
+###仮想マシンの用意
+同一構成の仮想マシンを2つ用意します．</p>
+
+<ul>
+<li>VirtualBox VM</li>
+</ul>
+
+<p>|*Memory|384MB|
+|*HDD|8GB|
+|*ACPI|有効|
+|*IO ACPI|有効|
+|*PAE/NX|有効|
+|*SATA|有効|</p>
+
+<p>###Ubuntu 8.04.1 Server のインストール</p>
+
+<ul>
+<li>日本語</li>
+<li>キー切り替えは無効</li>
+<li>パーティション</li>
+</ul>
+
+<p>|基本|4.0GB|/|ext3|システム|
+|論理|4.2GB|/opt|ext3|DRBD用|
+|swap|400MB|swap|swap||</p>
+
+<ul>
+<li><p>ソフトウェアは何も入れない</p></li>
+
+<li><p>ホストインターフェイスを使う</p></li>
+</ul>
+
+<p>ホスト<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>上で実行．ユーザ名は rust とします．</p>
+
+<pre><code class="language-bash">% sudo apt-get install bridge-utils
+% sudo vim /etc/network/interfaces
+----add----
+auto br0
+iface br0 inet dhcp
+  bridge_ports eth0
+-----------
+% sudo /etc/init.d/networking restart
+% sudo VBoxAddIf vbox0 rust br0        # Primary 用
+% sudo VBoxAddIf vbox1 rust br0        # Secondary 用
+% VBoxManage modifyvm &quot;Ubuntu 8.04.1 Server Primary&quot; -hostifdev1 vbox0
+% VBoxManage modifyvm &quot;Ubuntu 8.04.1 Server Secondary&quot; -hostifdev1 vbox1
+</code></pre>
+
+<p>これで2つの仮想マシンがお互いに通信できるようになります．</p>
+
+<p>##DRBD のインストール
+以後は Primary/Secondary 共に実行していきます．</p>
+
+<p>###外部からアクセスするために，openssh-server をインストール</p>
+
+<pre><code class="language-bash">$ sudo apt-get install openssh-server
+</code></pre>
+
+<p>後はホスト上から操作します．</p>
+
+<p>###DRBD のインストール</p>
+
+<pre><code class="language-bash">$ sudo apt-get install build-essential binutils cpp gcc autoconf automake1.9 libtool \
+autotools-dev g++ make flex
+</code></pre>
+
+<p>###Kernel sourceのダウンロードとビルドなど
+DRBD は 8.2.7 を．</p>
+
+<pre><code class="language-bash">$ sudo -i
+# apt-get install libncurses5-dev linux-source-2.6.24
+# cd /usr/src
+# tar jxvf linux-source-2.6.24.tar.bz2
+# cd linux-source-2.6.24
+# make mrproper
+# cp /boot/config-2.6.24-19-server /usr/src/linux-source-2.6.24/.config
+# make menuconfig
+# make prepare
+# make
+# cd ../
+# wget http://oss.linbit.com/drbd/8.2/drbd-8.2.7.tar.gz
+# tar zxvf drbd-8.2.7.tar.gz
+# cd drbd-8.2.7.tar.gz
+# make KDIR=/usr/src/linux-source-2.6.24
+# make install
+# mv /lib/modules/2.6.24.6/kernel/drivers/block/drbd.ko \
+/lib/modules/2.6.24-19-server/kernel/drivers/block/
+# modprobe drbd
+# echo 'drbd' &gt;&gt; /etc/modules
+# update-rc.d drbd defaults
+ Adding system startup for /etc/init.d/drbd ...
+   /etc/rc0.d/K20drbd -&gt; ../init.d/drbd
+   /etc/rc1.d/K20drbd -&gt; ../init.d/drbd
+   /etc/rc6.d/K20drbd -&gt; ../init.d/drbd
+   /etc/rc2.d/S20drbd -&gt; ../init.d/drbd
+   /etc/rc3.d/S20drbd -&gt; ../init.d/drbd
+   /etc/rc4.d/S20drbd -&gt; ../init.d/drbd
+   /etc/rc5.d/S20drbd -&gt; ../init.d/drbd
+# lsmod | grep drbd
+drbd                  213000  0
+cn                      9632  1 drbd
+</code></pre>
+
+<p>###設定と実行と
+次は設定．サンプルと<a href="http://www.cb1inc.com/2008/05/18/installing-drbd-8.2.5-on-ubuntu-8.04-hardy-heron">ここ</a>を参考にしました．(設定ファイルはこちら[<a href="http://gist.github.com/60611]">http://gist.github.com/60611]</a>)</p>
+
+<pre><code class="language-bash"># cp /etc/drbd.conf /etc/drbd.conf.org
+# /etc/init.d/drbd restart
+Restarting all DRBD resources/dev/drbd0: Failure: (114) Lower device is already claimed. This usually means it is mounted.
+Command '/sbin/drbdsetup /dev/drbd0 disk /dev/sda6 /dev/sda6 internal --set-defaults --create-device --on-io-error=detach' terminated with exit code 10
+.
+</code></pre>
+
+<p>などとエラーになる．なので unmount して fstab からも外す．</p>
+
+<pre><code class="language-bash"># umount /opt
+# vim /etc/fstab
+# /etc/init.d/drbd restart
+Restarting all DRBD resources/dev/drbd0: Failure: (119) No valid meta-data signature found.
+
+  ==&gt; Use 'drbdadm create-md res' to initialize meta-data area. &lt;==
+
+Command '/sbin/drbdsetup /dev/drbd0 disk /dev/sda6 /dev/sda6 internal --set-defaults --create-device --on-io-error=detach' terminated with exit code 10
+.
+</code></pre>
+
+<p>またしてもエラー．どうも初期化しないといけないようなので，初期化する．res はリソース名なので，この場合は r0 を指定．</p>
+
+<pre><code class="language-bash"># drbdadm create-md r0
+md_offset 4170145792
+al_offset 4170113024
+bm_offset 4169981952
+
+Found ext3 filesystem which uses 4072412 kB
+current configuration leaves usable 4072248 kB
+
+Device size would be truncated, which
+would corrupt data and result in
+'access beyond end of device' errors.
+You need to either
+   * use external meta data (recommended)
+   * shrink that filesystem first
+   * zero out the device (destroy the filesystem)
+Operation refused.
+
+Command 'drbdmeta /dev/drbd0 v08 /dev/sda6 internal create-md' terminated with exit code 40
+drbdadm create-md r0: exited with code 40
+</code></pre>
+
+<p>またしてもまたしてもエラー．今度は容量制限をオーバーしたようなので，仕方なくリサイズして再起動．</p>
+
+<pre><code class="language-bash"># fdisk /dev/sda
+
+The number of cylinders for this disk is set to 1044.
+There is nothing wrong with that, but this is larger than 1024,
+and could in certain setups cause problems with:
+1) software that runs at boot time (e.g., old versions of LILO)
+2) booting and partitioning software from other OSs
+   (e.g., DOS FDISK, OS/2 FDISK)
+
+Command (m for help): p
+
+Disk /dev/sda: 8589 MB, 8589934592 bytes
+255 heads, 63 sectors/track, 1044 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x00048f37
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1         486     3903763+  83  Linux
+/dev/sda2             487        1044     4482135    5  Extended
+/dev/sda5             994        1044      409626   82  Linux swap / Solaris
+/dev/sda6             487         993     4072446   83  Linux
+
+Partition table entries are not in disk order
+
+Command (m for help): d
+Partition number (1-6): 6
+
+Command (m for help): n
+Command action
+   l   logical (5 or over)
+   p   primary partition (1-4)
+l
+First cylinder (487-1044, default 487):
+Using default value 487
+Last cylinder or +size or +sizeM or +sizeK (487-993, default 993): +2000M
+
+Command (m for help): p
+
+Disk /dev/sda: 8589 MB, 8589934592 bytes
+255 heads, 63 sectors/track, 1044 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x00048f37
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1         486     3903763+  83  Linux
+/dev/sda2             487        1044     4482135    5  Extended
+/dev/sda5             994        1044      409626   82  Linux swap / Solaris
+/dev/sda6             487         730     1959898+  83  Linux
+
+Partition table entries are not in disk order
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: Re-reading the partition table failed with error 16: Device or resource busy.
+The kernel still uses the old table.
+The new table will be used at the next reboot.
+Syncing disks.
+# reboot
+</code></pre>
+
+<p>再起動したら初期化．</p>
+
+<pre><code class="language-bash"># drbdadm create-md r0
+md_offset 2006929408
+al_offset 2006896640
+bm_offset 2006835200
+
+Found some data
+ ==&gt; This might destroy existing data! &lt;==
+
+Do you want to proceed?
+[need to type 'yes' to confirm] yes
+
+Writing meta data...
+initialising activity log
+NOT initialized bitmap
+New drbd meta data block sucessfully created.
+</code></pre>
+
+<p>今度はうまくいったようだ．そして起動．</p>
+
+<pre><code class="language-bash"># /etc/init.d/drbd restart
+Restarting all DRBD resources.
+# cat /proc/drbd
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+ 0: cs:Connected st:Secondary/Secondary ds:Inconsistent/Inconsistent C r---
+    ns:0 nr:0 dw:0 dr:0 al:0 bm:0 lo:0 pe:0 ua:0 ap:0
+  resync: used:0/31 hits:0 misses:0 starving:0 dirty:0 changed:0
+  act_log: used:0/257 hits:0 misses:0 starving:0 dirty:0 changed:0
+</code></pre>
+
+<p>Inconsistent なのでどちらも Secondary として動いている．同期をとるために，Primary の方で下記を実行．</p>
+
+<pre><code class="language-bash"># drbdadm -- --overwrite-data-of-peer primary all
+/etc/init.d/drbd status
+drbd driver loaded OK; device status:
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+m:res  cs          st                 ds                     p  mounted  fstype
+0:r0   SyncSource  Primary/Secondary  UpToDate/Inconsistent  C
+...    sync'ed:    2.3%               (1917560/1959800)K
+</code></pre>
+
+<p>同期が始まりました．これは「初期フル同期」というらしいです．Secondary ではこんな感じ．</p>
+
+<pre><code class="language-bash"># /etc/init.d/drbd status
+drbd driver loaded OK; device status:
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+m:res  cs          st                 ds                     p  mounted  fstype
+0:r0   SyncTarget  Secondary/Primary  Inconsistent/UpToDate  C
+...    sync'ed:    4.4%               (1878456/1959800)K
+</code></pre>
+
+<p>しばらくして同期が完了すると，</p>
+
+<pre><code class="language-bash">on Primary
+# /etc/init.d/drbd status
+drbd driver loaded OK; device status:
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+m:res  cs         st                 ds                 p  mounted  fstype
+0:r0   Connected  Primary/Secondary  UpToDate/UpToDate  C
+
+on Secondary
+# /etc/init.d/drbd status
+drbd driver loaded OK; device status:
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+m:res  cs         st                 ds                 p  mounted  fstype
+0:r0   Connected  Secondary/Primary  UpToDate/UpToDate  C
+</code></pre>
+
+<p>となります．</p>
+
+<p>###format と mount
+次は format します．なんとなく ext3 で．そして mount も．</p>
+
+<pre><code class="language-bash"># mkfs.ext3 /dev/drbd0
+mke2fs 1.40.8 (13-Mar-2008)
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+122880 inodes, 489950 blocks
+24497 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=503316480
+15 block groups
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks:
+  32768, 98304, 163840, 229376, 294912
+
+Writing inode tables: done
+Creating journal (8192 blocks):
+done
+Writing superblocks and filesystem accounting information: done
+
+This filesystem will be automatically checked every 26 mounts or
+180 days, whichever comes first.  Use tune2fs -c or -i to override.
+# mount /dev/drbd0 /opt
+# ls /opt/
+lost+found
+# df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1             3.7G  2.9G  650M  82% /
+varrun                189M   44K  189M   1% /var/run
+varlock               189M  4.0K  189M   1% /var/lock
+udev                  189M   52K  189M   1% /dev
+devshm                189M     0  189M   0% /dev/shm
+/dev/drbd0            1.9G   35M  1.8G   2% /opt
+</code></pre>
+
+<p>###実験など
+<a href="http://www.metainfo.jp/memo/?p=49">ここ</a>にある実験を同じようにやってみます．
+1. Primary でファイルをコピー後に，強制的に Secondary に降格させる．</p>
+
+<pre><code class="language-bash"># cp /etc/drbd.conf /opt
+# ls /opt/
+drbd.conf  lost+found
+# umount /opt
+# drbdadm secondary r0
+# /etc/init.d/drbd status
+drbd driver loaded OK; device status:
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+m:res  cs         st                   ds                 p  mounted  fstype
+0:r0   Connected  Secondary/Secondary  UpToDate/UpToDate  C
+</code></pre>
+
+<ol>
+<li>次にSecondary を Primary に昇格させて，mount する．</li>
+</ol>
+
+<pre><code class="language-bash"># /etc/init.d/drbd status
+drbd driver loaded OK; device status:
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+m:res  cs         st                   ds                 p  mounted  fstype
+0:r0   Connected  Secondary/Secondary  UpToDate/UpToDate  C
+# drbdadm primary r0
+# /etc/init.d/drbd status
+drbd driver loaded OK; device status:
+version: 8.0.11 (api:86/proto:86)
+GIT-hash: b3fe2bdfd3b9f7c2f923186883eb9e2a0d3a5b1b build by phil@mescal, 2008-02-12 11:56:43
+m:res  cs         st                 ds                 p  mounted  fstype
+0:r0   Connected  Primary/Secondary  UpToDate/UpToDate  C
+# mount /dev/drbd0 /opt
+# ls /opt/
+drbd.conf  lost+found
+</code></pre>
+
+<p>よし，レプリケーション成功．さらに元に戻す．
+3. unmount して Primary(旧Secondary)を Secondary に降格する．</p>
+
+<pre><code class="language-bash"># umount /opt
+# drbdadm secondary r0
+</code></pre>
+
+<ol>
+<li>Secondary(旧Primary)を Primary に昇格する．</li>
+</ol>
+
+<pre><code class="language-bash"># drbdadm primary r0
+# mount /dev/drbd0 /opt
+# ls /opt/
+drbd.conf  lost+found
+</code></pre>
+
+<p>ひとまず実験は終わり．次は Heatbeat と組み合わせてほげるかな．</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">VirtualBox を動かしている Ubuntu
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/01/15/drbd-ubuntu-Ubuntu-8-04-1-Server-LTS-DRBD/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/01/11/2009/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/01/11/2009/">新春座談会『このコンピュータ書がすごい！ 2009年版』</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/">Ruby 1.9に移行する際に注意すべき10のポイント</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

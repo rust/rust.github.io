@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails and Merb Merge &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails and Merb Merge</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><a href="http://yehudakatz.com/2008/12/23/rails-and-merb-merge/">http://yehudakatz.com/2008/12/23/rails-and-merb-merge/</a>の超簡易和訳．</p>
+
+<p>##Rails と Merb の統合
+今日は Ruby ウェブアプリケーションフレームワークの歴史にとってかなり重大な日となった．大きな衝撃を持ってみんなと共有したいと思っているニュースはすぐ見つかるだろうけど，私はその状況を説明したいと思う．</p>
+
+<p>技術的や具体的な話に入る前に，Merb コミュニティーのメンバーがもっとも重要であり，それなくしては何もできなかったということを明記しておきたい．</p>
+
+<p>Merb は公開された常に変化するプロジェクトであり，いいアイデアは時にコアメンバーではない人たちから出されることがある<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>．今までやって来たように，みんなのアイデアやフィードバック，苦情も将来に渡って 100% 歓迎する．私は，オープンコミュニティや，より一般的にはオープンさ自体が途方もない価値をもたらすと信じていて，これらが Ruby の将来を導きつづけると頼りにしている．</p>
+
+<p><b>ニュースについて</b>:今日になって，Merb チームは Rails コアチームとともにあるプロジェクトに参加することを決めた．計画は Merb でなされた違いをマージする事です．これは Merb ユーザに説得力のあった利用事例に対して，Rails 3 が使えるようになることを意味する．つまるところ，Merb 2 は RAils 3 となる．</p>
+
+<p>###これは何を意味するのか？</p>
+
+<ul>
+<li>Rails はよりモジュール化される．rails-core から始まり，特定のコンポーネントの取捨選択ができるようになる．我々は Rails を疎結合にすることにフォーカスを当てることで，各コンポーネントを入れ替えたときに，その他の部分に影響を与えないようになる．これはまさに Merb が &ldquo;modularity&rdquo; としつこく言って内容そのものだ．</li>
+<li>我々は Rails の性能を改善する．これは性能的に優位なアーキテクチャー的な決定によってもたらされる．このプロジェクトはベンチマークアプリケーションも作成する予定で，それによってどのように最適化すればいいかを明確に知ることができるでしょう．</li>
+<li>Rails 3 では，テストスイートがある公開 API が定義される．これは Merb との大きな違いの一つだ．ユーザやプラグイン製作者がより明確に，さらに安定した API を使うことができるようになる．これによって，リリースがあるたびにプラグインが動かなくなることはほとんどなくなるだろう．</li>
+<li>Rails は「コア」バージョンだけで動くように作り直される(現 Merb の core generator のような感じ)．それ以外の部分はすべてモジュール化され，それぞれのアプリケーションに応じたパーツのみを選択して使えるようになる．もちろん Rails はまだデフォルトでは「フル」バージョン(Merb は 1.0 から)から始めることもできるが，Merb と一緒に Rails を使いたい人には簡単に使えるようになる．</li>
+<li>Rails は OR マッパーとして DataMapper や Sequel を簡単に使えるように変更される．デフォルトの OR マッパーは ActiveRecord のままだが，驚くほど簡単に他に影響を与えずに OR マッパーを変更することが可能になる(もちろんある程度可能な限りだが)．</li>
+<li>Merb は早期に取り入れているが，Rails は Rack を取り入れている最中であり，これは Ruby コミュニティでの本当に楽しい開発であり，これによってモジュール化を推し進め，アプリケーション間のロジックを共用可能にすることができる．</li>
+<li>一般に，我々は Rails にはない Merb の特徴について調べ(もっともわかりやすい例はより強固なルーティングだ)，そしてそれを Rails に持ち込む．</li>
+</ul>
+
+<p>###どうやればいい？
+Rails との作業はすぐに始まり，当面の間は Merb でのバグフィックスやその他大きな問題も継続する．また Rails 3 へのいこうがしやすいような特別にデザインされたバージョンをリリースする予定でいる．</p>
+
+<p>特に，Merb 1.x と Rails 3 の間にある変更点を開発者がトラッキングしやすいように，廃止予定告知のメッセージや移行用の仕組みが組み込まれた Merb をリリースする．徐々に Rails 3 に近づくように，段階的にリリースされることと，Merb のパーツ(とりわけヘルパー群)は将来の摩擦を避けるために Rails 3 で動作するようになることが期待される．</p>
+
+<p><b>完全に明かになるには</b>:Merb プロジェクトを放棄したわけではない．タイムリーなバグフィックスと未来への展望を心待ちにしている，多くのアプリケーションが Merb で動いている．もしいま Merb を使っているなら，そのまま使っても大丈夫．もし Merb 使おうと考えているなら，使いましょう．あなたは立ち止まる必要は無く，我々はアプリケーションがお手上げ状態になるようなことは決してしません．</p>
+
+<p>もし Merb について学び終わったのであれば，その知識を Rails 3 に注ぎ込んでくれれば問題無いと保証します．Engine Yard では，Rails 3 が登場するまでは Merb を内部アプリケーションで使いつづけるが，アプリケーションが誰にとっても順調に動作することを確認するために使いつづけるつもりだ．そんなに大きな変更はなく，アプリケーションを1から作り直すようなことも起こらないだろう．</p>
+
+<p>###なぜかって？
+上記のを読んだのだったら，Merb と Rails チームの間にもはや同意しない点はもはやないことがわかるでしょう．Merb がでてきてからだいたい2年ぐらい経って，実アプリケーション(<a href="http://www.yellowpages.com/">Yellow Pages</a>/<a href="http://www.sproutcore.com/">http://www.sproutcore.com/</a>/<a href="http://www.powerset.com/">http://www.powerset.com/</a>/<a href="http://defensio.com/">http://defensio.com/</a>)で我々のアイデアを証明してくれた．この思想の集約があることで，複製する努力と，他と戦うための時間とエネルギーの浪費を続けても，得るものがあったようには見えなかった．</p>
+
+<p>素晴らしいものを作ることが，Merb コミュニティを認めさせるのに重要であると，私は考える．いま共にあり，そしてこれから Rails 3 に向けてお互いに助け合えることを切に願っている．</p>
+
+<p>Rails は，(Merb のコアチームメンバーでエヴァンジェリストだった)Matt AimonettiとRails のエバンジェリスト数人とで，新しいエヴァンジェリストチームを立ち上げた．このチームの責務は，コミュニティを助けることだ．彼らの仕事はそのうちみんなの耳にも入るだろう．</p>
+
+<p>###これはクレイジーに見える！いままでにこんなことあったか？！
+面白いことに，あった．同じような状況は，数年前に Struts の開発者たちが対面している．彼らは非常に人気のあるフレームワークである Struts を作っていたが，非常にアクティブな開発者グループが，同じアイデアを面白い方法で，Webwork と呼ばれるフレームワークとして世に送り出していた．ちょうど我々が Rails の実装を改善できると信じているように，Webwork の開発者たちは彼らのプロジェクトを「Struts は正しいことをした」と見ていた．</p>
+
+<p>最終的に Struts と Webwork の開発者は，別々に開発するよりも共に強くある方がよいという結論に達し，プロジェクトをマージすることにした．何が Struts 2 になったかと言えば実際には Webwork 2 なのだが，2つのコミュニティが共によりいいものとして作り上げたのだ．</p>
+
+<p>私はこの統合が，Merb の勢いがより多くの人の手に渡り，そして私たちのサービスのすべてを提供することをになると信じている．未来が待ち遠しい．</p>
+
+<p>###追記</p>
+
+<ul>
+<li>Merb にかかわるもっとも個人的に満足した仕事の一つは，MRI 以外の Ruby 実装で Merb をちゃんと動くようにしたことだ．かなり前になるが，Merb は JRuby で MRI よりも速く動作する．この見識を Rails に持ち込めるのと，Rails をより「速い」言語でのフレームワークと性能面で完全に争えるようにすることを，楽しみにしている．</li>
+<li>Merb トレーニングはまだやってるよ！出席者の多くには話したし，同じように Integrum Technologies で我々のパートナーにも同じように話したけど，この結合にはみんな興奮していた．今回の結合で，このトレーニングは基本的に Rails 3 の将来的な特徴にフォーカスを当てたものになったので，今後の競争に先手を打ついい方法になるだろう．まだいくつかの席は空いているから，来たい人は是非参加してくれ！</li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">It’s gotten where it has because of the community, and the community will get us even further in the future.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/12/25/ruby-merb-rails-Rails-and-Merb-Merge/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/12/24/ruby-rails-merb-Merb-gets-merged-into-Rails3/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/12/24/ruby-rails-merb-Merb-gets-merged-into-Rails3/">Merb gets merged into Rails3!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/12/26/notitle/">うごメモ</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/12/26/notitle/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

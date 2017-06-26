@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/07/11/to-overcome/">自分に負けないために</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/07/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まあ会社の愚痴なんてよく言うと思います。私自身も以前はよく言っていましたし、twitterでつぶやきもしてたと思います。でも仙台Ruby会議02で親方たちと話をしたり、情熱プログラマーを読んでみて、愚痴を言う前にやるべきことがあるんじゃないかと考えるようになりました。
+ 情熱プログラマー ソフトウェア開発者の幸せな生き方  著者: Chad Fowler
+出版日: 2010-02-26
+出版社/メーカー: オーム社
+カテゴリ: Book
+  いやならやめてもいいんじゃよ by Maat じゃあ社畜になって働くのかというとそうではなく、その前に自分にできることをできる限りやっているかどうかと考えるようになったからです。情熱プログラマーの第3章にある、「バケツ一杯の水の中の小石一つ」や「8時間燃焼」を読んだときに、「あぁ、このままじゃダメだな。」と思いました。そして仙台Ruby会議02で親方の話を聞いてみて、「今のまま止まるって決めてるのは自分なんだ。だからこそ愚痴を言って逃げてるんじゃないか。」と強く思うようになり、仕事や会社の愚痴を言う前に自分がやるべきこと・できることはきちんとやらないといけないと考え出したのです。まだやりきれてないんじゃないか。まだまだやれることはあるはずだと。
+まだ転職しない理由 あとよく「転職フラグか」とかつぶやかれたりするわけですが、そのときは「いまはまだ転職しない」と思うのです。じゃあなぜ「まだ」なのかと考えたとき、やり残していることがあるのもそうなんです、やっぱり「怖いこと(転職)から逃げてる」ことは否定できません。なんだかんだで居心地のいい場所だと、そこから脱出できない、脱出するのが怖いと感じるのは普通じゃないでしょうか。でもそれって「逃げ」なんですよね。じゃあ転職すればいいのかというと、それもある意味「逃げる」ことになる。どちらにしても、そう言う考えだと「逃げ」にしかならない。心のバイブルである逆境ナインによると、「男たるもの進むべき」だとあります。じゃあどうやって「進め」ばいいのか。もう全力でやるしかないわけですよ、いまの仕事を。
+自分と戦って負けないために では全力を出してやるのはいいとして、何を目標に据えるか。越えるべきは自分なので、いままでやったことのないことをやるべきだろうと思ってます。また自分に負けないようにしないといけないと。というわけで、男の戦いに終わりはないとバイブルにも書いてあるので、このままで突き進みたいと思っています。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/07/09/mathematics-for-engineer/">「エンジニアのための数学・物理勉強会」など開催したい</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/07/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  前にも書いたのですが、どうにも学生のときにやり残した感が拭えないので、やはり勉強会やりたいと思ってます。内容的には学部レベルの数学・物理から初めて、計算科学や量子コンピュータ付近まで行ければなぁと軽く考えています。また数学・物理どちらかと言うわけではなく、両方やることにしたいと思ってます。実験物理でもない限り数学は絶対に必要だし、先端物理の方が数学っぽいところがあったりもするので、片方だけと言うわけにはいかないからです。
+内容的には、物理はファインマン物理学シリーズからでいいかなと思うのですが、数学がそれに類するものが見あたりません。なんかいいのないですかね。「数学：物理を学び楽しむために」は知ってるんですが、他になんかあれば教えてください＞＜
+とすぐにでも動きたいのですが、RubyKaigi 2010が終わるまではなかなか動けないので、9月以降かなとか思ってます。まあほんとは誰か主催しくれたらいいのになーとか思ってたりするわけですが。とりあえず、自分へのプレッシャーのために、ここで告知しておきます。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/07/08/music-changes-my-feeling/">音楽で気分を変えてみる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/07/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  最近は朝に一人もくもく会やってたりするんですが、iPhoneでなにかしら音楽を聞きながらやってます。音楽を聞きながらの作業が効率的かどうかはわかりませんが、曲調やジャンルによってテンションが変わることに異論はないと思います。
+で、普段の作業中は何を聞いているかというと、最近はほとんどThe ProdigyかChemical Brothersだったりします。アップビートなテクノだと、何故かキータッチが速くなったような気がします。でも毎日だといろいろ辛いので、最近は徳永英明や榊いずみ、ECHOESとか鬼束ちひろとかも聞いていたりします。気分が変わって違う視点で進行するのもいいものですね。
+しかし曲によって心理状態も変わるようで、鬼束ちひろとか聞くとなんか落ち着いた気分になります。焦ってたりイライラしてたりするときは、そういう曲を聞くのがいいようです。
+そう言えば、むかし実家でいろいろあったときや博士論文書いてた時にはさすがにストレスがたまり、精神的に脆くなる時がありました。そう言う時によく聞いていたのが榊いずみ(橘いずみ)で、「太陽が見てるから」「こぼれおちるもの」「ごらん、あれがオリオン座だよ」は何度聞いたか覚えてません。おかげで何とか書き上げて学位を取得できたわけですが、この曲がなかったらどうなっていたかは定かではありません。特に「26-Dec.11th.1968」はかなりやばく、自宅で胸を熱くしながら何度も聞いていました。
+と言うわけで、最近いろいろあるので久しぶりに鈴木彩子が聞きたくなりました。唐突ですねが。最初に聞いたのは大学生の頃かな。例によってアニメ(サイレントメビウス2の主題歌「旅立つ朝に」)だったりするわけですが、アルバム買ってみて聞いた「葛藤」にはかなり影響された記憶があります。「お前らには社会に出る資格がない」とか当時は強烈なインパクトがありました。
+特にオチもないのですが、音楽とともに日々作業をすることで、安定した作業効率を得られるんじゃないかなと思ってます。ちなみに見る音楽はDCIですが、流石にこれを知ってる人は少ないかな？ドラムコー・スタイルのマーチングバンドやってたという過去があるので、Madison ScoutsのMalagueñaとか見るとアドレナリン分泌されまくるわけです。まあそんなわけで、音楽聞きながらやってみるのもいいんんじゃないでしょうか。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/06/28/sinatra-with-jpmobile/">Sinatra with jpmobile</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/06/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  と言うわけで、Rack化してみました。
+darashi&apos;s jpmobile at rack - GitHub Github上のrackブランチがそれにあたります。
+Sinatra with jpmobile on GAE 以下で実験中です。ちゃんと絵文字と漢字コードが変換されたときはちょっとうれしかったりしました。
+http://rust-stnard.appspot.com/ 使い方 特に難しいことはなく、以下のような感じで動作させることができます。
+```ruby
+-- coding: utf-8 -- require &lsquo;rubygems&rsquo; require &lsquo;sinatra&rsquo; $LOAD_PATH &lt;&lt; &lsquo;./lib/jpmobile/lib&rsquo; require &lsquo;jpmobile&rsquo; require &lsquo;jpmobile/rack&rsquo;
+require &lsquo;pp&rsquo;
+use Jpmobile::Rack::MobileCarrier use Jpmobile::Rack::ParamsFilter use Jpmobile::Rack::Filter
+get &lsquo;/&rsquo; do erb :index end```
+ruby &lt;html&gt; &lt;head&gt; &lt;title&gt;そうでもない&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &amp;#xe63e;言わずもがな&amp;#xe668; &lt;/body&gt; &lt;/html&gt;
+Encoding on Ruby 1.9 またパラメータのEncodingも変換しています。Rack::Request#paramsが必ずASCII-8BITになるので、それを無理矢理UTF-8に戻しています。
+そして次は Rails 3.0 on Ruby 1.9 で動作する jpmobile と言うのが目標です。と言うかRubyKaigi 2010までには何とかしないとダメなので、7月初旬にはリリースできるようにしたいと思っています。Rails 3.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/06/28/sinatra-with-jpmobile/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/06/16/innodb/">InnoDBテーブルでインデックスを拡張するとパフォーマンスが落ちるかも from MySQL Performance Blog</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/06/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Extending Index for Innodb tables can hurt performance in a surprising way
+ 多くのキーを使うクエリーのときに、よく最適化するときにインデックスを拡張する。通常は問題なく、インデックスの長さが劇的に増加しない限り、インデックスを使うクエリーは新しいインデックスの先頭を使うことができる。では、そうではない場合を見てみよう。
+CREATE TABLE `idxitest` ( `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, `a` int(11) NOT NULL, `b` int(11) NOT NULL, PRIMARY KEY (`id`), KEY `a` (`a`) ) ENGINE=InnoDB AUTO_INCREMENT=6029313 DEFAULT CHARSET=latin1 mysql&gt; SELECT count(*) FROM idxitest WHERE a=5 AND b=5; +----------+ | count(*) | +----------+ | 60434 | +----------+ 1 row IN SET (0.69 sec) mysql&gt; EXPLAIN SELECT count(*) FROM idxitest WHERE a=5 AND b=5; +----+-------------+----------+------+---------------+------+---------+-------+--------+-------------+ | id | select_type | TABLE | type | possible_keys | KEY | key_len | ref | rows | Extra | +----+-------------+----------+------+---------------+------+---------+-------+--------+-------------+ | 1 | SIMPLE | idxitest | ref | a | a | 4 | const | 707820 | USING WHERE | +----+-------------+----------+------+---------------+------+---------+-------+--------+-------------+ 1 row IN SET (0.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/06/16/innodb/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/06/16/-from-mysql-performance-blog/">JOIN使うときに気をつけること from MySQL Performance Blog</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/06/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  いつものように気になったので意訳
+ Joining on range? Wrong! | MySQL Performance Blog
+ これら書く問題というのはMySQLの最初の方にある問題なんだが、気をつけてクエリーを解析しないと知らないまま終わってしまうことだ。phpDay.it でこの落とし穴についてデモしてきたが、ブログの記事にするのもいいとおもったんだ。
+問題をデモするための典型的な例として、売上げクエリーを考えよう。データは次の3つのテーブルに入っている。
+CREATE TABLE `products` ( `prd_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, `prd_name` varchar(32) NOT NULL, PRIMARY KEY (`prd_id`), KEY `name` (`prd_name`) ) CREATE TABLE `tags` ( `tag_prd_id` int(10) UNSIGNED NOT NULL, `tag_name` varchar(32) NOT NULL, PRIMARY KEY (`tag_name`, `tag_prd_id`) ) CREATE TABLE `items_ordered` ( `itm_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, `itm_prd_id` int(10) UNSIGNED NOT NULL, `itm_order_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`itm_id`), KEY `itm_prd_id__and__itm_order_timestamp` (`itm_prd_id`,`itm_order_timestamp`) )  そして十分な量のデータを入れた。
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/06/16/-from-mysql-performance-blog/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/06/11/dvd/">懐古主義と言われようとも - 王様のレストランとラビリンス</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/06/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  王様のレストラン DVD-BOX La Belle Equipe  著者: 出版日: 出版社/メーカー: ポニーキャニオン
+カテゴリ: DVD
+    王様のレストラン DVD-BOX La Belle Equipe  著者: 出版日: 出版社/メーカー: ポニーキャニオン
+カテゴリ: DVD
+  というわけで、買ってみました。ただラビリンスの方はいまだDVD化されていないようなので、とりあえずサントラだけでも。でもこの頃のドラマって面白いですね。妻に教えてもらっていろいろ見てますが、なんか勢いがある感じ。早くDVD化されないかな、ラビリンス。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/06/08/emacs-23-2-with-shift-ime-patch-on-mac-os-x/">Emacs 23.2 with Shift IME patch on Mac OS X</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/06/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  実は前回のはうまく使えていません。というのも、どうもinline patchの方が23.2では良くないらしく、頻繁に落ちるからです。という訳なので、typesterさんのfull screen patchだけを当てていたのですが、今度はIME経由のShiftキー押下の記号が全部半角で入るという悲しいことに。なので、これまたtypesterさんのfix-shiftmodifier-with-ime patchを当てたものを使ってみることにします。
+% wget http://ftp.gnu.org/pub/gnu/emacs/emacs-23.2.tar.gz % wget http://github.com/downloads/typester/emacs/feature-fullscreen.patch % wget http://github.com/downloads/typester/emacs/fix-shiftmodifier-with-ime.patch % tar zxvf emacs-23.2.tar.gz % cd emacs-23.1 % patch -p1 &lt; ../feature-fullscreen.patch % patch -p1 &lt; ../fix-shiftmodifier-with-ime.patch % ./configure --with-ns --without-x % make bootstrap % make install % open nextstep/Emacs.app  基本的に前回と同じです。これで全角括弧とかが入力できるようになりました。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/06/07/mathematics-text-reading/">「数学 — 物理を学び楽しむために —」の読書会的な何かをやってみたい</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/06/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Math bookというところに、大学初等向けの数学の入門テキストがありました。というわけで、誰か読書会とかやらんかね。場所さえあれば、大学初等数学の講師経験もあるので、解説しますよ。というわけで、場所募集中。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/05/31/tokyurubykaigi02/">TokyuRubyKaigi02を開催してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/05/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  というわけで、Go!肉の日(5&frasl;29)に無事開催してきました。今回も事前準備から機材の用意まで多くのスタッフの方々と共に作り上げ、そして当日はなによりも参加者の手によって盛り上げていただきました。酒と食べ物にまみれたのは前回と同じなのですが、今回はより酔っぱらい度合いが上昇したためか、歌ありエロありと、ほんと何でもありの様相を呈してしまいました。私は前回同様、司会をしてきたのですが、どうまとめればいいのかわからないぐらい、場は盛り上がったのではないかと思います。参加者のみなさん、本当にありがとうございました。そしてスタッフのみなさん、本当にお疲れ様でした！
+次回も是非開催したいと思ってますので、スタッフになりたい方は普通のTokyu.rbにもぜひお越しください。
+以下、軽くまとめを。
+ MacBookがビールまみれになる。とりあえず動くが、キーを打つとバキバキ鳴る。なんかやばい感じに。 酒が入った状態だと、事前の決めごとの有効性が乏しい気がした。アドリブ重要。 前半からしつこく言っていたせいか、食べ物の消化率は高かった。 Tokyu jpmobile 会議開催。1.9対応パッチの取り込みとRack化を進めることが決まる。 カリスマは蔑称なので、当人を前にしては言ってはいけないらしい。 TokyuRubyKaigiは日本で一番話しやすい場所らしい。LTデビューにぴったり。  
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/7/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;8 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/9/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

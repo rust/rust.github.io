@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails勉強会＠東京第38回 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails勉強会＠東京第38回</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/02/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <ul>
+<li>今日は TIS さんにて開催
+
+<ul>
+<li>会場提供ありがとうございます．</li>
+</ul></li>
+<li>今日もおとなしめで．</li>
+</ul>
+
+<p>##セッション案</p>
+
+<ul>
+<li>Rails 2.3.0</li>
+<li>Ruby 1.9.1(Rails, merb)</li>
+<li>RSpec と Cuke</li>
+<li>SKIP のソースコードを読む</li>
+<li>thoughtbot とか</li>
+</ul>
+
+<p>##セッション</p>
+
+<ul>
+<li>前半
+
+<ul>
+<li>SKIP</li>
+<li>RSpec と Cuke</li>
+<li>(Ruby 1.9.1)</li>
+</ul></li>
+<li>後半
+
+<ul>
+<li>Rails 2.3.0</li>
+<li>Ruby 1.9.1</li>
+</ul></li>
+</ul>
+
+<p>##RSpec と Cuke</p>
+
+<ul>
+<li>2009/01/24の仙台Ruby会議での発表資料</li>
+<li>永和システムマネジメントの提供です．</li>
+</ul>
+
+<p>###いままでのテストを振り返る</p>
+
+<ul>
+<li>Cucumber で受け入れテスト</li>
+<li>RSpec で単体テストで書くべき</li>
+<li>Controller とか View とか Helper もいいのではないかな</li>
+<li>2006年までは
+
+<ul>
+<li>UnitTest/FunctionalTest でテスト</li>
+<li>いままでのテスト？</li>
+<li>フレームワークがテスト環境を用意しているのが良かったのではないか</li>
+</ul></li>
+<li>2007年-2008年は？
+
+<ul>
+<li>RSpec が出てきた</li>
+<li>Model/View/Controller/Helper を個別に RSpec でテスト</li>
+<li>Integration テストで，全体をテスト</li>
+</ul></li>
+<li>2009年からは？
+
+<ul>
+<li>Cucumber で統合テスト</li>
+<li>Model を RSpec でテスト</li>
+</ul></li>
+</ul>
+
+<p>###Test for developer</p>
+
+<ul>
+<li><p>RSpec on Rails 以前は</p>
+
+<ul>
+<li>UnitTest</li>
+<li>Model のテスト</li>
+<li>FunctionalTest</li>
+<li>View/Controller/Helper のテスト</li>
+<li>Integration</li>
+<li>アクションをまたぐ，ブラックボックステスト</li>
+<li>書くのが難しくてあまり流行らなかった</li>
+</ul></li>
+
+<li><p>RSpec</p>
+
+<ul>
+<li>BDD フレームワーム</li>
+<li>Stub/Mock が build-in</li>
+<li>RSpec で Model/Controller/View/Helper の個別のテストはできるようになった</li>
+<li>ただ Integration テストは・・・・</li>
+</ul></li>
+
+<li><p>Cucumber 到来</p>
+
+<ul>
+<li>Integration テストが超楽に書ける</li>
+<li>二段構え</li>
+<li>features で仕様を</li>
+<li>steps で Ruby コードを実行</li>
+<li>step では</li>
+<li>普通の Ruby コード
+
+<ul>
+<li>Active Record でリソースをゲット</li>
+<li>Nokogiri/Webrat でほげほげ</li>
+</ul></li>
+</ul></li>
+
+<li><p>なぜ Better Integration Test なのか</p>
+
+<ul>
+<li>Rails のは書くのが難しかった</li>
+<li>そこで Webrat</li>
+<li>Web アプリを外から操作する DSL セット
+
+<ul>
+<li>リンクを辿る</li>
+<li>アンカーテキストで書ける</li>
+<li>404 や 500 だとエラーになる</li>
+<li>ボタンを押す</li>
+<li><label> でいける</li>
+<li>フォームに入力する</li>
+</ul></li>
+<li>1度 step を書けばよい
+
+<ul>
+<li>書かなければいけない</li>
+</ul></li>
+<li>日本語で書かれてるのいいよ！母国語だし
+
+<ul>
+<li>その「仕様」を Ruby で実行できるのがいい！</li>
+</ul></li>
+<li>独自の step 14個で C0 Coverage 80%超
+
+<ul>
+<li>spec と併せて 90%超</li>
+</ul></li>
+</ul></li>
+
+<li><p>限界が</p>
+
+<ul>
+<li>実際にリクエストを飛ばす訳じゃない</li>
+<li>JS や CSS の検証は必要</li>
+<li>Selenium/Watir ?</li>
+<li>Johnson マダー？</li>
+</ul></li>
+
+<li><p>方針として</p>
+
+<ul>
+<li>Fat Model</li>
+<li>ロジックはモデルに</li>
+<li>Thin Controller</li>
+<li>find/new 以外のモデルのメソッドは1つぐらいにしといた方がいい</li>
+<li>そうすると</li>
+<li>RSpec で Model のテスト</li>
+<li>Cucumber で統合テスト</li>
+</ul></li>
+</ul>
+
+<p>###Cycle of development</p>
+
+<ul>
+<li><p>書き方</p>
+
+<ol>
+<li>feature/step を書く</li>
+<li>テストする</li>
+<li>失敗する</li>
+<li>テストをパスするように書く</li>
+<li>繰り返す</li>
+<li>資金が尽きるまで繰り返す</li>
+</ol></li>
+
+<li><p>クライアントと Cucumber ベースに仕様を詰める</p>
+
+<ul>
+<li>JS などは Selenium を</li>
+</ul></li>
+</ul>
+
+<p>###まとめ</p>
+
+<ul>
+<li>RSpec + Cucumber でテストの仕方が変わった</li>
+<li>クライアントとも Cucumber ベースで受け入れテストがしやすい</li>
+</ul>
+
+<p>###Q&amp;A</p>
+
+<ul>
+<li>Selenium との共存は？
+
+<ul>
+<li>Selenium が DOM の変更に弱い</li>
+<li>Selenium と Cucumber と切り分けて</li>
+</ul></li>
+<li>認証系は？
+
+<ul>
+<li>パスワードログインは余裕</li>
+<li>OpenID もモジュール書いた</li>
+</ul></li>
+<li>Windows だと？
+
+<ul>
+<li>UTF-8 はねぇ</li>
+</ul></li>
+<li>Cucumber はそのままで大丈夫？
+
+<ul>
+<li>feature は Framework 変わっても大丈夫そう</li>
+<li>step は個別のモジュールに応じて書き換える必要はある</li>
+</ul></li>
+<li>テストの変更コストは？
+
+<ul>
+<li>DOMが変わっても，<label>が変わらなければ大丈夫</li>
+</ul></li>
+<li>テストの C0 Coverage は高め</li>
+<li>一つのシナリオに対して，複数のデータセットを適用可能</li>
+<li>public 内のファイルは？
+
+<ul>
+<li>Rails 2.3.0 ではミドルウェアスタックが static file も扱うからテストできる</li>
+</ul></li>
+</ul>
+
+<p>###Rails 2.3.0 を読む</p>
+
+<ul>
+<li>Rack 対応になった
+
+<ul>
+<li>スッキリした感じ？</li>
+<li>Rails 2.3.0RC では Rack 1.0 で動作している</li>
+</ul></li>
+<li>Active Record
+
+<ul>
+<li>Nested Model と default_scope は便利そうです</li>
+</ul></li>
+<li>Action Controller
+
+<ul>
+<li>render が賢くなった</li>
+<li>application.rb が application_controller.rb に変更された</li>
+<li>routing が高速に</li>
+<li>i18n 対応(show.ja.html.erb)</li>
+</ul></li>
+<li>Action View
+
+<ul>
+<li>render @article で render :partial =&gt; &ldquo;&hellip;&rdquo; が呼ばれるように</li>
+</ul></li>
+<li>Active Support
+
+<ul>
+<li>Object#try</li>
+<li>NoMethodError を返さないようになった</li>
+</ul></li>
+<li>Railities
+
+<ul>
+<li>Metal</li>
+<li>app/metal 以下に Rails を呼ばずに返せる高速コントローラのようなもの</li>
+<li>template</li>
+<li>rails でアプリを作るときに最初にやることなどを定型化して実行できるテンプレート</li>
+<li>autoload を使って lazy-loading するようになった</li>
+</ul></li>
+<li>Rails Engines
+
+<ul>
+<li>plugin に model/controller/view/helper などを設置できる</li>
+</ul></li>
+</ul>
+
+<p>##まとめとKPT</p>
+
+<ul>
+<li>セッションネタとしては，公式ネタがどれぐらいあるかに依存することもある
+
+<ul>
+<li>今回は Ruby 1.9.1/Rails 2.3.0 が出た</li>
+</ul></li>
+<li>ust 番長ありがとう！</li>
+<li>初心者セッションあって良かった</li>
+<li>初参加の人が少なめでした</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/02/16/rails-ruby-Rails-38/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/02/14/devsumi2009-2009-2/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/02/14/devsumi2009-2009-2/">デブサミ 2009 2日目</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-2st-Day/">OSC 2009 Tokyo/Sprint 2st Day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/02/21/osc2009-tokyospring-OSC-2009-Tokyo-Sprint-2st-Day/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

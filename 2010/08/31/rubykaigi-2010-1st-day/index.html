@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>RubyKaigi 2010 1st day &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>RubyKaigi 2010 1st day</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<h2 id="rubykaigi-2010-1日目">RubyKaigi 2010 1日目</h2>
+
+<h3 id="opening">Opening</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Theme&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Conflicts and Resolutions&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Good Timing&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Ruby 1.9.2 Released!&lt;/li&gt;
+
+      &lt;li&gt;Rails 3.0 coming soon!&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Start!&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="諸注意">諸注意</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;名札忘れないように&lt;/li&gt;
+
+  &lt;li&gt;ネットワーク&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;モバイルルータもダメそうだ&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;フィードバックもしよう&lt;/li&gt;
+
+  &lt;li&gt;大ホールは飲食禁止&lt;/li&gt;
+
+  &lt;li&gt;各種諸注意&lt;/li&gt;
+
+  &lt;li&gt;コミュニティ・ナイト&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;自分の分を持っていろいろ集まれー&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="conflicts-and-resolutions">Conflicts and Resolutions</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;漫談形式らしい&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;@takahashim&lt;/li&gt;
+
+      &lt;li&gt;@a_matsuda&lt;/li&gt;
+
+      &lt;li&gt;@wycats&lt;/li&gt;
+
+      &lt;li&gt;@tenderlove&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;translator&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;@matz&lt;/li&gt;
+
+              &lt;li&gt;@lchin&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h4 id="質問など">質問など</h4>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Different Rails 2 and Rails 3&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Rails 3 は 2 の上位互換&lt;/li&gt;
+
+      &lt;li&gt;いろんなところを書き換えているが、APIはそれほど変わっていない&lt;/li&gt;
+
+      &lt;li&gt;コアな部分を切り離したので、各パーツを独立で使うことができる&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;merb と rails の統合で、当初描いていたゴールにたどり着いた？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;たどり着いている！見返してみてもその通りだと感じる。&lt;/li&gt;
+
+      &lt;li&gt;AR の代替物を簡単に使えるようになった&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Ruby 1.9 のいいところと、はまったところを紹介してほしい&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Python 3 と違って 1.8 と互換性のあるプログラムを書くことができるところ&lt;/li&gt;
+
+      &lt;li&gt;エンコーディングについてが問題だった&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;良かった点は、エンコードについてちゃんと考えるようになった&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Rails が依存するライブラリは同時に 1.9 に対応した&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;ライブラリは早急に 1.9 で動くようにするべきだ&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;ruby-trunk でテストしていたので問題なくリリースできた&lt;/li&gt;
+
+      &lt;li&gt;Rails 3.0 は来週リリースされるが、Ruby 1.9.2 で問題なく動くことを信じている&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Ruby と Rails のコアコミッターになったのはなぜだと思う？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;たくさん文句を言ったから&lt;/li&gt;
+
+      &lt;li&gt;たくさんバグレポートを出してたくさんパッチを書いたから&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;Rails に関して言えば、熱意を出せばコミッターになれるよ&lt;/li&gt;
+
+          &lt;li&gt;ただしパッチにはテストを書いてくれ&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;tenderlove は Rails 3 についてどう思う？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;ActiveRecord については独立したコンポーネントとして利用できる状態ではないことが残念な点&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;ActiveRelation(Arel) を入れることで抽象化できるようになった&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;でもまだ作業が必要&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;心配しないでも Rails 3.1 がでるから&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Ruby と Rails のコアチームの違いをどう感じる？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;日本語と英語の間の壁が大きいようだ&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;言い残したこと&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;お互いの言語を学ぶのがいいと思う&lt;/li&gt;
+
+      &lt;li&gt;Ruby と Rails が共通の CI をも持てばいろいろいいんじゃないだろうか&lt;/li&gt;
+
+      &lt;li&gt;1.9 に移行しようぜ！&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="jpmobile-on-rails-3-0">jpmobile on Rails 3.0</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;いろいろ疲れました...&lt;/li&gt;
+
+  &lt;li&gt;sub-class 化する方が alias_method_chain するよりも良かったらしい by @wycats&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Rails 3.0 Release して Mail を理解したら変更してみようかな&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="ruby-親方会議-2010">Ruby 親方会議 2010</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;親方会議の紹介&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;「Ruby を使って仕事をしているエンジニア社長や個人事業者の情報交換をする」を公開で。&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;RubyKaigi 2009 -&gt; Sapporo RubyKaigi #02 -&gt; toRuby Kaigi 02 -&gt; Sendai RubyKaigi 02&lt;/li&gt;
+
+  &lt;li&gt;rake:money があるので、社員を雇用している社長をパネラーに迎えて情報交換&lt;/li&gt;
+
+  &lt;li&gt;なぜ親方会議をやるのか&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;社長は孤独&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;仲間がほしい！&lt;/li&gt;
+
+          &lt;li&gt;エンジニア仲間が欲しい&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;オフレコの話もあるので気をつけて！&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h4 id="自己紹介">自己紹介</h4>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;新井さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;もぐらの CTO&lt;/li&gt;
+
+      &lt;li&gt;ビジネスの勉強をする勉強会を開催している&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;プログラムを価値あるものにするために&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;山崎さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;スケールアウト CEO&lt;/li&gt;
+
+      &lt;li&gt;強力なメンツががっ！&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;和田さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;ホームページがないことで有名な会社「タワーズ・クエスト」の社長です&lt;/li&gt;
+
+      &lt;li&gt;起業20年目で二代目社長&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;大場さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;万葉の社長様&lt;/li&gt;
+
+      &lt;li&gt;17:30 から Hyper Everyleaf Time!&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h4 id="起業したきっかけ">起業したきっかけ</h4>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;藤岡さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;何かやりたかったので起業してみた&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;新井さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;言われたものをつくるのではなくて、自分で考えたものを作りたかったので起業した&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;山崎さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;将来的に窓際っぽくなる気がしたので辞めた&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;和田さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;プログラム書きすぎて留年しました&lt;/li&gt;
+
+      &lt;li&gt;エンジニアとしての知名度が上がったので&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;大場さん&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;最初はIMEの大手でキャリアプランが見えなくなったので&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;最初に採用するのって大変じゃないですか？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;まあその場のフィーリングっぽい感じで決まったっぽい (万葉)&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;解雇するのって大変&lt;/li&gt;
+
+  &lt;li&gt;何を聞きたくてやってきましたか？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;社員として企業の利益に貢献できるようになるにはどうすればいいのか？&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;新井さん&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;社長と同じ目線で同じ感覚で話をできるといいんじゃないかと思う&lt;/li&gt;
+
+              &lt;li&gt;どうすれば利益が出るのかを考えているのかはいいことです&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;山崎さん&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;ソフトウェアのコピーはただであるということを、ビジネスに生かせればいいのではないか？&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;大場さん&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;利益を出すことと、生きていくことは必ずしも一致しない&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;山崎さん&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;会社は4番バッターだけじゃなくて、職人が欲しいときもある&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;人を獲得していくために取り組んでいること&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;和田さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;どういう人かわからないので採用にはリスクがある&lt;/li&gt;
+
+          &lt;li&gt;素をさらすことに気をつけている&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;大場さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;露出を増やす&lt;/li&gt;
+
+          &lt;li&gt;法律を守る&lt;/li&gt;
+
+          &lt;li&gt;嫌なことをしない&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;山崎さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;ゲリラ戦法しかない&lt;/li&gt;
+
+          &lt;li&gt;人と会わないとどういう人か、どういうスキルかわかならない&lt;/li&gt;
+
+          &lt;li&gt;面白い仕事を準備している&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;新井さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;勉強会を主催している&lt;/li&gt;
+
+          &lt;li&gt;ハードル高めの内容だといいんじゃないかと思われる&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;藤岡さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;いきなり応募してきたりして困ることがある&lt;/li&gt;
+
+          &lt;li&gt;twitter で応募してくるのが、いまのところあたりっぽい&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;会社の目標と個人の目標&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;藤岡さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;会社: 自分がいなくても回る会社にする&lt;/li&gt;
+
+          &lt;li&gt;個人: 何か違うことをしたい&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;新井さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;会社: 会社として大きくしたい&lt;/li&gt;
+
+          &lt;li&gt;個人: 勉強して社会貢献したい&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;山崎さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;会社: 会社を大きくする&lt;/li&gt;
+
+          &lt;li&gt;個人: 技術が省力化に繋がっていないのがちょっとあれだなと思う。自分の本当にやりたいことができるようになることを目指している。&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;和田さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;会社: 会社を大きくする&lt;/li&gt;
+
+          &lt;li&gt;個人: 自分が書いたソフトウェアで働き過ぎを防げるようになることが大義。ゆとりを作れるようなソフトウェアを作って社会貢献にしたい。&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;久保さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;会社: 会社を大きくする&lt;/li&gt;
+
+          &lt;li&gt;個人: 個人の時間を作れるような環境を社員に提供したい&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;GIGAZINE 問題ではどう？&lt;/li&gt;
+
+  &lt;li&gt;他にもチョイスがあるにもかかわらず、弱小企業を選んでくれた人材にどう報いるのか？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;山崎さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;ストックオプションなどはないのでどうすればいいのか？いまは給料を高めにすることで報いようとしている。&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;藤岡さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;地元の雇用を守ること&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;新井さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;高い給与を出すことで報いようとしている&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;和田さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;経済的に報いるのは中長期的にやらなければいけないので、やっていく。&lt;/li&gt;
+
+          &lt;li&gt;ソフトウェア産業の儲け方は特殊なので、いろいろ考えていきたい。&lt;/li&gt;
+
+          &lt;li&gt;人それぞれの報い方をやっていきたい。&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;起業するときのパートナーはどう？&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;藤岡さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;欲しかったけどいなかった&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;新井さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;一人ではいろいろわからないことがあったので、パートナーを見つけて起業した&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;山崎さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;二人だとそれはコストになる。営業とか&lt;/li&gt;
+
+          &lt;li&gt;アメリカだとスタートアップ資金が入ることがあるが、日本はない&lt;/li&gt;
+
+          &lt;li&gt;追い込まれると、お金に関していろいろある&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;新井さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;営業の人だとそれまでフリーでやってもらうとか&lt;/li&gt;
+
+          &lt;li&gt;パートナーにするなら、フリーや起業したことある人の方がいい&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;和田さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;血縁は入れない方がいい&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;久保さん&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;長年の友人で、仕事も共にやっていた&lt;/li&gt;
+
+          &lt;li&gt;何で言い合おうと思ってやっています。&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h4 id="参考文献">参考文献</h4>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;ネットワーク経済の法則&lt;/li&gt;
+
+  &lt;li&gt;スティグリッツミクロ経済学&lt;/li&gt;
+
+  &lt;li&gt;Eric Sink on the Business of Software 革新的ソフトウェア企業の作り方 [単行本（ソフトカバー）]&lt;/li&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;{{ '4798117501' | amazon_link }}&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/08/31/rubykaigi-2010-1st-day/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-2nd-day/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-2nd-day/">RubyKaigi 2010 2nd day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/09/04/rubykaigi/">RubyKaigiついて思うこと</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/09/04/rubykaigi/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

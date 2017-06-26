@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Git講習会に行ってきた． &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Git講習会に行ってきた．</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>kunitさん主催による Git のメンテナ Junio さんの Git 講習会．プレゼン資料が USB メモリで廻ってくると言う，今までにないスタイル<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>．最後のデモがかなり良かったです．</p>
+
+<ul>
+<li>Git のメンテナの Junio C Hamano さん
+
+<ul>
+<li>Dell のノートに Ubuntu が入ってた．</li>
+</ul></li>
+<li>元々は Linux Kernel の開発に使われていた．</li>
+<li>Wine, X.org, RoR などで使われている</li>
+</ul>
+
+<p>###メモと感想</p>
+
+<ul>
+<li>みんなコミットできる
+
+<ul>
+<li>自分のやった仕事の全てコミットして記録できる．</li>
+<li>それを人がどう見るかは，人間関係によって決まる？</li>
+</ul></li>
+<li>&ndash;amend で Commit を修正できるが，内部的には新たな Commit オブジェクトが生成されている．
+
+<ul>
+<li>GC で削除される対象とはなる．</li>
+</ul></li>
+</ul>
+
+<p>====
+###歴史を作る方法と構造</p>
+
+<ul>
+<li>Concepts
+
+<ul>
+<li>コマンドのリファレンスを見てもあまり勉強にはならない．</li>
+<li>20 のコマンドだけ使えばハッピー</li>
+<li>ただし概念を理解しておくのがいい．</li>
+</ul></li>
+<li>Blog オブジェクト
+
+<ul>
+<li>オブジェクトデータベース</li>
+<li>各ファイル毎に Blog データがある．</li>
+<li>各ファイルに SHA-1 ハッシュキーがある．</li>
+</ul></li>
+<li>Tree オブジェクト
+
+<ul>
+<li>ディレクトリ構造などを記録する．</li>
+<li>ファイルパス名に対応する Blog Hash の対応表</li>
+<li>パス名から SHA-1 ハッシュがわかり，SHA-1 ハッシュから Blog データがわかる．</li>
+</ul></li>
+<li>Commit オブジェクト
+
+<ul>
+<li>状態を記録する．</li>
+<li>Tree オブジェクトへの参照</li>
+<li>誰が，どこから，何を変更したのかの情報</li>
+</ul></li>
+<li>リポジトリ
+
+<ul>
+<li>上記オブジェクトの集合体</li>
+<li>歴史(Building History)も全てを含んだ，オブジェクトの集合体．</li>
+</ul></li>
+<li>Building History
+
+<ul>
+<li>HEAD</li>
+<li>最新 Commit オブジェクトに対するポインタ</li>
+<li>Checkout</li>
+<li>Work tree と HEAD Commit の間に Index というバッファエリアがある．</li>
+<li>Edit &amp; Test</li>
+<li>更新部分のみ Index というバッファ部分に書き戻す．</li>
+<li>Commit</li>
+<li>Index を使って次の Tree オブジェクトを作成</li>
+<li>Tree オブジェクトを使って(？)，Commit オブジェクトを作成</li>
+<li>そこに HEAD ポインタを移動させる．</li>
+</ul></li>
+<li>なぜ Stage(Index，バッファエリア)があるのか？
+
+<ul>
+<li>バージョン管理システムが管理しているファイルの一覧とその内容まで記録したもの．</li>
+<li>Commit したい情報だけ Stage エリアに入れて，と言う使い方ができる．</li>
+<li>小刻みな開発ができる．</li>
+</ul></li>
+<li>A Typical Workflow
+
+<ul>
+<li>git clone</li>
+<li>全てのオブジェクトが入った，リポジトリ全体を自分のローカルに再構築する．</li>
+<li>git add</li>
+<li>「ファイルを追加する」だけではなく，「ファイルの変更を Index オブジェクトに記録する」こと．</li>
+<li>「-p」で interactive mode</li>
+<li>git diff</li>
+<li>Index オブジェクトと Working Tree の差分が見れる．</li>
+<li>git diff &ndash;cached</li>
+<li>Index と HEAD との差分が見れる．</li>
+<li>git diff &ndash;color-words</li>
+<li>変更部分の単語単位での色分け表示</li>
+</ul></li>
+<li>git stash(1)
+
+<ul>
+<li>日本から来たパッチで追加された機能</li>
+<li>今までやってきた作業を中断して保存する機能</li>
+<li>Index エリアに git add で追加した変更をそのまま保存する機能．</li>
+<li>保存後は，今までの変更は巻き戻される．</li>
+<li>ここで Edit&amp;Commit などする．</li>
+<li>stash apply で保存した変更を Index/HEAD/Working Tree に適用する．</li>
+<li>Merge される．</li>
+<li>stash して保存した変更と Index/HEAD/Working Tree をマージする．</li>
+</ul></li>
+<li>git stash save &ndash;keep-index(1)
+
+<ul>
+<li>オブジェクトの状態を保存するのは git stash と同じだが，Index オブジェクトを Working Tree に再構築する．</li>
+<li>例えば，Working Tree にデバッグ用コードがあるが，それは git add してないときなどに，Index = これから Commit する状態を再現して，テストが通るかどうか調べるなどで使える．</li>
+<li>git stash apply で元に戻せる．</li>
+</ul></li>
+<li>git rebase &ndash;interactive
+
+<ul>
+<li>Commit の順序を変更できる</li>
+<li>git rebase -i HEAD~4
+
+<ul>
+<li>4つ前までの Commit の順序を変更できる．</li>
+<li>Commit の合体もできる．</li>
+<li>新たに Commit Tree を構築できる．</li>
+<li>新たな歴史(Building Histroy)を構築できる．</li>
+</ul></li>
+</ul></li>
+<li>Distributed Development
+
+<ul>
+<li>最初は upstream repository から clone する．</li>
+<li>開発を続ける</li>
+<li>upstream と merge する</li>
+<li>upstream に push する</li>
+</ul></li>
+<li>Central Shared Repository
+
+<ul>
+<li>merge が強力なのがいいかな．</li>
+</ul></li>
+<li>Push することなく共同開発
+
+<ul>
+<li>他の人のから fetch することで，その人の開発内容を取り込んだり，検証したりできる．</li>
+<li>問題ななければ，merge し，その内容を pull したりなど．</li>
+</ul></li>
+</ul>
+
+<p>###Archeology</p>
+
+<ul>
+<li>gitk の Commit 間の色は意味がない．区別に使うだけ．</li>
+<li>git bisect
+
+<ul>
+<li>どの Commit でプログラムが破壊されたかを調べる．</li>
+<li>git bisect run ./runscript</li>
+<li>runscript で壊れているかどうかを調べる．</li>
+</ul></li>
+<li>git blame
+
+<ul>
+<li>どの行がいつ変更されたかをを調べる</li>
+</ul></li>
+</ul>
+
+<p>###Further References</p>
+
+<ul>
+<li><a href="http://git.or.cz/gitwiki">http://git.or.cz/gitwiki</a></li>
+</ul>
+
+<p>###デモ</p>
+
+<ul>
+<li>gitk &ndash;all でリポジトリを見つつ</li>
+<li>一連の流れ</li>
+</ul>
+
+<pre><code class="language-bash">% git clone git://XXXX/
+% git chechout -b via8236 master # =&gt; 新しい名前が付いただけ
+# gitk を Update -&gt; 新しい branch ができた．
+% vim foo.c; vim foo.h
+% git diff
+% git commit -a -s -v  # -s = sign-off, -v = diff を確認できる
+# gitk を Update -&gt; 新しい commit ができた．実はミスがあった．
+% git show                       # =&gt; Commit を見ることができる．
+% git grep -n -e VIA --and -e '82[56]' # =&gt; git が知ってるファイルだけ grep してくれるコマンド
+% vim foo.c                      # =&gt; 見つけたミスを修正した．
+% git commit --amend -a          # =&gt; Commit を書き換える．
+# 先ほどの Commit Log が表示され，コミットされる．
+% git checkout master            # =&gt; master へ戻る．先ほどの変更は適用されていない．
+% git format-patch master..via8236     # =&gt; master から via8326 までの Commit をパッチ形式にして出力する．
+</code></pre>
+
+<ul>
+<li>パッチが来たときに適用する場合．</li>
+</ul>
+
+<pre><code class="language-bash">% git checkout -b spell master
+% git am -i patch.diff
+</code></pre>
+
+<ul>
+<li>マージする</li>
+</ul>
+
+<pre><code class="language-bash">% git checkout master
+% git merge spell via8236     # =&gt; spell と via8236 の branch を master へマージする
+% git pull                    # =&gt; upstram の更新を取得する．
+# Merge conflict が発生
+% vim foo.c
+% git commit -a
+# gitk で更新すると，ツリーが更新される．
+</code></pre>
+
+<ul>
+<li>rename されたファイルへのマージもできた．</li>
+</ul>
+
+<p>###質問</p>
+
+<ul>
+<li>1ファイル1オブジェクトで圧縮保存していたのが，同じような部分をまとめて差分化している．
+
+<ul>
+<li>Makefile や Copyright など同じものは全て差分として圧縮する．MPEG のような感じ．</li>
+<li>Pack するのは Commit 時ではなく，GC の時．</li>
+</ul></li>
+<li>Remote Repository の 特定の branch を取ってくるには？
+
+<ul>
+<li>nocheckout オプションで，あとで checkout かな？</li>
+</ul></li>
+<li>Working Tree を複数持つには？
+
+<ul>
+<li>(聞き漏らしたorz)</li>
+<li>local clone を使って複数 clone を持つ</li>
+<li>new work gear?</li>
+</ul></li>
+<li>(聞き漏らした．．．．きっとwalf443さんの質問)</li>
+<li>プロトコルの特徴は？またおすすめは？
+
+<ul>
+<li>Git Protocol を使ってください．</li>
+<li>Anonymous/Read-only</li>
+<li>どのオブジェクトがどの状態かなど，きめ細かいネゴシエーションが行われる．</li>
+<li>もしくは ssh 経由</li>
+<li>HTTP はピンポンのように，「これある？」「ないや，ちょうだい」的に通信するので，効率が悪い．</li>
+</ul></li>
+<li>Shared Repository に GC とか必要？
+
+<ul>
+<li>post-update-fook で自動的に GC を走らせるといいのでは．</li>
+<li>branch を削除するだけの Commit がある．</li>
+</ul></li>
+<li>push 時の排他処理は？
+
+<ul>
+<li>オブジェクトを push する時には問題ない．</li>
+<li>HEAD を変更する時に lock をかける．</li>
+<li>HEAD を付け替えるときには，HEAD は「前のHEADの直系」でなければならない．</li>
+</ul></li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">資料って配布して良いのかな？欲しい方は個別にご相談ください．
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/10/05/Git-Git/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/10/05/OSC2008-Tokyo-Fall/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/10/05/OSC2008-Tokyo-Fall/">OSC2008 Tokyo/Fall に行ってきた．</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/10/06/rails-Git-Rails-Git-deploy/">さくらインターネットにRailsをGitでdeployする際の注意点</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/10/06/rails-Git-Rails-Git-deploy/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

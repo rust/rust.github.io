@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:cc="http://web.resource.org/cc/"
+xmlns="http://purl.org/rss/1.0/">
+<?xml version="1.0" encoding="UTF-8"?>
+<channel rdf:about="/mt/">
+</channel>
+
+<item rdf:about="/mt/archives/2010/05/17/003910.html">
+<title>WordPressに移行しました</title>
+<link>/mt/archives/2010/05/17/003910.html</link>
+<description>と言うわけで、ここは更新されません。とりあえず報告まで。 http://stnard.jp/...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[と言うわけで、ここは更新されません。とりあえず報告まで。
+
+<a href="http://stnard.jp/">http://stnard.jp/</a>]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2010-05-17T11:37:08+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2010/05/17/003909.html">
+<title>WordPressに移行しました</title>
+<link>/mt/archives/2010/05/17/003909.html</link>
+<description>と言うわけで、ここは更新されません。とりあえず報告まで。 http://stnard.jp/...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[と言うわけで、ここは更新されません。とりあえず報告まで。
+
+<a href="http://stnard.jp/">http://stnard.jp/</a>]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2010-05-17T11:37:08+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2009/08/03/003908.html">
+<title>携帯変わります</title>
+<link>/mt/archives/2009/08/03/003908.html</link>
+<description>Willcomを解約するので．だって iPhone の圧力が高ｓ(ｒｙ． さて，そろそろブログとかの移転先を告知します． 	FFとか http://rust.v...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[Willcomを解約するので．だって iPhone の圧力が高ｓ(ｒｙ．
+
+さて，そろそろブログとかの移転先を告知します．
+
+<ul>
+	<li>FFとか http://rust.vox.com/</li>
+	<li>それ以外 http://d.hatena.ne.jp/conceal-rs/</li>
+	<li>Twitter http://twitter.com/conceal_rs/</li>
+</ul>
+]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2009-08-03T23:55:37+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/10/13/003894.html">
+<title>しばしのお休み</title>
+<link>/mt/archives/2007/10/13/003894.html</link>
+<description>ここでのブログはしばしお休みします．まあなんとなくですが，別のところで書いてます．重いんだよね，MovableType．．．．...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+ここでのブログはしばしお休みします．まあなんとなくですが，別のところで書いてます．重いんだよね，MovableType．．．．
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-10-13T00:22:42+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/09/07/003893.html">
+<title>いまこの業界に必要なこと</title>
+<link>/mt/archives/2007/09/07/003893.html</link>
+<description> 【XDev】「とりあえず作って，後から作り直せ」，Rubyのまつもと氏が語るエンタープライズ開発：ITpro: まあそうなのかもしれない．終着点が見えないまま...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<blockquote>
+<a href="http://itpro.nikkeibp.co.jp/article/NEWS/20070907/281335/" target="_blank">【XDev】「とりあえず作って，後から作り直せ」，Rubyのまつもと氏が語るエンタープライズ開発：ITpro:</a>
+</blockquote>
+まあそうなのかもしれない．終着点が見えないままに進んでいくのではなくて，プロトタイプを製作しつついくのがいいんだろうね．ただプロトタイプ製作自体に時間とコストがかかってしまう状況でもあるので，そこを改善せねばな．やっぱRuby on RailsとかCatalystとか，フレームワークかな．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-09-07T17:21:26+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/09/06/003892.html">
+<title>ここ最近の負荷</title>
+<link>/mt/archives/2007/09/06/003892.html</link>
+<description>超高め．．．．これはD論書いている時以来だな．しかもあの時は終わりがあったが，今回は先が見えない．何かがトリガーになれば．．．．という状況．久しぶりに橘いずみか...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+超高め．．．．これはD論書いている時以来だな．しかもあの時は終わりがあったが，今回は先が見えない．何かがトリガーになれば．．．．という状況．久しぶりに橘いずみかな．．．．orz
+
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-09-06T14:45:00+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/09/03/003891.html">
+<title>精神的に参る</title>
+<link>/mt/archives/2007/09/03/003891.html</link>
+<description>正直，管理職の柄ではないので，いまは結構心的負荷高め．妻と猫とが癒し元です．これがないと逃げてるな，きっと．．．． まあそれはさておき，そろそろプログラム書きた...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+正直，管理職の柄ではないので，いまは結構心的負荷高め．妻と猫とが癒し元です．これがないと逃げてるな，きっと．．．．
+
+まあそれはさておき，そろそろプログラム書きたくなってきた．仕事とはかけ離れて，自分が使いたいツールを作りたい．Railsでも勉強がてらにやってみようかな．そして楽天にｔ（ｒｙ．
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-09-03T17:36:36+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/08/14/003890.html">
+<title>考えて書く・話す</title>
+<link>/mt/archives/2007/08/14/003890.html</link>
+<description>今日1日、形容詞は禁止です。 - シロクマ日報 [ITmedia オルタナティブ・ブログ] 形容ばかりで本質を語れない人が最近多い気がしますね．文章全体が形容だ...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<blockquote><a href="http://blogs.itmedia.co.jp/akihito/2007/08/1_67fa.html" target="_blank">今日1日、形容詞は禁止です。 - シロクマ日報 [ITmedia オルタナティブ・ブログ]</a></blockquote>
+形容ばかりで本質を語れない人が最近多い気がしますね．文章全体が形容だけになると，聞いている人は実際に何が言いたいのか理解できなくなる．そういう意味で，形容詞禁止で語るのはいい試みじゃないかと思う．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-08-14T19:16:34+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/08/11/003889.html">
+<title>ホットスポット初体験</title>
+<link>/mt/archives/2007/08/11/003889.html</link>
+<description>今日はビル停電のため，朝から出社して電源落としてきた．んで，電源入れるために待ってるあいだ，近くのドトールで暇をつぶしているんだが，ホットスポット対応なので非常...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+今日はビル停電のため，朝から出社して電源落としてきた．んで，電源入れるために待ってるあいだ，近くのドトールで暇をつぶしているんだが，ホットスポット対応なので非常に快適．高速通信は便利だ・・・・
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-08-11T09:54:55+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/08/10/003888.html">
+<title>話題の？</title>
+<link>/mt/archives/2007/08/10/003888.html</link>
+<description></description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/QVSGRwqgvl0"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/QVSGRwqgvl0" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-08-10T23:50:13+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/07/16/003887.html">
+<title>自宅開発環境再構築</title>
+<link>/mt/archives/2007/07/16/003887.html</link>
+<description>何となく再構築． Fedora Core 6 on VMware emacs with php-mode/javascript-mode/etc. Podero...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[何となく再構築．
+<br />
+<br />
+<ul>
+<li>Fedora Core 6 on VMware</li>
+<li>emacs with php-mode/javascript-mode/etc.</li>
+<li>Poderosa</li>
+<li>Firefox</li>
+</ul>
+まあこんな感じで．特に凄いことをするわけでもないので，]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-07-16T14:27:42+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/07/03/003886.html">
+<title>Outland上陸，そして・・・・</title>
+<link>/mt/archives/2007/07/03/003886.html</link>
+<description>緑装備の高性能さに唖然とする．．．．下と上とじゃ全然違うのね．下のEpicでも上の緑に勝てなかったりとか．まあLv上限上がったからそうなるんだろうけど，ちょっと...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<p>緑装備の高性能さに唖然とする．．．．下と上とじゃ全然違うのね．下のEpicでも上の緑に勝てなかったりとか．まあLv上限上がったからそうなるんだろうけど，ちょっと桁違いだな．まあ強化されていくのは気持ちいいんだけどね．いまLv61．もう少しかな．</p>]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-07-03T13:41:44+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/07/03/003885.html">
+<title>日々変わりなしorz</title>
+<link>/mt/archives/2007/07/03/003885.html</link>
+<description>えー，まあ特に何も変ったことは茄子．近況としては会社の大阪事務所が引っ越しでてんやわんやとか．FFXIは相変わらず引退状態．物価がかなり下がってるらしいんで，今...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<p>えー，まあ特に何も変ったことは茄子．近況としては会社の大阪事務所が引っ越しでてんやわんやとか．FFXIは相変わらず引退状態．物価がかなり下がってるらしいんで，今戻ったら金持ちなんだろうなぁ，と考えるだけでログインはせず．そんな感じの毎日．日々変わりなし．</p>]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-07-03T13:37:41+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/06/07/003884.html">
+<title>Advancedと言えば・・・・</title>
+<link>/mt/archives/2007/06/07/003884.html</link>
+<description>ウィルコム、無線LAN対応の「Advanced/W-ZERO3［es］」 ネーミングはともかく， サイズが小さくなった？ メモリ増えた 解像度アップ CPU増強...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<blockquote><a href="http://k-tai.impress.co.jp/cda/article/news_toppage/34882.html" target="_blank">ウィルコム、無線LAN対応の「Advanced/W-ZERO3［es］」</a></blockquote>
+ネーミングはともかく，
+<ul>
+<li>サイズが小さくなった？</li>
+<li>メモリ増えた</li>
+<li>解像度アップ</li>
+<li>CPU増強</li>
+<li><strong>無線LAN搭載</strong></li>
+</ul>
+はいい感じ．機種交換するかな．．．．割賦販売あるらしいし，ちょっと考え中．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-06-07T22:03:56+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/05/15/003883.html">
+<title>今日の購入日記：大人買い</title>
+<link>/mt/archives/2007/05/15/003883.html</link>
+<description>大人買い，楽しい．すばらしき行為（ぉぃ． ハギワラシスコム USB対応フラッシュメモリ LumitasMシリーズ 2GB(WindowsVista ReadyB...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[大人買い，楽しい．すばらしき行為（ぉぃ．<br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MWW9CS/stnardsdiary-22/ref=nosim"><img src="http://ec1.images-amazon.com/images/I/11WP00z8cpL.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MWW9CS/stnardsdiary-22/ref=nosim">ハギワラシスコム USB対応フラッシュメモリ LumitasMシリーズ 2GB(WindowsVista ReadyBoost対応)オレンジ HUD-M2GLJ-OR<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2006/01/31</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MWW9CS/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000JJ4ANU/stnardsdiary-22/ref=nosim"><img src="http://ec1.images-amazon.com/images/I/21281MWBXBL.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000JJ4ANU/stnardsdiary-22/ref=nosim">USB2.0/1.1フラッシュメモリ ToteBag BH TB-BH4G/B<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2006/11/30</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000JJ4ANU/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/481246577X/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/481246577X/stnardsdiary-22/ref=nosim">てけてけマイハート 6 (6)<br>
+</a>
+<br>
+         竹本 泉
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/05/17</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/481246577X/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/406372610X/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/406372610X/stnardsdiary-22/ref=nosim">ピアノの森 14 (14)<br>
+</a>
+<br>
+         一色 まこと
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/06/22</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/406372610X/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710920/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710920/stnardsdiary-22/ref=nosim">海皇紀 32 (32)<br>
+</a>
+<br>
+         川原 正敏
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/06/15</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710920/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000QCQDZ8/stnardsdiary-22/ref=nosim"><img src="" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000QCQDZ8/stnardsdiary-22/ref=nosim">月刊 アフタヌーン 2007年 07月号 [雑誌]<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/05/25</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000QCQDZ8/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062754258/stnardsdiary-22/ref=nosim"><img src="http://ec1.images-amazon.com/images/I/31RUuzMk4KL.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062754258/stnardsdiary-22/ref=nosim">創竜伝13〈噴火列島〉<br>
+</a>
+<br>
+         田中 芳樹
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/05/16</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062754258/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http%]]>
+</content>
+<dc:date>2007-05-15T22:24:57+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/05/15/003882.html">
+<title>自己紹介＠WoW in Moonrunner＋雑感</title>
+<link>/mt/archives/2007/05/15/003882.html</link>
+<description>既にFFXIが過去のものになってるRust＠Diabolosです． 今はRust%Warrior＠Moonrunnerです．PvE Serverです．だってPv...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[既にFFXIが過去のものになってるRust＠Diabolosです．
+<br /><br />
+今はRust%Warrior＠Moonrunnerです．PvE Serverです．だってPvPがいまひとつなじめないと言うか．．．．ClassがWarなのは，なんとなくTankかDPSかな？と言うことで．<br /><br />
+ProfessionはBlacksmithingのArmorsmithとMining．Armorsmithなのには特に意味は無い．なんとなく，Swordsmithは普通すぎるしなぁ，程度．まあそれでもMiningはSkill上限に，Blacksmithingも274まで上がったので，がつがつやらなくてもSkillは上昇させられる．
+<br /><br />
+また金策はしてない．してなくても余るぐらいにはたまる．普通に装備を買い換えても所持金は増えて行く仕様．すばらしい．さらにLevelingをしなくてもLvが上がるのもいいところ．Questをこなす際にMobを倒さなくてはならなかったり，RewardでXPもらえたりと，「よし！今日はレベル上げだ！」と意気込まなくても大丈夫．お気楽．
+<br /><br />
+FFXIと決定的に違うのはこんなところかな．楽しんでできるんだよね，いろいろと．「やらなければ」感が無いのがお気楽．
+<br /><br />
+<br /><br />
+ただ英語がねぇ．．．．読めないと全くなにやってるかわからないし，会話できないと楽しくないし，そこが唯一の難点．英語勉強するかな．．．．λ]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-05-15T14:36:47+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/05/14/003881.html">
+<title>WoW日記：War53になるの巻</title>
+<link>/mt/archives/2007/05/14/003881.html</link>
+<description>1月ぐらいから始めたWoWですが，ようやく50越えで今53．クエストやってるだけでお金と経験値，戦闘スキルとProfession(合成)スキルも上がる，超お気楽...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[1月ぐらいから始めたWoWですが，ようやく50越えで今53．クエストやってるだけでお金と経験値，戦闘スキルとProfession(合成)スキルも上がる，超お気楽仕様です．ホントに気楽．ソロでもできるし．
+<br /><br />
+ただいろいろ極めるためには，それ相応の努力をしなければならないと言う廃人向けの仕組みもあり，いろんなMMORPGのいいとこ取りっていうのも納得できます．これで日本語化されれば，日本No.1のMMORPGになれるんじゃないだろうかと思うんだが．．．．どっかやらないかねぇ．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-05-14T10:54:54+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/05/14/003880.html">
+<title>とうとう過去へ．しかし既に過去のものに</title>
+<link>/mt/archives/2007/05/14/003880.html</link>
+<description>「ファイナルファンタジー XI アルタナの神兵」を正式発表 時空を超え過去のヴァナ・ディールを旅する拡張ディスク第4弾 まだアトルガン終わってないよね？まあ既に...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<blockquote><a href="http://www.watch.impress.co.jp/game/docs/20070512/ff11god.htm" target="_blank">「ファイナルファンタジー XI アルタナの神兵」を正式発表<br />
+時空を超え過去のヴァナ・ディールを旅する拡張ディスク第4弾</a>
+</blockquote>
+まだアトルガン終わってないよね？まあ既に引退状態だから別にいいんだが，中途半端なまま次発表してもいいんだろうか．<br /><br />
+んで，内容はというと，次は過去へ．と言うことは北の大地かな．いったいいつまで続けられるのか，ある意味楽しみではある．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-05-14T10:50:10+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/04/25/003879.html">
+<title>今日の購入日記</title>
+<link>/mt/archives/2007/04/25/003879.html</link>
+<description>なんか21世紀になってるんだが，しかも上？とかついてるんだが，はたして終わりは来るのだろうか．．．． 21世紀少年 上 (1)          浦沢 直樹  ...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[なんか21世紀になってるんだが，しかも上？とかついてるんだが，はたして終わりは来るのだろうか．．．．<br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4091812163/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4091812163.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4091812163/stnardsdiary-22/ref=nosim">21世紀少年 上 (1)<br>
+</a>
+<br>
+         浦沢 直樹
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/05/30</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4091812163/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000PISYJQ/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000PISYJQ.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000PISYJQ/stnardsdiary-22/ref=nosim">少年ガンガン 2007年 06月号 [雑誌]<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/05/12</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000PISYJQ/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-04-25T09:25:26+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/04/21/003878.html">
+<title>今日の購入日記</title>
+<link>/mt/archives/2007/04/21/003878.html</link>
+<description>Vistaで動かないソフト多いから，買い替え大変orz． 一太郎2007 バージョンアップ版 発売日　2007/02/09 Amazonで詳しく見る よみきりも...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[Vistaで動かないソフト多いから，買い替え大変orz．
+<br /><br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000LV61QU/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000LV61QU.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000LV61QU/stnardsdiary-22/ref=nosim">一太郎2007 バージョンアップ版<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/02/09</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000LV61QU/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757734980/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4757734980.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757734980/stnardsdiary-22/ref=nosim">よみきりものの…わらいの園々<br>
+</a>
+<br>
+         竹本 泉
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/04/25</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757734980/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-04-21T17:28:28+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/04/16/003877.html">
+<title>Vista PC到着の巻</title>
+<link>/mt/archives/2007/04/16/003877.html</link>
+<description>と言うわけで，HP Pavilion Notebook PC dv9200/CTが到着しました．初Vistaなわけですが，スペック的にかなりいい方(T7200/...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[と言うわけで，<a href="http://h50146.www5.hp.com/products/portables/personal/dv9200/" target="_blank">HP Pavilion Notebook PC dv9200/CT</a>が到着しました．初Vistaなわけですが，スペック的にかなりいい方(T7200/2GB/GeForce7600(512MB)/100GB(7200rpm))なので，かなり快適．というか，メモリ量だけか？というぐらい動作に遅延感がないのがいい．I/O関連のLogicでも変ったんだろうか．．．．まあ不満点はいろいろあるんだが，それは追々．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-04-16T09:25:38+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/04/15/003876.html">
+<title>今日の購入日記</title>
+<link>/mt/archives/2007/04/15/003876.html</link>
+<description>ギフト券を使い切るためにっ！ いや，まあ普通のあれですが．．．． 月刊 アフタヌーン 2007年 06月号 [雑誌] 発売日　2007/04/25 Amazon...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[ギフト券を使い切るためにっ！<br />
+<br />
+<br />
+いや，まあ普通のあれですが．．．．<br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000P7V9EO/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000P7V9EO.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000P7V9EO/stnardsdiary-22/ref=nosim">月刊 アフタヌーン 2007年 06月号 [雑誌]<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/04/25</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000P7V9EO/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/433407653X/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/433407653X.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/433407653X/stnardsdiary-22/ref=nosim">妖魔戦記<br>
+</a>
+<br>
+         菊地 秀行
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/04/19</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/433407653X/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-04-15T14:10:51+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/04/10/003875.html">
+<title>祝 近鉄PiTaPa開通</title>
+<link>/mt/archives/2007/04/10/003875.html</link>
+<description>いや，マジでうれしい．券売機に並ばなくてもいいのはすごく助かる． 会社から大学へ行くのに， 淀屋橋＞(御堂筋線)＞なんば＞(近鉄)＞長瀬 大学から家に 長瀬＞(...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[いや，マジでうれしい．券売機に並ばなくてもいいのはすごく助かる．
+<br /><br /><br />
+会社から大学へ行くのに，<br />
+<br />
+淀屋橋＞(御堂筋線)＞なんば＞(近鉄)＞長瀬
+<br />
+<br />
+大学から家に
+<br />
+<br />
+長瀬＞(近鉄)＞鶴橋＞(大阪環状線)＞森ノ宮
+<br />
+<br />
+と言う順路なんだが，この全てでPiTaPaが使えて，
+しかもオートチャージついてるのでJR西日本でもチャージする必要なし．
+便利になったもんだ．
+<br /><br /><br />
+ただあまりにも便利になりすぎて，人として何かが退化するんじゃないかと少し心配．
+あと金銭感覚の麻痺とかも怖いね．
+そのうち移動するだけでお金取られる世界に．．．．(;´Д`)]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-04-10T11:22:05+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/04/01/003874.html">
+<title>今日の購入物</title>
+<link>/mt/archives/2007/04/01/003874.html</link>
+<description>定例のを．こんなんしか書くことなんだが．．．．最近orz 新吼えろペン 7 (7)          島本 和彦        発売日　2007/04/19 A...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[定例のを．こんなんしか書くことなんだが．．．．最近orz<br /><br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4091570887/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4091570887.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4091570887/stnardsdiary-22/ref=nosim">新吼えろペン 7 (7)<br>
+</a>
+<br>
+         島本 和彦
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/04/19</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4091570887/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000OPPXLM/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000OPPXLM.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000OPPXLM/stnardsdiary-22/ref=nosim">少年ガンガン 2007年 05月号 [雑誌]<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/04/12</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000OPPXLM/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757519923/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4757519923.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757519923/stnardsdiary-22/ref=nosim">ヴァンパイア十字界 9 (9)<br>
+</a>
+<br>
+         城平 京
+         木村 有里
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/04/21</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757519923/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-04-01T16:50:28+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/03/29/003873.html">
+<title>今日の購入日記</title>
+<link>/mt/archives/2007/03/29/003873.html</link>
+<description>そろそろマリ見ても終盤かな？さすがに卒業したら終わるだろうと思うんだが．．．． マリア様がみてる あなたを探しに          今野 緒雪        発...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[そろそろマリ見ても終盤かな？さすがに卒業したら終わるだろうと思うんだが．．．．
+<br /><br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4086008955/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4086008955.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4086008955/stnardsdiary-22/ref=nosim">マリア様がみてる あなたを探しに<br>
+</a>
+<br>
+         今野 緒雪
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/03/30</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4086008955/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MKQ0UM/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000MKQ0UM.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MKQ0UM/stnardsdiary-22/ref=nosim">ガンダム無双<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/03/01</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000MKQ0UM/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-03-29T14:50:35+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/03/20/003871.html">
+<title>読み逃げって言われてもなぁ</title>
+<link>/mt/archives/2007/03/20/003871.html</link>
+<description>ITmedia News：「mixi読み逃げ」ってダメなの？ (1/2): 「読み逃げ」なんて言葉，初めて聞きました．なんていうか自己中心的な感じがする．何だろ...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<blockquote><a href="http://www.itmedia.co.jp/news/articles/0703/20/news042.html" target="_blank">ITmedia News：「mixi読み逃げ」ってダメなの？ (1/2):</a></blockquote>
+「読み逃げ」なんて言葉，初めて聞きました．なんていうか自己中心的な感じがする．何だろうね，この違和感は．
+<br /><br /><br />
+本当に「読み逃げ」なるものがダメなことであれば，新聞やテレビへコメントや投書なんかもしてるんだろうかね．そうか「記者やライターが書いているんだから違う」と逃げるんだろうか．
+<br /><br /><br />
+ブログや掲示板・SNSでも，日記やコンテンツを見せる見せないは作者に委ねられているし，それを見る見ないは読者の権利だろう．そして見た後に何か感じるところがあればコメントなどするし，何も無ければROMになる．これが普通じゃないんだろうか．
+<br /><br /><br />
+<br /><br /><br />
+とまあ日記を書いて約7年の人の意見でした．引用記事見てて思ったんだが，アクセス解析までしてどうこうするんであれば，それなりのコンテンツを用意しなけりゃいかんよな．「今日はおいしいケーキを食べました♪」的な記事にコメントとか求められてもねぇ．なんか「見て見て，私を見て！」な「かまってちゃん」を連想してしまいますた．世の中こんなのばっかになるんだろうか(;´Д`)．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-03-20T14:02:12+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/03/08/003869.html">
+<title>ノートパソコン新調</title>
+<link>/mt/archives/2007/03/08/003869.html</link>
+<description>現在注文中． Inspiron 6000にメモリ足すというのも考えたんだが，VGAがX300/128MBなのでそろそろVistaとか考えると力不足感があるため新...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[現在注文中．
+<br />
+<br />
+Inspiron 6000にメモリ足すというのも考えたんだが，VGAがX300/128MBなのでそろそろVistaとか考えると力不足感があるため新調することに．
+<br />
+<br />
+スペック的には，
+<table border="0">
+<tr>
+<th>CPU</th>
+<td>C2D T7200 (2GHz/4MB)</td>
+</tr>
+<tr>
+<th>MEM</th>
+<td>DDR667 1GB x 2</td>
+</tr>
+<tr>
+<th>VGA</th>
+<td>GeForce 7600 512MB</td>
+</tr>
+<tr>
+<th>HDD</th>
+<td>7200rpm 100GB SATA</td>
+</tr>
+<tr>
+<th>Display</th>
+<td>17inch WSXGA+</td>
+</tr>
+</table>
+な感じ．OS無しで税込み22万なので，まあまあかな．届くのが楽しみです．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-03-08T15:57:01+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/02/24/003868.html">
+<title>今日の購入日記</title>
+<link>/mt/archives/2007/02/24/003868.html</link>
+<description>新刊かと思いきや，単なる合本だったのか．．．．と思いきや，書き下ろし短編．．．．ま，まるで竹本いｚ（ｒｙ． トレジャー・ハンター八頭大 ファイル1 (1)   ...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[新刊かと思いきや，単なる合本だったのか．．．．と思いきや，書き下ろし短編．．．．ま，まるで竹本いｚ（ｒｙ．<br />
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4257010940/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4257010940.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4257010940/stnardsdiary-22/ref=nosim">トレジャー・ハンター八頭大 ファイル1 (1)<br>
+</a>
+<br>
+         菊地 秀行
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/02</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4257010940/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000NOIVA4/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000NOIVA4.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000NOIVA4/stnardsdiary-22/ref=nosim">少年ガンガン 2007年 04月号 [雑誌]<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/03/12</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000NOIVA4/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592184033/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4592184033.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592184033/stnardsdiary-22/ref=nosim">フルーツバスケット 23 (23)<br>
+</a>
+<br>
+         高屋 奈月
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/03/19</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592184033/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710831/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4063710831.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710831/stnardsdiary-22/ref=nosim">海皇紀 31 (31)<br>
+</a>
+<br>
+         川原 正敏
+      <br>
+<br>
+<font size="-1">発売日　<b>2007/03/16</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063710831/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000NCJMB8/stnardsdiary-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000NCJMB8.09.MZZZZZZZ.jpg" border="0"></a></td><td valign="top"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000NCJMB8/stnardsdiary-22/ref=nosim">月刊 アフタヌーン 2007年 04月号 [雑誌]<br>
+</a>
+<br>
+<br>
+<br>
+<font size="-1">発売日　<b>2007/02/24</b>
+<br>
+</font><br>
+<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000NCJMB8/stnardsdiary-22/ref=nosim"><font>Amazonで詳しく見る</font></a></td>
+</tr>
+</table>
+<br>
+]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-02-24T23:32:40+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/02/22/003867.html">
+<title>WoW日記：メインはこちらに</title>
+<link>/mt/archives/2007/02/22/003867.html</link>
+<description>と，言うわけで，WoWことWorld of Warcraftに移行です．MoonrunnerにFFXIと同じくRustキャラを作って活動中．新鮮さは何よりも勝り...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[<a href="/mt/archives/2007/02/22/003866.html">と，言うわけで</a>，WoWこと<a href="http://www.worldofwarcraft.com/" target="_blank">World of Warcraft</a>に移行です．MoonrunnerにFFXIと同じくRustキャラを作って活動中．新鮮さは何よりも勝りますな．例えば，
+<ul>
+<li>Griffinでの移動が爽快すぎ．Lv70になれば自由に空も飛べるはず？</li>
+<li>楽におなつよ（？）倒せる．短時間しかできなくても経験値ボーナスがあるからレベル上がりやすい．</li>
+<li>Profession(合成)が楽で上がりやすい．自動でできる．</li>
+<li>1度着ると店売りしかなくなる装備が多い．消耗品以外で流通が活発</li>
+<li>Auction(競売)手数料が出品者持ちで24時間しか出せない．値ごろ感が重要なのがいい感じ．</li>
+<li>Questやってるだけで普通にレベル上がっていい装備 or お金がもらえる．</li>
+<li>Death Penaltyが無い．</li>
+<li>装備の修理などで恒常的にシステムに回収されるお金がある．</li>
+<li>Addonが抱負</li>
+</ul>
+などなど，某FFと比べるといいこと尽くめのようです．まあ，
+<ul>
+<li>絵がアメリカ(;´Д`)</li>
+<li>全部英語なので，読めないと話しにならない．</li>
+</ul>
+という欠点はあるが，まあそれほど気にすることも無いかなと．日本語版と日本サーバができれば，FFXIから爆発的に人が流れていきそうなんだが，どこかローカライズしないかなぁ．．．．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-02-22T12:15:17+09:00</dc:date>
+</item>
+
+<item rdf:about="/mt/archives/2007/02/22/003866.html">
+<title>やること茄子</title>
+<link>/mt/archives/2007/02/22/003866.html</link>
+<description>いや，別に題名が何かに似てるのは気のせいだよ，いや，マジで(;´Д`)． さて，もう既にFFXIから離れて1月あまり． 別垢倉庫も先月末で解約し，妻用別垢も今月...</description>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+<![CDATA[いや，別に題名が何かに似てるのは気のせいだよ，いや，マジで(;´Д`)．
+<br /><br />
+<br />
+さて，もう既にFFXIから離れて1月あまり．
+<br />
+<br />
+別垢倉庫も先月末で解約し，妻用別垢も今月末で解約予定．
+<br />
+<br />
+低レベル用装備もどんどん処分中．
+<br />
+<br />
+9キャラあった倉庫も3キャラに．妻倉庫もかなり減った．さらに来月中にはもう1キャラ減らせそうな勢い．
+<br />
+<br />
+<br />
+とまあ，どんどん減衰モードですね，ほんとに．裏もアサルトも空も海もサルベージも，なんだか作業的になって，さらに手間と難易度が高く，手軽さのなさに辟易としていたのが去年末．とりあえず「獣でも上げて，もこもこ着るか(´∀`)」な感じでやってたんだが．．．．]]>
+</content>
+<content type="text/html" mode="escaped" xml:lang="en_US">
+
+</content>
+<dc:date>2007-02-22T11:39:05+09:00</dc:date>
+</item>
+
+
+</rdf:RDF>

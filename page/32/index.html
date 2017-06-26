@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/25/notitle/">コンテンツ枯渇時代</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://eiga.com/buzz/20080724/4
+ぇー．まあ邦画になるよりはかなりましなんだが．．．．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/16/C-12/">ロベール本学習記録#12</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  かなり間が空きましたが，第12章まで終わった．まあこれやっただけでは頭の片隅にしか入らないから，一通り終わったらなんかのソースでも読むかな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/15/notitle/">脱初心者に向けて大事なことは？</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://d.hatena.ne.jp/amachang/20080715/1216114132
+ それを最終的にどうやって解決していったかというと、「答えを探しすぎる」のをやめました。
+ある程度分からないことは、「これは何なのか」「このサンプルコードは何なのか」「この用語の意味は何なのか」という自分自身の問いに対して、仮説を立てて、自分だけの答えを出すのです。
+自分の仮説に矛盾を感じるときには、もう一度仮説を立て直せばいいのです。
+ そう，これだ．プログラム始めたばかりの人って，何故か奥の奥まで調べようとしてしまう傾向があるようで1，うまく勉強がはかどらないと嘆いている．で，自分の時はどうだったかというと，あんまり調べずに「これはこういうもんだ」と仮定して進めていって，後でその間違いを正してた．ただそれを言っても納得してくれないのが初心者なので，そういう人には是非とも上のエントリを勧めたいところです．
+ 少なくとも自分のまわりでは [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/14/notitle/">もったいないことは止めよう</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  iPhoneの箱を誉める記事が出たせいか、昨年後半ぐらいから、この手のモバイルデバイスの箱が豪華になってきた。豪華な箱は、少なからず、製品価格にも影響するし、豪華だからいって嬉しいというものでもなけれは、所有する喜びがわくこともない。こうした感情は、ある種のファンだから生ずるか、あるいはメーカーに踊らされているかのどちらかであろう。D4とiPhoneを比較して云々いうつもりはないし、iPhoneも含めて、やたらに箱を豪華にするのはユーザーメリットもないし、「もったいない」のでやめたほうがいいとおもう。
+ http://pc.watch.impress.co.jp/docs/2008/0714/pda82.htm
+こういうのって手にしたときの喜びに繋がるのはそうなんだが，それが製品価格に跳ね返るのはなんとも納得できない感じがする．そして箱って買ったときしか見ずにあとは押入れの奥にしまってしまう身としては，豪華にするよりもエコを意識してほしいと感じる．この記事のこの部分に賛同したのでちょっと書いてみた．
+ちなみに iPhone は買いません．来年に MacBook 買ったら考えてみる．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/09/http-labs-gree-jp-Top-Study-20080708-html-title-14/">第14回 オープンソーステクノロジー勉強会に行ってきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  行ってきましたGREE主催の勉強会．と言うわけで，右後ろでカシャカシャ打ってたログを．
+##モバイルフレームワーク MobaSiF ###昔と比べて携帯サービス開発は楽
+ 昔と比べて楽になった  端末の認証情報 UIDの取得は確かに楽になった 絵文字の扱い auが外字コードで出し入れ可能になった 画像の出し分け タグの有効無効 &lt;table&gt;の扱い ページ容量向上 画面サイズと液晶の画質の向上  MobaSiFが対象としているのは通常のHTMl  Flash/アプリ/動画などは機種個別の扱いが必要  古い機種を切り捨ると確かに楽だが．．．．  i-mode IDの取り方(参考) guid=ONつけないとダメ formの場合は  GET -&gt; hidden でかかないとダメ POST -&gt; action に query をつけないとダメ  古い機種の対応 mova  XHTML，背景色がダメ  foma ～901, ～701  &lt;table&gt;が使えない  au CDMA 1X  50Kまで 絵文字が&lt;local src=&rdquo;***&rdquo;&gt;  softbank 3GC 型以外  png 素材も用意しないとダメ  softbank C型  公式以外では端末認証できない これは知らなかったので，いい情報．あとでUA調べてみよう．    ###MobaSiFとは
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/07/09/http-labs-gree-jp-Top-Study-20080708-html-title-14/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/07/03/notitle/">「黙っとけ」で有名な本</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  そういえば，某勉強会に持って行くと「黙っとけ」と記入してもらえるという噂を聞いたのですが．．．．
+ 初めてのRuby  著者: Yugui
+出版日: 2008-06-26
+出版社/メーカー: オライリージャパン
+カテゴリ: Book
+    ああっ女神さまっ(37) (アフタヌーンKC)  著者: 藤島 康介
+出版日: 2008-07-23
+出版社/メーカー: 講談社
+カテゴリ: Book
+    PLUTO 6 (ビッグコミックス)  著者: 浦沢 直樹
+出版日: 2008-07-30
+出版社/メーカー: 小学館
+カテゴリ: Book
+    MAGI×ES 魔法小路の少年少女2 (MFコミックス フラッパーシリーズ)  著者: 竹本 泉
+出版日: 2008-07-23
+出版社/メーカー: メディアファクトリー
+カテゴリ: Book
+    少年ガンガン 2008年 08月号 [雑誌]  著者: 出版日: 2008-07-11
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/07/03/notitle/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/06/29/mysql-MySQL-on-MySQL-Weekly-Seminor-2008-06-27/">MySQL パフォーマンスチューニング on MySQL Weekly Seminor 2008/06/27</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/06/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  業務で参加ですが，ひとまずログ記録．こんかいから howm でもはてな記法で書いたのでコピペが楽です(ノ∀`)．
+##MySQL パフォーマンスチューニング  MySQL は Orcale と同程度の安定性とスケーラビリティがあると評価されている(2005年)  ##パフォーマンスとは？
+ パフォーマンスの指標  スループット レスポンスタイム・レイテンシ スケーラビリティ 上記のコンビネーション CPU やサーバ環境によって変わるのか，など 指標は平均値だけでみるのではなく，ばらつきを調べるのも重要  キューイング  複数のユーザ・リクエストがある場合に発生 レスポンスタイム = キューイングによる遅延 + 実行時間 飽和するとキューイングによる遅延が増大する 天王山トンネルとかと同じ原理 事前の性能テストでは見えない部分でもある  性尿評価の基準作りが重要   実行時間 : Key to the hotspot  確認時間 ネットワーク, CPU, I/O, ロック待ち, &hellip;.  原因を見極めないと，高速化に繋がらない可能性がある  計測方法は？ 1ページあたりのクエリ実行時間の合計  ベンチマークテスト  実行方法に注意が必要 結果を正しく読み取れることが重要 MySQL のサイトに「なぜ MySQL を使うのか」があり，ベンチマーク結果が載っているが，どのような結果かを見極めなけらばならない． ありがちな間違い 本環境を想定しているかどうか テストデータのばらつき具合 1ユーザだけのテスト  Lock 待ちに気がつかない  特性の違うテストをしても意味がない  Web 系とバッチ処理など  ベンチマーク実行環境の性能不足で，期待した値が出ない状況がありうる  ビジネス面からの考慮  コストパフォーマンスを調べる パフォーマンス・スケーラビリティ・信頼性は本当に必要か？ 常に全体像を把握しておく． 部分的に改善しても，その他にボトルネックがある可能性がある． どのチューニングが効果的かを判断しながら   ##パフォーマンスチューニングTIPS ###MySQLサーバの設定
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/06/29/mysql-MySQL-on-MySQL-Weekly-Seminor-2008-06-27/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/06/26/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">RubyKaigi2008に参加してきた＃２</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/06/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  つくばは遠いなぁ，と言うのが会場の印象．いやいい会場だったんですけどね．いかんせん自宅から遠かったなぁと．
+2日目のキーワードは，「Ruby 物産展」「Mac 万能説」．
+##本日は朝の諸注意は飛ばされた ##Ruby Extended Library Howto
+ 拡張ライブラリとは  C/C++で書かれ組み込まれるライブラリ  遅さ順  1.uptp(10) { |x| puts x }  for i in 1..10; puts i; end  for(i=0; i&lt;10; i++){ rb_funcall(rb_stdout, rb_intern(&quot;puts&quot;), 1, INT2FIX(i)); }   情報源  README.EXT(.ja) RHG / Web版など  1次情報  ruby.h / intern.h / rubyio.h / rubysig.h / version.h / st.h  配布  setup.rb / Gem / Binary  extrails  拡張ライブラリのひな形が作れる この中に作法のひな形が書かれている せっかく C++ の勉強などしているので，一つ作ってみよう  使いどころを考える  ##さらに仕事に使う Ruby
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/06/26/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/06/24/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">RubyKaigi2008に参加してきた＃１</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/06/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  当日はあいにくの雨模様にもかかわらず，現場の熱気はすごかったですね．Rubyに対する愛を感じました．キーワードは，「スーツ漫才」「博士と助手の奇妙な世界」「だまっとけ」ですかね．
+さて，感想を交えたログなどを． ##開会前
+ 電源確保できなかったので，省電力モードで活動開始． 5時間はもつ予定．  ##開会
+ テーマは多様性  様々な実装などで確かに多様．  0th day  ビジネスよりのセッション  2つの会場  メインセッションとサブセッション 確かに良かったんだけど，セッションの開始時間の調整とかした方がよかったんじゃないかな？と思った．   ##現在の，そしてこれからのRubyVM開発
+ Ruby の実装  JRuby, Rubinius, IronRuby, MagLev, CRuby(Matz)  08/06/20 1.9.0-2 Release  1.9.0-N -&gt; snapshot version Bug-fix M17N  1.9.1 は 2008/12/20 に Release 予定 Ruby の下の部分，実装の話 Parallel Thread Execution  並列スレッド実行 現在のRubyは制限がある ただしそうすると他に影響が出る  Multiple Virtual Machine  一つのインタプリタで複数のVM  Compilation  Ruby 2 C  HPC on Ruby  そこそこ性能が出て簡単に書ける 並列計算 on Ruby  Atomic Ruby  軽量版Ruby？ 肥大化した Ruby を，自分にあった機能のみを取り込んだ軽量版を作る  Memory Revisit  GC 変更 Malloc/Free の戦略変更 いまの Ruby はメモリ使用量を把握していない  Neo Garbage Collector  ささださんの周りでははやってるらしい  笹田研ができたので，学生急募中  これが一番重要らしい   ##JRuby
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/06/24/rubykaigi2008-ruby-http-rubykaigi-tdiary-net-title-RubyKaigi2008/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/06/23/ruby-rails-RubyKaigi2008/">RubyKaigi2008に参加してきました．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/06/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  0th dayは仕事だったので参加できませんでしたが，あとは朝からがっつり参加してました．ログと感想は明日書きます．．．．orz(ブログ書くまでがRubyKaigi orz)
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/31/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;32 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/33/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

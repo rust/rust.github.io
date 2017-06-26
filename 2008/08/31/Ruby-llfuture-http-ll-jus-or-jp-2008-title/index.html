@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Lightweight Language Futureに行ってきました． &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Lightweight Language Futureに行ってきました．</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>雨が降ったり止んだりのいやな感じの天気にもかかわらず，800人も集まったのはすごいなLL．</p>
+
+<p>##開会</p>
+
+<ul>
+<li>6年目だそうです．今年初参加．</li>
+</ul>
+
+<p>====</p>
+
+<p>##基調講演 : Larry Wall</p>
+
+<ul>
+<li>Larry Wall は Ubuntu ぽい？
+
+<ul>
+<li>3x5の仮想画面</li>
+</ul></li>
+
+<li><p>Perl6 は Perl5 との後方互換性は捨てている</p>
+
+<ul>
+<li>エミュレータかトランスレータ使うしかないようだ．</li>
+<li>後方互換性を捨て去るって結構すごい決断だよな．</li>
+</ul></li>
+
+<li><p>英語力鍛えたいorz．</p></li>
+</ul>
+
+<p>##LLで未来を発明する
+###100年後の言語はどうなっているか</p>
+
+<ul>
+<li>Matz(Ruby)
+
+<ul>
+<li>プログラミング言語によるインタラクションはなくなるようなかんじで，今よりももっとマイナーになってると悲しい予想．</li>
+<li>LL は自然言語にとってからわれる？</li>
+</ul></li>
+<li>住井さん(MinCaml)
+
+<ul>
+<li>100年前ぐらいにクロージャがでてきた</li>
+<li>面白いアイデアを記録して形にして残しておけば役に立つかもしれない</li>
+</ul></li>
+<li>藤田さん(Ypsilon)
+
+<ul>
+<li>Matz が言うようになくなれば職業プログラマとしては困る</li>
+<li>100年後は面倒だと思うことがなくなるんじゃないか</li>
+<li>メモリの確保と解放</li>
+<li>マルチコア CPU などでの並列処理・マルチスレッディング</li>
+<li>GC とか並列化とか勝手にやってくれる CPU とか出てくるかも</li>
+</ul></li>
+<li>ひげぽんさん(Mosh)
+
+<ul>
+<li>2078年に言語の大統一理論が発見されて，すべては lisp へと帰る(ネタ)</li>
+</ul></li>
+<li>Larry Wall(Perl)
+
+<ul>
+<li>予測は不可能</li>
+</ul></li>
+</ul>
+
+<p>###あなたは何をしてきたか</p>
+
+<ul>
+<li>Larry Wall
+
+<ul>
+<li>Perl6</li>
+</ul></li>
+<li>Matz
+
+<ul>
+<li>Ruby</li>
+<li>言語の活性化に役立ってきた</li>
+</ul></li>
+<li>住井さん
+
+<ul>
+<li>プログラミング言語理論の研究をしている</li>
+</ul></li>
+<li>藤田さん
+
+<ul>
+<li>Ypsilon の実装</li>
+</ul></li>
+<li>ひげぽんさん
+
+<ul>
+<li>MonaOS 作ってます</li>
+<li>S式でコマンド打てます</li>
+</ul></li>
+</ul>
+
+<p>###あなたはこれから何をするのか</p>
+
+<ul>
+<li>ひげぽんさん
+
+<ul>
+<li>全ては Scheme に繋がるような OS を作ろうと思ってる</li>
+</ul></li>
+<li>藤田さん
+
+<ul>
+<li>新しいものを実装したい(？)</li>
+</ul></li>
+<li>住井さん
+
+<ul>
+<li>100年後1000年後の人が面白いと思う合うアイデアを記録しておきたい</li>
+</ul></li>
+<li>Matz
+
+<ul>
+<li>言語好きを増やし続ける</li>
+</ul></li>
+<li>Larry Wall
+
+<ul>
+<li>Perl6 のその後は・・・・</li>
+</ul></li>
+</ul>
+
+<p>##サイコー!?フレームワーク</p>
+
+<ul>
+<li>便利だけどハマる</li>
+<li>メンバー
+
+<ul>
+<li>ひがさん(Seasar)</li>
+<li>瀧内さん(Ruby on Rails)</li>
+<li>能都さん(MobaSif)</li>
+<li>Yuumi3(Gauche on Rails)</li>
+</ul></li>
+<li>Seasar について
+
+<ul>
+<li>LLを尊敬している．</li>
+<li>2.4 から Hot Deploy 対応</li>
+<li>気軽に使ってみてほしい</li>
+</ul></li>
+<li>Ruby on Rails
+
+<ul>
+<li>結構知名度が高い</li>
+<li>Convension over Configuration/DRY/RESTful/etc.</li>
+</ul></li>
+<li>MobaSiF
+
+<ul>
+<li>モバゲーのフレームワーク</li>
+<li>O/R Mapperはない</li>
+<li>gihyo.jp で毎週解説中</li>
+</ul></li>
+<li>Gauche on Rails
+
+<ul>
+<li>フレームワークとはメタプログラミングでは？</li>
+<li>Gaucheならアプリ毎に専用フレームワークを作れる</li>
+</ul></li>
+<li>ディスカッション
+
+<ul>
+<li>フレームワークの進化がユーザに負担を強いる場合もある(ひがさん)</li>
+<li>Seasar は機能追加はしない方向で，ユーザ・作者への負荷を下げるつもり</li>
+<li>Ruby on Rails は学習コストが高いが，それに見合うだけの利便性向上がある(瀧内さん)</li>
+<li>Ruby on Rails の暗黒面(Yuumi3)</li>
+<li>進歩が早すぎる・互換性よりもクールさ・日本語？・安定性などの問題</li>
+<li>未来は？</li>
+<li>全ての道は Lisp へ通ず(Yuumi3)</li>
+<li>Seasar2 は機能追加しないけど，サポートはし続ける(ひがさん)</li>
+<li>CoC のためにブラックボックス感が大きくなっている
+
+<ul>
+<li>Seasar2 ではもう少し CoC 度を下げたい</li>
+</ul></li>
+</ul></li>
+<li>結論？
+
+<ul>
+<li>いろいろ使ってみて自分に合うフレームワークを探しましょう</li>
+</ul></li>
+</ul>
+
+<p>##LL Golf</p>
+
+<ul>
+<li>君ならどう書く</li>
+<li>U-30で</li>
+<li>世界の著名なゴルフ場
+
+<ul>
+<li>Perl Golf</li>
+<li>世界初の</li>
+<li>Code Golf</li>
+<li>Perl/Ruby/Python/PHPなど</li>
+<li>Anarchy Golf</li>
+<li>日本初の50以上の言語が扱える</li>
+</ul></li>
+<li>PHP はみんな大好き？</li>
+<li>アマチュアゴルフテクニック
+
+<ul>
+<li>道具の使い方</li>
+<li>TinyURL には REST な URL があった</li>
+<li>CPAN にライブラリがあった！</li>
+<li>言語の使い方</li>
+<li>言語的にマニアックな使い方も使ってみよう</li>
+<li>番外編</li>
+<li>どうかく.org のコードを評価する</li>
+</ul></li>
+<li>バイナリアンへのきっかけ</li>
+<li>変態的コードが多すぎ(ノ∀`)タハー</li>
+</ul>
+
+<p>##古い言語，新しい言語</p>
+
+<ul>
+<li>LLVM と ECMA Script について</li>
+<li>古い言語
+
+<ul>
+<li>構文の制約</li>
+<li>計算機の性能にも依存していた</li>
+<li>コンピュータに優しい言語</li>
+<li>計算機の稼働コストが高かった時代の話</li>
+</ul></li>
+<li>設定ファイルと言語パーサー
+
+<ul>
+<li>設定ファイルの記述のために，アプリケーションに言語処理系が組み込まれる場合がある(emacs-lisp)</li>
+<li>Windows はデフォルトで ini/Registroy を読めるが，UNIX ではそうではない</li>
+<li>だから Perl/PHP/Ruby などテキスト処理系が生まれた</li>
+</ul></li>
+<li>シンプルなLL言語
+
+<ul>
+<li>LL = Low Level = アセンブリ言語</li>
+</ul></li>
+<li>新しい言語
+
+<ul>
+<li>ECMA Script</li>
+<li>Web 2.0 のマシン語 = JavaScript/ActionScript</li>
+</ul></li>
+<li>LLVM
+
+<ul>
+<li>RISC ライクな低水準命令セット</li>
+<li>プログラムのライフサイクル全体にわたる変換と最適化</li>
+</ul></li>
+<li>LLVM の使いどころ
+
+<ul>
+<li>設定ファイルやオプションが多い環境で有利</li>
+<li>バイナリ自体を書き換えて最適化させる</li>
+<li>Mac OS X の OpenGL スタックなどに採用</li>
+</ul></li>
+<li>C プログラムをどうやってブラウザで動かすか
+
+<ul>
+<li>C -&gt; LLVM 命令 -&gt; LLVM コード -&gt; AVM2 命令- &gt; ネイティブコード (かな？と言う話)</li>
+<li>過去の C 資産の再利用？</li>
+</ul></li>
+<li>LLVM を中間言語として使っているぽい？</li>
+</ul>
+
+<p>##Lightning Talk</p>
+
+<ul>
+<li>twitter で人工無能を作ろう！
+
+<ul>
+<li>形態素解析できれば人工無能は作れるよ！</li>
+</ul></li>
+<li>Client side database storage
+
+<ul>
+<li>HTML と JavaScript のみで使える SQL</li>
+</ul></li>
+<li>Nario について
+
+<ul>
+<li>Ruby の +ario</li>
+</ul></li>
+<li>Pit を使おうぜ
+
+<ul>
+<li>Pit : account management tool</li>
+</ul></li>
+<li>Babel21 に．．．
+
+<ul>
+<li>Unbabel で検索しよう</li>
+</ul></li>
+<li>RoR で実現する自走式サーバ
+
+<ul>
+<li>ラジコンに Web サーバが！</li>
+</ul></li>
+<li>Grass の紹介
+
+<ul>
+<li>Ruby の実装ないのね</li>
+</ul></li>
+<li>Scilabで数値計算
+
+<ul>
+<li>数値計算を簡単にできるやつ．MATLAB のフリー版</li>
+</ul></li>
+<li>NewtonScript の話
+
+<ul>
+<li>Newton 懐かしい</li>
+</ul></li>
+<li>超未来言語 Gallina
+
+<ul>
+<li>関数型言語</li>
+<li>型パラメータを持つ型がつくれる</li>
+</ul></li>
+<li>未来の並列プログラミング言語としての Haskell
+
+<ul>
+<li>高レベルの並列化が言語使用として実現されている？</li>
+</ul></li>
+</ul>
+
+<p>##まとめ
+LL<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>と言う内容にもかかわらず，幅広いジャンルというか内容の，濃いセッションばかりで，かなり有意義でした．11時間もあったので座り疲れましたが(；´Д｀)．</p>
+
+<p>こういうイベントって，まずは参加することに意義があると思って，色んなところに可能な限り出てるんですが，やっぱ出ると自分のモチベーションが上がるのがわかる．もっと色んなこと知りたいとか，本でも書いてみたいとか(ぉ．生涯プログラマでいたいので，こういうのはずっと参加し続けたいな．</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">って日本だけの言い方なのね．
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/08/31/Ruby-llfuture-http-ll-jus-or-jp-2008-title/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/08/26/http-sites-google-com-site-matcha445-title/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/08/26/http-sites-google-com-site-matcha445-title/">まっちゃ４４５に行ってきた．</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/09/03/rails-ruby-Hash-Array/">HashやArrayなどをデータベースに保存するには</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/09/03/rails-ruby-Hash-Array/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

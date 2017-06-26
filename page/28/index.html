@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/22/rails-JavaScript-Ajax-in/">Ajax.in</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Rails 2.1.1 では，form_authenticity_token が必要な関係上，Ajax 関係のリクエストをそのまま使うと失敗する．対処法としては，下記のように直接記入するとか．
+&lt;p id=&quot;place&quot;&gt;ここをクリックして編集&lt;/p&gt; &lt;script type=&quot;text/javascript&quot;&gt; new Ajax.InPlaceEditor('place', '&lt;%= url_for(:action =&gt; &quot;update&quot;, :id =&gt; @item.id, :_method =&gt; &quot;PUT&quot;) -%&gt;&amp;authenticity_token=&lt;%= form_authenticity_token -%&gt;', {savingText:&quot;保存中...&quot;, okText:&quot;保存&quot;, cancelText:&quot;取消&quot;, clickToEditText:&quot;クリックして編集&quot;}); &lt;/script&gt;  上記は map.resouces を使っているので，:action =&gt; update に _method=PUT を追加してます．いかがでしょうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/22/linux-ATOK-X3-iiim-properties-core/">iiim-properties が core を吐く対策 など</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  iiim-properties の適用・ＯＫで core を吐いて落ちる問題は，http://blog.browncat.org/2007/12/atok_x3gconf.html を参考に対策をとってみた．
+#!/bin/sh gconftool -s &quot;/desktop/input_methods/languages_save&quot; -t list --list-type=string &quot;[ja;atokx3;]&quot; -s &quot;/desktop/input_methods/languages_use&quot; -t list --list-type=string &quot;[ja;日本語;]&quot;  あと設定の覚え書き．
+XIM=iiimx XIM_PROGRAM=/usr/bin/iiimx XIM_ARGS=-iiimd GTK_IM_MODULE=iiim QT_IM_MODULE=xim export HTT_DISABLE_STATUS_WINDOW=t export HTT_GENERATES_KANAKEY=t export HTT_USES_LINUX_XKEYSYM=t export HTT_IGNORES_LOCK_MASK=t export JS_FEEDBACK_CONVERT=t export ATOK_DISABLE_PALETTE=t export ATOK_ENABLE_STATUS_WINDOW=t /opt/atokx3/sample/iiimf_status_hide  さらに，Ctrl+Space と Shift+Space を両方とも効かなくするために，http://genmei.itline.jp/~svx/diary/index.rb?date=20080607を参考にバイナリ書き換え．
+# vi -b /usr/bin/iiimd # vi -b /usr/lib/iiim/iiim-xbe ---- before ---- ^@&lt;Ctrl&gt;space,Zenkaku_Hankaku^@Conversion... ^@&lt;Shift&gt;space,Zenkaku_Hankaku^@Language... ---- after ----- ^@Zenkaku_Hankaku^@ Conversion... ^@Zenkaku_Hankaku^@ Language... ----------------  バイナリ書き換えなので，バイトサイズを変更しないように注意．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/19/lisp-http-shibuya-lisp-users-org-2008-10-18-sltt-1-tb-title-Shibuya-lisp-1/">Shibuya.lisp テクニカルトーク</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Lisp関係でこれだけ熱い人たちが集まってくるのは，結構すごいね．あとLL言語に比べて，何かしらのこだわりが強い人が多かった感がある．楽しいだけじゃない，熱意というか．まだ初心者な私にも何かしら凄さを感じさせてくれました．
+話の内容的にあんまり追えてないので，詳しいまとめなどは，他の参加者を参照してくださいorz．
+==== ##開会の言葉＠ひげぽんさん
+##50万行オーダーのプロジェクトを俺Lispで書く
+ mitamex さん ゼンリン電子地図帳Ziを開発 docomo 標準バンドルのゼンリン地図＋ナビの開発など
+ 目的はプロジェクトの成功
+ Lispを使いたいからじゃない 切り分けて制作  実際問題としてLispしか選択肢がなかった
+ 小さなコア  チーム開発では
+ Lisp に拒絶反応を起こす人がいる  L4u
+ Lisp for you! &lt;- 破壊的 大規模開発用 スケーラブル 超並列型 Rubyみたいな普通の言語っぽい見た目 Erlangみたいに超並列型 プロファイラー実装 最適化しやすい  超並列型
+ アクターモデル クライアント／サーバモデルと同じ感覚で作れる？  みんなに使ってもらうためにエディタも作った
+ S式
+ tuple を導入 まずはJSONで開発して，後でS式に置き換える それとは気がつかないうちにS式を使ってる感じに．  携帯電話のリモートデバッグ
+ Doja はソケット使えないので，ポーリングして GET でコマンドを受け取る  サーバサイド L4u
+ 携帯でもサーバでも同じ処理が動く  どこでもREPL
+ ホスト言語との連携を前提 L4u で不得意な部分はホスト言語に置き換えた  delegate/cc
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/19/lisp-http-shibuya-lisp-users-org-2008-10-18-sltt-1-tb-title-Shibuya-lisp-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/19/2008/">パソナテックカンファレンス2008に行ってきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  先週の土曜(10&frasl;11)のですが，ログなど記録．
+ 12&frasl;6(土)に「インフラエンジニア・討論会2008」と言うのがあるらしい． 2月に Web プログラマーの祭典 in 東京があるらしい．  ==== ##クラウド・コンピューティングの衝撃 サード・リアリティ時代に向けて
+ 前に Matz がいるな．  ###楽天技術研究所の紹介
+ Seam Curving  意味のある部分以外を圧縮・削除することにより，「意味のあるリサイズ」を行う処理法  レコメンドエンジンなども  ###サード・リアリティ :1st:実空間 :2nd:ネット空間 :3rd:融合された空間
+ 区別がなくなる感じ？  ###クラウド・コンピューティングの衝撃
+ コンピュータ世界の第三世代 = インターネットのある世界 クラウド  2008/8/9 で エリック・シュミット Google CEO が言及  クラウド関係の話題  Web 上になんでももっていく Live Mesh Y! OS(Yahoo! Open Strategy)  いったい何が起きている？  インターネット普及に伴う当然の結果  最初の発端 : SaaS  Google Docs や Salesforce の CRM，Zimbra，ZOHO  WebOS  ブラウザさえあればどこでも同じ環境  Ajaz による新しいアプリケーションの世界が開かれた SaaS  ソフトウェア料金を固定料金から従量課金へ VersionUP も手軽になる．  カンブリア爆発  目が登場することで，生物の多様性が爆発的に発展した． 目の獲得 = ウェブ上のインタラクションの獲得  インターネットの世界でもカンブリア爆発が起こっている． 次の発端 : インフラ・サービス  Amazon EC2/S3 の低価格なサービス提供 様々な企業が採用し利用している．  SaaS とインフラの中間層 : PaaS  Platform as Service 開発環境が Web にある Google App Engine salesforce Apex Facebook FBML/FQL エコシステムが構築されているのが重要   ASP -&gt; (SaaS) -&gt; PaaS \ ↑↓ -&gt; エコシステム DC -&gt; ISP -&gt; インフラ・サービス /   何がうれしいの？ASPと一緒なんじゃ？  今までにない利点がある Google/Amazon のインフラを生かせる．  向こう側 by 提供者  SaaS -&gt; サービスが Paas -&gt; プログラムが Online Storage -&gt; データが WebOS -&gt; OSが クラウド -&gt; サーバが  視点  利用者側 柔軟，大規模 ソーシャル性  他のユーザが存在していることが大きな利点となる 他のユーザの経験を生かしたサービスを利用できる  提供者側 エコシステム  さらなる向こう側  データセンター側の変化 Google を筆頭に Cisco/Oralce/HP/Microsoft なども巨大データセンターを建造中 なぜ増えているのか アメリカでは，4年以上前から仮想化技術を利用するのが当たり前になっている． 仮想化のおかげで，インフラとサービスマネジメントが完全に分離している．  障害時対策の手法などが確立されている．  グローバルには寒いところに巨大データセンターを作る サービスとインフラの分離が進んでいるので，現場に駆けつける必要がなくなった． コンテナ型データセンタ普及してきた． データセンタの規格化  電力の話  電力会社が発展することで，自前発電機を捨てたのと同じく， 企業の IT 投資も同様のシフトが起きる． 巨大データセンターによるクラウドによって，企業の IT も外部へシフトするだろう．   ###まとめ
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/19/2008/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/18/Ubuntu-linux-Ubuntu-8-04-1/">Ubuntu 8.04.1に乗り換えて１週間</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  特に不満はない感じ．Thinkpad X61なので，無線LANとかVGAとかいろいろ気になったのだが，あっさり認識してインストール完了した．これは便利．
+ただ今のところ一つだけ問題があって，サスペンド(スリープ時)にUSB給電が止まらないこと．サスペンドすると，一旦給電が止まるようなんだが，サスペンドになった瞬間にまた給電が始まる．BIOSでは切ってるはずで，Debian(sid)の時は正常に動いてたから，やっぱ設定かなぁ．時間を見つけて調べてみよう．
+##追記
+もう一つ問題があった．なんか知らんが，突如としてKVM経由のキーボード・マウスの接続が切れることがある．仮想画面やタスクの切り替え時に起こるので，描画処理の合間にUSBがリセットされてしまうような？なんだろう．これも調べないとな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/08/ubuntu-linux-ruby-Ubuntu-8-04-rubygems-1-3-0/">Ubuntu 8.04 で rubygems を 1.3.0 に上げるには．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+   root になる1  $ sudo su - # export GEM_HOME=/var/lib/gems/1.8   /usr/bin/gem を書き換える  require 'rubygems' require 'rubygems/gem_runner' Gem.manage_gems   update する  # gem update --system   環境変数を設定(.zshrc とかにも書く)  % export GEM_HOME=/var/lib/gems/1.8/   /usr/bin/gem を書き換える  require 'rubygems' require 'rubygems/gem_runner' #Gem.manage_gems  これで，Rails 2.1.1 と Rails 1.2.3 の共存環境が整いました．
+ 環境変数のため [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/08/rails-rails-footnotes/">rails-footnotes でデバッグ表示．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  [id:moro]さんのhttp://d.hatena.ne.jp/moro/20081006/1223280233#cに書かれていたrails-footnotesを Rails 2.1.1 に導入してみました．
+ただ github にかかれているやり方では，どうも branch がないようなので，download から取ってきて展開します．
+% cd /path/to/apps/vender/plugins % tar zxvf drnic-rails-footnotes-799c64b5ba9ff4ce46266ad4c5452af269c700b6.tar.gz % mv drnic-rails-footnotes-799c64b5ba9ff4ce46266ad4c5452af269c700b6 footnotes  これで画面下部にいろいろ情報が出るようになります．これは便利．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/07/rails-gateway-cgi-Rails-2-1-1/">さくらインターネットで gateway.cgi を使う＠Rails 2.1.1</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  fcgi と drb を使って 90 秒だけ生存するサーバみたいな感じですかね． 基本的に[http://d.hatena.ne.jp/cimadai/20080923/RubyonRails_on_sakura]を参考にしました．
+ Rails/Gem のインストールなど． どこぞにある方法で． fcgi のインストール  $ cd ~/local/srv $ wget http://www.fastcgi.com/dist/fcgi-2.4.0.tar.gz $ tar zxvf fcgi-2.4.0.tar.gz $ cd fcgi-2.4.0 $ ./configure --prefix=$HOME $ make $ make install $ gem install fcgi -- --with-fcgi-include=$HOME/local/include   gateway.cgi の準備  $ cp ~/local/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/dispatchers/gateway.cgi ~/www/apps/ $ cp ~/local/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/ncgi/listener ~/rails/apps/script $ cp ~/local/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/ncgi/tracker ~/rails/apps/script $ chmod 755 ~/www/apps/gateway.cgi   ファイルの書き換え 4-1. .htaccess  RewriteEngine On RewriteRule ^$ index.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/10/07/rails-gateway-cgi-Rails-2-1-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/06/MySQL-MySQL/">MySQL で最適化のために覚えておくこと．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+   SELECTは内部的にデータを全て読み込むため，SELECT id FROM &hellip; などとしても負荷低減にはならない．そのため SELECT が遅い1  データ転送の負荷軽減にはつながる． 解決法は，テーブル分割．データ本体とそのインデックスの2つのテーブルに分割するなどが必要．  INT(3) としても，結局 4Bytes 消費される．  内部では上位桁を0で埋めるだけなので，制約にしかならない．  JOIN は意外に早い．   対PostgreSQL比 [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/10/06/rails-Git-Rails-Git-deploy/">さくらインターネットにRailsをGitでdeployする際の注意点</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/10/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  public のパーミッションを755にする必要がある．普通に deploy すると，777 になるので，これを変更するように :after_update_code などで変更しておく．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/27/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;28 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/29/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

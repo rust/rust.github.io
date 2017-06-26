@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/03/23/rubyruby/">&#34;仕事でRubyを始める人たちへ−私がRubyを始めた理由（ワケ）−&#34; で話をしてきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/03/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  なんというか、最初の自己紹介のときは、RubyKaigiで発表するよりも緊張しました。と言うか、今までで一番緊張したかも。D論公聴会でもこんなにはならなかったな&hellip;
+と言う訳で、増井さん(@masuidrive)、櫻井さん(@tatsuoSakurai)と、司会の倉貫さんと共に、私自身初のトークセッションに登壇して、いろいろ話をしてきました。倉貫さん(@kuranuki)の司会力のお陰で非常に楽できました、ホントに。内容についてはtogetterや後ほど公開されるという噂の動画を見てください。最初こそ緊張したのですが、終わり頃になると、「あー、もう終わるのか」ともっと喋りたい気持ちにもなりました。機会があればこういうのに参加してみたいなとか、いまは思ってます。
+あと書籍も是非購入して写経してください。これが次回作へと繋がるはずなので。
+ -Ruby on Rails 3で作る-jpmobileによるモバイルサイト構築  著者: 小川伸一郎
+出版日: 2012-02-21
+出版社/メーカー: ワークスコーポレーション
+カテゴリ: Book
+    Ruby公式資格教科書 Ruby技術者認定試験 Silver/Gold対応 (EXPERT EXPASS)  著者: 増井 雄一郎, 小川 伸一郎, (株)日立ソリューションズ 藁谷 修一, 川尻 剛, 牧 俊男, Rubyアソシエーション, CTCテクノロジー(株) 監修
+出版日: 2012-02-22
+出版社/メーカー: 技術評論社
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/03/19/ruby/">トークセッション「仕事でRubyを始める人たちへ−私がRubyを始めた理由（ワケ）−」に出ることになりました</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/03/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  というわけで、Twitterでも告知などしましたが、ジュンク堂池袋店のトークセッション「仕事でRubyを始める人たちへ−私がRubyを始めた理由（ワケ）−」に登壇することになりました。
+ジュンク堂書店　池袋本店トークセッション情報
+ソニックガーデンの倉貫さんを司会としてお迎えして、3冊のRubyの初期の著者3人で、Rubyについてつらつらと語るという予定になっています。とりあえずTokyu.rbの人はみんな来てくれると思うのですが、それ以外の人も時間がある方は是非お越しください。ちなみに懇親会もあるそうなので、そちらも是非に。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2012/02/13/jpmobile/">jpmobileの本書きました</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/02/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  遅くなりましたが報告をば。
+ -Ruby on Rails 3で作る-jpmobileによるモバイルサイト構築  著者: 小川伸一郎
+出版日: 2012-02-21
+出版社/メーカー: ワークスコーポレーション
+カテゴリ: Book
+  RubyKaigi 2011でも告知していましたが、ようやく発刊する運びとなりました。
+この本は「Railsやってみるか」というプログラマから、「jpmobileってどう使うの？」という方までをカバーするように書いています。そのためRails自体のことやテストの書き方などは非常に薄い感じになっています。その代わりに、コードをしっかりと掲載して、そのとおりにやっていけば jpmobile の使い方や効力がわかるような構成になっています。
+また、まあはっきり言って私の力不足なのですが、ドキュメントが不足しています。それを補うためにとわけでもないのですが、この書籍ではなるべくしっかりと使い方、リファレンスなどを充実させました。また実際の案件やプロダクトでは多分やるであろうカスタマイズ例をいくつか紹介していて、いろんなかたに読んでもらっても満足できるよう心がけて構成してみました。
+まあそういったわけで、jpmobile使うなら手元においていて損はない仕上がりになってますので、一度手に取ってご覧ください。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2011/12/30/2011/">2011年の振り返り</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/12/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  そろそろ振り返りの時期かな〜と言うことで。
+今年やったこと TokyuRubyKaigi TokyuRubyKaigiを2回ほど開催してました。詳しくはここなりを参照してください。毎回カオスな感じになるのですが、ある意味、意図してるところはあります。司会的に。ただ敷居が低いということで勉強会初参加の方が来られると、カオスさにいろいろ誤解されるかもしれませんが、まあそれはそれで開眼できていいのではとも思ってます。来年も夏ごろにまたやるので、懲りずにご参加ください。普通のTokyu.rbも目黒でやってるので、こちらも是非に。特に白金台という近場にいる人は来るべきだと、ここで宣言しておきます。
+RubyKaigi 2011でSpeaker 今年もjpmobileネタで発表してきました。スマートフォン全盛時代ですが、まだ残ってるガラケーに対応するためにもいろいろやっていきます。欲しい機能などあったら、github/issuesにでも登録しておいてください。
+本を書いた・書いている  Gitによるバージョン管理  著者: 岩松 信洋, 上川 純一, まえだこうへい, 小川 伸一郎
+出版日: 2011-10-25
+出版社/メーカー: オーム社
+カテゴリ: Book
+  結構長い間かけて書いたGitの書籍が発売になりました。主にチーム開発とリモートリポジトリ、あとはツール関係のところとか書いてます。長ったらしい文章を書く技術が身についた気がしてます。気が。
+あとはRubyの教科書的なものとかjpmobileの本とかも執筆中です。来年も、まあなんとかそっち方面でも頑張っていきたいなーとか思ってます。
+今年買った物など Kindle 4 やっぱいま話題の電子書籍の流れに乗らないと！というのと、ちゃんと英語読まないと忘れてしまうんで、その防止用ということで買ってみました。液晶に比べて目が疲れにくいのがいいですね。頑張って話せるようになりたいです。
+MacBook Air 13.3inc  Apple MacBook Air 1.7GHz Core i5/13.3/4G/128G/802.11n/BT/Thunderbolt MC965J/A  著者: 出版日: 出版社/メーカー: アップル
+カテゴリ: Personal Computer
+  いまのユニボディ白MacBookを買って2年ちょい経ったんで、えいやっと買ってしまいました。古いのは妻のこたつ用PCになってます。いや軽いですね、そして冷たい。あとSSDの威力か、ほんとにSWAPしても重くならないのがいい感じです。
+銀河英雄伝説 Blu-ray BOX TSUTAYAで次巻が借りられていて、えいやっと買ってしまいました。まあ1年に2回ぐらい観るので、そのうち元は取れるでしょう。
+三国志 Three kingdoms DVD-BOX これも次巻が（ｒｙ。
+今年の総括と来年への豊富など 今年は書籍の執筆という新しいことができた年でした。またTokyuRubyKaigiを公民館じゃなくIT企業の会議室を借りて開催できました。あとスポンサーがついたのも大きいですね。毎回同じようなことを同じようにするという、ある意味簡単そうでできないことを4回も続けられたのは、スタッフや参加者の協力があったからこそだと思います。いろいろとありがとうございました。
+来年もまた新しいことをやってみたいですね。結構な歳だったりするんですが、それにも負けずに何かやりたいですね。まだ具体的には決まっていませんが。ただTokyu.rbについてはいつものようにいつもどおりにやっていきたいと思ってます。来年もよろしくお願いします。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2011/11/15/physics/">物理勉強会に参加することにした</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  前に「エンジニアの数学とか物理勉強会開催したい」と言いつつ、いろいろ会って全然できてなかったのですが、どうやら近場で開催するという方が現れたので、参加することにしました。
+ 「ファインマン物理学 I 力学」 勉強会 (1/全25回) ＠溝の口 - EventForce  まあ、まずは書籍を買うところからかな･･･
+ ファインマン物理学〈1〉力学  著者: ファインマン
+出版日: 1986-01-08
+出版社/メーカー: 岩波書店
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2011/10/31/tokyurubykaig04/">TokyuRubyKaig04を開催してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://regional.rubykaigi.org/tokyu04 と言う訳で、また今年も司会と副実行委員長として開催してきました。もう既に4回目で、東京での開催としては8回目。すなわち東京の半分はTokyu.rbのものであることが確定したわけです。継続は力なりですね。
+また今回は@_1041さんにスタッフTシャツのデザインをしていただきました。スタッフのテンションも尚更上昇してしまい、わりとグダグダになってしまった可能性があります。毎回、いろいろできることが増えていくのも、一重に参加者、スタッフ、協力者にお陰です。ありがとうございます。
+で、このTokyuRubyKaigiですが、いつも通りの感じでいつも通りにやっているように見えますが、まあ実際はそのとおりです。当然、2回ぐらいですが、その前に打ち合わせをやったり、前日までにやりとりもあります。ただ個人的には、「酔っ払いの集団に対して事前に準備してもどうしようもないぜ&hellip;」と思ってることもあり、当日のアドリブで何とかしてしまおうと、毎回司会をしているわけです。今回はハイペースでビールを飲んでしまっていろいろ大変なことになってた方も数名いらっしゃいましたが、なんとか終わってほっとしています。「ずるい」やら「なんなの？」とかいろいろ言われていますが、我々にだっていろいろ産みの苦しみがあったりするかもしれないのですよ！当日に！、と強く主張しておきます。
+そして次回の開催もほぼ決まっているような感じなので、年老いてもなお戦い続けたいと思います、何かと。
+ちなみに闇TokyuRubyKaigiなるものがその後に開催されましたが、闇よりもなお暗きものとか、混沌の海にたゆたいしとか、闇とはそも光あるところの影であり、我々は光でもなく闇でもない、混沌＜カオス＞に生きる存在がため、とか、いやまあ何が言いたいかというと、
+／） ／／／） ／,.=ﾞ''"／ ／　i f　,.r='"-‐'つ＿＿＿_　闇とか光とかこまけぇこたぁいいんだよ！！ /　/　_,.-‐'~／⌒　⌒＼ ／　,i　,二ﾆ⊃（ ＞）.　（＜）＼ /　ﾉ　ilﾞフ::::::⌒（__人__）⌒::::: ＼ ,ｲ｢ﾄ､　,!,!|　|r┬-|　| /　iﾄヾヽ_/ｨ"＼ `ー'´ ／ 
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2011/10/09/git/">Gitの本を書きました</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Gitによるバージョン管理  著者: 岩松 信洋, 上川 純一, まえだこうへい, 小川 伸一郎
+出版日: 2011-10-25
+出版社/メーカー: オーム社
+カテゴリ: Book
+  と言うわけで書きました。「知りたいことがあるから本を書く」と言う話を聞いたこともあったのですが、実際に書き始めてみてGitの理解がかなり深まったかなと思ってます。
+きっかけは万葉さんで開催したGit勉強会だったりするのですが、いろいろ縁があって書籍まで書かせていただけるようになりました。これもひとえに今は亡きPokenのお陰かなと思うと、感慨深いものがあります。
+あと文章を書くのって意外に大変だなと痛感しました。この気持ちを持って、次のjpmobileとかいろいろな書籍の執筆に役立てようと思ってます。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2011/07/29/rubykaigitokyurubykaigi/">RubyKaigiとかTokyuRubyKaigiとか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/07/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  とうとう終わってしまったRubyKaigiですが、終わってよかったとは思ってません。こういうRubyKaigiが有志によって継続されることを願ってはいます。jpmobileだったらいくらでもコンテンツ提供できるので、もしものときはお声掛け下さい。
+さて以前、RubyKaigiの問題点を書いてみたのだけど、その問題点は当然解消されていません。まあこれは仕方ないことですが、懇親会の帰りとかに@jugyoさんとつらつらと話してて再認識したことは、「RubyKaigiはいわゆるアルファユーザのためにRubyやその文化を伝える会である」ことかなと。
+RubyとRubyKaigiと啓蒙 で、RubyKaigiが始まった当初から比べると、Rubyで仕事している人が増えてきて、Rubyは浸透してきたと思うわけです。なので、@kakutaniさんたちが「Rubyを啓蒙する」ステージは過ぎてしまっているのではないかと思うわけです。
+RubyKaigiに来て@kakutaniさんのセッションを聞き、感極まるような訓練されたRubyistはたくさん出来上がっていることでしょう。あの盛況ぶりやスタンディングオベーションとか見ても、実感できます。でもそれを他の人に伝えることができてるかというと、そうではない。そのあたりが、いまひとつRubyが広がり切らない良くない点なのかなと、再認識しました。
+で、お前は何をするんだ という問に対しては、まずはRubyの世界で仕事をしていき、雇用を増やすことで貢献していきたいと思ってます。今の会社にずっといるかどうかはわかりませんが、Rubyを仕事としてやっていこうとは思ってます。
+あとはTokyu.rbでしょうか。こう言ってはあれですが、作ったのは勢いです。感極まって感化されて、「いっちょやってみっか！」的な感じで@ginkounoさんと共に始めたのが始まりです。それほど重くない感じで進めていきたかったのが功を奏したのか、はてはいろんな勉強会でTokyu.rbの宣伝をしたおかげか、割と多くの方に来ていただいて、定期的にTokyuRubyKaigiを開催できるまでになりました。
+Tokyu.rbとTokyuRubyKaigi [18M03] All About RubyKaigi Ecosystem from rubykaigi on Vimeo.
+このRubyKaigiのセッションで、「Tokyu.rbはずるい」的な話をされていますが、たぶんユルさというかある意味適当な感じが良かったんじゃないかなと思ってます。実際、TokyuRubyKaigiを開催するにあたって、1回目の実行委員達の中では「RegionalRubyKaigiにすると、格式とか仕来りとかいろいろ面倒だから、RubyKaigiってつけるのやめとこう。飲みながらのLT大会でも良ければRegionalRubyKaigiにしようか」ということを決めていました。
+それと言うのも、@kakutaniさんが1回目をすごくしっかりやっていたからなのですが、意外にも@takahashimさんに聞いてみると、「いいんじゃないですか」とあっさり言われてRegionalRubyKaigiとして開催することに。
+お陰さまで2011/10/29(土)に4回目を開催できることになっていますが、最初は別に「LT楽しいからそれだけやればいいんじゃね」とか思ってたのではなく、「普通にLT大会しよう！でもTokyu.rbらしく飲みながらとかいいよね！」という感じだったし、通常のTokyu.rbも「懇親会が楽しいから、それだけやればいいんじゃね」と思っていたわけではなく、紆余曲折があっていまの形に落ち着いたわけです。
+実際産みの苦しみというのはあったと思います。それを僕自身は気楽に考えて、臨機応変に対応してきたらこうなってたってだけなので、周りから見ると「ずるいなー」と思われるのかもしれません。
+もっと地域コミュニティを で、まあ、つらつらと書いてきて、何が言いたいのかというと、もっとみんな地域Rubyコミュニティを作ろうということです。「技術系はAsakusa.rbに、飲み会はTokyu.rbに行けばいいんじゃね」じゃなく、もっと小さなものでもいいし、一人で宣言してもいいと思うわけです。乱立してもいいし、何なら姉妹コミュニティになって共同開催とかすればいいわけです。
+結論としては 今度はみんなでRubyを広めて啓蒙していこうじゃないかと言いたい。そこから次のステップが始まるんじゃないかなと、こっそり考えてます。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2011/07/19/rubykaigi-2011/">RubyKaigi 2011で発表してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/07/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  How to use jpmobile  View more presentations from Shin-ichiro OGAWA   というわけで、jpmobileについて発表してきました。jpmobile 1.0から設定方法などいろいろ変わっているので、その説明をしてきました。あといろいろ告知とかあったんですが、詳しくは資料を見てもらうということに。
+[17M02] The best practice of building mobile website with jpmobile from rubykaigi on Vimeo.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2011/06/01/tokyurubykaigi03/">TokyuRubyKaigi03を開催してきました</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/06/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まあなんとなく司会して終わった感じですが、参加者のみなさん、発表者のみなさん、ありがとうございました。また会場提供していただきましたECナビ様、おいしいビールをふるまっていただきましたサントリー様、ミーティング会場を提供していただきました万葉様にもお礼を申し上げたいと思います。ありがとうございました。
+と言う訳で、3回目となるTokyuRubyKaigiですが、今年は発表もしてみました。と言ってもまっとうな内容ではないのですが。
+JpmobileについてView more presentations from Shin-ichiro OGAWA. あとビール。これはやばい。うっかり飲み過ぎていろいろ言いたいことを忘れる始末。ただあんなにおいしいビールはめったに飲めないので、参加者の方は満足していただけたのではないでしょうか。
+さらに食べ物。料理王の@2celebさんの気合の入れようとかは尋常じゃなかった気がする。他にも多くの方がおいしい食べ物を持ってきていただいて、「こんな素晴らしい宴会はもう他にはないな」と言う万感の思いがありました。
+ただお酒飲めない人には辛い地域Ruby会議だったのかもしれないのですが、いかんせんTokyu.rbとはそういうものなのです。これまでのレポートでも指摘されているように、酔っ払ってへべれけになってLTするという集いなので、こればかりは致し方ありませんよね。
+で、早くも次回の開催が予定されています。10/29(土)と言うことで、定例どおり肉の日です。まあいつもどおりな感じにはなると思いますが、次回もよろしくお願いします。
+そう、そして最後に言おうと思って忘れてしまったドラ娘さんこと@publichtmlさんへのお礼を、この場を借りて述べさせていただきます。いやー、あんな会議でよくぞドラ娘していただきました。本当にありがとうございます。
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/3/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;4 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/5/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

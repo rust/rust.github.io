@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails勉強会＠東京第31回に参加してきた． &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails勉強会＠東京第31回に参加してきた．</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>先月は RubyKaigi 会場での開催となったので，2ヶ月ぶりの開催です．主催の皆さまありがとうございます．</p>
+
+<p>そしてまとめログを．</p>
+
+<p>##時間割</p>
+
+<ul>
+<li>13:30～14:45 前半セッション
+
+<ul>
+<li>named_scope 詳しく</li>
+<li>Redmineの半歩先</li>
+<li>Scaffoldの半歩先</li>
+</ul></li>
+<li>15:00～16:15 後半セッション
+
+<ul>
+<li>Rails2.2 i18n</li>
+<li>iKnowを詳しく</li>
+</ul></li>
+<li>16:30～17:00 LT</li>
+<li>17:00～18:00 ふりかえり</li>
+</ul>
+
+<p>====</p>
+
+<p>##前半セッション：named_scope についてくわしく</p>
+
+<ul>
+<li>named_scope
+
+<ul>
+<li>Rails 2.1 からの新機能．</li>
+<li>検索集合に対して名前をつける．</li>
+<li>Method Chain で賢く Query が吐かれる．</li>
+</ul></li>
+<li>なにができるのか
+
+<ul>
+<li>ORM によって，SQL/RDBMS は単なるデータストレージぽくなった．</li>
+<li>そこに，named_scope が ORM に集合演算の概念を再度持ち込んでくれた．</li>
+</ul></li>
+<li>実際には
+
+<ul>
+<li>:conditions を指定した絞り込み</li>
+<li>引数を渡すこともできる</li>
+<li>method chain で適切な SQL を生成してくれる</li>
+<li>集合に対する演算も適宜できる</li>
+<li>User.active.ban で active users を全て deleted = true にできる</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-ruby">named_scope :actione,
+  :conditions =&gt; [&quot;#{table_name}.deleted = ?&quot;, false] do
+    def ban
+      self.update_all(&quot;deleted = true&quot;)
+    end
+  end
+</code></pre>
+
+<ul>
+<li>ActiveRecord::Base に追加される method
+
+<ul>
+<li>self.scopes()      &lt;- proxy ぽいものを返す</li>
+<li>self named_scope() &lt;- これを使う</li>
+<li>Scope を作る Proc を作ってクラス変数に代入．</li>
+<li>named_scope の name を define_method する</li>
+</ul></li>
+<li>Scopne.new(parent, options, &amp;block)
+
+<ul>
+<li>parent : 親スコープ</li>
+<li>左側にあるスコープ</li>
+<li>method_missing</li>
+<li>自スコープに method がなければ，「親スコープ」の method_missing を呼び出す
+
+<ul>
+<li>これで method_chain ができてる？</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="faq-とか質疑応答とか">FAQ とか質疑応答とか</h3>
+
+<ul>
+<li>limit / order / join は？
+
+<ul>
+<li>最初に(一番左)にあるものだけ．あとは上書きされずに無視される．</li>
+<li>join はバグっぽいどうさをするらしい．</li>
+</ul></li>
+<li>結合は？
+
+<ul>
+<li>論理積</li>
+</ul></li>
+<li>実行順序は？
+
+<ul>
+<li>最後から積演算されていく．</li>
+</ul></li>
+<li>UPDATE 文が実行されるときには，ActiveRecord::Base.connection.update が呼ばれる
+
+<ul>
+<li>ここを見張っていればチューニングできるかも？</li>
+</ul></li>
+<li>Ruby 1.9 だと Proc に default 引数を書ける
+
+<ul>
+<li>lambda が -&gt; 演算子になる．詳しくはリファレンスマニュアルを見よう．</li>
+</ul></li>
+<li>max / sum などは？
+
+<ul>
+<li>順序にさえ気をつければ大丈夫なはず．</li>
+</ul></li>
+<li>default で User.active.find(&hellip;) なんてことは？
+
+<ul>
+<li>うまい方法は見つかってない．</li>
+</ul></li>
+</ul>
+
+<h2 id="後半セッション-iknow">後半セッション：iKnow</h2>
+
+<h3 id="rubykaigi-2008-の振り返る-α">RubyKaigi 2008 の振り返る＋α</h3>
+
+<ul>
+<li>rails 2.0, MRI 1.8.6, MySQL 5.0, Mongrel, Nginx, Ubuntu
+
+<ul>
+<li>同時ファイルアクセス数の制限があるから，それも注意</li>
+<li>比較的 Version Up している．</li>
+<li>600_000 / day PV</li>
+<li>82 controllers</li>
+<li>144 models</li>
+<li>1078 views</li>
+<li>474 migrations</li>
+</ul></li>
+<li>最初は VPS で実装
+
+<ul>
+<li>Master DB のみ実サーバに</li>
+</ul></li>
+<li>今は
+
+<ul>
+<li>LVS で load balancing</li>
+<li>NFS で static contents を配信</li>
+<li>集計用 slave DB も用意</li>
+<li>SQL によっては tmp file 作るので，速いディスクが必要．</li>
+<li>Core 数を増やした．</li>
+<li>処理速度向上のため．</li>
+<li>最後は DB sharding</li>
+<li>DataFabric で自動 sharding</li>
+</ul></li>
+<li>count/size/length
+
+<ul>
+<li>通常は size</li>
+<li>each 前だと length</li>
+</ul></li>
+<li>外部サービスを使う場合は，timeout を意識する
+
+<ul>
+<li>ユーザ毎のディレクトリなど作る場合は，FileSystem によっては作れない場合がある．</li>
+<li>ext3 は 32000 弱で制限，xfs は大丈夫</li>
+</ul></li>
+</ul>
+
+<p>###今回のお話</p>
+
+<ul>
+<li>複数のRails Application を同じデータベース上に展開したい．
+
+<ul>
+<li>migration と test をどうしよう</li>
+</ul></li>
+<li>複数データベースを使った方法</li>
+<li>OO 的に if を多様するには論外
+
+<ul>
+<li>View 内の if を削減したい</li>
+<li>template engine : Amrita</li>
+<li>API 用のデータ出力の際に，そのフォーマットをどこで指定するべきか．</li>
+<li>model の中に押し込めて，to_xml/to_json か，View を作るかどうか</li>
+</ul></li>
+<li>Logging
+
+<ul>
+<li>ProcessID をログに吐かないと調べにくいことがある</li>
+</ul></li>
+<li>Supporting Mobile</li>
+<li>SQL
+
+<ul>
+<li>Sub-query で index 付き SELECT をした方が速い場合がある．</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-sql">select id, name, created_at from users order by id desc limit 10;
+
+select id, name, (select created_at from users where users.id = id) from users order by id desc limit 10;
+</code></pre>
+
+<ul>
+<li>Dependencies.clear
+
+<ul>
+<li>development はファイルがアップデートされると依存関係を clear して再読込するが，production はしない．</li>
+<li>Class の autoload の規約と実装方法を調べる必要あり？</li>
+</ul></li>
+<li>Fixture hell?
+
+<ul>
+<li>Fixture が巨大になりすぎる．</li>
+<li>fixtures :all</li>
+<li>全ての fixture を load する</li>
+</ul></li>
+<li>PageView などは MERGE Engine を使ってる</li>
+<li>時間を指定した fixture
+
+<ul>
+<li>fixture を laod するときはテストそのものの時間がかかると，テストに失敗する場合がある．</li>
+<li>Timw.now に基底時間を作っておく</li>
+</ul></li>
+<li>Fair Proxy Balancer
+
+<ul>
+<li>どれが1つでも時間がかかっていれば，そこにアクセスするユーザは待たされてしまう．これを buzy かどうかを判定して，4 を b に割り振るなどしたい．</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-bash">a (1 s)
+b (0.5 s)
+c (0.5 s)
+
+1 a
+2 b
+3 c
+4 waits for a
+5 b
+6 c
+7 waits for a
+8 b
+9 c
+10 waits for a
+</code></pre>
+
+<ul>
+<li>Plugins
+
+<ul>
+<li>日本語のローカライズ</li>
+<li>GetText が多い</li>
+<li>Globalize</li>
+<li>RedCloth</li>
+<li>White List</li>
+<li>許可できる html などを指定できる．</li>
+<li>constatnt_cache</li>
+<li>asset_packager</li>
+</ul></li>
+</ul>
+
+<p>###質疑応答</p>
+
+<ul>
+<li>ビジネスモデルは？
+
+<ul>
+<li>広告モデル</li>
+</ul></li>
+<li>コンテンツ作成費は？
+
+<ul>
+<li>今後は CGM に．</li>
+</ul></li>
+<li>xaky++</li>
+</ul>
+
+<p>##LT</p>
+
+<ul>
+<li>RSpec で出力の色を変えるには</li>
+<li>Saikuro &amp; Kwala
+
+<ul>
+<li>Cyclomatic Complexity</li>
+<li>Complexity を見てボトルネックを調べられるかも？</li>
+<li>Kwala</li>
+<li>コピペコードが見れる！</li>
+</ul></li>
+<li>jpmobile
+
+<ul>
+<li>module 化した</li>
+<li>あとから include した方が便利</li>
+</ul></li>
+<li>Tokyu.rb 活動報告</li>
+<li>Asakusa.rb 紹介
+
+<ul>
+<li>ko1にrailsを教える活動</li>
+<li>rails + ruby1.9でバグ報告しよう</li>
+</ul></li>
+</ul>
+
+<p>##ふりかえりなど</p>
+
+<ul>
+<li>Rails 2.2 i18n
+
+<ul>
+<li>日本語化の機構は結構動く</li>
+<li>english も単なる１言語になる</li>
+</ul></li>
+</ul>
+
+<p>##KPTはWikiを</p>
+
+<ul>
+<li>RailsMeetingTokyo タグではてブする</li>
+</ul>
+
+<p>##まとめなど
+参加人数が過去最大の60人弱．まだ3回目ですが，いままでよりも確かに多かったなぁと思います．セッションもiKnowのZevさんの話とか聞けて結構有意義でした．</p>
+
+<p>あと毎度思うのが，懇親会が内輪の飲み会になってそうな感じがするところ．何となく行きづらい雰囲気がありました．その点 GREE のは参加している人も懇親会前提っぽいので，そう言う雰囲気作りも重要かなと思いました．Tokyu.rbではそう言うことがないようにしないとなと思いました．</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/07/28/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0031-title-Rails-31/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/07/28/ruby-ruby-trunk-build/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/07/28/ruby-ruby-trunk-build/">ruby-trunkからのbuild</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/07/29/rails-OpenID/">OpenIDを使ったユーザ認証の実験</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/07/29/rails-OpenID/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

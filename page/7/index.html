@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/09/04/rubykaigi/">RubyKaigiついて思うこと</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/09/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  はじめに注意 個人的にはいままで参加したRubyKaigiには非常に満足しています。またスタッフやスポンサーの方々には言葉では言い尽くせない感謝の気持ちで一杯です。その上で、今後のRubyKaigiやRuby界を考えたときに、これだけは言っておきたいことをつらつらと書いてみます。スルー力を持たない人は読まない方がいいかもしれません。
+RubyKaigiの問題点 一番の問題は目的を見いだせないこと。いや「開催すること」が目的になってしまっていることか。なんせRubyKaigiは大人が開催する有料「学園祭」になっているので、「やって楽しいこと、来て楽しいこと」を考えて構成されていると感じるとれる。「おもてなしの心」なんて言っている時点で、そっちがメインになってしまうのだろう。でもそれって参加者も含めて自己満足でしかなくて、それ以外の人たちになんら影響を与えられていない可能性がある。
+RubyKaigi とはそもそもなんのために？ そこで今一度考え直さないといけないと思うのが、開催する目的。開催趣意書には目的が書いてある。しかし、それ以前に、一体なんのために開催するのか。Rubyist の交流にためと言うのもあるかもしれないが、@tdtdsさんも言うように、もうそのステージは卒業しているはずだし、それならそもそも東京でやる意味が大きいとは思えない。交流のためなら地方に大物Rubyis を連れて行った方がいい。Rubyistにとって心地いい場所の提供ばかりしていても、もう仕方ない時を迎えたんだと思う。むしろ日々Pで始まりPで終わる言語やお茶みたいな言語を扱って疲れていたりするRubyistの癒しの場になっている。つまり逃げ場になって現実逃避しているだけじゃないだろうか。
+スタッフのやり遂げた感がやばいと感じること これはスタッフにも言えて、「来年もスタッフとして頑張ろう」なんて思ってるとしたら、それも逃避に近い。みんながみんなそうだとは言わないが、高橋会長やかくたにさん、島田さんや設楽さんなんかは、スタッフとして走り回ってる場合じゃないんだよ。あなた達にはもっとやるべきことがあるはずだ。Rubyの将来やRubyistのことを考えるなら、学園祭で盛り上がって参加者におもてなしなんてしててはいけないはずだ。その辺にいるRubyist達が勝手に盛り上がって開催しているならそれでもいいのだが、日本Rubyの会として開催していることがもうダメなんだと感じる。
+組織としての日本Rubyの会 日本Rubyの会はその公式サイトにあるように支援やイベント開催をその目的にしていると言うことだが、こちらもそろそろ次の段階へ行くべきなんじゃないだろうか。振興という意味ではエンジニアの中では浸透してきたのだから、それを仕事へつなげやすい環境を作るべきだろうと思う。そういう意味では、いまの組織体制だときついのだろう。だいたい全員が別に仕事を持っていてボランティアベースと言うところからして限界があるのは当然のこと。ならば組織として法人化するなりしてはどうかと思う。たぶん内部的にはこの話は出てるんだろうが、じゃあ誰がそこに所属する？となったときに答えが出ないのだろう。そりゃみんな自分の会社や生活があるわけで、そこはどうしようもない。かといって誰だかわからない人に任せるわけにもいかないので、辛いところ何だろうなと思う。でもやはり何かしら痛みを伴ってでもやってしまうべきだと思う。
+エンジニアを幸せにする会議へ で、そうやって日本Rubyの会を法人化したとして、どういうRuby会議をやるべきか。それはRubyistを幸せにする会議。「いやー、楽しかったねー」と言うだけでは、仕事上がりの宴会と変わらない。そりゃその場の楽しさはあった方がいいだろけど、じゃあそれで仕事でもRubyを使えるようになり、アジャイルに仕事が進められるとは限らない。何というか、「瞬発力のあるその場の楽しさを胸に抱きながら、仕事の辛さに耐える」ような人が少なくなればいいかなと思う。
+そのために自分ができること では自分には何ができるのか。まずはRubyを使って仕事をし、さらにRailsやjpmobileなどで貢献していくこと。そうすることでRubyを使える場所や仕事が増えるようになればなと思う。あとは可能であれば日本Rubyの会の運営に関わること。外から意見を言うだけでもいいし、中の人になるのでもいいけど、とにかく何かにつけて意見を言っておきたい。と言うかみんなも「RubyKaigi楽しかったです！」じゃなくて、言いたいことはちゃんと言うべきだと思う。あとは地域Ruby会議へもっと参加していこうと思う。いろんな地域のいろんな意見を聞くことは、今後の自分のためにもなるし、Ruby界隈のためにも繋がる。
+まとめにならないまとめ つらつら書いたので全然まとまってないですが、いまの状況に対して漠然とした危機感というのを感じています。こういう話をいろんな人としたいですね。そういう場所として地域Ruby会議の懇親会とかいいんじゃないだろうかとか思います。とりあえず、まだまだ頑張ろうと思います。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/08/31/rubykaigi-2010-1st-day/">RubyKaigi 2010 1st day</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  RubyKaigi 2010 1日目 Opening &lt;ul&gt; &lt;li&gt;Theme&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Conflicts and Resolutions&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;Good Timing&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Ruby 1.9.2 Released!&lt;/li&gt; &lt;li&gt;Rails 3.0 coming soon!&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;Start!&lt;/li&gt; &lt;/ul&gt;  諸注意 &lt;ul&gt; &lt;li&gt;名札忘れないように&lt;/li&gt; &lt;li&gt;ネットワーク&lt;/li&gt; &lt;ul&gt; &lt;li&gt;モバイルルータもダメそうだ&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;フィードバックもしよう&lt;/li&gt; &lt;li&gt;大ホールは飲食禁止&lt;/li&gt; &lt;li&gt;各種諸注意&lt;/li&gt; &lt;li&gt;コミュニティ・ナイト&lt;/li&gt; &lt;ul&gt; &lt;li&gt;自分の分を持っていろいろ集まれー&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt;  Conflicts and Resolutions &lt;ul&gt; &lt;li&gt;漫談形式らしい&lt;/li&gt; &lt;ul&gt; &lt;li&gt;@takahashim&lt;/li&gt; &lt;li&gt;@a_matsuda&lt;/li&gt; &lt;li&gt;@wycats&lt;/li&gt; &lt;li&gt;@tenderlove&lt;/li&gt; &lt;ul&gt; &lt;li&gt;translator&lt;/li&gt; &lt;ul&gt; &lt;li&gt;@matz&lt;/li&gt; &lt;li&gt;@lchin&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;/ul&gt;  質問など &lt;ul&gt; &lt;li&gt;Different Rails 2 and Rails 3&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Rails 3 は 2 の上位互換&lt;/li&gt; &lt;li&gt;いろんなところを書き換えているが、APIはそれほど変わっていない&lt;/li&gt; &lt;li&gt;コアな部分を切り離したので、各パーツを独立で使うことができる&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;merb と rails の統合で、当初描いていたゴールにたどり着いた？&lt;/li&gt; &lt;ul&gt; &lt;li&gt;たどり着いている！見返してみてもその通りだと感じる。&lt;/li&gt; &lt;li&gt;AR の代替物を簡単に使えるようになった&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;Ruby 1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-1st-day/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/08/31/rubykaigi-2010-2nd-day/">RubyKaigi 2010 2nd day</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  softbank 回線は絶望的 wifi も人数が多いせいか絶望的 ここで emobile も絶望的っぽいので、回線はあきらめることにした  RubyKaigi 2010 2日目 &lt;ul&gt; &lt;li&gt;昨日疲れたからか、かなりよく寝れたっぽいのが功を奏している気がした。&lt;/li&gt; &lt;/ul&gt;  jpmobile 会議 &lt;ul&gt; &lt;li&gt;参加者の皆さんにより、いい情報交換ができました。&lt;/li&gt; &lt;li&gt;後ほど別にまとめよう&lt;/li&gt; &lt;/ul&gt;  基調講演: Matz &lt;ul&gt; &lt;li&gt;Ruby 2.0&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Ruby 1.9.2&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Ruby 1.9.2 Award&lt;/li&gt; &lt;ul&gt; &lt;li&gt;遠藤さん( @mametter )&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;キーノートの苦悩&lt;/li&gt; &lt;li&gt;Ruby 2.0 (笑)&lt;/li&gt; &lt;li&gt;完璧に近い言語が、ある種限界&lt;/li&gt; &lt;li&gt;Ruby は十分に良い言語&lt;/li&gt; &lt;li&gt;つくばくんだり&lt;/li&gt; &lt;li&gt;Matz's Goal: To Make Ruby nearly perfect&lt;/li&gt; &lt;li&gt;&quot;珍しくRubyのプログラムが書かれている&quot;&lt;/li&gt; &lt;li&gt;積み残しがある&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Local variable propagation&lt;/li&gt; &lt;ul&gt; &lt;li&gt;使われていたら自動的にブロックの外側へ伝播させる&lt;/li&gt; &lt;ul&gt; &lt;li&gt;「でも重箱の隅をつつくようなことは気にしないよ！」と言われる&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;Mix-in defect&lt;/li&gt; &lt;ul&gt; &lt;li&gt;インクルード時の構造が取り込まれるので、後で追加しても反映されない&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;No private method&lt;/li&gt; &lt;li&gt;Global monkey patching&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Classbox&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;Integer division&lt;/li&gt; &lt;ul&gt; &lt;li&gt;5 / 2 #=&gt; 2&lt;/li&gt; &lt;li&gt;mathn ?
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-2nd-day/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/08/31/rubykaigi-2010-3rd-day/">RubyKaigi 2010 3rd day</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  RubyKaigi 2010 3日目 地域 Ruby 会議 Kaigi &lt;ul&gt; &lt;li&gt;Commit するまえに Conflict 解消しようぜ&lt;/li&gt; &lt;li&gt;チェックイン&lt;/li&gt; &lt;ul&gt; &lt;li&gt;かくたにさん&lt;/li&gt; &lt;li&gt;島田さん (Sapporo)&lt;/li&gt; &lt;li&gt;(島根の人)&lt;/li&gt; &lt;li&gt;小川&lt;/li&gt; &lt;li&gt;河野さん&lt;/li&gt; &lt;li&gt;三浦さん&lt;/li&gt; &lt;li&gt;武田さん&lt;/li&gt; &lt;li&gt;小柴さん&lt;/li&gt; &lt;li&gt;高井さん&lt;/li&gt; &lt;li&gt;川上さん (松江の人)&lt;/li&gt; &lt;li&gt;BECK さん (東京の人)&lt;/li&gt; &lt;li&gt;米沢さん (toRuby)&lt;/li&gt; &lt;li&gt;okkez (関西の人)&lt;/li&gt; &lt;li&gt;松本 (名古屋の人)&lt;/li&gt; &lt;li&gt;かたぎりさん (名古屋の人)&lt;/li&gt; &lt;li&gt;片平さん (仙台の人)&lt;/li&gt; &lt;li&gt;永井さん (Rubyist 九州の人)&lt;/li&gt; &lt;li&gt;藤岡さん (福島の人)&lt;/li&gt; &lt;li&gt;ひがきさん (関西の人)&lt;/li&gt; &lt;li&gt;てらしまさん (鳥取の人)&lt;/li&gt; &lt;li&gt;池沢さん (toRuby)&lt;/li&gt; &lt;li&gt;せきさん (toRuby)&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;RubyKaigi 歴 2010 のふりかえり&lt;/li&gt; &lt;ul&gt; &lt;li&gt;名古屋01&lt;/li&gt; &lt;ul&gt; &lt;li&gt;リソース不足で告知が遅れて、諸処にご迷惑をおかけした。&lt;/li&gt; &lt;ul&gt; &lt;li&gt;作業者がいない&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;話者がいない&lt;/li&gt; &lt;li&gt;80人参加&lt;/li&gt; &lt;li&gt;懇親会が濃かった&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;東京03&lt;/li&gt; &lt;ul&gt; &lt;li&gt;完璧な運営&lt;/li&gt; &lt;li&gt;半年前から月一でMTG&lt;/li&gt; &lt;li&gt;事前議題 -&gt; 議論 -&gt; TODO といういいサイクル&lt;/li&gt; &lt;li&gt;クオリティを上げすぎないように&lt;/li&gt; &lt;li&gt;懇親会ができなかった&lt;/li&gt; &lt;ul&gt; &lt;li&gt;ドタキャンに備えて開催できなかった&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;お金の問題&lt;/li&gt; &lt;ul&gt; &lt;li&gt;スタッフ有料イベント&lt;/li&gt; &lt;li&gt;儲からないのに誰かが負担しなければならない&lt;/li&gt; &lt;ul&gt; &lt;li&gt;えにしテックが札幌Ruby会議に投資するのはどうなのか&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;「俺のやりたいことをやらせろ」ということで高井さんが頑張った&lt;/li&gt; &lt;ul&gt; &lt;li&gt;The RubyKaigi ではないことをやりたかった&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Talker や Workshop など&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;Tokyu 01&lt;/li&gt; &lt;li&gt;札幌 02&lt;/li&gt; &lt;ul&gt; &lt;li&gt;懇親会はしなかった&lt;/li&gt; &lt;ul&gt; &lt;li&gt;途中で時間を設けて、お酒のない懇親会をやった&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;お金の問題&lt;/li&gt; &lt;ul&gt; &lt;li&gt;やりたいと思ってる人がお金を出している状態&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;01 よりも規模を大きくしてみた。手にのる範囲で。&lt;/li&gt; &lt;ul&gt; &lt;li&gt;期待と思う人が増えれば話者に困ることはないんじゃないか&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;タレント不足&lt;/li&gt; &lt;ul&gt; &lt;li&gt;札幌の人たちが話すのをメインに据えた&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;関西 02&lt;/li&gt; &lt;ul&gt; &lt;li&gt;KOF にのっかって&lt;/li&gt; &lt;ul&gt; &lt;li&gt;会場の心配はしなくてもいいがスケジュールを握られる&lt;/li&gt; &lt;li&gt;考えるまもなく進めなくてはいけない&lt;/li&gt; &lt;ul&gt; &lt;li&gt;他とは制約事項が違う&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;毎月やる勉強会でお金を貯めて講師を呼ぶ&lt;/li&gt; &lt;ul&gt; &lt;li&gt;okkez さんが RubyKaigi で営業してその人を呼ぶ&lt;/li&gt; &lt;li&gt;今年は福井さんがやっている&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;リソースが足りない&lt;/li&gt; &lt;ul&gt; &lt;li&gt;スタッフが KOF の参加者なのでいろいろ大変&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;松江 02&lt;/li&gt; &lt;ul&gt; &lt;li&gt;01 が島根大学の野田先生が主導で&lt;/li&gt; &lt;li&gt;02 は Matsue.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-3rd-day/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/08/28/jpmobile-on-rails-3-0-in-rubykaigi-2010/">jpmobile on Rails 3.0 in RubyKaigi 2010</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  jpmobile on Rails 3.0View more presentations from Shin-ichiro OGAWA. と言うわけで準基調講演とかいろんな冷やかしを受けながらもなんとか発表終わりました。いやー、緊張しましたがなんとか発表できて良かったです。あとは今日のjpmobie Kaigi 2010が終われば、ようやく楽しめるようになるんじゃないかと思っています。
+ところで、コミュニティ・ナイトのあとに懇親会行ったのですが、外国からの参加者が7割以上を占めるという、ある意味過酷な環境でした。英語慣れしてないのでかなり疲れましたが、それはそれで楽しかったです。さて、今日の懇親会はどうなることやら。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/08/26/rubykaigi-2010jpmobile-on-rails-3-0/">RubyKaigi 2010にて「jpmobile on Rails 3.0」という題名で発表してきます</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  と言うわけで表題の通りRubyKaigi 2010にて「jpmobile on Rails 3.0」と言う発表をします。主な内容はRailsのソースコードを解説するというよくわからないことになりそうなのですが、次の日にあるjpmobile Kaigi 2010の前振りという感じで気軽に聞いてもらえればと思います。
+まあ物理学会では大御所を前に持論を展開すると言うことは何度もやってきたのですが、さすがに技術系では初めてなのでいろいろ緊張してます。さてどうなることやら。
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/08/09/jrubykaigi/">JRubyKaigi前夜祭に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  仕事で使うJRuby! そこが知りたい技術・開発・案件の最新情報  2010/08/05 19:00- ジュンク堂 池袋本店 抽象エア社員として参戦  はじめに  自己紹介  大場夫妻 橋本さん 中村さん(nahiさん)  OpenSSLとかの人  
+
+本を出した経緯  大場さん  原書は2007年に発刊 @takai さん経由で知らせてもらった だいたい3部構成  Rails を使いアプリを開発しながら、それとは気づかずにEEにはまる感じ Java - Ruby / Ruby - Java の章がある  黒魔術から白魔術まで  &lt;/ul&gt; &lt;li&gt;原著作者に推薦文を書いてもらった！&lt;/li&gt; &lt;li&gt;みどころ&lt;/li&gt; &lt;ul&gt; &lt;li&gt;JRuby のリファレンスがある&lt;/li&gt; &lt;/ul&gt;  
+橋本さん
+
+&lt;li&gt;DB Magazineでの連載&lt;/li&gt; &lt;li&gt;2部構成&lt;/li&gt; &lt;ul&gt; &lt;li&gt;後半にエンタープライズでRailsを使う上で注意すること&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Javaシステムとの連携&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;Thomas Enebo に推薦文もらった！&lt;/li&gt;  
+結論
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/08/09/jrubykaigi/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/07/27/nosqlkvs-nosql/">「ソーシャルアプリでNoSQL(あるいはKVS) 〜実践NoSQL〜」に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/07/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  2010/07/23(金) オプトさんの例のセミナー GREEのCTOの人 ソーシャルアプリでNoSQL(KVS)の話 KVSの利用者は少ない？ 2/3ぐらい 副題 : 如何にして5キーに耐えるか NoSQL = Not Only SQL  世にプロダクトはたくさんある  それぞれさまざまな特性がある(オンメモリ、分散、性能、実績などなど)  デファクトスタンダードがないので乱立？   &lt;/ul&gt; &lt;/ul&gt;  それ MySQL(Drizzle) でできるよ
+&lt;ul&gt; &lt;li&gt;それでもいいんじゃないかと思ってます&lt;/li&gt; &lt;/ul&gt;  NoSQL と言い出すまでの歴史
+&lt;ul&gt; &lt;li&gt;1998 年ぐらいから言われ始めたらしい&lt;/li&gt; &lt;li&gt;第一期 : RDBMS でいいよね期&lt;/li&gt; &lt;ul&gt; &lt;li&gt;最初はポスギレが多かった&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;第二期 : memcached も便利だよね期&lt;/li&gt; &lt;ul&gt; &lt;li&gt;まあセッションとかも使い始めたところ&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;第三期 : やっぱりスケーラビリティだよね期&lt;/li&gt; &lt;ul&gt; &lt;li&gt;mixi などでの分散とか&lt;/li&gt; &lt;li&gt;sharding&lt;/li&gt; &lt;ul&gt; &lt;li&gt;JOIN できない＞＜&lt;/li&gt; &lt;li&gt;トランザクションできない＞＜&lt;/li&gt; &lt;li&gt;複雑なSQL書いたら怒られた＞＜&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;RDBMS の機能を余り使っていない&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Relationa じゃないよね&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;li&gt;第四期 : 全部 RDBMS じゃなくてもいいよね期&lt;/li&gt; &lt;ul&gt; &lt;li&gt;たぶんいまここ&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt;  NoSQLのデータモデル
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2010/07/27/nosqlkvs-nosql/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/07/22/toeic/">TOEICを受けてきたの巻</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/07/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  と言うわけで初TOEICでした。予想通りリスニングが酷いですね＼(^o^)／
+さて、どうしようか&hellip;.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2010/07/12/accountings/">技術者はもっと説明責任を果たすべき</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/07/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まあ単純なことなんですが、営業や企画の人に技術用語を捲し立てる人がわりと多いですよね、と言うこと。
+下手な専門用語を使うことで自分の首を絞める そういう時に限って、聞いてた人が拡大解釈してしまい、あとでいろいろ大変な目にあうことは少なくありません。「いや、そういう意味じゃなくてですね…」「でも、もうお客さんに言っちゃったよ？」なんで言う、ありがちな会話が繰り広げられたりするわけです。こうなってはいくら口論しても取り返しがつかないことが多いので、仕方なく作業することを強いられます。でもどうしてこうなってしまうのか。
+本質を理解していないと説明できない 私自身もそうですが、用語の本質を理解していないと人に説明することはできません。大学・大学院とお世話になった先生に、「絵を描いて説明して。絵を描けないということは、ちゃんと理解していないということ」とよく言われました。自分が理解していればそれを図示して、つまり本質をわかりやすく絵に描けるはずだというのです。最初はよくわかってなかったのですが、博士課程あたりでその重要性を理解できた気がしています。物事の本質を理解せずに話をしようとしてもうまく伝わらないだけでなく、間違った認識を与えてしまうこともあります。
+ちゃんと説明するのは難しい では、本質を理解した上で話せばいいのかというと、そうでもありません。今度は何が必要とされているのかを認識しないと、的外れな内容を説明してしまいかねません。つまり聞き手の状況や認識を考慮して説明する必要があるのです。仕事であればその全容を把握して、何が問題となっているのかを理解しないと大変なことになります。的外れな回答になってしまって、やったこと全てを巻き直しなんてことになりかねません。
+相手の立場になって考える そう言う意味で簡単なようで意外にできないのが、相手の立場で物事を考えるということ。「俺はそうは思わない」と決め付けずに、何故その結論になったのかを考えないと、いつまでも状況は変わりません。とは言え、どうしても理解できない時もあるでしょう。その時は新天地を目指せばいいだけです。
+「できないこと」じゃなく、「できること」をまず言おう また「それじゃ無理ですよ、だって・・・」といきなり言うのではなく、「これではどうですか」と提案することも重要です。一見当たり前のことですが、意外にできないものです。面倒な実装になりそうだったり、手間がかかったりと、ネガティブなイメージが先行してしまうことが多いからでしょうか。でも結局「無理ですよ」といって別の大きな手間がかかってしまうことって多くないですか？そう言うのから脱却するためにも、否定から入るのではなく肯定から行くべきだと感じています。
+扱いにくい人にならないように また仕事が増えるだけなら、まあそれもよくないのですが、まだましですが、社内の信用を失うことになる可能性があります。「あの人何言ってるかわかんないよ」や「あの人話しにくいし扱いにくい」と言われるようになってはおしまいです。私自身は、難しいことや不可能そうなことを、自分のアイデアや技術力でなんとかしてこそ、技術者の本領発揮なわけですから、「そんなの無理ですよ」という前に一つでもアイデアを出して見たいと思っています。
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/6/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;7 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/8/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

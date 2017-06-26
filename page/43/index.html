@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/18/notitle/">まさか・・・・</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  キラキラひかるを買ってるとは思わなかった．いやマジで．世の中広いな・・・・
+と言うわけで東京です．さて明日も頑張って行ってきますか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/16/notitle/">薄さと軽さは魅力的，だが</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://plusd.itmedia.co.jp/pcuser/articles/0801/16/news017.html
+パッと見欲しくなったが，解像度がなぁ．WUXGAとかWSXGA+に慣れると，小さいのに戻れないんだよなぁ．ここはやっぱ
+ 松下電器産業 レッツノートR7(Core 2 Duo超低電圧版U7500、XP Pro) CF-R7BC5AXS  著者: 出版日: 出版社/メーカー: パナソニック
+カテゴリ: Personal Computer
+  とかかなぁ．いや違う．この方向じゃそもそもの主旨と離れてく．買わないことに決定しよう．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/12/notitle/">「ウェブ時代をゆく」を読んで</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  今更ながらにいろんな文献を漁って読んでるんですが，そういう知的欲求の持ち続けることが重要なんだなと，改めて感じた本でした．
+いま転職活動中なんですが，なんか勇気づけられたというか．なぜかというと，転職理由の一番大きなものが「現状からの脱却」と「もう一度開発を」の2つだから．
+日々業務をこなせばそこそこのモノがもらえる現状は，ある面では良いのかもしれないけど，何となく「閉塞感」「行き詰まり感」があって，「ちょっとこのままじゃいかんなぁ」と思っていました．
+そんなときに「もう一回開発のこと調べよう」と思って目を付けたのがRubyとRuby on Rails．調べていくうちにRubyの思想に共感したり，Railsの有用性に感心したりして，「開発することの楽しさ」を思い出しました．
+と言うわけで，今に至るわけです．来週末から頑張らねば．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/11/notitle/">「とりあえず，お願い」が多いのは</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://itpro.nikkeibp.co.jp/article/COLUMN/20080110/290816/
+いまの会社はデザイン会社なので，やっぱ「2～3案くれ」みたいに言われることが多いんですが，そういう時に求められているのは「印象」であって「情報へのアクセスのしやすさ」ではないと思う．私の場合，いくら見た目がよくても「何がどこにあるのか」がパッとわからないと，それ以上見ようとしない．探すの面倒だしね．だからこそ，デザインを要求されたときにはそこまで考えて提案しないといかんのだろうが，なかなかそこまで踏み込めないのが実情．状況的に．なんかcriticalな打開策はないもんだろうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/11/TIPS/">回転・拡大縮小行列</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  [tex:\left( \begin{array}{cccc} R_x\cos\phi\cos\psi &amp; R_x\left(\cos\theta\sin\psi+\sin\theta\sin\phi\cos\psi\right) &amp; R_x\left(\sin\theta\sin\psi-\cos\theta\sin\phi\cos\psi\right) &amp; 0 \ -R_x\cos\phi\sin\psi &amp; R_x\left(\cos\theta\cos\psi-\sin\theta\sin\phi\sin\psi\right) &amp; R_x\left(\cos\theta\sin\phi\sin\psi+\sin\theta\cos\psi\right) &amp; 0 \ R_z\sin\theta &amp; -R_z\cos\theta \sin\theta &amp; R_z{\cos\theta }^{2} &amp; 0 \ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right)]
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/10/notitle/">プログラマの生き残り方？</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  小飼弾――35歳からのプログラミングこそ無上の至悦
+35歳からこそ楽しくなるという．そうかもしれん．実際，私も今の歳になってから，プログラムの楽しさを再発見したしね1．あと，
+ 一生プログラマーでいれるかどうかは、言い換えれば年下から学べるか否か。年長者が文句を言うだけの存在と化すのなら、その余命をもっと活用してくれるであろう人間に譲れ、と真剣に思う。余命が長い人の方が根源的な価値があるのだから。そういう意味ではプログラマーにとって一番重要な財産は「暇」なのかも。
+ これにはすごい共感を覚えました．これからどう生きるか，ある意味指針になった感じがします．
+ だからこその転職． [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/09/HD-DVD/">さよならHD DVD</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  米パラマウント、次世代ＤＶＤで「ＨＤ－ＤＶＤ」支持撤回へ－ＦＴ紙
+決定的かなと思うんですが，やっぱ映画会社持ってるソニーの方に利点があったってことでしょうか．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/09/notitle/">来週末の上京に向けて</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  バッテリー切れると痛いので(;´д`)．
+ ミヤビックス Advanced/W-ZERO3 [es] 用充電変換アダプタ HAAWZR3ES  著者: 出版日: 出版社/メーカー: ミヤビックス
+カテゴリ: CE
+    ラブやん(9) (アフタヌーンKC)  著者: 田丸 浩史
+出版日: 2008-01-23
+出版社/メーカー: 講談社
+カテゴリ: Book
+    少年ガンガン 2008年 02月号 [雑誌]  著者: 出版日: 2008-01-12
+出版社/メーカー: スクウェア・エニックス
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/07/Fedora-Core-6-ASP-NET/">Fedora Core 6でASP.NETを動かす</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  導入ログ．と言ってもyumで入るので楽っぽいが．．．．
+# yum install mono-* # yum install mod_mono # yum install xsp xsp-*  設定変更．mod_mono.confに追加．
+Alias /test &quot;/usr/lib/xsp/test&quot;  http://target-host/test/にアクセスして動作を確認．以外に簡単でした．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/01/04/Rails-Upgrade-1-2-6-to-2-0-2/">Upgrade 1.2.6 to 2.0.2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/01/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  新年なので(？)1.2.6から2.0.2に上げてみました．単純にenvironment.rbに
+RAILS_GEM_VERSION = '2.0.2' unless defined? RAILS_GEM_VERSION  とするだけではダメで，そもそも2.0系のActiveResourceをインストールしなければいかんようだ．そこでFC8に上げたことでもあるので，cleanupもしてしまうことに．
+# gem update # gem cleanup # gem install activeresource  動作させようとすると，
+A secret is required to generate an integrity hash for cookie session data. Use config.action_controller.session = { :session_key =&gt; &quot;_myapp_session&quot;, :secret =&gt; &quot;some secret phrase of at least 30 characters&quot; } in config/environment.rb  なるエラーがでたので，environment.rbに，
+config.action_controller.session = { :session_key =&gt; '_railsapp_session', :secret =&gt; 'thegreatmanagerknowseverythingsoftheproject' }  と追記して動くようになりました．ActiveResourceのことを忘れるとさっぱり動かないので注意が必要でした．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/42/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;43 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/44/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

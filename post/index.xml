@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on なんとなく日記</title>
+    <link>http://stnard.jp/post/index.xml</link>
+    <description>Recent content in Posts on なんとなく日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 01 Jun 2017 19:31:35 +0000</lastBuildDate>
+    <atom:link href="http://stnard.jp/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mediumに移転してみる</title>
+      <link>http://stnard.jp/2017/06/01/move-to-medium</link>
+      <pubDate>Thu, 01 Jun 2017 19:31:35 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/06/01/move-to-medium</guid>
+      <description>&lt;p&gt;Hugo便利ではあるんですが、いろいろ運用面倒になってきたので、しばらくは&lt;a href=&#34;https://blog.stnard.jp&#34;&gt;Mediumに移って&lt;/a&gt;にみようと思います。&lt;/p&gt;
+
+&lt;p&gt;運用の何が面倒って、記事を作成するには、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Markdownで記事を書く (esa.io)&lt;/li&gt;
+&lt;li&gt;プレビューして確認&lt;/li&gt;
+&lt;li&gt;リポジトリにコミット&lt;/li&gt;
+&lt;li&gt;Hugoのビルド (CI)&lt;/li&gt;
+&lt;li&gt;S3にアップする (CI)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;という手順を踏まないといけないんですが、一番面倒なのはプレビューのところ。まあ仕方ないとはいえ、どうせなら何らかのサービス使ってみたいなと思っていたので、いま話題（遅い）の &lt;a href=&#34;https://medium.com&#34;&gt;Medium&lt;/a&gt; にしました。&lt;/p&gt;
+
+&lt;p&gt;会社のHPも &lt;a href=&#34;https://leisurely-works.jp&#34;&gt;Mediumにした&lt;/a&gt; んで、記事も共有できれば良いなという思惑もあります。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>技術力は才能？努力？〜「超一流になるのは才能か努力か?」</title>
+      <link>http://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort</link>
+      <pubDate>Mon, 08 May 2017 16:12:35 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort</guid>
+      <description>&lt;p&gt;優秀な若者にオススメされて読んでみたんですが、常々思っていたことがちゃんと学問として検証されていたようで、ものすごく腑に落ちたので紹介してみます。&lt;/p&gt;
+
+
+&lt;div class=&#34;amazon_tag&#34;&gt;
+    &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.co.jp/%E8%B6%85%E4%B8%80%E6%B5%81%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%AE%E3%81%AF%E6%89%8D%E8%83%BD%E3%81%8B%E5%8A%AA%E5%8A%9B%E3%81%8B-%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9-%E3%82%A8%E3%83%AA%E3%82%AF%E3%82%BD%E3%83%B3/dp/4163904956?SubscriptionId=AKIAIPHL2GFHZ7RYPNDA&amp;amp;amp;tag=stnardsdiary-22&amp;amp;amp;linkCode=xm2&amp;amp;amp;camp=2025&amp;amp;amp;creative=165953&amp;amp;amp;creativeASIN=4163904956&#34;&gt;
+        &lt;img src=&#34;https://images-fe.ssl-images-amazon.com/images/I/51VAQOGNifL._SL160_.jpg&#34;&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;item_detail&#34;&gt;
+        &lt;a href=&#34;https://www.amazon.co.jp/%E8%B6%85%E4%B8%80%E6%B5%81%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%AE%E3%81%AF%E6%89%8D%E8%83%BD%E3%81%8B%E5%8A%AA%E5%8A%9B%E3%81%8B-%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9-%E3%82%A8%E3%83%AA%E3%82%AF%E3%82%BD%E3%83%B3/dp/4163904956?SubscriptionId=AKIAIPHL2GFHZ7RYPNDA&amp;amp;amp;tag=stnardsdiary-22&amp;amp;amp;linkCode=xm2&amp;amp;amp;camp=2025&amp;amp;amp;creative=165953&amp;amp;amp;creativeASIN=4163904956&#34;&gt;超一流になるのは才能か努力か?&lt;/a&gt;
+        &lt;p&gt;
+            著者: アンダース エリクソン, ロバート プール&lt;br /&gt;
+            出版日: 2016-07-29&lt;br /&gt;
+            出版社/メーカー: 文藝春秋&lt;br /&gt;
+            カテゴリ: Book&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;昔から「いわゆる生まれ持った才能はない」と思っていたんですが、それを研究や実験を通じて解説されていて、しかもどうすれば能力を伸ばせるのかが書かれていて非常に興味深かったです。&lt;/p&gt;
+
+&lt;p&gt;特に新卒エンジニアの採用をしていると、いまの能力で評価するのか将来の伸び率で評価するのか難しい部分があるんですが、個人的には「技術力を伸ばすことはできる」と考えているので、どちらかと言うとカルチャーマッチのほうを重視したりしてました。&lt;/p&gt;
+
+&lt;p&gt;とは言え、じゃあどうやって伸ばすのかと言われると答えられないんですよね。自分がどうやって成長してきたのかはある程度わかっているけど、それを他人に適用できるのかと言われれば無理だと断言できる。なぜなら趣味嗜好も違うだろうし、家庭や生育してきた環境も違う。前提条件が違うのに方法論だけ適用してもうまくいかないので、そういう相談をされたときにはあまり自分のことを話さないようにしてました。&lt;/p&gt;
+
+&lt;p&gt;上記の本にはその方法として例えば、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;具体的な目標を立ててそれ目指して練習する&lt;/li&gt;
+&lt;li&gt;できる人に適切なフィードバックを得られるような環境でやる&lt;/li&gt;
+&lt;li&gt;コンフォートゾーン（居心地ところ）から外に出て練習する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;と書かれています。3番目なんて僕の好きな&lt;a href=&#34;http://stnard.jp/2010/03/16/Lifestyle/&#34;&gt;情熱プログラマーの「一番の下手くそでいよう」&lt;/a&gt;というのに近いかなと、自分の中にスッと入ってきました。&lt;/p&gt;
+
+&lt;p&gt;先日の&lt;a href=&#34;http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer/&#34;&gt;ポエム&lt;/a&gt;にも書いたんですが、「限界的練習で技術力は伸ばせる」という前提なら、いろいろ採用の仕方も変わってくるなと改めて考えさせられました。もちろん今度は教育が大変になるんですが。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>キャリア形成の重要性〜『その「エンジニア採用」が不幸を生む』を読んだ</title>
+      <link>http://stnard.jp/2017/03/02/importance-to-make-engineer-carrer</link>
+      <pubDate>Mon, 01 May 2017 16:12:35 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/03/02/importance-to-make-engineer-carrer</guid>
+      <description>
+
+&lt;p&gt;ちょっと前に発売されたエンジニア採用に関する本を読んだのでその感想。&lt;/p&gt;
+
+
+&lt;div class=&#34;amazon_tag&#34;&gt;
+    &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.co.jp/%E3%81%9D%E3%81%AE%E3%80%8C%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E6%8E%A1%E7%94%A8%E3%80%8D%E3%81%8C%E4%B8%8D%E5%B9%B8%E3%82%92%E7%94%9F%E3%82%80-~%E8%89%AF%E3%81%84%E4%BA%BA%E6%9D%90%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%80%81%E6%B4%BB%E8%BA%8D%E3%81%97%E3%81%A6%E3%82%82%E3%82%89%E3%81%86%E3%81%AB%E3%81%AF%E4%BD%95%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%8B-%E6%AD%A3%E9%81%93%E5%AF%BA-%E9%9B%85%E4%BF%A1/dp/4774186015?SubscriptionId=AKIAIPHL2GFHZ7RYPNDA&amp;amp;amp;tag=stnardsdiary-22&amp;amp;amp;linkCode=xm2&amp;amp;amp;camp=2025&amp;amp;amp;creative=165953&amp;amp;amp;creativeASIN=4774186015&#34;&gt;
+        &lt;img src=&#34;https://images-fe.ssl-images-amazon.com/images/I/51YaEUK8hPL._SL160_.jpg&#34;&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;item_detail&#34;&gt;
+        &lt;a href=&#34;https://www.amazon.co.jp/%E3%81%9D%E3%81%AE%E3%80%8C%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E6%8E%A1%E7%94%A8%E3%80%8D%E3%81%8C%E4%B8%8D%E5%B9%B8%E3%82%92%E7%94%9F%E3%82%80-~%E8%89%AF%E3%81%84%E4%BA%BA%E6%9D%90%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%80%81%E6%B4%BB%E8%BA%8D%E3%81%97%E3%81%A6%E3%82%82%E3%82%89%E3%81%86%E3%81%AB%E3%81%AF%E4%BD%95%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%8B-%E6%AD%A3%E9%81%93%E5%AF%BA-%E9%9B%85%E4%BF%A1/dp/4774186015?SubscriptionId=AKIAIPHL2GFHZ7RYPNDA&amp;amp;amp;tag=stnardsdiary-22&amp;amp;amp;linkCode=xm2&amp;amp;amp;camp=2025&amp;amp;amp;creative=165953&amp;amp;amp;creativeASIN=4774186015&#34;&gt;その「エンジニア採用」が不幸を生む ~良い人材を見つけ、活躍してもらうには何が必要か?&lt;/a&gt;
+        &lt;p&gt;
+            著者: 正道寺 雅信&lt;br /&gt;
+            出版日: 2016-12-07&lt;br /&gt;
+            出版社/メーカー: 技術評論社&lt;br /&gt;
+            カテゴリ: Book&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;内容的にはこれからエンジニアの採用を始めよう・強化しようと考えている経営者に読んでほしい書籍です。どういった人を採用すべきかがわからないと言う話はよく聞くんですが、その最初の一歩としてはまとまって書かれています。&lt;/p&gt;
+
+&lt;h2 id=&#34;エンジニア採用でなにが不幸を招くのか&#34;&gt;エンジニア採用でなにが不幸を招くのか&lt;/h2&gt;
+
+&lt;p&gt;いろいろ問題があると思うんですが、例えばこれから採用しようと考えている会社側の問題としては、経営者の理解が挙げられます。何のために採用するのか、何をやってもらいたいのかなどは整理されているか。また会社制度・文化とのマッチングは大丈夫か。これは&lt;a href=&#34;http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer/&#34;&gt;前にも&lt;/a&gt;書いたんですが、会社と合うかどうかって非常に重要です。さらに日本は制度上簡単に解雇できないので、もし事業がなくなってしまったら別の仕事にアサインすることになりますが、そこまで考えて採用しているケースはほぼないんじゃないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;一方で既にエンジニアがいる組織では、待遇の問題というのが発生しがちです。新しくエンジニアを採用しようとすると、既存エンジニアとの給与バランスが悪くなってしまう可能性があります。かと言って現状の合わせて採用しようとすると期待するような技術力がある人が採用できないかもしれません。ここも難しい問題です。&lt;/p&gt;
+
+&lt;p&gt;またエンジニア採用には戦略が重要で、ここをしっかり考えないと採用はうまく行きません。メディア露出もそうですが、どんな人が欲しいのか、技術力だけではなく人柄などはどうか。逆に技術力だけで採用するか、その場合は既存組織との住み分けなり融合はどうするのかなど、採用する前に考えて決めておくべき事項は多いです。このあたりを考えずに採用してしまうと、すぐに退職してしまったり、会社側は期待した結果を出してくれないと言う不満を覚えてしまうことになります。&lt;/p&gt;
+
+&lt;p&gt;採用にうまくいってもそれで安心はできません。エンジニアのキャリアプランに王道がないからです。一昔前は、エンジニア(PG/SE)からマネージャー(PM)になるという話をよく聞きましたが、いまはエンジニアと言う職種も細分化されているので、そう簡単にはいきません。&lt;/p&gt;
+
+&lt;p&gt;またよくある話なのが、「マネージャーになったけど現場で仕事したいから転職した」パターンです。どの会社で話聞いてもそういう人が一定数いて、現場でガリガリ開発してるようです。そしてそんな会社の悩みが「マネージャーがいない」というのもある意味納得です。そりゃ「マネージャーじゃなく現場で仕事したい人」を採用してればマネージャーいなくなるよね、と言うのはある意味当たり前の話ですよね。&lt;/p&gt;
+
+&lt;p&gt;そうなるとマネージメントできそうな人にマネージャーの役割を担ってもらうことになるんですが、そうすると現場に戻りたくなって転職するという悪循環が発生してしまいます。このあたりもエンジニアのキャリアプランを会社として考えておかないと、エンジニア採用の長期的な解決になりません。&lt;/p&gt;
+
+&lt;p&gt;と言うような話がざっとまとまってたので、これからエンジニア採用を始める方や、担当者がいなくて困ってるという方は一度読んでみてはいかがでしょうか。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>優秀なエンジニアとは？採用の難しさ</title>
+      <link>http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer</link>
+      <pubDate>Fri, 24 Mar 2017 14:12:35 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer</guid>
+      <description>&lt;p&gt;そもそも優秀なエンジニアってどういう人なんでしょうね。採用やってると、いろんな優秀さが見れるんですが、かと言ってそれを測る尺度をたくさん用意するのは運用上不可能です。特に技術やビジネスなど状況が毎週のように変わるので、下手すると尺度もそれと同じ頻度で変更する必要があります。このあたりで失敗してしまうと、いろいろ不都合が生じてしまうこともあるので、ちゃんとした尺度を持っておかないと後で辛いことになります。&lt;/p&gt;
+
+&lt;p&gt;一方で「ある意味、優秀なエンジニアならなんでもできる」という話も聞きます。これも間違ってるわけではないんですが、「なんでもできる」ということと「やってもらおうと思っていることをやりたいと思っている」という話は別です。ここも間違いやすいんですが、確かに「一般的な尺度で言うところの優秀な人間」であれば、なんでもできるかもしれないんですが、そのことを見極める方がもっと大変じゃないかなと思ってます。&lt;/p&gt;
+
+&lt;p&gt;たとえ見極められたとしても、優秀さというのが決まっているパラメータで、それ以上成長しないのであればいいんですが、まあ普通考えると仕事をしているうちに伸びていく可能性が高い。そうなると今度は伸び率とか到達地点みたいなのも考える必要があって、さらに難しくなります。「この人はいま技術力高いけど、このまま高いままでいられるのか？」などという見極めは、いくら面接で頑張っても無理があるので、銀の弾丸はやはりありません。&lt;/p&gt;
+
+&lt;p&gt;また技術力がある人を採用したとしても、会社の文化と合わないと居心地が悪くなってしまい長続きしません。例えばエンジニアは一般的に朝に弱いと言われてますが、朝9時から始まる会社でフレックスはNGみたいな文化だと入ってから苦労するだろうし、やたらと社内イベントがあるのも辛いという話もあるでしょう。これらは良し悪しではなく好き嫌いなので、社内文化との合うかどうかということも重要な要素です。&lt;/p&gt;
+
+&lt;p&gt;そんなこんなで優秀なエンジニアの採用は非常に難しいんですが、じゃあどうするかというと、一つはそもそもエンジニアの採用で技術力をそこまで重視しないという方法を取ることです。全く考慮しないのはさすがにナンセンスですが、技術力だけを見ないで成長力や適応力、また社内文化のとのカルチャーマッチを重視する方法です。個人的には技術力よりもカルチャーマッチのほうがなんともならないという気がしているので、ここをミスるとお互いが不幸になります。&lt;/p&gt;
+
+&lt;p&gt;もう一つは優秀なエンジニアが入ってくれるように社内文化を変えることです。フレックスを導入したりリモート作業できるようにしたり、社内イベントなどは任意性にしたりと、変えられるところを変えていって受け入れられるようにする方法があります。&lt;/p&gt;
+
+&lt;p&gt;ただこちらは既存文化からの反発が大きくなってしまうので、普通はやらないほうが良いでしょう。エンジニアだけがいれば会社が成り立つのであればいいんですが、普通はそうではなりません。総務・人事・経理など、いくらIT化しても面倒なことには変わりません。そんなことを自らすすんでやってくれるエンジニアなんてほとんどいないだろうし、いたとしても「俺が考える最強の社内システム」を作り出して自滅するのがオチです。&lt;/p&gt;
+
+&lt;p&gt;個人的にはこの2つの方法を軸に、いろいろ試行錯誤しながら社内体制を徐々に変更しつつ、成長力やカルチャーマッチを考慮した人材を採用するのが良いのではないかと思っています。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ShiftとAuthyが便利</title>
+      <link>http://stnard.jp/2017/03/02/shift-authy</link>
+      <pubDate>Thu, 02 Mar 2017 10:20:35 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/03/02/shift-authy</guid>
+      <description>&lt;p&gt;いろんな会社さんと仕事をしていると、複数の&lt;a href=&#34;https://gsuite.google.co.jp/&#34;&gt;G Suite&lt;/a&gt;を使わないといけなくなるんですが、まあ普通にGoogle Chromeのタブで使い分けていました。ただこれだとタブを開かないと見れないし、そのアカウントに対応するカレンダーとかGoogle Driveとかを開くのも一苦労でしたんですが、そこで&lt;a href=&#34;https://blog.strk.jp/tryshift-google-web-apps-as-native-app-bf2f9fce19df&#34;&gt;見つけた&lt;/a&gt;のが&lt;a href=&#34;http://tryshift.com/?referral=da8e1662762a578ac9829c2d6f2b62cf&#34;&gt;Shift&lt;/a&gt;という、複数のG SuiteやGoogle Accountを管理できるアプリ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://stnard.jp/img/shift.png&#34; alt=&#34;Shift&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;なにが便利って、ElectronなんですがWindows版があることですね。某MMORPGしないといけないので、Windowsは必須なんですが、そこで利用できるというのが大きなポイントです。&lt;a href=&#34;http://rebuild.fm/176/&#34;&gt;Rebuild.fmでも紹介されてた&lt;/a&gt;んですが、複数アカウント持ちには便利ですね。&lt;/p&gt;
+
+&lt;p&gt;あと最近Google Authenticatorから&lt;a href=&#34;https://www.authy.com/&#34;&gt;Authy&lt;/a&gt;に変えました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://stnard.jp/img/authy.png&#34; alt=&#34;Authy&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;いまは業務用と個人用にスマホを2台持ってるんですが、2FAをどちらでもできたらなと思っていたところに&lt;a href=&#34;https://www.authy.com/&#34;&gt;Authy&lt;/a&gt;を見つけました。Authyの便利なところはChrome Extensionがあるところで、いちいちスマホ起動しなくてもいいという点。ただこのように複数端末で使えるのでセキュリティ的に弱くなる可能性はありますね。ご利用は計画的にしないといけません :smile:&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jpmobileにCircleCIとonkcopを入れた</title>
+      <link>http://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop</link>
+      <pubDate>Thu, 09 Feb 2017 13:20:35 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop</guid>
+      <description>&lt;p&gt;最初に &lt;a href=&#34;https://github.com/jpmobile/jpmobile&#34;&gt;jpmobile&lt;/a&gt; の開発を始めてからもう7年も経つのかと感慨深い今日このごろ。ここしばらくは Rails と Ruby のバージョンアップのたびにいろいろ diff 見て回ったりテスト回したりする日々ですが、手元ではテスト回せるけどまあ割りと準備が必要なんですよね。&lt;/p&gt;
+
+&lt;p&gt;と言う訳ではないですが、&lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt;で動くようにいろいろ頑張ってみました。&lt;/p&gt;
+
+&lt;p&gt;苦労したことは特に無いんですが、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;rake&lt;/code&gt;タスクの中で &lt;code&gt;rails new&lt;/code&gt; して &lt;code&gt;`bundle exec rake test`&lt;/code&gt; なんてやってるので&lt;a href=&#34;https://github.com/jpmobile/jpmobile/pull/129/commits/ae09b56302691d73028e4c2a45a11bf0bd8dc83e&#34;&gt;環境変数リセットする&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SMTPサーバ必須だったので、&lt;a href=&#34;https://mailtrap.io/&#34;&gt;mailtrap.io&lt;/a&gt;使うように&lt;a href=&#34;https://github.com/jpmobile/jpmobile/pull/129/commits/e011afc5f0086455a7818c3c45076faaf6c0c7bd&#34;&gt;変更&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;などが試行錯誤ポイントでしょうか。特にSMTPサーバはCircleCI上でなんとかしようとしたんですが、頑張ってできたとしてもなんか違う感があったので、Webサービスでなんとかしました。&lt;/p&gt;
+
+&lt;p&gt;あとは&lt;a href=&#34;https://twitter.com/onk&#34;&gt;onk&lt;/a&gt;さん謹製の&lt;a href=&#34;https://github.com/onk/onkcop&#34;&gt;onkcop&lt;/a&gt;をベースに&lt;a href=&#34;http://rubocop.readthedocs.io/en/latest/&#34;&gt;rubocop&lt;/a&gt;も適用しました。jpmobileが GitHub に来たのが2006年、その前は rubyforge で、開発開始から10年以上も経っているので、やはり古い記法とかが多い。CircleCI化するときにいっその事入れてしまうかと&lt;a href=&#34;https://github.com/jpmobile/jpmobile/pull/130&#34;&gt;導入&lt;/a&gt;してみました。&lt;/p&gt;
+
+&lt;p&gt;その他、READMEをmarkdown化してみたりなど、jpmobileも自動化、近代化できたかな？というところで、引き続きよろしくお願いします🙇&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cookpad TechConf 2017に参加してきた</title>
+      <link>http://stnard.jp/2017/01/23/cookpad-tech-conf-2017</link>
+      <pubDate>Mon, 23 Jan 2017 14:25:35 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/01/23/cookpad-tech-conf-2017</guid>
+      <description>&lt;p&gt;応募したら当選したので&lt;a href=&#34;https://techconf.cookpad.com/2017/&#34;&gt;Cookpad TechConf 2017&lt;/a&gt;に行ってきました。&lt;/p&gt;
+
+&lt;p&gt;いやー、一般参加者は気楽でいいですねー。みなさんの発表を聞きながら作業とかもできて、いろいろ捗りました。&lt;/p&gt;
+
+&lt;p&gt;それにしてもクックパッドってタレントが豊富だなと改めて感心しました。16年入社の新卒が3名も発表していたり、基盤的なところだけではなく、サービス開発やデザインの話があったりと、幅広いトークがあって非常に楽しめました。
+（という枠組みを一昨年から去年にかけて頑張って作ったかいがあったというものです :)）&lt;/p&gt;
+
+&lt;p&gt;また来年も開催してほしいので、アンケート出してない方はバシバシ出しておきましょう。&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;アンケートはこちら！ &lt;a href=&#34;https://t.co/TtZcxvuTFX&#34;&gt;https://t.co/TtZcxvuTFX&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/CookpadTechconf?src=hash&#34;&gt;#CookpadTechconf&lt;/a&gt;&lt;/p&gt;&amp;mdash; Cookpad Tech Life (@cookpad_tech) &lt;a href=&#34;https://twitter.com/cookpad_tech/status/822727788306104320&#34;&gt;January 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>待遇よりも重要なことはあるか - マネジメントの基礎理論を読んだ</title>
+      <link>http://stnard.jp/2017/01/20/basic-theory-of-management</link>
+      <pubDate>Fri, 20 Jan 2017 14:52:02 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/01/20/basic-theory-of-management</guid>
+      <description>&lt;p&gt;ずっと昔に買って読んでなかったマネジメントの基礎理論という本を読んだんですが、部下を成長させるにはどうするべきかなど、いわゆるマネジメントの方法論などが、マネジメント理論に基づいて解説されていて、いろいろ腹落ちして良い本でした。&lt;/p&gt;
+
+
+&lt;div class=&#34;amazon_tag&#34;&gt;
+    &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.co.jp/%E7%84%A1%E7%90%86%E3%83%BB%E7%84%A1%E6%84%8F%E5%91%B3%E3%81%8B%E3%82%89%E8%81%B7%E5%A0%B4%E3%82%92%E6%95%91%E3%81%86%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%90%86%E8%AB%96-18%E4%BA%BA%E3%81%AE%E5%B7%A8%E5%8C%A0%E3%81%AB%E5%AD%A6%E3%81%B6%E7%B5%84%E7%B9%94%E3%81%8C%E3%82%A4%E3%82%AD%E3%82%A4%E3%82%AD%E3%81%99%E3%82%8B%E4%B8%8A%E4%B8%8B%E9%96%A2%E4%BF%82%E3%81%AE%E3%81%A4%E3%81%8F%E3%82%8A%E6%96%B9-%E6%B5%B7%E8%80%81%E5%8E%9F%E5%97%A3%E7%94%9F/dp/4833421224%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4833421224&#34;&gt;
+        &lt;img src=&#34;https://images-fe.ssl-images-amazon.com/images/I/51hHXSdlLpL._SL160_.jpg&#34;&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;item_detail&#34;&gt;
+        &lt;a href=&#34;https://www.amazon.co.jp/%E7%84%A1%E7%90%86%E3%83%BB%E7%84%A1%E6%84%8F%E5%91%B3%E3%81%8B%E3%82%89%E8%81%B7%E5%A0%B4%E3%82%92%E6%95%91%E3%81%86%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%90%86%E8%AB%96-18%E4%BA%BA%E3%81%AE%E5%B7%A8%E5%8C%A0%E3%81%AB%E5%AD%A6%E3%81%B6%E7%B5%84%E7%B9%94%E3%81%8C%E3%82%A4%E3%82%AD%E3%82%A4%E3%82%AD%E3%81%99%E3%82%8B%E4%B8%8A%E4%B8%8B%E9%96%A2%E4%BF%82%E3%81%AE%E3%81%A4%E3%81%8F%E3%82%8A%E6%96%B9-%E6%B5%B7%E8%80%81%E5%8E%9F%E5%97%A3%E7%94%9F/dp/4833421224%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4833421224&#34;&gt;無理・無意味から職場を救うマネジメントの基礎理論 18人の巨匠に学ぶ組織がイキイキする上下関係のつくり方&lt;/a&gt;
+        &lt;p&gt;
+            著者: 海老原嗣生, 守島基博(解説)&lt;br /&gt;
+            出版日: 2015-03-31&lt;br /&gt;
+            出版社/メーカー: プレジデント社&lt;br /&gt;
+            カテゴリ: Book&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;例えばハーズバーグの動機づけ・衛生理論は、いままで自分が感じてきたことが理論としてまとまってました。特に、&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;衛生要因というのは、それがないと不満が高まるが、それがいくらたくさんあったとしても満足や納得にはつながらない要素です。&lt;/p&gt;
+
+&lt;p&gt;たとえば、給与が高い、残業が少ない、休日が多い、会社のネームバリューがある、快適なオフィスなどです。いずれも仕事の中身とは関係ありません。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;と言うのは、採用をする際にいろいろ考えさせられたことだったので、ここをしっかり分けて理論化されているのは納得感がありました。&lt;/p&gt;
+
+&lt;p&gt;もちろん衛生要因が不要というわけではないので、十分な待遇がなければいけませんが、ただ待遇が良いからと言って仕事はなんでもいいのかというとそうではない。高待遇に引っ張られて転職に失敗してた人の話はたまに聞きますが、やはり「動機づけ要因」があるかどうかを見極めることが一番重要だし、採用する側もこの点を用意できるかどうかが重要だなと、改めて感じました。&lt;/p&gt;
+
+&lt;p&gt;また、&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;モチベーションサイクルをつくることで、最終的には会社が儲かるという当たり前のことをマネジャーに理解徹底させていない&lt;/p&gt;
+
+&lt;p&gt;仕組みはあってもマネジメントの現場でそれをどうやって実践するかが教えられていない&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;など、マネージャーの育成についても書かれていて、「あのとき言いたかったことはこれだ！」という気持ちになったりなど、もっと早く読んでおけばよかったと後悔しています。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ホピーパソコン興亡史を読んだ</title>
+      <link>http://stnard.jp/2017/01/12/hobby-pc-history</link>
+      <pubDate>Thu, 12 Jan 2017 01:20:02 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/01/12/hobby-pc-history</guid>
+      <description>&lt;p&gt;頂いた本を少しずつ読み進めてますが、とは言えなかなか消化完了は遠い未来な予感がします。&lt;/p&gt;
+
+
+&lt;div class=&#34;amazon_tag&#34;&gt;
+    &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.co.jp/%E3%83%9B%E3%83%93%E3%83%BC%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E8%88%88%E4%BA%A1%E5%8F%B2-%E5%9B%BD%E7%94%A3%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%82%B7%E3%82%A7%E3%82%A2%E4%BA%89%E5%A5%AA30%E5%B9%B4%E3%81%AE%E6%AD%B4%E5%8F%B2-%E5%89%8D%E7%94%B0%E5%B0%8B%E4%B9%8B/dp/4775523287%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4775523287&#34;&gt;
+        &lt;img src=&#34;https://images-fe.ssl-images-amazon.com/images/I/51DEyqQmOZL._SL160_.jpg&#34;&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;item_detail&#34;&gt;
+        &lt;a href=&#34;https://www.amazon.co.jp/%E3%83%9B%E3%83%93%E3%83%BC%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E8%88%88%E4%BA%A1%E5%8F%B2-%E5%9B%BD%E7%94%A3%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%82%B7%E3%82%A7%E3%82%A2%E4%BA%89%E5%A5%AA30%E5%B9%B4%E3%81%AE%E6%AD%B4%E5%8F%B2-%E5%89%8D%E7%94%B0%E5%B0%8B%E4%B9%8B/dp/4775523287%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4775523287&#34;&gt;ホビーパソコン興亡史 国産パソコンシェア争奪30年の歴史&lt;/a&gt;
+        &lt;p&gt;
+            著者: 前田尋之&lt;br /&gt;
+            出版日: 2014-09-26&lt;br /&gt;
+            出版社/メーカー: オークラ出版&lt;br /&gt;
+            カテゴリ: Book&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;というわけでホビーパソコン興亡史を読みましたが、いやー懐かしいですね。僕が初めてパソコンに出会ったのは、近所の西友にあったパソコン売り場。そこで見たYsのデモは衝撃的でした。ただパソコンとか買えるほど裕福ではなかったので、本屋でBASICの本を買って方眼紙に書き込み、店のデモ機でプログラム入力してたのを思い出します。店員さんとも仲良くなって、むしろ面白がられてましたね。&lt;/p&gt;
+
+&lt;p&gt;そんな中、初めて買ったパソコン雑誌が&lt;a href=&#34;https://ja.wikipedia.org/wiki/Oh!X&#34;&gt;Oh!X&lt;/a&gt;で、思えばここから王道から外れていくことになるんですが、最初はMSX→MSX2+と割と平凡に進みます。その後やっとX68000 EXPERT II→X68030と流れて、いまがある感じですかね。&lt;/p&gt;
+
+&lt;p&gt;というところで思い立って&lt;a href=&#34;http://retropc.net/x68000/&#34;&gt;こういうところ&lt;/a&gt;を見てノスタルジックな気持ちになってきました。&lt;/p&gt;
+
+&lt;p&gt;惜しむらくは&lt;a href=&#34;https://ja.wikipedia.org/wiki/EPSON_PC%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA&#34;&gt;EPSONの98互換機&lt;/a&gt;の話がなかったことですかね。このあたりは版権とかいろいろ問題ありそうだけど、できれば書いてほしかったところ。&lt;/p&gt;
+
+&lt;p&gt;とは言え、昔パソコン少年だったおっさんであればものすごくノスタルジック気持ちになれるので、是非読んでみてください。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ハッカーと画家を読んで</title>
+      <link>http://stnard.jp/2017/01/04/hackers-and-painters</link>
+      <pubDate>Wed, 04 Jan 2017 19:00:00 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2017/01/04/hackers-and-painters</guid>
+      <description>&lt;p&gt;読みたいと思いつつ手が出なかったのがこれ。実はなんか周りのエモい人はみんな読んでいるので、逆に敬遠していたやつです。&lt;/p&gt;
+
+
+&lt;div class=&#34;amazon_tag&#34;&gt;
+    &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.co.jp/%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A8%E7%94%BB%E5%AE%B6-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E6%99%82%E4%BB%A3%E3%81%AE%E5%89%B5%E9%80%A0%E8%80%85%E3%81%9F%E3%81%A1-%E3%83%9D%E3%83%BC%E3%83%AB-%E3%82%B0%E3%83%AC%E3%82%A2%E3%83%A0/dp/4274065979%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4274065979&#34;&gt;
+        &lt;img src=&#34;https://images-fe.ssl-images-amazon.com/images/I/511SV9NXW2L._SL160_.jpg&#34;&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;item_detail&#34;&gt;
+        &lt;a href=&#34;https://www.amazon.co.jp/%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A8%E7%94%BB%E5%AE%B6-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E6%99%82%E4%BB%A3%E3%81%AE%E5%89%B5%E9%80%A0%E8%80%85%E3%81%9F%E3%81%A1-%E3%83%9D%E3%83%BC%E3%83%AB-%E3%82%B0%E3%83%AC%E3%82%A2%E3%83%A0/dp/4274065979%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4274065979&#34;&gt;ハッカーと画家 コンピュータ時代の創造者たち&lt;/a&gt;
+        &lt;p&gt;
+            著者: ポール グレアム&lt;br /&gt;
+            出版日: 2005-01&lt;br /&gt;
+            出版社/メーカー: オーム社&lt;br /&gt;
+            カテゴリ: Book&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;誕生日とかのあれでいただいたので実際に読んでみると、内容はやはりエモい人が好きそうなネタが満載で、非常に楽しく読めました。やっぱり全てはLispですよね。&lt;/p&gt;
+
+&lt;p&gt;周りと同じじゃダメで、その上を行くにはどうすればいいのか。エンジニアとしてさらに成長して飛躍するのにはどうすればいいのか。そもそもエンジニアと言う職種がいままでと同じままでいられるのだろうかなど、いろんなことを考えながら読み進められました。&lt;/p&gt;
+
+&lt;p&gt;いまはエンジニアと言う職種がある一定層しかなれなかった時代から変わって、むしろ一般的な職業の一つになりつつある気がしています。まあ、どこまでをエンジニアだと言うかという問題はあるかもしれませんが、それでもエンジニアの需要は今後も増え続けるだろうし、そうすると供給が止まることもないでしょう。&lt;/p&gt;
+
+&lt;p&gt;そういう時代でも、じゃあ全員に「ハッカーであれ」みたいなことを言って良いのかとは思わず、かと言ってそういう意識を持っていないと将来辛くなるので持ってて欲しいとも思う。特にこれからの時代、職業の一つとしてエンジニア職が選択されるようになったとき、どうすればみんなが悲しい思いをしなくてもすむんだろうかなどと考えることが多くなってきました。かと言って答えがあるわけではないので、これからいろいろ探りつつ仕事ができればなと思っているところです。&lt;/p&gt;
+
+&lt;p&gt;他にもいろいろ示唆に富んでいる内容だったんですが、若干時代を感じることがありました。某所でも言われていたけど、まあ時代の流れが早すぎりので致し方ないのかなと言う気がしてます。&lt;/p&gt;
+
+&lt;p&gt;というわけで、若い人に読めとは言いませんが、一度は読んでみてもいい本ではないでしょうか（ちょっと雑なまとめ）。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2016の振り返り</title>
+      <link>http://stnard.jp/2016/12/16/look-back-2016</link>
+      <pubDate>Sat, 31 Dec 2016 16:00:00 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2016/12/16/look-back-2016</guid>
+      <description>
+
+&lt;p&gt;いままであまり振り返りは書いてこなかったんですが、さすがに今年はいろいろあったので軽く書いてみようと思う。&lt;/p&gt;
+
+&lt;h2 id=&#34;仕事の役割が変わった&#34;&gt;仕事の役割が変わった&lt;/h2&gt;
+
+&lt;p&gt;これは2016年というわけではないけど、仕事の役割が大きく変わり続けた年でした。もともと前職にはサービス開発をやりたくて入社したんだけど、気がついたら人事部にいたという自分でもどうなってしまったのかという感じがする。&lt;/p&gt;
+
+&lt;p&gt;しかし人事部での仕事はいろいろ新鮮で、特に採用や評価というのか自分の持っているものを総動員しないとできない仕事だったので、いろいろ大変ではあったが非常にやりがいがありました。&lt;/p&gt;
+
+&lt;h2 id=&#34;techconf1回目ができた&#34;&gt;TechConf1回目ができた&lt;/h2&gt;
+
+&lt;p&gt;やろうやろうという話だけは出ているが実行できなかったのを開催できたのは達成感がありました。特に某Kaigiの用に毎年開催できるようになるべく省力運用できたのは、その某所での経験が生きましたね。&lt;/p&gt;
+
+&lt;p&gt;来年は2回目が開催されるので、&lt;/p&gt;
+
+&lt;h2 id=&#34;退職した&#34;&gt;退職した&lt;/h2&gt;
+
+&lt;p&gt;そんな最中、ほんとにいろいろあったので前職を退職することにしました。退職しようと決意したので4月頭ぐらいだったので、辞めるまでに半年ぐらいかけたことになります。まあ役割とか影響範囲を考えてのことでしたが、その間にもいろいろできたので、結果的にはよかったのかなという感じです。&lt;/p&gt;
+
+&lt;h2 id=&#34;起業した&#34;&gt;起業した&lt;/h2&gt;
+
+&lt;p&gt;特に「このサービスをやるぜ！」というわけではないですが、&lt;a href=&#34;http://stnard.jp/2016/10/11/build-llc/&#34;&gt;会社作りました&lt;/a&gt;。退職する話をするとよく「受け皿としての会社を作っといたほうが良い」的なことを言われ続けた結果、作らないとダメなような気がしたんですよ。と言うのはさておき、会社を作る経験は社会を知る上でもいい勉強になっています。面倒だけど。&lt;/p&gt;
+
+&lt;h2 id=&#34;業務委託をはじめた&#34;&gt;業務委託をはじめた&lt;/h2&gt;
+
+&lt;p&gt;退職して起業したとは言え、やることは業務委託エンジニアなので、まあ要するにフリーランスですね。最初はコード書く仕事を某所でさせてもらっていたんですが、やっぱりコード書くのは楽しいですね。それ以外は採用のお手伝いや組織全体のことなど、幅広くお手伝いさせていただいています。&lt;/p&gt;
+
+&lt;p&gt;ただ時間を切り売りするようになって、スケジューリングの重要性を身にしみています。来年はこのあたりをもっとしっかりやって、ゆとりある感じで仕事していきたいと思っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;来年に向けて&#34;&gt;来年に向けて&lt;/h2&gt;
+
+&lt;p&gt;ひとまずは仕事のペースをしっかり作っていきたいですね。いまは若干流され気味なので。それ以外はなんでも良いので一つ大きなことに挑戦してみたいです。とは言え何とは決まってないので、それも考えながらですかね。&lt;/p&gt;
+
+&lt;p&gt;というわけで、いろいろありましたが今年はありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>感情労働シンドローム</title>
+      <link>http://stnard.jp/2016/12/16/emotional-labor-syndrome</link>
+      <pubDate>Fri, 16 Dec 2016 23:08:52 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2016/12/16/emotional-labor-syndrome</guid>
+      <description>&lt;p&gt;頂いた本を読み進められていないことに申し訳なさを改めて思ったので、聖典ためたりサブキャラ育てるのそこそこにしてもうちょい頑張ってみようと思った年末。みなさんいかがお過ごしですか。&lt;/p&gt;
+
+&lt;p&gt;そしてそんななか、若者から最近読んで良かったと聞いた本を先に読んでしまいました。&lt;/p&gt;
+
+
+&lt;div class=&#34;amazon_tag&#34;&gt;
+    &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.co.jp/%E6%84%9F%E6%83%85%E5%8A%B4%E5%83%8D%E3%82%B7%E3%83%B3%E3%83%89%E3%83%AD%E3%83%BC%E3%83%A0-PHP%E6%96%B0%E6%9B%B8-%E5%B2%B8%E6%9C%AC-%E8%A3%95%E7%B4%80%E5%AD%90/dp/4569808166%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4569808166&#34;&gt;
+        &lt;img src=&#34;https://images-fe.ssl-images-amazon.com/images/I/41d3A9kEx2L._SL160_.jpg&#34;&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;item_detail&#34;&gt;
+        &lt;a href=&#34;https://www.amazon.co.jp/%E6%84%9F%E6%83%85%E5%8A%B4%E5%83%8D%E3%82%B7%E3%83%B3%E3%83%89%E3%83%AD%E3%83%BC%E3%83%A0-PHP%E6%96%B0%E6%9B%B8-%E5%B2%B8%E6%9C%AC-%E8%A3%95%E7%B4%80%E5%AD%90/dp/4569808166%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4569808166&#34;&gt;感情労働シンドローム (PHP新書)&lt;/a&gt;
+        &lt;p&gt;
+            著者: 岸本 裕紀子&lt;br /&gt;
+            出版日: 2012-10-16&lt;br /&gt;
+            出版社/メーカー: PHP研究所&lt;br /&gt;
+            カテゴリ: Book&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;今の世の中、特にいわゆるITとかWeb系とか言われている業界では、定年までいるなんていうのは幻想でしかない状況。そんな状況で「下積みも大事」とか言われても、それがどう活かされるのかがわからないから「もっと実践的なことを」と主張する。「10年働いて一人前」と言われても、「10年もいる予定はない」など、ひと昔前の状況とはかなり変わってしまっています。&lt;/p&gt;
+
+&lt;p&gt;またその若手を部下に持つ上司も、対応方法が変わったことについていけなかったりなど、社会構造の変化が早すぎて追いついていない人が多い。&lt;/p&gt;
+
+&lt;p&gt;じゃあどうすればいいかというと特に答えはないんですが、これからの社会を考える上ではこの「感情労働」という観点を持って挑まないと、若い人も年配の人もどちらも辛い目に合うのではと感じました。これらを「感情労働」という観点でうまくまとめてあって、いろいろ理解が進んだ書籍でした。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>合同会社を作ってみました</title>
+      <link>http://stnard.jp/2016/10/11/build-llc/</link>
+      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2016/10/11/build-llc/</guid>
+      <description>&lt;p&gt;10月からフリーランスで仕事をしているわけですが、いろいろあって合同会社を設立することにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://leisurely-works.jp&#34;&gt;レジャリーワークス合同会社&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;理由としては、まあ前から会社作っといた方がいいよ的なお話を聞くことが多かったというのもあります。また個人事業主としてやっていくとしても経理的なことはいろいろとやらないといけないですし、いまならクラウド会計ソフトとかあるから会社としてやっていくのでもいいのかもしれないと思ったのが一つ。あと一度は会社を設立する経験をしてみようと思ってはいたので、いろいろあった今がいい機会かも？と思ったのがもう一つ。あと設立費用もそんなにかからないことがわかったのも大きな理由でもあります。&lt;/p&gt;
+
+&lt;p&gt;そんなわけで、「レジャリーワークス」という名前の合同会社を設立しました。名前は、悠々と仕事ができる世に中になるといいなと思い、ゆったりとした（leisurely）仕事（work）を語源としています。worksと複数形なのはゴロが良いからです :)&lt;/p&gt;
+
+&lt;p&gt;とは言え作ったばっかりでまだまだこれからやること多いのですが、あまり焦ることなく少しづつ整えていきたいと思っていますので、暖かく見守っていただければ幸いです。まずは会社HPの整備からやらないとな&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;と言う訳で、これからもひとつよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>クックパッドを退職しました</title>
+      <link>http://stnard.jp/2016/10/01/resigned-from-cookpad/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2016/10/01/resigned-from-cookpad/</guid>
+      <description>&lt;p&gt;2016年9月30日付でクックパッド株式会社を退職しました。2013年3月入社なので、かれこれ3年7ヶ月在籍していたことになります。最初の2年ぐらいはサービス開発エンジニアとして普通にコード書く仕事してたはずなんですが、気がついたらマネージメントや採用中心の仕事をしていました。まあいい仲間がいたからか、非常に充実した仕事ができていたと思っています。&lt;/p&gt;
+
+&lt;p&gt;みなさん気になる退職理由とかは、飲み会とかで個別に聞いていただければお答えしますが、たぶん聞きたいような答えじゃない気もするので、あまりwktkしないようにしていただけるとありがたいです。&lt;/p&gt;
+
+&lt;p&gt;と言う訳で例のやつおいておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/registry/wishlist/2U0WK80HNEJWN&#34;&gt;https://www.amazon.co.jp/registry/wishlist/2U0WK80HNEJWN&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;来月からは心機一転、フリーランスエンジニア？としてお仕事をする予定でいます。経験としてはエンジニアの中途採用や新卒採用のビルドアップとか、エンジニア評価など、組織に関することが一番役に立てそうな気もしてますが、コード書きたい気持ちも強いのでそっちもやりたいと思っているところです。仕事頼みたいという方は、ひと声かけていただけると。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Sculpt Ergonomic Keyboardを買ってみた</title>
+      <link>http://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/</link>
+      <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/</guid>
+      <description>&lt;p&gt;ちょっと腱鞘炎ぽい症状が出てきたのでエルゴノミクスキーボードを物色してたんですが、大体3万以上と割と高い。分割式だとちゃんとしたタッチタイピングできていないと思うので、最初辛そう。費用対効果考えると躊躇してしたんですが、Microsoftが出してる&lt;/p&gt;
+
+
+&lt;div class=&#34;amazon_tag&#34;&gt;
+    &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.co.jp/Sculpt-Ergnmc-KB-Bsnss-Blk/dp/B00CYX26BC%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00CYX26BC&#34;&gt;
+        &lt;img src=&#34;http://ecx.images-amazon.com/images/I/31RW0P%2ByDGL._SL160_.jpg&#34;&gt;
+    &lt;/a&gt;
+    &lt;div class=&#34;item_detail&#34;&gt;
+        &lt;a href=&#34;https://www.amazon.co.jp/Sculpt-Ergnmc-KB-Bsnss-Blk/dp/B00CYX26BC%3FSubscriptionId%3DAKIAIPHL2GFHZ7RYPNDA%26tag%3Dstnardsdiary-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00CYX26BC&#34;&gt;Sculpt Ergnmc KB for Bsnss Blk&lt;/a&gt;
+        &lt;p&gt;
+            著者: &lt;br /&gt;
+            出版日: &lt;br /&gt;
+            出版社/メーカー: Microsoft&lt;br /&gt;
+            カテゴリ: CE&lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;というのを買ってみました。実際にヨドバシとかで触ってみてキーの感触は問題なかったんですが、意外なほどちゃんとタッチタイプできていなかったようで、いろいろ辛いです。特に&lt;code&gt;C-b&lt;/code&gt;の&lt;code&gt;b&lt;/code&gt;を右手で押しててようで、日常的に不都合が起こっています。&lt;/p&gt;
+
+&lt;p&gt;まあこれに慣れたらErgodoxとかに挑戦してみたいので、訓練だと思って頑張ってみようと思ってます。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

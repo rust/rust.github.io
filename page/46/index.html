@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/12/notitle/">いま赤字プロジェクトが多いらしい</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  &ldquo;プロマネ力が高いほど営業利益率が低い？――SECが調査結果を発表：ITpro
+どうやら赤字プロジェクトを抱えてるところが多いらしいですね．こういう場合って，その該当企業だけではなくて，関連企業のプロマネ力とかが重要になってくるから，一概に営業利益率と結びつかないんだろうかね．「いま」と言っているから，今後に期待しましょう．．．．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/11/Rails-Ruby-GetText-Package-ActionMailer/">Ruby-GetText-PackageとActionMailerで日本語メール</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  environment.rbかapplication.rbに
+require 'gettext/rails'  を追加すればメール本文はiso-2022-jpになるんだけど，表題の変換に失敗している模様．設定ミスかもしれないけど，とりあえず，
+@subject = NKF.nkf('iso-2022-jp','タイトルですよ？')  などとしておくとうまくいく．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/11/Rails-flash/">flashがすぐに消えない場合</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  flashは表示後にすぐに消えるようなっているsession変数ですが，2回リロードで書き換わるそうなので，以下のようにすると楽チンらしい．
+&lt;%=h flash[:notice] -%&gt;&lt;% flash[:notice] = nil -%&gt;  flash.now/flash.keepなど生存期間別にあるそうなので，それを気にせずに使うにはこっちがいいのかもしれん．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/11/Rails-TIPS-h-html_escape-model/">h(html_escape)はmodelでは使えないので</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  h()はhtml_escape()のaliasで，html_escape()はvendor/rails/actionpack/lib/action_view/base.rbにあると言うことなので，modelで使う方法を模索して頓挫．仕方ないので，methodをmodelのprivate methodとして実装しました．こんな感じ．
+# for sanitize def sanitize( html ) html_escapes = { '&amp;' =&gt; '&amp;amp;', '&quot;' =&gt; '&amp;quot;', '&gt;' =&gt; '&amp;gt;', '&lt;' =&gt; '&amp;lt;' } html.to_s.gsub(/[&amp;\&quot;&gt;&lt;]/) { |special| html_escapes[special] } end  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/07/TIPS-Rails-jpmobile-rails-1-2-4-transit_sid/">jpmobile &amp; rails 1.2.4以降だとtransit_sidがエラーになる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  jpmobileの機能である，session_idをurlに負荷する方法がデフォルトで禁止されるようになったそうな．なので，該当controllerに
+session :cookie_only =&gt; false  を追加する必要がある．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/07/TIPS-JavaScript-setInterval-interval-0-IE/">setIntervalでinterval=0にするとIEで止まる</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  これってそういうもんなんだろうか．Firefox/Opera/Safari on Windowsでは問題なかったんでハマりました．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/07/notitle/">クリドラは果たして終わるのか</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  終わるのか．．．．
+ そんな奴ァいねえ!! 13 (ワイドKCアフタヌーン)  著者: 駒井 悠
+出版日: 2007-12-21
+出版社/メーカー: 講談社
+カテゴリ: Book
+    ああっ女神さまっ(36) (アフタヌーンKC)  著者: 藤島 康介
+出版日: 2007-12-21
+出版社/メーカー: 講談社
+カテゴリ: Book
+    海皇紀(34) (講談社コミックス月刊マガジン)  著者: 川原 正敏
+出版日: 2007-12-17
+出版社/メーカー: 講談社
+カテゴリ: Book
+    クリスタル・ドラゴン 25 (ボニータコミックス)  著者: あしべ ゆうほ
+出版日: 2007-12-14
+出版社/メーカー: 秋田書店
+カテゴリ: Book
+    少年ガンガン 2008年 01月号 [雑誌]  著者: 出版日: 2007-12-12
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2007/12/07/notitle/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/06/TIPS-Perl-CPAN-Weak-references-are-not-implemented-in-the-version-of-perl-at/">Weak references are not implemented in the version of perl at...の対処方法</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Scalar::Utilのバージョンによって出るっぽいエラーらしいので，以下のように再インストール
+sudo rm -f `perldoc -l Scalar::Util` sudo cpan cpan&gt;install Scalar::Util  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/05/Rails-Amazon-ECS/">Amazon-ECSの検索方法など</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  response = Amazon::Ecs.item_search( '竹本泉', :response_group =&gt; 'ItemAttributes,Images', :sort =&gt; '-releasedate', :search_index =&gt; 'Books', :item_page =&gt; 1 )  :response_group:帰ってくるデータの大きさや種別など :sort:ソート指定．-(マイナス)で降順 :search_index:本やDVDなどの種別 :item_page:ページ指定
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2007/12/03/Ruby-Ruby-forumg-PHP/">Ruby-forumgがPHPで動いている件について</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2007/12/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://www.ruby-forum.jp/
+やっぱ動くサーバが少ないんだろうか．．．．と，ちょっと考えてしまうURLでした．
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/45/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;46 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/47/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

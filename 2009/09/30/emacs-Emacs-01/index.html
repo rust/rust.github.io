@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>五反田Emacs#01に行ってきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>五反田Emacs#01に行ってきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<ul>
+<li>向かってると前方を歩く @cesare さんを発見．連れて行ってもらうことに．</li>
+<li>emacs 使いがたくさんいますね！</li>
+<li>19:30 スタートで会場 19:00 という，勉強会じゃない感じのいいスケジュール</li>
+<li>見たことあるようなー，ないようなー，人がたくさん</li>
+<li>「ピザを食うにもかかわらず，酒は禁止とは，まるで肉のないすき焼きじゃないか」とか思った</li>
+<li>「今日やる内容はあまり知りません」と言う発言．なんかゆるふわ．</li>
+<li>「敵が一人紛れ込んでいる！」</li>
+</ul>
+
+<p>##まとめ</p>
+
+<ul>
+<li>Emacs 使いに悪人なし</li>
+<li>anything は富豪的</li>
+</ul>
+
+<p>##Emacsを活用したプログラマ採用</p>
+
+<ul>
+<li>アリエルネットワーク社員番号２番の井上さん</li>
+<li>SD の Emacs のトラノマキ監修＆時々執筆</li>
+<li>ストールマンに３回会ったことがある
+
+<ul>
+<li>FSF に行って Tシャツ買ったら Free Software Award 1st に招待してもらったときに，会ったのが初めて</li>
+</ul></li>
+<li>パーフェクト Java を執筆
+
+<ul>
+<li>プレゼント条件はストールマンに会ったことある人</li>
+<li>３回の人なし</li>
+<li>２回のは吉岡さんと上野さん</li>
+<li>ストールマンに会える機会は逃さないように！</li>
+</ul></li>
+</ul>
+
+<p>###本題</p>
+
+<ul>
+<li>Emacs使い(軽い感じで)
+
+<ul>
+<li>道具へのこだわりがある</li>
+<li>難しいものが好き</li>
+<li>バッドノウハウと「奥が深い症候群」</li>
+<li>優れたプログラマはバッドノウハウに惹かれることが多い</li>
+<li>機能美がわかる</li>
+<li>優れたプログラマなら self-insert-command のセンス・オブ・ワンダーに共感できるはず</li>
+<li>拡張性の価値がわかる</li>
+<li>開発の多くは抽象レイヤの作成</li>
+<li>王と道化</li>
+</ul></li>
+<li>まとめ
+
+<ul>
+<li>Emacs 使いに悪人なし</li>
+</ul></li>
+</ul>
+
+<p>##anything のソースを書けるようになってみる + anything.el を読んでみる．</p>
+
+<ul>
+<li>anything 便利だけど書いたことある人少ない</li>
+<li>対象は elisp がなんとなく読める人</li>
+</ul>
+
+<h3 id="anything-sources">anything-sources</h3>
+
+<ul>
+<li>速すぎて何も追えないぜー</li>
+<li>anything-update
+
+<ul>
+<li>anything-sources に関する更新かな</li>
+</ul></li>
+<li>ソース見ながらやってみる
+
+<ul>
+<li>name, action, candidates だけがあればだいたい大丈夫</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-cl">(setq anything-c-souce-sample
+      '((name . &quot;hoge&quot;)
+        (candidates . (&quot;fuga&quot; &quot;mage&quot;))
+        (action . ((&quot;Insert&quot; . insert)
+                   (&quot;Search&quot; . (lambda (x) (search-forward x nil t)))))))
+
+(anything '(anything-c-souce-sample))
+</code></pre>
+
+<pre><code class="language-cl">(setq anything-c-souce-sample2
+      '((name .&quot;buffers&quot;)
+        (candidates . (lambda () (mapcar 'buffer-name (buffer-list))))
+        (action . ((&quot;Select&quot; . switch-to-buffer)
+                   (&quot;Kill&quot; . kill-buffer)))
+     ))
+(anything '(anything-c-souce-sample2))
+</code></pre>
+
+<pre><code>- name に 名前
+- candidates に候補のリスト
+- action に選択したときに実行する処理名(表示名)と処理
+- multiline をつけると candidates に改行があるとまとめて選択できるようになっている
+- init で初期化できたり
+</code></pre>
+
+<ul>
+<li><p>candidates-in-buffer を使うとバッファの中身を候補にしてくれる</p>
+
+<ul>
+<li>引数は
+
+<ul>
+<li>バッファ</li>
+<li>&lsquo;global</li>
+<li>ワークのバッファを作ってそれを登録 with-current-buffer とともに</li>
+<li>それ以外のシンボル</li>
+<li>ソースだけじゃなくて，起動したバッファとひもづける</li>
+</ul></li>
+<li>anything-current-buffer
+
+<ul>
+<li>anything を実行したバッファ</li>
+</ul></li>
+</ul></li>
+
+<li><p>anything-complete</p>
+
+<ul>
+<li>auto-complite と共存？</li>
+</ul></li>
+
+<li><p>プラグインを書く</p>
+
+<ul>
+<li>anything-compile-source-functions に追加</li>
+<li>anything-match-plugin は match にとか</li>
+</ul></li>
+
+<li><p>anything-c-sources</p>
+
+<ul>
+<li>dummy</li>
+</ul></li>
+</ul>
+
+<p>###補足とか</p>
+
+<ul>
+<li>anything で郵便番号から住所検索を作ったことがある人がいるらしい</li>
+<li>backquote(`) 記法
+
+<ul>
+<li>クォートの中に ,tmp などがあればそれが展開される</li>
+</ul></li>
+<li>タブキー重要だったことに，このとき気がついた</li>
+<li>重いときは外部プロセスに出す</li>
+<li>discbinds-anything</li>
+</ul>
+
+<p>###ピザの時間</p>
+
+<ul>
+<li>辛いの食っちまって大変でした．</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/09/30/emacs-Emacs-01/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/09/27/bpstudy-mysql-bpstudy-25/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/09/27/bpstudy-mysql-bpstudy-25/">bpstudy#25に行ってきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/10/01/debian-tokyocabinet-TokyoCabinet-TokyoTyrant-Debian-lenny/">TokyoCabinet/TokyoTyrant を Debian (lenny) へインストール</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/10/01/debian-tokyocabinet-TokyoCabinet-TokyoTyrant-Debian-lenny/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

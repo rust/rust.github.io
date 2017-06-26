@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/24/linix-X61-debian-Compiz-Fusion/">Compiz Fusionを入れてみる．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  半透明Terminalを使いたかったので入れてみた．
+ リポジトリの設定  # vim /etc/apt/source.list  deb http://download.tuxfamily.org/shames/debian-sid/desktopfx/unstable/ ./ deb http://download.tuxfamily.org/myberyl/shame/debian-sid/beryl-svn/relatively-stable/ ./   パッケージのインストール  # apt-get update # apt-get install compiz-fusion-all  設定は後日に．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/23/lisp-http-labs-gree-jp-Top-Study-20080422-Report-html-title-13/">第13回オープンソーステクノロジー勉強会に参加してきた．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  お題はLisp．LispといえばEmacs Lispしか知らず，「うはｗ括弧ばっかりｗｗ」的な感想しかなかったんですが，最近はSchemeやGauche(ゴーシュと読む)の登場で気にはなってました．
+と言うわけでログ．
+##セルの海 マクロの空
+ Lispとは？ セルがなぜ2つのポインターなのか？ Lispのマクロはどんな風に使うのか？ データと関数の区別がない？  ==== ###Lispとは？
+ 求人がない？普通の人にはあまり理解されないのだろうか． Lispは方言が多い  Fortranの次に古い．これは意外だ．そう言えば昔からEmacs Lispはあったよな．   :Common Lisp:提案されたものはすべて取り入れるので，仕様がかなりふくらんでいる？ :Scheme:仕様が50ページのコンパクト．後で調べよう． :Emacs Lisp:これはEmacs使いなので知ってるが，書いたことはない．
+ 今日はSchemeで＆参考文献  :The Little Schemer:再帰がわかるようになる本らしい．読まねば． :プログラミングGauche:これと上のでSchemeは完璧とのこと．
+ Schemeを見てみる  括弧の羅列に見える 読み方 括弧は見ない．インデントだけ見る 括弧が見えなくなると一人前？これは盲点というか．  Lispの基礎  オブジェクト指向型言語 すべてのオブジェクトはまず最初に評価される &lsquo;counter は (quote counter)の略 シンボルをシンボルとして評価する リスト1 &rsquo;(1 2 3) -&gt; (1 2 3) クオートがついていないと関数 (+ 1 2 3) -&gt; 6 + が関数，1, 2, 3が引数となる x = 3なら   (+ (* x x) x 1) (+ (* 3 3) x 1) (+ 9 3 1) 13 #=&gt; x^2 + x + 1   (lambda &hellip;.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/04/23/lisp-http-labs-gree-jp-Top-Study-20080422-Report-html-title-13/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/21/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29-2/">Rails勉強会＠東京第29回に参加してきた#2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  結構長くなるんで，ログの続きを分割．
+##rake taskを見てみる ###ひとまず流す
+ edge railsで見てみることに．  とりあえずdiffをとっておく．   % rake -T &gt; ../rake_tasks_2-0-2 % rake rails:freeze:edge % rake -T &gt; ../rake_tasks_edge % diff ../rake_tasks_2-0-2 ../rake_taskes_edge  1c1 &lt; (in /home/rust/program/ruby/gitexample3) --- &gt; (in /home/rust/program/ruby/gitexample) 11a12 &gt; rake db:migrate:down # Runs the &quot;down&quot; for a given migratio... 13a15 &gt; rake db:migrate:up # Runs the &quot;up&quot; for a given migration ... 33a36,39 &gt; rake gems # List the gems that this rails applic.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/04/21/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/20/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29/">Rails勉強会＠東京第29回に参加してきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  参加してきました．とりあえず書いてあったログと感想を．
+##セッション一覧 ###前半
+ Scaffold++ ログローテートと運用関係について git + Facebook  ここに参加   ###後半
+ Passenger(mod_rails) rake taskを見る  ここに参加   ###その他
+ RubyKaigi会議  ==== ##gitしてみよう ###導入
+ emobileの共有で時間かかる．そして共有できず．某ドワンゴの人の登場が望まれた？ gitをsourceからインストール  私はdebian sidで，1.5.5が入ってたので，特にインストールせず．  特徴について  Rev#がない．Working Copを編集するか，Branchを切って編集する．まあ普通か．   ###実践#1
+ 実際にやってみた．(前でやってるのを同じようにやってみた．)  ひとまずRails Appsを作って，リポジトリを作ってみる．   % cd ~/program/git/ % rails gitexsample % cd gitexsample % git init % git add % git status  # On branch master # # Initial commit # # Changes to be committed: # (use &quot;git rm --cached &lt;file&gt;.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/04/20/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/12/C-6/">ロベール本学習記録#6</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  やっと5章終わり．動的確保とか，改めてなるほどと思うところがあるな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/10/rails-ruby-BackgrounDRb-Logger/">BackgrounDRbでLoggerを使うときの注意点の覚書</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Workerの方でLogger.infoなどとログを出力してると，どうもファイルが開きっぱなしになるようだ．なもんで，Workerでファイルの読み書きなどしていると，[Too many open files]なるエラーが出てしまう．
+対処としては，
+logger = Logger.new(RAILS_ROOT + &quot;/log/hoge.log&quot;) logger.info &quot;foobar&quot; logger.close  として1回ずつcloseすることにした．これで，
+# ls /proc/{PID}/fd/  としてもそれほど開いているファイルが増えなくなった．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/09/notitle/">いつもの．でも前のが消化できてないな．．．．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+    よみきりものの… やわらかくて グ (BEAM COMIX)  著者: 竹本 泉
+出版日: 2008-04-25
+出版社/メーカー: エンターブレイン
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/06/C-5/">ロベール本学習記録#5</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  かなりペース遅いですが，4章終わり．このあたりはまだ復習レベルかな．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/06/notitle/">終わりはこないジャンプの法則がここに？！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ツバサ(23) (講談社コミックス)  著者: CLAMP
+出版日: 2008-03-17
+出版社/メーカー: 講談社
+カテゴリ: Book
+    マリア様がみてる―マーガレットにリボン (コバルト文庫)  著者: 今野 緒雪
+出版日: 2008-04-01
+出版社/メーカー: 集英社
+カテゴリ: Book
+  そろそろ終わりだと思うのですが．どうでしょうか．．．．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/04/04/linux-daemontools-Signal/">daemontoolsでSignalをプロセスに送り込むには</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  /service/program/runの記述方法ではまってましたorz．exec付けないとプロセス見えないのね．．．．と言うわけで，ログ．
+#!/bin/sh exec /usr/bin/ruby /home/hoge/program/ruby/foo.rb  
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/35/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;36 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/37/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

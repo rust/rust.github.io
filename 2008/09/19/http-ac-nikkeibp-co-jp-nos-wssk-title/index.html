@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>安定稼働を導くＷｅｂシステム構築ノウハウに参加してきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>安定稼働を導くＷｅｂシステム構築ノウハウに参加してきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/09/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>スーツ姿が大多数を占める，普通の「企業向けセミナー」な感じでしょうか．一人だけ黄色いTシャツだったので，見た目には目立ったかな(ぉ．</p>
+
+<p>後半はNTTデータの宣伝のような雰囲気になってきたので退散．</p>
+
+<p>##メモと感想</p>
+
+<ul>
+<li>サーバ統合でサーバ利用率は上昇するが，利用状況と頻度・アクセス時間帯などの統合的な状況を判断して統合する必要がある．
+
+<ul>
+<li>深夜のバッチサーバと昼間の Web/App サーバの統合など</li>
+</ul></li>
+<li>統合によりサーバ環境が変化する場合もあり得る．
+
+<ul>
+<li>サーバソフトウェア が常時 Active になったりなど．</li>
+</ul></li>
+<li>問題はネットワークかもしれないとき．
+
+<ul>
+<li>スペック上問題はなくても，実行値・実測値的には問題に．</li>
+<li>例えばスイッチでアドレステーブルを処理するときに，16384 件目までは ASIC を使うが，それ以降は CPU 処理だったとか．</li>
+</ul></li>
+<li>どこもやはりデータベースのチューニングは必須．
+
+<ul>
+<li>テーブル分割・負荷分散など</li>
+</ul></li>
+<li>性能要件をしっかり踏まえた設計・開発をしなければ，将来的にコスト負担が大きくなる．</li>
+<li>インフラ設計にもアプリエンジニアも関わるべき．
+
+<ul>
+<li>単独で解決できるほど，単純ではなくなってきているし，アプリ設計がインフラに影響を及ぼす場合もあるから．</li>
+</ul></li>
+<li>大は小を兼ねない場合もあるのは知っておくべき．
+
+<ul>
+<li>必要な部分に必要なコスト(人力・機材など)を投入すること</li>
+</ul></li>
+<li>落とせないサービス・サーバには活性挿抜できるサーバが重要</li>
+</ul>
+
+<p>====</p>
+
+<p>##Web システムにおけるトラブル傾向とその事例
+###統合時の問題</p>
+
+<ul>
+<li>事例
+
+<ul>
+<li>19台の App サーバを 2台の UNIX サーバに統合</li>
+<li>キャパシティ・プランニングはしたが，メモリーリークによってスワップ発生していた</li>
+<li>夜間停止していた JavaVM が常時稼働になったため，メモリリークや GC がうまく効かない状況に陥っていた．</li>
+</ul></li>
+</ul>
+
+<p>###性能が追いつかない場合</p>
+
+<ul>
+<li>コンシューマ向け，携帯向けサービス
+
+<ul>
+<li>まるでうちの会社のような問題</li>
+</ul></li>
+<li>問題はネットワークだった．
+
+<ul>
+<li>スペック上問題はなくても，実行値・実測値的には問題に．</li>
+<li>例えばスイッチでアドレステーブルを処理するときに，16384 件目までは ASIC を使うが，それ以降は CPU 処理だったとか．</li>
+</ul></li>
+</ul>
+
+<p>###もうどうしようもない状況で</p>
+
+<ul>
+<li>これもうちの会社のような・・・・</li>
+<li>最大の効果は，やはりデータベース・テーブルのチューニング．</li>
+</ul>
+
+<p>##プラットフォーム安定稼働設計のポイント</p>
+
+<ul>
+<li>安定稼働 = ビジネスが継続できること
+
+<ul>
+<li>安定稼働 = 可用性・保全性・キャパシティ</li>
+</ul></li>
+</ul>
+
+<p>###高可用性設計(Web システムの可用性)</p>
+
+<ul>
+<li>クラスター構成
+
+<ul>
+<li>Hot Standby 構成(ホット・フェイルオーバ)</li>
+<li>DB クラスタ / VM クラスタ / WebApp クラスタ</li>
+<li>ロードバランサによる冗長構成</li>
+<li>グローバルロードバランス</li>
+<li>東京 -&gt; 大阪 など</li>
+<li>プロトコルレベルの冗長化</li>
+<li>フォールト・トレラント</li>
+</ul></li>
+<li>可用性設計のポイント
+
+<ul>
+<li>多階層・強調動作システムである</li>
+<li>各階層で最適な技術を用いること</li>
+<li>各階ではひとつの技術を用いること．複数技術は御法度．</li>
+<li>HTTP はセッションレスプロトコルである</li>
+<li>App 側がセッションを管理していることを忘れない</li>
+<li>ある部分ではセッション引き継ぎをしない選択も大事</li>
+<li>バックエンド DB は他と同じ</li>
+<li>基盤パッケージなどの資産を有効に活用すべき</li>
+<li>節度ある可用性施策を用いること</li>
+<li>多用することによって，運用の複雑さが増すだけで，本当に必要な可用性がなくなる可能性も</li>
+<li>大(やりすぎ)は小(なにもしない)を「兼ねない」</li>
+</ul></li>
+</ul>
+
+<p>##システム拡張設計のポイント</p>
+
+<ul>
+<li>要因
+
+<ul>
+<li>アクセス増加に伴うもの</li>
+<li>サービス・機能の追加によるもの</li>
+</ul></li>
+<li>方針
+
+<ul>
+<li>台数を増やすという，スケールアウト</li>
+<li>性能を上げる・追加するという，スケールアップ</li>
+<li>別システム・新システムの追加</li>
+</ul></li>
+<li>考慮すべき事項
+
+<ul>
+<li>仮想化，省エネ・スペース</li>
+</ul></li>
+</ul>
+
+<p>###サーバのトレンド</p>
+
+<ul>
+<li>CPU がマルチコア構成になってきたので，少ない台数で多くの CPU を使うことができる．</li>
+<li>RAS 機能の向上
+
+<ul>
+<li>サービスプロセッサによる監視・管理機能</li>
+<li>活性挿抜</li>
+<li>H/W RAID など</li>
+</ul></li>
+</ul>
+
+<p>###サーバ構成の変化</p>
+
+<ul>
+<li>1サーバで複数の OS インスタンス
+
+<ul>
+<li>仮想化</li>
+</ul></li>
+</ul>
+
+<p>###仮想化のポイント</p>
+
+<ul>
+<li>OS 仮想化がいいようだ</li>
+<li>それぞれの利点に応じて使い分けが必要</li>
+</ul>
+
+<p>###サーバ集約は必須？</p>
+
+<ul>
+<li>省スペース，省消費電力には集約は必須
+
+<ul>
+<li>機能面での集約をするか，仮想化により複数の OS インスタンスを1サーバに配するか．</li>
+</ul></li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/09/19/http-ac-nikkeibp-co-jp-nos-wssk-title/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/09/11/ruby-rails-Rails-App/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/09/11/ruby-rails-Rails-App/">Rails App でエラー発生時にメールを送ったりするには</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/09/20/http-labs-gree-jp-Top-Study-20080919-Report-html-title-15/">第15回オープンソーステクノロジー勉強会に行ってきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/09/20/http-labs-gree-jp-Top-Study-20080919-Report-html-title-15/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

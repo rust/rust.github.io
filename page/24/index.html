@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/28/ruby-3/">拡張ライブラリチュートリアルをやってみる#3</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://d.hatena.ne.jp/conceal-rs/20081220/1229764452 http://d.hatena.ne.jp/conceal-rs/20081218/1229609673  普通に C で書いた処理をうまく繋げられるのが，いい感じですね．
+##配列を操作する 配列内の数値をすべて掛け合わせるような処理を実装する．
+###処理実体 配列とその長さを受け取って，配列内の値を順に掛け算していく．
+ mul_all.c  float mul_all(array, nx) float array[]; int nx; { float result = 1.0; int i; for(i=0; i&lt;nx; i++){ result = result * array[i]; } return(result); }  これを検証するためのコード．
+ main.c  #include &lt;stdio.h&gt; float mul_all(float array[], int nx); int main() { int n = 5; float a[n]; int i; for(i=0; i&lt;n; i++){ a[i] = i + 1; printf(&quot;%f\n&quot;, a[i]); } printf(&quot;mul_all()=%f\n&quot;, mul_all(a, n)); }  % cc -o mul_all mul_all.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/12/28/ruby-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/26/ruby-TokyoCabinet/">TokyoCabinetを使ってみる．</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  まずはインストールから
+% wget http://tokyocabinet.sourceforge.net/tokyocabinet-1.3.26.tar.gz % cd tokyocabinet-1.3.26/ % ./configure --prefix=/usr/local % make % sudo make install % wget http://tokyocabinet.sourceforge.net/rubypkg/tokyocabinet-ruby-1.18.tar.gz % cd tokyocabinet-ruby-1.18/ % ruby extconf.rb % make % sudo make install  そして実験
+require 'tokyocabinet' bdb = TokyoCabinet::BDB.new unless bdb.open(&quot;dbd-sample.dbd&quot;, TokyoCabinet::BDB::OWRITER | TokyoCabinet::BDB::OCREAT) puts &quot;error&quot; exit end bdb.put(&quot;hoge&quot;, Time.now.to_s) bdb.put(&quot;foo&quot;, Time.mktime(2008,10,10,10,10,10).to_s) puts bdb.get(&quot;hoge&quot;) puts bdb.get(&quot;foo&quot;) # &gt;&gt; Fri Dec 26 17:38:33 +0900 2008 # &gt;&gt; Fri Oct 10 10:10:10 +0900 2008  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/26/notitle/">うごメモ</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  感触だけ．
+[ugomemo:04B0CC004CDE3890:DE3890_086FDC1D0F32E_000]
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/25/ruby-merb-rails-Rails-and-Merb-Merge/">Rails and Merb Merge</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://yehudakatz.com/2008/12/23/rails-and-merb-merge/の超簡易和訳．
+##Rails と Merb の統合 今日は Ruby ウェブアプリケーションフレームワークの歴史にとってかなり重大な日となった．大きな衝撃を持ってみんなと共有したいと思っているニュースはすぐ見つかるだろうけど，私はその状況を説明したいと思う．
+技術的や具体的な話に入る前に，Merb コミュニティーのメンバーがもっとも重要であり，それなくしては何もできなかったということを明記しておきたい．
+Merb は公開された常に変化するプロジェクトであり，いいアイデアは時にコアメンバーではない人たちから出されることがある1．今までやって来たように，みんなのアイデアやフィードバック，苦情も将来に渡って 100% 歓迎する．私は，オープンコミュニティや，より一般的にはオープンさ自体が途方もない価値をもたらすと信じていて，これらが Ruby の将来を導きつづけると頼りにしている．
+ニュースについて:今日になって，Merb チームは Rails コアチームとともにあるプロジェクトに参加することを決めた．計画は Merb でなされた違いをマージする事です．これは Merb ユーザに説得力のあった利用事例に対して，Rails 3 が使えるようになることを意味する．つまるところ，Merb 2 は RAils 3 となる．
+###これは何を意味するのか？
+ Rails はよりモジュール化される．rails-core から始まり，特定のコンポーネントの取捨選択ができるようになる．我々は Rails を疎結合にすることにフォーカスを当てることで，各コンポーネントを入れ替えたときに，その他の部分に影響を与えないようになる．これはまさに Merb が &ldquo;modularity&rdquo; としつこく言って内容そのものだ． 我々は Rails の性能を改善する．これは性能的に優位なアーキテクチャー的な決定によってもたらされる．このプロジェクトはベンチマークアプリケーションも作成する予定で，それによってどのように最適化すればいいかを明確に知ることができるでしょう． Rails 3 では，テストスイートがある公開 API が定義される．これは Merb との大きな違いの一つだ．ユーザやプラグイン製作者がより明確に，さらに安定した API を使うことができるようになる．これによって，リリースがあるたびにプラグインが動かなくなることはほとんどなくなるだろう． Rails は「コア」バージョンだけで動くように作り直される(現 Merb の core generator のような感じ)．それ以外の部分はすべてモジュール化され，それぞれのアプリケーションに応じたパーツのみを選択して使えるようになる．もちろん Rails はまだデフォルトでは「フル」バージョン(Merb は 1.0 から)から始めることもできるが，Merb と一緒に Rails を使いたい人には簡単に使えるようになる． Rails は OR マッパーとして DataMapper や Sequel を簡単に使えるように変更される．デフォルトの OR マッパーは ActiveRecord のままだが，驚くほど簡単に他に影響を与えずに OR マッパーを変更することが可能になる(もちろんある程度可能な限りだが)． Merb は早期に取り入れているが，Rails は Rack を取り入れている最中であり，これは Ruby コミュニティでの本当に楽しい開発であり，これによってモジュール化を推し進め，アプリケーション間のロジックを共用可能にすることができる． 一般に，我々は Rails にはない Merb の特徴について調べ(もっともわかりやすい例はより強固なルーティングだ)，そしてそれを Rails に持ち込む．  ###どうやればいい？ Rails との作業はすぐに始まり，当面の間は Merb でのバグフィックスやその他大きな問題も継続する．また Rails 3 へのいこうがしやすいような特別にデザインされたバージョンをリリースする予定でいる．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/12/25/ruby-merb-rails-Rails-and-Merb-Merge/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/24/ruby-rails-merb-Merb-gets-merged-into-Rails3/">Merb gets merged into Rails3!</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://weblog.rubyonrails.com/2008/12/23/merb-gets-merged-into-rails-3の超簡易和訳．
+##Merb が Rails3 に統合される！
+みんなにクリスマスプレゼントがあるんだ．何かって言うと Merb と Rails のベンチマーク論争に終止符を打つのさ．つまり Merb が Rails 3 に統合されるんだ！
+我々はフェンスの両側で複製しあうよりもっと建設的ないい方法として，一緒に働くことを実現した．統合するのが明らかに思えるデザインと思想を，Merb と Rails を既に十分に共有している．あとは座ってチャットして議論すればよかったんだ．
+これが実際に何を意味するかというと，Merb チームは Merb の基本思想を Rails 3 に持ち込むことに努力するってことだ．Yehuda Katz は Rails コアチームに入ったし，Matt Aimonetti は新しい伝道師チームに入った．そして Carl Lerche と Daniel Neighman (hassox) は Merb を統合する共演者となったんだ．この統合を不滅のものとするために，記念のページ [http://rubyonrails.org/merb] を作った．
+ 彼らによって Merb から Rails 3 にもたらされるいくつかのキーアイデアがある． :Rails コア:Rails はフルスタックでそのまま残るけど，一切合切なければ動かないままにしておくべき理由もない．Rails 3 は必要最低限の状態でも簡単に動くようになり，みんなが必要な時に必要なカスタマイズができるようになる．&rdquo;rails myapp -core&rdquo; とか &ldquo;rails myapp -flat&rdquo; みたいなコマンドを想像してもらえればいい． :パフォーマンスの最適化:Merb は Rails の多くの部分を高速化する．いいものすべてをもたらしてくれる．大きな利益のために必要な場所ではそのアーキテクチャーすら曲げてしまうでしょう．要するに，Rails 3 は Merb 連中が知っているような，パフォーマンスの注目を集めるでだろう． :フレームワーク不可知論:Rails はフレームワークに関して，規程の答えをいつも持っている．テスティングフレームワークは test/unit，ORマッパーは Active Record と言う具合に．でも他のを使いたい時もある．テスティングフレームワークに RSpec だとか，ORマッパーに Data Mapper とか Sequel とか．他にもテンプレートエンジンに Haml だとか JQuery を使いたいとか．こういう要望にも Rails は諸手を上げて歓迎しよう．そう，Rails はデフォルトを持ってるんだが，他の代替案を差別するようなことはしない．   ��るようなことはしない．  :厳格な API:多くのプラグインは Rails をアップデートした時に動かなくなる．それは，どの内部処理を安全にフックできるかや，モンキーパッチを当てたときに何が壊れることを期待すべきかが明らかではんないからだ．Merb 連中はテストのある公開 API をコミットしてくれて，それを使えば壊れないことが保証される．彼らはそういう考え方を Rails 3 に持ち込むので，有無を言わせないアップデートでも破壊されることのない，テストされドキュメント化された拡張機能のための API をもたらしてくれる．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/12/24/ruby-rails-merb-Merb-gets-merged-into-Rails3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/24/ruby-rails-merb-Merg-gets-merged-into-Rails3/">Merg gets merged into Rails3!</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://weblog.rubyonrails.com/2008/12/23/merb-gets-merged-into-rails-3 http://yehudakatz.com/2008/12/23/rails-and-merb-merge/
+Merb と Rails のいいとこ取りなのがリリースされる事を期待．
+個人的には，ActiveRecord 以外に DataMapper は Sequel が使えるようになるのと，Plugin APIが整備されるらしいのがいい感じですね．
+だたちゃんとリリースされるのか，ちょっと心配．
+##追記 あとで上記2エントリーの簡易和訳載せます．
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/22/ruby-rails-Rails-36/">Rails勉強会＠東京第36回に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  年の瀬も近づく中，忘年会の前座Rails勉強会＠東京に行ってきました．今回は50人近い参加者と，かなり大規模になりました．盛り上がってる感があるのはいいことですよね．
+ 今回はhttp://www.cuon.co.jp/さん提供の会場にて開催  ##セッションネタ
+ 前半  Scaffold の半歩先へ Cucumber をゆっくりしゃべる  後半  優しい Merb の育て方 『実践 Rails』を愛でる   ##Cucumber がアツい and Webrat がスゴい
+ Cucumber  プレーンテキストでかかれた命令(DSL)をを実行するフレームワーク  feature がテストの大きな枠組みで，scenario が各テストに対応 自然言語プログラミングじゃなくて，正規表現使いまくり  後方参照(\d+ など)でパラメータを利用できる  Webrat(on github at 2008/12/21)  Web アプリを外から操作する DSL セット &lt;input /&gt; にはラベルでアクセスできる リンクもテキストでアクセスできる  あとはアプリケーション独自の step を用意する  モデル・データの準備など  まとめ  日本人が見てわかる文章でテストが実行されるので，お客さんにわかるテキストになる 受け入れテスト結果がわかりやすくなる？  RAQ(Rarely Asked Question)
+ header(&ldquo;ACCEPT_LANGUAGE&rdquo;, &ldquo;ja&rdquo;) などとヘッダーを追加できる Post -&gt; Redirect のときには，Integration テストではヘッダーが追加されないので，Post -&gt; Redirect -&gt; Reload しなくてはヘッダーが有効にならない(Rails 2.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/12/22/ruby-rails-Rails-36/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/22/ruby-Ruby/">東京Ruby忘年会に行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Tokyu.rb から参加してきました．重要なのでもう一度言います．Tokyu.rb から参加してきました．1
+というわけで，東京Ruby忘年会に行ってきました．多くの人とは話せなかったのですが，いろんな人と交流が持てて，非常に有意義な時間を過ごせました．
+で，そのあと2次会に行ってきたのですが，麻雀やグインサーガの話とかいろいろ出てきて面白かったです．こういうのは毎日でもいいな．マイレージ持たないけど・・・・
+あと，角谷さん曰く，どうやら地域Ruby忘年会であった模様．と言うことは，世田谷Ruby忘年会とかやらないとダメなのかっ！マイレージもうないけど・・・・
+ ちなみに Tokyu.rb 忘年会は12月17日に終わりました． [return]   
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/21/notitle/">忘れないうちに</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ふと思い立って忘れないうちに買っとく．
+ エクセル・サーガ 20 (ヤングキングコミックス)  著者: 六道 神士
+出版日: 2008-05-19
+出版社/メーカー: 少年画報社
+カテゴリ: Book
+    月刊 アフタヌーン 2009年 02月号 [雑誌]  著者: 出版日: 2008-12-25
+出版社/メーカー: 講談社
+カテゴリ: Book
+    マリア様がみてる―ハローグッバイ (コバルト文庫)  著者: 今野 緒雪
+出版日: 2008-12-26
+出版社/メーカー: 集英社
+カテゴリ: Book
+    エクセル・サーガ 21 (ヤングキングコミックス)  著者: 六道 神士
+出版日: 2008-10-29
+出版社/メーカー: 少年画報社
+カテゴリ: Book
+  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2008/12/20/ruby-2/">拡張ライブラリチュートリアルをやってみる#2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/12/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://d.hatena.ne.jp/conceal-rs/20081218/1229609673  続き．
+##数値のやりとり 整数の加算をやってみる．
+###処理実体
+ add.c  int add(a, b) int a, b; { return(a + b); }  int を 2 つ受け取って加算した結果を int で返す．コードに問題ないかをちょっとテストのために実行してみる
+ main.c  #include &lt;stdio.h&gt; int add(int a, int b); int main() { int a, b; a = 1; b = 2; printf(&quot;%d + %d = %d\n&quot;, a, b, add(a, b)); }  % cc -o add add.c main.c % ./add 1 + 2 = 3  まあ普通に実行される．
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2008/12/20/ruby-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/23/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;24 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/25/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

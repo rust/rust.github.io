@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>TokyoCabinet/TokyoTyrant を Rails で使う &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>TokyoCabinet/TokyoTyrant を Rails で使う</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>##インストール
+###TokyoCabinet</p>
+
+<pre><code class="language-bash">% wget http://tokyocabinet.sourceforge.net/tokyocabinet-1.3.27.tar.gz
+% tar zxvf tokyocabinet-1.3.27.tar.gz
+% cd tokyocabinet-1.3.27
+% ./configure --prefix=/usr/local
+% make
+% make check
+% sudo make install
+</code></pre>
+
+<p>###TokyoCabinet Ruby API</p>
+
+<pre><code class="language-bash">% wget http://tokyocabinet.sourceforge.net/rubypkg/tokyocabinet-ruby-1.18.tar.gz
+% tar zxvf tokyocabinet-ruby-1.18.tar.gz
+% cd tokyocabinet-ruby-1.18
+% ruby extconf.rb
+% make
+% sudo make install
+</code></pre>
+
+<p>###TokyoTyrant</p>
+
+<pre><code class="language-bash">% wget http://tokyocabinet.sourceforge.net/tyrantpkg/tokyotyrant-1.1.11.tar.gz
+% tar zxvf tokyotyrant-1.1.11.tar.gz
+% cd tokyotyrant-1.1.11
+% ./configure --prefix=/usr/local
+% make
+% sudo make install
+</code></pre>
+
+<p>###TokyoTyrant Ruby API</p>
+
+<pre><code class="language-bash">% wget http://tokyocabinet.sourceforge.net/tyrantpkg/tokyotyrant-ruby-1.2.tar.gz
+% tar zxvf tokyotyrant-ruby-1.2.tar.gz
+% cd tokyotyrant-ruby-1.2
+% sudo ruby install.rb
+</code></pre>
+
+<p>##動作確認
+###TokyoCabinetの確認
+<script src="http://gist.github.com/44996.js"></script></p>
+
+<pre><code class="language-bash">% ruby example.rb
+hop
+foo:hop
+bar:step
+baz:jump
+quux:touchdown
+touchdown
+foo:hop
+bar:step
+baz:jump
+quux:touchdown
+</code></pre>
+
+<p>###TokyoTyrantの確認
+<script src="http://gist.github.com/45000.js"></script></p>
+
+<pre><code class="language-bash">% sudo ttservctl start
+% ruby example-tyrant.rb
+hop
+foo:hop
+bar:step
+baz:jump
+touchdown
+foo:hop
+bar:step
+baz:jump
+quux:touchdown
+</code></pre>
+
+<p>ひとまず動くことを確認．</p>
+
+<p>##設定
+特に設定ファイルは無くて，ttservctl(/usr/local/sbin/ttservctl)に直書きされている．</p>
+
+<pre><code class="language-bash">8 # configuration variables
+  9 prog=&quot;ttservctl&quot;
+ 10 cmd=&quot;ttserver&quot;
+ 11 basedir=&quot;/var/ttserver&quot;
+ 12 port=&quot;1978&quot;
+ 13 pidfile=&quot;$basedir/pid&quot;
+ 14 logfile=&quot;$basedir/log&quot;
+ 15 ulogdir=&quot;$basedir/ulog&quot;
+ 16 ulimsiz=&quot;256m&quot;
+ 17 sid=1
+ 18 dbname=&quot;$basedir/casket.tch#bnum=1000000&quot;
+ 19 maxcon=&quot;65536&quot;
+ 20 retval=0
+</code></pre>
+
+<p>サーバの実行自体は次のような感じ．</p>
+
+<pre><code class="language-bash">39     $cmd \
+ 40       -port &quot;$port&quot; \
+ 41       -dmn \
+ 42       -pid &quot;$pidfile&quot; \
+ 43       -log &quot;$logfile&quot; \
+ 44       -ulog &quot;$ulogdir&quot; \
+ 45       -ulim &quot;$ulimsiz&quot; \
+ 46       -sid &quot;$sid&quot; \
+ 47       &quot;$dbname&quot;
+</code></pre>
+
+<p>ということで，これを見習って手動でやってみる．</p>
+
+<pre><code class="language-bash">% ttserver -port 1978 -dmn -pid &quot;$PWD/ttserver.pid&quot; -log &quot;$PWD/ttserver.log&quot; -ulog &quot;$PWD/ttserver.ulog&quot; -ulim &quot;256m&quot; -sid &quot;1&quot; &quot;$PWD/casket.tch#bnum=1000000&quot;
+% ruby example-tyrant.rb
+hop
+foo:hop
+bar:step
+baz:jump
+touchdown
+foo:hop
+bar:step
+baz:jump
+quux:touchdown
+</code></pre>
+
+<p>ここで pid/log/ulog/dbname に関しては full-path でなければ動作しないので注意が必要．</p>
+
+<p>##Ruby のオブジェクトを保存するには
+Marshal.dump/Marshal.load を使います．
+<script src="http://gist.github.com/45005.js"></script>
+ここではちゃんと取り出せているかどうかを調べてるんですが，同一オブジェクトかどうかを判断するために == を再定義しています．</p>
+
+<p>##Rails で使う
+試しに以下のようなサンプルを作って動かしてみます．</p>
+
+<pre><code class="language-bash">% rails tt-test
+% cd tt-test
+% ruby script/generate model User name:string
+% ruby script/generate model --skip-migration UserAccessLog
+</code></pre>
+
+<p>ユーザ(User)とそのアクセス日時記録(UserAccessLog)です．TyokyoTyrant は memcached 互換なんですが，それはおいといて，単なるデータベースとして扱ってみます．
+<script src="http://gist.github.com/45021.js"></script></p>
+
+<pre><code class="language-ruby">% ruby script/console
+&gt;&gt; u = User.new({:name =&gt; &quot;hogehoge&quot;})
+=&gt; #&lt;User id: 1, name: &quot;hogehoge&quot;, created_at: &quot;2009-01-09 04:11:26&quot;, updated_at: &quot;2009-01-09 04:11:26&quot;&gt;
+&gt;&gt; u.access_time
+=&gt; nil
+&gt;&gt; u.access_time = Time.now
+=&gt; Fri Jan 09 13:31:25 0900 2009
+&gt;&gt; u.access_time
+=&gt; Fri Jan 09 13:31:25 0900 2009
+&gt;&gt; exit
+% ruby script/console
+&gt;&gt; u = User.find(1)
+=&gt; #&lt;User id: 1, name: &quot;hogehoge&quot;, created_at: &quot;2009-01-09 04:11:26&quot;, updated_at: &quot;2009-01-09 04:11:26&quot;&gt;
+&gt;&gt; u.access_time
+=&gt; Fri Jan 09 13:31:25 0900 2009
+</code></pre>
+
+<p>これで透過的に TokyoTyrant を扱うことができました．<a href="http://alpha.mixi.co.jp/blog/?p=166">mixiのよう</a>に，アクセス時間の記録などには，非常に強力なデータベースとして扱うことができるので，使い方次第では負荷分散できそうです．</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoCabinet-TokyoTyrant-Rails/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoTyrant-Rails/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/01/09/ruby-rails-tokyotyrant-TokyoTyrant-Rails/">TokyoTyrantのレプリケーションとRailsでの利用</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/01/10/ruby-gem-2/">gem を作ってみる#2</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/01/10/ruby-gem-2/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

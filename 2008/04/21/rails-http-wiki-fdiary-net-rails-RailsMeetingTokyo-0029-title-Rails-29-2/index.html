@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails勉強会＠東京第29回に参加してきた#2 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails勉強会＠東京第29回に参加してきた#2</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/04/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>結構長くなるんで，<a href="http://d.hatena.ne.jp/conceal-rs/20080420/1208700903">ログ</a>の続きを分割．</p>
+
+<h1 id="rake-taskを見てみる">##rake taskを見てみる</h1>
+
+<p>###ひとまず流す</p>
+
+<ul>
+<li>edge railsで見てみることに．
+
+<ul>
+<li>とりあえずdiffをとっておく．</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-bash">% rake -T &gt; ../rake_tasks_2-0-2
+% rake rails:freeze:edge
+% rake -T &gt; ../rake_tasks_edge
+% diff ../rake_tasks_2-0-2 ../rake_taskes_edge
+</code></pre>
+
+<pre><code class="language-ruby">1c1
+&lt; (in /home/rust/program/ruby/gitexample3)
+---
+&gt; (in /home/rust/program/ruby/gitexample)
+11a12
+&gt; rake db:migrate:down                 # Runs the &quot;down&quot; for a given migratio...
+13a15
+&gt; rake db:migrate:up                   # Runs the &quot;up&quot; for a given migration ...
+33a36,39
+&gt; rake gems                            # List the gems that this rails applic...
+&gt; rake gems:build                      # Build any native extensions for unpa...
+&gt; rake gems:install                    # Installs all required gems for this ...
+&gt; rake gems:unpack                     # Unpacks the specified gem into vendo...
+49c55
+&lt; rake test                            # Test all units and functionals
+---
+&gt; rake test                            # Run all unit, functional and integra...
+55a62,64
+&gt; rake time:zones:all                  # Displays names of all time zones rec...
+&gt; rake time:zones:local                # Displays names of time zones recogni...
+&gt; rake time:zones:us                   # Displays names of US time zones reco...
+</code></pre>
+
+<ul>
+<li>edge railsとは開発版らしい．</li>
+<li>[rake -D RAKE_TASK]でメッセージ全文表示できるそうな．</li>
+</ul>
+
+<p>:rake db&#58;migrate&#58;[up|down|redo|restart]:データベースのマイグレーションを操作する
+|up|1つschema_versionを上げる|
+|down|1つschema_versionを下げる|
+|redo|最後のmigrationをrevertして再実行|
+|reset|create databaseからやり直す|
+:rake fixtures:identify:fixtureにある&amp;$58;oneなどから固有のIDを取得する(らしい．まだ未調査)
+:rake db&#58;rollback:migrationを一つ戻す
+:rake time&#58;:zone&#58;local:ローカルの(で設定できる？)タイムゾーンを表示
+:rake db&#58;schema&#58;dump:db/schema.rbにschemaをdumpする(そのまま)
+:rake db&#58;test&#58;clone[_structure]:いまのenvironmentのデータベースからテスト用のデータベースを構築[構造のみ]
+:rake db&#58;test&#58;purge:drop databaseを実行
+:rake db&#58;test&#58;truncateする
+:rake db&#58;version:最新のmigration versionを表示する
+:rake notes[&#58;todo|&#58;fixme|&#58;optimize]:ソースコード中に記載されたコメントを表示する[#TODO comments&hellip;.|#FIXME comments&hellip;.|#OPTIMIZE comments&hellip;.]</p>
+
+<ul>
+<li>コメント自身はSourceAnnotationExtractor.enumerate(&ldquo;XXXX&rdquo;)で拾っている．</li>
+</ul>
+
+<p>###migration周りの変更点まとめ</p>
+
+<ul>
+<li>migrationのversion管理が，番号からタイムスタンプになってた．
+
+<ul>
+<li>20080414124549_XXXXXXXXXX.rb</li>
+<li>ただし旧記法(001_XXXXXXXXX.rb)と共存は可能．</li>
+<li>ソート順では001, 002の方が先に来る</li>
+<li>タイムスタンプになってるので開発環境のタイムゾーンに注意が必要になるかも．</li>
+</ul></li>
+</ul>
+
+<p>###rake gems関連</p>
+
+<ul>
+<li>準備
+
+<ul>
+<li>config/environment.rbのconfig.gemsに必要なgemを記述する．</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-ruby">config.gems = [
+  Ruby::GemDependency.new 'uuidtools'
+]
+</code></pre>
+
+<p>:rake gems&#58;install:上記configで指定したgemをシステムにインストールする
+:rake gems&#58;unpack:インストールされているgemをvender配下にコピーする．環境をひとまとめにできる．deploy時にも便利そう．</p>
+
+<ul>
+<li>denendencyを簡単に書けるようにして欲しいよねー的な</li>
+<li>この機能によってgemのdeployができるようになると便利そう．</li>
+</ul>
+
+<p>##その他</p>
+
+<ul>
+<li>データベースをfixtureにするpluginがあるらしい．</li>
+<li>initializersに書くかenvironment.rbに書くか，どちらが良いんだろうか．</li>
+<li>rak &lsquo;words&rsquo;でいい具合にgrep検索できるようだ．結構便利．</li>
+<li>config.plugins=[]でpluginの指定やload順序を指定可能らしい．</li>
+</ul>
+
+<p>##まとめ
+ためになりました．もっといろいろ勉強しないといけないなぁと，さらに思いました．できれば発表などできるようになりたいな．</p>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/04/21/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29-2/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/04/20/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/04/20/rails-http-wiki-fdiary-net-rails-RailsMeetingTokyo-0029-title-Rails-29/">Rails勉強会＠東京第29回に参加してきた</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/04/23/lisp-http-labs-gree-jp-Top-Study-20080422-Report-html-title-13/">第13回オープンソーステクノロジー勉強会に参加してきた．</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/04/23/lisp-http-labs-gree-jp-Top-Study-20080422-Report-html-title-13/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

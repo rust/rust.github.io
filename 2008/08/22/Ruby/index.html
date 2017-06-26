@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>オフィスで踏み出すRubyの世界 &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>オフィスで踏み出すRubyの世界</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/08/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <ul>
+<li>エピソード
+
+<ul>
+<li>in : Java Source -&gt; out : Text File</li>
+<li>Excel -&gt; Ruby -&gt; Java</li>
+<li>なぜ Ruby</li>
+<li>ERB / Java の友達 JRuby / YAML</li>
+<li>なぜ Excel</li>
+<li>Excel 文化 / 異常に使いこなされている</li>
+<li>史上最大シェアの構造化エディタ</li>
+</ul></li>
+<li>モテポイント
+
+<ul>
+<li>ERB</li>
+<li>Excel(API)</li>
+<li>案外使いやすい高レベル API</li>
+<li>プラグイン機能あり</li>
+<li>階層 + 2次元配列データ構造</li>
+<li>Win32OLE</li>
+<li>VB より Ruby と仲良し</li>
+<li>Primitive/Object 意識不要</li>
+<li>Block 渡せる</li>
+<li>そこで XLS モジュール作った</li>
+<li>1行目をハッシュキーとして，2行目から順次ハッシュデータとして取り出す</li>
+</ul></li>
+<li>効果
+
+<ul>
+<li>短いコード / 社内の食いつきが良かった</li>
+</ul></li>
+<li>今後
+
+<ul>
+<li>gem 化 / JRuby 対応 / XLSBeans (Java の XLS クラス？)</li>
+</ul></li>
+<li>まとめ
+
+<ul>
+<li>Excel 大好き！</li>
+</ul></li>
+</ul>
+
+<p>##唐突に LT
+###DocDiff：Rubyで書かれたテキスト比較ユーティリティ</p>
+
+<ul>
+<li>編集者なのでテキストの比較が多い</li>
+<li>diff の出力は，自然言語だと見にくい</li>
+<li>定番はある
+
+<ul>
+<li>wdiff / Ediff など</li>
+</ul></li>
+<li>特徴
+
+<ul>
+<li>各種エンコーディング対応</li>
+<li>複数の出力をサポート</li>
+<li>行中の特定の部分の変更のみを強調することもできる</li>
+</ul></li>
+<li>パッケージあり
+
+<ul>
+<li>debian にもあった</li>
+</ul></li>
+</ul>
+
+<p>###Asakusa.rb設立のおしらせ</p>
+
+<ul>
+<li>リアル繋がりをもちたい</li>
+<li>Ruby の人と Rails の人の橋渡しとか</li>
+</ul>
+
+<p>###Tokyu.rb活動報告</p>
+
+<ul>
+<li>JR.rb 最強伝説
+
+<ul>
+<li>ちなみにそそのかした同僚が私です．</li>
+</ul></li>
+</ul>
+
+<p>###Regional Ruby Brigadeのご提案 &ndash; Akasaka.rbの軌跡</p>
+
+<ul>
+<li>淡々と笑いなく</li>
+</ul>
+
+<p>##Rails Outliner(仮)</p>
+
+<ul>
+<li>ウェブにしてはリアルタイム
+
+<ul>
+<li>Shooting Star で</li>
+</ul></li>
+<li>コラボレーション
+
+<ul>
+<li>複数人で</li>
+</ul></li>
+<li>タイムマシン
+
+<ul>
+<li>履歴とか</li>
+</ul></li>
+<li>アウトラインエディタ
+
+<ul>
+<li>アウトラインプロセッサ</li>
+<li>階層化ドキュメント</li>
+</ul></li>
+<li>ゆるふわ開発</li>
+<li>変更履歴は？
+
+<ul>
+<li>around_filter</li>
+<li>before_filter で変更前</li>
+<li>after_filter で変更後 を保存</li>
+</ul></li>
+<li>emacs の outline モードみたいに折りたためたらいいよねー</li>
+</ul>
+
+<p>##あなたがMacでRubyを使うべき10の理由</p>
+
+<ul>
+<li>海外は Mac ばかり</li>
+</ul>
+
+<ol>
+<li><p>Unix</p>
+
+<ul>
+<li>MacOS は UNIX</li>
+</ul></li>
+
+<li><p>Preinstalled</p>
+
+<ul>
+<li>Ruby が pre-install 済み</li>
+<li>Rubyist は Mac さえ買っとけばいい</li>
+<li>家族のために Ruby</li>
+</ul></li>
+
+<li><p>TextMate</p>
+
+<ul>
+<li>すばらしいてきすとえでぃた</li>
+</ul></li>
+
+<li><p>RubyCocoa</p>
+
+<ul>
+<li>MacOS の GUI Framework を Ruby で操作できる</li>
+<li>Apple の中の人が開発を引き継いでいる</li>
+</ul></li>
+
+<li><p>MacRuby</p>
+
+<ul>
+<li>Apple の中の人が開発中</li>
+<li>Mac navive の Ruby</li>
+</ul></li>
+
+<li><p>Growl &amp; ZenTest</p>
+
+<ul>
+<li>Growl : Notification Framework</li>
+<li>ZenTest と組み合わせると，オートテストとその通知が簡単にできる</li>
+</ul></li>
+
+<li><p>Gitjour</p>
+
+<ul>
+<li>hackathon 向けツール</li>
+</ul></li>
+
+<li><p>Beauty</p>
+
+<ul>
+<li>Mac と Ruby は美的センス的に似てる by DHH</li>
+</ul></li>
+
+<li><p>iPhone</p>
+
+<ul>
+<li>iPhone の開発環境を Ruby で動かす．RubyCocoa 使って．</li>
+<li>テストとかを Ruby で書ける</li>
+</ul></li>
+
+<li><p>Enthusiasm</p>
+
+<ul>
+<li>熱狂的だよねー</li>
+</ul></li>
+
+<li><p>デモは直接見に来いとのこと</p></li>
+</ol>
+
+<p>##Rabbit 2008</p>
+
+<ul>
+<li>一番思い入れのある Rabbit</li>
+</ul>
+
+<p>###Rabbit</p>
+
+<ul>
+<li>プレゼンツール</li>
+<li>Ruby + GTK+</li>
+<li>少しのユーザ</li>
+<li>5年目</li>
+<li>Rabbit ユーザの称号「ショッカー」</li>
+</ul>
+
+<p>###特徴</p>
+
+<ul>
+<li>大きな文字
+
+<ul>
+<li>どのように伝えるか</li>
+</ul></li>
+<li>抽象化
+
+<ul>
+<li>どのように続けるか</li>
+</ul></li>
+<li>プレゼンとは
+
+<ul>
+<li>聴衆＋参加者</li>
+<li>自分が発表することのバックグラウンドは知らない人が大多数</li>
+<li>限られた時間では全てを発表できない</li>
+<li>わかった気になってもらうことが重要</li>
+<li>大事なことだけを伝える</li>
+<li>短く，わかりやすく，直感的に</li>
+</ul></li>
+<li>大きな文字にすると
+
+<ul>
+<li>書きすぎると -&gt; 汚く</li>
+<li>簡潔に書くと -&gt; すっきり</li>
+</ul></li>
+<li>聴衆を置いてきぼりにしない
+
+<ul>
+<li>聴衆のスタックは小さい</li>
+</ul></li>
+<li>消極的なメンテナンスは死なないため</li>
+<li>積極的なメンテナンスは生きるため</li>
+</ul>
+
+<p>##Ruby 1.9.1リリースに向けて
+###Ruby 1.9.1</p>
+
+<ul>
+<li>1.9 の安定版</li>
+<li>文法改善
+
+<ul>
+<li>lambda 記法の拡張</li>
+</ul></li>
+<li>整理されたライブラリ
+
+<ul>
+<li>いらないものは捨ててしまった</li>
+<li>RubyGem の追加</li>
+</ul></li>
+<li>バイトコード実行
+
+<ul>
+<li>YARV で 高速化</li>
+<li>高速化はおまけ</li>
+</ul></li>
+<li>M17N
+
+<ul>
+<li>エンコーディング情報がいろいろなところに</li>
+</ul></li>
+</ul>
+
+<p>###安定へ向けて</p>
+
+<ul>
+<li>ある程度安定しないと使ってくれないが</li>
+<li>Rubyist は Ruby 1.9 を使うべきだ</li>
+<li>coverage 拡張ライブラリ</li>
+<li>RubySpec
+
+<ul>
+<li>1.9 で書き始めている by Yugui さん</li>
+</ul></li>
+<li>サポートレベル
+
+<ul>
+<li>Debian - intel のみ．Matz の影響か．</li>
+</ul></li>
+<li>ドキュメントはかわいそうな Ruby
+
+<ul>
+<li>リファレンスマニュアルが追従しない Ruby</li>
+</ul></li>
+<li>Ruby のソースコードを読みましょう</li>
+</ul>
+
+<p>##まとめと感想
+雷鳴轟く中での開催でしたが，熱気はRuby会議に負けない感じでした．LTいいなー．あとは思ったことを簡潔に．</p>
+
+<ul>
+<li>発表しないといけない気持ちになってきた．会社のサービスのことでも話すか．</li>
+<li>Ruby リファレンスマニュアルに協力しなければならない気がしてきた．お世話になりすぎてるからなー．</li>
+<li>Ruby 1.9 のバグ報告もっとしないとダメだと感じた．どうしよう．</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2008/08/22/Ruby/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2008/08/22/ruby-http-regional-rubykaigi-org-tokyo01-title-Ruby-01/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2008/08/22/ruby-http-regional-rubykaigi-org-tokyo01-title-Ruby-01/">東京Ruby会議01に参加してきた．</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2008/08/24/2-PC/">2台のノートPCでキーボード・マウス共有用</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2008/08/24/2-PC/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="なんとなく日記" href="http://stnard.jp/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://stnard.jp/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>なんとなく日記</h1>
+  <h2>Everyday studying...</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/09/07/debian-GPG-4096-bit/">GPG 鍵を 4096 bit に更新した</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://lists.debian.or.jp/debian-users/200909/msg00008.htmlに参加するために，参考サイトを参考に更新．fingerprint は下記の通りです．
+pub 4096R/94B70E36 2009-09-07 指紋 = C64E 9826 8A75 723E DE54 70A8 F623 220C 94B7 0E36 uid Shin-ichiro OGAWA (Rust Stnard) &lt;rust@stnard.jp&gt; sub 4096R/79874CAE 2009-09-07  ##参考
+ http://d.hatena.ne.jp/sasakyh/20090903/p1 http://ekaia.org/blog/2009/05/10/creating-new-gpgkey/ http://lists.debian.or.jp/debian-users/200909/msg00008.html  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/31/ruby-Ubuntu-8-04-2-Ruby-capistrano/">Ubuntu 8.04.2 の Ruby で capistrano が動かない場合の対処</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  p368 で Net::SSH が刺さるという問題 https://capistrano.lighthouseapp.com/projects/8716/tickets/79-capistrano-hangs-on-shell-command-for-many-computers-on-ruby-186-p368 があって，それは Ruby 側で解決 http://redmine.ruby-lang.org/issues/show/1848 されたのですが，どうも Net::SSH 側でもなにかしら変更があったようで 2.0.14 が リリース されました．
+とここまではいいのですが，Ubuntu 8.04.2 の Ruby は 1.8.6-p111 で，これだと刺さる現象が再現してしまいます．何が問題かはわかりませんが，2.0.13 だと刺さらないことから，下記の部分じゃないかと想像できます．
+module Net; module SSH # This class contains miscellaneous patches and workarounds # for different ruby implementations. class Compat # A workaround for an IO#select threading bug in MRI 1.8. # See: http://net-ssh.lighthouseapp.com/projects/36253/tickets/1-ioselect-threading-bug-in-ruby-18 # Also: http://redmine.ruby-lang.org/issues/show/1993 if RUBY_VERSION &gt;= '1.9' || RUBY_PLATFORM == 'java' def self.io_select(*params) IO.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/08/31/ruby-Ubuntu-8-04-2-Ruby-capistrano/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/27/debian-Lenny-on-amd64-Firefox-3-5/">Lenny on amd64 に Firefox 3.5 を入れる方法</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ここを参考に作業を進める
+##準備 ###コンパイル環境
+# apt-get install build-essential libidl-dev autoconf2.13 # apt-get build-dep iceweasel  ###ソースのダウンロード
+# apt-get install mercurial  % cd ~/tmp % hg clone http://hg.mozilla.org/releases/mozilla-1.9.1 mozilla-1.9.1 % cd mozilla-1.9.1 % hg checkout -r FIREFOX_3_5_2_RELEASE  ##コンパイル
+% vim ~/.mozconfig  mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox ac_add_options --prefix=/opt/firefox ac_add_options --enable-application=browser ac_add_options --with-system-zlib ac_add_options --with-system-jpeg ac_add_options --enable-optimize ac_add_options --enable-official-branding ac_add_options --enable-canvas ac_add_options --enable-strip ac_add_options --disable-tests ac_add_options --disable-installer ac_add_options --disable-accessibility ac_add_options --enable-xinerama ac_add_options --with-default-mozilla-five-home=/usr/lib/firefox-3.5  % make -f client.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/08/27/debian-Lenny-on-amd64-Firefox-3-5/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/26/ruby-Mitaka-rb-04/">Mitaka.rb#04 に行ってきた！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  移籍先である おいしい Mitaka.rb に参加してきました．
+##参加者顔ぶれ
+ Mitaka.rb クラスタ pgcafe クラスタ 万葉クラスタ Tokyu.rb クラスタ (各部に重複あり) と言うか見たことあるメンツが過半数という，ある意味いつも通りの Rubyist の集いですね．  ##料理
+ カジュアルフレンチなんですが，非常に美味しかった．特に Tokyu.rb 的には肉がよかった．  ##LT
+ 夫婦漫才 by 大場夫妻 みんなで会議 by Ruby on Excel の人 いつでもるりま by 関西人M 図書館活用と大場夫妻接待 by シャンピエール代表 CHANGE THE WORLD by 主催者  ##まとめ
+ 美味しかったよ！ でも席移動しづらかったのが難点か． 大場夫妻デート席があった． RubyKaigiStaff席もあった．  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/25/emacs-hatena-mode/">hatena-mode の調整</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##調整中
+##hatena-mode で はてダ編集 これでログなどは直接メモれるな
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/24/tokyu-rb-Tokyu-rb-10/">Tokyu.rb#10に行ってきた((傍観モード))</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  ##肉.rb
+ なんだかんだと Ruby の話はあまりしてなかった気がする． 平和に肉を食えました．主催者の人ありがとう．  ##二次会
+ 一部では三次会 Railsの話で盛り上がりました． 確認画面勉強会の開催が決まりました．  場所は万葉さん提供のはず．参加したい人はいつか立つ ATND か d を飛ばすといいみたいですよ．   ##三次会
+ 翌日の SICP に備えて帰りました．  ##まとめ
+ 11&frasl;29 に LT 大会あるらしいので，是非とも行ってみるといいよ！  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/24/debian-amd64-i386-chroot/">amd64 環境下で i386 環境を chroot で構築する</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  http://kmuto.jp/open.cgi?debian-amd64を参考に作業．
+# mkdir -p /var/chroot/ia32/ # aptitude install debootstrap # debootstrap --arch i386 lenny /var/chrot/ia32 # chroot /var/chroot/ia32 /bin/bash # vim /etc/passwd # vim /etc/group # passwd user # vim /etc/apt/source.list # aptitude update # aptitude install sudo zsh vim # aptitude safe-upgrade # exit # vim /etc/fstab  /home /var/chroot/ia32/home none bind 0 0 /tmp /var/chroot/ia32/tmp none bind 0 0 proc /var/chroot/ia32/proc proc defaults 0 0  # mount /var/chroot/ia32/home # mount /var/chroot/ia32/tmp # mount /var/chroot/ia32/proc # vim /etc/ld.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/08/24/debian-amd64-i386-chroot/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/18/Ruby-rails-TIPS-Rails/">バッドノウハウ：Railsで他のアプリケーションとセッションを共有するために</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Rails ではセッションにモデルのインスタンスをぶち込んだりできるのですが，例えば複数のアプリケーションでログイン情報を共有するためにセッションを使ったりすると，モデルのクラス定義が存在しないとエラーになってしまいます．
+アプリA -&gt; User, Blog, Entry アプリB -&gt; User, Friend, Photo in アプリA: session[:new_entry] = Entry.new to アプリB: Session contains objects whose class definition isn't available. Remember to require the classes for all objects kept in the session. (Original exception: ERRORMESSAGE [Entry])\n  本来はこれは正しい動作なのですが，古いアプリなどで仕方なく連携する場合など困る場面もあります1．そこで仕方なく，例外を発生させずに空のクラスを定義することで回避します．
+module ActionController module Session class AbstractStore class SessionHash &lt; Hash private def stale_session_check! yield rescue ArgumentError =&gt; argument_error if argument_error.message =~ %r{undefined class/module ([\w:]*\w)} begin # Note that the regexp does not allow $1 to end with a ':' $1.
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/08/18/Ruby-rails-TIPS-Rails/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/14/notitle/">はてなブロガーの本まとめて欲しい！</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  はてなブロガーの本まとめて欲しい！
+B賞が欲しいです！
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="http://stnard.jp/2009/08/08/mysql-http-labs-gree-jp-Top-Study-20090807-Report-html-title-GREE-18-MySQL/">GREE オープンソース勉強会 第18回 MySQLハッキングの手引きに行ってきた</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  すごい雨の中，GREE Labs さん主催による http://labs.gree.jp/Top/Study/20090807.html に参加してきました．以下，そのログなど．
+###まとめと感想
+ すごい雨降ってました  それにしては人多い気がする  日本MySQLユーザ会 松信さん ust ありません  来て良かった  トラックバックまでが勉強会メソッド ちょっと寒かった ソースコード読むの楽しそう！  いろいろ奥が深そう  プラグインレベルなら何とか作れそうな感じがした EXPLAIN じゃない実行計画をしっかり知りたいなと思った．それを理解しないと MySQL を使いこなせない印象．  ##MySQLハッキングの手引き
+ MySQl のアーキテクチャ ビルド方法 デバッグ方法 プラグイン開発の方法 本体拡張の方法 本家へのコントリビュートの方法 自己紹介  MySQLコンサルタント 執筆 現場で使える MySQL Linux-DB に関する本(2009&frasl;09 予定) DBマガジンで10月から連載？   ###MySQL とは
+ C/C++/アセンブラ 現在は MySQL 5.4 beta, MySQL 5.1&frasl;5.0 stable  ###アーキテクチャ
+ 固定部分  リスナー(認証) -&gt; パーサ -&gt; オプティマイザ -&gt; テーブルアクセス/ジョイン 全文検索インデックス レプリケーション  プラグイン部分
+  </p>
+
+  
+  <footer>
+    <a href="http://stnard.jp/2009/08/08/mysql-http-labs-gree-jp-Top-Study-20090807-Report-html-title-GREE-18-MySQL/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="http://stnard.jp/page/15/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;16 / 55&nbsp;</span>
+  
+  <a href="http://stnard.jp/page/17/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

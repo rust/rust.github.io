@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>RubyKaigi 2010 3rd day &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>RubyKaigi 2010 3rd day</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2010/08/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<h2 id="rubykaigi-2010-3日目">RubyKaigi 2010 3日目</h2>
+
+<h3 id="地域-ruby-会議-kaigi">地域 Ruby 会議 Kaigi</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;Commit するまえに Conflict 解消しようぜ&lt;/li&gt;
+
+  &lt;li&gt;チェックイン&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;かくたにさん&lt;/li&gt;
+
+      &lt;li&gt;島田さん (Sapporo)&lt;/li&gt;
+
+      &lt;li&gt;(島根の人)&lt;/li&gt;
+
+      &lt;li&gt;小川&lt;/li&gt;
+
+      &lt;li&gt;河野さん&lt;/li&gt;
+
+      &lt;li&gt;三浦さん&lt;/li&gt;
+
+      &lt;li&gt;武田さん&lt;/li&gt;
+
+      &lt;li&gt;小柴さん&lt;/li&gt;
+
+      &lt;li&gt;高井さん&lt;/li&gt;
+
+      &lt;li&gt;川上さん (松江の人)&lt;/li&gt;
+
+      &lt;li&gt;BECK さん (東京の人)&lt;/li&gt;
+
+      &lt;li&gt;米沢さん (toRuby)&lt;/li&gt;
+
+      &lt;li&gt;okkez (関西の人)&lt;/li&gt;
+
+      &lt;li&gt;松本 (名古屋の人)&lt;/li&gt;
+
+      &lt;li&gt;かたぎりさん (名古屋の人)&lt;/li&gt;
+
+      &lt;li&gt;片平さん (仙台の人)&lt;/li&gt;
+
+      &lt;li&gt;永井さん (Rubyist 九州の人)&lt;/li&gt;
+
+      &lt;li&gt;藤岡さん (福島の人)&lt;/li&gt;
+
+      &lt;li&gt;ひがきさん (関西の人)&lt;/li&gt;
+
+      &lt;li&gt;てらしまさん (鳥取の人)&lt;/li&gt;
+
+      &lt;li&gt;池沢さん (toRuby)&lt;/li&gt;
+
+      &lt;li&gt;せきさん (toRuby)&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;RubyKaigi 歴 2010 のふりかえり&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;名古屋01&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;リソース不足で告知が遅れて、諸処にご迷惑をおかけした。&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;作業者がいない&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;話者がいない&lt;/li&gt;
+
+          &lt;li&gt;80人参加&lt;/li&gt;
+
+          &lt;li&gt;懇親会が濃かった&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;東京03&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;完璧な運営&lt;/li&gt;
+
+          &lt;li&gt;半年前から月一でMTG&lt;/li&gt;
+
+          &lt;li&gt;事前議題 -&gt; 議論 -&gt; TODO といういいサイクル&lt;/li&gt;
+
+          &lt;li&gt;クオリティを上げすぎないように&lt;/li&gt;
+
+          &lt;li&gt;懇親会ができなかった&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;ドタキャンに備えて開催できなかった&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;お金の問題&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;スタッフ有料イベント&lt;/li&gt;
+
+              &lt;li&gt;儲からないのに誰かが負担しなければならない&lt;/li&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;えにしテックが札幌Ruby会議に投資するのはどうなのか&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;「俺のやりたいことをやらせろ」ということで高井さんが頑張った&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;The RubyKaigi ではないことをやりたかった&lt;/li&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;Talker や Workshop など&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Tokyu 01&lt;/li&gt;
+
+      &lt;li&gt;札幌 02&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;懇親会はしなかった&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;途中で時間を設けて、お酒のない懇親会をやった&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;お金の問題&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;やりたいと思ってる人がお金を出している状態&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;01 よりも規模を大きくしてみた。手にのる範囲で。&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;期待と思う人が増えれば話者に困ることはないんじゃないか&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;タレント不足&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;札幌の人たちが話すのをメインに据えた&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;関西 02&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;KOF にのっかって&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;会場の心配はしなくてもいいがスケジュールを握られる&lt;/li&gt;
+
+              &lt;li&gt;考えるまもなく進めなくてはいけない&lt;/li&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;他とは制約事項が違う&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;毎月やる勉強会でお金を貯めて講師を呼ぶ&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;okkez さんが RubyKaigi で営業してその人を呼ぶ&lt;/li&gt;
+
+              &lt;li&gt;今年は福井さんがやっている&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;リソースが足りない&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;スタッフが KOF の参加者なのでいろいろ大変&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;松江 02&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;01 が島根大学の野田先生が主導で&lt;/li&gt;
+
+          &lt;li&gt;02 は Matsue.rb の高尾さんが主催で&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;場所は行政が確保している&lt;/li&gt;
+
+              &lt;li&gt;地元の発表がしっかりしていて、80人ぐらいの参加者が&lt;/li&gt;
+
+              &lt;li&gt;高尾さんが一人でやっている&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;仙台 02&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;いっぱいいっぱい&lt;/li&gt;
+
+          &lt;li&gt;片平さんが過囲え込みすぎていて、周りの人がいろいろ助けてくれた&lt;/li&gt;
+
+          &lt;li&gt;ネタがない&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;01 は東北の Rubyist を呼んだ&lt;/li&gt;
+
+              &lt;li&gt;02 は田舎親方 Ruby 会議をやった&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;有料にした&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;発表する人も&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;01 は OSC に乗っかってみたが、いろいろ大変だったので、次回はやらないでおこうと思った&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;(できなかった) 九州 02&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;01 は行政との共催&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;RBC から当日のヘルプがもらえなかった&lt;/li&gt;
+
+              &lt;li&gt;200 人規模&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+          &lt;li&gt;02 は軽くやろうと思ってた&lt;/li&gt;
+
+            &lt;ul&gt;
+
+              &lt;li&gt;Rubyist 九州の年齢層が上がった&lt;/li&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;コミュニティ世代の問題&lt;/li&gt;
+
+                  &lt;li&gt;代表の意気込みが薄れているところがある&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+              &lt;li&gt;地理的に集まらない&lt;/li&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;スタッフになる人がいない&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+              &lt;li&gt;コミュニティの問題&lt;/li&gt;
+
+                &lt;ul&gt;
+
+                  &lt;li&gt;永井さんが代表でもないので判断できない&lt;/li&gt;
+
+                  &lt;li&gt;入りづらい雰囲気があった&lt;/li&gt;
+
+                  &lt;li&gt;運営でいろいろ問題や悩みがあるので、地域 Ruby 会議をすることができない感じ&lt;/li&gt;
+
+                  &lt;li&gt;同じ地域にコミュニティが2つある&lt;/li&gt;
+
+                  &lt;li&gt;長い歴史があるということが問題になっている&lt;/li&gt;
+
+                &lt;/ul&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;とちぎ 02&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;もともと toRuby 拡大版&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Tokyu 02&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;スタッフを 10 人に&lt;/li&gt;
+
+          &lt;li&gt;合計 20k ですんだ&lt;/li&gt;
+
+          &lt;li&gt;ゆるくやった&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;参加者でいくと凄くいい&lt;/li&gt;
+
+  &lt;li&gt;中央から地域にという流れは必ず来るという問題意識&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;社会を回すためのコミュニティとして Ruby コミュニティが成長していく&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;来年まで地域 Ruby 会議 Kaigi ができないのが辛い&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;複数地域での共催&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;タレント不足の問題を解消したい&lt;/li&gt;
+
+          &lt;li&gt;地域 Ruby 会議をやる以上の問題があるので、先に延ばしたい (かくたに)&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;地域にタレントはいる&lt;/li&gt;
+
+  &lt;li&gt;東京 03 には Workshop がいる&lt;/li&gt;
+
+  &lt;li&gt;&quot;Ruby 会議が町にやってきた！&quot;&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Ruby 会議は呼び込むための名前として使ってもらいたい&lt;/li&gt;
+
+      &lt;li&gt;ビッグネームもそういう風に使ってもらいたい&lt;/li&gt;
+
+      &lt;li&gt;仙台は matz でも人は来ない&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;メリハリをつける&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;札幌では勉強会はだらだら、会議はしっかり&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;勉強会の運営や開催方法について&lt;/li&gt;
+
+  &lt;li&gt;他の地域の Ruby 会議に参加して欲しい&lt;/li&gt;
+
+  &lt;li&gt;こういう話をしたい&lt;/li&gt;
+
+  &lt;li&gt;RubyKaigi 歴 2011 にむけて&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;関西03&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;11/5, 11/6&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;札幌03&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;12/4&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;松江.rb&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;1/末 〜 2/頭&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;Tokyu&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;1/末&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+      &lt;li&gt;名古屋&lt;/li&gt;
+
+        &lt;ul&gt;
+
+          &lt;li&gt;1/末&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="termtter-kaigi">Termtter Kaigi</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;ちょっとうるさい人がいる&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;別にいいが&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;Termtter の紹介から&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;なぜか rvm の紹介が&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="there-is-no-spoon">There is No Spoon</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;かくたにさん&lt;/li&gt;
+
+  &lt;li&gt;Asakusa.rb のインターフォン係&lt;/li&gt;
+
+  &lt;li&gt;Ruby has &quot;Quality&quot;&lt;/li&gt;
+
+  &lt;li&gt;主観と客観の前の、直感的に感じるもの #=&gt; クオリティ&lt;/li&gt;
+
+  &lt;li&gt;Ruby is the Red Pill.&lt;/li&gt;
+
+  &lt;li&gt;少数精鋭でやるほうが良い&lt;/li&gt;
+
+  &lt;li&gt;人とコンピュータの間に価値を置いていくのが Ruby&lt;/li&gt;
+
+  &lt;li&gt;コミュニティ&lt;/li&gt;
+
+    &lt;ul&gt;
+
+      &lt;li&gt;Regional Ruby Kaigi&lt;/li&gt;
+
+      &lt;li&gt;コミュニティはツリーではない&lt;/li&gt;
+
+      &lt;li&gt;大事なのは個人が活動を続けるというプロセス&lt;/li&gt;
+
+      &lt;li&gt;いまできることから始めてみる&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;li&gt;かくたにさんの気持ちを、みんなに伝えるためのプレゼンだったのではないでしょうか&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+<h3 id="基調講演">基調講演</h3>
+
+<pre><code>&lt;ul&gt;
+
+  &lt;li&gt;The PASSIONATE PROGRAMER&lt;/li&gt;
+
+  &lt;li&gt;Chad Fawler&lt;/li&gt;
+
+  &lt;li&gt;これもあとで別に感想を書こう&lt;/li&gt;
+
+&lt;/ul&gt;
+</code></pre>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2010/08/31/rubykaigi-2010-3rd-day/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2010/08/28/jpmobile-on-rails-3-0-in-rubykaigi-2010/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2010/08/28/jpmobile-on-rails-3-0-in-rubykaigi-2010/">jpmobile on Rails 3.0 in RubyKaigi 2010</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-2nd-day/">RubyKaigi 2010 2nd day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2010/08/31/rubykaigi-2010-2nd-day/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

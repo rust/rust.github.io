@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  <title>Rails勉強会＠東京第37回に行ってきた &middot; なんとなく日記</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://stnard.jp/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://stnard.jp/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://stnard.jp/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://stnard.jp/css/custom.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://stnard.jp/">stnard.jp</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blog.stnard.jp"><i class='fa fa-list fa-fw'></i>Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://stnard.jp/post/"><i class='fa fa-list fa-fw'></i>Old Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/conceal_rs" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/rust.ogawa" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/rust" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/shin-ichiro-ogawa-2711891b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rust" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rails勉強会＠東京第37回に行ってきた</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><a href="http://wiki.fdiary.net/rails/?RailsMeetingTokyo-0037">http://wiki.fdiary.net/rails/?RailsMeetingTokyo-0037</a>に行ってきました．さらに懇親会にも参加してきました．参加された皆さん，お疲れさまでした．</p>
+
+<p>以下，当日のログ．</p>
+
+<p>##セッション案</p>
+
+<ul>
+<li>初心者セッション(Yuumi3)</li>
+<li>月刊 merb</li>
+<li>レオさんとペアプロ</li>
+<li>named_scope いろいろ + Rack を読む</li>
+<li>Rails がはまるビジネスなどの話が聞きたい</li>
+<li>i18n Generator について</li>
+<li>1からRailsでLinuxでメール</li>
+</ul>
+
+<p>##セッション分け</p>
+
+<ul>
+<li>前半
+
+<ul>
+<li>named_scope いろいろ + Rack を読む</li>
+<li>Rails がはまるビジネスなどの話が聞きたい</li>
+<li>1からRailsでLinuxでメール</li>
+</ul></li>
+</ul>
+
+<p>##named_scope いろいろ + Rack を読む</p>
+
+<ul>
+<li>named_scope とは
+
+<ul>
+<li>with_scope で使っていた「検索スコープ」名前がつけられるようになった．</li>
+</ul></li>
+<li>scope_do
+
+<ul>
+<li>named_acl</li>
+<li>アクセスコントロールするためのプラグイン</li>
+<li>User がアクセスできる Blog だけを取り出すときは</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-ruby">@blogs = Blog.accessible_by(current_user)
+@blogs = current_user.accessible_blog
+</code></pre>
+
+<ul>
+<li>has_children
+
+<ul>
+<li>has_many の子要素が存在する親要素だけを取得する</li>
+</ul></li>
+<li>chainable_scope
+
+<ul>
+<li>blank な値を入れたいときに使える．
+
+<ul>
+<li>これは便利そうです．</li>
+</ul></li>
+</ul></li>
+<li>SQL であとあと不整合にならないように，副問い合わせを使っている．</li>
+</ul>
+
+<p>###FAQ</p>
+
+<ul>
+<li>SQL の実行順は？
+
+<ul>
+<li>左から順に結合される(？)</li>
+</ul></li>
+<li>Controller でキャッシュすると？
+
+<ul>
+<li>Marshal.dump が呼ばれるので，その段階で SQL が実行される．</li>
+</ul></li>
+</ul>
+
+<p>###便利そうなプラグイン</p>
+
+<ul>
+<li>factory_girl
+
+<ul>
+<li>fixture の代わりにテストデータを作る感じ</li>
+</ul></li>
+<li>record_extention_test_util.rb
+
+<ul>
+<li>scope_do の中にあるプラグインのテスト用データベースを sqlite3 のメモリデータベースで作るようにしたもの．</li>
+<li>中身を見てみる</li>
+</ul></li>
+</ul>
+
+<p>##Rack を読む</p>
+
+<ul>
+<li>Rack とは
+
+<ul>
+<li>WSGI の Ruby 版</li>
+</ul></li>
+<li>HTTP アクセスがあると，call が呼ばれる
+
+<ul>
+<li>もしくは Proc を渡すとその call が呼ばれる．</li>
+<li>env が binding されて呼ばれる</li>
+</ul></li>
+<li>Rack::Handler から</li>
+<li>jpmobile が Rack に対応すると Cool らしい
+
+<ul>
+<li>絵文字とか around_filter 周りが</li>
+</ul></li>
+</ul>
+
+<p>##他のセッション</p>
+
+<ul>
+<li>ブクマを参照してください</li>
+</ul>
+
+<p>##月刊 merb + α？</p>
+
+<ul>
+<li>自己紹介から</li>
+<li>merb の最近の話題
+
+<ul>
+<li>Rails と merge される</li>
+</ul></li>
+
+<li><p>日本語の情報が少ない</p>
+
+<ul>
+<li>瀧内さんのブログが一番の情報源</li>
+</ul></li>
+
+<li><p>作ってみる</p></li>
+</ul>
+
+<pre><code class="language-bash">% merb-gen app hello
+</code></pre>
+
+<ul>
+<li>.gitignore が merb っぽい！</li>
+<li>exception controller がある
+
+<ul>
+<li>デフォルトで not_found/not_acceptable とかがある</li>
+</ul></li>
+<li>autotest が入ってる．merb はわかってる</li>
+<li>config/init.rb と config/dependencies.rb が config/environment.rb の役割</li>
+<li>config/environments に
+
+<ul>
+<li>staging.rb &lt;= ステージングサーバ用</li>
+<li>rake.rb &lt;= rake コマンドのとき</li>
+</ul></li>
+<li>JQuery が使われる</li>
+
+<li><p>thor が使える</p>
+
+<ul>
+<li>rake のようなもの</li>
+</ul></li>
+
+<li><p>起動する</p></li>
+</ul>
+
+<pre><code class="language-bash">% merb
+</code></pre>
+
+<ul>
+<li>controller を作る</li>
+</ul>
+
+<pre><code class="language-bash">% merb-gen controller top
+</code></pre>
+
+<ul>
+<li><p>トップにしたいので</p>
+
+<ul>
+<li>confit/routes.rb</li>
+</ul></li>
+
+<li><p>model を作る</p></li>
+</ul>
+
+<pre><code class="language-bash">% merb-gen resource post
+</code></pre>
+
+<ul>
+<li><p>CRUD の controller も作られる</p></li>
+
+<li><p>get(find)で見つからなくても例外は出ない</p></li>
+
+<li><p>controller の action の引数は？</p>
+
+<ul>
+<li>デフォルト引数．params から対応する値を取ってくる．</li>
+</ul></li>
+
+<li><p>association</p>
+
+<ul>
+<li>belongs_to :post</li>
+<li>has n, :comments</li>
+</ul></li>
+
+<li><p>message</p>
+
+<ul>
+<li>flash のようなものだが，session を使っている</li>
+</ul></li>
+
+<li><p>validation</p>
+
+<ul>
+<li>validate_present ( validate_presence_of )</li>
+</ul></li>
+
+<li><p>DataMapper</p>
+
+<ul>
+<li>クラスメソッドを書けば named_scope っぽくできる</li>
+</ul></li>
+</ul>
+
+<p>##まとめ</p>
+
+<ul>
+<li>頭痛が痛かった．</li>
+<li>Merb は Rails よりもモジュール化が進んでいるっぽい</li>
+<li>Merb でアプリケーションを作るのは簡単そうです．(Rails 知っていれば)
+
+<ul>
+<li>resource はいいですね．問題はありそうだけど．</li>
+</ul></li>
+<li>月刊 merb に関してはちゃんと追えてない．．．．</li>
+</ul>
+
+<p>###KPT
+wikiを参照</p>
+
+<ul>
+<li>Keep
+
+<ul>
+<li>月刊 Merb</li>
+<li>会場よかった(無線 LAN)</li>
+<li>セッションがいっぱい出た</li>
+<li>「この話をしよう」系のセッション</li>
+<li>駆け込み寺++</li>
+<li>初心者セッション++</li>
+<li>定石を知れた</li>
+<li>開発者による i18n セッション</li>
+<li>「ひとこと」になんか書く</li>
+</ul></li>
+<li>Problem
+
+<ul>
+<li>ustやっぱりできない</li>
+<li>一番奥の部屋では e-mobile 繋がらない</li>
+<li>無線LANも厳しかった</li>
+<li>ネットワーク＆プロジェクタ利用できる人がいない部屋があった</li>
+<li>名札(継続審議)</li>
+</ul></li>
+<li>Try
+
+<ul>
+<li>Mac の人はアダプター持参</li>
+<li>継続審議をMLに</li>
+<li>名札</li>
+<li>ust</li>
+<li>『続けて作る』セッションを再開する</li>
+<li>KPT 機
+
+<ul>
+<li>それ merb で</li>
+</ul></li>
+<li>atnd とか</li>
+<li>rails-tokyo アカウントを github に作る</li>
+<li>gems.rails-tokyo.jp</li>
+<li>freenode.net</li>
+<li>#rails-tokyo</li>
+<li>#merb-tokyo</li>
+<li>ML 減るよ</li>
+<li>セッションのタネに「駆け込み寺」的な内容も書く</li>
+<li>1/2コマのセッション</li>
+<li>セルクマのタグは railstokyo と RailsMeetingTokyo の2つを</li>
+</ul></li>
+</ul>
+
+<p>##懇親会</p>
+
+<ul>
+<li>最近女子率下がる一方だね
+
+<ul>
+<li>そういや若者率も下がってないか？</li>
+</ul></li>
+<li>Railer はプログレ率高いらしい．</li>
+<li>ジェネレーションパターンは・・・・</li>
+<li>桜肉鍋うまかった</li>
+</ul>
+
+
+  <div class="share-buttons">
+    <div class="fb-like" data-href="http://stnard.jp/2009/01/19/ruby-rails-Rails-37/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="hatena-share-button"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+    <div class="twitter-share-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="conceal_rs">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.8";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://stnard.jp/2009/01/19/ruby-Ruby-1-9-10/">Ruby 1.9に移行する際に注意すべき10のポイント</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://stnard.jp/2009/01/26/mysql-MySQL/">MySQLで文字化けする時のメモ</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://stnard.jp/2009/01/26/mysql-MySQL/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stnardsdiary';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://stnard.jp/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33462373-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,1469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="http://www.movabletype.org/" />
+<title>Stnard's Diary</title>
+<link rel="stylesheet" href="/mt/styles-site.css" type="text/css" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/mt/atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/mt/index.rdf" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/mt/index.xml" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/mt/rsd.xml" />
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="/mt/">
+<dc:title>Stnard&apos;s Diary</dc:title>
+<dc:description>All you need is ...., but all I need is ....</dc:description>
+<license rdf:resource="http://creativecommons.org/licenses/by/2.1/jp/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by/2.1/jp/">
+</License>
+</rdf:RDF>
+-->
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-97540-1";
+urchinTracker();
+</script>
+<script src="/mt/js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="/mt/js/AC_ActiveX.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="container">
+
+ <div id="banner">
+   <h1><a href="/mt/" accesskey="1">Stnard's Diary</a></h1>
+  <h2>All you need is ...., but all I need is ....</h2>
+<div style="position:absolute;top:10px;right:10px;"><a href="http://www.aozora.gr.jp/shomei/" target="_blank"><img src="http://www.aozora.gr.jp/images/noextension.png" border="0" alt="著作権保護期間延長に反対します" title="著作権保護期間延長に反対します" /></a></div>
+
+ </div>
+
+ <div id="main">
+  <div id="center">
+   <div class="content">
+        <h2 class="date">2005年3月29日</h2>
+
+       <a name="003536"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2005/03/#003536">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#003536">memorandum</a>] <a class="titlelink" href="/mt/archives/2005/03/29/003536.html"> XPlanner+MySQL+Apache2.0+Tomcat5.5+ant+JDK1.5</a></h3>
+       仕事のプロジェクト管理をしようといろいろ管理ソフトを探してみると，
+<a href="http://xplanner.org/" target="_blank">XPlanner</a>がいいみたいなので入れてみた．<br><br>
+ただ「<a href="http://java.sun.com/j2se/1.5.0/ja/download.html" target="_blank">JDK 1.5</a>との相性はよくないらしい」
+とあったので心配してたんだが，実際やってみると案外すんなりインストールできた．
+<ul>
+<li>もともと<a href="http://httpd.apache.org/" target="_blank">Apache 2.0</a>と
+<a href="http://www.mysql.com/" target="_blank">MySQL4.1</a>は入れてあったので，</li>
+<li>JDK 5.0</li>
+<li>Tomcat 5.5の順でインストール．</li>
+<li>環境変数JAVA_HOMEを設定し，</li>
+<li>PATHにJDKのbinを登録<span class="mind">(PATHを登録しないとantが動かないかもなので注意．)</span>．</li>
+<li><a href="http://ant.apache.org/" target="_blank">ant</a>をインストール</li>
+<li>xplanner.propertiesのjdbc::mysql:～に「&useUnicode=true&characterEncoding=UTF-8」を追加</li>
+<li>ant install.db.schema</li>
+<li>ant build.war</li>
+<li>xplanner.warをコピー</li>
+</ul>
+とこんな感じ．普通にググった情報でインストールすると文字化けするんだが，
+MySQLもUTF-8に対応してるんでXPlannerもUTF-8にするといけた．
+JDK 1.5からenumの取り扱いが変わってるらしいんだが，XPlanner 0.62だと
+問題ないのかな？まあ動いてるのでキニシナイ(・∀・)．<br><br>
+XPlannerで工数見積もりとかすると，
+スケジュールが立てやすくなるな．
+GWを休むためにも(ぉ，うまく仕事しなきゃな(;´Д｀)．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2005/03/29/003536.html">12:28</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2005年3月 2日</h2>
+
+       <a name="003490"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2005/03/#003490">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#003490">memorandum</a>] <a class="titlelink" href="/mt/archives/2005/03/02/003490.html"> 任意軸に対する回転行列</a></h3>
+       <blockquote><a href="http://www.laksmido.com/3010.html" target="_blank">任意軸に対する回転行列</a></blockquote>
+わりと使うんで，再度整理．<br><br>
+
+
+        任意の軸を表す単位ベクトルを
+<div align="center">
+<a href="/mt/archives/2005/axis_vector1.html" onclick="window.open('/mt/archives/2005/axis_vector1.html','popup','width=433,height=304,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="/mt/archives/2005/axis_vector-thumb.png" width="120" height="84" border="0" /></a>
+</center>
+とすると，座標の変換は
+<div align="center">
+<a href="/mt/archives/2005/rotation_matrix2.html" onclick="window.open('/mt/archives/2005/rotation_matrix2.html','popup','width=3913,height=304,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="/mt/archives/2005/rotation_matrix-thumb.png" width="500" height="38" border="0" /></a>
+</div>
+となる．
+        <span class="extended"><a href="/mt/archives/2005/03/02/003490.html#more">続きを読む</a></span><br />
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2005/03/02/003490.html">13:33</a>
+
+
+       </div>
+
+
+
+
+       <a name="003488"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2005/03/#003488">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#003488">memorandum</a>] <a class="titlelink" href="/mt/archives/2005/03/02/003488.html"> PowerPointでのデザインテンプレートの変更</a></h3>
+       適当にテンプレート(pot)を作成し，
+<pre class="cmd">
+C:\Documents and Settings\ユーザ名\Application Data\Microsoft\Templates
+</pre>
+に
+<pre class="cmd">
+blank.pot
+</pre>
+として保存すれば，自動的に新スライドにこれが適用される．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2005/03/02/003488.html">12:55</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2004年7月23日</h2>
+
+       <a name="003166"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2004/07/#003166">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#003166">memorandum</a>] <a class="titlelink" href="/mt/archives/2004/07/23/003166.html"> Flash覚書20040723</a></h3>
+       Flash MX 2004のデフォルトの文字コードはUTF-8なので，jcode.plではどうしようもない．ので，
+<pre class="cmd">
+System.useCodepage = true;
+</pre>
+でShift_JISになる．が，改行コードは\x0Aだけなので，
+CGI(Perl/php)側でそれを考慮してやると良い．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2004/07/23/003166.html">17:07</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2004年5月28日</h2>
+
+       <a name="003062"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2004/05/#003062">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#003062">memorandum</a>] <a class="titlelink" href="/mt/archives/2004/05/28/003062.html"> 絵文字を送受信するには＠imode</a></h3>
+       仕事で少し情報が必要になったので調べてみると，
+imodeってメールShift_JISなのね，やっぱ．
+つうことは変なMTAを通すと下手すると文字化けすることになる．
+<span class="mind">
+恐らくはDoCoMo内のMTAでRelay先がimode端末かそうでないかで場合分けしていると信じたい(ぉ．</span><br><br>
+で，絵文字を送りたいと思っても，どうやらShift_JISの外字に相当するようで，
+そのままでは遅れない可能性がある．まあ要するに文字化けするかもしれない．<br><br>
+で，色々試すと，そのまま(Binaryデータとして)送ればqmailでは送信できるようだ．
+あと，Datulaから送ると，
+ESC$Bでエスケープしてくれている．ただBinaryが変換されているので，
+ESC$B[絵文字のBinary]ESC(Bではダメっぽい．
+さすがにどういう変換なのかまでは調べるの面倒だったので，
+一々送信して確かめるとだいたいわかった．もっとも，imode端末に送るときは，
+本文はShift_JISであるべきだろうから，やっぱBinaryそのままで送ると言うことになるのかな．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2004/05/28/003062.html">20:22</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2004年3月25日</h2>
+
+       <a name="000255"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2004/03/#000255">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#000255">memorandum</a>] <a class="titlelink" href="/mt/archives/2004/03/25/000255.html"> Perl覚書</a></h3>
+       WeblogからRSSのURLを抜き出す方法．Movable Typeとかで標準設定だと，URL/index.rdfなんだろうけど，一応そうでない場合も考えて，HTMLを取得してPerlの正規表現で抜いてみた．
+<pre class="cmd">
+$html =~ /&lt;link.+(application\/rss\+xml).+href=[&quot;|](\S+)[&quot;|].*&gt;/
+</pre>
+まあ別段凄いことではないんだけど，書いとかないと忘れそうなので(-_-;)．
+
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2004/03/25/000255.html">15:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2003年2月22日</h2>
+
+       <a name="002652"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2003/02/#002652">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002652">memorandum</a>] <a class="titlelink" href="/mt/archives/2003/02/22/002652.html"> PostgreSQL 7.3.2</a></h3>
+       こっちも上げてみる．一応，互換性とか怖いので，いつでも戻せるようにはし
+ておく．
+<pre class="cmd">
+$ ter zxvf postgresql-7.3.2.tar.gz
+$ cd postgresql-7.3.2
+$ ./cofigure
+$ make
+$ su
+# make install</pre>
+特にオプションとか付けてないけど，まあ動いたからよしとする．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2003/02/22/002652.html">00:00</a>
+
+
+       </div>
+
+
+
+
+       <a name="002653"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2003/02/#002653">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002653">memorandum</a>] <a class="titlelink" href="/mt/archives/2003/02/22/002653.html"> Apache 2.0.44 & OpenSSL 0.9.7a & PHP 4.3.1 & c-client</a></h3>
+       で，ここでいっそ 2.0 系にしてみることにする
+<li>Apache configure
+<pre class="cmd">
+$ tar zxvf httpd-2.0.44.tar.gz
+$ cd httpd-2.0.44
+$ ./configure
+</pre>
+<li>Build c-cliend (Library は前回インストール済み)
+<pre class="cmd">
+$ tar zxvf c-client.tar.Z
+$ cd imap-2002
+$ make slx
+$ su
+</pre>
+<li>Build OpenSSL
+<pre class="cmd">
+$ tar zxvf openssl-0.9.7a.tar.gz
+$ cd openssl-0.9.7a
+$ ./config -fPIC shared
+$ make
+$ su
+# make install
+# exit
+$ mkdir lib
+$ cp -a libcrypto.* lib
+$ cp -a libssl.* lib
+</pre>
+<li>Build PHP
+<pre class="cmd">
+$ tar zxvf php-4.3.1.tar.gz
+$ cd php-4.3.1
+$ ./configure --with-pgsql --enable-mbstring --with-mbregex
+--with-apache2=../httpd-2.0.44 --with-imap=../imap-2002
+--with-imap-ssl=../openssl-0.9.7a
+$ make
+$ su
+# make install
+</pre>
+<li>Build Areche2
+<pre class="cmd">
+$ tar zxvf httpd-2.0.44.tar.gz
+$ cd httpd-2.0.44
+$ ./configure --enable-mods-shared=all
+--activate-module=src/modules/php4/libphp4.a
+$ make
+$ su
+# make install
+</pre>
+とりあえずインストールまで．設定は後日．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2003/02/22/002653.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2002年9月19日</h2>
+
+       <a name="002371"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2002/09/#002371">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002371">memorandum</a>] <a class="titlelink" href="/mt/archives/2002/09/19/002371.html"> upgrade to kernel-2.4.19</a></h3>
+       でとりあえず作業ログ．
+<li>modprobe
+<pre class="cmd">
+$ tar zxvf modutils-2.4.20.tar.bz2
+$ cd modutils-2.4.20
+$ ./configure
+$ make
+$ su
+# make install
+# exit
+$ cd ../
+</pre>
+<li>util-linux
+<pre class="cmd">
+$ tar zxvf util-linux-2.11u.tar.bz2
+$ cd util-linux-2.11u
+$ ./configure
+$ make
+$ su
+# make install
+# cd ../
+</pre>
+<li>kernel-2.4.19
+<pre class="cmd">
+# cp linux-2.4.19.tar.bz2 /usr/src
+# tar zxvf linux-2.4.19.tar.bz2
+# rm linux
+# ln -s linux-2.4.19 linux
+# cd linux
+# make mrproper
+# make menuconfig
+# make dep; make clean
+# make bzImage
+# make bzlilo
+</pre>
+</ol>
+とまでは出来たんだが，
+<span class="strong">ipchains が iptables に変わったために設定を煮詰めないとダメっぽい</span>
+という事実に気付いたため，今回はここまで(ぉ．
+<font COLOR="#404040">つうか，何処弄れば(T_T)．</font>
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2002/09/19/002371.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2002年6月 8日</h2>
+
+       <a name="002232"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2002/06/#002232">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002232">memorandum</a>] <a class="titlelink" href="/mt/archives/2002/06/08/002232.html"> daemontools install</a></h3>
+       この際なので daemontools を入れて，qmail をこれから起動することにする．
+まんま
+<a href="http://www.atmarkit.co.jp/flinux/rensai/qmail09/qmail09a.html" target="_blank">ここ</e>
+と同じ．
+<li>daemontools の install
+<pre class="cmd">
+# mkdir -p /package
+# chmod 1755 /package
+# cd /package
+# gunzip daemontools-0.76.tar.gz
+# tar -xpf daemontools-0.76.tar
+# cd admin/daemontools-0.76
+# ./package/install
+</pre>
+<li>qmail 起動用の変更 #1
+<pre class="cmd">
+# mkdir /var/qmail/services
+# mkdir /var/qmail/services/qmail
+# mkdir /var/qmail/services/qmail/log
+# chmod +t /var/qmail/services/qmail
+</pre>
+<li>新しい起動スクリプト
+<pre class="cmd">
+/var/qmail/services/qmail/run
+-----------------
+#!/bin/sh
+PATH=/var/qmail/bin:/usr/local/bin:/bin:/usr/bin
+exec /var/qmail/rc
+-----------------
+/var/qmail/services/qmail/log/run
+-----------------
+#!/bin/sh
+exec /usr/local/bin/setuidgid qmaill /usr/local/bin/multilog t /var/log/qmail
+-----------------
+# chmod +x /var/qmail/services/qmail/run
+# chmod +x /var/qmail/services/qmail/log/run
+-----------------
+/var/qmail/rc
+-----------------
+#!/bin/sh
+exec env - PATH="/var/qmail/bin:$PATH" \
+qmail-start ./Maildir/
+-----------------
+</pre>
+<li>Log 用の設定
+<pre class="cmd">
+# mkdir /var/log/smtpd
+# chown qmails:nofiles /var/log/smtpd
+# chmod 700 /var/log/smtpd
+</pre>
+<li>で，起動．
+<pre class="cmd">
+# ln -s /var/qmail/services/smtpd /service/smtpd
+</pre>
+</ol>
+終了．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2002/06/08/002232.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2002年4月28日</h2>
+
+       <a name="002175"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2002/04/#002175">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002175">memorandum</a>] <a class="titlelink" href="/mt/archives/2002/04/28/002175.html"> OpenSSL-0.9.6c & OpenSSH-3.1p1 & zlib-1.1.4</a></h3>
+       <li>OpenSSL を Install
+<pre class="cmd">
+$ tar zxvf openssl-0.9.6c.tar.gz
+$ cd openssl-0.9.6c
+$ ./configure
+$ make
+$ make test
+$ su
+# make install
+</pre>
+<li>zlib を install
+<pre class="cmd">
+$ tar zxvf zlib-1.1.4.tar.gz
+$ cd zlib-1.1.4
+$ CFLAGS='-O6 -march=pentiumpro' ./configure -s --prefix=/usr
+$ make
+$ make test
+$ su
+# make install
+</pre>
+<li>OpenSSH を install
+<pre class="cmd">
+$ tar zxvf openssh-3.1p1.tar.gz
+$ cd openssh-3.1p1
+$ ./configure --with-pam --with-tcp-wrappers
+$ make
+$ su
+# make install
+# make host-key
+# cp contrib/redhat/sshd.init /etc/rc.d/init.d/sshd
+# vi /etc/rc.d/init.d/sshd
+# vi /etc/ssh/sshd_config
+# cp contrib/redhat/sshd.pam /etc/pam.d/sshd
+# /sbin/chkconfig --add sshd
+# /sbin/chkconfig sshd on
+# /sbin/service sshd start
+</pre>
+</ol>
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2002/04/28/002175.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2002年3月 6日</h2>
+
+       <a name="002082"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2002/03/#002082">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002082">memorandum</a>] <a class="titlelink" href="/mt/archives/2002/03/06/002082.html"> Apache-1.3.23 + PHP-4.1.12 + mod_ssl-2.8.7</a></h3>
+       え～，もう一回最初から入れてみることにする．
+<li>Apache を configure する．
+<pre class="cmd">
+$ cd apache_1.3.23
+$ ./configure
+$ cd ../
+</pre>
+<li>PHP を Build する．
+<pre class="cmd">
+$ cd php-4.1.2
+$ ./configure --with-pgsql --with-apache=../apache_1.3.23
+--enable-track-vars
+$ make
+$ su
+# make install
+# exit
+$ cd ../
+</pre>
+<li>OpenSSL を -fPIC(Position Independent Code) をつけて config -> make
+<pre class="cmd">
+$ cd ../openssl-0.9.6b
+$ ./config -fPIC
+$ make
+$ cd ../
+</pre>
+<li>mod_ssl を configure
+<pre class="cmd">
+$ cd mod_ssl-2.8.7-1.3.23
+$ ./configure --with-apache=../apache_1.3.23
+--with-ssl=../openssl-0.9.6b --enable-rule=SHARED_CORE
+--with-layout=Apache --enable-module=so --enable-module=status
+--enable-module=info --enable-module=rewrite --enable-module=usertrack
+--activate-module=src/modules/php4/libphp4.a --enable-shared=ssl
+$ cd ../
+</pre>
+<li>Apache の Build
+<pre class="cmd">
+$ cd apache_1.3.23
+$ make
+$ make certificate
+$ su
+# make install
+</pre>
+</ul>
+まあ，こんな感じ．多分これで大丈夫だろう．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2002/03/06/002082.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2002年2月13日</h2>
+
+       <a name="002061"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2002/02/#002061">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002061">memorandum</a>] <a class="titlelink" href="/mt/archives/2002/02/13/002061.html"> BIND9</a></h3>
+       <ul>
+<li>Zone definition file の先頭に
+<pre class="cmd">
+$TTL    86400
+</pre>
+を加える．これが無いと動かない．
+<li>/var/run/named.pid に named user がアクセス出来ないので，取り敢えず
+の回避方法として，root と同じ ID:GROUP の named ユーザーをつくる．
+Shell は /bin/false とかしておく．
+<pre class="cmd">
+named:x:0:0::/var/named:/bin/false
+</pre>
+</ul>
+まあ，こんな感じで動いた．細かい設定は DynamicDNS とかが完成してから掲
+載することにする．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2002/02/13/002061.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2002年1月11日</h2>
+
+       <a name="002022"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2002/01/#002022">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#002022">memorandum</a>] <a class="titlelink" href="/mt/archives/2002/01/11/002022.html"> teTeX error</a></h3>
+       Install 中の Error．latex.ltx 中の日付の指定が
+<pre class="cmd">
+\edef\fmtversion{1999/12/01}
+</pre>
+となっている場合，これより 1 年以上経過していると，
+<pre class="cmd">
+LaTeX source files more than 1 year old!
+</pre>
+という Error で終了する．回避するには単に，
+<pre class="cmd">
+%\edef\fmtversion{1999/12/01}
+\edef\fmtversion{2001/12/01}
+</pre>
+とでもする．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2002/01/11/002022.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年12月 2日</h2>
+
+       <a name="001935"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/12/#001935">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001935">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/12/02/001935.html"> Ghostscript 6.51+Kochi+PDF Writer on Kondara2000</a></h3>
+       Ghostscript がちゃんと入って無かったのに入れる．
+<li>所定の Files を Download して展開．
+<pre class="cmd">
+$ cd ~/temp
+$ tar zxvf jpegsrc.v6b.tar.gz
+$ tar zxvf libpng-1.0.12.tar.gz
+$ tar zxvf zlib-1.1.3.tar.gz
+$ tar Ixvf ghostscript-6.51.tar.bz2
+$ tar zxvf gs-6.51-cjk-M2-R2.tar.gz
+</pre>
+<li>Patch をあて，Symbolic Link を張る．
+<pre class="cmd">
+$ cd ghostscript-6.51
+$ cat ../gs6.51-cjk-M2-R2/*.patch | patch -p0 -b
+$ ln -s ../jpeg-6b jpeb
+$ ln -s ../libpng-1.0.12 libpng
+$ ln -s ../zlib-1.1.3 zlib
+$ cp src/unix-gcc.mak Makefile
+</pre>
+<li>Source, Makefile の修正
+<pre class="cmd">
+ghostscript-6.51/src/zdevcal.c
+ghostscript-6.51/src/gdevtifs.c
+ghostscript-6.51/src/gdevpsu.c
+  -> #include<time.h>
+Makefile
+～264 -> XINCLUDE=-I/usr/X11R6/include
+～377 -> DEVICE_DEVS6=....$(DD)stcolor.dev
+</pre>
+<li>make
+<pre class="cmd">
+$ make
+$ su
+# make install
+</pre>
+<li>Font の展開
+<pre class="cmd">
+# cd /usr/local/share/ghostscript
+# tar zxvf /home/..../temp/ghostscript-fonts-std-6.0.tar.gz
+# tar zxvf /home/..../temp/ghostscript-fonts-other-6.0.tar.gz
+# mkdir Resource
+# cd Resource
+# mkdir Font CIDFont
+# tar zxvf /home/..../temp/adobe-cmaps-200103.tar.gz
+# tar zxvf /home/..../temp/gs-6.51-cjk-M2-R2/install-cid.tar.gz
+</pre>
+<li>gs_res.ps の編集
+<pre class="cmd">
+# vi /usr/local/share/ghostscript/6.51/lib/gs_res.ps
+/FontResourceDir    -> /usr/local/share/ghostscript/Resource/Font/
+/GenericResourceDir -> /usr/local/share/ghostscript/Resource/
+</pre>
+<li>TrueTypeFont
+<pre class="cmd">
+# cd /usr/local/share/fonts/truetype
+# tar Ixvf /home/..../temp/kochi-mincho-0.1.20011107.tar.bz2
+# tar Ixvf /home/..../temp/kochi-gothic-0.0.20011107.tar.bz2
+# cp /kochi-mincho/fonts/kochi-mincho.ttf .
+# cp /kochi-gothic/fonts/kochi-gothic.ttf .
+# cd /usr/local/share/ghostscript/Resource
+# ./alias-aj1.sh install Ryumin-Light=kochi-mincho.ttf
+# ./alias-aj1.sh install GothicBB-Medium=kochi-gothic.ttf
+</pre>
+Copy はいらないかも．
+<li>環境変数
+<pre class="cmd">
+export GS_LIB=/usr/local/share/ghostscript/fonts
+</pre>
+</ol>
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/12/02/001935.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年11月29日</h2>
+
+       <a name="001929"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001929">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001929">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/29/001929.html"> Apache+PHP4+JSP+mod_ssl</a></h3>
+       全部一気にじゃなくて追加
+<li>openssl を download して展開後 -fPIC(Position Independent Code) を
+つけて config
+<pre class="cmd">
+# tar zxvf openssl-0.9.6b.tar.gz
+# cd openssl-0.9.6b
+# ./config -fPIC
+# make
+</pre>
+<li>mod_ssl を download して展開後 configure
+<pre class="cmd">
+$ tar zxvf cd mod_ssl-2.8.5-1.3.22.tar.gz
+# cd cd mod_ssl-2.8.5-1.3.22
+# ./configure --with-apache=../apache_1.3.22
+--with-ssl=../openssl-0.9.6b --enable-rule=SHARED_CORE
+--with-layout=Apache --enable-module=so --enable-module=status
+--enable-module=info --enable-module=rewrite --enable-module=usertrack
+--activate-module=src/modules/php4/libphp4.a --enable-shared=ssl
+</pre>
+<li>Apache の make
+<pre class="cmd">
+# cd ../apache-1.3.22
+# make
+# make certificate
+</pre>
+この時点で Certification に関して質問があるが，特に気にする必要も無く
+適当に．
+<font COLOR="#404040">大体公開しないし，CA</font>
+<font COLOR="#404040">個人用だから．</font>
+<li>make install
+<pre class="cmd">
+# make install
+</pre>
+<li>設定する．
+<font COLOR="#404040">まあ適当に．</font>
+<pre class="cmd">
+# emacs /usr/local/apache/conf/httpd.conf
+/->
+    order deny,allow
+    deny from all
+    allow from 192.168.0.0/255.255.255.0 127.0.0.1
+<Directory /home/*/public_html>
+     Options Indexes FollowSymLinks
+     AllowOverride Options FileInfo Limit AuthConfig
+     Order allow,deny
+     Allow from all
+</Directory>
+HostnameLookups On
+server-status, server-info -> Eliminate #
+</pre>
+<li>起動
+<pre class="cmd">
+# apachectl stop
+# apachectl startssl
+</pre>
+</ol>
+後は Browser で見たときに
+<span class="strong">サイト証明書</span>
+がどうとか出てくるので
+<span class="strong">はい</span>
+を選ぶだけ．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/29/001929.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年11月27日</h2>
+
+       <a name="001923"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001923">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001923">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/27/001923.html"> PDF Writer</a></h3>
+       Samba + GS で簡易 PDF 出力用の仮想 Printer を作る．
+<li>Directry の準備
+<pre class="cmd">
+# mkdir /home/samba/bin/
+# mkdir /home/samba/pdfwork/
+# mkdir /home/samba/pdfoutput/
+# chmod 777 /home/samba/pdfwork/
+# chmod 777 /home/samba/pdfoutout/
+</pre>
+<li>Samba の設定
+<pre class="cmd">
+# vi /etc/smb.conf
+---------------------------------
+[pdf writer]
+printable = yes
+comment = PDF Writer
+print command = /home/samba/bin/pdfwrite %s &
+guest ok = yes
+path = /home/samba/pdfwork
+
+[pdfoutput]
+comment = PDF Output
+path = /home/samba/pdfoutput
+guest ok = yes
+read only = no
+writable = yes
+---------------------------------
+# service smb restart
+</pre>
+<li>PDF 変換用 Script
+<pre class="cmd">
+# vi /home/samba/bin/pdfwrite
+---------------------------------
+#!/bin/sh
+# usage: pdfwrite [ps filename]
+outdir=/home/samba/pdfoutput
+workdir=/home/samba/pdfwork
+psname=$1
+pdfname=${workdir}/$psname.pdf
+/usr/bin/ps2pdf $psname $pdfname
+mv $pdfname $outdir
+---------------------------------
+# chmod +x /home/samba/bin/pdfwrite
+</pre>
+<li>Windows 上での設定<br>
+普通にプリンタを追加する．ドライバが見つからないといわれる場合は，適当
+なものを選ぶ(Canon LBP-A404IIPS)．
+</ol>
+単に GS を通じて変換しているだけなので，Font は汚い．まあ飽く迄簡易な
+んで．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/27/001923.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年11月26日</h2>
+
+       <a name="001918"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001918">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001918">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/26/001918.html"> ADD PRIMARY KEY on PostgreSQL</a></h3>
+       作成された(ある程度データがある) Table に Priamry Key(or Foreign Key
+etc.) を追加する方法．
+<li>テーブルの名前を変える
+<pre class="cmd">
+=> alter table THE_TABLE rename to oldtable;
+</pre>
+<li>新しい Table を普通に作成する．
+<pre class="cmd">
+=> create table THE_TABLE (
+(>   test    int4      PRIMARY KEY,
+(>   test2   char(24)
+(> );
+</pre>
+<li>新しいテーブルに古いテーブルのデータを追加する．
+<pre class="cmd">
+=> insert into THE_TABLE select * from oldtable;
+</pre>
+<li>必要に応じて Table を削除する．
+<pre class="cmd">
+=> drop table oldtable;
+</pre>
+</ol>
+別に難しい事はなく，単に Insert するのがミソ．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/26/001918.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年11月25日</h2>
+
+       <a name="001915"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001915">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001915">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/25/001915.html"> JSP</a></h3>
+       Default で JSP が Listen するのは 8080 らしいのでそれを変更する．どう
+も Squid 立ててるのが影響しているようだ．
+<pre class="cmd">
+8080 -> 8088
+</pre>
+これで再起動する．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/25/001915.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年11月20日</h2>
+
+       <a name="001906"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001906">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001906">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/20/001906.html"> Apache+PHP4+JSP</a></h3>
+       え～，色々なページからしらべた結果を残すことに．
+<li>Apache を configure
+<pre class="cmd">
+# tar zxvf apache_1.3.22.tar.gz
+# cd apache_1.3.22
+# ./configure
+# cd ../
+</pre>
+<li>PHP
+<pre class="cmd">
+# tar php-4.0.6.tar.gz
+# cd php-4.0.6
+# ./configure --with-pgsql --with-apache=../apache_1.3.22
+--enable-track-vars
+# make
+# make install
+</pre>
+<li>Apache に PHP Module 組み込ませるようにする．同時に DSO を有効にす
+る．
+<pre class="cmd">
+# cd ../apache_1.3.22
+# ./configure --enable-rule=SHARED_CORE --enable-module=so
+--activate-module=src/modules/php4/libphp4.a
+# make
+# make install
+</pre>
+<li>設定をする
+<pre class="cmd">
+# cd ../php-4.0.6
+# cp php.ini-dist /usr/local/lib/php.ini
+# vi /usr/local/apache/conf/httpd.conf
+# vi /etc/profile
+</pre>
+<li>tomcat を持ってくる．
+<pre class="cmd">
+# tar zxvf jakarta-tomcat-3.2.3.tar.gz -C /usr/local
+</pre>
+<li>mod_jk.so をコピーする
+<pre class="cmd">
+# cp mod_jk-noapi.so /usr/local/apache/libexec/mod_jk.so
+</pre>
+<li>設定する
+<pre class="cmd">
+# emacs /usr/local/apache/conf/httpd.conf
+Add
+Include "/usr/local/jakarta-tomcat-3.2.3/conf/mod_jk.conf-auto"
+</pre>
+<li>起動する
+<pre class="cmd">
+# sh /usr/local/jakarta-tomcat-3.2.3/bin/tomcat.sh start
+# /usr/local/apache/bin/apachectl start
+</pre>
+</ol>
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/20/001906.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年11月 6日</h2>
+
+       <a name="001883"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001883">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001883">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/06/001883.html"> Windows 2000 Installation without CD-ROM Drive</a></h3>
+       Notebook PC 等で CD-ROM が無い場合のインストール方法
+<ul>
+<ol>
+<li>Desktop PC に HDD を接続する方法<br>
+<li>Desktop PC の IDE Interface に Notebook PC 用の 2.5 inch HDD を
+<span class="strong">変換アダプタ</span>
+を用いて接続する．
+<li>HDD を
+<font COLOR="lime">FAT32</font>
+で Format する．この時，
+<span class="strong">Windows 98/98SE</span>
+を用いて System (MS-DOS) を入れておくとすごく楽になる．
+<li>Windows 2000 CD-ROM から \i386 を全て Copy する．これは SP2 を当て
+た image でもかまわない．
+<li>Notebook PC に HDD を接続する．この時，HDD に MS-DOS が入っていれば
+そのまま起動する．Format しただけであれば 起動ディスク (Windows
+98 等で作成できるもの．但し FAT32 が読めなくてはいけない) で起動する．
+<li>[c:\i386\winnt.exe] を実行する．
+</ol>
+<li>FDD が接続されていて Windows 95 の FD Install image があり，
+<li>FD から Windows 95 をインストールする．
+<li>PCMCIA LAN Card を認識させる．
+<li>CD-ROM が接続されている PC で CD-ROM (又は Install image) を共有す
+る．
+<li>CD-ROM 中の \i386 を全て Copy する．
+<span class="strong">MS-DOS モードで再起動する．</span>
+<li>[\i386] 以外のファイルを全て削除する．
+<li>FDD から起動ディスク (上記と同じもの) で起動する．
+<li>[c:\i386\winnt.exe] を実行する．
+</ol>
+</ul>
+とまあこのような感じで Clean Install 出来ます．その代わりに
+<span class="strong">桁違いに時間がかかります</span>
+．起動ディスクに smartdrv.exe 等の Disk Cache Driver を組み込んでおく
+か，後で組み込むといいでしょう．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/06/001883.html">00:00</a>
+
+
+       </div>
+
+
+
+
+        <h2 class="date">2001年11月 5日</h2>
+
+       <a name="001880"></a>
+       <h3 class="title"><a class="hide" href="/mt/archives/2001/11/#001880">▽</a>[<a class="cat" href="/mt/archives/cat_memorandum.html#001880">memorandum</a>] <a class="titlelink" href="/mt/archives/2001/11/05/001880.html"> HDD change on Linux Server</a></h3>
+       換装終了．てなわけで，簡単に書いておく事にする．FDD が使えればもっと簡単になったんだろうが，FDD が死んでるようなのでちょっと複雑．
+<li>Partiting HDD<br>
+HDD の Partition を設定する．以降前と同じにする必要は無い．
+<pre class="cmd">
+# fdisk /dev/hdb
+/dev/hdb1  /boot primary partition
+/dev/hdb5  /     in extend partition
+/dev/hdb6  swap  in extend partition
+</pre>
+どうも，こうしないと駄目らしい．原因は不明．
+<font COLOR="#404040">これ以上調べたくないのでそのまま(ぉ．</font>
+<li>Formatting HDD<br>
+上記で作成した Partition を Format する．今回は [/boot] は [ext2] で，
+[/] は [ReiserFS] で Format する．
+<pre class="cmd">
+# mke2fs /dev/hdb1
+# mkreiserfs /dev/hdb5
+</pre>
+<li>Coping files<br>
+[cp -a (dirs) /mount/(dirs)] とでもして Copy する．[-a] をつけないと属
+性などが Copy されない．[/proc/] は Directory だけを作成しておく．
+<pre class="cmd">
+# mkdir /target
+# mkdir /target/boot
+# mount /dev/hdb5 /target
+# mount /dev/hdb1 /target/boot
+# cp -a /boot/* /target/boot/
+# cp -a /[bin|lib|usr|home|var|tmp|dev|etc|...]/ /target
+# mkdir /target/proc
+</pre>
+<li>Exchanging HDD<br>
+HDD を交換する．しかしこの段階ではまだ起動出来ない．
+<li>Boot from Install CD-ROM<br>
+Vine 2.1 の Install CD から Boot する．旧 HDD から起動しているときに
+[lilo -r /target] とかやっても，結局 [/dev/hda] の MBR に書き込まれる
+ため起動出来ない．Rescue Disk とかあればそこから起動すれば簡単なんだろ
+うが，FDD が死んでるためこの方法を使った．要点は
+<span class="strong">アップグレードインストールを選択</span>
+すること．これで現環境はとりあえず引き継げるでしょう．
+<li>Reboot<br>
+以上で作業終了．Reboot してちゃんと動くか確認．
+</ol>
+まあこんな感じで終了．[5.] を思いつくまでかなり時間食ったけど，成功し
+たからいいや．
+
+       <div class="posted">Posted by Rust Stnard at <a href="/mt/archives/2001/11/05/001880.html">00:00</a>
+
+
+       </div>
+
+   </div>
+  </div>
+
+  <div id="left">
+   <div class="sidebar">
+
+<h2>最近の日記</h2>
+
+<ul>
+
+<li><a href="/mt/archives/2005/03/29/003536.html">XPlanner+MySQL+Apache2.0+Tomcat5.5+ant+JDK1.5</a></li>
+
+<li><a href="/mt/archives/2005/03/02/003490.html">任意軸に対する回転行列</a></li>
+
+<li><a href="/mt/archives/2005/03/02/003488.html">PowerPointでのデザインテンプレートの変更</a></li>
+
+<li><a href="/mt/archives/2004/07/23/003166.html">Flash覚書20040723</a></li>
+
+<li><a href="/mt/archives/2004/05/28/003062.html">絵文字を送受信するには＠imode</a></li>
+
+<li><a href="/mt/archives/2004/03/25/000255.html">Perl覚書</a></li>
+
+<li><a href="/mt/archives/2003/02/22/002652.html">PostgreSQL 7.3.2</a></li>
+
+<li><a href="/mt/archives/2003/02/22/002653.html">Apache 2.0.44 & OpenSSL 0.9.7a & PHP 4.3.1 & c-client</a></li>
+
+<li><a href="/mt/archives/2002/09/19/002371.html">upgrade to kernel-2.4.19</a></li>
+
+<li><a href="/mt/archives/2002/06/08/002232.html">daemontools install</a></li>
+
+</ul>
+
+<h2>カテゴリー</h2>
+
+<ul>
+
+<li><a href="/mt/archives/cat_anime.html">anime</a> [506]</li>
+
+<li><a href="/mt/archives/cat_blog.html">blog</a> [175]</li>
+
+<li><a href="/mt/archives/cat_books.html">books</a> [95]</li>
+
+<li><a href="/mt/archives/cat_dv9200.php">dv9200</a> [1]</li>
+
+<li><a href="/mt/archives/cat_ffxi.html">FFXI</a> [396]</li>
+
+<li><a href="/mt/archives/cat_flash_mx.html">Flash MX</a> [3]</li>
+
+<li><a href="/mt/archives/cat_foods.html">foods</a> [1]</li>
+
+<li><a href="/mt/archives/cat_games.html">games</a> [88]</li>
+
+<li><a href="/mt/archives/cat_goods.html">goods</a> [1]</li>
+
+<li><a href="/mt/archives/cat_inspiron_6000.php">Inspiron 6000</a> [2]</li>
+
+<li><a href="/mt/archives/cat_jobs.html">jobs</a> [47]</li>
+
+<li><a href="/mt/archives/cat_junk.html">junk</a> [201]</li>
+
+<li><a href="/mt/archives/cat_latitude.html">Latitude</a> [4]</li>
+
+<li><a href="/mt/archives/cat_life.html">life</a> [154]</li>
+
+<li><a href="/mt/archives/cat_memorandum.html">memorandum</a> [22]</li>
+
+<li><a href="/mt/archives/cat_misc.html">misc</a> [3]</li>
+
+<li><a href="/mt/archives/cat_mobile.html">mobile</a> [3]</li>
+
+<li><a href="/mt/archives/cat_music.html">music</a> [50]</li>
+
+<li><a href="/mt/archives/cat_news.html">news</a> [8]</li>
+
+<li><a href="/mt/archives/cat_pc.html">PC</a> [411]</li>
+
+<li><a href="/mt/archives/cat_photo.html">photo</a> [26]</li>
+
+<li><a href="/mt/archives/cat_program.html">program</a> [7]</li>
+
+<li><a href="/mt/archives/cat_rd-style.html">RD-Style</a> [26]</li>
+
+<li><a href="/mt/archives/cat_science.html">science</a> [8]</li>
+
+<li><a href="/mt/archives/cat_srx3.php">SRX3</a> [20]</li>
+
+<li><a href="/mt/archives/cat_thesis.html">thesis</a> [62]</li>
+
+<li><a href="/mt/archives/cat_w-zero3es.php">W-ZERO3[es]</a> [10]</li>
+
+<li><a href="/mt/archives/cat_works.html">works</a> [86]</li>
+
+<li><a href="/mt/archives/cat_wow.html">WoW</a> [6]</li>
+
+<li><a href="/mt/archives/cat_.html">忍者</a> [2]</li>
+
+<li><a href="/mt/archives/cat_.html">業務連絡</a> [1]</li>
+
+</ul>
+
+<h2>リンク</h2>
+<span class="side">
+ <div class="side" align="left">
+  <div style="overflow: auto; height: 240px; width: 190px;">
+   <script language="javascript" type="text/javascript" src="http://www.blogpeople.net/display/usr/0f0d445659085016.js"></script>
+  </div>
+ </div>
+    <a href="javascript:void(bloppop=window.open('http://www.blogpeople.net/addlink.jsp?n=1&u=http%3A%2F%2Fstnard.jp%2Fmt%2F&ti='+escape(document.title),'blop','scrollbars=no,width=475,height=350,left=75,top=175,status=yes,resizable=yes'));">Stnard's Diaryを登録 by BlogPeople</a>
+    <br /><br />
+    <a href="http://www.blogpeople.net/GB/">GBで異世界へ旅立つ</a>
+    <br />Powered by<br />
+    <a href="http://www.blogpeople.net/member/service/index.jsp" target="_blank"><img src="http://www.blogpeople.net/GB-banner.gif" alt="BlogPeopleガチャガチャブログ" width="90" height="35" border="0" /></a><br /><br />
+<a href="http://www.blogpeople.net/Option_Service.html#hirogaru" target="_blank"><img src="http://www.blogpeople.net/images/hirogaru-banner/hirogaru2.gif" border="0" /></a>
+</span>
+
+<span class="side">
+<!-- track word -->
+<table id="trackwordv" width="120" cellspacing="0" cellpadding="0">
+<tr><th><a href="http://www.trackword.net/"><img style="border:0" src="http://www.trackword.net/img/minilogov.gif" alt="blog seo tool : track word" width="120" height="14px"></a></th></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/1">blog SEO tool</a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/2"></a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/3"></a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/4"></a></td></tr>
+<tr><td style="text-align:center;padding:2px;"><a href="http://my.trackword.net/u/stnard/5"></a></td></tr>
+</table>
+<script type="text/javascript" src="http://az.trackword.net/show.phtml?r=stnard" charset="utf-8"></script>
+<!-- track word -->
+</span>
+
+<h2>過去の日記</h2>
+<span class="side">
+ <div style="overflow: auto; height: 240px; width: 190px;">
+
+<a href="/mt/archives/2009/08/">2009年8月</a>[1]<br />
+
+<a href="/mt/archives/2007/10/">2007年10月</a>[1]<br />
+
+<a href="/mt/archives/2007/09/">2007年9月</a>[3]<br />
+
+<a href="/mt/archives/2007/08/">2007年8月</a>[3]<br />
+
+<a href="/mt/archives/2007/07/">2007年7月</a>[3]<br />
+
+<a href="/mt/archives/2007/06/">2007年6月</a>[1]<br />
+
+<a href="/mt/archives/2007/05/">2007年5月</a>[4]<br />
+
+<a href="/mt/archives/2007/04/">2007年4月</a>[6]<br />
+
+<a href="/mt/archives/2007/03/">2007年3月</a>[3]<br />
+
+<a href="/mt/archives/2007/02/">2007年2月</a>[7]<br />
+
+<a href="/mt/archives/2007/01/">2007年1月</a>[6]<br />
+
+<a href="/mt/archives/2006/12/">2006年12月</a>[5]<br />
+
+<a href="/mt/archives/2006/11/">2006年11月</a>[10]<br />
+
+<a href="/mt/archives/2006/10/">2006年10月</a>[5]<br />
+
+<a href="/mt/archives/2006/09/">2006年9月</a>[11]<br />
+
+<a href="/mt/archives/2006/08/">2006年8月</a>[10]<br />
+
+<a href="/mt/archives/2006/07/">2006年7月</a>[8]<br />
+
+<a href="/mt/archives/2006/06/">2006年6月</a>[7]<br />
+
+<a href="/mt/archives/2006/05/">2006年5月</a>[9]<br />
+
+<a href="/mt/archives/2006/04/">2006年4月</a>[7]<br />
+
+<a href="/mt/archives/2006/03/">2006年3月</a>[14]<br />
+
+<a href="/mt/archives/2006/02/">2006年2月</a>[13]<br />
+
+<a href="/mt/archives/2006/01/">2006年1月</a>[11]<br />
+
+<a href="/mt/archives/2005/12/">2005年12月</a>[9]<br />
+
+<a href="/mt/archives/2005/11/">2005年11月</a>[16]<br />
+
+<a href="/mt/archives/2005/10/">2005年10月</a>[19]<br />
+
+<a href="/mt/archives/2005/09/">2005年9月</a>[13]<br />
+
+<a href="/mt/archives/2005/08/">2005年8月</a>[17]<br />
+
+<a href="/mt/archives/2005/07/">2005年7月</a>[23]<br />
+
+<a href="/mt/archives/2005/06/">2005年6月</a>[26]<br />
+
+<a href="/mt/archives/2005/05/">2005年5月</a>[27]<br />
+
+<a href="/mt/archives/2005/04/">2005年4月</a>[26]<br />
+
+<a href="/mt/archives/2005/03/">2005年3月</a>[30]<br />
+
+<a href="/mt/archives/2005/02/">2005年2月</a>[24]<br />
+
+<a href="/mt/archives/2005/01/">2005年1月</a>[17]<br />
+
+<a href="/mt/archives/2004/12/">2004年12月</a>[12]<br />
+
+<a href="/mt/archives/2004/11/">2004年11月</a>[30]<br />
+
+<a href="/mt/archives/2004/10/">2004年10月</a>[25]<br />
+
+<a href="/mt/archives/2004/09/">2004年9月</a>[31]<br />
+
+<a href="/mt/archives/2004/08/">2004年8月</a>[23]<br />
+
+<a href="/mt/archives/2004/07/">2004年7月</a>[49]<br />
+
+<a href="/mt/archives/2004/06/">2004年6月</a>[34]<br />
+
+<a href="/mt/archives/2004/05/">2004年5月</a>[55]<br />
+
+<a href="/mt/archives/2004/04/">2004年4月</a>[43]<br />
+
+<a href="/mt/archives/2004/03/">2004年3月</a>[49]<br />
+
+<a href="/mt/archives/2004/02/">2004年2月</a>[40]<br />
+
+<a href="/mt/archives/2004/01/">2004年1月</a>[30]<br />
+
+<a href="/mt/archives/2003/12/">2003年12月</a>[40]<br />
+
+<a href="/mt/archives/2003/11/">2003年11月</a>[35]<br />
+
+<a href="/mt/archives/2003/10/">2003年10月</a>[67]<br />
+
+<a href="/mt/archives/2003/09/">2003年9月</a>[40]<br />
+
+<a href="/mt/archives/2003/08/">2003年8月</a>[33]<br />
+
+<a href="/mt/archives/2003/07/">2003年7月</a>[35]<br />
+
+<a href="/mt/archives/2003/06/">2003年6月</a>[41]<br />
+
+<a href="/mt/archives/2003/05/">2003年5月</a>[53]<br />
+
+<a href="/mt/archives/2003/04/">2003年4月</a>[32]<br />
+
+<a href="/mt/archives/2003/03/">2003年3月</a>[59]<br />
+
+<a href="/mt/archives/2003/02/">2003年2月</a>[47]<br />
+
+<a href="/mt/archives/2003/01/">2003年1月</a>[57]<br />
+
+<a href="/mt/archives/2002/12/">2002年12月</a>[72]<br />
+
+<a href="/mt/archives/2002/11/">2002年11月</a>[55]<br />
+
+<a href="/mt/archives/2002/10/">2002年10月</a>[42]<br />
+
+<a href="/mt/archives/2002/09/">2002年9月</a>[47]<br />
+
+<a href="/mt/archives/2002/08/">2002年8月</a>[28]<br />
+
+<a href="/mt/archives/2002/07/">2002年7月</a>[38]<br />
+
+<a href="/mt/archives/2002/06/">2002年6月</a>[41]<br />
+
+<a href="/mt/archives/2002/05/">2002年5月</a>[39]<br />
+
+<a href="/mt/archives/2002/04/">2002年4月</a>[53]<br />
+
+<a href="/mt/archives/2002/03/">2002年3月</a>[54]<br />
+
+<a href="/mt/archives/2002/02/">2002年2月</a>[21]<br />
+
+<a href="/mt/archives/2002/01/">2002年1月</a>[50]<br />
+
+<a href="/mt/archives/2001/12/">2001年12月</a>[74]<br />
+
+<a href="/mt/archives/2001/11/">2001年11月</a>[52]<br />
+
+<a href="/mt/archives/2001/10/">2001年10月</a>[62]<br />
+
+<a href="/mt/archives/2001/09/">2001年9月</a>[68]<br />
+
+<a href="/mt/archives/2001/08/">2001年8月</a>[34]<br />
+
+<a href="/mt/archives/2001/07/">2001年7月</a>[55]<br />
+
+<a href="/mt/archives/2001/06/">2001年6月</a>[54]<br />
+
+<a href="/mt/archives/2001/05/">2001年5月</a>[2]<br />
+
+<a href="/mt/archives/2001/04/">2001年4月</a>[4]<br />
+
+<a href="/mt/archives/2001/03/">2001年3月</a>[9]<br />
+
+<a href="/mt/archives/2001/02/">2001年2月</a>[1]<br />
+
+<a href="/mt/archives/2001/01/">2001年1月</a>[7]<br />
+
+<a href="/mt/archives/1999/12/">1999年12月</a>[2]<br />
+
+<a href="/mt/archives/1999/11/">1999年11月</a>[6]<br />
+
+<a href="/mt/archives/1999/10/">1999年10月</a>[1]<br />
+
+<a href="/mt/archives/1999/09/">1999年9月</a>[3]<br />
+
+<a href="/mt/archives/1999/07/">1999年7月</a>[3]<br />
+
+<a href="/mt/archives/1999/06/">1999年6月</a>[11]<br />
+
+<a href="/mt/archives/1999/02/">1999年2月</a>[2]<br />
+
+<a href="/mt/archives/1998/10/">1998年10月</a>[5]<br />
+
+<a href="/mt/archives/1998/07/">1998年7月</a>[4]<br />
+
+<a href="/mt/archives/1998/06/">1998年6月</a>[17]<br />
+
+<a href="/mt/archives/1998/05/">1998年5月</a>[23]<br />
+
+<a href="/mt/archives/1998/04/">1998年4月</a>[8]<br />
+
+<a href="/mt/archives/1998/03/">1998年3月</a>[14]<br />
+
+ </div>
+</span>
+
+<h2>Misc.</h2>
+
+<span class="side-center">
+<!--
+Skype 'My status' button
+http://www.skype.com/go/skypebuttons
+-->
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<a href="skype:stnard?call"><img src="http://mystatus.skype.com/bigclassic/stnard" style="border: none;" width="182" height="44" alt="My status" /></a>
+</span>
+
+<span class="side-center">
+<!-- Search Google -->
+<form method="get" action="http://www.google.co.jp/custom" target="google_window">
+<table bgcolor="#000000">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25blk.gif" border="0" alt="Google" align="middle"></img></a>
+<br/>
+<input type="text" name="q" size="15" maxlength="255" value=""></input>
+</td></tr>
+<tr><td valign="top" align="left">
+<input type="submit" name="sa" value="検索"></input>
+<input type="hidden" name="client" value="pub-9996981468066870"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="channel" value="3286551650"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"></input>
+<input type="hidden" name="hl" value="ja"></input>
+</td></tr></table>
+</form>
+<!-- Search Google -->
+</span>
+
+<span class="side-center">
+<a href="/mt/cgi-bin/mt4i.cgi?id=1" target="_blank"><img src="http://www.hazama.nu/t2o2/archives/banner_mt4i_nagasawa_01.gif"  border="0"></a>
+</span>
+
+<span class="side-center">
+<a href="http://research.goo.ne.jp/cgi-bin/goo.cgi?::SID=afreg&afd=25ef2fa929519bccf5cb07c02c0c96b19993c9961d3e298dc1d3680023b549c1&adtype=a3" target="_blank"><IMG border=0 src="http://research.goo.ne.jp/Campaign/images/mybanner3.gif" width="120" height="120" alt="gooリサーチモニターに登録！"></a>
+</span>
+
+<span class="side-center">
+<script src="http://trackfeed.com/usr/b8dfcbb5f5.js"></script><br>
+<a href="http://feedmeter.net/detail.php?r=http%3A%2F%2Fstnard.jp%2Fmt%2Findex.rdf" target="_feedmeter"><img src="http://feedmeter.net/image.php?r=http%3A%2F%2Fstnard.jp%2Fmt%2Findex.rdf" border="0" width="60" height="36" alt="RSS feed meter for /mt/" /></a><br>
+</span>
+
+<span class="side-center">
+<script type='text/javascript' src='http://track.mybloglog.com/js/jsserv.php?mblID=2005083123132317'></script>
+</span>
+
+<span class="side">
+<a href="http://px.a8.net/svt/ejp?a8mat=OEZFY+CIP5PU+D8Y+5ZEMP" target="_blank">
+<img border="0" width="100" height="60" alt="Click Here!" src="http://ad.a8.net/svt/bgt?aid=041009902757&wid=001&eno=01&mid=s00000001717001005000&mc=1"></a>
+<img border="0" width="1" height="1" src="http://ad.a8.net/0.gif?a8mat=OEZFY+CIP5PU+D8Y+5ZEMP" alt="">
+<a href="http://px.a8.net/svt/ejp?a8mat=OF1S3+24SXTE+K+ZRQ0X" target="_blank">
+<img border="0" width="100" height="60" alt="Click Here!" src="http://ad.a8.net/svt/bgt?aid=041012931129&wid=001&eno=01&mid=s00000000002006008000&mc=1"></a>
+<img border="0" width="1" height="1" src="http://ad.a8.net/0.gif?a8mat=OF1S3+24SXTE+K+ZRQ0X" alt="">
+<a href="http://www.jpweb.co.jp/yuriwaka/dlink/" onMouseOver="self.status='『日記リンク』';return true" target="_blank"><img src="http://www.jpweb.co.jp/yuriwaka/dlink/nikkilin.gif" width="88" height="31" border="0" ALT="日記リンク" /></a>
+</span>
+
+</div>
+
+  </div>
+
+  <div id="right">
+   <div class="sidebar">
+
+<h2>別館</h2>
+<span class="side-center">
+<ul>
+ <li><a href="http://rust.vox.com/" target="_blank">Rustのブログ on VOX</a></li>
+</ul>
+</span>
+
+<h2>FFXI Prof.</h2>
+<span class="side-center">
+<a href="http://takayu.sakura.ne.jp/xi-prof/"><img src="http://takayu.sakura.ne.jp/xi-prof/js/id43c311ec76adf.png" border="0" alt="Profile" target="_top"></a>
+</span>
+
+<h2>最近のトラックバック</h2>
+<span class="side">
+<ul>
+
+</ul>
+</span>
+
+<h2>最近のコメント</h2>
+<span class="side">
+<ul>
+
+</ul>
+</span>
+
+<span class="side-center">
+ <script type="text/javascript"><!--
+  amazon_ad_tag = "stnardsdiary-22";  amazon_ad_width = "160";  amazon_ad_height = "600";  amazon_color_border = "CCCCFF";  amazon_color_background = "000000";  amazon_color_text = "FFFFFF";  amazon_color_link = "FFFFFF";  amazon_color_price = "FF0000";  amazon_color_logo = "000000";  amazon_ad_link_target = "new";//--></script>
+<script type="text/javascript" src="http://www.assoc-amazon.jp/s/ads.js"></script>
+</span>
+
+<span class="side-center">
+ <script type="text/javascript"><!--
+google_ad_client = "pub-9996981468066870";
+google_ad_width = 180;
+google_ad_height = 150;
+google_ad_format = "180x150_as";
+google_ad_type = "text_image";
+google_ad_channel ="9567259143";
+google_color_border = "CCCCCC";
+google_color_bg = "000000";
+google_color_link = "00CCFF";
+google_color_text = "FFFFFF";
+google_color_url = "00FF00";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</span>
+
+</div>
+
+  </div>
+
+ </div>
+</div>
+
+</body>
+</html>
