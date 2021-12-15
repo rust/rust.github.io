@@ -8,9 +8,9 @@ xmlns:admin="http://webns.net/mvcb/"
 xmlns:cc="http://web.resource.org/cc/"
 xmlns="http://purl.org/rss/1.0/">
 
-<channel rdf:about="http://stnard.jp/mt/">
+<channel rdf:about="https://stnard.jp/mt/">
 <title>Stnard&apos;s Diary</title>
-<link>http://stnard.jp/mt/</link>
+<link>https://stnard.jp/mt/</link>
 <description>All you need is ...., but all I need is ....</description>
 <dc:language>en_US</dc:language>
 <dc:creator></dc:creator>
@@ -22,68 +22,68 @@ xmlns="http://purl.org/rss/1.0/">
 
 <items>
 <rdf:Seq>
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2010/05/17/003910.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2010/05/17/003910.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2010/05/17/003909.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2010/05/17/003909.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2009/08/03/003908.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2009/08/03/003908.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/10/13/003894.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/10/13/003894.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/09/07/003893.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/09/07/003893.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/09/06/003892.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/09/06/003892.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/09/03/003891.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/09/03/003891.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/08/14/003890.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/08/14/003890.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/08/11/003889.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/08/11/003889.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/08/10/003888.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/08/10/003888.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/07/16/003887.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/07/16/003887.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/07/03/003886.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/07/03/003886.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/07/03/003885.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/07/03/003885.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/06/07/003884.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/06/07/003884.html" />
 
-<rdf:li rdf:resource="http://stnard.jp/mt/archives/2007/05/15/003883.html" />
+<rdf:li rdf:resource="https://stnard.jp/mt/archives/2007/05/15/003883.html" />
 </rdf:Seq>
 </items>
 
 </channel>
 
 
-<item rdf:about="http://stnard.jp/mt/archives/2010/05/17/003910.html">
+<item rdf:about="https://stnard.jp/mt/archives/2010/05/17/003910.html">
 <title>WordPressに移行しました</title>
-<link>http://stnard.jp/mt/archives/2010/05/17/003910.html</link>
+<link>https://stnard.jp/mt/archives/2010/05/17/003910.html</link>
 <description>と言うわけで、ここは更新されません。とりあえず報告まで。 http://stna...</description>
 <content:encoded><![CDATA[と言うわけで、ここは更新されません。とりあえず報告まで。
 
-<a href="http://stnard.jp/">http://stnard.jp/</a>]]></content:encoded>
+<a href="https://stnard.jp/">https://stnard.jp/</a>]]></content:encoded>
 <dc:subject></dc:subject>
 <dc:creator>Rust Stnard</dc:creator>
 <dc:date>2010-05-17T11:37:08+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2010/05/17/003909.html">
+<item rdf:about="https://stnard.jp/mt/archives/2010/05/17/003909.html">
 <title>WordPressに移行しました</title>
-<link>http://stnard.jp/mt/archives/2010/05/17/003909.html</link>
+<link>https://stnard.jp/mt/archives/2010/05/17/003909.html</link>
 <description>と言うわけで、ここは更新されません。とりあえず報告まで。 http://stna...</description>
 <content:encoded><![CDATA[と言うわけで、ここは更新されません。とりあえず報告まで。
 
-<a href="http://stnard.jp/">http://stnard.jp/</a>]]></content:encoded>
+<a href="https://stnard.jp/">https://stnard.jp/</a>]]></content:encoded>
 <dc:subject>blog</dc:subject>
 <dc:creator>Rust Stnard</dc:creator>
 <dc:date>2010-05-17T11:37:08+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2009/08/03/003908.html">
+<item rdf:about="https://stnard.jp/mt/archives/2009/08/03/003908.html">
 <title>携帯変わります</title>
-<link>http://stnard.jp/mt/archives/2009/08/03/003908.html</link>
+<link>https://stnard.jp/mt/archives/2009/08/03/003908.html</link>
 <description>Willcomを解約するので．だって iPhone の圧力が高ｓ(ｒｙ． さて，...</description>
 <content:encoded><![CDATA[Willcomを解約するので．だって iPhone の圧力が高ｓ(ｒｙ．
 
@@ -100,9 +100,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2009-08-03T23:55:37+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/10/13/003894.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/10/13/003894.html">
 <title>しばしのお休み</title>
-<link>http://stnard.jp/mt/archives/2007/10/13/003894.html</link>
+<link>https://stnard.jp/mt/archives/2007/10/13/003894.html</link>
 <description>ここでのブログはしばしお休みします．まあなんとなくですが，別のところで書いてます...</description>
 <content:encoded>ここでのブログはしばしお休みします．まあなんとなくですが，別のところで書いてます．重いんだよね，MovableType．．．．</content:encoded>
 <dc:subject>junk</dc:subject>
@@ -110,9 +110,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-10-13T00:22:42+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/09/07/003893.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/09/07/003893.html">
 <title>いまこの業界に必要なこと</title>
-<link>http://stnard.jp/mt/archives/2007/09/07/003893.html</link>
+<link>https://stnard.jp/mt/archives/2007/09/07/003893.html</link>
 <description> 【XDev】「とりあえず作って，後から作り直せ」，Rubyのまつもと氏が語るエ...</description>
 <content:encoded><![CDATA[<blockquote>
 <a href="http://itpro.nikkeibp.co.jp/article/NEWS/20070907/281335/" target="_blank">【XDev】「とりあえず作って，後から作り直せ」，Rubyのまつもと氏が語るエンタープライズ開発：ITpro:</a>
@@ -123,9 +123,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-09-07T17:21:26+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/09/06/003892.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/09/06/003892.html">
 <title>ここ最近の負荷</title>
-<link>http://stnard.jp/mt/archives/2007/09/06/003892.html</link>
+<link>https://stnard.jp/mt/archives/2007/09/06/003892.html</link>
 <description>超高め．．．．これはD論書いている時以来だな．しかもあの時は終わりがあったが，今...</description>
 <content:encoded>超高め．．．．これはD論書いている時以来だな．しかもあの時は終わりがあったが，今回は先が見えない．何かがトリガーになれば．．．．という状況．久しぶりに橘いずみかな．．．．orz
 </content:encoded>
@@ -134,9 +134,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-09-06T14:45:00+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/09/03/003891.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/09/03/003891.html">
 <title>精神的に参る</title>
-<link>http://stnard.jp/mt/archives/2007/09/03/003891.html</link>
+<link>https://stnard.jp/mt/archives/2007/09/03/003891.html</link>
 <description>正直，管理職の柄ではないので，いまは結構心的負荷高め．妻と猫とが癒し元です．これ...</description>
 <content:encoded>正直，管理職の柄ではないので，いまは結構心的負荷高め．妻と猫とが癒し元です．これがないと逃げてるな，きっと．．．．
 
@@ -146,9 +146,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-09-03T17:36:36+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/08/14/003890.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/08/14/003890.html">
 <title>考えて書く・話す</title>
-<link>http://stnard.jp/mt/archives/2007/08/14/003890.html</link>
+<link>https://stnard.jp/mt/archives/2007/08/14/003890.html</link>
 <description>今日1日、形容詞は禁止です。 - シロクマ日報 [ITmedia オルタナティブ...</description>
 <content:encoded><![CDATA[<blockquote><a href="http://blogs.itmedia.co.jp/akihito/2007/08/1_67fa.html" target="_blank">今日1日、形容詞は禁止です。 - シロクマ日報 [ITmedia オルタナティブ・ブログ]</a></blockquote>
 形容ばかりで本質を語れない人が最近多い気がしますね．文章全体が形容だけになると，聞いている人は実際に何が言いたいのか理解できなくなる．そういう意味で，形容詞禁止で語るのはいい試みじゃないかと思う．]]></content:encoded>
@@ -157,9 +157,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-08-14T19:16:34+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/08/11/003889.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/08/11/003889.html">
 <title>ホットスポット初体験</title>
-<link>http://stnard.jp/mt/archives/2007/08/11/003889.html</link>
+<link>https://stnard.jp/mt/archives/2007/08/11/003889.html</link>
 <description>今日はビル停電のため，朝から出社して電源落としてきた．んで，電源入れるために待っ...</description>
 <content:encoded>今日はビル停電のため，朝から出社して電源落としてきた．んで，電源入れるために待ってるあいだ，近くのドトールで暇をつぶしているんだが，ホットスポット対応なので非常に快適．高速通信は便利だ・・・・</content:encoded>
 <dc:subject>W-ZERO3[es]</dc:subject>
@@ -167,9 +167,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-08-11T09:54:55+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/08/10/003888.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/08/10/003888.html">
 <title>話題の？</title>
-<link>http://stnard.jp/mt/archives/2007/08/10/003888.html</link>
+<link>https://stnard.jp/mt/archives/2007/08/10/003888.html</link>
 <description></description>
 <content:encoded><![CDATA[<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/QVSGRwqgvl0"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/QVSGRwqgvl0" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>]]></content:encoded>
 <dc:subject>junk</dc:subject>
@@ -177,9 +177,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-08-10T23:50:13+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/07/16/003887.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/07/16/003887.html">
 <title>自宅開発環境再構築</title>
-<link>http://stnard.jp/mt/archives/2007/07/16/003887.html</link>
+<link>https://stnard.jp/mt/archives/2007/07/16/003887.html</link>
 <description>何となく再構築． Fedora Core 6 on VMware emacs w...</description>
 <content:encoded><![CDATA[何となく再構築．
 <br />
@@ -196,9 +196,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-07-16T14:27:42+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/07/03/003886.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/07/03/003886.html">
 <title>Outland上陸，そして・・・・</title>
-<link>http://stnard.jp/mt/archives/2007/07/03/003886.html</link>
+<link>https://stnard.jp/mt/archives/2007/07/03/003886.html</link>
 <description>緑装備の高性能さに唖然とする．．．．下と上とじゃ全然違うのね．下のEpicでも上...</description>
 <content:encoded><![CDATA[<p>緑装備の高性能さに唖然とする．．．．下と上とじゃ全然違うのね．下のEpicでも上の緑に勝てなかったりとか．まあLv上限上がったからそうなるんだろうけど，ちょっと桁違いだな．まあ強化されていくのは気持ちいいんだけどね．いまLv61．もう少しかな．</p>]]></content:encoded>
 <dc:subject>WoW</dc:subject>
@@ -206,9 +206,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-07-03T13:41:44+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/07/03/003885.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/07/03/003885.html">
 <title>日々変わりなしorz</title>
-<link>http://stnard.jp/mt/archives/2007/07/03/003885.html</link>
+<link>https://stnard.jp/mt/archives/2007/07/03/003885.html</link>
 <description>えー，まあ特に何も変ったことは茄子．近況としては会社の大阪事務所が引っ越しでてん...</description>
 <content:encoded><![CDATA[<p>えー，まあ特に何も変ったことは茄子．近況としては会社の大阪事務所が引っ越しでてんやわんやとか．FFXIは相変わらず引退状態．物価がかなり下がってるらしいんで，今戻ったら金持ちなんだろうなぁ，と考えるだけでログインはせず．そんな感じの毎日．日々変わりなし．</p>]]></content:encoded>
 <dc:subject>life</dc:subject>
@@ -216,9 +216,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-07-03T13:37:41+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/06/07/003884.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/06/07/003884.html">
 <title>Advancedと言えば・・・・</title>
-<link>http://stnard.jp/mt/archives/2007/06/07/003884.html</link>
+<link>https://stnard.jp/mt/archives/2007/06/07/003884.html</link>
 <description>ウィルコム、無線LAN対応の「Advanced/W-ZERO3［es］」 ネーミ...</description>
 <content:encoded><![CDATA[<blockquote><a href="http://k-tai.impress.co.jp/cda/article/news_toppage/34882.html" target="_blank">ウィルコム、無線LAN対応の「Advanced/W-ZERO3［es］」</a></blockquote>
 ネーミングはともかく，
@@ -235,9 +235,9 @@ xmlns="http://purl.org/rss/1.0/">
 <dc:date>2007-06-07T22:03:56+09:00</dc:date>
 </item>
 
-<item rdf:about="http://stnard.jp/mt/archives/2007/05/15/003883.html">
+<item rdf:about="https://stnard.jp/mt/archives/2007/05/15/003883.html">
 <title>今日の購入日記：大人買い</title>
-<link>http://stnard.jp/mt/archives/2007/05/15/003883.html</link>
+<link>https://stnard.jp/mt/archives/2007/05/15/003883.html</link>
 <description>大人買い，楽しい．すばらしき行為（ぉぃ． ハギワラシスコム USB対応フラッシュ...</description>
 <content:encoded><![CDATA[大人買い，楽しい．すばらしき行為（ぉぃ．<br />
 <table border="0" cellpadding="5" width="100%">

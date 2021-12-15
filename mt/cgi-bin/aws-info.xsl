@@ -20,7 +20,7 @@
  <xsl:element name="head">
   <xsl:element name="link">
    <xsl:attribute name="rel"><xsl:text>stylesheet</xsl:text></xsl:attribute>
-   <xsl:attribute name="href"><xsl:text>http://stnard.jp/mt/styles-site.css</xsl:text></xsl:attribute>
+   <xsl:attribute name="href"><xsl:text>https://stnard.jp/mt/styles-site.css</xsl:text></xsl:attribute>
    <xsl:attribute name="type"><xsl:text>text/css</xsl:text></xsl:attribute>
   </xsl:element>
  </xsl:element>

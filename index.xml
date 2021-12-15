@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>なんとなく日記</title>
-    <link>http://stnard.jp/index.xml</link>
+    <link>https://stnard.jp/index.xml</link>
     <description>Recent content on なんとなく日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Thu, 01 Jun 2017 19:31:35 +0000</lastBuildDate>
-    <atom:link href="http://stnard.jp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stnard.jp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mediumに移転してみる</title>
-      <link>http://stnard.jp/2017/06/01/move-to-medium</link>
+      <link>https://stnard.jp/2017/06/01/move-to-medium</link>
       <pubDate>Thu, 01 Jun 2017 19:31:35 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/06/01/move-to-medium</guid>
+      <guid>https://stnard.jp/2017/06/01/move-to-medium</guid>
       <description>&lt;p&gt;Hugo便利ではあるんですが、いろいろ運用面倒になってきたので、しばらくは&lt;a href=&#34;https://blog.stnard.jp&#34;&gt;Mediumに移って&lt;/a&gt;にみようと思います。&lt;/p&gt;
 
 &lt;p&gt;運用の何が面倒って、記事を作成するには、&lt;/p&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title>技術力は才能？努力？〜「超一流になるのは才能か努力か?」</title>
-      <link>http://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort</link>
+      <link>https://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort</link>
       <pubDate>Mon, 08 May 2017 16:12:35 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort</guid>
+      <guid>https://stnard.jp/2017/05/08/gifted-talent-or-result-of-effort</guid>
       <description>&lt;p&gt;優秀な若者にオススメされて読んでみたんですが、常々思っていたことがちゃんと学問として検証されていたようで、ものすごく腑に落ちたので紹介してみます。&lt;/p&gt;
 
 
@@ -72,18 +72,18 @@
 &lt;li&gt;コンフォートゾーン（居心地ところ）から外に出て練習する&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;と書かれています。3番目なんて僕の好きな&lt;a href=&#34;http://stnard.jp/2010/03/16/Lifestyle/&#34;&gt;情熱プログラマーの「一番の下手くそでいよう」&lt;/a&gt;というのに近いかなと、自分の中にスッと入ってきました。&lt;/p&gt;
+&lt;p&gt;と書かれています。3番目なんて僕の好きな&lt;a href=&#34;https://stnard.jp/2010/03/16/Lifestyle/&#34;&gt;情熱プログラマーの「一番の下手くそでいよう」&lt;/a&gt;というのに近いかなと、自分の中にスッと入ってきました。&lt;/p&gt;
 
-&lt;p&gt;先日の&lt;a href=&#34;http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer/&#34;&gt;ポエム&lt;/a&gt;にも書いたんですが、「限界的練習で技術力は伸ばせる」という前提なら、いろいろ採用の仕方も変わってくるなと改めて考えさせられました。もちろん今度は教育が大変になるんですが。&lt;/p&gt;
+&lt;p&gt;先日の&lt;a href=&#34;https://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer/&#34;&gt;ポエム&lt;/a&gt;にも書いたんですが、「限界的練習で技術力は伸ばせる」という前提なら、いろいろ採用の仕方も変わってくるなと改めて考えさせられました。もちろん今度は教育が大変になるんですが。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>キャリア形成の重要性〜『その「エンジニア採用」が不幸を生む』を読んだ</title>
-      <link>http://stnard.jp/2017/03/02/importance-to-make-engineer-carrer</link>
+      <link>https://stnard.jp/2017/03/02/importance-to-make-engineer-carrer</link>
       <pubDate>Mon, 01 May 2017 16:12:35 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/03/02/importance-to-make-engineer-carrer</guid>
+      <guid>https://stnard.jp/2017/03/02/importance-to-make-engineer-carrer</guid>
       <description>
 
 &lt;p&gt;ちょっと前に発売されたエンジニア採用に関する本を読んだのでその感想。&lt;/p&gt;
@@ -109,7 +109,7 @@
 
 &lt;h2 id=&#34;エンジニア採用でなにが不幸を招くのか&#34;&gt;エンジニア採用でなにが不幸を招くのか&lt;/h2&gt;
 
-&lt;p&gt;いろいろ問題があると思うんですが、例えばこれから採用しようと考えている会社側の問題としては、経営者の理解が挙げられます。何のために採用するのか、何をやってもらいたいのかなどは整理されているか。また会社制度・文化とのマッチングは大丈夫か。これは&lt;a href=&#34;http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer/&#34;&gt;前にも&lt;/a&gt;書いたんですが、会社と合うかどうかって非常に重要です。さらに日本は制度上簡単に解雇できないので、もし事業がなくなってしまったら別の仕事にアサインすることになりますが、そこまで考えて採用しているケースはほぼないんじゃないでしょうか。&lt;/p&gt;
+&lt;p&gt;いろいろ問題があると思うんですが、例えばこれから採用しようと考えている会社側の問題としては、経営者の理解が挙げられます。何のために採用するのか、何をやってもらいたいのかなどは整理されているか。また会社制度・文化とのマッチングは大丈夫か。これは&lt;a href=&#34;https://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer/&#34;&gt;前にも&lt;/a&gt;書いたんですが、会社と合うかどうかって非常に重要です。さらに日本は制度上簡単に解雇できないので、もし事業がなくなってしまったら別の仕事にアサインすることになりますが、そこまで考えて採用しているケースはほぼないんじゃないでしょうか。&lt;/p&gt;
 
 &lt;p&gt;一方で既にエンジニアがいる組織では、待遇の問題というのが発生しがちです。新しくエンジニアを採用しようとすると、既存エンジニアとの給与バランスが悪くなってしまう可能性があります。かと言って現状の合わせて採用しようとすると期待するような技術力がある人が採用できないかもしれません。ここも難しい問題です。&lt;/p&gt;
 
@@ -127,10 +127,10 @@
     
     <item>
       <title>優秀なエンジニアとは？採用の難しさ</title>
-      <link>http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer</link>
+      <link>https://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer</link>
       <pubDate>Fri, 24 Mar 2017 14:12:35 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer</guid>
+      <guid>https://stnard.jp/2017/03/02/difficulty-hiring-excellent-engineer</guid>
       <description>&lt;p&gt;そもそも優秀なエンジニアってどういう人なんでしょうね。採用やってると、いろんな優秀さが見れるんですが、かと言ってそれを測る尺度をたくさん用意するのは運用上不可能です。特に技術やビジネスなど状況が毎週のように変わるので、下手すると尺度もそれと同じ頻度で変更する必要があります。このあたりで失敗してしまうと、いろいろ不都合が生じてしまうこともあるので、ちゃんとした尺度を持っておかないと後で辛いことになります。&lt;/p&gt;
 
 &lt;p&gt;一方で「ある意味、優秀なエンジニアならなんでもできる」という話も聞きます。これも間違ってるわけではないんですが、「なんでもできる」ということと「やってもらおうと思っていることをやりたいと思っている」という話は別です。ここも間違いやすいんですが、確かに「一般的な尺度で言うところの優秀な人間」であれば、なんでもできるかもしれないんですが、そのことを見極める方がもっと大変じゃないかなと思ってます。&lt;/p&gt;
@@ -151,19 +151,19 @@
     
     <item>
       <title>ShiftとAuthyが便利</title>
-      <link>http://stnard.jp/2017/03/02/shift-authy</link>
+      <link>https://stnard.jp/2017/03/02/shift-authy</link>
       <pubDate>Thu, 02 Mar 2017 10:20:35 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/03/02/shift-authy</guid>
+      <guid>https://stnard.jp/2017/03/02/shift-authy</guid>
       <description>&lt;p&gt;いろんな会社さんと仕事をしていると、複数の&lt;a href=&#34;https://gsuite.google.co.jp/&#34;&gt;G Suite&lt;/a&gt;を使わないといけなくなるんですが、まあ普通にGoogle Chromeのタブで使い分けていました。ただこれだとタブを開かないと見れないし、そのアカウントに対応するカレンダーとかGoogle Driveとかを開くのも一苦労でしたんですが、そこで&lt;a href=&#34;https://blog.strk.jp/tryshift-google-web-apps-as-native-app-bf2f9fce19df&#34;&gt;見つけた&lt;/a&gt;のが&lt;a href=&#34;http://tryshift.com/?referral=da8e1662762a578ac9829c2d6f2b62cf&#34;&gt;Shift&lt;/a&gt;という、複数のG SuiteやGoogle Accountを管理できるアプリ。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://stnard.jp/img/shift.png&#34; alt=&#34;Shift&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://stnard.jp/img/shift.png&#34; alt=&#34;Shift&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;なにが便利って、ElectronなんですがWindows版があることですね。某MMORPGしないといけないので、Windowsは必須なんですが、そこで利用できるというのが大きなポイントです。&lt;a href=&#34;http://rebuild.fm/176/&#34;&gt;Rebuild.fmでも紹介されてた&lt;/a&gt;んですが、複数アカウント持ちには便利ですね。&lt;/p&gt;
 
 &lt;p&gt;あと最近Google Authenticatorから&lt;a href=&#34;https://www.authy.com/&#34;&gt;Authy&lt;/a&gt;に変えました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://stnard.jp/img/authy.png&#34; alt=&#34;Authy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://stnard.jp/img/authy.png&#34; alt=&#34;Authy&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;いまは業務用と個人用にスマホを2台持ってるんですが、2FAをどちらでもできたらなと思っていたところに&lt;a href=&#34;https://www.authy.com/&#34;&gt;Authy&lt;/a&gt;を見つけました。Authyの便利なところはChrome Extensionがあるところで、いちいちスマホ起動しなくてもいいという点。ただこのように複数端末で使えるのでセキュリティ的に弱くなる可能性はありますね。ご利用は計画的にしないといけません :smile:&lt;/p&gt;
 </description>
@@ -171,10 +171,10 @@
     
     <item>
       <title>jpmobileにCircleCIとonkcopを入れた</title>
-      <link>http://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop</link>
+      <link>https://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop</link>
       <pubDate>Thu, 09 Feb 2017 13:20:35 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop</guid>
+      <guid>https://stnard.jp/2017/02/09/jpmobile-circle-ci-onkcop</guid>
       <description>&lt;p&gt;最初に &lt;a href=&#34;https://github.com/jpmobile/jpmobile&#34;&gt;jpmobile&lt;/a&gt; の開発を始めてからもう7年も経つのかと感慨深い今日このごろ。ここしばらくは Rails と Ruby のバージョンアップのたびにいろいろ diff 見て回ったりテスト回したりする日々ですが、手元ではテスト回せるけどまあ割りと準備が必要なんですよね。&lt;/p&gt;
 
 &lt;p&gt;と言う訳ではないですが、&lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt;で動くようにいろいろ頑張ってみました。&lt;/p&gt;
@@ -196,10 +196,10 @@
     
     <item>
       <title>Cookpad TechConf 2017に参加してきた</title>
-      <link>http://stnard.jp/2017/01/23/cookpad-tech-conf-2017</link>
+      <link>https://stnard.jp/2017/01/23/cookpad-tech-conf-2017</link>
       <pubDate>Mon, 23 Jan 2017 14:25:35 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/01/23/cookpad-tech-conf-2017</guid>
+      <guid>https://stnard.jp/2017/01/23/cookpad-tech-conf-2017</guid>
       <description>&lt;p&gt;応募したら当選したので&lt;a href=&#34;https://techconf.cookpad.com/2017/&#34;&gt;Cookpad TechConf 2017&lt;/a&gt;に行ってきました。&lt;/p&gt;
 
 &lt;p&gt;いやー、一般参加者は気楽でいいですねー。みなさんの発表を聞きながら作業とかもできて、いろいろ捗りました。&lt;/p&gt;
@@ -216,10 +216,10 @@
     
     <item>
       <title>待遇よりも重要なことはあるか - マネジメントの基礎理論を読んだ</title>
-      <link>http://stnard.jp/2017/01/20/basic-theory-of-management</link>
+      <link>https://stnard.jp/2017/01/20/basic-theory-of-management</link>
       <pubDate>Fri, 20 Jan 2017 14:52:02 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/01/20/basic-theory-of-management</guid>
+      <guid>https://stnard.jp/2017/01/20/basic-theory-of-management</guid>
       <description>&lt;p&gt;ずっと昔に買って読んでなかったマネジメントの基礎理論という本を読んだんですが、部下を成長させるにはどうするべきかなど、いわゆるマネジメントの方法論などが、マネジメント理論に基づいて解説されていて、いろいろ腹落ちして良い本でした。&lt;/p&gt;
 
 
@@ -265,10 +265,10 @@
     
     <item>
       <title>ホピーパソコン興亡史を読んだ</title>
-      <link>http://stnard.jp/2017/01/12/hobby-pc-history</link>
+      <link>https://stnard.jp/2017/01/12/hobby-pc-history</link>
       <pubDate>Thu, 12 Jan 2017 01:20:02 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/01/12/hobby-pc-history</guid>
+      <guid>https://stnard.jp/2017/01/12/hobby-pc-history</guid>
       <description>&lt;p&gt;頂いた本を少しずつ読み進めてますが、とは言えなかなか消化完了は遠い未来な予感がします。&lt;/p&gt;
 
 
@@ -302,10 +302,10 @@
     
     <item>
       <title>ハッカーと画家を読んで</title>
-      <link>http://stnard.jp/2017/01/04/hackers-and-painters</link>
+      <link>https://stnard.jp/2017/01/04/hackers-and-painters</link>
       <pubDate>Wed, 04 Jan 2017 19:00:00 +0000</pubDate>
       
-      <guid>http://stnard.jp/2017/01/04/hackers-and-painters</guid>
+      <guid>https://stnard.jp/2017/01/04/hackers-and-painters</guid>
       <description>&lt;p&gt;読みたいと思いつつ手が出なかったのがこれ。実はなんか周りのエモい人はみんな読んでいるので、逆に敬遠していたやつです。&lt;/p&gt;
 
 
@@ -341,10 +341,10 @@
     
     <item>
       <title>2016の振り返り</title>
-      <link>http://stnard.jp/2016/12/16/look-back-2016</link>
+      <link>https://stnard.jp/2016/12/16/look-back-2016</link>
       <pubDate>Sat, 31 Dec 2016 16:00:00 +0000</pubDate>
       
-      <guid>http://stnard.jp/2016/12/16/look-back-2016</guid>
+      <guid>https://stnard.jp/2016/12/16/look-back-2016</guid>
       <description>
 
 &lt;p&gt;いままであまり振り返りは書いてこなかったんですが、さすがに今年はいろいろあったので軽く書いてみようと思う。&lt;/p&gt;
@@ -367,7 +367,7 @@
 
 &lt;h2 id=&#34;起業した&#34;&gt;起業した&lt;/h2&gt;
 
-&lt;p&gt;特に「このサービスをやるぜ！」というわけではないですが、&lt;a href=&#34;http://stnard.jp/2016/10/11/build-llc/&#34;&gt;会社作りました&lt;/a&gt;。退職する話をするとよく「受け皿としての会社を作っといたほうが良い」的なことを言われ続けた結果、作らないとダメなような気がしたんですよ。と言うのはさておき、会社を作る経験は社会を知る上でもいい勉強になっています。面倒だけど。&lt;/p&gt;
+&lt;p&gt;特に「このサービスをやるぜ！」というわけではないですが、&lt;a href=&#34;https://stnard.jp/2016/10/11/build-llc/&#34;&gt;会社作りました&lt;/a&gt;。退職する話をするとよく「受け皿としての会社を作っといたほうが良い」的なことを言われ続けた結果、作らないとダメなような気がしたんですよ。と言うのはさておき、会社を作る経験は社会を知る上でもいい勉強になっています。面倒だけど。&lt;/p&gt;
 
 &lt;h2 id=&#34;業務委託をはじめた&#34;&gt;業務委託をはじめた&lt;/h2&gt;
 
@@ -385,10 +385,10 @@
     
     <item>
       <title>感情労働シンドローム</title>
-      <link>http://stnard.jp/2016/12/16/emotional-labor-syndrome</link>
+      <link>https://stnard.jp/2016/12/16/emotional-labor-syndrome</link>
       <pubDate>Fri, 16 Dec 2016 23:08:52 +0000</pubDate>
       
-      <guid>http://stnard.jp/2016/12/16/emotional-labor-syndrome</guid>
+      <guid>https://stnard.jp/2016/12/16/emotional-labor-syndrome</guid>
       <description>&lt;p&gt;頂いた本を読み進められていないことに申し訳なさを改めて思ったので、聖典ためたりサブキャラ育てるのそこそこにしてもうちょい頑張ってみようと思った年末。みなさんいかがお過ごしですか。&lt;/p&gt;
 
 &lt;p&gt;そしてそんななか、若者から最近読んで良かったと聞いた本を先に読んでしまいました。&lt;/p&gt;
@@ -420,10 +420,10 @@
     
     <item>
       <title>合同会社を作ってみました</title>
-      <link>http://stnard.jp/2016/10/11/build-llc/</link>
+      <link>https://stnard.jp/2016/10/11/build-llc/</link>
       <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://stnard.jp/2016/10/11/build-llc/</guid>
+      <guid>https://stnard.jp/2016/10/11/build-llc/</guid>
       <description>&lt;p&gt;10月からフリーランスで仕事をしているわけですが、いろいろあって合同会社を設立することにしました。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://leisurely-works.jp&#34;&gt;レジャリーワークス合同会社&lt;/a&gt;&lt;/p&gt;
@@ -440,10 +440,10 @@
     
     <item>
       <title>クックパッドを退職しました</title>
-      <link>http://stnard.jp/2016/10/01/resigned-from-cookpad/</link>
+      <link>https://stnard.jp/2016/10/01/resigned-from-cookpad/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://stnard.jp/2016/10/01/resigned-from-cookpad/</guid>
+      <guid>https://stnard.jp/2016/10/01/resigned-from-cookpad/</guid>
       <description>&lt;p&gt;2016年9月30日付でクックパッド株式会社を退職しました。2013年3月入社なので、かれこれ3年7ヶ月在籍していたことになります。最初の2年ぐらいはサービス開発エンジニアとして普通にコード書く仕事してたはずなんですが、気がついたらマネージメントや採用中心の仕事をしていました。まあいい仲間がいたからか、非常に充実した仕事ができていたと思っています。&lt;/p&gt;
 
 &lt;p&gt;みなさん気になる退職理由とかは、飲み会とかで個別に聞いていただければお答えしますが、たぶん聞きたいような答えじゃない気もするので、あまりwktkしないようにしていただけるとありがたいです。&lt;/p&gt;
@@ -458,10 +458,10 @@
     
     <item>
       <title>Microsoft Sculpt Ergonomic Keyboardを買ってみた</title>
-      <link>http://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/</link>
+      <link>https://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/</link>
       <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/</guid>
+      <guid>https://stnard.jp/2016/08/30/microsoft-sculpt-ergonomic-keyboard/</guid>
       <description>&lt;p&gt;ちょっと腱鞘炎ぽい症状が出てきたのでエルゴノミクスキーボードを物色してたんですが、大体3万以上と割と高い。分割式だとちゃんとしたタッチタイピングできていないと思うので、最初辛そう。費用対効果考えると躊躇してしたんですが、Microsoftが出してる&lt;/p&gt;
 
 
